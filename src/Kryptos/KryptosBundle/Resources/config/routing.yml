@@ -1,0 +1,3 @@
+kryptos_kryptos_homepage:
+    pattern:  /
+    defaults: { _controller: KryptosKryptosBundle:Default:index }

@@ -1,0 +1,7 @@
+parameters:
+#    kryptos_kryptos.example.class: Kryptos\KryptosBundle\Example
+
+services:
+#    kryptos_kryptos.example:
+#        class: %kryptos_kryptos.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
