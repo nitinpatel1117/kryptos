@@ -1,3 +1,11 @@
-kryptos_kryptos_homepage:
+homepage:
     pattern:  /
     defaults: { _controller: KryptosKryptosBundle:Default:index }
+    
+signin:
+    pattern:  /signin
+    defaults: { _controller: KryptosKryptosBundle:Default:signin }
+    
+register:
+    pattern:  /register
+    defaults: { _controller: KryptosKryptosBundle:Default:register }

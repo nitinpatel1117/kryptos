@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd http://symfony.com/schema/dic/services">
+    <parameters>
+        <parameter key="ipc_mobile.http_client.class">Guzzle\Http\Client</parameter>
+        <parameter key="ipc_mobile.twig.mobile_extension.class">Ipc\MobileBundle\Twig\MobileExtension</parameter>
+        <parameter key="ipc_mobile.ping_back_host"></parameter>
+        <parameter key="ipc_mobile.monolog.kibana_handler.class">Ipc\MobileBundle\Monolog\KibanaHandler</parameter>
+        <parameter key="ipc_mobile.ping_back_router.class">Ipc\MobileBundle\Routing\PingBackRouter</parameter>
+        <parameter key="ipc_mobile.ping_back_response_processor.class">Ipc\MobileBundle\Routing\PingBackResponseProcessor</parameter>
+        <parameter key="ipc_mobile.http_client.curl_options" type="collection" >
+            <parameter key="curl.CURLOPT_FOLLOWLOCATION">false</parameter>
+            <parameter key="curl.CURLOPT_TIMEOUT">20</parameter>
+        </parameter>
+    </parameters>
+    <services>
+        <service id="ipc_mobile.http_client" class="%ipc_mobile.http_client.class%">
+            <argument>%ipc_mobile.ping_back_host%</argument>
+            <argument>%ipc_mobile.http_client.curl_options%</argument>
+        </service>
+        <service id="ipc_mobile.ping_back_response_processor" class="%ipc_mobile.ping_back_response_processor.class%" >
+            <argument type="service" id="validator" />
+            <argument type="service" id="serializer" />
+            <argument type="service" id="logger" />
+        </service>
+        <service id="ipc_mobile.ping_back_router" class="%ipc_mobile.ping_back_router.class%" >
+            <argument type="service" id="service_container" />
+            <argument type="service" id="ipc_mobile.http_client" />
+            <argument type="service" id="router.request_context" on-invalid="ignore"/>
+            <argument type="service" id="logger" />
+            <argument type="service" id="ipc_mobile.ping_back_response_processor" />
+            <tag name="router" priority="100" />
+        </service>
+        <service id="ipc_mobile.monolog.kibana_handler" class="%ipc_mobile.monolog.kibana_handler.class%">
+            <argument>%site%</argument>
+            <argument>udp://log-01:2000</argument>
+            <argument type="constant">Monolog\Logger::ERROR</argument>
+        </service>
+        <service id="ipc_mobile.twig.mobile_extension" class="%ipc_mobile.twig.mobile_extension.class%">
+            <tag name="twig.extension" />
+        </service>
+        <service id="kernel.listener.ipc_response_listener" class="Ipc\MobileBundle\Listener\IpcResponseListener">
+            <tag name="kernel.event_listener" event="kernel.response" method="onKernelResponse" />
+        </service>
+    </services>
+</container>

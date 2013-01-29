@@ -1,0 +1,6 @@
+Kryptos\KryptosBundle\Entity\Register:
+    properties:
+        firstName:
+            - NotBlank: ~
+        lastName:
+            - NotBlank: ~

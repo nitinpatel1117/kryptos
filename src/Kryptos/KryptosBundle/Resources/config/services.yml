@@ -1,7 +1,24 @@
 parameters:
 #    kryptos_kryptos.example.class: Kryptos\KryptosBundle\Example
 
+    config_manager.class:                Kryptos\KryptosBundle\Services\ConfigManager
+    mongo_connection.class:              Kryptos\KryptosBundle\Services\MongoConnection
+    user_manager.class:                  Kryptos\KryptosBundle\Model\Manager\UserManager
+
 services:
 #    kryptos_kryptos.example:
 #        class: %kryptos_kryptos.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]
+
+    config_manager:
+        class:          %config_manager.class%
+        arguments:      [@service_container]
+
+    mongo_connection:
+        class:          %mongo_connection.class%
+        arguments:      [@service_container]
+        
+    user_manager:
+        class:          %user_manager.class%
+        arguments:      [@mongo_connection]
+        

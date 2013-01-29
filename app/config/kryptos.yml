@@ -1,0 +1,8 @@
+parameters:
+  disable_sigin: no
+  
+  
+  mongo_connection:
+    server:           'mongodb://localhost:27017'
+    options:          ''
+    default_db:       'kryptos'
