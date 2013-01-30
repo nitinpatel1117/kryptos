@@ -29,7 +29,14 @@ class BaseManager
 	
 	public function save($item)
 	{
-		$this->getMongoCollection->save($item, array("w" => 1));
+		echo "<BR>";
+		var_dump('item', $item);
+		
+		$this->getMongoCollection()->save($item, array("w" => 1));
+		
+		echo "<BR>";
+		var_dump('item', $item);
+		echo "<BR><BR>SAVED TO MONGODB<BR>";
 	}
     
 }

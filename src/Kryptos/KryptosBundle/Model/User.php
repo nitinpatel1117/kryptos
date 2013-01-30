@@ -1,32 +1,37 @@
 <?php
 namespace Kryptos\KryptosBundle\Model;
 
-use Kryptos\KryptosBundle\Model\Manager\UserManager;
-
 class User
 {
-	protected $id;
+	public $username;
 	
-    protected $firstName;
+    public $firstName;
     
-    protected $lastName;
+    public $lastName;
     
-    protected $jobTitle;
+    public $jobTitle;
     
-    protected $company;
+    public $company;
     
-    protected $location;
+    public $location;
     
-    protected $email;
+    public $email;
     
-    protected $manager;
+    public $password;
+    
+    public $acceptTerms;
 
     
     public function __construct()
     {
-    	$this->manager = new UserManager();
     }
     
+	public function setUsername($username) {
+		$this->username = $username;
+	}
+	public function getUsername() {
+		return $this->username;
+	}
     
 	public function setFirstName($firstName) {
 		$this->firstName = $firstName;
@@ -70,17 +75,17 @@ class User
 		return $this->email;
 	}
 	
+	public function setPassword($password) {
+		$this->password = $password;
+	}
+	public function getPassword() {
+		return $this->password;
+	}
 	
-	public function save()
-	{
-		$item = array();
-		$item['firstName'] = $this->getFirstName();
-		$item['lastName'] = $this->getLastName();
-		$item['jobTitle'] = $this->getJobTitle();
-		$item['company'] = $this->getCompany();
-		$item['location'] = $this->getLocation();
-		$item['email'] = $this->getEmail();
-
-		$this->manager->save($item);
+	public function setAcceptTerms($acceptTerms) {
+		$this->acceptTerms = $acceptTerms;
+	}
+	public function getAcceptTerms() {
+		return $this->acceptTerms;
 	}
 }

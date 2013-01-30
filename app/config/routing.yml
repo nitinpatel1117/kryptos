@@ -2,6 +2,10 @@ kryptos_kryptos:
     resource: "@KryptosKryptosBundle/Resources/config/routing.yml"
     prefix:   /
 
+Gregwar_CaptchaBundle:
+    resource: "@GregwarCaptchaBundle/Resources/config/routing.yml"
+    prefix:   /
+
 # Internal routing configuration to handle ESI
 # ****** WARNING ******
 # This route should be enabled with caution as it can open a security vulnerability

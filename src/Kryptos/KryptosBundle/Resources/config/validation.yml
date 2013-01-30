@@ -4,3 +4,13 @@ Kryptos\KryptosBundle\Entity\Register:
             - NotBlank: ~
         lastName:
             - NotBlank: ~
+        jobTitle:
+            - NotBlank: ~
+        company:
+            - NotBlank: ~
+        location:
+            - NotBlank: ~
+        email:
+            - Email:
+                message: The email "{{ value }}" is not a valid email.
+                checkMX: true

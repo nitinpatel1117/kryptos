@@ -4,7 +4,8 @@ div#register form div label {display: inline-block; width: 120px; margin:5px 0px
 div#register form div input {display: inline-block; width: 200px; margin:5px 0px 5px 0px;}
 div#register form div ul.errors {display: inline-block; width: 200px; margin:5px 0px 5px 0px;}
 div#register form div ul.errors li {display: inline-block; margin:5px 0px 5px 0px; list-style: none; color:red;}
-
+div#register form div #RegistrationForm_captcha {display: block; margin-left: 120px;}
+div#register form div #RegistrationForm_acceptTerms {float:left; width:40px;}
 
 /* Footer */
 footer {margin:50px 0px 0px 0px}

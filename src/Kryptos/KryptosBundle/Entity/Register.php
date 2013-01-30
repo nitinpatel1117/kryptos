@@ -3,6 +3,8 @@ namespace Kryptos\KryptosBundle\Entity;
 
 class Register
 {
+	protected $username;
+	
     protected $firstName;
     
     protected $lastName;
@@ -15,7 +17,21 @@ class Register
     
     protected $email;
     
+#    protected $confirmEmail;
     
+    protected $password;
+    
+#    protected $confirmPassword;
+
+    protected $acceptTerms;
+    
+    
+	public function setUsername($username) {
+		$this->username = $username;
+	}
+	public function getUsername() {
+		return $this->username;
+	}
     
 	public function setFirstName($firstName) {
 		$this->firstName = $firstName;
@@ -57,5 +73,34 @@ class Register
 	}
 	public function getEmail() {
 		return $this->email;
+	}
+	/*
+	public function setConfirmEmail($confirmEmail) {
+		$this->confirmEmail = $confirmEmail;
+	}
+	public function getConfirmEmail() {
+		return $this->confirmEmail;
+	}
+	*/
+	public function setPassword($password) {
+		$this->password = $password;
+	}
+	public function getPassword() {
+		return $this->password;
+	}
+	/*
+	public function setConfirmPassword($confirmPassword) {
+		$this->confirmPassword = $confirmPassword;
+	}
+	public function getConfirmPassword() {
+		return $this->confirmPassword;
+	}
+	*/
+	
+	public function setAcceptTerms($acceptTerms) {
+		$this->acceptTerms = $acceptTerms;
+	}
+	public function getAcceptTerms() {
+		return $this->acceptTerms;
 	}
 }
