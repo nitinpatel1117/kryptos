@@ -1,5 +1,8 @@
 Kryptos\KryptosBundle\Entity\Register:
     properties:
+        username:
+            - NotBlank: ~
+            - Kryptos\KryptosBundle\Validator\Constraints\UniqueUsername: ~
         firstName:
             - NotBlank: ~
         lastName:
@@ -14,3 +17,6 @@ Kryptos\KryptosBundle\Entity\Register:
             - Email:
                 message: The email "{{ value }}" is not a valid email.
                 checkMX: true
+            - Kryptos\KryptosBundle\Validator\Constraints\UniqueEmail: ~
+        password:
+            - NotBlank: ~

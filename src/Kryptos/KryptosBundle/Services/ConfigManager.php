@@ -27,6 +27,4 @@ class ConfigManager
     	
     	return $sigin_disabled;
     }
-
-
 }

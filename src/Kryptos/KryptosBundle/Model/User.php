@@ -17,6 +17,8 @@ class User
     
     public $email;
     
+    public $salt;
+    
     public $password;
     
     public $acceptTerms;
@@ -73,6 +75,13 @@ class User
 	}
 	public function getEmail() {
 		return $this->email;
+	}
+	
+	public function setSalt($salt) {
+		$this->salt = $salt;
+	}
+	public function getSalt() {
+		return $this->salt;
 	}
 	
 	public function setPassword($password) {

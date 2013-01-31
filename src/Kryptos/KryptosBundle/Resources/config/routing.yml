@@ -9,3 +9,7 @@ signin:
 register:
     pattern:  /register
     defaults: { _controller: KryptosKryptosBundle:Default:register }
+    
+register_success:
+    pattern:  /register/success
+    defaults: { _controller: KryptosKryptosBundle:Default:registerSuccess }

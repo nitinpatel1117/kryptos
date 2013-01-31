@@ -5,6 +5,8 @@ namespace Kryptos\KryptosBundle\Services;
 
 class MongoConnection
 {
+	protected $allowedCollections = array('User');
+	
 	protected $serviceContainer;
 	
 	protected $connectionParams;
@@ -74,10 +76,8 @@ class MongoConnection
 
 
     public function connectToCollection($collectionName)
-    {
-    	$collectionList = $this->getDB()->getCollectionNames();
-    	
-    	if (!in_array($collectionName, $collectionList)) {
+    {    	
+    	if (!in_array($collectionName, $this->allowedCollections)) {
     		// log this later
     		die('collect does not exist in DB');
     	}
