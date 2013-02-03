@@ -6,6 +6,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Validator\Constraints\Regex;
 
 class RegistrationForm extends AbstractType
 {
@@ -16,7 +17,8 @@ class RegistrationForm extends AbstractType
     		'required' => true,
     		'constraints' => array(
 	        	new NotBlank(),
-	        	new Length(array('min' => 4, 'max' => 10)),
+	        	new Length(array('min' => 4, 'max' => 20)),
+	        	new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'Username should only contain alphanumber characters. (a to z) and (0 to 9)')),
 			)));
 			
 		$builder->add('firstName', 		 'text', array('label'=>'Firstname', 'required' => true));
@@ -45,7 +47,8 @@ class RegistrationForm extends AbstractType
 		    'second_options' => array('label' => 'Confirm Password'),
 			'constraints' => array(
 	           new NotBlank(),
-	           new Length(array('min' => 4, 'max' => 10)),
+	           new Length(array('min' => 4, 'max' => 20)),
+	           new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'Password should only contain alphanumber characters. (a to z) and (0 to 9)')),
 			)
 		));
 		

@@ -1,5 +1,13 @@
 {% extends "KryptosKryptosBundle::layout.html.twig" %}
+{% form_theme form 'KryptosKryptosBundle:Form:signin.html.twig' %}
 
 {% block content %}
-	{{ location }}
+	<h1>{{ location }}</h1>
+	<div id="signin">
+		<form action="{{ path('signin') }}" method="post" {{ form_enctype(form) }}>
+	    	{{ form_widget(form) }}
+	
+	    	<input type="submit" value="Sign in" />
+		</form>
+	</div>
 {% endblock %}

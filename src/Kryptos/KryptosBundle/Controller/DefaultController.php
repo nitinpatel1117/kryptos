@@ -6,7 +6,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Kryptos\KryptosBundle\Entity\Register;
 use Kryptos\KryptosBundle\Form\RegistrationForm;
-use Kryptos\KryptosBundle\Model\Manager\UserManager;
+use Kryptos\KryptosBundle\Form\SigninForm;
+use Symfony\Component\HttpFoundation\Session\Session;
+use Symfony\Component\Form\FormError;
 
 class DefaultController extends Controller
 {
@@ -18,7 +20,7 @@ class DefaultController extends Controller
     		echo "<br> go to home<br>";
     	}
     	else {
-    		echo "<br> go to sign in page<br>";
+    		echo "<br>Redirect user to sign in page.they are not logged in.<BR><BR><br>";
     		
     		// forward to sign in controller
     		#$httpKernel = $this->container->get('http_kernel'); 	
@@ -30,9 +32,30 @@ class DefaultController extends Controller
     
     
     
-	public function signinAction()
+	public function signinAction(Request $request)
     {
-        return $this->render('KryptosKryptosBundle:Default:signin.html.twig', array('location' => 'signin'));
+    	$form = $this->createForm(new SigninForm());
+					 
+		if ($request->isMethod('POST')) {
+			$form->bind($request);
+
+			if ($form->isValid())
+			{
+				$userManager = $this->get('user_manager');
+				$status = $userManager->checkSignin($form->getData());
+
+				if (true == $status) {
+					return $this->redirect($this->generateUrl('welcome'));
+				}
+				
+				$form->addError(new FormError('Username and password do not match'));
+			}
+		}
+    	
+        return $this->render('KryptosKryptosBundle:Default:signin.html.twig', array(
+        	'form' => $form->createView(),
+        	'location' => 'signin'
+        ));
     }
 
     
@@ -49,7 +72,7 @@ class DefaultController extends Controller
 				$user = $userManager->createUserFrom($form->getData());
 				$userManager->save($user);
 					
-				return $this->redirect($this->generateUrl('register_success'));
+				return $this->redirect($this->generateUrl('welcome'));
 			}
 		}
 		
@@ -68,5 +91,11 @@ class DefaultController extends Controller
         	'link_url' => $this->generateUrl('signin'),
         	'link_text' => 'signin',
         ));
+    }
+    
+    
+    public function welcomeAction()
+    {
+    	return $this->render('KryptosKryptosBundle:Default:welcome.html.twig', array('location' => 'Welcome page'));
     }
 }

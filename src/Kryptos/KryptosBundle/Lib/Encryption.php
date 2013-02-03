@@ -1,6 +1,7 @@
 <?php
 namespace Kryptos\KryptosBundle\Lib;
 
+use Kryptos\KryptosBundle\Model\User;
 
 class Encryption
 {
@@ -37,5 +38,11 @@ class Encryption
 		}
 		
 		 return false;
+	}
+	
+	
+	public function isPasswordValid($userPassword, User $user)
+	{
+		return $this->validatePassword($userPassword, $user->getSalt(), $user->getPassword());
 	}
 }

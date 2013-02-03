@@ -88,4 +88,23 @@ class UserManager extends BaseManager
     	$object = array('email' => $email);
     	return $this->getMongoCollection()->findOne($object);
     }
+    
+    
+    public function checkSignin($formData)
+    {
+    	$valid = false;
+    	$userArray = $this->getUserByUsername($formData->getUsername());
+    	
+    	if (!is_null($userArray)) {
+	    	$user = new User();
+			foreach ($userArray as $key => $value) {
+				$user->$key = $value;
+			}
+			
+    		$encryption = new Encryption();
+    		$valid = $encryption->isPasswordValid($formData->getPassword(), $user);
+    	}
+    	
+    	return $valid;
+    }
 }

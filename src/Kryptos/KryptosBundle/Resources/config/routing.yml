@@ -13,3 +13,7 @@ register:
 register_success:
     pattern:  /register/success
     defaults: { _controller: KryptosKryptosBundle:Default:registerSuccess }
+
+welcome:
+    pattern:  /welcome
+    defaults: { _controller: KryptosKryptosBundle:Default:welcome }
