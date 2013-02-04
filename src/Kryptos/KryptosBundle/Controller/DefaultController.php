@@ -12,20 +12,27 @@ use Symfony\Component\Form\FormError;
 
 class DefaultController extends Controller
 {
+	
+	protected function getSessionId()
+	{
+		$session = new Session();
+		$session->start();
+		return $session->getId();
+	}
+	
+	
     public function indexAction()
     {
     	$config = $this->get('config_manager');
+    	$session = $this->get('login_validator');
+
+    	if ($config->siginDisabled() || $session->isLoginValid()) {
+    		return $this->redirect($this->generateUrl('welcome'));
+    	}
     	
-    	if ($config->siginDisabled()) {
-    		echo "<br> go to home<br>";
-    	}
-    	else {
-    		echo "<br>Redirect user to sign in page.they are not logged in.<BR><BR><br>";
-    		
-    		// forward to sign in controller
-    		#$httpKernel = $this->container->get('http_kernel'); 	
-			#$response = $httpKernel->forward('KryptosKryptosBundle:Default:signin');
-    	}
+    	// forward to sign in controller
+    	#$httpKernel = $this->container->get('http_kernel'); 	
+		#$response = $httpKernel->forward('KryptosKryptosBundle:Default:signin');
 
         return $this->render('KryptosKryptosBundle:Default:index.html.twig', array('location' => 'homepage'));
     }
@@ -34,6 +41,11 @@ class DefaultController extends Controller
     
 	public function signinAction(Request $request)
     {
+    	$session = $this->get('login_validator');
+    	if ($session->isLoginValid()) {
+    		return $this->redirect($this->generateUrl('welcome'));
+    	}
+    	
     	$form = $this->createForm(new SigninForm());
 					 
 		if ($request->isMethod('POST')) {
@@ -45,10 +57,11 @@ class DefaultController extends Controller
 				$status = $userManager->checkSignin($form->getData());
 
 				if (true == $status) {
+					$session->saveLogin($form->getData()->getEmail());
 					return $this->redirect($this->generateUrl('welcome'));
 				}
 				
-				$form->addError(new FormError('Username and password do not match'));
+				$form->addError(new FormError('Email and password do not match'));
 			}
 		}
     	
@@ -57,20 +70,35 @@ class DefaultController extends Controller
         	'location' => 'signin'
         ));
     }
+    
+    
+    public function logoutAction()
+    {
+    	$session = $this->get('login_validator');
+    	$session->logout();
+    	return $this->redirect($this->generateUrl('homepage'));
+    	
+    }
 
     
 	public function registerAction(Request $request)
     {
+	    $session = $this->get('login_validator');
+    	if ($session->isLoginValid()) {
+    		return $this->redirect($this->generateUrl('welcome'));
+    	}
+    	
 		$form = $this->createForm(new RegistrationForm());
 					 
 		if ($request->isMethod('POST')) {
 			$form->bind($request);
 
-			if ($form->isValid())
-			{
+			if ($form->isValid()) {
 				$userManager = $this->get('user_manager');
 				$user = $userManager->createUserFrom($form->getData());
 				$userManager->save($user);
+				
+				$session->saveLogin($user->getEmail());
 					
 				return $this->redirect($this->generateUrl('welcome'));
 			}
@@ -96,6 +124,43 @@ class DefaultController extends Controller
     
     public function welcomeAction()
     {
+    	$config = $this->get('config_manager');
+    	$session = $this->get('login_validator');
+    	if (!$config->siginDisabled() && !$session->isLoginValid()) {
+    		return $this->redirect($this->generateUrl('homepage'));
+    	}
+    	
     	return $this->render('KryptosKryptosBundle:Default:welcome.html.twig', array('location' => 'Welcome page'));
+    }
+    
+    
+    public function authenicationBarAction()
+    {
+    	$signin   = false;
+    	$register = false;
+    	$logout   = false;
+    	$allDisabled = false;
+    	
+    	$config = $this->get('config_manager');
+    	if (!$config->siginDisabled()) {
+    		$session = $this->get('login_validator');
+    		if ($session->isLoginValid()) {
+    			$logout   = true;
+    		}
+    		else {
+    			$signin   = true;
+    			$register = true;
+    		}
+    	}
+    	else {
+    		$allDisabled = true;
+    	}
+
+        return $this->render('KryptosKryptosBundle:Default:authenicationBar.html.twig', array(
+        	'signin' 		=> $signin,
+        	'register' 		=> $register,
+        	'logout' 		=> $logout,
+        	'allDisabled'	=> $allDisabled,
+        ));
     }
 }

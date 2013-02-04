@@ -10,9 +10,10 @@ class SigninForm extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-    	$builder->add('username', 		 'text', array(
-    		'label'=>'Username',
-    		'required' => true));
+    	$builder->add('email', 		 'text', array(
+    		'label'=>'Email',
+    		'required' => true
+    	));
 			
 		$builder->add('password', 'password', array(
 			'label' => 'Password',

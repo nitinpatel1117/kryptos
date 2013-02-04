@@ -6,11 +6,14 @@ parameters:
     user_manager.class:                  Kryptos\KryptosBundle\Model\Manager\UserManager
     unique_username_validator.class:     Kryptos\KryptosBundle\Validator\Constraints\UniqueUsernameValidator
     unique_email_validator.class:        Kryptos\KryptosBundle\Validator\Constraints\UniqueEmailValidator
+    login_validator.class:               Kryptos\KryptosBundle\Lib\LoginValidator
+
 
 services:
 #    kryptos_kryptos.example:
 #        class: %kryptos_kryptos.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]
+
 
     config_manager:
         class:          %config_manager.class%
@@ -36,4 +39,19 @@ services:
         arguments:      [@user_manager]
         tags:
             - { name: validator.constraint_validator, alias: UniqueEmailValidator }
+    
+    
+    # http://hipaway.com/blog/symfony2-sessions-in-memcache/
+    session.memcache:
+        class: Memcache
+        calls:
+          - [ addServer, [ %session_memcache_host%, %session_memcache_port% ]]
+
+    session.handler.memcache:
+        class: Symfony\Component\HttpFoundation\Session\Storage\Handler\MemcacheSessionHandler
+        arguments: [ @session.memcache, { prefix: %session_memcache_prefix%, expiretime: %session_memcache_expire% } ]
+    
+    login_validator:
+        class:          %login_validator.class%
+        arguments:      [@session.handler.memcache, @session, %session_memcache_expire%]
         

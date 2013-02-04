@@ -3,7 +3,7 @@ namespace Kryptos\KryptosBundle\Model;
 
 class User
 {
-	public $username;
+	#public $username;
 	
     public $firstName;
     
@@ -27,13 +27,13 @@ class User
     public function __construct()
     {
     }
-    
+    /*
 	public function setUsername($username) {
 		$this->username = $username;
 	}
 	public function getUsername() {
 		return $this->username;
-	}
+	}*/
     
 	public function setFirstName($firstName) {
 		$this->firstName = $firstName;

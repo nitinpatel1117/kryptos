@@ -12,6 +12,7 @@ class RegistrationForm extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+    	/*
     	$builder->add('username', 		 'text', array(
     		'label'=>'Username',
     		'required' => true,
@@ -20,6 +21,7 @@ class RegistrationForm extends AbstractType
 	        	new Length(array('min' => 4, 'max' => 20)),
 	        	new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'Username should only contain alphanumber characters. (a to z) and (0 to 9)')),
 			)));
+			*/
 			
 		$builder->add('firstName', 		 'text', array('label'=>'Firstname', 'required' => true));
 		$builder->add('lastName', 		 'text', array('label'=>'Lastname', 'required' => true));
@@ -63,11 +65,8 @@ class RegistrationForm extends AbstractType
 			'label' => 'I agree to the Kryptos Terms of Service and Privacy Policy',
 			'required' => true,
 		));
-		
 
-		
-		
-		#$builder->add('key', 'text');
+		#$builder->add('key', 'csrf');
     }
     
 

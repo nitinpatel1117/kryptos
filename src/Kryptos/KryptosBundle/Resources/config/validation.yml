@@ -1,8 +1,5 @@
 Kryptos\KryptosBundle\Entity\Register:
     properties:
-        username:
-            - NotBlank: ~
-            - Kryptos\KryptosBundle\Validator\Constraints\UniqueUsername: ~
         firstName:
             - NotBlank: ~
         lastName:

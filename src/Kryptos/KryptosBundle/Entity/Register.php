@@ -3,7 +3,7 @@ namespace Kryptos\KryptosBundle\Entity;
 
 class Register
 {
-	protected $username;
+	#protected $username;
 	
     protected $firstName;
     
@@ -17,21 +17,18 @@ class Register
     
     protected $email;
     
-#    protected $confirmEmail;
-    
     protected $password;
     
-#    protected $confirmPassword;
-
     protected $acceptTerms;
     
-    
+    /*
 	public function setUsername($username) {
 		$this->username = $username;
 	}
 	public function getUsername() {
 		return $this->username;
 	}
+	*/
     
 	public function setFirstName($firstName) {
 		$this->firstName = $firstName;

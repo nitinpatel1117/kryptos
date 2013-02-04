@@ -22,7 +22,7 @@ class UserManager extends BaseManager
     public function createUserFrom($formData)
     {
     	$user = new User();
-    	$user->setUsername(		$formData->getUsername());
+    #	$user->setUsername(		$formData->getUsername());
     	$user->setFirstName(	$formData->getFirstName());
 		$user->setLastName(		$formData->getLastName());
 		$user->setJobTitle(		$formData->getJobTitle());
@@ -46,7 +46,7 @@ class UserManager extends BaseManager
      * 
      * @param $username string		The username that we want to search for
      * @return bool
-     */
+     *
     public function isUsernameTaken($username)
     {
     	$usernameTaken = true;
@@ -56,7 +56,7 @@ class UserManager extends BaseManager
     	}
     	
     	return $usernameTaken;
-    }
+    }*/
     
 	/**
      * Fucntion checks if the suppllied email is taken. By default we return true in case we couldn't access mongo for any reason
@@ -75,12 +75,13 @@ class UserManager extends BaseManager
     	return $emailTaken;
     }
     
-    
+    /*
 	public function getUserByUsername($username)
     {
     	$object = array('username' => $username);
     	return $this->getMongoCollection()->findOne($object);
     }
+    */
     
     
 	public function getUserByEmail($email)
@@ -93,7 +94,7 @@ class UserManager extends BaseManager
     public function checkSignin($formData)
     {
     	$valid = false;
-    	$userArray = $this->getUserByUsername($formData->getUsername());
+    	$userArray = $this->getUserByEmail($formData->getEmail());
     	
     	if (!is_null($userArray)) {
 	    	$user = new User();

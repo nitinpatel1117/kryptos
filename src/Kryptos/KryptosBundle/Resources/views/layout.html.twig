@@ -15,8 +15,7 @@
 
 {% block body %}
 	<header>
-		<a href="{{ path('signin') }}">signin</a> <br>
-		<a href="{{ path('register') }}">register</a><br>
+		{% render 'KryptosKryptosBundle:Default:authenicationBar' %}
 	</header>
 	
 	{% block content %}{% endblock %}

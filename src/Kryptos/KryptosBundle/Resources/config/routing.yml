@@ -13,6 +13,10 @@ register:
 register_success:
     pattern:  /register/success
     defaults: { _controller: KryptosKryptosBundle:Default:registerSuccess }
+    
+logout:
+    pattern:  /logout
+    defaults: { _controller: KryptosKryptosBundle:Default:logout }
 
 welcome:
     pattern:  /welcome
