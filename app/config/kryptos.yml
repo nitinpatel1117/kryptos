@@ -1,6 +1,12 @@
 parameters:
   disable_sigin: no
   
+  site:
+    name:                      'Kryptos'
+    url:                       'www.kryptos.com'
+    email_activate_from:       'activations@kryptos.com'
+    email_activate_fromname:   'Kryptos'
+  
   
   mongo_connection:
     server:           'mongodb://localhost:27017'

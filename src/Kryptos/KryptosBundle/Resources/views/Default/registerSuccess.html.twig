@@ -1,8 +1,10 @@
 {% extends "KryptosKryptosBundle::layout.html.twig" %}
 
 {% block content %}
-	<h1>You have registered successfully</h1>
+	<h1>{{ header }}</h1>
 	<section>
-		You may now sign in via the <a href="{{ link_url }}" >{{ link_text }}</a> screen.
+		{% if true == show_signin_link %}
+			You may now sign in via the <a href="{{ link_url }}" >{{ link_text }}</a> screen.
+		{% endif %}
 	</section>
 {% endblock %}

@@ -22,13 +22,13 @@ class RegistrationForm extends AbstractType
 	        	new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'Username should only contain alphanumber characters. (a to z) and (0 to 9)')),
 			)));
 			*/
-			
+
 		$builder->add('firstName', 		 'text', array('label'=>'Firstname', 'required' => true));
 		$builder->add('lastName', 		 'text', array('label'=>'Lastname', 'required' => true));
 		$builder->add('jobTitle', 		 'text', array('label'=>'Jobtitle', 'required' => true));
 		$builder->add('company', 		 'text', array('label'=>'Company', 'required' => true));
 		$builder->add('location', 		 'text', array('label'=>'Location', 'required' => true));
-		
+
 		$builder->add('email', 'repeated', array(
 			'type' => 'text',
 			'required' => true,
@@ -38,7 +38,7 @@ class RegistrationForm extends AbstractType
 			'first_options' => array('label' => 'Email'),
 		    'second_options' => array('label' => 'Confirm Email'),
 		));
-		
+
 		$builder->add('password', 'repeated', array(
 			'type' => 'password',
 			'required' => true,
@@ -53,14 +53,14 @@ class RegistrationForm extends AbstractType
 	           new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'Password should only contain alphanumber characters. (a to z) and (0 to 9)')),
 			)
 		));
-		
-		$builder->add('captcha', 'captcha', array(
+
+	/*	$builder->add('captcha', 'captcha', array(
 			'invalid_message' => 'Incorrect code entered.',
 			'as_url' => true,
 			'reload' => true,
 			'label' => 'Word Verification',
-		));
-		
+		));*/
+
 		$builder->add('acceptTerms', 'checkbox', array(
 			'label' => 'I agree to the Kryptos Terms of Service and Privacy Policy',
 			'required' => true,
@@ -68,7 +68,7 @@ class RegistrationForm extends AbstractType
 
 		#$builder->add('key', 'csrf');
     }
-    
+
 
     public function getName()
     {

@@ -10,9 +10,13 @@ register:
     pattern:  /register
     defaults: { _controller: KryptosKryptosBundle:Default:register }
     
-register_success:
+register_submitted:
     pattern:  /register/success
-    defaults: { _controller: KryptosKryptosBundle:Default:registerSuccess }
+    defaults: { _controller: KryptosKryptosBundle:Default:registerSubmitted }
+
+register_activate:
+    pattern:  /register/activate/{userId}/{code1}/{code2}
+    defaults: { _controller: KryptosKryptosBundle:Default:registerActivate, userId: null, code1: null, code2: null  }
     
 logout:
     pattern:  /logout
