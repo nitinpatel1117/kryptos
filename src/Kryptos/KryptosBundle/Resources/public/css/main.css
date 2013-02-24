@@ -1,12 +1,51 @@
+html, body {margin:0px; padding:0px;}
+body { font-size:62.5%; font-family: arial, "lucida console", sans-serif; }
+
+
+section.centraliser {margin-left: auto; margin-right: auto; width: 850px; font-size:1.2em;}
+
+section.contentWrapper {}
+
+section.blueHeader { border: solid 1px black }
+section.blueHeader h1,
+section.blueHeader h2 { background-color: #4F81BD; color: white; margin-top:0px; padding:7px;  font-size:1.2em;}
+section.blueHeader section.innerWrap { padding:20px;}
+
+
+/* Footer */
+header {margin:0px 0px 60px 0px}
+
+/* Footer */
+footer {margin:50px 0px 0px 0px}
+
+
+
+/*** Forms ***/
+
 /* Registration Form */
 div#register { }
-div#register form div label {display: inline-block; width: 120px; margin:5px 0px 5px 0px;}
-div#register form div input {display: inline-block; width: 200px; margin:5px 0px 5px 0px;}
+div#register form div div.form_row label {display: inline-block; width: 120px; margin:5px 0px 5px 0px;}
+div#register form div div.form_row input {display: inline-block; width: 200px; margin:5px 0px 5px 0px;}
 div#register form div ul.errors {display: inline-block; width: 200px; margin:5px 0px 5px 0px;}
 div#register form div ul.errors li {display: inline-block; margin:5px 0px 5px 0px; list-style: none; color:red;}
 div#register form div #RegistrationForm_captcha {display: block; margin-left: 120px;}
 div#register form div #RegistrationForm_acceptTerms {float:left; width:40px;}
 
-/* Footer */
-footer {margin:50px 0px 0px 0px}
+
+/* Signin Form */
+div#signin { }
+div#signin form div div.form_row label {display: inline-block; width: 100px; margin:5px 0px 5px 0px;}
+div#signin form div div.form_row input {display: inline-block; width: 200px; margin:5px 0px 5px 0px;}
+div#signin form div div.form_row.staySignedIn input {width: 10px;}
+div#signin form div ul.errors {display: inline-block; width: 200px; margin:5px 0px 5px 0px;}
+div#signin form div ul.errors li {display: inline-block; margin:5px 0px 5px 0px; list-style: none; color:red;}
+
+
+/* Purchase Conversions Form */
+div#purchaseConversion { }
+div#purchaseConversion form div label {display: inline-block; width: 120px; margin:5px 0px 5px 0px;}
+div#purchaseConversion form div input {display: inline-block; width: 150px; margin:5px 0px 5px 0px;}
+div#purchaseConversion form div ul.errors {display: inline-block; width: 150px; margin:5px 0px 5px 0px;}
+div#purchaseConversion form div ul.errors li {display: inline-block; margin:5px 0px 5px 0px; list-style: none; color:red;}
+div#purchaseConversion form .form_errors {color:red; margin-bottom:10px;}
 

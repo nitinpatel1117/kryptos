@@ -4,7 +4,6 @@ namespace Kryptos\KryptosBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use Kryptos\KryptosBundle\Entity\Register;
 use Kryptos\KryptosBundle\Form\RegistrationForm;
 use Kryptos\KryptosBundle\Form\SigninForm;
 use Symfony\Component\HttpFoundation\Session\Session;
@@ -89,8 +88,7 @@ class DefaultController extends Controller
 
 	public function registerAction(Request $request)
     {
-	    $session = $this->get('login_validator');
-    	if ($session->isLoginValid()) {
+    	if ($this->get('login_validator')->isLoginValid()) {
     		return $this->redirect($this->generateUrl('welcome'));
     	}
 
@@ -196,8 +194,14 @@ class DefaultController extends Controller
     	if (!$config->siginDisabled() && !$session->isLoginValid()) {
     		return $this->redirect($this->generateUrl('homepage'));
     	}
+    	
+    	
 
-    	return $this->render('KryptosKryptosBundle:Default:welcome.html.twig', array('location' => 'Welcome page'));
+    	return $this->render('KryptosKryptosBundle:Default:welcome.html.twig', array(
+    		'location' 					=> 'Welcome page',
+    		'purchase_conversion_url' 	=> $this->generateUrl('purchase_conversions'),
+    		'convert_to_sepa_url' 		=> '#',
+    	));
     }
 
 
@@ -229,5 +233,16 @@ class DefaultController extends Controller
         	'logout' 		=> $logout,
         	'allDisabled'	=> $allDisabled,
         ));
+    }
+    
+    
+    public function resetPasswordEmailAction()
+    {
+    	
+    }
+    
+    public function resetPasswordQuestionAction()
+    {
+    	 
     }
 }

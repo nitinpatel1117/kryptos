@@ -18,3 +18,10 @@ parameters:
   session_memcache_port:               11211
   session_memcache_prefix:             sess_
   session_memcache_expire:             1200
+  
+  purchase_conversions:
+    # conversionRate is the amount that each conversion costs in pence (or other currency). a value of less than 1 means each is less than 1p
+    conversion_rate: 3
+    # a vat_rate as percentage, range from [0 - 100]
+    vat_rate: 20
+    

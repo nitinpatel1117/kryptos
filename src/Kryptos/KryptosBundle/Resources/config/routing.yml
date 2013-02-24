@@ -25,3 +25,22 @@ logout:
 welcome:
     pattern:  /welcome
     defaults: { _controller: KryptosKryptosBundle:Default:welcome }
+    
+password_reset_email:
+    pattern:  /welcome
+    defaults: { _controller: KryptosKryptosBundle:Default:resetPasswordEmail }
+    
+password_reset_question:
+    pattern:  /welcome
+    defaults: { _controller: KryptosKryptosBundle:Default:resetPasswordQuestion }
+    
+    
+    
+    
+purchase_conversions:
+    pattern:  /purchase/conversions
+    defaults: { _controller: KryptosKryptosBundle:PurchaseConversions:index }
+    
+purchase_conversions_calc_rate:
+    pattern:  /purchase/conversions/calculate/rates/{conversionAmount}
+    defaults: { _controller: KryptosKryptosBundle:PurchaseConversions:calculateRate }

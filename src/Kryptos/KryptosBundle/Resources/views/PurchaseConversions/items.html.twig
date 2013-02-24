@@ -1,0 +1,26 @@
+	<div id="purchaseConversion">
+		<form action="" method="post" {{ form_enctype(form) }}>
+	    	<div id="PurchaseConversionForm">
+	    		<div id="PurchaseConversionForm_errors" class="form_errors">
+	    			{{ form_errors(form) }}
+	    		</div>
+		    	<div class="form_row amount">
+				    {{ form_label(form.conversions) }}
+				    {{ form_widget(form.conversions) }}
+				    <input id="PurchaseConversionForm_btn_cacl" type="button" value="{{ btn_calculate }}" />
+				    {{ form_errors(form.conversions) }}
+				</div>
+				<div class="form_row cost">
+				    {{ form_label(form.cost) }}
+				    {{ form_widget(form.cost) }}
+				    {{ form_errors(form.cost) }}
+				</div>
+				<div class="form_row vat">
+				    {{ form_label(form.vat) }}
+				    {{ form_widget(form.vat) }}
+				    {{ form_errors(form.vat) }}
+				</div>
+				{{ form_rest(form) }}
+	    	</div>
+		</form>
+	</div>

@@ -44,6 +44,7 @@ class LoginValidator
 	    	$dateNew->modify(sprintf('+%s seconds', $this->sessionExpire));
 
 	    	if ($dateNew > $item['accessed']) {
+	    		$this->saveLogin($item['email']);
 	    		$loginValid = true;
 	    	}
 		}

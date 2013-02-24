@@ -1,0 +1,15 @@
+{% extends "KryptosKryptosBundle::layout.html.twig" %}
+
+
+{% block content %}
+	
+	<section class="blueHeader">
+		<h1>{{ location }}</h1>
+		<section class="innerWrap">
+			{% render 'KryptosKryptosBundle:PurchaseConversions:items' %}
+			
+			{% render 'KryptosKryptosBundle:PurchaseConversions:payment' %}
+		</section>
+	</section>
+
+{% endblock %}
