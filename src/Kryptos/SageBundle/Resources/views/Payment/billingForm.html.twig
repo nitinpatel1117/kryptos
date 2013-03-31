@@ -1,0 +1,49 @@
+	<div id="paymentBilling">
+		<div class='billing'>Billing details</div>
+		<form action="{{ path('payment_billing') }}" method="post" {{ form_enctype(form) }}>
+	    	<div id="PaymentBillingForm">
+	    		<div id="PaymentBillingForm_errors" class="form_errors">
+	    			{{ form_errors(form) }}
+	    		</div>
+		    	<div class="form_row billingSurname">
+				    {{ form_label(form.billingSurname) }}
+				    {{ form_widget(form.billingSurname) }}
+				    {{ form_errors(form.billingSurname) }}
+				</div>
+				<div class="form_row billingFirstnames">
+				    {{ form_label(form.billingFirstnames) }}
+				    {{ form_widget(form.billingFirstnames) }}
+				    {{ form_errors(form.billingFirstnames) }}
+				</div>
+				<div class="form_row billingAddress1">
+				    {{ form_label(form.billingAddress1) }}
+				    {{ form_widget(form.billingAddress1) }}
+				    {{ form_errors(form.billingAddress1) }}
+				</div>
+				<div class="form_row billingAddress2">
+				    {{ form_label(form.billingAddress2) }}
+				    {{ form_widget(form.billingAddress2) }}
+				    {{ form_errors(form.billingAddress2) }}
+				</div>
+				<div class="form_row billingCity">
+				    {{ form_label(form.billingCity) }}
+				    {{ form_widget(form.billingCity) }}
+				    {{ form_errors(form.billingCity) }}
+				</div>
+				<div class="form_row billingPostCode">
+				    {{ form_label(form.billingPostCode) }}
+				    {{ form_widget(form.billingPostCode) }}
+				    {{ form_errors(form.billingPostCode) }}
+				</div>
+				<div class="form_row billingCountry">
+				    {{ form_label(form.billingCountry) }}
+				    {{ form_widget(form.billingCountry) }}
+				    {{ form_errors(form.billingCountry) }}
+				</div>
+				{{ form_rest(form) }}
+				<div class="form_row submit">
+					<input id="PaymentBillingForm_btn_submit" type="submit" value="{{ btn_submit }}" />
+				</div>
+	    	</div>
+	    </form>
+	</div>

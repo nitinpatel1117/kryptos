@@ -8,7 +8,7 @@ use Kryptos\KryptosBundle\Lib\Encryption;
 
 class UserManager extends BaseManager
 {
-    const COLLECTION = 'User';
+    const COLLECTION = 'user';
 
 
     public function __construct($mongoConnection)
@@ -175,5 +175,12 @@ class UserManager extends BaseManager
     	}
 
     	return $valid;
+    }
+    
+    
+    public function getUserVendorTxCode($VendorTxCode)
+    {
+    	$item = array('payment.VendorTxCode' => $VendorTxCode);
+    	return parent::findOne($item);
     }
 }

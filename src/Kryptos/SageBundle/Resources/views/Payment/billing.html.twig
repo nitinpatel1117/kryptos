@@ -1,0 +1,28 @@
+{% extends "KryptosKryptosBundle::layout.html.twig" %}
+
+
+{% block content %}
+	
+	<section class="blueHeader">
+		<h1>{{ location }}</h1>
+		<section class="innerWrap">
+			<table id="paymentOverview">
+				<tr>
+					<th>Conversions</th>
+					<th>Cost</th>
+					<th>VAT</th>
+					<th>Total</th>
+				</tr>
+				<tr>
+					<td>{{ credits }}</td>
+					<td>{{ currency|escape }}{{ cost }}</td>
+					<td>{{ currency|escape }}{{ vat }}</td>
+					<td>{{ currency|escape }}{{ total }}</td>
+				</tr>
+			</table>
+			
+			{% render 'KryptosSageBundle:Payment:billingForm' with { request: request, error: error } %}
+		</section>
+	</section>
+
+{% endblock %}

@@ -4,6 +4,7 @@ parameters:
     config_manager.class:                Kryptos\KryptosBundle\Services\ConfigManager
     mongo_connection.class:              Kryptos\KryptosBundle\Services\MongoConnection
     user_manager.class:                  Kryptos\KryptosBundle\Model\Manager\UserManager
+    sage_notification_manager.class:     Kryptos\KryptosBundle\Model\Manager\SageNotificationManager
     unique_username_validator.class:     Kryptos\KryptosBundle\Validator\Constraints\UniqueUsernameValidator
     unique_email_validator.class:        Kryptos\KryptosBundle\Validator\Constraints\UniqueEmailValidator
     login_validator.class:               Kryptos\KryptosBundle\Lib\LoginValidator
@@ -26,7 +27,10 @@ services:
     user_manager:
         class:          %user_manager.class%
         arguments:      [@mongo_connection]
-        
+     
+    sage_notification_manager:
+        class:          %sage_notification_manager.class%
+        arguments:      [@mongo_connection]
 
     unique_username_validator:
         class:          %unique_username_validator.class%

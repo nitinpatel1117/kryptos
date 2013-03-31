@@ -5,7 +5,7 @@ namespace Kryptos\KryptosBundle\Services;
 
 class MongoConnection
 {
-	protected $allowedCollections = array('User');
+	protected $allowedCollections = array('user', 'sage_notification');
 	
 	protected $serviceContainer;
 	
@@ -79,7 +79,7 @@ class MongoConnection
     {    	
     	if (!in_array($collectionName, $this->allowedCollections)) {
     		// log this later
-    		die('collect does not exist in DB');
+    		die('collection does not exist in DB');
     	}
     	
     	return $this->getDB()->selectCollection($collectionName);

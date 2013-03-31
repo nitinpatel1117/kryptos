@@ -1,0 +1,20 @@
+kryptos_sage_registerTransaction:
+    pattern:  /payment
+    defaults: { _controller: KryptosSageBundle:Default:registerTransaction }
+    
+payment_billing:
+    pattern:  /payment/billing
+    defaults: { _controller: KryptosSageBundle:Payment:billing }
+
+sage_notification_page:
+    pattern:  /sage/notify 
+    defaults: { _controller: KryptosSageBundle:Sage:notify }
+
+sage_redirect_pass:
+    pattern:  /payment/pass 
+    defaults: { _controller: KryptosSageBundle:Redirect:pass }
+
+sage_redirect_fail:
+    pattern:  /payment/fail 
+    defaults: { _controller: KryptosSageBundle:Redirect:fail }
+    

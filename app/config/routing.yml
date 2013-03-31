@@ -1,3 +1,7 @@
+kryptos_sage:
+    resource: "@KryptosSageBundle/Resources/config/routing.yml"
+    prefix:   /
+
 kryptos_kryptos:
     resource: "@KryptosKryptosBundle/Resources/config/routing.yml"
     prefix:   /

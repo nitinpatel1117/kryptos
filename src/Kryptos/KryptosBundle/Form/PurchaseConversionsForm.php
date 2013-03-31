@@ -10,20 +10,25 @@ class PurchaseConversionsForm extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-    	$builder->add('conversions', 'text', array(
+    	$currency = '';
+    	if (isset($options['currency'])) {
+    		$currency = sprintf(' (%s)', $options['currency']);
+    	}
+    	
+    	$builder->add('conversions', 'number', array(
     		'label'=>'No. Conversions',
     		'required' => true
     	));
 			
 		$builder->add('cost', 'text', array(
-			'label' => 'Total Cost',
+			'label' => 'Total Cost'.$currency,
 			'required' => false,
 			'disabled' => 'true',
 		));
 		
 		
 		$builder->add('vat', 'text', array(
-			'label' => 'Total VAT',
+			'label' => 'Total VAT'.$currency,
 			'required' => false,
 			'disabled' => 'true',
 		));
@@ -40,6 +45,7 @@ class PurchaseConversionsForm extends AbstractType
 	{
     	$resolver->setDefaults(array(
 			'data_class' => 'Kryptos\KryptosBundle\Entity\PurchaseConversions',
+    		'currency' => '',
 			)
 		);
 	}

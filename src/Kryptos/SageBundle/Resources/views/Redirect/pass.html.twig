@@ -1,0 +1,17 @@
+{% extends "KryptosKryptosBundle::layout.html.twig" %}
+
+
+{% block content %}
+	
+	<section class="blueHeader">
+		<h1>{{ location }}</h1>
+		<section class="innerWrap">
+			<h3>Your transaction has been successfully processed</h3>
+
+			<p>{{ credits_added }} conversions have been added to your account.</p>
+
+			<p>You now have a total of {{ credits_total }} conversions.</p> 
+		</section>
+	</section>
+
+{% endblock %}

@@ -1,5 +1,5 @@
 	<div id="purchaseConversion">
-		<form action="" method="post" {{ form_enctype(form) }}>
+		<form action="{{ path('purchase_conversions') }}" method="post" {{ form_enctype(form) }}>
 	    	<div id="PurchaseConversionForm">
 	    		<div id="PurchaseConversionForm_errors" class="form_errors">
 	    			{{ form_errors(form) }}
@@ -21,6 +21,9 @@
 				    {{ form_errors(form.vat) }}
 				</div>
 				{{ form_rest(form) }}
+				<div class="form_row submit">
+					<input id="PurchaseConversionForm_btn_submit" type="submit" value="{{ btn_submit }}" />
+				</div>
 	    	</div>
-		</form>
+	    </form>
 	</div>

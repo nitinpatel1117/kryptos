@@ -6,7 +6,12 @@
 	<section class="blueHeader">
 		<h1>{{ location }}</h1>
 		<section class="innerWrap">
-			{% render 'KryptosKryptosBundle:PurchaseConversions:items' with { request: request, error: error }  %}
+			<h3>Your transaction could NOT be processed</h3>
+
+			<p>There was a problem processing your payment.</p>
+			
+			<p>Our payment provider reported the following problem:</p>
+			<p>{{ msg }}</p>
 		</section>
 	</section>
 

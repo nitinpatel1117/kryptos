@@ -49,3 +49,17 @@ div#purchaseConversion form div ul.errors {display: inline-block; width: 150px; 
 div#purchaseConversion form div ul.errors li {display: inline-block; margin:5px 0px 5px 0px; list-style: none; color:red;}
 div#purchaseConversion form .form_errors {color:red; margin-bottom:10px;}
 
+
+/* Payment Billing Form */
+div#paymentBilling { }
+div#paymentBilling form div label {display: inline-block; width: 120px; margin:5px 0px 5px 0px;}
+div#paymentBilling form div input {display: inline-block; width: 150px; margin:5px 0px 5px 0px;}
+div#paymentBilling form div select {display: inline-block; width: 155px; margin:5px 0px 5px 0px;}
+div#paymentBilling form div ul.errors {display: inline-block; width: 150px; margin:5px 0px 5px 0px;}
+div#paymentBilling form div ul.errors li {display: inline-block; margin:5px 0px 5px 0px; list-style: none; color:red;}
+div#paymentBilling form .form_errors {color:red; margin-bottom:10px;}
+div#paymentBilling .billing { font-weight: bold;}
+
+
+#paymentOverview { margin-bottom: 40px;}
+#paymentOverview th, #paymentOverview td { padding: 0px 40px 0px 0px}

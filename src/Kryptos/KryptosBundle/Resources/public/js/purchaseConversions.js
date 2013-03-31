@@ -61,6 +61,11 @@ $(document).ready(function() {
 	        			}
 	        			else {
 	        				$("#PurchaseConversionForm_errors").text(result['body']['error']);
+	        				// under an error scenario we may still return  the cost and vat. i.e when total is less than £0.01
+	        				if (result['body']['cost'] !== undefined && result['body']['vat'] !== undefined) {
+		        				$("#PurchaseConversionsForm_cost").val(result['body']['cost']);
+		        				$("#PurchaseConversionsForm_vat").val(result['body']['vat']);
+		        			}
 	        			}
 	                }
 	        	});

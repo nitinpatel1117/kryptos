@@ -1,0 +1,7 @@
+parameters:
+#    kryptos_sage.example.class: Kryptos\SageBundle\Example
+
+services:
+#    kryptos_sage.example:
+#        class: %kryptos_sage.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
