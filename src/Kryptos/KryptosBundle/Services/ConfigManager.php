@@ -27,6 +27,12 @@ class ConfigManager
 
     	return $sigin_disabled;
     }
+    
+    
+    public function signinRequired()
+    {
+    	return (!$this->siginDisabled());
+    }
 
 
     public function get($name)

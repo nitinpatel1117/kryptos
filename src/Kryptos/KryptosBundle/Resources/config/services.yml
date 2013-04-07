@@ -5,9 +5,13 @@ parameters:
     mongo_connection.class:              Kryptos\KryptosBundle\Services\MongoConnection
     user_manager.class:                  Kryptos\KryptosBundle\Model\Manager\UserManager
     sage_notification_manager.class:     Kryptos\KryptosBundle\Model\Manager\SageNotificationManager
+    file_manager.class:                  Kryptos\KryptosBundle\Model\Manager\FileManager
+    file_error_manager.class:            Kryptos\KryptosBundle\Model\Manager\FileErrorManager
+    bank_account_manager.class:          Kryptos\KryptosBundle\Model\Manager\BankAccountManager
     unique_username_validator.class:     Kryptos\KryptosBundle\Validator\Constraints\UniqueUsernameValidator
     unique_email_validator.class:        Kryptos\KryptosBundle\Validator\Constraints\UniqueEmailValidator
     login_validator.class:               Kryptos\KryptosBundle\Lib\LoginValidator
+    batch_insert_file.class:             Kryptos\KryptosBundle\Lib\BatchInsertFile
 
 
 services:
@@ -31,6 +35,19 @@ services:
     sage_notification_manager:
         class:          %sage_notification_manager.class%
         arguments:      [@mongo_connection]
+
+    file_manager:
+        class:          %file_manager.class%
+        arguments:      [@mongo_connection]
+
+    file_error_manager:
+        class:          %file_error_manager.class%
+        arguments:      [@mongo_connection]
+
+    bank_account_manager:
+        class:          %bank_account_manager.class%
+        arguments:      [@mongo_connection]
+
 
     unique_username_validator:
         class:          %unique_username_validator.class%
@@ -58,4 +75,7 @@ services:
     login_validator:
         class:          %login_validator.class%
         arguments:      [@session.handler.memcache, @session, %session_memcache_expire%]
-        
+
+    batch_insert_file:
+        class:          %batch_insert_file.class%
+        arguments:      [@config_manager, @file_manager, @bank_account_manager, @file_error_manager]

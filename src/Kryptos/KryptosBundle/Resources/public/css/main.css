@@ -11,6 +11,11 @@ section.blueHeader h1,
 section.blueHeader h2 { background-color: #4F81BD; color: white; margin-top:0px; padding:7px;  font-size:1.2em;}
 section.blueHeader section.innerWrap { padding:20px;}
 
+/* sub header - e.g. File Status */
+section.sub-blueHeader { margin-top: 40px; }
+section.sub-blueHeader h2 { background-color: #4F81BD; color: white; margin-top:0px; padding:7px;  font-size:1.2em; margin-bottom:0px; border: solid 1px black; border-bottom: none;}
+section.sub-blueHeader section.innerWrap { padding:20px;}
+
 
 /* Footer */
 header {margin:0px 0px 60px 0px}
@@ -63,3 +68,21 @@ div#paymentBilling .billing { font-weight: bold;}
 
 #paymentOverview { margin-bottom: 40px;}
 #paymentOverview th, #paymentOverview td { padding: 0px 40px 0px 0px}
+
+
+/* Convert Batch File Form */
+div#convertBatch { }
+div#convertBatch form div label {display: inline-block; width: 120px; margin:5px 0px 5px 0px;}
+div#convertBatch form div input {display: inline-block; width: 150px; margin:5px 0px 5px 0px;}
+div#convertBatch form div ul.errors {display: inline-block; width: 150px; margin:5px 0px 5px 0px;}
+div#convertBatch form div ul.errors li {display: inline-block; margin:5px 0px 5px 0px; list-style: none; color:red;}
+div#convertBatch form .form_errors {color:red; margin-bottom:10px;}
+div#convertBatch form .form_success {margin-bottom:10px;}
+
+
+
+/*** Tables ***/
+
+/* File Status */
+table#fileStatus {width: 100%; border-collapse:collapse;}
+table#fileStatus td, table#fileStatus th {border:solid 1px black; padding: 3px}

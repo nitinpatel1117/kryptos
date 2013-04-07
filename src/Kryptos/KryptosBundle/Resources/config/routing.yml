@@ -35,8 +35,6 @@ password_reset_question:
     defaults: { _controller: KryptosKryptosBundle:Default:resetPasswordQuestion }
     
     
-    
-    
 purchase_conversions:
     pattern:  /purchase/conversions
     defaults: { _controller: KryptosKryptosBundle:PurchaseConversions:index }
@@ -44,3 +42,17 @@ purchase_conversions:
 purchase_conversions_calc_rate:
     pattern:  /purchase/conversions/calculate/rates/{conversionAmount}
     defaults: { _controller: KryptosKryptosBundle:PurchaseConversions:calculateRate }
+
+
+convert_batch:
+    pattern:  /convert/batch
+    defaults: { _controller: KryptosKryptosBundle:ConvertBatch:index }
+
+convert_single:
+    pattern:  /convert/single
+    defaults: { _controller: KryptosKryptosBundle:ConvertBatch:index }
+
+
+file_status_ajax:
+    pattern:  /file/status/ajax
+    defaults: { _controller: KryptosKryptosBundle:FileStatus:index }

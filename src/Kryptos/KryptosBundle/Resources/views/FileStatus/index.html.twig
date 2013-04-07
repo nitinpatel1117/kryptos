@@ -1,0 +1,19 @@
+	<section class="sub-blueHeader">
+		<h2>{{ location }}</h2>
+		<table id='fileStatus' cellspacing='0' cellpadding='0'>
+			<tr>
+				<th>Date/Time</th>
+				<th>Filename</th>
+				<th>Status</th>
+				<th>Download</th>
+			</tr>
+		 {% for file in files %}
+			 <tr>
+				<td>{{ file.datetime|e }}</td>
+				<td>{{ file.filename|e }}</td>
+				<td>{{ file.status|e }}</td>
+				<td>{{ file.id|e }}</td>
+			</tr>
+		{% endfor %}
+		</table>
+	</section>

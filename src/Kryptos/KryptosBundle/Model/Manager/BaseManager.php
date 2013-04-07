@@ -31,15 +31,25 @@ class BaseManager
 	{
 		return $this->getMongoCollection()->insert($item, array("w" => 1, "j" => true));
 	}
+	
+	public function batchIsert($items)
+	{
+		return $this->getMongoCollection()->batchInsert($items, array("w" => 1, "j" => true));
+	}
 
 	public function save($item)
 	{
 		return $this->getMongoCollection()->save($item, array("w" => 1, "j" => true));
 	}
 	
-	public function findOne($item)
+	public function findOne($query)
 	{
-		return $this->getMongoCollection()->findOne($item);
+		return $this->getMongoCollection()->findOne($query);
+	}
+	
+	public function find($query, $fields = array())
+	{
+		return $this->getMongoCollection()->find($query, $fields);
 	}
 
 }

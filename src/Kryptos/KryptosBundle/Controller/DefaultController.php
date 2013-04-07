@@ -200,7 +200,8 @@ class DefaultController extends Controller
     	return $this->render('KryptosKryptosBundle:Default:welcome.html.twig', array(
     		'location' 					=> 'Welcome page',
     		'purchase_conversion_url' 	=> $this->generateUrl('purchase_conversions'),
-    		'convert_to_sepa_url' 		=> '#',
+    		'convert_to_sepa_url_batch' => $this->generateUrl('convert_batch'),
+    		'convert_to_sepa_url_single'=> '#',
     	));
     }
 
