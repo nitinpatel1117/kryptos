@@ -80,9 +80,18 @@ div#convertBatch form .form_errors {color:red; margin-bottom:10px;}
 div#convertBatch form .form_success {margin-bottom:10px;}
 
 
+/* Summary Balance */
+section#balance p {text-align:right; }
+section#balance p span {display:inline-block; width:50px;}
+
+
 
 /*** Tables ***/
 
 /* File Status */
 table#fileStatus {width: 100%; border-collapse:collapse;}
 table#fileStatus td, table#fileStatus th {border:solid 1px black; padding: 3px}
+
+/* Account History */
+table#accountHistory {width: 100%; border-collapse:collapse;}
+table#accountHistory td, table#accountHistory th {border:solid 1px black; padding: 3px}

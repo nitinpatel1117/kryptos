@@ -140,10 +140,10 @@ class UserManager extends BaseManager
     */
 
 
-	public function getUserByEmail($email)
+	public function getUserByEmail($email, array $fields = array())
     {
     	$item = array('email' => $email);
-    	return parent::findOne($item);
+    	return parent::findOne($item, $fields);
     }
     
     public function getUserById($id)

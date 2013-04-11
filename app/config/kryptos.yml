@@ -20,13 +20,15 @@ parameters:
   session_memcache_expire:             1200
   
   purchase_conversions:
-    # conversionRate is the amount that each conversion costs in pounds (or other currency). a value of less than 1 means each is less than pound 1
+    # conversionRate is the amount that each conversion costs in pounds (or other currency). a value of less than 1 means each is less than 1 pound
     # rate of 1 means 1 pound gets you 1 conversion; rate of 0.5 means 1 pound gets you 2 conversions; rate of 2 means 2 pounds gets you 1 conversion;
     conversion_rate: 0.5
     # a vat_rate as percentage, range from [0 - 100]
     vat_rate: 20
     
-    
+  credits:  0    # the number of conversions that all users start on, when signin enabled
+
+
   sagepay:
     PaymentUrl:              https://test.sagepay.com/Simulator/VSPServerGateway.asp?Service=VendorRegisterTx
     VPSProtocol:             2.23   

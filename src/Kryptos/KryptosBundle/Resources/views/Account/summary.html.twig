@@ -1,0 +1,20 @@
+{% extends "KryptosKryptosBundle::layout.html.twig" %}
+
+
+{% block content %}
+	
+	<section class="blueHeader">
+		<h1>{{ location }}</h1>
+		<section class="innerWrap">
+			<div id="accountSummary">
+			    <section id='balance'>
+			    	{% render 'KryptosKryptosBundle:Account:balance'  %}
+			    </section>
+			    <section id='history'>
+			    	{% render 'KryptosKryptosBundle:Account:history'  %}
+			    </section>
+			</div>
+		</section>
+	</section>
+
+{% endblock %}

@@ -56,3 +56,16 @@ convert_single:
 file_status_ajax:
     pattern:  /file/status/ajax
     defaults: { _controller: KryptosKryptosBundle:FileStatus:index }
+
+
+account_summary:
+    pattern:  /account/summary
+    defaults: { _controller: KryptosKryptosBundle:Account:summary }
+
+account_balance:
+    pattern:  /account/balance
+    defaults: { _controller: KryptosKryptosBundle:Account:balance }
+
+account_history:
+    pattern:  /account/histoy
+    defaults: { _controller: KryptosKryptosBundle:Account:history }

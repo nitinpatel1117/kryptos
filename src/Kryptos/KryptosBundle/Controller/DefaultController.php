@@ -194,12 +194,11 @@ class DefaultController extends Controller
     	if (!$config->siginDisabled() && !$session->isLoginValid()) {
     		return $this->redirect($this->generateUrl('homepage'));
     	}
-    	
-    	
 
     	return $this->render('KryptosKryptosBundle:Default:welcome.html.twig', array(
     		'location' 					=> 'Welcome page',
     		'purchase_conversion_url' 	=> $this->generateUrl('purchase_conversions'),
+    		'account_summary_url' 		=> $this->generateUrl('account_summary'),
     		'convert_to_sepa_url_batch' => $this->generateUrl('convert_batch'),
     		'convert_to_sepa_url_single'=> '#',
     	));

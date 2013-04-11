@@ -35,7 +35,7 @@ class SageRegisterPayment
 		}
 		
 		if (!isset($user['credits'])) {
-			$user['credits'] = 0;
+			$user['credits'] = $this->config_manager->get('credits');
 		}
 		
 		$dataForUser = $data;

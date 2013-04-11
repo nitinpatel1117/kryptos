@@ -4,7 +4,6 @@ namespace Kryptos\KryptosBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Session\Session;
 
 
 class FileStatusController extends Controller
@@ -42,7 +41,7 @@ class FileStatusController extends Controller
     	while ($result->hasNext()) {
     		$item = $result->getNext();
 
-    		$date->setTimestamp($item['upload_time']->sec);    		
+    		$date->setTimestamp($item['upload_time']->sec);
     		$file = array(
     			'id' 		=> $item['_id']->__toString(),
     			'datetime' 	=> $date->format('d/m/Y H:i:s'),

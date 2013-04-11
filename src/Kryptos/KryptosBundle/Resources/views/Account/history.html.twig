@@ -1,0 +1,25 @@
+	<section class="sub-blueHeader">
+		<h2>{{ location }}</h2>
+		<table id='accountHistory' cellspacing='0' cellpadding='0'>
+		<thead>
+			<tr>
+				<th>Date/Time</th>
+				<th>Card Type</th>
+				<th>Cost Price ({{ currency }})</th>
+				<th>Conversions brought</th>
+				<th>Conversions before</th>
+				<th>Conversions after</th>
+			</tr>
+			</thead>
+		 {% for payment in payments %}
+			 <tr>
+				<td>{{ payment.datetime|e }}</td>
+				<td>{{ payment.cardType|e }}</td>
+				<td>{{ payment.cost|e }}</td>
+				<td>{{ payment.credits|e }}</td>
+				<td>{{ payment.creditsOld|e }}</td>
+				<td>{{ payment.creditsNew|e }}</td>
+			</tr>
+		{% endfor %}
+		</table>
+	</section>

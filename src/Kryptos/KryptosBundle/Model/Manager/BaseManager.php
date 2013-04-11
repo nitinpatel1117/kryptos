@@ -42,12 +42,12 @@ class BaseManager
 		return $this->getMongoCollection()->save($item, array("w" => 1, "j" => true));
 	}
 	
-	public function findOne($query)
+	public function findOne($query, array $fields = array())
 	{
-		return $this->getMongoCollection()->findOne($query);
+		return $this->getMongoCollection()->findOne($query, $fields);
 	}
 	
-	public function find($query, $fields = array())
+	public function find($query, array $fields = array())
 	{
 		return $this->getMongoCollection()->find($query, $fields);
 	}

@@ -8,6 +8,9 @@
 	{% endif %}
 
 	{% if logout == true %}
-		<a href="{{ path('logout') }}">logout</a><br>
+		<a href="{{ path('logout') }}">logout</a> &nbsp; | &nbsp; 
+		<a href="{{ path('welcome') }}">welcome</a>
+		
+		<br>
 	{% endif %}
 {% endif %}

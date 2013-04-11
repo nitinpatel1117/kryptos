@@ -22,7 +22,6 @@ class SageController extends Controller
 		'CardType',
 		'Last4Digits',
 		'VPSSignature',
-			'CAVV',
 	);
 		
 	protected $optionalKeys = array(
@@ -30,7 +29,7 @@ class SageController extends Controller
 		'PayerStatus',			// received if we are handling ebay transaction
 		'TxAuthNo',				// received when status OK
 		'StatusDetail',			// received when status not OK
-		#'CAVV',					// received when 3DSecureStatus field is OK
+		'CAVV',					// received when 3DSecureStatus field is OK
 	);
 
 	protected $VendorTxCode;
@@ -137,6 +136,7 @@ class SageController extends Controller
 		$user['payment'][$paymentIndex]['completed'] 	= new \MongoDate();
 		$user['payment'][$paymentIndex]['action']	 	= 'complete';
 		$user['payment'][$paymentIndex]['status']	 	= $Status;
+		$user['payment'][$paymentIndex]['cardType']	 	= $CardType;
 		$user['currentTrans'] 							= array();
 		
 			
