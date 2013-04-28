@@ -54,12 +54,12 @@ class RegistrationForm extends AbstractType
 			)
 		));
 
-	/*	$builder->add('captcha', 'captcha', array(
+		$builder->add('captcha', 'captcha', array(
 			'invalid_message' => 'Incorrect code entered.',
 			'as_url' => true,
 			'reload' => true,
 			'label' => 'Word Verification',
-		));*/
+		));
 
 		$builder->add('acceptTerms', 'checkbox', array(
 			'label' => 'I agree to the Kryptos Terms of Service and Privacy Policy',

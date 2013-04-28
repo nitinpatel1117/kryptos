@@ -183,4 +183,27 @@ class UserManager extends BaseManager
     	$item = array('payment.VendorTxCode' => $VendorTxCode);
     	return parent::findOne($item);
     }
+    
+    
+    
+    public function registerCreditsUsed($userId, $fileId, $originalCredits, $credits)
+    {
+    	$creditsUsed = $originalCredits - $credits;
+
+    	$query = array('_id' => new \MongoId($userId));
+    	
+    	$update = array(
+    		'$push' => array(
+    			'conversionHistory' => array(
+    				'creditsUsed' 	=> $creditsUsed,
+    				'time'			=> new \MongoDate(),
+    				'type'			=> 'batch',
+    				'file'			=> $fileId,
+    			)
+    		), 
+    		'$inc' => array ('credits' => ($creditsUsed * -1 ) ),
+    	);
+
+    	return parent::update($query, $update);
+    }
 }

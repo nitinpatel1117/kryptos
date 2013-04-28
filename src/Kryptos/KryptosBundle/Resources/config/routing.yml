@@ -47,6 +47,10 @@ purchase_conversions_calc_rate:
 convert_batch:
     pattern:  /convert/batch
     defaults: { _controller: KryptosKryptosBundle:ConvertBatch:index }
+    
+convert_batch_download:
+    pattern:  /convert/batch/download/{fileId}
+    defaults: { _controller: KryptosKryptosBundle:ConvertBatch:download, fileId: null }
 
 convert_single:
     pattern:  /convert/single

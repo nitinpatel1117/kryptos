@@ -41,3 +41,11 @@ parameters:
     RedirectURLPass:         sage_redirect_pass
     RedirectURLFail:         sage_redirect_fail
     
+  batch_convert:
+    # 5 mins - used by each job that reads the queue - if we are uploading files and reading contents to mongodb 
+    #locktime: 300
+    locktime: 630
+    ready_location:          'batch/ready/'
+    converted_location:      'batch/converted/'
+    processed_location:      'batch/processed/'
+    stats_location:          'batch/stats/'

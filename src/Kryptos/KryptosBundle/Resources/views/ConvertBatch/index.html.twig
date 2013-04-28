@@ -8,6 +8,12 @@
 		<section class="innerWrap">
 			<div id="convertBatch">
 				<form action="{{ path('convert_batch') }}" method="post" {{ form_enctype(form) }}>
+					{% if conversionsRestricted == true %}
+					<div>
+						{{ userNote }}
+					</div>
+					{% endif %}
+				
 			    	<div id="ConvertBatchForm">
 			    		<div id="ConvertBatchForm_errors" class="form_errors">
 			    			{{ form_errors(form) }}

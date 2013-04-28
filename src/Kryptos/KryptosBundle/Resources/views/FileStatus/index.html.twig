@@ -12,7 +12,11 @@
 				<td>{{ file.datetime|e }}</td>
 				<td>{{ file.filename|e }}</td>
 				<td>{{ file.status|e }}</td>
-				<td>{{ file.id|e }}</td>
+				<td>
+					{% if true == file.downloadable %}
+						<a class="batch_download_link" href="{{ downloadLink }}/{{ file.id|e }}">{{ file.filename|e }}</a>
+					{% endif %}
+				</td>
 			</tr>
 		{% endfor %}
 		</table>

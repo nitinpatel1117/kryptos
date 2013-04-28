@@ -43,18 +43,20 @@ class FileStatusController extends Controller
 
     		$date->setTimestamp($item['upload_time']->sec);
     		$file = array(
-    			'id' 		=> $item['_id']->__toString(),
-    			'datetime' 	=> $date->format('d/m/Y H:i:s'),
-    			'filename' 	=> $item['originalFilename'],
-    			'status' 	=> $item['status'],
+    			'id' 			=> $item['_id']->__toString(),
+    			'datetime' 		=> $date->format('d/m/Y H:i:s'),
+    			'filename' 		=> $item['originalFilename'],
+    			'status' 		=> $item['status'],
+    			'downloadable'	=> ('complete' == $item['status']) ? true : false,
     		);
     		
     		$files[] = $file;
     	}
 
         return $this->render('KryptosKryptosBundle:FileStatus:index.html.twig', array(
-        	'location' 	=> 'File status',
-        	'files' 	=> $files,
+        	'location' 		=> 'File status',
+        	'files' 		=> $files,
+        	'downloadLink' 	=> $this->generateUrl('convert_batch_download'),
         ));
     }
     

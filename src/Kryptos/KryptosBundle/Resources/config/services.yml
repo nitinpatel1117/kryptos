@@ -12,6 +12,7 @@ parameters:
     unique_email_validator.class:        Kryptos\KryptosBundle\Validator\Constraints\UniqueEmailValidator
     login_validator.class:               Kryptos\KryptosBundle\Lib\LoginValidator
     batch_insert_file.class:             Kryptos\KryptosBundle\Lib\BatchInsertFile
+    batch_upload_file.class:             Kryptos\KryptosBundle\Lib\BatchUploadFile
 
 
 services:
@@ -79,3 +80,8 @@ services:
     batch_insert_file:
         class:          %batch_insert_file.class%
         arguments:      [@config_manager, @file_manager, @bank_account_manager, @file_error_manager]
+
+    batch_upload_file:
+        class:          %batch_upload_file.class%
+        arguments:      [@config_manager, @file_manager, @bank_account_manager, @file_error_manager, @user_manager]
+        
