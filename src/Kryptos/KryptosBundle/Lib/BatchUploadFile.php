@@ -37,7 +37,7 @@ class BatchUploadFile
 		'bban2',
 		'bban3',
 		'bban4',
-		'bban5',
+	#	'bban5',
 		'iban',
 		'bic',
 	);
@@ -108,9 +108,12 @@ class BatchUploadFile
 			chmod($readyLocation, 0777);
 			$fileOutReady = fopen($readyLocation, 'w');
 			
-			// add first line to output, it contains column headers
+			// add first line to output, it should be empty line
+			fputcsv($fileOutReady, array());
+			
+			// add second line to output, it contains column headers
 			$data = $splFileObject->fgetcsv();
-			array_unshift($data, '#ID');
+			$data = $this->makeFileHeaderData($data);
 			fputcsv($fileOutReady, $data);
 			
 			// get credits for the user
@@ -122,8 +125,12 @@ class BatchUploadFile
 				$data = $splFileObject->fgetcsv();
 				if (is_array($data) && 3 < count($data)  && count($data) < count($this->keys)+1) {			// count is between 4 and 8
 					
+					$this->writeCsvData($fileOutReady, $data, $lineCount);
+					/*
 					array_unshift($data, $lineCount);
+					$data = $this->makeCsvData($data);
 					fputcsv($fileOutReady, $data);
+					*/
 					
 					if ($additionalData['conversionsRestricted']) {
 						$credits--;
@@ -153,6 +160,58 @@ class BatchUploadFile
 				$this->user_manager->registerCreditsUsed($fileData['userId'], $fileData['_id'], $additionalData['credits'], $credits);
 			}
 		}
+	}
+	
+	
+	/**
+	 * Function makes the column headers.
+	 * 
+	 * The headers should contain no spaces in the column names.
+	 * add #ID as the first column 
+	 * 
+	 * @param array $data
+	 * @return aray
+	 */
+	public function makeFileHeaderData($data)
+	{
+		for ($x=0, $count=count($data); $x < $count; $x++) {
+			$data[$x] = str_replace(' ', '', $data[$x]);
+		}
+		array_unshift($data, '#ID');
+		
+		return $data;
+	}
+	
+	
+	
+	public function writeCsvData($fileOutReady, $data, $lineCount)
+	{
+		$data = $this->makeCsvData($data);
+		if (!empty($data)) {
+			array_unshift($data, $lineCount);
+			fputcsv($fileOutReady, $data);
+		}
+	}
+	
+	
+	/**
+	 * Function makes sure that the csv file is always set to a preset size
+	 * 
+	 * @param array $data
+	 * @return array
+	 */
+	public function makeCsvData($data)
+	{
+		// TODO: This is hard coded for now. The csv output we produce must contain 8 columns of data
+		$columns = 8;
+		
+		$data = array_pad($data, $columns, '');
+		
+		if ($columns < count($data)) {
+			$data = array_slice($data, 0, $columns);
+		}
+		
+		return $data;
 	}
 	
 	

@@ -126,6 +126,15 @@ class BatchProcessor
 		return $this->failedItems;
 	}
 	
+	public function setFormula($formula) {
+		if (is_object($formula)) {
+			$this->formula = $formula;
+		}
+	}
+	public function getFormula() {
+		return $this->formula;
+	}
+	
 	public function setLogger($logger) {
 		$this->logger = $logger;
 	}
@@ -288,7 +297,21 @@ class BatchProcessor
 			
 			foreach($queueItems as $queueItem)
 			{
-				$queueItem['status'] = 'complete';
+				if (isset($queueItem['error_on_processing'])) {
+					if (!isset($queueItem['error_count'])) {
+						$queueItem['error_count'] = 0;
+					}
+					$queueItem['error_count']++;
+					$unixTime = $this->calculateNextReadTime($queueItem['error_count']);
+					
+					$queueItem['locktime'] = new \MongoDate($unixTime);
+					$queueItem['lockname'] = '';
+					
+					unset($queueItem['error_on_processing']);
+				}
+				else {
+					$queueItem['status'] = 'complete';
+				}
 				
 				try {
 					$fileManager->save($queueItem);
@@ -319,5 +342,37 @@ class BatchProcessor
 		ini_set('memory_limit', '1024M');
 		ini_set('max_execution_time', 0);
 	}
-
+	
+	
+	/**
+	 * Function return a timestamp, which is calculated from a formula for a given item count integer
+	 *
+	 * @param Integer $itemFailedCount		An integer representing the number of times an item has failed to be processed
+	 * @return Integer						A time in the future returned as a unix timestamp
+	 * @author Nitin Patel
+	 */
+	public function calculateNextReadTime($itemFailedCount)
+	{
+		if (is_null($this->getFormula())) {
+			$this->setFormula($this->makeFormula());
+		}
+		$formula = $this->getFormula();
+	
+		return $formula($itemFailedCount);
+	}
+	
+	
+	/**
+	 * Function retrieves a formula, which will be used to calculate an unix timestamp. The timestamp is of a time in the future.
+	 *
+	 * @return Anonymous function				The formula that we be used to calculate a timestamp
+	 * @author Nitin Patel
+	 */
+	protected function makeFormula()
+	{
+		// new formula for time : $time = $retry*(pow(1.6,$retry))
+		return function ($itemFailedCount) {
+			return time()+ round( $itemFailedCount * (pow (1.6, $itemFailedCount)) * 60 );
+		};
+	}
 }

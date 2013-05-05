@@ -44,8 +44,13 @@ parameters:
   batch_convert:
     # 5 mins - used by each job that reads the queue - if we are uploading files and reading contents to mongodb 
     #locktime: 300
-    locktime: 630
+    # locktime: 630
+    locktime: 15
     ready_location:          'batch/ready/'
     converted_location:      'batch/converted/'
     processed_location:      'batch/processed/'
     stats_location:          'batch/stats/'
+
+  bankwizard:
+    #batch_command:           'java --cp /var/www/bankwizard/FileScanningUtilityFinalV1.jar:bwint10.jar DataScanMain.Datascan "%s" "%s" "%s"'
+    batch_command:           'java --cp /var/www/bankwizard/FileScanningUtilityFinalV1.jar:/var/www/bankwizard/bwint10.jar DataScanMain.Datascan "%s" "%s" "%s"'
