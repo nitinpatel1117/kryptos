@@ -200,7 +200,7 @@ class DefaultController extends Controller
     		'purchase_conversion_url' 	=> $this->generateUrl('purchase_conversions'),
     		'account_summary_url' 		=> $this->generateUrl('account_summary'),
     		'convert_to_sepa_url_batch' => $this->generateUrl('convert_batch'),
-    		'convert_to_sepa_url_single'=> '#',
+    		'convert_to_sepa_url_single'=> $this->generateUrl('convert_single'),
     	));
     }
 

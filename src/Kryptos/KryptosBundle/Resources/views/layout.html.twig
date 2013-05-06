@@ -2,13 +2,17 @@
 
 {% block head %}
 	<meta charset="UTF-8" />
-    <title>{% block title %}Welcome!{% endblock %}</title>
+    <title>{% block title %}Kryptos{% endblock %}</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1" />
 	<meta name="language" content="en" />
 	<link rel="stylesheet" href="/bundles/kryptoskryptos/css/main.css" type="text/css" />
 	
 	<!-- <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" /> -->
+	
+	<!--<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" />-->
+	<link href="/bundles/kryptoskryptos/css/bootstrap/bootstrap.css" rel="stylesheet" />
+	<!--<link href="/bundles/kryptoskryptos/css/bootstrap/bootstrap.min.css" rel="stylesheet" />-->
 {% endblock %}
 
 {% block body %}
@@ -29,4 +33,14 @@
 <script src="/bundles/kryptoskryptos/js/jquery-1.9.1.min.js"></script>
 <script src="/bundles/kryptoskryptos/js/purchaseConversions.js"></script>
 <script src="/bundles/kryptoskryptos/js/fileStatus.js"></script>
+<script src="/bundles/kryptoskryptos/js/convertSingle.js"></script>
+
+
+<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("input[rel=tooltip]").tooltip({ trigger: 'hover' ,animation: 'true' , placement:'right'});
+});
+</script>
 {% endblock %}

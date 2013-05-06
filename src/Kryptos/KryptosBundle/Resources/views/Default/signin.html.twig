@@ -6,32 +6,38 @@
 		<h1>{{ location }}</h1>
 		<section class="innerWrap">
 			<div id="signin">
-				<form action="{{ path('signin') }}" method="post" {{ form_enctype(form) }}>
+				<form action="{{ path('signin') }}" method="post" {{ form_enctype(form) }} class="form-horizontal">
 		
-			    	<div id="SigninForm">
-			    		<div class="form_errors">
-			    			{{ form_errors(form) }}
-			    		</div>
-				    	<div class="form_row">
-						    {{ form_label(form.email) }}
-						    {{ form_widget(form.email) }}
-						    {{ form_errors(form.email) }}
-						</div>
-						<div class="form_row">
-						    {{ form_label(form.password) }}
-						    {{ form_widget(form.password) }}
-						    {{ form_errors(form.password) }}
-						</div>
-						<div class="form_row staySignedIn">
-						    {{ form_label(form.staySignedIn) }}
-						    {{ form_widget(form.staySignedIn) }}
-						    {{ form_errors(form.staySignedIn) }}
-						</div>
+			    	<div id="SigninForm" class="control-group">
+			    		
+						
+						{{ form_errors(form.email) }}
+						{{ form_errors(form.password) }}
+						{{ form_errors(form) }}
+
+						{{ form_row(form.email) }}
+						{{ form_row(form.password) }}
 						
 						{{ form_rest(form) }}
-				
-				    	<input type="submit" value="Sign in" />
+					</div>
+					<div class="control-group">
+						<div class="controls">
+				    		<button class="btn btn-custom-block" type="submit">Login</button>
+				   		</div>
 			    	</div>
+			    	
+			    	<div class="control-group">
+						<div class="controls">
+							<a href="#">Forgotten your password? </a>
+						</div>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<a href='{{ path('register') }}'>
+							<button class="btn btn-custom-block" type="button">Register</button>
+							</a>
+						</div>
+					</div>
 				</form>
 			</div>
 		</section>

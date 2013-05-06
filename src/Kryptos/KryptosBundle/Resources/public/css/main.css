@@ -29,13 +29,15 @@ footer {margin:50px 0px 0px 0px}
 
 /* Registration Form */
 div#register { }
-div#register form div div.form_row label {display: inline-block; width: 120px; margin:5px 0px 5px 0px;}
+div#register form div div.accept_terms label {display: inline-block; margin:0px 0px 0px 10px;}
 div#register form div div.form_row input {display: inline-block; width: 200px; margin:5px 0px 5px 0px;}
 div#register form div ul.errors {display: inline-block; width: 200px; margin:5px 0px 5px 0px;}
 div#register form div ul.errors li {display: inline-block; margin:5px 0px 5px 0px; list-style: none; color:red;}
-div#register form div #RegistrationForm_captcha {display: block; margin-left: 120px;}
+div#register form div #RegistrationForm_captcha {display: block;}
+div#register form div #RegistrationForm_acceptTerms {float:left;}
+/*
 div#register form div #RegistrationForm_acceptTerms {float:left; width:40px;}
-
+*/
 
 /* Signin Form */
 div#signin { }

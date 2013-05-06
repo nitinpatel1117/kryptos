@@ -1,0 +1,91 @@
+{% extends "KryptosKryptosBundle::layout.html.twig" %}
+
+
+{% block content %}
+	
+	<section class="blueHeader">
+		<h1>{{ location }}</h1>
+		<section class="innerWrap">
+			<div id="convertSingle">
+				<form novalidate action="{{ path('convert_single') }}" method="post" {{ form_enctype(form) }}>
+					{% if conversionsRestricted == true %}
+					<div>
+						{{ userNote }}
+					</div>
+					{% endif %}
+					
+					<script>
+						var countrySelected = '';
+						{% if countrySelected %}
+							countrySelected = '{{ countrySelected }}';
+						{% endif %}
+					</script>
+					
+					{% if bbanMappings %}
+					<script>
+						var bbanMap = new Array();
+						
+						{% for code, mappings in bbanMappings %}
+							bbanMap['{{ code }}'] = new Array();
+					        
+							{% for name, text in mappings %}
+								bbanMap['{{ code }}']['{{ name }}'] = '{{ text }}';
+					        {% endfor %}
+					    {% endfor %}
+					</script>
+					{% endif %}
+					
+					
+				
+			    	<div id="ConvertSingleForm">
+			    		<div id="ConvertSingleForm_errors" class="form_errors">
+			    			{{ form_errors(form) }}
+			    		</div>
+			    		
+				    	<div class="form_row country">
+						    {{ form_label(form.country) }}
+						    {{ form_widget(form.country) }}
+						    {{ form_errors(form.country) }}
+						</div>
+						
+						<div class="form_row bban1">
+						    {{ form_label(form.bban1) }}
+						    {{ form_widget(form.bban1) }}
+						    {{ form_errors(form.bban1) }}
+						</div>
+						
+						<div class="form_row bban2">
+						    {{ form_label(form.bban2) }}
+						    {{ form_widget(form.bban2) }}
+						    {{ form_errors(form.bban2) }}
+						</div>
+						
+						<div class="form_row bban3">
+						    {{ form_label(form.bban3) }}
+						    {{ form_widget(form.bban3) }}
+						    {{ form_errors(form.bban3) }}
+						</div>
+						
+						<div class="form_row bban4">
+						    {{ form_label(form.bban4) }}
+						    {{ form_widget(form.bban4) }}
+						    {{ form_errors(form.bban4) }}
+						</div>
+						
+						<div class="form_row bban5">
+						    {{ form_label(form.bban5) }}
+						    {{ form_widget(form.bban5) }}
+						    {{ form_errors(form.bban5) }}
+						</div>
+						
+						{{ form_rest(form) }}
+						<div class="form_row submit">
+							<input id="ConvertSingleForm_btn_submit" type="submit" value="{{ btn_submit }}" />
+						</div>
+			    	</div>
+			    </form>
+			</div>
+		</section>
+	</section>
+
+{% endblock %}

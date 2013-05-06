@@ -54,7 +54,7 @@ convert_batch_download:
 
 convert_single:
     pattern:  /convert/single
-    defaults: { _controller: KryptosKryptosBundle:ConvertBatch:index }
+    defaults: { _controller: KryptosKryptosBundle:ConvertSingle:index }
 
 
 file_status_ajax:

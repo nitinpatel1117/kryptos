@@ -10,22 +10,33 @@ class SigninForm extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-    	$builder->add('email', 		 'text', array(
+    	$builder->add('email', 'text', array(
     		'label'=>'Email',
-    		'required' => true
+    		'required' => true,
+    		'attr' => array(
+    			'placeholder'			=> 'Email',
+    			'rel'					=> 'tooltip',
+    			'data-original-title'	=> 'Please enter your Email.',
+    		),
     	));
 			
 		$builder->add('password', 'password', array(
 			'label' => 'Password',
 			'required' => true,
+			'attr' => array(
+				'placeholder'=>'Password',
+				'rel'					=> 'tooltip',
+				'data-original-title'	=> 'Please enter your Account Password.',
+			),
 		));
 		
 		
+		/*
 		$builder->add('staySignedIn', 'checkbox', array(
 			'label' => 'Stay signed in',
 			'required' => false,
 		));
-		
+		*/
 		
 		#$builder->add('key', 'csrf');
     }

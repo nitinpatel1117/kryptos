@@ -7,10 +7,37 @@
 		<h1>{{ location }}</h1>
 		<section class="innerWrap">
 			<div id="register">
-				<form action="{{ path('register') }}" method="post" {{ form_enctype(form) }}>
-			    	{{ form_widget(form) }}
-			
-			    	<input type="submit" value="Register" />
+				<form action="{{ path('register') }}" method="post" {{ form_enctype(form) }} class="form-horizontal">
+				
+					<div class="control-group">
+							{{ form_row(form.firstName) }}
+							{{ form_row(form.lastName) }}
+							{{ form_row(form.jobTitle) }}
+							{{ form_row(form.company) }}
+							{{ form_row(form.location) }}
+							{{ form_row(form.email) }}
+							<div></div>
+							{{ form_row(form.password) }}
+
+						<div class="controls form_row">
+							{{ form_widget(form.captcha) }}
+						</div>
+						{{ form_errors(form.captcha) }}
+						
+						<div class="controls accept_terms">
+							{{ form_widget(form.acceptTerms) }}
+							{{ form_label(form.acceptTerms) }}
+						</div>
+					    {{ form_errors(form.acceptTerms) }}
+						
+						{{ form_rest(form) }}
+					</div>
+
+			    	<div class="control-group">
+						<div class="controls">
+				    		<button class="btn btn-custom-block" type="submit">Register</button>
+				   		</div>
+			    	</div>
 				</form>
 			</div>
 		</section>
