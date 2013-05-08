@@ -17,3 +17,25 @@ Kryptos\KryptosBundle\Entity\Register:
             - Kryptos\KryptosBundle\Validator\Constraints\UniqueEmail: ~
         password:
             - NotBlank: ~
+        acceptTerms:
+            - "True": { message: "You must accept the terms and conditions in order to proceed." }
+
+
+Kryptos\KryptosBundle\Entity\Signin:
+    properties:
+        email:
+            - Email:
+                message: The email "{{ value }}" is not a valid email.
+                checkMX: true
+            - NotBlank: { message: "Please enter your email." }
+        password:
+            - NotBlank: { message: "Please enter your password." }
+
+
+Kryptos\KryptosBundle\Entity\ResetPasswordEmail:
+    properties:
+        email:
+            - Email:
+                message: The email "{{ value }}" is not a valid email.
+                checkMX: true
+            - NotBlank: { message: "Please enter your email." }

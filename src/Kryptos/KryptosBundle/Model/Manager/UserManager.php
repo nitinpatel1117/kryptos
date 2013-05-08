@@ -185,7 +185,6 @@ class UserManager extends BaseManager
     }
     
     
-    
     public function registerCreditsUsed($userId, $fileId, $originalCredits, $credits)
     {
     	$creditsUsed = $originalCredits - $credits;
@@ -205,5 +204,81 @@ class UserManager extends BaseManager
     	);
 
     	return parent::update($query, $update);
+    }
+    
+    
+    public function makePasswordResetDetails(array $userData)
+    {
+    	$encryption = new Encryption();
+    	
+    	$user = new User();
+    	$user->setEmail($userData['email']);
+    	list($code1, $code2) = $encryption->makeActivationCodes($user);
+    
+    	$passwordResetLink = sprintf('%s/%s/%s', $userData['_id']->{'$id'}, $code1, $code2);
+    
+    	$passReset = array();
+    	$passReset['code1'] = $code1;
+    	$passReset['code2'] = $code2;
+    	$passReset['link'] = $passwordResetLink;
+    	$passReset['sendDate'] = new \MongoDate();
+    	$passReset['resetDone'] = false;
+    	
+    	
+    	$query = array('_id' => $userData['_id']);
+    	$update = array(
+    		'$set' => array(
+    			'passwordReset' => $passReset,
+    		),
+    	);
+    	parent::update($query, $update);
+    
+    	return $passReset;
+    }
+    
+    
+    public function checkPasswordResetAccount($userId, $code1, $code2)
+    {
+    	$item = array(
+    		'_id' => new \MongoId($userId),
+    		'passwordReset.code1' => $code1,
+    		'passwordReset.code2' => $code2
+    	);
+    	$userItem = parent::findOne($item, array('_id', 'passwordReset'));
+    	 
+    	if (is_null($userItem)) {
+    		throw new \Exception('This password reset URL is NOT valid.');
+    	}
+    	 
+    	if (true == $userItem['passwordReset']['resetDone']) {
+    		throw new \Exception('Password has already been reset using this password reset URL.');
+    	}
+    
+    	if (false == $userItem['passwordReset']['resetDone']) {
+    		return array(true, $userItem);
+    	}
+    	 
+    	throw new \Exception('Password could not be reset.');
+    }
+    
+    
+    public function doPasswordReset($userItem, $userPassword)
+    {
+    	// reset password account
+    	$userItem['passwordReset']['resetDone'] = true;
+    	$userItem['passwordReset']['resetDate'] = new \MongoDate();
+    	
+    	$encryption = new Encryption();
+    	list($salt, $password) = $encryption->generateSaltAndPassword($userPassword);
+    		
+    	$query = array('_id' => $userItem['_id']);
+    	$update = array(
+    		'$set' => array(
+    			'passwordReset' => $userItem['passwordReset'],
+    			'salt' 			=> $salt,
+    			'password' 		=> $password,
+    		),
+    	);
+    	parent::update($query, $update);
     }
 }

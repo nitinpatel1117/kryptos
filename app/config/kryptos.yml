@@ -6,6 +6,8 @@ parameters:
     url:                       'kryptos.nitin.me.uk'
     email_activate_from:       'activations@kryptos.com'
     email_activate_fromname:   'Kryptos'
+    password_reset_from:       'passwords@kryptos.com'
+    password_reset_fromname:   'Kryptos'
     tmp_path:                  '/var/www/vhosts/kryptos.com/tmp/'
   
   mongo_connection:

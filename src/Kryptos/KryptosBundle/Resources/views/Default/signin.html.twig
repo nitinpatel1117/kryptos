@@ -10,9 +10,6 @@
 		
 			    	<div id="SigninForm" class="control-group">
 			    		
-						
-						{{ form_errors(form.email) }}
-						{{ form_errors(form.password) }}
 						{{ form_errors(form) }}
 
 						{{ form_row(form.email) }}
@@ -28,12 +25,12 @@
 			    	
 			    	<div class="control-group">
 						<div class="controls">
-							<a href="#">Forgotten your password? </a>
+							<a href="{{ path('password_reset_email') }}">Forgotten your password? </a>
 						</div>
 					</div>
 					<div class="control-group">
 						<div class="controls">
-							<a href='{{ path('register') }}'>
+							<a href="{{ path('register') }}">
 							<button class="btn btn-custom-block" type="button">Register</button>
 							</a>
 						</div>

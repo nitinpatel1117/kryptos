@@ -26,13 +26,22 @@ welcome:
     pattern:  /welcome
     defaults: { _controller: KryptosKryptosBundle:Default:welcome }
     
+    
 password_reset_email:
-    pattern:  /welcome
+    pattern:  /password/reset
     defaults: { _controller: KryptosKryptosBundle:Default:resetPasswordEmail }
+
+password_reset_email_submitted:
+    pattern:  //password/reset/success
+    defaults: { _controller: KryptosKryptosBundle:Default:resetPasswordEmailSubmitted }
+
+password_reset_question_success:
+    pattern:  //password/reset/question/success
+    defaults: { _controller: KryptosKryptosBundle:Default:resetPasswordQuestionSuccess }
     
 password_reset_question:
-    pattern:  /welcome
-    defaults: { _controller: KryptosKryptosBundle:Default:resetPasswordQuestion }
+    pattern:  /password/reset/question/{userId}/{code1}/{code2}
+    defaults: { _controller: KryptosKryptosBundle:Default:resetPasswordQuestion, userId: null, code1: null, code2: null }
     
     
 purchase_conversions:
