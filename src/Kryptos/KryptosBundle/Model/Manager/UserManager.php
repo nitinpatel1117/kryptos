@@ -308,4 +308,23 @@ class UserManager extends BaseManager
     	
     	return parent::update($query, $update);
     }
+    
+    
+    
+    /**
+     * Function reduces a users credit by 1
+     *
+     * @param string $userId			The user id of the user to reduce credit from
+     * @param int $amount				The amount of credits to reduce by
+     */
+    public function reduceCredit($userId, $amount = 1)
+    {
+    	$query = array('_id' => new \MongoId($userId));
+    
+    	$update = array(
+    		'$inc' => array ('credits' => ($amount * -1) ),
+    	);
+    	
+    	return parent::update($query, $update);
+    }
 }

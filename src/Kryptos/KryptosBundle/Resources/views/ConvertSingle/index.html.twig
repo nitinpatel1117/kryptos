@@ -35,60 +35,83 @@
 					</script>
 					{% endif %}
 					
-					
+					<br>
 				
 			    	<div id="ConvertSingleForm">
+			    		<p class="title">
+			    		Bank Details
+			    		</p>
+			    	
 			    		<div id="ConvertSingleForm_errors" class="form_errors">
 			    			{{ form_errors(form) }}
 			    		</div>
 			    		
-				    	<div class="form_row country">
-						    {{ form_label(form.country) }}
-						    {{ form_widget(form.country) }}
-						    {{ form_errors(form.country) }}
-						</div>
-						
-						<div class="form_row bban1">
-						    {{ form_label(form.bban1) }}
-						    {{ form_widget(form.bban1) }}
-						    {{ form_errors(form.bban1) }}
-						</div>
-						
-						<div class="form_row bban2">
-						    {{ form_label(form.bban2) }}
-						    {{ form_widget(form.bban2) }}
-						    {{ form_errors(form.bban2) }}
-						</div>
-						
-						<div class="form_row bban3">
-						    {{ form_label(form.bban3) }}
-						    {{ form_widget(form.bban3) }}
-						    {{ form_errors(form.bban3) }}
-						</div>
-						
-						<div class="form_row bban4">
-						    {{ form_label(form.bban4) }}
-						    {{ form_widget(form.bban4) }}
-						    {{ form_errors(form.bban4) }}
-						</div>
-						
-						<div class="form_row bban5">
-						    {{ form_label(form.bban5) }}
-						    {{ form_widget(form.bban5) }}
-						    {{ form_errors(form.bban5) }}
-						</div>
-						
-						{{ form_rest(form) }}
-						<div class="form_row submit">
-							<input id="ConvertSingleForm_btn_submit" type="submit" value="{{ btn_submit }}" />
+			    		<div class="panel">
+					    	<div class="form_row country">
+							    {{ form_label(form.country) }}
+							    {{ form_widget(form.country) }}
+							    {{ form_errors(form.country) }}
+							</div>
+							
+							<div class="form_row bban1">
+							    {{ form_label(form.bban1) }}
+							    {{ form_widget(form.bban1) }}
+							    {{ form_errors(form.bban1) }}
+							</div>
+							
+							<div class="form_row bban2">
+							    {{ form_label(form.bban2) }}
+							    {{ form_widget(form.bban2) }}
+							    {{ form_errors(form.bban2) }}
+							</div>
+							
+							<div class="form_row bban3">
+							    {{ form_label(form.bban3) }}
+							    {{ form_widget(form.bban3) }}
+							    {{ form_errors(form.bban3) }}
+							</div>
+							
+							<div class="form_row bban4">
+							    {{ form_label(form.bban4) }}
+							    {{ form_widget(form.bban4) }}
+							    {{ form_errors(form.bban4) }}
+							</div>
+							
+							<div class="form_row bban5">
+							    {{ form_label(form.bban5) }}
+							    {{ form_widget(form.bban5) }}
+							    {{ form_errors(form.bban5) }}
+							</div>
+							
+							{{ form_rest(form) }}
+							<div class="form_row submit">
+								<input id="ConvertSingleForm_btn_submit" type="submit" value="{{ btn_submit }}" />
+							</div>
 						</div>
 			    	</div>
 			    	
 			    	{% if accountValid %}
 			    	<div id="ConvertSingleFormResults">
-			    	
+			    		<p class="title">
+			    		SEPA Details
+			    		</p>
+			    		
+			    		<div class="panel">
+				    		<table cellpadding="0" cellspacing="0" width="100%">
+				    			<tr>
+				    				<td>IBAN</td>
+				    				<td>{{ accountData.iban }}</td>
+				    			</tr>	
+				    			<tr>
+				    				<td>BIC</td>
+				    				<td>{{ accountData.bic }}</td>
+				    			</tr>
+				    		</table>
+			    		</div>
 			    	</div>
 			    	{% endif %}
+			    	
+			    	
 			    </form>
 			</div>
 		</section>

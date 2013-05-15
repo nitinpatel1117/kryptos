@@ -1,7 +1,6 @@
 html, body {margin:0px; padding:0px;}
 body { font-size:62.5%; font-family: arial, "lucida console", sans-serif; }
 
-
 section.centraliser {margin-left: auto; margin-right: auto; width: 850px; font-size:1.2em;}
 
 section.contentWrapper {}
@@ -84,8 +83,10 @@ div#convertBatch form .form_success {margin-bottom:10px;}
 
 /* Convert Single Form */
 div#convertSingle {}
-div#convertSingle #ConvertSingleForm {width:50%;}
-div#convertSingle #ConvertSingleFormResults {width:50%;}
+div#convertSingle #ConvertSingleForm {width:49%; display: inline-block; vertical-align:top;}
+div#convertSingle #ConvertSingleFormResults {width:49%; display: inline-block; vertical-align:top;}
+div#convertSingle p.title  {text-align: center;}
+div#convertSingle div.panel  {margin: 10px; padding: 10px; background: white;}
 
 
 /* Summary Balance */

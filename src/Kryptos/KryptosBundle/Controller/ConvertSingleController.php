@@ -24,6 +24,7 @@ class ConvertSingleController extends Controller
     	}
     	
     	$accountValid = false;
+    	$accountData = array();
     	
     	$mappings = new Mappings();
 
@@ -40,11 +41,6 @@ class ConvertSingleController extends Controller
     	$form = $this->createForm(new ConvertSingleForm(), null, $options);
     	$credits = $this->getAllowedConversions();
     	
-    	if ($credits < 1) {
-    		$userNote = 'You no not have any conversions available. You will need to purchase conversions in order to proceed.';
-    	} else {
-    		$userNote = sprintf('You have %s conversions available.', $credits);
-    	}
     	
     	if ($request->isMethod('POST')) {
     		$form->bind($request);
@@ -64,12 +60,23 @@ class ConvertSingleController extends Controller
     			$errorExists = true;
     			$form->addError(new FormError(sprintf('%s is required', 'Country')));
     		}
+    		
+    		
+    		// retrieve user if we are dealing with signin enabled
+    		$this->setupUser();
+    		
+    		// check that the user has some credits
+    		if ($this->conversionsRestricted()) {
+    			$credits = $this->getAllowedConversions();
+    			if ($credits < 1) {
+    				$errorExists = true;
+    				$form->addError(new FormError('You no not have any conversions available. You will need to purchase conversions in order to proceed.'));
+    			}
+    		}
 
     		
-    		if ($form->isValid() && false == $errorExists) {
-    			// retrieve user if we are dealing with signin enabled
-    			$this->setupUser();
-    			
+    		if ($form->isValid() && false == $errorExists)
+    		{	
     			// build our commands
     			$args = array();
     			foreach ($bbanMaps as $key => $value) {
@@ -78,20 +85,30 @@ class ConvertSingleController extends Controller
     			
     			$output = $this->runSingleConversionCommand($countrySelected, $args);
     			$output = $this->processOutput($output);
-    			list($iban, $bic) = $this->getIbanAndBic($output);
+    			$accountData = $this->getIbanAndBic($output);
+    			#list($iban, $bic) = $this->getIbanAndBic($output);
     			
-    			if (!is_null($iban) && !is_null($bic)) {
-    				$accountValid = true;
-    			}
-
-    			
-    			#echo "<pre>";
-    			#var_dump($iban, $bic);
+    			if (!is_null($accountData['iban']) && !is_null($accountData['bic']))
+    			{
+    				// check that the user had some credits
+    				if ($this->conversionsRestricted()) {
+    					$user = $this->get('user_manager');
+    					$user->reduceCredit($this->getUserId());
+    					$credits--;
+    				}
     	
-    			#print_r($output);
-    			#exit;
+    				$accountValid = true;	
+    			}
     		}
     	}
+    	
+    	
+    	if ($credits < 1) {
+    		$userNote = 'You no not have any conversions available. You will need to purchase conversions in order to proceed.';
+    	} else {
+    		$userNote = sprintf('You have %s conversions available.', $credits);
+    	}
+    	
     	
         return $this->render('KryptosKryptosBundle:ConvertSingle:index.html.twig', array(
         	'form' 						=> $form->createView(),
@@ -104,6 +121,7 @@ class ConvertSingleController extends Controller
         	'countrySelected'			=> $countrySelected,
         	
         	'accountValid'				=> $accountValid,
+        	'accountData'				=> $accountData,
         ));
     }
     
@@ -242,6 +260,9 @@ class ConvertSingleController extends Controller
     		}
     	}
     	
-    	return array($iban, $bic);
+    	return array(
+    		'iban' => $iban,
+    		'bic'  => $bic,
+    	);
     }
 }
