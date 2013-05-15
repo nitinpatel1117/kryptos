@@ -13,6 +13,9 @@ class ConvertBatchForm extends AbstractType
     	$builder->add('attachment', 'file', array(
     		'label'=>'Upload Source File',
     		'required' => true,
+    		'constraints' => array(
+    			new NotBlank(),
+    		)
     	));
     }
     

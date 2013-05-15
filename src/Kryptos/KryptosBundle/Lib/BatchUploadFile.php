@@ -38,8 +38,8 @@ class BatchUploadFile
 		'bban3',
 		'bban4',
 	#	'bban5',
-		'iban',
 		'bic',
+		'iban',
 	);
 	
 	
@@ -108,13 +108,18 @@ class BatchUploadFile
 			chmod($readyLocation, 0777);
 			$fileOutReady = fopen($readyLocation, 'w');
 			
+			/* This was the old method
 			// add first line to output, it should be empty line
-			fputcsv($fileOutReady, array());
+			#fputcsv($fileOutReady, array());
 			
 			// add second line to output, it contains column headers
+			#$data = $splFileObject->fgetcsv();
+			#$data = $this->makeFileHeaderData($data);
+			#fputcsv($fileOutReady, $data);
+			*/ 
+			
+			// ignore first line it contains headers
 			$data = $splFileObject->fgetcsv();
-			$data = $this->makeFileHeaderData($data);
-			fputcsv($fileOutReady, $data);
 			
 			// get credits for the user
 			$credits = $additionalData['credits'];
@@ -203,7 +208,7 @@ class BatchUploadFile
 	public function makeCsvData($data)
 	{
 		// TODO: This is hard coded for now. The csv output we produce must contain 8 columns of data
-		$columns = 8;
+		$columns = 5;
 		
 		$data = array_pad($data, $columns, '');
 		

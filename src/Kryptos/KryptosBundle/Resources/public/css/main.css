@@ -82,9 +82,15 @@ div#convertBatch form .form_errors {color:red; margin-bottom:10px;}
 div#convertBatch form .form_success {margin-bottom:10px;}
 
 
+/* Convert Single Form */
+div#convertSingle {}
+div#convertSingle #ConvertSingleForm {width:50%;}
+div#convertSingle #ConvertSingleFormResults {width:50%;}
+
+
 /* Summary Balance */
 section#balance p {text-align:right; }
-section#balance p span {display:inline-block; width:50px;}
+section#balance p span {display:inline-block; width:100px;}
 
 
 

@@ -1,5 +1,5 @@
 {% extends "KryptosKryptosBundle::layout.html.twig" %}
-
+{% form_theme form 'KryptosKryptosBundle:Form:commonTheme.html.twig' %}
 
 {% block content %}
 	
@@ -25,14 +25,15 @@
 			    		</div>
 			    		{% endif %}
 			    		
-				    	<div class="form_row attachment">
+				    	<div class="form_row attachment control-group">
+				    	
 						    {{ form_label(form.attachment) }}
 						    {{ form_widget(form.attachment) }}
 						    {{ form_errors(form.attachment) }}
 						</div>
 						{{ form_rest(form) }}
 						<div class="form_row submit">
-							<input id="ConvertBatchForm_btn_submit" type="submit" value="{{ btn_submit }}" />
+							<button id="ConvertBatchForm_btn_submit" class="btn btn-custom-block" type="submit">{{ btn_submit }}</button>
 						</div>
 			    	</div>
 			    </form>

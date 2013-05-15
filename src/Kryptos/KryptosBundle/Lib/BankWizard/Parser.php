@@ -74,6 +74,7 @@ class Parser
 			try {
 				if (isset($item['filename']))
 				{
+					$this->clearConversionStats();
 					$this->setUpPaths($item['filename']);
 					
 					// start conversion
@@ -87,6 +88,9 @@ class Parser
 					$this->processFile($item);
 					$items[$key]['processing_end_time'] = new \MongoDate();
 					$this->log('info', sprintf('Finished the processing stage of file: %s', $item['_id']));
+					
+					$items[$key]['stats'] = $this->getConversionStats();
+					
 				}
 			}
 			catch (\Exception $e)
@@ -100,11 +104,43 @@ class Parser
 	}
 	
 	
+	/**
+	 * Function clears the stats counters, sets them back to zero
+	 */
+	public function clearConversionStats()
+	{
+		$this->stats_processed = 0;
+		$this->stats_valid = 0;
+		$this->stats_not_validated = 0;
+		$this->stats_invalid = 0;
+		$this->stats_reconfirm_iban = 0;
+		$this->stats_conversions_refund = 0;
+	}
+	
+	
+	/**
+	 * Function Retrieves the stats counters as an array
+	 * 
+	 * @return array
+	 */
+	public function getConversionStats()
+	{
+		return array (
+			'processed' 			=> $this->stats_processed,
+			'valid' 				=> $this->stats_valid,
+			'not_validated' 		=> $this->stats_not_validated,
+			'invalid' 				=> $this->stats_invalid,
+			'reconfirm_iban' 		=> $this->stats_reconfirm_iban,
+			'conversions_refund' 	=> $this->stats_conversions_refund,
+		);
+	}
+	
+	
 	public function setUpPaths($filename)
 	{
 		$this->readyLocation 		= sprintf('%s%s%s', $this->getConfigManager()->get('site|tmp_path'), $this->getConfigManager()->get('batch_convert|ready_location'), 	 $filename);
 		$this->convertedLocation 	= sprintf('%s%s%s', $this->getConfigManager()->get('site|tmp_path'), $this->getConfigManager()->get('batch_convert|converted_location'), $filename);
-		$this->statsLocation 		= sprintf('%s%s%s', $this->getConfigManager()->get('site|tmp_path'), $this->getConfigManager()->get('batch_convert|stats_location'), 	 $filename);
+		# $this->statsLocation 		= sprintf('%s%s%s', $this->getConfigManager()->get('site|tmp_path'), $this->getConfigManager()->get('batch_convert|stats_location'), 	 $filename);
 		$this->processedLocation 	= sprintf('%s%s%s', $this->getConfigManager()->get('site|tmp_path'), $this->getConfigManager()->get('batch_convert|processed_location'), $filename);
 	}
 	
@@ -120,10 +156,10 @@ class Parser
 	{
 		$output = array();
 		
-		/*
+		
 		// TODO: this is not working, for now lets just copy from a existing file and pretend it was the original file		
 		$batch_command = $this->getConfigManager()->get('bankwizard|batch_command');
-		$command = sprintf($batch_command, $this->readyLocation, $this->convertedLocation, $this->statsLocation);
+		$command = sprintf($batch_command, $this->readyLocation, $this->convertedLocation);
 		exec($command, $output);
 		
 		/*
@@ -133,10 +169,11 @@ class Parser
 		exit;
 		*/
 		
+		/*
 		// TODO: remove ths once above is working
 		$command = "cp ./../tmp/batch/converted/output-50.csv ".$this->convertedLocation;
 		exec($command, $output);
-		
+		*/
 	}
 	
 	
@@ -163,7 +200,12 @@ class Parser
 		$dataConvertedLine = 0;
 		
 		// ignore first line of ready file it is headers
-		$dataReady = $this->getNextLineFromReady();
+		#$dataReady = $this->getNextLineFromReady();
+		
+		// output header info
+		#
+		$file_headers = "0,Country ISO,BBAN 1,BBAN 2,BBAN 3,BBAN 4,BIC,IBAN,Status";
+		$dataReady = explode(',', $file_headers);
 		$this->outputToProcessedFile($dataReady);
 		
 		do {
@@ -187,10 +229,22 @@ class Parser
 			
 			
 			if ($dataReadLine == $dataConvertedLine) {
-				// If IBAN present (IBAN is 7th item in converted file) add to dataReady array
-				// Note: at this point dataReady, first column is Id, hence we add to 8th column
+				// If BIC present (IBAN is 7th item in converted file) add to dataReady array
+				// Note: at this point dataReady, first column is Id, hence we add to 7th column
 				if (isset($dataConverted[6])) {
-					$dataReady[7] = $dataConverted[6];
+					$dataReady[6] = $dataConverted[6];
+				}
+				
+				// If IBAN present (IBAN is 8th item in converted file) add to dataReady array
+				// Note: at this point dataReady, first column is Id, hence we add to 8th column
+				if (isset($dataConverted[7])) {
+					$dataReady[7] = $dataConverted[7];
+				}
+				
+				// If Status present (Status is 9th item in converted file) add to dataReady array
+				// Note: at this point dataReady, first column is Id, hence we add to 9th column
+				if (isset($dataConverted[8])) {
+					$dataReady[8] = $this->retrieveStatus($dataConverted[8]);
 				}
 				
 				$dataReadyIsAhead = false;
@@ -222,6 +276,51 @@ class Parser
 	
 	
 	/**
+	 * Convert the status from the api into a status message of our own
+	 *  
+	 * @param string $state			status message from API
+	 * @return string				Our status message
+	 */
+	public function retrieveStatus($state)
+	{
+		$newState = '';
+				
+		switch($state)
+		{
+			case 'OK':
+				$newState = 'Valid';
+				$this->stats_valid++;
+				break;
+			
+			case 'UNSUPPORTED_COUNTRY':
+				$newState = 'Not Validated';
+				$this->stats_not_validated++;
+				$this->stats_conversions_refund++;
+				break;
+
+			case 'INVALID_ACCOUNT':
+				$newState = 'Invalid';
+				$this->stats_invalid++;
+				break;
+
+			case 'UNKNOWN_BANK_OR_BRANCH':
+				$newState = 'Invalid';
+				$this->stats_invalid++;
+				break;
+							
+			case 'CHECK_IBAN':
+				$newState = 'Reconfirm IBAN';
+				$this->stats_reconfirm_iban++;
+				$this->stats_conversions_refund++;
+				break;	
+		}
+		
+		$this->stats_processed++;
+		
+		return $newState;
+	}
+	
+	/**
 	 * Function checks that the supplied filepath exists and that it can be read
 	 * 
 	 * @param string $filepath			Path to a path
@@ -238,7 +337,7 @@ class Parser
 			chmod($readyLocation, 0777);
 			
 			if (!is_readable($filepath)) {
-				throw new \Exception(sprintf('File [%s] is ot readable', $filepath));
+				throw new \Exception(sprintf('File [%s] is not readable', $filepath));
 			}
 		}
 	}

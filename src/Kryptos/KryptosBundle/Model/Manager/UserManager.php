@@ -281,4 +281,31 @@ class UserManager extends BaseManager
     	);
     	parent::update($query, $update);
     }
+    
+    
+    /**
+     * Function refunds credits to a users account
+     * 
+     * @param string $userId			The user id of the user to refund to 
+     * @param MongoId $fileId			The file id of the uploaded file that we are refunding back for
+     * @param int $amount				The amount of credits to refund
+     */
+    public function refundCredits($userId, $fileId, $amount)
+    {    	
+    	$query = array('_id' => new \MongoId($userId));
+    	 
+    	$update = array(
+    		'$push' => array(
+    			'conversionHistory' => array(
+    				'creditsRefunded' 	=> $amount,
+    				'time'				=> new \MongoDate(),
+    				'type'				=> 'batch',
+    				'file'				=> $fileId,
+    			)
+    		),
+    		'$inc' => array ('credits' => $amount ),
+    	);
+    	
+    	return parent::update($query, $update);
+    }
 }

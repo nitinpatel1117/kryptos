@@ -30,6 +30,14 @@ class BatchProcessor
 	protected $fileManager = null;
 	
 	/**
+	 * Reference to the bank account model class
+	 *
+	 * @var Kryptos\KryptosBundle\Model\Manager\UserManager
+	 * @access protected
+	 */
+	protected $userManager = null;
+	
+	/**
 	 * Reference to the config model class
 	 *
 	 * @var Kryptos\KryptosBundle\Services\ConfigManager
@@ -71,9 +79,10 @@ class BatchProcessor
 
 
 
-	public function __construct($fileManager, $configManager, $noOfItemsToRead = 1)
+	public function __construct($fileManager, $userManager, $configManager, $noOfItemsToRead = 1)
 	{
 		$this->setFileManager($fileManager);
+		$this->setUserManager($userManager);
 		$this->setConfigManager($configManager);
 		$this->setNoOfItemsToRead($noOfItemsToRead);
 	}
@@ -96,6 +105,13 @@ class BatchProcessor
 	}
 	public function getFileManager() {
 		return $this->fileManager;
+	}
+	
+	public function setUserManager($userManager) {
+		$this->userManager = $userManager;
+	}
+	public function getUserManager() {
+		return $this->userManager;
 	}
 	
 	public function setConfigManager($configManager) {
@@ -311,6 +327,14 @@ class BatchProcessor
 				}
 				else {
 					$queueItem['status'] = 'complete';
+					if (isset($queueItem['stats']['conversions_refund']) && is_int($queueItem['stats']['conversions_refund']) && ($queueItem['stats']['conversions_refund'] > 0))
+					{
+						// if this batch upload belongs to a registered user, update their credits
+						if (isset($queueItem['userId'])) {
+							$userManager = $this->getUserManager();
+							$userManager->refundCredits($queueItem['userId'], $queueItem['_id'], $queueItem['stats']['conversions_refund']);
+						}
+					}
 				}
 				
 				try {

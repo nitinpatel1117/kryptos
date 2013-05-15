@@ -55,6 +55,7 @@ parameters:
 
   bankwizard:
     # param_1: source file;  param_2: destination file;  param_3: stats file;
-    batch_command:           'java --cp /var/www/bankwizard/FileScanningUtilityFinalV1.jar:/var/www/bankwizard/bwint10.jar DataScanMain.Datascan "%s" "%s" "%s"'
+    # batch_command:           'java --cp /var/www/bankwizard/FileScanningUtilityFinalV1.jar:/var/www/bankwizard/bwint10.jar DataScanMain.Datascan "%s" "%s" "%s"'
+    batch_command:           '/var/www/bankwizard/run_converter.sh "%s" "%s"'
     # param_1: country code;  param_2: sequence of bban entries, changes per country;
     single_command:          '/var/www/bankwizard/bwibexam %s %s'

@@ -23,6 +23,8 @@ class ConvertSingleController extends Controller
     		return $this->redirect($this->generateUrl('welcome'));
     	}
     	
+    	$accountValid = false;
+    	
     	$mappings = new Mappings();
 
     	$options = array('country' => null);
@@ -74,52 +76,20 @@ class ConvertSingleController extends Controller
     				$args[] = $formPosted[$key];
     			}
     			
-    			$output = array();
-    			$single_command = $config->get('bankwizard|single_command');
-    			$command = sprintf($single_command, $countrySelected, implode(' ', $args));
+    			$output = $this->runSingleConversionCommand($countrySelected, $args);
+    			$output = $this->processOutput($output);
+    			list($iban, $bic) = $this->getIbanAndBic($output);
     			
-    			
-    			
-    			echo "<pre>";
-    			
-    			putenv('BW3LIBS=env');
-    			putenv('BWTABLES=/var/www/bwtables');
-    			putenv('LD_LIBRARY_PATH=$BW3LIBS:$LD_LIBRARY_PATH');
-    			
-    			exec('export BW3LIBS=env', $output);
-    			var_dump($output);
-    			
-    			exec('export BWTABLES=/var/www/bwtables', $output);
-    			var_dump($output);
-    			
-    			exec('export LD_LIBRARY_PATH=$BW3LIBS:$LD_LIBRARY_PATH', $output);
-    			var_dump($output);
-    			
-    			
-    			$command = '(cd /var/www/bankwizard; ./bwibexam GB 400302 81557149)';
-    			
-    			
-    			#$command = 'env |grep "BW3LIBS"';
-    			#$command = 'env |grep "LD_LIBRARY_PATH"';
-    			
-    			#$command = 'whoami';
+    			if (!is_null($iban) && !is_null($bic)) {
+    				$accountValid = true;
+    			}
 
-    			#$command = 'export BW3LIBS=env';
-    			#$command = 'export BWTABLES=/var/www/bwtables';
-    			#$command = 'export LD_LIBRARY_PATH=$BW3LIBS:$LD_LIBRARY_PATH';
-    				
-    			exec($command, $output, $return_val);
     			
-
-    			echo "<pre>";
-    			var_dump($command);
-    			var_dump($output);
-    			print_r($output);
-    			var_dump($return_val);
-    			
-    			var_dump('#########################');
-    			system('(cd /var/www/bankwizard; ./bwibexam GB 400302 81557149)');
-    			exit;
+    			#echo "<pre>";
+    			#var_dump($iban, $bic);
+    	
+    			#print_r($output);
+    			#exit;
     		}
     	}
     	
@@ -132,6 +102,8 @@ class ConvertSingleController extends Controller
         	'userNote' 					=> $userNote,
         	'bbanMappings' 				=> $mappings->getBbanMappings(),
         	'countrySelected'			=> $countrySelected,
+        	
+        	'accountValid'				=> $accountValid,
         ));
     }
     
@@ -188,5 +160,88 @@ class ConvertSingleController extends Controller
     	}
     	
     	return $allowedConversions;
+    }
+    
+    
+    /**
+     * Function runs the single conversion command using the parameters supplied
+     * 
+     * @param string $countrySelected					The country code
+     * @param array $args								The bban arguments
+     * @return array									The output that was retrieved from the command
+     */
+    public function runSingleConversionCommand($countrySelected, array $args)
+    {
+    	$config = $this->get('config_manager');
+    	
+    	$single_command = $config->get('bankwizard|single_command');
+    	$command = sprintf($single_command, $countrySelected, implode(' ', $args));
+    	 
+    	putenv('BW3LIBS=/var/www/bankwizard');
+    	putenv('BWTABLES=/var/www/bwtables');
+    	putenv('LD_LIBRARY_PATH=/var/www/bankwizard:');
+    	
+    	$output = array();
+    	exec($command, $output);
+    	
+    	return $output;
+    }
+    
+    
+    /**
+     * Function takes the output supplied by the single conversion tool and turns it into a 
+     * an associative array that can be transversd easily.
+     * 
+     * @param array $output
+     * @return array
+     */
+    public function processOutput(array $output)
+    {
+    	$data = array();
+    	
+    	foreach ($output as $lineout) {
+    		$lineSplit = explode(' - ' , $lineout);
+    		
+    		if (isset($lineSplit[0]) && isset($lineSplit[1]))
+    		{
+    			$key = trim($lineSplit[0]);
+    			$value = trim($lineSplit[1]);
+    			$value = str_replace("'", '', $value);
+    			
+    			$data[$key] = $value;
+    			
+    			unset($key);
+    			unset($value);
+    		}
+    	}
+    	
+    	return $data;
+    }
+    
+    
+    /**
+     * Function retrieves the IBAN and BIC from the supplied array, which is the processed output from the single conversion tool
+     * 
+     * @param array $output					The processed output from the single conversion tool
+     * @return array						Array consisting of IBAN and BIC
+     */
+    public function getIbanAndBic(array $output)
+    {
+    	$iban = null;
+    	$bic = null;
+    	
+    	if (isset($output['IBAN'])) {
+    		$iban = $output['IBAN'];
+    	}
+    	
+    	if (isset($output['Field 071'])) {
+    		$bic = $output['Field 071'];
+    			
+    		if (isset($output['Field 072'])) {
+    			$bic .= $output['Field 072'];
+    		}
+    	}
+    	
+    	return array($iban, $bic);
     }
 }

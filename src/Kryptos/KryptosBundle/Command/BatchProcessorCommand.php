@@ -163,8 +163,9 @@ EOF;
 			}
 			
 			$fileManager = $this->getContainer()->get('file_manager');
+			$userManager = $this->getContainer()->get('user_manager');
 			$configManager = $this->getContainer()->get('config_manager');
-			$batchProcessor = new BatchProcessor($fileManager, $configManager, $readFromQueue);
+			$batchProcessor = new BatchProcessor($fileManager, $userManager, $configManager, $readFromQueue);
 			$batchProcessor->setLogger($this->getLogger());
 			$batchProcessor->run();
 			
