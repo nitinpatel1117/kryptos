@@ -23,13 +23,31 @@ class RegistrationForm extends AbstractType
 			)));
 			*/
 
+    	
+    	$titles = array(
+    		'Mr' 	=> 'Mr.',
+    		'Mrs' 	=> 'Mrs.',
+    		'Miss' 	=> 'Miss',
+    		'Ms' 	=> 'Ms.',
+    		'Dr' 	=> 'Dr.',
+    		'Prof' 	=> 'Prof.',
+    		'Rev' 	=> 'Rev.',
+    		'Other' => 'Other',
+    	);
+    	
+    	$builder->add('title', 'choice', array(
+    		'choices'   => $titles,
+    		'required'  => true,
+    		'empty_value' => ' - Title - ',
+    	));
+
 		$builder->add('firstName', 'text', array(
 			'label'=>'Firstname',
 			'required' => true,
 			'attr' => array(
-				'placeholder'			=> 'Firstname',
+				'placeholder'			=> 'Forename',
 				'rel'					=> 'tooltip',
-				'data-original-title'	=> 'Please enter your Firstname',
+				'data-original-title'	=> 'Please enter your Forename',
 			),
 		));
 		
@@ -37,9 +55,9 @@ class RegistrationForm extends AbstractType
 			'label'=>'Lastname',
 			'required' => true,
 			'attr' => array(
-				'placeholder'			=> 'Lastname',
+				'placeholder'			=> 'Surname',
 				'rel'					=> 'tooltip',
-				'data-original-title'	=> 'Please enter your Lastname',
+				'data-original-title'	=> 'Please enter your Surname',
 			),
 		));
 		
@@ -126,10 +144,10 @@ class RegistrationForm extends AbstractType
 				new Length(array(
 					'min' => 4, 
 					'max' => 20,
-					'maxMessage' => 'Password value is too long. It should have {{ limit }} characters or less.',
-					'minMessage' => 'Password value is too short. It should have {{ limit }} characters or more.',
+					'maxMessage' => 'Invalid password|Password value is too long. It should have {{ limit }} characters or less.',
+					'minMessage' => 'Invalid password|Password value is too short. It should have {{ limit }} characters or more.',
 				)),
-				new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'Password should only contain alphanumber characters. (a to z) and (0 to 9)')),
+				new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'Invalid password|Password should only contain alphanumber characters. (a to z) and (0 to 9)')),
 			)
 		));
 
@@ -138,6 +156,7 @@ class RegistrationForm extends AbstractType
 			'as_url' => true,
 			'reload' => true,
 			'label' => 'Word Verification',
+		#	'background_color' => array('255', '255', '255'),
 			'attr' => array(
 				'placeholder' 			=> 'Enter text',
 				'rel'					=> 'tooltip',
@@ -146,10 +165,12 @@ class RegistrationForm extends AbstractType
 			),
 		));
 
+		/*
 		$builder->add('acceptTerms', 'checkbox', array(
 			'label' => 'I agree to the Kryptos Terms of Service and Privacy Policy',
 			'required' => true,
 		));
+		*/
 
 		#$builder->add('key', 'csrf');
     }

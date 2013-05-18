@@ -16,7 +16,7 @@ namespace Kryptos\KryptosBundle\Lib\BbanCountryMappings;
 class Mappings
 {
 	/**
-	 * Expected columns in each row
+	 * The mapping of each country code to its full country name
 	 * 
 	 * @var array
 	 */
@@ -83,8 +83,7 @@ class Mappings
 	
 	
 	/**
-	 * Variable to store bank account numbers while they are being read. 
-	 * We store 500 entries at a time, before batch saving. 
+	 * The mapping of each country code to its bban fields
 	 * 
 	 * @var array
 	 */

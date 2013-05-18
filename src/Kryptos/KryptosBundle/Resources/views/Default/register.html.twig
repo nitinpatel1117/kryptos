@@ -1,45 +1,65 @@
-{% extends "KryptosKryptosBundle::layout.html.twig" %}
+{% extends "KryptosKryptosBundle::layoutNotAuth.html.twig" %}
 {% form_theme form 'KryptosKryptosBundle:Form:register.html.twig' %}
 
 
 {% block content %}
-	<section class="blueHeader">
-		<h1>{{ location }}</h1>
-		<section class="innerWrap">
-			<div id="register">
-				<form action="{{ path('register') }}" method="post" {{ form_enctype(form) }} class="form-horizontal">
-				
-					<div class="control-group">
-							{{ form_row(form.firstName) }}
-							{{ form_row(form.lastName) }}
-							{{ form_row(form.jobTitle) }}
-							{{ form_row(form.company) }}
-							{{ form_row(form.location) }}
-							{{ form_row(form.email) }}
-							<div></div>
-							{{ form_row(form.password) }}
-
-						<div class="controls form_row">
-							{{ form_widget(form.captcha) }}
-						</div>
-						{{ form_errors(form.captcha) }}
-						
-						<div class="controls accept_terms">
-							{{ form_widget(form.acceptTerms) }}
-							{{ form_label(form.acceptTerms) }}
-						</div>
-					    {{ form_errors(form.acceptTerms) }}
-						
-						{{ form_rest(form) }}
-					</div>
-
-			    	<div class="control-group">
-						<div class="controls">
-				    		<button class="btn btn-custom-block" type="submit">Register</button>
-				   		</div>
-			    	</div>
-				</form>
+	<form novalidate id="register" action="{{ path('register') }}" method="post" {{ form_enctype(form) }} class="form-horizontal" style="width: 500px;">
+		<div class="control-group">    
+			<div class="controls" > 
+				<img src="/bundles/kryptoskryptos/images/kryptos.png" class="img-rounded" class="centering" />
 			</div>
-		</section>
-	</section>
+		</div>
+		
+		{{ form_errors(form) }}
+		{{ form_errors(form.title) }}
+		{{ form_errors(form.firstName) }}
+		{{ form_errors(form.lastName) }}
+		{{ form_errors(form.jobTitle) }}
+		{{ form_errors(form.company) }}
+		{{ form_errors(form.location) }}
+		{{ form_errors(form.email) }}
+		{{ form_errors(form.password) }}
+		{{ form_errors(form.captcha) }}
+		
+		<div class="control-group">
+			{{ form_row(form.title) }}
+		</div>
+		
+		<div class="control-group">
+			{{ form_row(form.firstName) }}
+			{{ form_row(form.lastName) }}
+			{{ form_row(form.jobTitle) }}
+			{{ form_row(form.company) }}
+			{{ form_row(form.location) }}
+		</div>
+		
+		<div class="control-group">
+			{{ form_row(form.email) }}
+		</div>
+		
+		<div class="control-group">
+			{{ form_row(form.password) }}
+		</div>
+		
+		<br>
+		<div class="control-group">
+			{{ form_widget(form.captcha) }}
+		</div>
+		<br>
+
+		{{ form_rest(form) }}
+    	
+    	<div class="control-group">    
+			<div class="controls">
+				By clicking "sign-up" below you agree to our <a href="#">Terms and conditions </a> and that you have read and agreed to our <a href="#">Data use policy,</a> including our <a href="#">Cookie use </a> policy.
+			</div>  
+		</div>
+    	
+		<div class="control-group">
+			<div class="controls">
+				<button type="submit" class="btn btn-custom-block btn-primary">Sign-up</button> 
+			</div>  
+		</div>
+    	
+	</form>
 {% endblock %}

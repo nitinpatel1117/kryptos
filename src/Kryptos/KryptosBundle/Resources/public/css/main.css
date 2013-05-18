@@ -1,6 +1,3 @@
-html, body {margin:0px; padding:0px;}
-body { font-size:62.5%; font-family: arial, "lucida console", sans-serif; }
-
 section.centraliser {margin-left: auto; margin-right: auto; width: 850px; font-size:1.2em;}
 
 section.contentWrapper {}
@@ -27,24 +24,14 @@ footer {margin:50px 0px 0px 0px}
 /*** Forms ***/
 
 /* Registration Form */
-div#register { }
-div#register form div div.accept_terms label {display: inline-block; margin:0px 0px 0px 10px;}
-div#register form div div.form_row input {display: inline-block; width: 200px; margin:5px 0px 5px 0px;}
-div#register form div ul.errors {display: inline-block; width: 200px; margin:5px 0px 5px 0px;}
-div#register form div ul.errors li {display: inline-block; margin:5px 0px 5px 0px; list-style: none; color:red;}
-div#register form div #RegistrationForm_captcha {display: block;}
-div#register form div #RegistrationForm_acceptTerms {float:left;}
-/*
-div#register form div #RegistrationForm_acceptTerms {float:left; width:40px;}
-*/
+form#register { }
+form#register input { width: 220px; }
+form#register select { width: 235px; }
+
 
 /* Signin Form */
 div#signin { }
-div#signin form div div.form_row label {display: inline-block; width: 100px; margin:5px 0px 5px 0px;}
-div#signin form div div.form_row input {display: inline-block; width: 200px; margin:5px 0px 5px 0px;}
-div#signin form div div.form_row.staySignedIn input {width: 10px;}
-div#signin form div ul.errors {display: inline-block; width: 200px; margin:5px 0px 5px 0px;}
-div#signin form div ul.errors li {display: inline-block; margin:5px 0px 5px 0px; list-style: none; color:red;}
+
 
 
 /* Purchase Conversions Form */

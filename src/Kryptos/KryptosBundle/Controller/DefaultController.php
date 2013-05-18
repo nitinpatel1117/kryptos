@@ -29,6 +29,8 @@ class DefaultController extends Controller
 
     	if ($config->siginDisabled() || $session->isLoginValid()) {
     		return $this->redirect($this->generateUrl('welcome'));
+    	} else {
+    		return $this->redirect($this->generateUrl('signin'));
     	}
 
     	// forward to sign in controller
@@ -63,11 +65,11 @@ class DefaultController extends Controller
 				}
 				
 				if ("not_activated" === $status) {
-					$form->addError(new FormError('Your account has not been activated. Please click on the activation link that was sent to the email address that you registered with.'));
+					$form->addError(new FormError('Your account has not been activated|Please click on the activation link that was sent to the email address that you registered with.'));
 				}
 
 				if (false === $status) {
-					$form->addError(new FormError('Email and password do not match'));
+					$form->addError(new FormError('Incorrect email/password combination|Kryptos passwords are case sensitive. Please check your CAPS lock key. You can reset your password here.'));
 				}
 			}
 		}

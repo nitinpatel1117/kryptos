@@ -23,6 +23,7 @@ class UserManager extends BaseManager
     public function createUserFrom($formData)
     {
     	$user = new User();
+    	$user->setTitle(		$formData->getTitle());
     	$user->setFirstName(	$formData->getFirstName());
 		$user->setLastName(		$formData->getLastName());
 		$user->setJobTitle(		$formData->getJobTitle());

@@ -1,41 +1,51 @@
 Kryptos\KryptosBundle\Entity\Register:
     properties:
         firstName:
-            - NotBlank: ~
+            - NotBlank:
+                message: Registration incomplete|Please enter your forename.
         lastName:
-            - NotBlank: ~
+            - NotBlank:
+                message: Registration incomplete|Please enter your surname.
         jobTitle:
-            - NotBlank: ~
+            - NotBlank:  
+                message: Registration incomplete|Please enter your Job Title.
         company:
-            - NotBlank: ~
+            - NotBlank:
+                message: Registration incomplete|Please enter your company name.
         location:
-            - NotBlank: ~
+            - NotBlank: 
+                message: Registration incomplete|Please enter your location.
         email:
             - Email:
-                message: The email "{{ value }}" is not a valid email.
+                message: Incorrect Email|The email "{{ value }}" is not a valid email|Please try again.
                 checkMX: true
             - Kryptos\KryptosBundle\Validator\Constraints\UniqueEmail: ~
         password:
-            - NotBlank: ~
+            - NotBlank: 
+                message: Registration incomplete|Please enter your password.
         acceptTerms:
-            - "True": { message: "You must accept the terms and conditions in order to proceed." }
+            - "True":
+                message: Registration incomplete|You must accept the terms and conditions in order to proceed.
 
 
 Kryptos\KryptosBundle\Entity\Signin:
     properties:
         email:
             - Email:
-                message: The email "{{ value }}" is not a valid email.
+                message: Incorrect Email|The email "{{ value }}" is not a valid email.
                 checkMX: true
-            - NotBlank: { message: "Please enter your email." }
+            - NotBlank:
+                message: Login incomplete|Please enter your email.
         password:
-            - NotBlank: { message: "Please enter your password." }
+            - NotBlank: 
+                message: Login incomplete|Please enter your password.
 
 
 Kryptos\KryptosBundle\Entity\ResetPasswordEmail:
     properties:
         email:
             - Email:
-                message: The email "{{ value }}" is not a valid email.
+                message: Incorrect Email|The email "{{ value }}" is not a valid email.
                 checkMX: true
-            - NotBlank: { message: "Please enter your email." }
+            - NotBlank: 
+                message: Incorrect Email|Please enter your email.

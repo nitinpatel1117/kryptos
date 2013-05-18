@@ -1,42 +1,40 @@
-{% extends "KryptosKryptosBundle::layout.html.twig" %}
-{% form_theme form 'KryptosKryptosBundle:Form:signin.html.twig' %}
+{% extends "KryptosKryptosBundle::layoutNotAuth.html.twig" %}
+{% form_theme form 'KryptosKryptosBundle:Form:commonTheme.html.twig' %}
 
 {% block content %}
-	<section class="blueHeader">
-		<h1>{{ location }}</h1>
-		<section class="innerWrap">
-			<div id="signin">
-				<form action="{{ path('signin') }}" method="post" {{ form_enctype(form) }} class="form-horizontal">
-		
-			    	<div id="SigninForm" class="control-group">
-			    		
-						{{ form_errors(form) }}
-
-						{{ form_row(form.email) }}
-						{{ form_row(form.password) }}
-						
-						{{ form_rest(form) }}
-					</div>
-					<div class="control-group">
-						<div class="controls">
-				    		<button class="btn btn-custom-block" type="submit">Login</button>
-				   		</div>
-			    	</div>
-			    	
-			    	<div class="control-group">
-						<div class="controls">
-							<a href="{{ path('password_reset_email') }}">Forgotten your password? </a>
-						</div>
-					</div>
-					<div class="control-group">
-						<div class="controls">
-							<a href="{{ path('register') }}">
-							<button class="btn btn-custom-block" type="button">Register</button>
-							</a>
-						</div>
-					</div>
-				</form>
+	<form id="signin" action="{{ path('signin') }}" method="post" {{ form_enctype(form) }} class="form-horizontal" style="width: 500px;" >  
+		<div class="control-group">    
+			<div class="controls" > 
+				<img src="/bundles/kryptoskryptos/images/kryptos.png" class="img-rounded" class="centering" />
 			</div>
-		</section>
-	</section>
+		</div>
+		
+		{{ form_errors(form) }}
+		{{ form_errors(form.email) }}  
+		{{ form_errors(form.password) }}
+		
+		<div class="control-group">
+			{{ form_row(form.email) }}  
+			{{ form_row(form.password) }}
+		</div>
+		{{ form_rest(form) }}
+		
+		<div class="control-group">    
+			<div class="controls">          
+				<button type="submit" class="btn btn-custom-block btn-primary">Login</button> 
+			</div>  
+		</div>
+		<div class="control-group">    
+			<div class="controls">          
+				<a href="{{ path('password_reset_email') }}">Forgotten your password? </a>
+			</div>  
+		</div>
+		<div class="control-group">    
+			<div class="controls">
+				<a href="{{ path('register') }}">
+					<button type="button" class="btn btn-custom-block btn-primary">Create account</button>
+				</a>
+			</div>  
+		</div>
+	</form>
 {% endblock %}

@@ -3,7 +3,6 @@
 	<div class="controls form_row">
 	    {{ form_widget(form) }}
 	</div>
-	{{ form_errors(form) }}
 {% endspaceless %}
 {% endblock form_row %}
 
@@ -14,7 +13,20 @@
 	<div class="alert alert-error">
 		<button class="close" data-dismiss="alert" type="button">x</button>
 		{% for error in errors %}
-			{{ error.messageTemplate|trans(error.messageParameters, 'validators') }}<br>
+			{% set errorMessage = error.messageTemplate|trans(error.messageParameters, 'validators') %}
+			{% set errorMessageBits = errorMessage|split('|', 2) %}
+			
+			{% if errorMessageBits|length == 2 %}
+				{% set title = errorMessageBits[0] %}
+				{% set message = errorMessageBits[1] %}
+				<strong>
+					<i class=" icon-exclamation-sign"></i>
+					{{ title }}
+				</strong><br>
+				{{ message }}
+			{% else %}
+				{{ error.messageTemplate|trans(error.messageParameters, 'validators') }}<br>
+			{% endif %}
 		{% endfor %}
 	</div>
 {% endif %}

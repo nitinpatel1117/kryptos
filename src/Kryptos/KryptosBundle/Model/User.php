@@ -3,6 +3,8 @@ namespace Kryptos\KryptosBundle\Model;
 
 class User
 {
+	public $title;
+	
     public $firstName;
 
     public $lastName;
@@ -49,6 +51,13 @@ class User
     	}
 
     	return $id;
+    }
+    
+    public function setTitle($title) {
+    	$this->title = $title;
+    }
+    public function getTitle() {
+    	return $this->title;
     }
 
 	public function setFirstName($firstName) {

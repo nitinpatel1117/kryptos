@@ -5,6 +5,8 @@ class Register
 {
 	#protected $username;
 	
+	protected $title;
+	
     protected $firstName;
     
     protected $lastName;
@@ -29,6 +31,13 @@ class Register
 		return $this->username;
 	}
 	*/
+    
+    public function setTitle($title) {
+    	$this->title = $title;
+    }
+    public function getTitle() {
+    	return $this->title;
+    }
     
 	public function setFirstName($firstName) {
 		$this->firstName = $firstName;
