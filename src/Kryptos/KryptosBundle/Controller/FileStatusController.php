@@ -47,6 +47,7 @@ class FileStatusController extends Controller
     			'datetime' 		=> $date->format('d/m/Y H:i:s'),
     			'filename' 		=> $item['originalFilename'],
     			'status' 		=> $item['status'],
+    			'stats' 		=> isset($item['stats']) ? $item['stats'] : null,
     			'downloadable'	=> ('complete' == $item['status']) ? true : false,
     		);
     		

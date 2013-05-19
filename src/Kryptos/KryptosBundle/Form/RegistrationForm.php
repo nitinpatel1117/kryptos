@@ -94,7 +94,7 @@ class RegistrationForm extends AbstractType
 		$builder->add('email', 'repeated', array(
 			'type' => 'text',
 			'required' => true,
-			'invalid_message' => 'The email fields do not match.',
+			'invalid_message' => "Email's do not match |The Email addresses you have typed do not match. Please check and try again.",
 			'first_name' => 'email',
 			'second_name' => 'confirmEmail',
 			'first_options' => array(
@@ -118,7 +118,7 @@ class RegistrationForm extends AbstractType
 		$builder->add('password', 'repeated', array(
 			'type' => 'password',
 			'required' => true,
-			'invalid_message' => 'The password fields do not match',
+			'invalid_message' => "Password's do not match |The Passwords you have typed do not match. Please check and try again.",
 			'first_name' => 'password',
 			'second_name' => 'confirmPassword',
 			'first_options' => array(
@@ -152,11 +152,11 @@ class RegistrationForm extends AbstractType
 		));
 
 		$builder->add('captcha', 'captcha', array(
-			'invalid_message' => 'Incorrect text entered.',
+			'invalid_message' => 'Character mismatch|The characters that you have entered do not match with the ones shown in the image. Please try again.',
 			'as_url' => true,
 			'reload' => true,
 			'label' => 'Word Verification',
-		#	'background_color' => array('255', '255', '255'),
+			'background_color' => array(255, 255, 255),
 			'attr' => array(
 				'placeholder' 			=> 'Enter text',
 				'rel'					=> 'tooltip',

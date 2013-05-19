@@ -16,7 +16,7 @@ class UniqueEmailValidator extends ConstraintValidator
     public function validate($value, Constraint $constraint)
     {
     	if ($this->userManager->isEmailTaken($value)) {
-            $this->context->addViolation($constraint->message, array('%string%' => $value));
+            $this->context->addViolation($constraint->message, array('{{ value }}' => $value));
         }
     }
 }

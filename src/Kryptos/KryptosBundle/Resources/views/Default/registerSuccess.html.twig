@@ -1,10 +1,22 @@
 {% extends "KryptosKryptosBundle::layoutNotAuth.html.twig" %}
 
 {% block content %}
-	<h1>{{ header }}</h1>
-	<section>
-		{% if true == show_signin_link %}
-			You may now sign in via the <a href="{{ link_url }}" >{{ link_text }}</a> screen.
-		{% endif %}
-	</section>
+	<form class="form-horizontal" style="width: 500px;">
+		<div class="control-group">    
+			<div class="controls" > 
+				<img src="/bundles/kryptoskryptos/images/kryptos.png" class="img-rounded" class="centering" />
+			</div>
+		</div>
+
+		<br>
+		<legend style="text-align:left;">{{ header }}</legend>
+			
+		<div class="control-group">    
+			<div class="controls" >
+				{% if true == show_signin_link %}
+					You may now sign in via the <a href="{{ link_url }}" >{{ link_text }}</a> screen.
+				{% endif %}
+			</div>
+		</div>
+	</form>
 {% endblock %}

@@ -1,23 +1,57 @@
-	<section class="sub-blueHeader">
-		<h2>{{ location }}</h2>
-		<table id='fileStatus' cellspacing='0' cellpadding='0'>
-			<tr>
-				<th>Date/Time</th>
-				<th>Filename</th>
-				<th>Status</th>
-				<th>Download</th>
-			</tr>
-		 {% for file in files %}
-			 <tr>
-				<td>{{ file.datetime|e }}</td>
-				<td>{{ file.filename|e }}</td>
-				<td>{{ file.status|e }}</td>
-				<td>
-					{% if true == file.downloadable %}
-						<a class="batch_download_link" href="{{ downloadLink }}/{{ file.id|e }}">{{ file.filename|e }}</a>
-					{% endif %}
-				</td>
-			</tr>
-		{% endfor %}
-		</table>
-	</section>
+			<div class="row">
+				<legend style="text-align:left;">3. File status and History</legend>
+				<table class="table table-striped" style="text-align:center;">
+					<thead>
+						<tr>
+							<th>Date/Time</th>
+							<th>Filename</th>
+							<th>Status / Result</th>
+							<th>Download File</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>date/time</td>
+							<td>id</td>
+							<td>
+								<div class="progress">
+									<div class="bar" style="width: 60%;"></div>
+								</div>
+							</td>
+							<td><a href="" ><button class="btn btn-primary" type="button"><i class="icon-download-alt icon-white"></i>Download</button></a></td>											
+						</tr>					
+						{% for file in files %}
+							 <tr>
+								<td>{{ file.datetime|e }}</td>
+								<td>{{ file.filename|e }}</td>
+								<td>
+									{% if "complete" == file.status %}
+										<span>{{ file.stats.valid }}/{{ file.stats.processed }} Converted sucessfully</span><br />
+										
+										{% set need_verifying = file.stats.not_validated + file.stats.reconfirm_iban %}
+										{% if need_verifying > 0 %}
+											<span>{{ need_verifying }}/{{ file.stats.processed }} Need verifying</span><br />
+										{% endif %}
+										
+										{% if file.stats.invalid > 0 %}
+											<span>{{ file.stats.invalid }}/{{ file.stats.processed }} Incorrect accounts</span><br />
+										{% endif %}
+										
+										{% if file.stats.conversions_refund > 0 %}
+											<span>{{ file.stats.conversions_refund }}/{{ file.stats.processed }} Conversions refunded</span><br />
+										{% endif %}
+									{% else %}
+										<span>{{ file.status }}</span>
+									{% endif %}
+								</td>
+								<td>
+									{% if true == file.downloadable %}
+										<a href="{{ downloadLink }}/{{ file.id|e }}" ><button class="btn btn-primary" type="button"><i class="icon-download-alt icon-white"></i>Download</button></a>
+									{% endif %}
+								</td>
+							</tr>
+						{% endfor %}
+								
+					</tbody>
+				</table>
+			</div>

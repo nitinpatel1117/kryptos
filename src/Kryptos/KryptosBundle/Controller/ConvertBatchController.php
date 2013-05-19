@@ -76,13 +76,14 @@ class ConvertBatchController extends Controller
 	    					throw new \Exception('You no not have any conversions available. You will need to purchase conversions in order to proceed.', 101);
 	    				}
 	    			}
-	    			
+
 	    			
 	    			$fileData = array(
 	    				'originalFilename' 	=> $originalFilename,
 	    				'filename' 			=> $newFilename,
 	    				'sessionId' 		=> is_null($this->getUserId()) ? $this->getSessionId() : null,			# we want to store only the sessionId or the userId
 	    				'userId' 			=> $this->getUserId(),
+	    				'approxLines'		=> $this->getLineCount($tmp_path.$newFilename),							# store approx line count so that we can, calculate the aprox time for it to have processed
 	    			);
 	    			
 	    			$additionalData = array(

@@ -20,14 +20,14 @@ class FileManager extends BaseManager
     public function getFilesByUser($userId)
     {
     	$item = array('userId' => $userId);
-    	return parent::find($item)->limit(20)->sort(array('upload_time' => 1));
+    	return parent::find($item)->limit(20)->sort(array('upload_time' => -1));
     }
     
     
     public function getFilesBySession($sessionId)
     {
     	$item = array('sessionId' => $sessionId);
-    	return parent::find($item)->limit(20)->sort(array('upload_time' => 1));
+    	return parent::find($item)->limit(20)->sort(array('upload_time' => -1));
     }
     
     

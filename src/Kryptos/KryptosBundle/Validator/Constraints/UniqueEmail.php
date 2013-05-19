@@ -5,7 +5,7 @@ use Symfony\Component\Validator\Constraint;
 
 class UniqueEmail extends Constraint
 {
-	public $message = 'The email "%string%" already exists';
+	public $message = 'The email "{{ value }}" already exists';
 	
 	public function validatedBy()
 	{

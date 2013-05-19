@@ -2,48 +2,76 @@
 {% form_theme form 'KryptosKryptosBundle:Form:commonTheme.html.twig' %}
 
 {% block content %}
-	
-	<section class="blueHeader">
-		<h1>{{ location }}</h1>
-		<section class="innerWrap">
-			<div id="convertBatch">
-				<form action="{{ path('convert_batch') }}" method="post" {{ form_enctype(form) }}>
-					{% if conversionsRestricted == true %}
-					<div>
-						{{ userNote }}
-					</div>
-					{% endif %}
-				
-			    	<div id="ConvertBatchForm">
-			    		<div id="ConvertBatchForm_errors" class="form_errors">
-			    			{{ form_errors(form) }}
-			    		</div>
-			    		
-			    		{% if confirmUpload != '' %}
-			    		<div id="ConvertBatchForm_success" class="form_success">
-			    			{{ confirmUpload }}
-			    		</div>
-			    		{% endif %}
-			    		
-				    	<div class="form_row attachment control-group">
-				    	
-						    {{ form_label(form.attachment) }}
-						    {{ form_widget(form.attachment) }}
-						    {{ form_errors(form.attachment) }}
-						</div>
-						{{ form_rest(form) }}
-						<div class="form_row submit">
-							<button id="ConvertBatchForm_btn_submit" class="btn btn-custom-block" type="submit">{{ btn_submit }}</button>
-						</div>
-			    	</div>
-			    </form>
-			    
-			    <section id='fileStatus'>
-			    	{% render 'KryptosKryptosBundle:FileStatus:index'  %}
-			    </section>
-			    
+	<div class="row-fluid">
+		<form action="{{ path('convert_batch') }}" method="post" {{ form_enctype(form) }} class="form-horizontal">
+			<div class="row" style="text-align:center;">
+				<legend style="text-align:left;">1. Prepare your file</legend>
+				<table class="table table-striped">
+					<tbody>
+						<tr>
+							<td>
+								<div style="text-align:left;">Prepare a list of your account numbers using our template. Save a copy in case you need to edit it later</div>
+								<div style="text-align:right;">
+									<a style="text-align:right;" href="" >
+										<button class="btn btn-primary" type="button"><i class="icon-download-alt icon-white"></i>Download</button>
+									</a>
+									<a style="text-align:right;" href="" >
+										<button class="btn btn-primary" type="button"><i class="icon-question-sign icon-white"></i>Help</button>
+									</a>
+								</div>
+							</td>
+						</tr> 
+					</tbody>
+				</table>
 			</div>
-		</section>
-	</section>
+			
+			<div class="row">
+				<legend style="text-align:left;">2. Upload your file</legend>
+				<table class="table table-striped">
+					<tbody>
+						<tr>
+							<td>
+								<div style="text-align:left;">Save the worksheet containing your account number data as a .csv file and then upload it here.</div>
+								<div style="text-align:right;">
+									{{ form_errors(form) }}
+									{{ form_errors(form.attachment) }}
+									
+									{% if confirmUpload != '' %}
+						    		<div id="ConvertBatchForm_success" class="form_success">
+						    			{{ confirmUpload }}
+						    		</div>
+						    		{% endif %}
 
+									{{ form_widget(form.attachment) }}
+									{{ form_rest(form) }}
+								
+								
+									<div class="fileupload fileupload-new" data-provides="fileupload">
+										<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+										<span class="fileupload-preview"></span>
+										<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+									</div>
+								
+									<a href="">
+										<button class="btn btn-primary" type="button"><i class="icon-folder-open icon-upload icon-white"></i> Browse </button>
+									</a>
+									<a href="" >
+										<button class="btn btn-primary" type="submit"><i class="icon-download-alt icon-upload icon-white"></i>{{ btn_submit }}</button>
+									</a>
+									<a href="" >
+										<button class="btn btn-primary" type="button"><i class="icon-question-sign icon-white"></i>Help</button>
+									</a> 
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>				
+			</div>
+			
+			<section id='fileStatus'>
+			   	{% render 'KryptosKryptosBundle:FileStatus:index'  %}
+			</section>
+			
+		</form>
+	</div>
 {% endblock %}

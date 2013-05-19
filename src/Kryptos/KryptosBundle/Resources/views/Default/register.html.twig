@@ -3,7 +3,7 @@
 
 
 {% block content %}
-	<form novalidate id="register" action="{{ path('register') }}" method="post" {{ form_enctype(form) }} class="form-horizontal" style="width: 500px;">
+	<form id="register" action="{{ path('register') }}" method="post" {{ form_enctype(form) }} class="form-horizontal" style="width: 500px;">
 		<div class="control-group">    
 			<div class="controls" > 
 				<img src="/bundles/kryptoskryptos/images/kryptos.png" class="img-rounded" class="centering" />
@@ -17,8 +17,8 @@
 		{{ form_errors(form.jobTitle) }}
 		{{ form_errors(form.company) }}
 		{{ form_errors(form.location) }}
-		{{ form_errors(form.email) }}
-		{{ form_errors(form.password) }}
+		{{ form_errors(form.email.email) }}
+		{{ form_errors(form.password.password) }}
 		{{ form_errors(form.captcha) }}
 		
 		<div class="control-group">

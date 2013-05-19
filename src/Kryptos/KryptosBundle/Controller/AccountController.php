@@ -136,6 +136,7 @@ class AccountController extends Controller
     		
     		if (isset($user['payment'])) {
     			$payments = $user['payment'];
+    			unset($user);
     		}
     	}
     	 

@@ -7,34 +7,31 @@
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1" />
 	<meta name="language" content="en" />
 	<link rel="stylesheet" type="text/css" href="/bundles/kryptoskryptos/css/bootstrap/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="/bundles/kryptoskryptos/css/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="/bundles/kryptoskryptos/css/bootstrap/bootstrap-fileupload.min.css" />
 	<link rel="stylesheet" type="text/css" href="/bundles/kryptoskryptos/css/main.css" />
-	
 	<!-- <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" /> -->
 {% endblock %}
 
 {% block body %}
-<section class="centraliser">
-	<header>
 		{% render 'KryptosKryptosBundle:Default:authenicationBar' %}
-	</header>
 	
-	<section class="contentWrapper">
+	<div class="container-fluid">
 		{% block content %}{% endblock %}
-	</section>
-	
-	<footer>
-  		<p>(c) 2013 Kryptos</p>
-	</footer>
-</section>
+	</div>
+{% endblock %}
 
+{% block javascripts %}
 <script src="/bundles/kryptoskryptos/js/jquery-1.9.1.min.js"></script>
+
 <script src="/bundles/kryptoskryptos/js/purchaseConversions.js"></script>
 <script src="/bundles/kryptoskryptos/js/fileStatus.js"></script>
 <script src="/bundles/kryptoskryptos/js/convertSingle.js"></script>
 
-
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
 <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js"></script>
+<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-fileupload.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 	$("input[rel=tooltip]").tooltip({ trigger: 'hover' ,animation: 'true' , placement:'right'});

@@ -47,11 +47,56 @@ class ConvertSingleForm extends AbstractType
     		}
     	}
     	
-    	$builder->add('bban1', 'text', array('label' => $label_bban1, 'required' => $required_bban1));
-    	$builder->add('bban2', 'text', array('label' => $label_bban2, 'required' => $required_bban2));
-    	$builder->add('bban3', 'text', array('label' => $label_bban3, 'required' => $required_bban3));
-    	$builder->add('bban4', 'text', array('label' => $label_bban4, 'required' => $required_bban4));
-    	$builder->add('bban5', 'text', array('label' => $label_bban5, 'required' => $required_bban5));
+    	
+    	$builder->add('bban1', 'text', array(
+    		'label' => $label_bban1,
+    		'required' => $required_bban1,
+    		'attr' => array(
+    			'placeholder'			=> 'BBAN1',
+    			'rel'					=> 'poppver',
+    			'data-original-title'	=> 'Please enter your bban1.',
+    		),
+    	));
+    	
+    	$builder->add('bban2', 'text', array(
+    		'label' => $label_bban2,
+    		'required' => $required_bban2,
+    		'attr' => array(
+    			'placeholder'			=> 'BBAN2',
+    			'rel'					=> 'poppver',
+    			'data-original-title'	=> 'Please enter your bban2.',
+    		),
+    	));
+    	
+    	$builder->add('bban3', 'text', array(
+    		'label' => $label_bban3,
+    		'required' => $required_bban3,
+    		'attr' => array(
+    			'placeholder'			=> 'BBAN3',
+    			'rel'					=> 'poppver',
+    			'data-original-title'	=> 'Please enter your bban3.',
+    		),
+    	));
+    	
+    	$builder->add('bban4', 'text', array(
+    		'label' => $label_bban4,
+    		'required' => $required_bban4,
+    		'attr' => array(
+    			'placeholder'			=> 'BBAN4',
+    			'rel'					=> 'poppver',
+    			'data-original-title'	=> 'Please enter your bban4.',
+    		),
+    	));
+    	
+    	$builder->add('bban5', 'text', array(
+    		'label' => $label_bban5,
+    		'required' => $required_bban5,
+    		'attr' => array(
+    			'placeholder'			=> 'BBAN5',
+    			'rel'					=> 'poppver',
+    			'data-original-title'	=> 'Please enter your bban5.',
+    		),
+    	));
     }
     
 

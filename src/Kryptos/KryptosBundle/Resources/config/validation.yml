@@ -1,5 +1,8 @@
 Kryptos\KryptosBundle\Entity\Register:
     properties:
+        title:
+            - NotBlank:
+                message: Registration incomplete|Please select your title.
         firstName:
             - NotBlank:
                 message: Registration incomplete|Please enter your forename.
@@ -17,9 +20,10 @@ Kryptos\KryptosBundle\Entity\Register:
                 message: Registration incomplete|Please enter your location.
         email:
             - Email:
-                message: Incorrect Email|The email "{{ value }}" is not a valid email|Please try again.
+                message: Incorrect Email|The email "{{ value }}" is not a valid email address. Please try again.
                 checkMX: true
-            - Kryptos\KryptosBundle\Validator\Constraints\UniqueEmail: ~
+            - Kryptos\KryptosBundle\Validator\Constraints\UniqueEmail: 
+                message: Email already registered|The email "{{ value }}" already exists on our system. If you have previously registered and forgotten your password, please go back to the sign in screen and reset your password by clicking on 'Forgotten your password?'
         password:
             - NotBlank: 
                 message: Registration incomplete|Please enter your password.
@@ -49,3 +53,9 @@ Kryptos\KryptosBundle\Entity\ResetPasswordEmail:
                 checkMX: true
             - NotBlank: 
                 message: Incorrect Email|Please enter your email.
+
+Kryptos\KryptosBundle\Entity\ResetPasswordQuestion:
+    properties:
+        password:
+            - NotBlank: 
+                message: Password reset incomplete|Please enter your password.

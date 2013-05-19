@@ -1,16 +1,44 @@
-{% if allDisabled == false %}
-	{% if signin == true %}
-    	<a href="{{ path('signin') }}">signin</a> <br>
-    {% endif %}
-
-    {% if register == true %}
-		<a href="{{ path('register') }}">register</a><br>
-	{% endif %}
-
-	{% if logout == true %}
-		<a href="{{ path('logout') }}">logout</a> &nbsp; | &nbsp; 
-		<a href="{{ path('welcome') }}">welcome</a>
-		
-		<br>
-	{% endif %}
-{% endif %}
+<div class="navbar">
+	<div class="navbar-inner">
+		<a class="brand" href="#">Kryptos</a>
+		<ul class="nav">
+			<li><a href="{{ path('welcome') }}"><i class="icon-home"></i> Home</a></li>
+			<li class="dropdown active">
+				<!--<div class="nav dropdown">-->
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					Convert
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="{{ path('convert_single') }}">Single conversion</a></li>
+					<li><a href="{{ path('convert_batch') }}">Batch Conversion</a></li>
+				</ul>
+				<!--</div>-->
+			</li>	
+			<li>
+				<li class="dropdown">
+					<!--<div class="nav dropdown">-->
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						Account
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="{{ path('account_summary') }}">Payment History</a></li>
+						<li><a href="{{ path('purchase_conversions') }}">Purchase conversions</a></li>
+					</ul>
+					<!--</div>-->
+				</li>
+			</li>
+			<li><a href="#">Settings</a></li>
+    	</ul>
+		<ul class="nav pull-right">
+			<li><a href="{{ path('logout') }}">Logout</a></li>
+		</ul>
+		<ul class="nav pull-right">
+			<li><a href="#">Balance: €</a></li>
+		</ul>
+		<ul class="nav pull-right">
+			<li><a href="#">You are logged in as: <strong>username<strong></a></li>
+		</ul>
+	</div>
+</div>

@@ -13,14 +13,6 @@ section.sub-blueHeader h2 { background-color: #4F81BD; color: white; margin-top:
 section.sub-blueHeader section.innerWrap { padding:20px;}
 
 
-/* Footer */
-header {margin:0px 0px 60px 0px}
-
-/* Footer */
-footer {margin:50px 0px 0px 0px}
-
-
-
 /*** Forms ***/
 
 /* Registration Form */
@@ -89,5 +81,4 @@ table#fileStatus {width: 100%; border-collapse:collapse;}
 table#fileStatus td, table#fileStatus th {border:solid 1px black; padding: 3px}
 
 /* Account History */
-table#accountHistory {width: 100%; border-collapse:collapse;}
-table#accountHistory td, table#accountHistory th {border:solid 1px black; padding: 3px}
+table#accountHistory {}

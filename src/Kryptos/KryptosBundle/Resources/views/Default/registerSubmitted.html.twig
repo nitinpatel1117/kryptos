@@ -1,9 +1,21 @@
 {% extends "KryptosKryptosBundle::layoutNotAuth.html.twig" %}
 
 {% block content %}
-	<h1>{{ header }}</h1>
-	<section>
-		You will shortly recieve an activation email to the email address you provided. 
-		Please click on the activation link contained in the email to confirm your email address.
-	</section>
+	<form class="form-horizontal" style="width: 500px;">
+		<div class="control-group">    
+			<div class="controls" > 
+				<img src="/bundles/kryptoskryptos/images/kryptos.png" class="img-rounded" class="centering" />
+			</div>
+		</div>
+
+		<br>
+		<legend style="text-align:left;">{{ header }}</legend>
+			
+		<div class="control-group">    
+			<div class="controls" >
+				You will shortly recieve an activation email to the email address you provided. 
+				Please click on the activation link contained in the email to confirm your email address.
+			</div>
+		</div>
+	</form>
 {% endblock %}

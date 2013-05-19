@@ -15,7 +15,7 @@ class ResetPasswordQuestionForm extends AbstractType
     	$builder->add('password', 'repeated', array(
 			'type' => 'password',
 			'required' => true,
-			'invalid_message' => 'The password fields do not match',
+			'invalid_message' => "Password's do not match |The Passwords you have typed do not match. Please check and try again.",
 			'first_name' => 'password',
 			'second_name' => 'confirmPassword',
 			'first_options' => array(
@@ -41,10 +41,10 @@ class ResetPasswordQuestionForm extends AbstractType
 				new Length(array(
 					'min' => 4, 
 					'max' => 20,
-					'maxMessage' => 'Password value is too long. It should have {{ limit }} characters or less.',
-					'minMessage' => 'Password value is too short. It should have {{ limit }} characters or more.',
+					'maxMessage' => 'Invalid password|Password value is too long. It should have {{ limit }} characters or less.',
+					'minMessage' => 'Invalid password|Password value is too short. It should have {{ limit }} characters or more.',
 				)),
-				new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'Password should only contain alphanumber characters. (a to z) and (0 to 9)')),
+				new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'Invalid password|Password should only contain alphanumber characters. (a to z) and (0 to 9)')),
 			)
 		));
 		
