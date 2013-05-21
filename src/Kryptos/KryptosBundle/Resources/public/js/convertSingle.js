@@ -25,11 +25,13 @@ $(document).ready(function() {
 	
 	
 	
-	changeToCountry = function(bbanMap, countryCode)
+	changeToCountry = function(bbanMap, countryCode, hideFields)
 	{
 		if (countryCode in bbanMap) {
 			hideAllFields();
-			removeAllValues();
+			if (true == hideFields) {
+				removeAllValues();
+			}
 			
 			$('#ConvertSingleForm_bban1').removeAttr("required");
 			$('#ConvertSingleForm_bban2').removeAttr("required");
@@ -53,13 +55,13 @@ $(document).ready(function() {
 	}
 	
 	if (typeof bbanMap != 'undefined' && typeof countrySelected != 'undefined') {
-		changeToCountry(bbanMap, countrySelected);
+		changeToCountry(bbanMap, countrySelected, false);
 	}
 
 	if ($('select#ConvertSingleForm_country').length) {
 		$('select#ConvertSingleForm_country').change(function() {
 			countryCode = $('select#ConvertSingleForm_country').val();
-			changeToCountry(bbanMap, countryCode);
+			changeToCountry(bbanMap, countryCode, true);
 		});
 		/*
 		$('select#ConvertSingleForm_country').click(function() {
