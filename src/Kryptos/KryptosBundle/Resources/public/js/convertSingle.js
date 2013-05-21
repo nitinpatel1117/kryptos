@@ -1,13 +1,35 @@
+hideAllFields = function()
+{
+	$('.form_row.bban1').css('visibility', 'hidden');
+	$('.form_row.bban2').css('visibility', 'hidden');
+	$('.form_row.bban3').css('visibility', 'hidden');
+	$('.form_row.bban4').css('visibility', 'hidden');
+	$('.form_row.bban5').css('visibility', 'hidden');
+}
+
+removeAllValues = function()
+{
+	$('#ConvertSingleForm_bban1').val('');
+	$('#ConvertSingleForm_bban2').val('');
+	$('#ConvertSingleForm_bban3').val('');
+	$('#ConvertSingleForm_bban4').val('');
+	$('#ConvertSingleForm_bban5').val('');
+}
+
+
+if ('' == countrySelected) {
+	hideAllFields();
+}
+
 $(document).ready(function() {
+	
+	
 	
 	changeToCountry = function(bbanMap, countryCode)
 	{
 		if (countryCode in bbanMap) {
-			$('.form_row.bban1').css('visibility', 'hidden');
-			$('.form_row.bban2').css('visibility', 'hidden');
-			$('.form_row.bban3').css('visibility', 'hidden');
-			$('.form_row.bban4').css('visibility', 'hidden');
-			$('.form_row.bban5').css('visibility', 'hidden');
+			hideAllFields();
+			removeAllValues();
 			
 			$('#ConvertSingleForm_bban1').removeAttr("required");
 			$('#ConvertSingleForm_bban2').removeAttr("required");
@@ -17,11 +39,17 @@ $(document).ready(function() {
 			
 			for( var key in bbanMap[countryCode] ) {
 				var value = bbanMap[countryCode][key];
-				$('.form_row.'+key+' label').text(value);
-				$('.form_row.'+key).css('visibility', 'visible');
+				// $('.form_row.'+key+' label').text(value);
 				$('#ConvertSingleForm_'+key).attr("required", "required");
+				$('#ConvertSingleForm_'+key).attr("placeholder", value);
+				$('.form_row.'+key).css('visibility', 'visible');
 		    }
 		}
+		
+		if ('' == countryCode) {
+			hideAllFields();
+		}
+		
 	}
 	
 	if (typeof bbanMap != 'undefined' && typeof countrySelected != 'undefined') {
@@ -31,7 +59,13 @@ $(document).ready(function() {
 	if ($('select#ConvertSingleForm_country').length) {
 		$('select#ConvertSingleForm_country').change(function() {
 			countryCode = $('select#ConvertSingleForm_country').val();
-			changeToCountry(bbanMap, countryCode );
+			changeToCountry(bbanMap, countryCode);
 		});
+		/*
+		$('select#ConvertSingleForm_country').click(function() {
+			countryCode = '';
+			changeToCountry(bbanMap, countryCode);
+		});
+		*/
 	}
 });

@@ -7,74 +7,64 @@
 	<div class="row-fluid">
 		<div class="span6">
 			<div style="background-color:#F8F8F8">
-				<form novalidate action="{{ path('convert_single') }}" method="post" {{ form_enctype(form) }}>
+				<form novalidate id="convertSingle" action="{{ path('convert_single') }}" method="post" {{ form_enctype(form) }}>
 					<div class="row">	
+					
+						<script>
+							var countrySelected = '';
+							{% if countrySelected %}
+								countrySelected = '{{ countrySelected }}';
+							{% endif %}
+						</script>
+					
+						{% if bbanMappings %}
+						<script>
+							var bbanMap = new Array();
+						
+							{% for code, mappings in bbanMappings %}
+								bbanMap['{{ code }}'] = new Array();
+					        
+								{% for name, text in mappings %}
+									bbanMap['{{ code }}']['{{ name }}'] = '{{ text }}';
+					    	    {% endfor %}
+					    	{% endfor %}
+						</script>
+						{% endif %}
+					
 						<fieldset>
 							<legend>Enter Bank Account</legend>
 							<div class="control-group">
-						
-								<div class="controls">      
-										<span class="add-on"><i class="icon-globe"></i></span>
-										
-										{{ form_row(form.country) }}
-										<!--
-										<select name="title" style="width:220px;">
-											<option> - Select Country - </option>
-											<option value="UK">United Kingdom</option>
-											<option value="DE">Germany</option>
-										</select>
-										-->							
-								</div>   
-								
+								{{ form_row(form.country) }}
 								{{ form_row(form.bban1) }}
 								{{ form_row(form.bban2) }}
 								{{ form_row(form.bban3) }}
 								{{ form_row(form.bban4) }}
 								
-								
-								<div class="controls">      
-									<span class="add-on"><i class="icon-pencil"></i></span> <input type="text" id="bban2" placeholder="BBAN2" rel="popover" title="Please enter your bban2." style="width:220px;"/>    
-									
-								</div> 	
-								<div class="controls">      
-									<span class="add-on"><i class="icon-pencil"></i></span> <input type="email" id="bban3" placeholder="BBAN3" rel="popover" title="Please enter your bban3." style="width:220px;"/>    
-								</div> 	
-								<div class="controls">      
-									<span class="add-on"><i class="icon-pencil"></i></span> <input type="email" id="bban4" placeholder="BBAN4" rel="popover" title="Please enter bban4." style="width:220px;"/>    
-								</div>
+								{{ form_rest(form) }}
 							</div>  
 					
 							<div class="control-group">    
-								<div class="controls">          
-										<a href="#"> <button type="submit" class="btn btn-custom-block btn-primary"><i class="icon-check icon-white"></i> Convert</button> </a>
-										<!--<a rel="tooltip" href="#" title="I'm a useful tooltip!"> hover over me </a>-->
+								<div class="controls">
+									<button type="submit" class="btn btn-custom-block btn-primary"><i class="icon-check icon-white"></i> {{ btn_submit }}</button>
 								</div>  
 							</div>
 						</fieldset>
+						
+						{{ form_errors(form) }}
+						{{ form_errors(form.country) }}
+						{{ form_errors(form.bban1) }}
+						{{ form_errors(form.bban2) }}
+						{{ form_errors(form.bban3) }}
+						{{ form_errors(form.bban4) }}
+						{{ form_errors(form.bban5) }}
 				
-						<!-- START if zero credit-->
-						<div class="alert alert-error">
-						  <button type="button" class="close" data-dismiss="alert">×</button>
-						  <strong><i class=" icon-exclamation-sign"></i> Insufficient credit</strong> <br/>
-						  You do not have sufficient funds in your account to carry out the check. Please credit your account and then try again.
-						</div>
-		        		<!-- END if zero credit-->
-				
-						<!-- START of Bank Account Incorrect-->
-						<div class="alert alert-error">
-						  <button type="button" class="close" data-dismiss="alert">×</button>
-						  <strong><i class=" icon-exclamation-sign"></i> Invalid Bank Account</strong> <br/>
-						  The bank account provided is incorrect. Please check and try again.
-						</div>
-		       			 <!-- END of Bank Account Incorrect-->
-				
-						<!-- START of Bank Account Correct-->
-						<div class="alert alert-success">
-						  <button type="button" class="close" data-dismiss="alert">×</button>
-						  <strong><i class="icon-ok-sign"></i> Bank Account valid</strong> <br/>
-						  The bank account provided is valid and has been converted to SEPA format below.
-						</div>
-		        		<!-- END of Bank Account Correct-->
+						{% if true == accountValid %}
+							<div class="alert alert-success">
+								<button type="button" class="close" data-dismiss="alert">×</button>
+								<strong><i class="icon-ok-sign"></i> Bank Account valid</strong> <br/>
+								The bank account provided is valid and has been converted to SEPA format below.
+							</div>
+						{% endif %}
 					
 					</div>
 				</form>
@@ -82,7 +72,7 @@
 		</div>
 
 
-
+		{% if true == accountValid %}
 		<div class="span6">
 			<div style="background-color:#F8F8F8" >
 				<form class="form-horizontal">
@@ -93,21 +83,21 @@
 							<div class="control-group">
 								<label class="control-label" for="iban">IBAN</label>
 								<div class="controls">
-									<span class="input-xlarge uneditable-input" style="height:20px;" id="iban" rel="popover">iban</span>
+									<span class="input-xlarge uneditable-input" style="height:20px;" id="iban" rel="popover">{{ accountData.iban }}</span>
 								</div>
 							</div>
 							
 							<div class="control-group">
 								<label class="control-label" for="bic">BIC</label>
 								<div class="controls">
-									<span class="input-xlarge uneditable-input"  style="height:20px;" id="bic" rel="popover">bic</span>
+									<span class="input-xlarge uneditable-input"  style="height:20px;" id="bic" rel="popover">{{ accountData.bic }}</span>
 								</div>
 							</div>
 	
 							<div class="control-group">
 								<label class="control-label" for="bank">Bank</label>
 								<div class="controls">
-									<span class="input-xlarge uneditable-input"  style="height:20px;" id="bank" rel="popover">Bank Name</span>
+									<span class="input-xlarge uneditable-input"  style="height:20px;" id="bank" rel="popover"> </span>
 								</div>
 							</div>
 	
@@ -115,14 +105,14 @@
 							<div class="control-group">
 								<label class="control-label" for="bank">Branch</label>
 								<div class="controls">
-									<span class="input-xlarge uneditable-input"  style="height:20px;" id="branch" rel="popover">Branch Name</span>
+									<span class="input-xlarge uneditable-input"  style="height:20px;" id="branch" rel="popover"> </span>
 								</div>
 							</div>
 							
 							<div class="control-group">
 								<label class="control-label" for="address">Address</label>
 								<div class="controls">
-									<span class="input-xlarge uneditable-input"  style="height:20px;" id="address" rel="popover">Address</span>
+									<span class="input-xlarge uneditable-input"  style="height:20px;" id="address" rel="popover"> </span>
 								</div>
 							</div>
 							
@@ -163,139 +153,6 @@
 				</form>
     		</div>
 		</div>
+		{% endif %}
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	<section class="blueHeader">
-		<h1>{{ location }}</h1>
-		<section class="innerWrap">
-			<div id="convertSingle">
-				<form novalidate action="{{ path('convert_single') }}" method="post" {{ form_enctype(form) }}>
-					{% if conversionsRestricted == true %}
-					<div>
-						{{ userNote }}
-					</div>
-					{% endif %}
-					
-					<script>
-						var countrySelected = '';
-						{% if countrySelected %}
-							countrySelected = '{{ countrySelected }}';
-						{% endif %}
-					</script>
-					
-					{% if bbanMappings %}
-					<script>
-						var bbanMap = new Array();
-						
-						{% for code, mappings in bbanMappings %}
-							bbanMap['{{ code }}'] = new Array();
-					        
-							{% for name, text in mappings %}
-								bbanMap['{{ code }}']['{{ name }}'] = '{{ text }}';
-					        {% endfor %}
-					    {% endfor %}
-					</script>
-					{% endif %}
-					
-					<br>
-				
-			    	<div id="ConvertSingleForm">
-			    		<p class="title">
-			    		Bank Details
-			    		</p>
-			    	
-			    		<div id="ConvertSingleForm_errors" class="form_errors">
-			    			{{ form_errors(form) }}
-			    		</div>
-			    		
-			    		<div class="panel">
-					    	<div class="form_row country">
-							    {{ form_label(form.country) }}
-							    {{ form_widget(form.country) }}
-							    {{ form_errors(form.country) }}
-							</div>
-							
-							<div class="form_row bban1">
-							    {{ form_label(form.bban1) }}
-							    {{ form_widget(form.bban1) }}
-							    {{ form_errors(form.bban1) }}
-							</div>
-							
-							<div class="form_row bban2">
-							    {{ form_label(form.bban2) }}
-							    {{ form_widget(form.bban2) }}
-							    {{ form_errors(form.bban2) }}
-							</div>
-							
-							<div class="form_row bban3">
-							    {{ form_label(form.bban3) }}
-							    {{ form_widget(form.bban3) }}
-							    {{ form_errors(form.bban3) }}
-							</div>
-							
-							<div class="form_row bban4">
-							    {{ form_label(form.bban4) }}
-							    {{ form_widget(form.bban4) }}
-							    {{ form_errors(form.bban4) }}
-							</div>
-							
-							<div class="form_row bban5">
-							    {{ form_label(form.bban5) }}
-							    {{ form_widget(form.bban5) }}
-							    {{ form_errors(form.bban5) }}
-							</div>
-							
-							{{ form_rest(form) }}
-							<div class="form_row submit">
-								<input id="ConvertSingleForm_btn_submit" type="submit" value="{{ btn_submit }}" />
-							</div>
-						</div>
-			    	</div>
-			    	
-			    	{% if accountValid %}
-			    	<div id="ConvertSingleFormResults">
-			    		<p class="title">
-			    		SEPA Details
-			    		</p>
-			    		
-			    		<div class="panel">
-				    		<table cellpadding="0" cellspacing="0" width="100%">
-				    			<tr>
-				    				<td>IBAN</td>
-				    				<td>{{ accountData.iban }}</td>
-				    			</tr>	
-				    			<tr>
-				    				<td>BIC</td>
-				    				<td>{{ accountData.bic }}</td>
-				    			</tr>
-				    		</table>
-			    		</div>
-			    	</div>
-			    	{% endif %}
-			    	
-			    	
-			    </form>
-			</div>
-		</section>
-	</section>
-
 {% endblock %}

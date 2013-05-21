@@ -52,13 +52,13 @@ class ConvertSingleController extends Controller
 	    		foreach ($bbanMaps as $key => $value) {
 	    			if (!(isset($formPosted[$key]) && !empty($formPosted[$key]))) {
 	    				$errorExists = true;
-	    				$form->addError(new FormError(sprintf('%s is required', $value)));
+	    				$form->get($key)->addError(new FormError(sprintf('Invalid Details |%s is a required field. Please supply a value for %s and try again.', $value, $value)));
 	    			}
 	    		}
     		}
     		else {
     			$errorExists = true;
-    			$form->addError(new FormError(sprintf('%s is required', 'Country')));
+    			$form->addError(new FormError(sprintf('Invalid Details| %s is a required field. Please select a country and try again.', 'Country')));
     		}
     		
     		
@@ -70,7 +70,7 @@ class ConvertSingleController extends Controller
     			$credits = $this->getAllowedConversions();
     			if ($credits < 1) {
     				$errorExists = true;
-    				$form->addError(new FormError('You no not have any conversions available. You will need to purchase conversions in order to proceed.'));
+    				$form->addError(new FormError('Insufficient credit|You do not have sufficient funds in your account to carry out the check. Please credit your account and then try again.'));
     			}
     		}
 
@@ -97,7 +97,10 @@ class ConvertSingleController extends Controller
     					$credits--;
     				}
     	
-    				$accountValid = true;	
+    				$accountValid = true;
+    			}
+    			else {
+    				$form->addError(new FormError('Invalid Bank Account |The bank account provided is incorrect. Please check and try again.'));
     			}
     		}
     	}

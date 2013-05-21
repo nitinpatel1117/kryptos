@@ -61,11 +61,9 @@ div#convertBatch form .form_success {margin-bottom:10px;}
 
 
 /* Convert Single Form */
-div#convertSingle {}
-div#convertSingle #ConvertSingleForm {width:49%; display: inline-block; vertical-align:top;}
-div#convertSingle #ConvertSingleFormResults {width:49%; display: inline-block; vertical-align:top;}
-div#convertSingle p.title  {text-align: center;}
-div#convertSingle div.panel  {margin: 10px; padding: 10px; background: white;}
+form#convertSingle {}
+form#convertSingle input { width: 220px; height:20px;}
+form#convertSingle select { width: 235px; }
 
 
 /* Summary Balance */
