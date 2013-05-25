@@ -14,8 +14,7 @@
 {% endblock %}
 
 {% block body %}
-		{% render 'KryptosKryptosBundle:Default:authenicationBar' %}
-	
+	{% render 'KryptosKryptosBundle:Default:authenicationBar' with { 'route': app.request.attributes.get('_route') } %}
 	<div class="container-fluid">
 		{% block content %}{% endblock %}
 	</div>
@@ -31,7 +30,7 @@
 <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
 <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js"></script>
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-fileupload.min.js"></script>
+<script type="text/javascript" src="/bundles/kryptoskryptos/js/bootstrap/bootstrap-fileupload.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 	$("input[rel=tooltip]").tooltip({ trigger: 'hover' ,animation: 'true' , placement:'right'});

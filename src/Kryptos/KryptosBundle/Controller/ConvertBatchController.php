@@ -133,6 +133,44 @@ class ConvertBatchController extends Controller
     }
     
     
+    public function templateAction(Request $request)
+    {
+    	$config = $this->get('config_manager');
+    	$session = $this->get('login_validator');
+
+    	/*
+    	 * // bypass the checking of whether this user is signed in. we want users to be able to download this file without being signed in. 
+    	if ($config->signinRequired() && !$session->isLoginValid()) {
+    		return $this->redirect($this->generateUrl('welcome'));
+    	}
+    	*/
+
+    	$templateLocation = $config->get('site|csv_template_server_path');
+    	 
+    	if (!(file_exists($templateLocation) && is_readable($templateLocation))) {
+    		// file does not exist or could not be read
+    		throw $this->createNotFoundException('Template file cound not be found.');
+    	}
+    	 
+
+    	$outputFilename = $config->get('site|csv_template_filename');
+    	
+    	header('Content-Type: application/csv');
+    	header("Content-Disposition: attachment; filename=\"$outputFilename\"");
+    	header('Pragma: public');
+    	header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+    	header('Content-Transfer-Encoding: binary');
+    	header('Expires: 0');
+    	header('Content-Length: ' . filesize($templateLocation));
+    	ob_clean();
+    	flush();
+    	
+    	readfile($templateLocation);
+    	exit;
+    }
+    
+    
+    
     public function downloadAction(Request $request, $fileId)
     {
     	$config = $this->get('config_manager');
@@ -142,8 +180,6 @@ class ConvertBatchController extends Controller
     	if ($config->signinRequired() && !$session->isLoginValid()) {
     		return $this->redirect($this->generateUrl('welcome'));
     	}
-    	
-    	$response = new Response();
     	
     	// retrieve user if we are dealing with signin enabled
     	$this->setupUser();
@@ -197,28 +233,7 @@ class ConvertBatchController extends Controller
     	flush();
     	
     	readfile($processedLocation);
-    	
-    	
     	exit;
-    	
-    	
-    	
-    	/*
-    	header("Content-Disposition: attachment; filename=\"$fileData['originalFilename']\"");
-    	// for IE
-    	header("Pragma: public");
-    	header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-    	*/
-    	
-
-    	$response->headers->set('Content-Disposition', sprintf('attachment; filename="%s"', $fileData['originalFilename']) );
-    	// for IE
-    	$response->headers->set('Pragma', 'public');
-    	$response->headers->set('Cache-Control', 'must-revalidate, post-check=0, pre-check=0');
-    	
-    	#$response->setContent(json_encode($fileId));
-    	
-    	return $response;
     }
     
     

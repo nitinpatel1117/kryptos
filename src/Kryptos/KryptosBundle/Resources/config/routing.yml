@@ -57,6 +57,10 @@ convert_batch:
     pattern:  /convert/batch
     defaults: { _controller: KryptosKryptosBundle:ConvertBatch:index }
     
+convert_batch_template:
+    pattern:  /convert/batch/template
+    defaults: { _controller: KryptosKryptosBundle:ConvertBatch:template }
+
 convert_batch_download:
     pattern:  /convert/batch/download/{fileId}
     defaults: { _controller: KryptosKryptosBundle:ConvertBatch:download, fileId: null }

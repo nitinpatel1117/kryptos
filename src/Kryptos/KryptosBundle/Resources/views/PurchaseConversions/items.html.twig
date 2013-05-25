@@ -1,5 +1,5 @@
-	<div id="purchaseConversion">
-		<form action="{{ path('purchase_conversions') }}" method="post" {{ form_enctype(form) }}>
+
+		<form id="purchaseConversion" action="{{ path('purchase_conversions') }}" method="post" {{ form_enctype(form) }}>
 	    	<div id="PurchaseConversionForm">
 	    		<div id="PurchaseConversionForm_errors" class="form_errors">
 	    			{{ form_errors(form) }}
@@ -7,7 +7,9 @@
 		    	<div class="form_row amount">
 				    {{ form_label(form.conversions) }}
 				    {{ form_widget(form.conversions) }}
-				    <input id="PurchaseConversionForm_btn_cacl" type="button" value="{{ btn_calculate }}" class="btn btn-custom-block" />
+				    <button id="PurchaseConversionForm_btn_cacl" type="button" class="btn btn-custom-block">
+						<i class="icon-check"></i> {{ btn_calculate }}
+					</button>
 				    {{ form_errors(form.conversions) }}
 				</div>
 				<div class="form_row cost">
@@ -22,8 +24,9 @@
 				</div>
 				{{ form_rest(form) }}
 				<div class="form_row submit">
-					<input id="PurchaseConversionForm_btn_submit" type="submit" value="{{ btn_submit }}" class="btn btn-custom-block" />
+					<button id="PurchaseConversionForm_btn_submit" type="submit" class="btn btn-custom-block btn-primary">
+						<i class="icon-shopping-cart icon-white"></i> {{ btn_submit }}
+					</button>
 				</div>
 	    	</div>
 	    </form>
-	</div>

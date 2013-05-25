@@ -9,6 +9,8 @@ parameters:
     password_reset_from:       'passwords@kryptos.com'
     password_reset_fromname:   'Kryptos'
     tmp_path:                  '/var/www/vhosts/kryptos.com/tmp/'
+    csv_template_server_path:  '/var/www/vhosts/kryptos.com/symfony/src/Kryptos/KryptosBundle/Resources/public/template'
+    csv_template_filename:     'batch_conversion_template.csv'
   
   mongo_connection:
     server:           'mongodb://localhost:27017'

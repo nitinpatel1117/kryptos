@@ -124,7 +124,7 @@ class UserManager extends BaseManager
     public function isEmailTaken($email)
     {
     	$emailTaken = true;
-    	$user = $this->getUserByEmail($email);
+    	$user = $this->getUserByEmail($email, array('_id'));
     	if (is_null($user)) {
     		$emailTaken = false;
     	}
@@ -158,11 +158,11 @@ class UserManager extends BaseManager
     public function checkSignin($formData)
     {
     	$valid = false;
-    	$userArray = $this->getUserByEmail($formData->getEmail());
+    	$user = new User();
+    	$userArray = $this->getUserByEmail($formData->getEmail(), array('activation', 'salt', 'password', 'firstName'));
 
     	if (!is_null($userArray)) {
     		 if (true == $userArray['activation']['activated']) {
-    		 	$user = new User();
     		 	foreach ($userArray as $key => $value) {
     		 		$user->$key = $value;
     		 	}
@@ -175,7 +175,7 @@ class UserManager extends BaseManager
     		 }
     	}
 
-    	return $valid;
+    	return array($valid, $user);
     }
     
     
@@ -183,6 +183,21 @@ class UserManager extends BaseManager
     {
     	$item = array('payment.VendorTxCode' => $VendorTxCode);
     	return parent::findOne($item);
+    }
+    
+    
+    public function getUserCredits($email)
+    {
+    	$credits = 0;
+    	
+    	$fields = array('credits'=>1);
+    	$user = $this->getUserByEmail($email, $fields);
+    	
+    	if (isset($user['credits']) && is_numeric($user['credits'])) {
+    		$credits = $user['credits'];
+    	}
+    	
+    	return $credits;
     }
     
     

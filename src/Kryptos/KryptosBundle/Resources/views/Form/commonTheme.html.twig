@@ -11,7 +11,7 @@
 {% spaceless %}
 {% if errors|length > 0 %}
 	<div class="alert alert-error">
-		<button class="close" data-dismiss="alert" type="button">x</button>
+		<button class="close" data-dismiss="alert" type="button"><i class=" icon-remove"></i></button>
 		{% for error in errors %}
 			{% set errorMessage = error.messageTemplate|trans(error.messageParameters, 'validators') %}
 			{% set errorMessageBits = errorMessage|split('|', 2) %}

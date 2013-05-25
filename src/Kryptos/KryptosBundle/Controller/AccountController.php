@@ -102,12 +102,7 @@ class AccountController extends Controller
     	
     	if ($this->get('config_manager')->signinRequired()) {
     		$userSessionDetails = $this->get('login_validator')->getLoggedInUserDetails();
-    		$fields = array('credits'=>1);
-    		$user = $this->get('user_manager')->getUserByEmail($userSessionDetails['email'], $fields);
-    		
-    		if (isset($user['credits']) && is_numeric($user['credits'])) {
-    			$credits = $user['credits'];
-    		}
+    		$credits = $this->get('user_manager')->getUserCredits($userSessionDetails['email']);
     	}
     	
     	return $credits;

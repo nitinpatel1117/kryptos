@@ -27,12 +27,12 @@ div#signin { }
 
 
 /* Purchase Conversions Form */
-div#purchaseConversion { }
-div#purchaseConversion form div label {display: inline-block; width: 120px; margin:5px 0px 5px 0px;}
-div#purchaseConversion form div input {display: inline-block; width: 150px; margin:5px 0px 5px 0px;}
-div#purchaseConversion form div ul.errors {display: inline-block; width: 150px; margin:5px 0px 5px 0px;}
-div#purchaseConversion form div ul.errors li {display: inline-block; margin:5px 0px 5px 0px; list-style: none; color:red;}
-div#purchaseConversion form .form_errors {color:red; margin-bottom:10px;}
+form#purchaseConversion { }
+form#purchaseConversion input { height:20px;}
+
+form#purchaseConversion form div ul.errors {display: inline-block; width: 150px; margin:5px 0px 5px 0px;}
+form#purchaseConversion form div ul.errors li {display: inline-block; margin:5px 0px 5px 0px; list-style: none; color:red;}
+form#purchaseConversion form .form_errors {color:red; margin-bottom:10px;}
 
 
 /* Payment Billing Form */

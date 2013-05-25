@@ -57,10 +57,10 @@ class DefaultController extends Controller
 			if ($form->isValid())
 			{
 				$userManager = $this->get('user_manager');
-				$status = $userManager->checkSignin($form->getData());
+				list($status, $user) = $userManager->checkSignin($form->getData());
 
 				if (true === $status) {
-					$session->saveLogin($form->getData()->getEmail());
+					$session->saveLogin($form->getData()->getEmail(), $user->getFirstName());
 					return $this->redirect($this->generateUrl('welcome'));
 				}
 				
@@ -198,6 +198,41 @@ class DefaultController extends Controller
     	if (!$config->siginDisabled() && !$session->isLoginValid()) {
     		return $this->redirect($this->generateUrl('homepage'));
     	}
+    	
+    	/*
+    	putenv('BW3LIBS=/var/www/bankwizard');
+    	putenv('BWTABLES=/var/www/bwtables');
+    	putenv('LD_LIBRARY_PATH=/var/www/bankwizard:');
+    	echo "<pre>";
+    	
+    	/*
+    	$command = "/var/www/bankwizard/bwibexam DE 36240045 7205321";
+    	var_dump($command);
+    	exec($command, $output);
+    	print_r($output);
+    	unset($output);
+    	/*
+    	$command = "/var/www/bankwizard/bwibexam GB 400302 81557149zz";
+    	var_dump($command);
+    	exec($command, $output);
+    	print_r($output);
+    	unset($output);
+    	 
+    	$command = "/var/www/bankwizard/bwibexam GB 400302 81557149";
+    	var_dump($command);
+    	exec($command, $output);
+    	print_r($output);
+    	unset($output);
+    	 
+    	echo "<BR> #################################### <BR>";
+    	 
+    	$command = "/var/www/bankwizard/bwibexam GB 203716 80196541";
+    	var_dump($command);
+    	exec($command, $output);
+    	print_r($output);
+    	 */
+    	#exit;
+    	
 
     	return $this->render('KryptosKryptosBundle:Default:welcome.html.twig', array(
     		'location' 					=> 'Welcome page',
@@ -209,17 +244,23 @@ class DefaultController extends Controller
     }
 
 
-    public function authenicationBarAction()
+    public function authenicationBarAction($route)
     {
+    	$config = $this->get('config_manager');
+    	
     	$signin   = false;
     	$register = false;
     	$logout   = false;
     	$allDisabled = false;
+    	$username = '';
+    	$conversions = $config->get('credits');
 
-    	$config = $this->get('config_manager');
     	if (!$config->siginDisabled()) {
     		$session = $this->get('login_validator');
     		if ($session->isLoginValid()) {
+    			$userArray = $session->getLoggedInUserDetails();
+    			$username = ucfirst($userArray['name']);
+    			$conversions = $this->get('user_manager')->getUserCredits($userArray['email']);
     			$logout   = true;
     		}
     		else {
@@ -236,6 +277,9 @@ class DefaultController extends Controller
         	'register' 		=> $register,
         	'logout' 		=> $logout,
         	'allDisabled'	=> $allDisabled,
+        	'username'		=> $username,
+        	'conversions'	=> $conversions,
+        	'current_route' => $route,
         ));
     }
     

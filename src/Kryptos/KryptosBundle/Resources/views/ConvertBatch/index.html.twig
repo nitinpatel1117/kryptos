@@ -12,11 +12,11 @@
 							<td>
 								<div style="text-align:left;">Prepare a list of your account numbers using our template. Save a copy in case you need to edit it later</div>
 								<div style="text-align:right;">
-									<a style="text-align:right;" href="" >
-										<button class="btn btn-primary" type="button"><i class="icon-download-alt icon-white"></i>Download</button>
+									<a style="text-align:right;" href="{{ path('convert_batch_template') }}" >
+										<button class="btn btn-primary" type="button"><i class="icon-download-alt icon-white"></i> Download</button>
 									</a>
 									<a style="text-align:right;" href="" >
-										<button class="btn btn-primary" type="button"><i class="icon-question-sign icon-white"></i>Help</button>
+										<button class="btn btn-primary" type="button"><i class="icon-question-sign icon-white"></i> Help</button>
 									</a>
 								</div>
 							</td>
@@ -27,40 +27,47 @@
 			
 			<div class="row">
 				<legend style="text-align:left;">2. Upload your file</legend>
+				
+				{% if confirmUpload != '' %}
+					<div class="alert alert-success">
+						<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
+						<strong><i class="icon-ok-sign"></i> Upload Complete</strong> <br/>
+						{{ confirmUpload }}
+					</div>
+				{% endif %}
+				
+				{{ form_errors(form) }}
+				{{ form_errors(form.attachment) }}
+				
 				<table class="table table-striped">
 					<tbody>
 						<tr>
 							<td>
 								<div style="text-align:left;">Save the worksheet containing your account number data as a .csv file and then upload it here.</div>
 								<div style="text-align:right;">
-									{{ form_errors(form) }}
-									{{ form_errors(form.attachment) }}
-									
-									{% if confirmUpload != '' %}
-						    		<div id="ConvertBatchForm_success" class="form_success">
-						    			{{ confirmUpload }}
-						    		</div>
-						    		{% endif %}
-
-									{{ form_widget(form.attachment) }}
-									{{ form_rest(form) }}
-								
-								
 									<div class="fileupload fileupload-new" data-provides="fileupload">
-										<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span>
 										<span class="fileupload-preview"></span>
-										<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+										<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none"><i class=" icon-remove"></i></a> &nbsp;
+										<span class="btn btn-file btn-primary">
+											<span class="fileupload-new">
+												<i class="icon-folder-open icon-upload icon-white"></i> Browse 
+											</span>
+											<span class="fileupload-exists">
+											 	<i class="icon-file icon-white"></i> Change 
+											</span>
+											{{ form_widget(form.attachment) }}
+										</span>
+										
+										
+										<a href="" >
+											<button class="btn btn-primary" type="submit"><i class="icon-download-alt icon-upload icon-white"></i> {{ btn_submit }} </button>
+										</a>
+										<a href="" >
+											<button class="btn btn-primary" type="button"><i class="icon-question-sign icon-white"></i> Help </button>
+										</a> 
 									</div>
-								
-									<a href="">
-										<button class="btn btn-primary" type="button"><i class="icon-folder-open icon-upload icon-white"></i> Browse </button>
-									</a>
-									<a href="" >
-										<button class="btn btn-primary" type="submit"><i class="icon-download-alt icon-upload icon-white"></i>{{ btn_submit }}</button>
-									</a>
-									<a href="" >
-										<button class="btn btn-primary" type="button"><i class="icon-question-sign icon-white"></i>Help</button>
-									</a> 
+									
+									{{ form_rest(form) }}
 								</div>
 							</td>
 						</tr>

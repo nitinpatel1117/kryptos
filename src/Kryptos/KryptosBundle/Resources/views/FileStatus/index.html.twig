@@ -46,7 +46,8 @@
 								</td>
 								<td>
 									{% if true == file.downloadable %}
-										<a href="{{ downloadLink }}/{{ file.id|e }}" ><button class="btn btn-primary" type="button"><i class="icon-download-alt icon-white"></i>Download</button></a>
+<!--										<a href="{{ downloadLink }}/{{ file.id|e }}" ><button class="btn btn-primary" type="button"><i class="icon-download-alt icon-white"></i> Download </button></a> <br><br> -->
+										<a href="{{ downloadLink }}/{{ file.id|e }}" ><button class="btn" type="button"><i class="icon-download-alt "></i> Download </button></a>
 									{% endif %}
 								</td>
 							</tr>

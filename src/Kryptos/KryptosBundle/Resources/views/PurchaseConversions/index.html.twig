@@ -2,6 +2,16 @@
 
 
 {% block content %}
+	<legend style="text-align:left;">{{ location }}</legend>
+	<div class="row-fluid">
+			
+					<div class="row">	
+					{% render 'KryptosKryptosBundle:PurchaseConversions:items' with { request: request, error: error }  %}
+					
+					</div>
+
+	</div>
+	
 	
 	<section class="blueHeader">
 		<h1>{{ location }}</h1>
