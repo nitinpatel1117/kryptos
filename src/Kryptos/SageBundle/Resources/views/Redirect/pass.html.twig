@@ -1,17 +1,23 @@
 {% extends "KryptosKryptosBundle::layout.html.twig" %}
 
-
 {% block content %}
-	
-	<section class="blueHeader">
-		<h1>{{ location }}</h1>
-		<section class="innerWrap">
-			<h3>Your transaction has been successfully processed</h3>
+	<legend style="text-align:left;">{{ location }}</legend>
+	<div class="row-fluid">
+		<div class="span12">
+			<div style="background-color:#F8F8F8">
+				<form>
+					<div class="row">	
 
-			<p>{{ credits_added }} conversions have been added to your account.</p>
+						<fieldset>
+							<legend>Your transaction has been successfully processed</legend>
 
-			<p>You now have a total of {{ credits_total }} conversions.</p> 
-		</section>
-	</section>
+							<p>{{ credits_added }} conversions have been added to your account.</p>
 
+							<p>You now have a total of {{ credits_total }} conversions.</p> 
+						</fieldset>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 {% endblock %}

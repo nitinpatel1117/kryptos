@@ -25,29 +25,18 @@ form#register select { width: 235px; }
 div#signin { }
 
 
-
 /* Purchase Conversions Form */
 form#purchaseConversion { }
 form#purchaseConversion input { height:20px;}
+form#purchaseConversion #PurchaseConversionForm_btn_cacl {margin-top:22px;}
 
-form#purchaseConversion form div ul.errors {display: inline-block; width: 150px; margin:5px 0px 5px 0px;}
-form#purchaseConversion form div ul.errors li {display: inline-block; margin:5px 0px 5px 0px; list-style: none; color:red;}
-form#purchaseConversion form .form_errors {color:red; margin-bottom:10px;}
+
 
 
 /* Payment Billing Form */
-div#paymentBilling { }
-div#paymentBilling form div label {display: inline-block; width: 120px; margin:5px 0px 5px 0px;}
-div#paymentBilling form div input {display: inline-block; width: 150px; margin:5px 0px 5px 0px;}
-div#paymentBilling form div select {display: inline-block; width: 155px; margin:5px 0px 5px 0px;}
-div#paymentBilling form div ul.errors {display: inline-block; width: 150px; margin:5px 0px 5px 0px;}
-div#paymentBilling form div ul.errors li {display: inline-block; margin:5px 0px 5px 0px; list-style: none; color:red;}
-div#paymentBilling form .form_errors {color:red; margin-bottom:10px;}
-div#paymentBilling .billing { font-weight: bold;}
-
-
-#paymentOverview { margin-bottom: 40px;}
-#paymentOverview th, #paymentOverview td { padding: 0px 40px 0px 0px}
+form#paymentBilling { }
+form#paymentBilling input { height:20px; width: 220px; }
+form#paymentBilling select { width: 235px; }
 
 
 /* Convert Batch File Form */

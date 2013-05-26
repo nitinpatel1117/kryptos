@@ -108,6 +108,7 @@ class PaymentController extends Controller
     	return $this->render('KryptosSageBundle:Payment:billingForm.html.twig', array(
     		'form' 			=> $form->createView(),
     		'btn_submit'	=> 'Confirm',
+    		'location'		=> 'Billing Details',
     	));
     }
     

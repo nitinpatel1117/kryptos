@@ -56,7 +56,7 @@ class ConvertBatchController extends Controller
 	    			$file = new UploadedFile(sprintf('%s/%s' , $tmp_path, $newFilename), $newFilename);
 	    			
 	    			if (!$this->isFirstLineValid($file)) {
-	    				throw new \Exception('The first line in the upload file is not valid. Please make sure that the first line contains column headers and that these column headers are unchanged from the values supplied in the original template file.', 101) ;
+	    				throw new \Exception('Invalid file |The first line in the upload file is not valid. Please make sure that the first line contains column headers and that these column headers are unchanged from the values supplied in the original template file.', 101) ;
 	    			}
 	    			
 	    			/*

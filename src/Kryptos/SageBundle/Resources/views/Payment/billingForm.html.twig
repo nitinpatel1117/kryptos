@@ -1,49 +1,49 @@
-	<div id="paymentBilling">
-		<div class='billing'>Billing details</div>
-		<form action="{{ path('payment_billing') }}" method="post" {{ form_enctype(form) }}>
-	    	<div id="PaymentBillingForm">
-	    		<div id="PaymentBillingForm_errors" class="form_errors">
-	    			{{ form_errors(form) }}
-	    		</div>
-		    	<div class="form_row billingSurname">
-				    {{ form_label(form.billingSurname) }}
-				    {{ form_widget(form.billingSurname) }}
-				    {{ form_errors(form.billingSurname) }}
+{% form_theme form 'KryptosKryptosBundle:Form:commonTheme.html.twig' %}
+
+	<div style="background-color:#F8F8F8">	    			
+		<form id="paymentBilling" action="{{ path('payment_billing') }}" method="post" {{ form_enctype(form) }} class="form-horizontal">
+	    	<fieldset>
+				<legend>{{ location }}</legend>
+				
+		    	<div class="control-group">
+				    {{ form_row(form.billingSurname) }}
 				</div>
-				<div class="form_row billingFirstnames">
-				    {{ form_label(form.billingFirstnames) }}
-				    {{ form_widget(form.billingFirstnames) }}
-				    {{ form_errors(form.billingFirstnames) }}
+				<div class="control-group">
+				    {{ form_row(form.billingFirstnames) }}
 				</div>
-				<div class="form_row billingAddress1">
-				    {{ form_label(form.billingAddress1) }}
-				    {{ form_widget(form.billingAddress1) }}
-				    {{ form_errors(form.billingAddress1) }}
+				<div class="control-group">
+				    {{ form_row(form.billingAddress1) }}
 				</div>
-				<div class="form_row billingAddress2">
-				    {{ form_label(form.billingAddress2) }}
-				    {{ form_widget(form.billingAddress2) }}
-				    {{ form_errors(form.billingAddress2) }}
+				<div class="control-group">
+				    {{ form_row(form.billingAddress2) }}
 				</div>
-				<div class="form_row billingCity">
-				    {{ form_label(form.billingCity) }}
-				    {{ form_widget(form.billingCity) }}
-				    {{ form_errors(form.billingCity) }}
+				<div class="control-group">
+				    {{ form_row(form.billingCity) }}
 				</div>
-				<div class="form_row billingPostCode">
-				    {{ form_label(form.billingPostCode) }}
-				    {{ form_widget(form.billingPostCode) }}
-				    {{ form_errors(form.billingPostCode) }}
+				<div class="control-group">
+				    {{ form_row(form.billingPostCode) }}
 				</div>
-				<div class="form_row billingCountry">
-				    {{ form_label(form.billingCountry) }}
-				    {{ form_widget(form.billingCountry) }}
-				    {{ form_errors(form.billingCountry) }}
+				<div class="control-group">
+				    {{ form_row(form.billingCountry) }}
 				</div>
 				{{ form_rest(form) }}
-				<div class="form_row submit">
-					<input id="PaymentBillingForm_btn_submit" type="submit" value="{{ btn_submit }}" />
+				
+				<div class="control-group">
+					<button id="PaymentBillingForm_btn_submit" class="btn btn-custom-block btn-primary" type="submit">
+						<i class="icon-shopping-cart icon-white"></i> {{ btn_submit }}
+					</button>
 				</div>
-	    	</div>
+			</fieldset>
+			
+			<br>
+			{{ form_errors(form) }}
+			{{ form_errors(form.billingSurname) }}
+			{{ form_errors(form.billingFirstnames) }}
+			{{ form_errors(form.billingAddress1) }}
+			{{ form_errors(form.billingAddress2) }}
+			{{ form_errors(form.billingCity) }}
+			{{ form_errors(form.billingPostCode) }}
+			{{ form_errors(form.billingCountry) }}
+			
 	    </form>
 	</div>

@@ -132,12 +132,12 @@ class PurchaseConversionsController extends Controller
     		if (1 > $cost + $vat) {
     			$currency = $this->get('config_manager')->get('sagepay|CurrencySymbol');
     			$currency = utf8_encode(html_entity_decode($currency));
-    			$data['body']['error'] = sprintf('Total cost is less than %s1. Please increase the No. of conversions to meet the minimum total of %s1', $currency, $currency);
+    			$data['body']['error'] = sprintf('Increase conversions |Total cost is less than %s1. Please increase the No. of conversions to meet the minimum total of %s1', $currency, $currency);
     		}
     		else if ($cost + $vat > 100000) {
     			$currency = $this->get('config_manager')->get('sagepay|CurrencySymbol');
     			$currency = utf8_encode(html_entity_decode($currency));
-    			$data['body']['error'] = sprintf('Total cost is greater than %s100,000. Please decrease the No. of conversions to meet the maximum expenture total of %s100,000', $currency, $currency);
+    			$data['body']['error'] = sprintf('Increase conversions |Total cost is greater than %s100,000. Please decrease the No. of conversions to meet the maximum expenture total of %s100,000', $currency, $currency);
     		}
     		
     	}

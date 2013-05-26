@@ -1,18 +1,23 @@
 {% extends "KryptosKryptosBundle::layout.html.twig" %}
 
-
 {% block content %}
-	
-	<section class="blueHeader">
-		<h1>{{ location }}</h1>
-		<section class="innerWrap">
-			<h3>Your transaction could NOT be processed</h3>
+	<legend style="text-align:left;">{{ location }}</legend>
+	<div class="row-fluid">
+		<div class="span12">
+			<div style="background-color:#F8F8F8">
+				<form>
+					<div class="row">
+						<fieldset>
+							<legend>Your transaction could NOT be processed</legend>
 
-			<p>There was a problem processing your payment.</p>
+							<p>There was a problem processing your payment.</p>
 			
-			<p>Our payment provider reported the following problem:</p>
-			<p>{{ msg }}</p>
-		</section>
-	</section>
-
+							<p>Our payment provider reported the following problem:</p>
+							<p>{{ msg }}</p>
+						</fieldset>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 {% endblock %}

@@ -1,23 +1,12 @@
 {% extends "KryptosKryptosBundle::layout.html.twig" %}
 
-
 {% block content %}
 	<legend style="text-align:left;">{{ location }}</legend>
 	<div class="row-fluid">
-			
-					<div class="row">	
-					{% render 'KryptosKryptosBundle:PurchaseConversions:items' with { request: request, error: error }  %}
-					
-					</div>
-
-	</div>
-	
-	
-	<section class="blueHeader">
-		<h1>{{ location }}</h1>
-		<section class="innerWrap">
+		<div class="span6">
+			<div style="background-color:white" >	
 			{% render 'KryptosKryptosBundle:PurchaseConversions:items' with { request: request, error: error }  %}
-		</section>
-	</section>
-
+			</div>
+		</div>
+	</div>
 {% endblock %}
