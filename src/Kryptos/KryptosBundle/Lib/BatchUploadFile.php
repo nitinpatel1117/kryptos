@@ -81,7 +81,7 @@ class BatchUploadFile
 		
 		// add entry to files collections
 		$fileData['upload_time'] = new \MongoDate();
-		$fileData['status'] = 'pending';
+		$fileData['status'] =  (isset($additionalData['purchaseRequired']) && true == $additionalData['purchaseRequired']) ? 'awaiting_payment' : 'pending';
 		$this->file_manager->insert($fileData);
 		
 		
@@ -124,7 +124,7 @@ class BatchUploadFile
 			// get credits for the user
 			$credits = $additionalData['credits'];
 			
-			while (!$splFileObject->eof() && $credits > 0) {
+			while (!$splFileObject->eof()) {
 				$lineCount++;
 				
 				$data = $splFileObject->fgetcsv();
@@ -161,7 +161,7 @@ class BatchUploadFile
 			#$this->finalFlushBankAccount();
 			$this->finalFlushFileError();
 			
-			if ($additionalData['conversionsRestricted']) {
+			if ($additionalData['conversionsRestricted'] && false == $additionalData['purchaseRequired']) {
 				$this->user_manager->registerCreditsUsed($fileData['userId'], $fileData['_id'], $additionalData['credits'], $credits);
 			}
 		}

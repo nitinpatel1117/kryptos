@@ -33,11 +33,21 @@ class RedirectController extends Controller
 			return $this->redirect($this->generateUrl('homepage'));
 		}
 		
+		// check if this payment was for a uploaded file
+		$lines = 0;
+		if (isset($user['payment'][$paymentIndex]['purchaseForFile'])) {
+			$fileDate = $this->get('file_manager')->getFileByFilename($user['payment'][$paymentIndex]['purchaseForFile']);
+			if (isset($fileDate['approxLines'])) {
+				$lines = $fileDate['approxLines'];
+			}
+		}
+		
 		
 		return $this->render('KryptosSageBundle:Redirect:pass.html.twig', array(
 			'location' 		=> 'Payment Received',
 			'credits_added' => $user['payment'][$paymentIndex]['purchase']['credits'],
 			'credits_total' => $user['credits'],
+			'lines'			=> $lines,
 		));
 	}
 	

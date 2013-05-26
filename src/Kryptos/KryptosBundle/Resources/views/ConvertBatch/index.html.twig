@@ -36,6 +36,33 @@
 					</div>
 				{% endif %}
 				
+				{% if attentionOnFile != '' %}
+					<div class="alert alert-block">
+						<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
+						<strong><i class="icon-question-sign"></i> Attention Required</strong> <br/>
+						
+						<div>
+							You do not have enough conversions to proceed with the processing of the file that you have just uploaded.
+							<br><br>
+							You will need to purchase conversions in order for the file to be processed. Click the 'purchase' button to purchase the correct
+							amount of conversions and have your file processed.
+							<br><br>
+							Alternatively, if you do not wish to purchase conversions at this time simply click 'cancel', and your uploaded file will be removed.
+							<br><br>
+						</div>
+						
+						<a href="{{ path('convert_batch') }}?f={{ attentionOnFile }}" >
+							<button class="btn" type="button"><i class="icon-remove"></i> Cancel </button>
+						</a>
+						
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+						<a href="{{ path('purchase_conversions') }}?f={{ attentionOnFile }}" >
+							<button class="btn btn-primary" type="button"><i class="icon-shopping-cart icon-white"></i> Purchase </button>
+						</a>
+					</div>
+				{% endif %}
+				
 				{{ form_errors(form) }}
 				{{ form_errors(form.attachment) }}
 				

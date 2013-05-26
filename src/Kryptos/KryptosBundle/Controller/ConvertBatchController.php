@@ -27,6 +27,17 @@ class ConvertBatchController extends Controller
 
     	$confirmUpload = $this->getConfirmUploadMessage();
     	
+    	
+    	$attentionUpload = $this->getAttentionUploadMessage();
+    	$attentionOnFile = '';
+    	if ('' != $attentionUpload) {
+    		$sessionStore = $this->get('session');
+    		$sessionId = $sessionStore->getId();
+    		$fileData = $sessionStore->get($sessionId.'_purchasedRequired');
+    		$attentionOnFile = $fileData['filename'];
+    	}
+    	
+    	
     	$form = $this->createForm(new ConvertBatchForm());
     	$credits = $this->getAllowedConversions();
     	
@@ -69,11 +80,16 @@ class ConvertBatchController extends Controller
 	    			}
 	    			*/
 	    			
+	    			$linesInFile = $this->getLineCount($tmp_path.$newFilename);
+	    			
+	    			$purchaseRequired = false;
+	    			
 	    			// check that the user had some credits
 	    			if ($this->conversionsRestricted()) {
 	    				$credits = $this->getAllowedConversions();
-	    				if ($credits < 1) {
-	    					throw new \Exception('You no not have any conversions available. You will need to purchase conversions in order to proceed.', 101);
+	    				if ($credits < $linesInFile) {
+	    					$purchaseRequired = true;
+	    					// throw new \Exception('You no not have any conversions available. You will need to purchase conversions in order to proceed.', 101);
 	    				}
 	    			}
 
@@ -83,13 +99,14 @@ class ConvertBatchController extends Controller
 	    				'filename' 			=> $newFilename,
 	    				'sessionId' 		=> is_null($this->getUserId()) ? $this->getSessionId() : null,			# we want to store only the sessionId or the userId
 	    				'userId' 			=> $this->getUserId(),
-	    				'approxLines'		=> $this->getLineCount($tmp_path.$newFilename),							# store approx line count so that we can, calculate the aprox time for it to have processed
+	    				'approxLines'		=> $linesInFile,														# store approx line count so that we can, calculate the aprox time for it to have processed
 	    			);
 	    			
 	    			$additionalData = array(
 	    				'credits'					=> $credits,
 	    				'conversionsRestricted'		=> $this->conversionsRestricted(),
 	    				'newFilename'				=> $newFilename,
+	    				'purchaseRequired' 			=> $purchaseRequired,
 	    			);
 	    			
 	    			/*
@@ -102,7 +119,18 @@ class ConvertBatchController extends Controller
 	    			$batchUploadFile = $this->get('batch_upload_file');
 	    			$batchUploadFile->process($file, $fileData, $additionalData);
 	    			
-	    			$this->get('session')->getFlashBag()->add('confirmUpload', 'File has been succesfully received. Processing of this file will start shortly');
+	    			
+	    			if (true == $purchaseRequired) {
+	    				$sessionStore = $this->get('session');
+	    				$sessionId = $sessionStore->getId();
+	    				$sessionStore->set($sessionId.'_purchasedRequired', $fileData);
+	    				
+	    				$this->get('session')->getFlashBag()->add('attentionUpload', 'attention is required');
+	    			}
+	    			else {
+	    				$this->get('session')->getFlashBag()->add('confirmUpload', 'File has been succesfully received. Processing of this file will start shortly');
+	    			}
+	    			
 	    			return $this->redirect($this->generateUrl('convert_batch'));
 	    		}
 	    	}
@@ -129,6 +157,7 @@ class ConvertBatchController extends Controller
         	'credits' 					=> $credits,
         	'conversionsRestricted' 	=> $this->conversionsRestricted(),
         	'userNote' 					=> $userNote,
+        	'attentionOnFile' 			=> $attentionOnFile,
         ));
     }
     
@@ -246,6 +275,19 @@ class ConvertBatchController extends Controller
     		$msg = array_shift($confirmUpload);
     	}
     	
+    	return $msg;
+    }
+    
+    
+    public function getAttentionUploadMessage()
+    {
+    	$msg = '';
+    	 
+    	$attentionUpload = $this->get('session')->getFlashBag()->get('attentionUpload');
+    	if (is_array($attentionUpload) && count($attentionUpload) > 0 ) {
+    		$msg = array_shift($attentionUpload);
+    	}
+    	 
     	return $msg;
     }
     

@@ -3,10 +3,24 @@
 {% block content %}
 	<legend style="text-align:left;">{{ location }}</legend>
 	<div class="row-fluid">
+		
+		{% if purchaseRequired > 0 %}
+		<script type="text/javascript">
+			var purchaseRequired = {{ purchaseRequired }};
+		</script>
+	
+		<div class="alert alert-block">
+			<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
+			<strong><i class="icon-info-sign"></i> Please wait.</strong> <br/>
+			The number of conversions you require for your uploaded file is being calculated.
+		</div>
+		{% endif %}
+	
 		<div class="span6">
 			<div style="background-color:white" >	
 			{% render 'KryptosKryptosBundle:PurchaseConversions:items' with { request: request, error: error }  %}
 			</div>
 		</div>
 	</div>
+	
 {% endblock %}

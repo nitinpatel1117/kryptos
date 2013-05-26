@@ -12,6 +12,10 @@
 							<legend>Your transaction has been successfully processed</legend>
 
 							<p>{{ credits_added }} conversions have been added to your account.</p>
+							
+							{% if lines > 0 %}
+								<p>The file you uploaded will start processing shortly. {{ lines }} conversions have been deducted from your account for the processing of this file.</p>
+							{% endif %}
 
 							<p>You now have a total of {{ credits_total }} conversions.</p> 
 						</fieldset>

@@ -104,6 +104,7 @@ class SageController extends Controller
 			return $this->sendOkResponse($request, $user['payment'][$paymentIndex]['status'], 'A notification has already been received and processed for this user');
 		}
 		
+		$fileStatus = '';
 		
 		// only check status once we have confirmed the security signature
 		switch ($Status)
@@ -114,6 +115,7 @@ class SageController extends Controller
 				$user['payment'][$paymentIndex]['creditsNew'] 	= $user['credits'];						// store the new credit count in history
 				$user['payment'][$paymentIndex]['TxAuthNo'] 	= $TxAuthNo;
 				$this->get('user_manager')->save($user);
+				$fileStatus = 'pending';
 				break;
 
 			// NOTAUTHED – The Sage Pay system could not authorise the transaction because the details provided by the Customer were incorrect, or not authenticated by the acquiring bank.
@@ -125,6 +127,7 @@ class SageController extends Controller
 			case 'REJECTED':
 			case 'ERROR':
 				$user['payment'][$paymentIndex]['statusDetail']	= $StatusDetail;
+				$fileStatus = 'payment_failed';
 				break;
 				
 			default:
@@ -147,6 +150,28 @@ class SageController extends Controller
 		// add reference to the saved sage_notificaton to the user object
 		$user['payment'][$paymentIndex]['sage_notification_ref'] = $data['_id'];
 		$this->get('user_manager')->save($user);
+		
+		
+		// check if this payment was done as part of a file upload
+		if (isset($user['payment'][$paymentIndex]['purchaseForFile']))
+		{
+			$fileDate = $this->get('file_manager')->getFileByFilename($user['payment'][$paymentIndex]['purchaseForFile']);
+			$lines = 0;
+			if (isset($fileDate['status']) && 'awaiting_payment' == $fileDate['status'] && isset($fileDate['approxLines'])) {
+				$lines = $fileDate['approxLines'];
+				$fileDate['status'] = $fileStatus;
+				
+				if ('pending' == $fileDate['status']) {
+					if ($user['credits'] >= $lines) {
+						$user['credits'] -= $lines;
+					}
+				}
+				
+				$this->get('file_manager')->save($fileDate);
+				$this->get('user_manager')->save($user);
+			}
+		}
+		
 
 		return $this->sendOkResponse($request, $Status);
 	}

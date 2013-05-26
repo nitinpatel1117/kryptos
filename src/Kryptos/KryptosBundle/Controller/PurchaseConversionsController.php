@@ -19,6 +19,8 @@ class PurchaseConversionsController extends Controller
     	
     	$error = '';
     	
+    	$purchaseRequired = $this->checkPurchaseRequired($request);
+    	
     	if ($request->isMethod('POST')) {
     		$form = $this->createForm(new PurchaseConversionsForm());
     		$form->bind($request);
@@ -46,10 +48,48 @@ class PurchaseConversionsController extends Controller
     	
 
         return $this->render('KryptosKryptosBundle:PurchaseConversions:index.html.twig', array(
-        	'location' => 'Purchase Conversions',
-        	'request' => $request,
-        	'error' => $error,
+        	'location' 			=> 'Purchase Conversions',
+        	'request' 			=> $request,
+        	'error' 			=> $error,
+        	'purchaseRequired' 	=> $purchaseRequired,
         ));
+    }
+    
+    
+    public function checkPurchaseRequired($request)
+    {
+    	$purchaseRequired = 0;
+    	
+    	$sessionStore = $this->get('session');
+    	$sessionId = $sessionStore->getId();
+    	
+    	if ($request->query->has('f')) {
+    		$filename = $request->query->get('f');
+    		$fileDate = $this->get('file_manager')->getFileByFilename($filename);
+ 
+    		$lines = 0;
+    		if (isset($fileDate['status']) && 'awaiting_payment' == $fileDate['status'])
+    		{
+    			// get user credits
+    			$userSessionDetails = $this->get('login_validator')->getLoggedInUserDetails();
+    			$credits = $this->get('user_manager')->getUserCredits($userSessionDetails['email']);
+    			
+    			if (isset($fileDate['approxLines'])) {
+    				$lines = $fileDate['approxLines'];
+    			}
+    			
+    			if ($lines > $credits) {
+    				$purchaseRequired = $lines - $credits;
+    			}
+    		}
+    		
+    		$sessionStore->set($sessionId.'_purchaseForFile', $filename);
+    	}
+    	else {
+    		$sessionStore->set($sessionId.'_purchaseForFile', '');
+    	}
+    
+    	 return $purchaseRequired;
     }
     
     
@@ -69,10 +109,16 @@ class PurchaseConversionsController extends Controller
     		$form->addError(new FormError($error));
     	}
     	
+    	$formAction = $this->generateUrl('purchase_conversions');
+    	if ($request->query->has('f')) {
+    		$formAction .= sprintf('?f=%s', $request->query->get('f'));
+    	}
+    	
     	return $this->render('KryptosKryptosBundle:PurchaseConversions:items.html.twig', array(
     		'form' 				=> $form->createView(),
     		'btn_calculate' 	=> 'Calculate Costs',
     		'btn_submit' 		=> 'Purchase',
+    		'formAction'		=> $formAction,
     	));
     }
 

@@ -1,5 +1,12 @@
 $(document).ready(function() {
 	if ($('#PurchaseConversionsForm_conversions').length) {
+		
+		// if purchase required, fill in conversion box and submit
+		if (typeof purchaseRequired != 'undefined') {
+			$("#PurchaseConversionsForm_conversions").val(purchaseRequired);
+			$('#purchaseConversion').submit();
+		}
+		
 		function clearFormItems(){
 			$("#PurchaseConversionsForm_cost").val('');
         	$("#PurchaseConversionsForm_vat").val('');
@@ -30,6 +37,7 @@ $(document).ready(function() {
 			amount = $("#PurchaseConversionsForm_conversions").val();
 			if (amount != previousAmount) {
 				clearFormItems();
+				$('#PurchaseConversionForm_btn_cacl').trigger('click');
 			}
 		});
 		

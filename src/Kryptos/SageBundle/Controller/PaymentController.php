@@ -49,6 +49,12 @@ class PaymentController extends Controller
 					$lastTrans['SecurityKey'] 	= $response['SecurityKey'];
 					$lastTrans['NextURL']		= $response['NextURL'];
 					
+					// is this purchase part of a file upload
+					$purchaseForFile = $this->purchaseForFile();
+					if ('' != $purchaseForFile ) {
+						$lastTrans['purchaseForFile'] = $purchaseForFile;
+					}
+					
 					array_push($user['payment'], $lastTrans);
 					$this->get('user_manager')->save($user);
 					
@@ -125,5 +131,13 @@ class PaymentController extends Controller
     public function getProtocol()
     {
     	return strtolower(substr($_SERVER["SERVER_PROTOCOL"],0,5))=='https'? 'https://' : 'http://';
+    }
+    
+    
+    public function purchaseForFile()
+    {
+    	$sessionStore = $this->get('session');
+    	$sessionId = $sessionStore->getId();
+    	return $sessionStore->get($sessionId.'_purchaseForFile');
     }
 }

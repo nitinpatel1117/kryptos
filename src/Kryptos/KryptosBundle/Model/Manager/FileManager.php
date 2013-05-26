@@ -37,6 +37,12 @@ class FileManager extends BaseManager
     	return parent::findOne($item);
     }
     
+    public function getFileByFilename($filename)
+    {
+    	$item = array('filename' => $filename);
+    	return parent::findOne($item);
+    }
+    
     
     public function lockItemsFromQueue($lockTime, $lockName, $limit = 1000)
     {
