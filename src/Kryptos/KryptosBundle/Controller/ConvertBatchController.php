@@ -24,9 +24,11 @@ class ConvertBatchController extends Controller
     	if ($config->signinRequired() && !$session->isLoginValid()) {
     		return $this->redirect($this->generateUrl('welcome'));
     	}
+    	
+    	// if the user pressed cancel on attention required - process this
+    	$this->cancelPurchaseRequired($request);
 
     	$confirmUpload = $this->getConfirmUploadMessage();
-    	
     	
     	$attentionUpload = $this->getAttentionUploadMessage();
     	$attentionOnFile = '';
@@ -81,7 +83,6 @@ class ConvertBatchController extends Controller
 	    			*/
 	    			
 	    			$linesInFile = $this->getLineCount($tmp_path.$newFilename);
-	    			
 	    			$purchaseRequired = false;
 	    			
 	    			// check that the user had some credits
@@ -121,10 +122,7 @@ class ConvertBatchController extends Controller
 	    			
 	    			
 	    			if (true == $purchaseRequired) {
-	    				$sessionStore = $this->get('session');
-	    				$sessionId = $sessionStore->getId();
-	    				$sessionStore->set($sessionId.'_purchasedRequired', $fileData);
-	    				
+	    				$this->get('session')->set(sprintf('%s_purchasedRequired', $this->getSessionId()), $fileData);
 	    				$this->get('session')->getFlashBag()->add('attentionUpload', 'attention is required');
 	    			}
 	    			else {
@@ -289,6 +287,19 @@ class ConvertBatchController extends Controller
     	}
     	 
     	return $msg;
+    }
+    
+    public function cancelPurchaseRequired($request)
+    {
+    	if ($request->query->has('f')) {
+    		$filename = $request->query->get('f');
+    		$fileDate = $this->get('file_manager')->getFileByFilename($filename);
+    		$fileDate['status'] = 'insufficient_funds';
+    		$this->get('file_manager')->save($fileDate);
+    		
+    		$this->get('session')->remove(sprintf('%s_purchasedRequired', $this->getSessionId()));
+
+    	}
     }
     
     

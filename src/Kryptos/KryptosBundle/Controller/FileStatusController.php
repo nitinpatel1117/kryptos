@@ -40,13 +40,13 @@ class FileStatusController extends Controller
     	
     	while ($result->hasNext()) {
     		$item = $result->getNext();
-
+    		
     		$date->setTimestamp($item['upload_time']->sec);
     		$file = array(
     			'id' 			=> $item['_id']->__toString(),
     			'datetime' 		=> $date->format('d/m/Y H:i:s'),
     			'filename' 		=> $item['originalFilename'],
-    			'status' 		=> $item['status'],
+    			'status' 		=> $this->makeStatus($item),
     			'stats' 		=> isset($item['stats']) ? $item['stats'] : null,
     			'downloadable'	=> ('complete' == $item['status']) ? true : false,
     		);
@@ -62,7 +62,6 @@ class FileStatusController extends Controller
     }
     
     
-    
     public function setupUser()
     {
     	$config = $this->get('config_manager');
@@ -72,7 +71,6 @@ class FileStatusController extends Controller
     	}
     }
     
-    
     public function getUserId()
     {
     	// get user id, if user is setup
@@ -80,5 +78,32 @@ class FileStatusController extends Controller
     		return $this->user['_id']->__toString();
     	}
     	return null;
+    }
+    
+    
+    public function makeStatus(array $item) 
+    {
+    	$status = null;
+    	
+    	switch($item['status']) {
+    		case 'pending':
+    			$status = 'Pending';
+    			break;
+    		
+    		case 'complete':
+    			$status = 'Complete';
+    			break;
+    		
+    		case 'payment_failed':
+    			$status = 'Payment Failed';
+    			break;
+    				
+    		case 'awaiting_payment':
+    		case 'insufficient_funds':
+    			$status = 'Insufficient Funds';
+    			break;
+    	}
+    	
+    	return $status;
     }
 }

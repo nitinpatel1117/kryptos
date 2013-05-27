@@ -1,11 +1,12 @@
+
+// if purchase required, fill in conversion box and submit
+if (typeof purchaseRequired != 'undefined') {
+	$("#PurchaseConversionsForm_conversions").val(purchaseRequired);
+	$('#purchaseConversion').submit();
+}
+
 $(document).ready(function() {
 	if ($('#PurchaseConversionsForm_conversions').length) {
-		
-		// if purchase required, fill in conversion box and submit
-		if (typeof purchaseRequired != 'undefined') {
-			$("#PurchaseConversionsForm_conversions").val(purchaseRequired);
-			$('#purchaseConversion').submit();
-		}
 		
 		function clearFormItems(){
 			$("#PurchaseConversionsForm_cost").val('');
@@ -21,7 +22,8 @@ $(document).ready(function() {
 			// Allow only delete, backspace, tab, enter (end, home, left, right)
 			if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 13 || (event.keyCode >= 35 && event.keyCode <= 39)) {
 				if ( event.keyCode == 13) {
-					$('#PurchaseConversionForm_btn_cacl').trigger('click');
+					// $('#PurchaseConversionForm_btn_cacl').trigger('click');
+					calculate();
 				}
 			}
 			else {
@@ -37,12 +39,14 @@ $(document).ready(function() {
 			amount = $("#PurchaseConversionsForm_conversions").val();
 			if (amount != previousAmount) {
 				clearFormItems();
-				$('#PurchaseConversionForm_btn_cacl').trigger('click');
+				// $('#PurchaseConversionForm_btn_cacl').trigger('click');
+				calculate();
 			}
 		});
 		
 		
-		$('#PurchaseConversionForm_btn_cacl').click(function() {
+		// $('#PurchaseConversionForm_btn_cacl').click(function() {
+		calculate = function() {
 			clearFormItems();
         	
         	for (var i = 0; i < ajaxRequests.length; i++) {
@@ -80,6 +84,7 @@ $(document).ready(function() {
 	        	ajaxRequests.push(xhr);
 	        	previousAmount =  amount;
 	        }
-		});
+		};
+		//});
 	}
 });

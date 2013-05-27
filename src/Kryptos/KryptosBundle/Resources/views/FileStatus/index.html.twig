@@ -25,7 +25,7 @@
 								<td>{{ file.datetime|e }}</td>
 								<td>{{ file.filename|e }}</td>
 								<td>
-									{% if "complete" == file.status %}
+									{% if "Complete" == file.status %}
 										<span>{{ file.stats.valid }}/{{ file.stats.processed }} Converted sucessfully</span><br />
 										
 										{% set need_verifying = file.stats.not_validated + file.stats.reconfirm_iban %}

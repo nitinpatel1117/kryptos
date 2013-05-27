@@ -17,7 +17,7 @@ removeAllValues = function()
 }
 
 
-if ('' == countrySelected) {
+if (typeof countrySelected != 'undefined' && '' == countrySelected) {
 	hideAllFields();
 }
 

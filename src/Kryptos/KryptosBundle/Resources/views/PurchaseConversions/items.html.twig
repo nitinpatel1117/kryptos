@@ -6,33 +6,30 @@
 	    		<fieldset>
 					<legend>Purchase Details</legend>
 			    	<div class="row amount">
-			    		<div class="span6">
-					    {{ form_label(form.conversions) }}
-					    {{ form_widget(form.conversions) }}
+			    		<div class="span12">
+							{{ form_label(form.conversions) }}
+							{{ form_widget(form.conversions) }}
 					    </div>
-					    <div class="span6">
-					    <button id="PurchaseConversionForm_btn_cacl" type="button" class="btn btn-custom-block">
-							<i class="icon-check"></i> {{ btn_calculate }}
-						</button>
-						</div>
+						<!-- <button id="PurchaseConversionForm_btn_cacl" type="button" class="btn btn-custom-block">{{ btn_calculate }}</button> -->
+						
 					</div>
 					<div class="row cost">
-					    <div class="span6">
-					    {{ form_label(form.cost) }}
-					    {{ form_widget(form.cost) }}
+					    <div class="span12">
+					    	{{ form_label(form.cost) }}
+					    	{{ form_widget(form.cost) }}
 					    </div>
 					</div>
 					<div class="row vat">
-						<div class="span6">
-					    {{ form_label(form.vat) }}
-					    {{ form_widget(form.vat) }}
+						<div class="span12">
+							{{ form_label(form.vat) }}
+							{{ form_widget(form.vat) }}
 					    </div>
 					</div>
 					
 					{{ form_rest(form) }}
 					<br>
 					<div class="row submit">
-						<div class="span6">
+						<div class="span12">
 						<button id="PurchaseConversionForm_btn_submit" type="submit" class="btn btn-custom-block btn-primary">
 							<i class="icon-shopping-cart icon-white"></i> {{ btn_submit }}
 						</button>
