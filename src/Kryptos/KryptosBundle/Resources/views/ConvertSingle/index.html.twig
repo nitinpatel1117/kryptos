@@ -58,11 +58,20 @@
 						{{ form_errors(form.bban4) }}
 						{{ form_errors(form.bban5) }}
 				
+				
+						{% if result.isTransposed is defined and true == result.isTransposed %}
+							<div class="alert alert-info">
+								<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
+								<strong><i class="icon-ok-sign"></i> Bank Account Details Transposed</strong> <br/>
+								Account details were not in standard form and have been transposed.
+							</div>
+						{% endif %}
+				
 						{% if true == accountValid %}
 							<div class="alert alert-success">
 								<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
 								<strong><i class="icon-ok-sign"></i> Bank Account valid</strong> <br/>
-								The bank account provided is valid and has been converted to SEPA format below.
+								The bank account provided is valid and has been converted to SEPA format.
 							</div>
 						{% endif %}
 					
@@ -83,21 +92,33 @@
 							<div class="control-group">
 								<label class="control-label" for="iban">IBAN</label>
 								<div class="controls">
-									<span class="input-xlarge uneditable-input" style="height:20px;" id="iban" rel="popover">{{ accountData.iban }}</span>
+									<span class="input-xlarge uneditable-input" style="height:20px;" id="iban" rel="popover">
+									{% if result.iban is defined %}
+										{{ result.iban }}
+									{% endif %}
+									</span>
 								</div>
 							</div>
 							
 							<div class="control-group">
 								<label class="control-label" for="bic">BIC</label>
 								<div class="controls">
-									<span class="input-xlarge uneditable-input"  style="height:20px;" id="bic" rel="popover">{{ accountData.bic }}</span>
+									<span class="input-xlarge uneditable-input"  style="height:20px;" id="bic" rel="popover">
+									{% if result.bic is defined %}
+										{{ result.bic }}
+									{% endif %}
+									</span>
 								</div>
 							</div>
 	
 							<div class="control-group">
 								<label class="control-label" for="bank">Bank</label>
 								<div class="controls">
-									<span class="input-xlarge uneditable-input"  style="height:20px;" id="bank" rel="popover"> </span>
+									<span class="input-xlarge uneditable-input"  style="height:20px;" id="bank" rel="popover">
+									{% if result.bankDetails.bank_name is defined %}
+										{{ result.bankDetails.bank_name }}
+									{% endif %}
+									</span>
 								</div>
 							</div>
 	
@@ -105,48 +126,70 @@
 							<div class="control-group">
 								<label class="control-label" for="bank">Branch</label>
 								<div class="controls">
-									<span class="input-xlarge uneditable-input"  style="height:20px;" id="branch" rel="popover"> </span>
+									<span class="input-xlarge uneditable-input"  style="height:20px;" id="branch" rel="popover">
+									{% if result.bankDetails.branch_name is defined %}
+										{{ result.bankDetails.branch_name }}
+									{% endif %}
+									</span>
 								</div>
 							</div>
 							
 							<div class="control-group">
 								<label class="control-label" for="address">Address</label>
 								<div class="controls">
-									<span class="input-xlarge uneditable-input"  style="height:20px;" id="address" rel="popover"> </span>
+									<span class="input-xlarge uneditable-input"  style="height:20px;" id="address" rel="popover">
+									{% set addressOutputMade = 'false' %}
+									
+									{% if result.bankDetails.bank_address is defined %}
+										{% if '' != result.bankDetails.bank_address|trim %}
+											{% if 'true' == addressOutputMade %}, {% endif %}
+											{% set addressOutputMade = 'true' %}
+											{{ result.bankDetails.bank_address|trim }}
+										{% endif %}
+									{% endif %}
+									
+									{% if result.bankDetails.post_code is defined %}
+										{% if '' != result.bankDetails.post_code|trim %}
+											{% if 'true' == addressOutputMade %}, {% endif %}
+											{% set addressOutputMade = 'true' %}
+											{{ result.bankDetails.post_code|trim }}
+										{% endif %}
+									{% endif %}
+									
+									{% if result.bankDetails.city is defined %}
+										{% if '' != result.bankDetails.city|trim %}
+											{% if 'true' == addressOutputMade %}, {% endif %}
+											{% set addressOutputMade = 'true' %}
+											{{ result.bankDetails.city|trim }}
+										{% endif %}
+									{% endif %}
+									</span>
 								</div>
 							</div>
 							
-							<!-- START of Does not support SEPA Direct Debit-->
-							<div class="alert alert-info">
-							  <button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
-							  <strong><i class="icon-info-sign"></i> SEPA Direct Debit unsupported</strong> <br/>
-							  The bank/branch does not support SEPA Direct Debit
-							</div>
-				       		 <!-- END of Does not support SEPA Direct Debitt-->
+							{% if false == result.directDebitsSupported %}
+								<div class="alert alert-info">
+									<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
+									<strong><i class="icon-info-sign"></i> SEPA Direct Debit unsupported</strong> <br/>
+									The bank/branch does not support SEPA Direct Debit
+								</div>
+							{% endif %}
 						
-							<!-- START of Does not support SEPA Credit Transfer-->
-							<div class="alert alert-info">
-							  <button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
-							  <strong><i class=" icon-info-sign"></i> SEPA Credit Transfer unsupported</strong> <br/>
-							  The bank/branch does not support SEPA Credit Transfers
-							</div>
-				        	<!-- END of Does not support SEPA Credit Taansfer-->
+							{% if false == result.creditTransferSupported %}
+								<div class="alert alert-info">
+								  <button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
+								  <strong><i class=" icon-info-sign"></i> SEPA Credit Transfer unsupported</strong> <br/>
+								  The bank/branch does not support SEPA Credit Transfers
+								</div>
+				        	{% endif %}
 		
-							<!-- START of Does not support Business SEPA Direct Debit-->
-							<div class="alert alert-info">
-							  <button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
-							  <strong><i class=" icon-info-sign"></i> SEPA Business Direct Debit unsupported</strong> <br/>
-							  The bank/branch does not support SEPA Business Direct Debit payments
-							</div>
-				        	<!-- END of Does not support SEPA Direct Debitt-->
-		
-							<!-- START of Does not support SEPA Credit Transfer-->
-							<div class="alert alert-info">
-							  <button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
-							  <strong><i class=" icon-info-sign"></i> SEPA Business Credit Transfer unsupported</strong> <br/>
-							  The bank/branch does not support SEPA Business Credit Transfers
-							</div>
-				        	<!-- END of Does not support SEPA Credit Taansfer-->
+							{% if false == result.businessDirectDebitsSupported %}
+								<div class="alert alert-info">
+									<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
+									<strong><i class=" icon-info-sign"></i> SEPA Business Direct Debit unsupported</strong> <br/>
+									The bank/branch does not support SEPA Business Direct Debit payments
+								</div>
+				        	{% endif %}
       
 						</div>
 					</div>

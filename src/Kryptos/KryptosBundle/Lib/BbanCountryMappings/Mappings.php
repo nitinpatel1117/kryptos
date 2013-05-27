@@ -296,4 +296,383 @@ class Mappings
 		
 		return $data;
 	}
+	
+	
+	
+	
+	
+	/**
+	 * The mapping of each country code to its bban fields
+	 *
+	 * @var array
+	 */
+	protected $conversionBankDetailsMappings = array(
+		'AD' => array(
+			'bank_name' 	=> array(1003),
+			'bank_address'	=> array(1006),
+			'branch_name'	=> array(1007),
+			'post_code'		=> array(1008),
+			'city'			=> array(1009),
+			'location'		=> array(1010),
+			'country'		=> array(1011),
+		),
+		'AT' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+	
+		'BE' => array(
+			'bank_name' 	=> array(1002, 1003),
+			'bank_address'	=> array(1004, 1005),
+			'branch_name'	=> array(),
+			'post_code'		=> array(1006),
+			'city'			=> array(1009, 1010),
+			'location'		=> array(),
+			'country'		=> array(1011),
+		),
+		'BA' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+		'BG' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+	
+		),
+	
+		'HR' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+		
+		'CY' => array(
+			'bank_name' 	=> array(1003),
+			'bank_address'	=> array(1006),
+			'branch_name'	=> array(1007),
+			'post_code'		=> array(1008),
+			'city'			=> array(1009),
+			'location'		=> array(1010),
+			'country'		=> array(1011),
+		),
+		'CZ' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+	
+		'DK' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+	
+		'EE' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+	
+		'FI' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+		'FR' => array(
+			'bank_name' 	=> array(1004),
+			'bank_address'	=> array(1013, 1014, 1015),
+			'branch_name'	=> array(1005),
+			'post_code'		=> array(1016),
+			'city'			=> array(),
+			'location'		=> array(),
+			'country'		=> array(),
+		),
+	
+		'DE' => array(
+			'bank_name' 	=> array(1007),
+			'bank_address'	=> array(),
+			'branch_name'	=> array(1007),
+			'post_code'		=> array(1009),
+			'city'			=> array(1010),
+			'location'		=> array(),
+			'country'		=> array(),
+		),
+		'GR' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+	
+		'HU' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+	
+		'IS' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+		'IT' => array(
+			'bank_name' 	=> array(1019),
+			'bank_address'	=> array(1003, 1004),
+			'branch_name'	=> array(1009),
+			'post_code'		=> array(1006),
+			'city'			=> array(1005),
+			'location'		=> array(1007, 1008),
+			'country'		=> array(),
+		),
+	
+		'LV' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+		'LI' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+		'LT' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+		'LU' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+	
+		'MT' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+		'ME' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+	
+		'NL' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+		'NO' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+	
+		'PL' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+		'PT' => array(
+			'bank_name' 	=> array(1003),
+			'bank_address'	=> array(1006),
+			'branch_name'	=> array(1007),
+			'post_code'		=> array(1008),
+			'city'			=> array(1009),
+			'location'		=> array(1010),
+			'country'		=> array(1011),
+		),
+	
+		'IE' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1004, 1005, 1006, 1007),
+			'branch_name'	=> array(1003),
+			'post_code'		=> array(),
+			'city'			=> array(),
+			'location'		=> array(),
+			'country'		=> array(),
+		),
+		'RO' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+	
+		'RS' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+		'SK' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+		'SI' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+		'ES' => array(
+			'bank_name' 	=> array(1003),
+			'bank_address'	=> array(1006),
+			'branch_name'	=> array(1007),
+			'post_code'		=> array(1008),
+			'city'			=> array(1009),
+			'location'		=> array(1010),
+			'country'		=> array(1011),
+		),
+		'SE' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+		'CH' => array(
+			'bank_name' 	=> array(1002),
+			'bank_address'	=> array(1005),
+			'branch_name'	=> array(1006),
+			'post_code'		=> array(1007),
+			'city'			=> array(1008),
+			'location'		=> array(1009),
+			'country'		=> array(1010),
+		),
+	
+		'TN' => array(
+			'bank_name' 	=> array(),
+			'bank_address'	=> array(),
+			'branch_name'	=> array(),
+			'post_code'		=> array(),
+			'city'			=> array(),
+			'location'		=> array(),
+			'country'		=> array(),
+		),
+	
+		'GB' => array(
+			'bank_name' 	=> array(1007, 1008),
+			'bank_address'	=> array(1059, 1060, 1061, 1062),
+			'branch_name'	=> array(1005),
+			'post_code'		=> array(1065, 1066),
+			'city'			=> array(1063),
+			'location'		=> array(1051),
+			'country'		=> array(),
+		),
+	);
+	
+	
+	public function getConversionBankDetailsMappings($countryCode = null)
+	{
+		$data = $this->conversionBankDetailsMappings;
+	
+		if (!is_null($countryCode)) {
+			$data = null;
+			if (isset($this->conversionBankDetailsMappings[$countryCode])) {
+				$data = $this->conversionBankDetailsMappings[$countryCode];
+			}
+		}
+	
+		return $data;
+	}
+	
 }

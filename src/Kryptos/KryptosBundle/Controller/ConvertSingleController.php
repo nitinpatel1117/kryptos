@@ -8,6 +8,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Kryptos\KryptosBundle\Form\ConvertSingleForm;
 use Symfony\Component\Form\FormError;
 use Kryptos\KryptosBundle\Lib\BbanCountryMappings\Mappings;
+use Kryptos\KryptosBundle\Lib\ResultSingleConversion;
+
+
+
 
 class ConvertSingleController extends Controller
 {
@@ -24,7 +28,6 @@ class ConvertSingleController extends Controller
     	}
     	
     	$accountValid = false;
-    	$accountData = array();
     	
     	$mappings = new Mappings();
 
@@ -76,7 +79,7 @@ class ConvertSingleController extends Controller
 
     		
     		if ($form->isValid() && false == $errorExists)
-    		{	
+    		{
     			// build our commands
     			$args = array();
     			foreach ($bbanMaps as $key => $value) {
@@ -84,6 +87,33 @@ class ConvertSingleController extends Controller
     			}
     			
     			$output = $this->runSingleConversionCommand($countrySelected, $args);
+    			
+    			$resultsConversion = new ResultSingleConversion($countrySelected, $output);
+    			$resultsConversion->process();
+    			
+    			
+    			$chargeUser = false;
+    			if (true == $resultsConversion->isFatal) {
+    				$form->addError(new FormError('Conversion not possible |Our conversion tool is offline, therefore, we are currenlty not able to process your request. Note: You have not been charged a conversion.'));
+    			} else if (false == $resultsConversion->isValid) {
+    				$form->addError(new FormError('Invalid Bank Account |The bank account provided is incorrect. Please check and try again.'));
+    				$chargeUser = true;
+    			}
+    			else {
+    				$accountValid = true;
+    				$chargeUser = true;
+    			}
+    			
+    			
+    			if (true == $chargeUser) {
+    				if ($this->conversionsRestricted()) {
+    					$user = $this->get('user_manager');
+    					$user->reduceCredit($this->getUserId());
+    					$credits--;
+    				}
+    			}
+    			
+    			/*
     			$output = $this->processOutput($output);
     			$accountData = $this->getIbanAndBic($output);
     			#list($iban, $bic) = $this->getIbanAndBic($output);
@@ -102,6 +132,8 @@ class ConvertSingleController extends Controller
     			else {
     				$form->addError(new FormError('Invalid Bank Account |The bank account provided is incorrect. Please check and try again.'));
     			}
+    			*/
+    			
     		}
     	}
     	
@@ -110,6 +142,11 @@ class ConvertSingleController extends Controller
     		$userNote = 'You no not have any conversions available. You will need to purchase conversions in order to proceed.';
     	} else {
     		$userNote = sprintf('You have %s conversions available.', $credits);
+    	}
+    	
+    	$result = null;
+    	if (isset($resultsConversion)) {
+    		$result = $resultsConversion;
     	}
     	
     	
@@ -124,7 +161,7 @@ class ConvertSingleController extends Controller
         	'countrySelected'			=> $countrySelected,
         	
         	'accountValid'				=> $accountValid,
-        	'accountData'				=> $accountData,
+        	'result' 					=> $result,
         ));
     }
     
