@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Kryptos\KryptosBundle\Form\ConvertSingleForm;
 use Symfony\Component\Form\FormError;
 use Kryptos\KryptosBundle\Lib\BbanCountryMappings\Mappings;
-use Kryptos\KryptosBundle\Lib\ResultSingleConversion;
+# use Kryptos\KryptosBundle\Lib\ResultSingleConversion;
 
 
 
@@ -28,7 +28,6 @@ class ConvertSingleController extends Controller
     	}
     	
     	$accountValid = false;
-    	
     	$mappings = new Mappings();
 
     	$options = array('country' => null);
@@ -47,7 +46,7 @@ class ConvertSingleController extends Controller
     	
     	if ($request->isMethod('POST')) {
     		$form->bind($request);
-
+    		
     		// do our own validation on required fields. Can't work out how to get symfony 2 to do dynamic validation based on the result of country dropdown
     		$errorExists = false;
     		$bbanMaps = $mappings->getBbanMappings($countrySelected);
@@ -86,10 +85,15 @@ class ConvertSingleController extends Controller
     				$args[] = $formPosted[$key];
     			}
     			
+    			/*
     			$output = $this->runSingleConversionCommand($countrySelected, $args);
     			
-    			$resultsConversion = new ResultSingleConversion($countrySelected, $output);
+    			$resultsConversion = new SingleConversion($countrySelected, $output);
     			$resultsConversion->process();
+    			*/
+    			
+    			$resultsConversion = $this->get('single_conversion');
+    			$resultsConversion->run($countrySelected, $args);
     			
     			
     			$chargeUser = false;
@@ -102,6 +106,30 @@ class ConvertSingleController extends Controller
     			else {
     				$accountValid = true;
     				$chargeUser = true;
+    				
+    				if (true == $resultsConversion->isTransposed)
+    				{
+    					if (isset($resultsConversion->transposedData['from']) && is_array($resultsConversion->transposedData['from']) && isset($resultsConversion->transposedData['to'])   && is_array($resultsConversion->transposedData['to']))
+    					{
+    						$formNew = $this->createForm(new ConvertSingleForm(), null, $options);
+    						$formNew->get('country')->setData($form->get('country')->getData());
+
+    						$bban_count = 1;
+    						foreach($resultsConversion->transposedData['from'] as $key => $value) {
+    							if (isset($resultsConversion->transposedData['to'][$key]) && !empty($resultsConversion->transposedData['to'][$key])) {
+    								$keyname = sprintf('bban%s', $bban_count);
+    								if ($form->has($keyname)) {
+    									$formData = $form->get($keyname)->getData();
+    									if ($formData == $value) {
+    										$formNew->get($keyname)->setData($resultsConversion->transposedData['to'][$key]);
+    									}
+    								}
+    							} 
+    							$bban_count++;
+    						}
+    						$form = $formNew;
+    					}
+    				}
     			}
     			
     			
@@ -109,7 +137,6 @@ class ConvertSingleController extends Controller
     				if ($this->conversionsRestricted()) {
     					$user = $this->get('user_manager');
     					$user->reduceCredit($this->getUserId());
-    					$credits--;
     				}
     			}
     			
@@ -138,30 +165,16 @@ class ConvertSingleController extends Controller
     	}
     	
     	
-    	if ($credits < 1) {
-    		$userNote = 'You no not have any conversions available. You will need to purchase conversions in order to proceed.';
-    	} else {
-    		$userNote = sprintf('You have %s conversions available.', $credits);
-    	}
-    	
-    	$result = null;
-    	if (isset($resultsConversion)) {
-    		$result = $resultsConversion;
-    	}
-    	
-    	
         return $this->render('KryptosKryptosBundle:ConvertSingle:index.html.twig', array(
         	'form' 						=> $form->createView(),
         	'location' 					=> 'Single Convert',
         	'btn_submit' 				=> 'Convert',
-        	'credits' 					=> $credits,
         	'conversionsRestricted' 	=> $this->conversionsRestricted(),
-        	'userNote' 					=> $userNote,
         	'bbanMappings' 				=> $mappings->getBbanMappings(),
         	'countrySelected'			=> $countrySelected,
         	
         	'accountValid'				=> $accountValid,
-        	'result' 					=> $result,
+        	'result' 					=> isset($resultsConversion) ? $resultsConversion : null,
         ));
     }
     
@@ -227,7 +240,7 @@ class ConvertSingleController extends Controller
      * @param string $countrySelected					The country code
      * @param array $args								The bban arguments
      * @return array									The output that was retrieved from the command
-     */
+     *
     public function runSingleConversionCommand($countrySelected, array $args)
     {
     	$config = $this->get('config_manager');
@@ -244,6 +257,7 @@ class ConvertSingleController extends Controller
     	
     	return $output;
     }
+    */
     
     
     /**
@@ -252,7 +266,7 @@ class ConvertSingleController extends Controller
      * 
      * @param array $output
      * @return array
-     */
+     *
     public function processOutput(array $output)
     {
     	$data = array();
@@ -274,7 +288,7 @@ class ConvertSingleController extends Controller
     	}
     	
     	return $data;
-    }
+    }*/
     
     
     /**

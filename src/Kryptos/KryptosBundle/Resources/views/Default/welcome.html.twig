@@ -1,17 +1,82 @@
 {% extends "KryptosKryptosBundle::layout.html.twig" %}
 
 {% block content %}
-	<h1>{{ location }}</h1>
-	<div id="welcome">
-		<p>
-		<a href="{{ purchase_conversion_url }}">Purchase Conversions</a> <br>
-		<a href="{{ account_summary_url }}">Account Summary</a> <br>
-		</p>
-		
-		<p>Convert To SEPA Format</p>
-		<p>
-			<a href="{{ convert_to_sepa_url_batch }}">Batch Conversion</a><br>
-			<a href="{{ convert_to_sepa_url_single }}">Single Conversion</a><br>
-		</p>
+	<div class="row-fluid">
+		<div class="row" style="text-align:center;">
+			<legend style="text-align:left;">Conversion summary</legend>
+			<form class="form-horizontal" >
+				<div id="chart_div" style="width: 750px; height: 350px;display: block;margin: 0 auto;"></div>
+			</form>
+		</div>
+		<div id="feeddiv"> 
+		</div>
 	</div>
+{% endblock %}
+
+{% block secondary_javascript %}
+<script type="text/javascript">
+	google.load("visualization", "1", {packages:["corechart"]});
+	
+	google.setOnLoadCallback(drawChart);
+	function drawChart() {
+		var data = google.visualization.arrayToDataTable([
+			['Date/Time', 'Conversions', 'Invalid'],
+			['2004',  1000,      400],
+			['2005',  1170,      460],
+			['2006',  660,       1120],
+			['2007',  1030,      540]
+		]);
+
+		var options = {
+			title: '',
+			legend:{position: 'bottom'},
+			hAxis: {title: 'Date/Time',  titleTextStyle: {color: 'red'}}
+		};
+
+		var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+		chart.draw(data, options);
+	}
+</script>
+
+
+<script type="text/javascript">
+	google.load("feeds", "1") //Load Google Ajax Feed API (version 1)
+	var feedcontainer=document.getElementById("feeddiv")
+	// var feedurl="http://www.sepa.org.uk/feeds/news_feed.aspx"
+	var feedurl="http://feeds.feedburner.com/europeanpaymentscouncil-blog?format=xml"
+	
+	var feedlimit=100
+	var rssoutput="<b style=\"text-align:center;\">Latest SEPA News:</b><br />"
+	
+	function rssfeedsetup(){
+		var feedpointer=new google.feeds.Feed(feedurl) //Google Feed API method
+		feedpointer.setNumEntries(feedlimit) //Google Feed API method
+		feedpointer.load(displayfeed) //Google Feed API method
+	}
+	
+	function displayfeed(result){
+		if (!result.error){
+			var thefeeds=result.feed.entries
+			rssoutput+="								<table class=\"table table-striped\">"
+			rssoutput+="								<thead/>"
+			rssoutput+="								<tbody/>"
+	
+			for (var i=0; i<thefeeds.length; i++){
+				rssoutput+="								<tr>"
+				rssoutput+="<td style=\"text-align:left;\"><a href='" + thefeeds[i].link + "'>" + thefeeds[i].title + "</a></td>"
+				rssoutput+=""
+				rssoutput+="								</tr>"
+			}
+			rssoutput+="									</tbody>"
+			rssoutput+="								</table>"
+			feedcontainer.innerHTML=rssoutput
+		}
+		// else
+		// alert("Error fetching feeds!")
+	}
+
+	window.onload=function() {
+		rssfeedsetup()
+	}
+</script>
 {% endblock %}

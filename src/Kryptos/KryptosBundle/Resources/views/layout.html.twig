@@ -31,9 +31,12 @@
 <script type="text/javascript" src="/bundles/kryptoskryptos/js/bootstrap/bootstrap-tooltip.js"></script>
 <script type="text/javascript" src="/bundles/kryptoskryptos/js/bootstrap/bootstrap-popover.js"></script>
 <script type="text/javascript" src="/bundles/kryptoskryptos/js/bootstrap/bootstrap-fileupload.min.js"></script>
+<script type="text/javascript" src="/bundles/kryptoskryptos/js/google/jsapi.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 	$("input[rel=tooltip]").tooltip({ trigger: 'hover' ,animation: 'true' , placement:'right'});
 });
 </script>
+
+{% block secondary_javascript %}{% endblock %}
 {% endblock %}

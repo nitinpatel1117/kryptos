@@ -10,7 +10,7 @@ use Kryptos\KryptosBundle\Lib\BbanCountryMappings\Mappings;
  * @author Nitin
  *
  */
-class ResultSingleConversion
+class SingleConversion
 {
 	public $countryCode = null;
 	
@@ -81,7 +81,7 @@ class ResultSingleConversion
 	 * 
 	 * @var array
 	 */
-	public $data;
+	public $data = array();
 	
 	/**
 	 * Array containing a subset of the original data.
@@ -110,15 +110,37 @@ class ResultSingleConversion
 	public $warningMsg = array();
 	
 	
+	protected $configManager;
+	
+	
 	
 	public function getData() {
 		return $this->data;
 	}
 
-	public function __construct($countryCode, array $data)
+	
+	
+	public function __construct($configManager)
+	{
+		$this->configManager = $configManager;
+	}
+	
+	
+	public function run($countryCode, $args)
 	{
 		$this->countryCode = $countryCode;
-		$this->data = $data;
+		 
+		$single_command = $this->configManager->get('bankwizard|single_command');
+		$command = sprintf($single_command, $this->countryCode, implode(' ', $args));
+		
+		putenv('BW3LIBS=/var/www/bankwizard');
+		putenv('BWTABLES=/var/www/bwtables');
+		putenv('LD_LIBRARY_PATH=/var/www/bankwizard:');
+		
+		exec($command, $this->data);
+		
+		// process the results
+		$this->process();
 	}
 	
 	

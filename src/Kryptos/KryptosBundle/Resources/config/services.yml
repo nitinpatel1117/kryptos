@@ -13,6 +13,7 @@ parameters:
     login_validator.class:               Kryptos\KryptosBundle\Lib\LoginValidator
     batch_insert_file.class:             Kryptos\KryptosBundle\Lib\BatchInsertFile
     batch_upload_file.class:             Kryptos\KryptosBundle\Lib\BatchUploadFile
+    single_conversion.class:             Kryptos\KryptosBundle\Lib\SingleConversion
 
 
 services:
@@ -84,4 +85,8 @@ services:
     batch_upload_file:
         class:          %batch_upload_file.class%
         arguments:      [@config_manager, @file_manager, @bank_account_manager, @file_error_manager, @user_manager]
+        
+    single_conversion:
+        class:          %single_conversion.class%
+        arguments:      [@config_manager]
         

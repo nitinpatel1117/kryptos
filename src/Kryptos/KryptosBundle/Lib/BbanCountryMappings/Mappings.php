@@ -74,7 +74,7 @@ class Mappings
 		'SE' => 'Sweden',
 		'CH' => 'Switzerland',
 		
-		'TN' => 'Tunisia',
+		#'TN' => 'Tunisia',
 		
 		'GB' => 'United Kingdom',
 		
@@ -261,13 +261,13 @@ class Mappings
 			'bban2' => 'Account no.',
 		),
 		
-		'TN' => array(
+	/*	'TN' => array(
 			'bban1' => 'Bank code',
 			'bban2' => 'Branch code',
 			'bban3' => 'Account no.',
 			'bban4' => 'Check digit',
 		),
-		
+	*/	
 		'GB' => array(
 			'bban1' => 'Sort Code',
 			'bban2' => 'Account no.',
@@ -638,7 +638,7 @@ class Mappings
 			'location'		=> array(1009),
 			'country'		=> array(1010),
 		),
-	
+	/*
 		'TN' => array(
 			'bank_name' 	=> array(),
 			'bank_address'	=> array(),
@@ -648,7 +648,7 @@ class Mappings
 			'location'		=> array(),
 			'country'		=> array(),
 		),
-	
+	*/
 		'GB' => array(
 			'bank_name' 	=> array(1007, 1008),
 			'bank_address'	=> array(1059, 1060, 1061, 1062),
