@@ -37,6 +37,11 @@ class BaseManager
 		return $this->getMongoCollection()->batchInsert($items, array("w" => 1, "j" => true));
 	}
 
+	/**
+	 * note: this overrides all existing data, if the object already exists
+	 * 
+	 * @param mixed $item
+	 */
 	public function save($item)
 	{
 		return $this->getMongoCollection()->save($item, array("w" => 1, "j" => true));

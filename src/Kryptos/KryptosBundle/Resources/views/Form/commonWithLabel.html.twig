@@ -1,0 +1,35 @@
+{% block form_row %}
+{% spaceless %}
+	{{ form_label(form, '', { 'label_attr': {'class': 'control-label'} }) }}
+	<div class="controls">
+		{{ form_widget(form) }}
+	</div>
+{% endspaceless %}
+{% endblock form_row %}
+
+
+{% block form_errors %}
+{% spaceless %}
+{% if errors|length > 0 %}
+	<div class="alert alert-error">
+		<button class="close" data-dismiss="alert" type="button"><i class=" icon-remove"></i></button>
+		{% for error in errors %}
+			{% set errorMessage = error.messageTemplate|trans(error.messageParameters, 'validators') %}
+			{% set errorMessageBits = errorMessage|split('|', 2) %}
+			
+			{% if errorMessageBits|length == 2 %}
+				{% set title = errorMessageBits[0] %}
+				{% set message = errorMessageBits[1] %}
+				<strong>
+					<i class=" icon-exclamation-sign"></i>
+					{{ title }}
+				</strong><br>
+				{{ message }}
+			{% else %}
+				{{ error.messageTemplate|trans(error.messageParameters, 'validators') }}<br>
+			{% endif %}
+		{% endfor %}
+	</div>
+{% endif %}
+{% endspaceless %}
+{% endblock form_errors %}

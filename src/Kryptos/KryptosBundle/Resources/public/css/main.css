@@ -31,8 +31,6 @@ form#purchaseConversion input { height:20px;}
 form#purchaseConversion #PurchaseConversionForm_btn_cacl {margin-top:22px;}
 
 
-
-
 /* Payment Billing Form */
 form#paymentBilling { }
 form#paymentBilling input { height:20px; width: 220px; }
@@ -58,6 +56,16 @@ form#convertSingle select { width: 235px; }
 /* Summary Balance */
 section#balance p {text-align:right; }
 section#balance p span {display:inline-block; width:100px;}
+
+
+/* Settings */
+form#settingsUserDetails { }
+form#settingsUserDetails input { height:20px; width: 220px; }
+form#settingsUserDetails select { width: 235px; }
+form#settingsUserPassword { }
+form#settingsUserPassword input { height:20px; width: 220px; }
+form#settingsUserPassword select { width: 235px; }
+
 
 
 

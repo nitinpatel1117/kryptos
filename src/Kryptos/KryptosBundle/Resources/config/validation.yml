@@ -32,6 +32,42 @@ Kryptos\KryptosBundle\Entity\Register:
                 message: Registration incomplete|You must accept the terms and conditions in order to proceed.
 
 
+Kryptos\KryptosBundle\Entity\SettingsUserDetails:
+    properties:
+        title:
+            - NotBlank:
+                message: User details incomplete|Please select your title.
+        firstName:
+            - NotBlank:
+                message: User details incomplete|Please enter your forename.
+        lastName:
+            - NotBlank:
+                message: User details incomplete|Please enter your surname.
+        jobTitle:
+            - NotBlank:  
+                message: User details incomplete|Please enter your Job Title.
+        company:
+            - NotBlank:
+                message: User details incomplete|Please enter your company name.
+        location:
+            - NotBlank: 
+                message: User details incomplete|Please enter your location.
+        email:
+            - Email:
+                message: Incorrect Email|The email "{{ value }}" is not a valid email address. Please try again.
+                checkMX: true
+
+
+Kryptos\KryptosBundle\Entity\SettingsUserPassword:
+    properties:
+        oldPassword:
+            - NotBlank: 
+                message: Details incomplete|Please enter your old password.
+        password:
+            - NotBlank: 
+                message: Details incomplete|Please enter your new password.
+
+
 Kryptos\KryptosBundle\Entity\Signin:
     properties:
         email:

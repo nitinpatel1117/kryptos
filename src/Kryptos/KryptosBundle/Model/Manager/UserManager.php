@@ -343,4 +343,26 @@ class UserManager extends BaseManager
     	
     	return parent::update($query, $update);
     }
+    
+    
+    /**
+     * Function updates an users personal data
+     *
+     * @param string $userId			The user id of the user to who we want to update
+     * @param array $data				The new user data
+     */
+    public function updatePersonalDetails($userId, $data)
+    {
+    	$query = array('_id' => new \MongoId($userId));
+    
+    	if (isset($data['_id'])) {
+    		unset($data['_id']);
+    	}
+    	
+    	$update = array(
+    		'$set' => $data,
+    	);
+    	 
+    	return parent::update($query, $update);
+    }
 }

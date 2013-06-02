@@ -86,3 +86,8 @@ account_balance:
 account_history:
     pattern:  /account/histoy
     defaults: { _controller: KryptosKryptosBundle:Account:history }
+
+
+account_settings:
+    pattern:  /account/settings
+    defaults: { _controller: KryptosKryptosBundle:Account:settings }

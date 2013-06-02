@@ -1,0 +1,118 @@
+{% extends "KryptosKryptosBundle::layout.html.twig" %}
+{% form_theme form 'KryptosKryptosBundle:Form:commonWithLabel.html.twig' %}
+{% form_theme passwordform 'KryptosKryptosBundle:Form:commonWithLabel.html.twig' %}
+
+
+{% block content %}
+	<legend style="text-align:left;">Settings</legend>
+	<div class="row-fluid">
+		<div class="span6">
+			<div style="background-color:#F8F8F8">
+				<form id="settingsUserDetails" action="{{ path('account_settings') }}" method="post" {{ form_enctype(form) }} class="form-horizontal">
+					<div class="row">
+					
+						<div class="control-group">    
+							<legend>Personal details</legend>
+										
+							<div class="control-group">
+								{{ form_row(form.title) }}
+							</div>
+							
+							<div class="control-group">
+								{{ form_row(form.firstName) }}
+							</div>
+							
+							<div class="control-group">
+								{{ form_row(form.lastName) }}
+							</div>
+							
+							<div class="control-group">
+								{{ form_row(form.jobTitle) }}
+							</div>
+							
+							<div class="control-group">
+								{{ form_row(form.company) }}
+							</div>
+							
+							<div class="control-group">
+								{{ form_row(form.location) }}
+							</div>
+							
+							<div class="control-group">
+								{{ form_row(form.email) }}
+							</div>
+							
+							<br>
+							{{ form_rest(form) }}
+							
+							<div class="control-group">
+								<div class="controls">
+									<button type="submit" class="btn btn-custom-block btn-primary">update</button> 
+								</div>  
+							</div>
+							
+							{% if personalDetailsUpdated != '' %}
+								<div class="alert alert-success">
+									<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
+									<strong><i class="icon-ok-sign"></i> Details Updated</strong> <br/>
+									{{ personalDetailsUpdated }}
+								</div>
+							{% endif %}
+							
+							{{ form_errors(form) }}
+							{{ form_errors(form.title) }}
+							{{ form_errors(form.firstName) }}
+							{{ form_errors(form.lastName) }}
+							{{ form_errors(form.jobTitle) }}
+							{{ form_errors(form.company) }}
+							{{ form_errors(form.location) }}
+							{{ form_errors(form.email.email) }}  
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div class="span6">
+			<div style="background-color:#F8F8F8">
+				<form id="settingsUserPassword" action="{{ path('account_settings') }}" method="post" {{ form_enctype(form) }} class="form-horizontal">
+					<div class="row">
+						<div class="control-group">    
+							<legend>Password</legend>
+							
+							<div class="control-group">
+								{{ form_row(passwordform.oldPassword) }}
+							</div>
+							
+							<div class="control-group">
+								{{ form_row(passwordform.password) }}
+							</div>
+							
+							<br>
+							{{ form_rest(passwordform) }}
+							
+							<div class="control-group">
+								<div class="controls">
+									<button type="submit" class="btn btn-custom-block btn-primary">update</button> 
+								</div>  
+							</div>
+							
+							{% if passwordUpdated != '' %}
+								<div class="alert alert-success">
+									<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
+									<strong><i class="icon-ok-sign"></i> Password Updated</strong> <br/>
+									{{ passwordUpdated }}
+								</div>
+							{% endif %}
+							
+							{{ form_errors(passwordform) }}
+							{{ form_errors(passwordform.oldPassword) }}
+							{{ form_errors(passwordform.password) }}					      
+						</div>
+					</div>
+				</form>
+				
+			</div>
+		</div>
+	</div>
+{% endblock %}

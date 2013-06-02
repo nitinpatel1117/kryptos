@@ -4,10 +4,119 @@ namespace Kryptos\KryptosBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Kryptos\KryptosBundle\Form\SettingsUserDetailsForm;
+use Kryptos\KryptosBundle\Form\SettingsUserPasswordForm;
+use Kryptos\KryptosBundle\Entity\SettingsUserDetails;
+use Kryptos\KryptosBundle\Entity\SettingsUserPassword;
+use Kryptos\KryptosBundle\Lib\Encryption;
+use Kryptos\KryptosBundle\Model\User;
+use Symfony\Component\Form\FormError;
 
 
 class AccountController extends Controller
 {
+	public function settingsAction(Request $request)
+	{
+		$config = $this->get('config_manager');
+		$session = $this->get('login_validator');
+	
+		if ($config->signinRequired() && !$session->isLoginValid()) {
+			return $this->redirect($this->generateUrl('welcome'));
+		}
+		
+		$personalDetailsUpdated = $this->getFromFlashBag('settingsPersonalUpdated');
+		$passwordUpdated 		= $this->getFromFlashBag('settingsPasswordUpdated');
+		
+		
+		$userSessionDetails = $this->get('login_validator')->getLoggedInUserDetails();
+		
+		$fields = array(
+			'title' => 1,
+			'firstName' => 1,
+			'lastName' => 1,
+			'jobTitle' => 1,
+			'company' => 1,
+			'location' => 1,
+			'email' => 1,
+		);
+		$user = $this->get('user_manager')->getUserByEmail($userSessionDetails['email'], $fields);
+		$settingUSerDetails = new SettingsUserDetails();
+		$settingUSerDetails->makeFromArray($user);
+		$form = $this->createForm(new SettingsUserDetailsForm(), $settingUSerDetails);
+		
+		$passwordForm = $this->createForm(new SettingsUserPasswordForm());
+		
+		if ($request->isMethod('POST'))
+		{
+			if ($request->request->has('SettingsUserDetailsForm')) {
+				$form->bind($request);
+				if ($form->isValid()) {
+					$formData = $form->getData()->toArray();
+					$newUserDetails = array_merge($user, $formData);
+					
+					$this->get('user_manager')->updatePersonalDetails($user['_id']->__toString(), $newUserDetails);
+					$session->saveLogin($form->getData()->getEmail(), $form->getData()->getFirstName());				// update the users username in the nav, as well as their email address is the session
+					
+					
+					$this->get('session')->getFlashBag()->add('settingsPersonalUpdated', 'Your personal details have been successfully updated.');
+					return $this->redirect($this->generateUrl('account_settings'));
+				}
+			}
+			
+			if ($request->request->has('SettingsUserPasswordForm')) {
+				$passwordForm->bind($request);
+				if ($passwordForm->isValid()) {
+					$fields = array(
+						'salt' => 1,
+						'password' => 1,
+					);
+					$user = $this->get('user_manager')->getUserByEmail($userSessionDetails['email'], $fields);
+					
+					$userObject = new User();
+					$userObject->setSalt($user['salt']);
+					$userObject->setPassword($user['password']);
+					
+					$encryption = new Encryption();
+					$valid = $encryption->isPasswordValid($passwordForm->get('oldPassword')->getData(), $userObject);
+					if (true == $valid) {
+						$this->get('user_manager')->doPasswordReset($user, $passwordForm->get('password')->getData());
+						
+						$this->get('session')->getFlashBag()->add('settingsPasswordUpdated', 'Your password has been successfully updated.');
+						return $this->redirect($this->generateUrl('account_settings'));
+					}
+					
+					$passwordForm->addError(new FormError('Incorrect password |Your old password is not correct. Kryptos passwords are case sensitive. Please check your CAPS lock key.'));
+				}
+				#else {
+				#	echo "not Valid";
+				#	exit;
+				#}
+			}
+		}
+		
+		 
+		return $this->render('KryptosKryptosBundle:Account:settings.html.twig', array(
+			'form' 						=> $form->createView(),
+			'passwordform' 				=> $passwordForm->createView(),
+			'location' 					=> 'User Details',
+			'personalDetailsUpdated'	=> $personalDetailsUpdated,
+			'passwordUpdated'			=> $passwordUpdated,
+		));
+	}
+	
+	public function getFromFlashBag($name)
+	{
+		$msg = '';
+		 
+		$messageData = $this->get('session')->getFlashBag()->get($name);
+		if (is_array($messageData) && count($messageData) > 0 ) {
+			$msg = array_shift($messageData);
+		}
+		 
+		return $msg;
+	}
+	
+	
     public function summaryAction(Request $request)
     {
     	$config = $this->get('config_manager');
