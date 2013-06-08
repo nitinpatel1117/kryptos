@@ -136,7 +136,7 @@ class PurchaseConversionsController extends Controller
     	return $response;
     }
     
-    
+    /*
     protected function calcRates($conversionAmount)
     {
     	$data = array();
@@ -192,5 +192,12 @@ class PurchaseConversionsController extends Controller
     	}
     	
     	return $data;
+    }
+    */
+
+    
+    protected function calcRates($conversionAmount)
+    {
+    	return $this->get('conversion_calculator')->calcRates($conversionAmount);
     }
 }

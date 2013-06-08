@@ -9,14 +9,18 @@ use Kryptos\KryptosBundle\Lib\Encryption;
 class UserManager extends BaseManager
 {
     const COLLECTION = 'user';
+    
+    protected $conversionCalculator = null;
 
 
-    public function __construct($mongoConnection)
+    public function __construct($mongoConnection, $conversionCalculator)
     {
     	$dbCollection = $mongoConnection->connectToCollection(self::COLLECTION);
 
     	$this->setMongoCollection($dbCollection);
     	$this->setNameOfCollection(self::COLLECTION);
+    	
+    	$this->conversionCalculator = $conversionCalculator;
     }
 
 
@@ -204,6 +208,7 @@ class UserManager extends BaseManager
     public function registerCreditsUsed($userId, $fileId, $originalCredits, $credits)
     {
     	$creditsUsed = $originalCredits - $credits;
+    	$costs = $this->getCostOfCreditsUsed($creditsUsed);
 
     	$query = array('_id' => new \MongoId($userId));
     	
@@ -211,6 +216,7 @@ class UserManager extends BaseManager
     		'$push' => array(
     			'conversionHistory' => array(
     				'creditsUsed' 	=> $creditsUsed,
+    				'totalCost'		=> $costs,
     				'time'			=> new \MongoDate(),
     				'type'			=> 'batch',
     				'file'			=> $fileId,
@@ -220,6 +226,22 @@ class UserManager extends BaseManager
     	);
 
     	return parent::update($query, $update);
+    }
+    
+    /**
+     * FUnction returns what the equivilant cost would be if we calculated if from the number of conversions used 
+     */
+    public function getCostOfCreditsUsed($credits)
+    {
+    	$cost = 0;
+
+    	$result = $this->conversionCalculator->calcRates($credits);
+    	
+    	if (isset($result['body']['cost']) && isset($result['body']['vat'])) {
+    		$cost = $result['body']['cost'] + $result['body']['vat'];
+    	}
+    	
+    	return $cost;
     }
     
     
@@ -307,13 +329,16 @@ class UserManager extends BaseManager
      * @param int $amount				The amount of credits to refund
      */
     public function refundCredits($userId, $fileId, $amount)
-    {    	
+    {
+    	$costs = $this->getCostOfCreditsUsed($amount);
+    	
     	$query = array('_id' => new \MongoId($userId));
     	 
     	$update = array(
     		'$push' => array(
     			'conversionHistory' => array(
     				'creditsRefunded' 	=> $amount,
+    				'totalCost'			=> $costs,
     				'time'				=> new \MongoDate(),
     				'type'				=> 'batch',
     				'file'				=> $fileId,
@@ -335,12 +360,15 @@ class UserManager extends BaseManager
      */
     public function reduceCredit($userId, $amount = 1)
     {
+    	$costs = $this->getCostOfCreditsUsed($amount);
+    	
     	$query = array('_id' => new \MongoId($userId));
     
     	$update = array(
     		'$push' => array(
     			'conversionHistory' => array(
     				'creditsUsed' 		=> $amount,
+    				'totalCost'			=> $costs,
     				'time'				=> new \MongoDate(),
     				'type'				=> 'single',
     				'id'				=> new \MongoId(),

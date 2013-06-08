@@ -3,6 +3,7 @@ parameters:
 
     config_manager.class:                Kryptos\KryptosBundle\Services\ConfigManager
     mongo_connection.class:              Kryptos\KryptosBundle\Services\MongoConnection
+    conversion_calculator.class:        Kryptos\KryptosBundle\Services\ConversionCalculator
     user_manager.class:                  Kryptos\KryptosBundle\Model\Manager\UserManager
     sage_notification_manager.class:     Kryptos\KryptosBundle\Model\Manager\SageNotificationManager
     file_manager.class:                  Kryptos\KryptosBundle\Model\Manager\FileManager
@@ -30,9 +31,13 @@ services:
         class:          %mongo_connection.class%
         arguments:      [@service_container]
         
+    conversion_calculator:
+        class:          %conversion_calculator.class%
+        arguments:      [@config_manager]
+        
     user_manager:
         class:          %user_manager.class%
-        arguments:      [@mongo_connection]
+        arguments:      [@mongo_connection, @conversion_calculator]
      
     sage_notification_manager:
         class:          %sage_notification_manager.class%

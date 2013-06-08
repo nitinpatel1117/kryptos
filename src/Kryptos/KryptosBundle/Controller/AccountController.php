@@ -223,7 +223,7 @@ class AccountController extends Controller
     			'datetime' 		=> $date->format('d/m/Y H:i:s'),
     			'type' 			=> $type,
     			'credits' 		=> $credit,
-    			'cost' 			=> null,
+    			'cost' 			=> isset($history['totalCost']) ? $history['totalCost'] : null,
     			'status' 		=> $status,
     		);
     	
