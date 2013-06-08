@@ -26,9 +26,9 @@ class LoginValidator
 	}
 
 
-	public function saveLogin($email, $name)
+	public function saveLogin($email, $name, $id)
 	{
-		$item = $this->makeSaveObject($email, $name);
+		$item = $this->makeSaveObject($email, $name, $id);
 		$this->write($this->sessionId, $item);
 	}
 
@@ -44,7 +44,7 @@ class LoginValidator
 	    	$dateNew->modify(sprintf('+%s seconds', $this->sessionExpire));
 
 	    	if ($dateNew > $item['accessed']) {
-	    		$this->saveLogin($item['email'], $item['name']);
+	    		$this->saveLogin($item['email'], $item['name'], $item['id']);
 	    		$loginValid = true;
 	    	}
 		}
@@ -59,11 +59,12 @@ class LoginValidator
 	}
 
 
-	protected function makeSaveObject($email, $name)
+	protected function makeSaveObject($email, $name, $id)
 	{
 		$item = array();
 		$item['email'] = $email;
 		$item['name'] = $name;
+		$item['id'] = $id;
 		$item['accessed'] = new \DateTime();
 
 		return $item;

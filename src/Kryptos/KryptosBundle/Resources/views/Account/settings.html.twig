@@ -1,6 +1,6 @@
 {% extends "KryptosKryptosBundle::layout.html.twig" %}
 {% form_theme form 'KryptosKryptosBundle:Form:commonWithLabel.html.twig' %}
-{% form_theme passwordform 'KryptosKryptosBundle:Form:commonWithLabel.html.twig' %}
+{% form_theme passwordForm 'KryptosKryptosBundle:Form:commonWithLabel.html.twig' %}
 
 
 {% block content %}
@@ -75,21 +75,21 @@
 		
 		<div class="span6">
 			<div style="background-color:#F8F8F8">
-				<form id="settingsUserPassword" action="{{ path('account_settings') }}" method="post" {{ form_enctype(form) }} class="form-horizontal">
+				<form novalidate id="settingsUserPassword" action="{{ path('account_settings') }}" method="post" {{ form_enctype(passwordForm) }} class="form-horizontal">
 					<div class="row">
 						<div class="control-group">    
 							<legend>Password</legend>
 							
 							<div class="control-group">
-								{{ form_row(passwordform.oldPassword) }}
+								{{ form_row(passwordForm.oldPassword) }}
 							</div>
 							
 							<div class="control-group">
-								{{ form_row(passwordform.password) }}
+								{{ form_row(passwordForm.password) }}
 							</div>
 							
 							<br>
-							{{ form_rest(passwordform) }}
+							{{ form_rest(passwordForm) }}
 							
 							<div class="control-group">
 								<div class="controls">
@@ -105,9 +105,9 @@
 								</div>
 							{% endif %}
 							
-							{{ form_errors(passwordform) }}
-							{{ form_errors(passwordform.oldPassword) }}
-							{{ form_errors(passwordform.password) }}					      
+							{{ form_errors(passwordForm) }}
+							{{ form_errors(passwordForm.oldPassword) }}
+							{{ form_errors(passwordForm.password.password) }}					      
 						</div>
 					</div>
 				</form>

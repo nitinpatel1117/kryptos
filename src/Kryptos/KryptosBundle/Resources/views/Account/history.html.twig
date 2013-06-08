@@ -5,22 +5,22 @@
 				<thead>
 					<tr>
 						<th>Date/Time</th>
-						<th>Card Type</th>
+						<th>Type</th>
 						<th>Cost Price ({{ currency }})</th>
-						<th>Conversions purchased</th>
+						<th>Conversions</th>
 						<th>Transaction id</th>
-						<th>Download Invoice</th>
+						<th>Status</th>
 					</tr>
 				</thead>
 				<tbody>
 					 {% for payment in payments %}
 						 <tr>
 							<td>{{ payment.datetime|e }}</td>
-							<td>{{ payment.cardType|e }}</td>
+							<td>{{ payment.type|e }}</td>
 							<td>{{ payment.cost|e }}</td>
 							<td>{{ payment.credits|e }}</td>
 							<td>{{ payment.id|e }}</td>
-							<td>{{ payment.creditsNew|e }}</td>
+							<td>{{ payment.status|e }}</td>
 						</tr>
 					{% endfor %}
 				</tbody>

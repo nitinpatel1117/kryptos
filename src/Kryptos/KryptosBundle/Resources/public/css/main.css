@@ -67,6 +67,8 @@ form#settingsUserPassword input { height:20px; width: 220px; }
 form#settingsUserPassword select { width: 235px; }
 
 
+form#settingsUserDetails .control-group .controls input { margin-top: 3px;}
+form#settingsUserPassword .control-group .controls input { margin-top: 3px;}
 
 
 /*** Tables ***/

@@ -338,6 +338,14 @@ class UserManager extends BaseManager
     	$query = array('_id' => new \MongoId($userId));
     
     	$update = array(
+    		'$push' => array(
+    			'conversionHistory' => array(
+    				'creditsUsed' 		=> $amount,
+    				'time'				=> new \MongoDate(),
+    				'type'				=> 'single',
+    				'id'				=> new \MongoId(),
+    			)
+    		),
     		'$inc' => array ('credits' => ($amount * -1) ),
     	);
     	

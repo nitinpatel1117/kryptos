@@ -34,9 +34,11 @@ parameters:
 
 
   sagepay:
-    PaymentUrl:              https://test.sagepay.com/Simulator/VSPServerGateway.asp?Service=VendorRegisterTx
+#    PaymentUrl:              https://test.sagepay.com/Simulator/VSPServerGateway.asp?Service=VendorRegisterTx
+    PaymentUrl:              https://test.sagepay.com/gateway/service/vspserver-register.vsp
     VPSProtocol:             2.23   
-    Vendor:                  kryptos
+#    Vendor:                  kryptos
+    Vendor:                  everyonelovesca
     Currency:                GBP
     CurrencySymbol:          '&pound;'
     Description:             Conversions purchase

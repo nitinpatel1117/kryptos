@@ -16,7 +16,17 @@ class FileManager extends BaseManager
     	$this->setNameOfCollection(self::COLLECTION);
     }
     
-
+    
+    /**
+     * Get last 20  completed files for user. Used by graph on home page 
+     * @param unknown $userId
+     */
+    public function getCompletedFilesByUser($userId)
+    {
+    	$item = array('userId' => $userId, 'status' => 'complete');
+    	return parent::find($item)->limit(20)->sort(array('upload_time' => 1));
+    }
+    
     public function getFilesByUser($userId)
     {
     	$item = array('userId' => $userId);

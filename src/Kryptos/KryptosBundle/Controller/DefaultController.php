@@ -60,7 +60,7 @@ class DefaultController extends Controller
 				list($status, $user) = $userManager->checkSignin($form->getData());
 
 				if (true === $status) {
-					$session->saveLogin($form->getData()->getEmail(), $user->getFirstName());
+					$session->saveLogin($form->getData()->getEmail(), $user->getFirstName(), $user->getId());
 					return $this->redirect($this->generateUrl('welcome'));
 				}
 				
@@ -199,40 +199,27 @@ class DefaultController extends Controller
     		return $this->redirect($this->generateUrl('homepage'));
     	}
     	
-    	/*
-    	putenv('BW3LIBS=/var/www/bankwizard');
-    	putenv('BWTABLES=/var/www/bwtables');
-    	putenv('LD_LIBRARY_PATH=/var/www/bankwizard:');
-    	echo "<pre>";
+    	$userArray = $session->getLoggedInUserDetails();
+    	$result = $this->get('file_manager')->getCompletedFilesByUser($userArray['id']);
     	
-    	/*
-    	$command = "/var/www/bankwizard/bwibexam DE 36240045 7205321";
-    	var_dump($command);
-    	exec($command, $output);
-    	print_r($output);
-    	unset($output);
-    	/*
-    	$command = "/var/www/bankwizard/bwibexam GB 400302 81557149zz";
-    	var_dump($command);
-    	exec($command, $output);
-    	print_r($output);
-    	unset($output);
-    	 
-    	$command = "/var/www/bankwizard/bwibexam GB 400302 81557149";
-    	var_dump($command);
-    	exec($command, $output);
-    	print_r($output);
-    	unset($output);
-    	 
-    	echo "<BR> #################################### <BR>";
-    	 
-    	$command = "/var/www/bankwizard/bwibexam GB 203716 80196541";
-    	var_dump($command);
-    	exec($command, $output);
-    	print_r($output);
-    	 */
-    	#exit;
+    	$files = array();
+    	$date = new \DateTime();
     	
+    	while ($result->hasNext()) {
+    		$item = $result->getNext();
+    	
+    		$date->setTimestamp($item['upload_time']->sec);
+    		$file = array(
+    			'datetime' 		=> $date->format('d/m/Y'),
+    			'conversions' 	=> isset($item['stats']['valid']) 	? $item['stats']['valid'] : 0,
+    			'invalid' 		=> isset($item['stats']['invalid']) ? $item['stats']['invalid'] : 0,
+    		);
+    		$files[] = $file;
+    	}
+    	
+    	if (empty($files)) {
+    		$files[] = array('datetime' => '', 'conversions' => 0, 'invalid' => 0);
+    	}
 
     	return $this->render('KryptosKryptosBundle:Default:welcome.html.twig', array(
     		'location' 					=> 'Welcome page',
@@ -240,6 +227,7 @@ class DefaultController extends Controller
     		'account_summary_url' 		=> $this->generateUrl('account_summary'),
     		'convert_to_sepa_url_batch' => $this->generateUrl('convert_batch'),
     		'convert_to_sepa_url_single'=> $this->generateUrl('convert_single'),
+    		'files' 					=> $files,
     	));
     }
 

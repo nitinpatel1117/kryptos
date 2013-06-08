@@ -87,17 +87,13 @@ class AccountController extends Controller
 					
 					$passwordForm->addError(new FormError('Incorrect password |Your old password is not correct. Kryptos passwords are case sensitive. Please check your CAPS lock key.'));
 				}
-				#else {
-				#	echo "not Valid";
-				#	exit;
-				#}
 			}
 		}
 		
 		 
 		return $this->render('KryptosKryptosBundle:Account:settings.html.twig', array(
 			'form' 						=> $form->createView(),
-			'passwordform' 				=> $passwordForm->createView(),
+			'passwordForm' 				=> $passwordForm->createView(),
 			'location' 					=> 'User Details',
 			'personalDetailsUpdated'	=> $personalDetailsUpdated,
 			'passwordUpdated'			=> $passwordUpdated,
@@ -168,25 +164,76 @@ class AccountController extends Controller
     	$payments = array();
     	$date = new \DateTime();
     	
-    	$transactions = $this->getUserPayments();
+    	list ($transactions, $conversionHistory) = $this->getUserPayments();
+    	
     	$transactions = array_reverse($transactions);
     	foreach ($transactions as $transaction)
     	{
-    		if (isset($transaction['status']) && 'OK' == $transaction['status']) {
-    			$date->setTimestamp($transaction['started']->sec);
-	    		$payment = array(
-	    			'id' 			=> $transaction['_id']->__toString(),
-	    			'datetime' 		=> $date->format('d/m/Y H:i:s'),
-	    			'cardType' 		=> isset($transaction['cardType']) 				? $transaction['cardType'] : '',
-	    			'credits' 		=> isset($transaction['purchase']['credits']) 	? $transaction['purchase']['credits'] : '',
-	    			'cost' 			=> isset($transaction['purchase']['cost']) 		? number_format($transaction['purchase']['cost'], 2) : '',
-	    			'creditsOld' 	=> isset($transaction['creditsOld']) 			? $transaction['creditsOld'] : '',
-	    			'creditsNew' 	=> isset($transaction['creditsNew']) 			? $transaction['creditsNew'] : '',
-	    		);
-	
-	    		$payments[] = $payment;
+    		$date->setTimestamp($transaction['started']->sec);
+    			
+    		$status = 'Pending';
+    		if (isset($transaction['status'])) {
+    			if ('OK' == $transaction['status']) {
+    				$status = 'Ok';
+    			} else {
+    				$status = 'Failed';
+    			}
     		}
+    			
+	    	$payment = array(
+	    		'id' 			=> $transaction['_id']->__toString(),
+	    		'datetime' 		=> $date->format('d/m/Y H:i:s'),
+	    		'type' 			=> 'Credit',
+	    		'credits' 		=> isset($transaction['purchase']['credits']) 	? $transaction['purchase']['credits'] : '',
+	    		'cost' 			=> isset($transaction['purchase']['cost']) 		? number_format($transaction['purchase']['cost'], 2) : '',
+	    		'status'		=> $status,
+	    	#	'creditsOld' 	=> isset($transaction['creditsOld']) 			? $transaction['creditsOld'] : '',
+	    	#	'creditsNew' 	=> isset($transaction['creditsNew']) 			? $transaction['creditsNew'] : '',
+	    	);
+	
+	    	$payments[] = $payment;
     	}
+    	
+    	$conversionHistory = array_reverse($conversionHistory);
+    	foreach ($conversionHistory as $history)
+    	{
+    		$credit = null;
+    		$type = null;
+    		$status = 'Ok';
+    		if (isset($history['creditsUsed'])) {
+    			$type = 'Debit';
+    			$credit = $history['creditsUsed'];
+    		} else if (isset($history['creditsRefunded'])) {
+    			$type = 'Credit';
+    			$credit = $history['creditsRefunded'];
+    			$status .= ' - Refund'; 
+    		}
+    		
+    		$date->setTimestamp($history['time']->sec);
+    		
+    		$id = null;
+    		if (isset($history['file'])) {
+    			$id = $history['file']->__toString();
+    		}
+    		else if (isset($history['id'])) {
+    			$id = $history['id']->__toString();
+    		}
+    		$payment = array(
+    			'id' 			=> $id,
+    			'datetime' 		=> $date->format('d/m/Y H:i:s'),
+    			'type' 			=> $type,
+    			'credits' 		=> $credit,
+    			'cost' 			=> null,
+    			'status' 		=> $status,
+    		);
+    	
+    		$payments[] = $payment;
+    	}
+    	
+    	usort($payments, function($a, $b) {
+    		return strcmp($a['datetime'], $b['datetime']);
+    	});
+    	
     	
     	$currency = $this->get('config_manager')->get('sagepay|CurrencySymbol');
     	$currency = utf8_encode(html_entity_decode($currency));
@@ -232,18 +279,21 @@ class AccountController extends Controller
     public function getUserPayments()
     {
     	$payments = array();
+    	$conversionHistory = array();
     	 
     	if ($this->get('config_manager')->signinRequired()) {
     		$userSessionDetails = $this->get('login_validator')->getLoggedInUserDetails();
-    		$fields = array('payment'=>1);
+    		$fields = array('payment'=>1, 'conversionHistory'=>1);
     		$user = $this->get('user_manager')->getUserByEmail($userSessionDetails['email'], $fields);
     		
     		if (isset($user['payment'])) {
     			$payments = $user['payment'];
-    			unset($user);
+    		}
+    		if (isset($user['conversionHistory'])) {
+    			$conversionHistory = $user['conversionHistory'];
     		}
     	}
     	 
-    	return $payments;
+    	return array($payments, $conversionHistory);
     }
 }
