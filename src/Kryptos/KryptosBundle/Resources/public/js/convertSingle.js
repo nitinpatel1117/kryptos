@@ -62,6 +62,9 @@ $(document).ready(function() {
 		$('select#ConvertSingleForm_country').change(function() {
 			countryCode = $('select#ConvertSingleForm_country').val();
 			changeToCountry(bbanMap, countryCode, true);
+			
+			// remove iban value
+			$('#ConvertSingleForm_iban').val('');
 		});
 		/*
 		$('select#ConvertSingleForm_country').click(function() {
@@ -69,5 +72,13 @@ $(document).ready(function() {
 			changeToCountry(bbanMap, countryCode);
 		});
 		*/
+	}
+	
+	if ($('input#ConvertSingleForm_iban').length) {
+		$('input#ConvertSingleForm_iban').keydown(function() {
+			$('select#ConvertSingleForm_country').val('');
+			hideAllFields();
+			removeAllValues();
+		});
 	}
 });

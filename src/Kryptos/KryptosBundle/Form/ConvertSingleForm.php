@@ -14,9 +14,20 @@ class ConvertSingleForm extends AbstractType
     	$mappings = new Mappings();
     	$countries = $mappings->getCountries();
     	
+    	
+    	$builder->add('iban', 'text', array(
+    		'label' => 'IBAN',
+    		'required' => false,
+    		'attr' => array(
+    			'placeholder'			=> 'IBAN',
+    			'rel'					=> 'poppver',
+    			'data-original-title'	=> 'Please enter the IBAN',
+    		),
+    	));
+    	
     	$builder->add('country', 'choice', array(
     		'choices'   => $countries,
-    		'required'  => true,
+    		'required'  => false,
     		'empty_value' => 'Choose a country',
     	));
     	

@@ -33,6 +33,15 @@
 					
 						<fieldset>
 							<legend>Enter Bank Account</legend>
+							
+							<div class="control-group">
+								{{ form_row(form.iban) }}
+							</div> 
+							
+							<div class="control-group or_splitter">
+								<p>OR</p>
+							</div>
+							
 							<div class="control-group">
 								{{ form_row(form.country) }}
 								{{ form_row(form.bban1) }}
@@ -51,6 +60,7 @@
 						</fieldset>
 						
 						{{ form_errors(form) }}
+						{{ form_errors(form.iban) }}
 						{{ form_errors(form.country) }}
 						{{ form_errors(form.bban1) }}
 						{{ form_errors(form.bban2) }}

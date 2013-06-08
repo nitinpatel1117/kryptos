@@ -3,12 +3,20 @@ namespace Kryptos\KryptosBundle\Entity;
 
 class ConvertSingle
 {
+	protected $iban;
     protected $country;
     protected $bban1;
     protected $bban2;
     protected $bban3;
     protected $bban4;
     protected $bban5;
+    
+    public function setIban($iban) {
+    	$this->iban = $iban;
+    }
+    public function getIban() {
+    	return $this->iban;
+    }
     
 	public function setCountry($country) {
 		$this->country = $country;

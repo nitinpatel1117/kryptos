@@ -52,6 +52,8 @@ form#convertSingle {}
 form#convertSingle input { width: 220px; height:20px;}
 form#convertSingle select { width: 235px; }
 
+form#convertSingle .or_splitter { color: #777777; margin-bottom:18px; }
+
 
 /* Summary Balance */
 section#balance p {text-align:right; }

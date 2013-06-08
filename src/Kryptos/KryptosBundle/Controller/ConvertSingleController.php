@@ -29,14 +29,19 @@ class ConvertSingleController extends Controller
     	
     	$accountValid = false;
     	$mappings = new Mappings();
-
+    	
+    	// get selected country an iban fields from the POST request
     	$options = array('country' => null);
     	$countrySelected = '';
+    	$ibanEntered = '';
     	if ($request->isMethod('POST')) {
     		$formPosted = $request->request->get('ConvertSingleForm');
     		if (isset($formPosted['country'])) {
     			$countrySelected = $formPosted['country'];
     			$options = array('country' => $countrySelected);
+    		}
+    		if (isset($formPosted['iban'])) {
+    			$ibanEntered = trim($formPosted['iban']);
     		}
     	}
 
@@ -59,8 +64,11 @@ class ConvertSingleController extends Controller
 	    		}
     		}
     		else {
-    			$errorExists = true;
-    			$form->addError(new FormError(sprintf('Invalid Details| %s is a required field. Please select a country and try again.', 'Country')));
+    			if ('' == $ibanEntered) {
+    				$errorExists = true;
+    				// $form->addError(new FormError(sprintf('Invalid Details| %s is a required field. Please select a country and try again.', 'Country')));
+    				$form->addError(new FormError(sprintf('Invalid Details| Required fields have not been completed, either an %s must be supplied or a %s must be selected. Please try again.', 'IBAN', 'Country')));
+    			}
     		}
     		
     		
@@ -79,87 +87,91 @@ class ConvertSingleController extends Controller
     		
     		if ($form->isValid() && false == $errorExists)
     		{
+    			$chargeUser = false;
+    			
     			// build our commands
     			$args = array();
-    			foreach ($bbanMaps as $key => $value) {
-    				$args[] = $formPosted[$key];
+    			if (is_array($bbanMaps)) {
+	    			foreach ($bbanMaps as $key => $value) {
+	    				$args[] = $formPosted[$key];
+	    			}
+    			
+    			
+	    			/*
+	    			$output = $this->runSingleConversionCommand($countrySelected, $args);
+	    			
+	    			$resultsConversion = new SingleConversion($countrySelected, $output);
+	    			$resultsConversion->process();
+	    			*/
+	    			
+	    			$resultsConversion = $this->get('single_conversion');
+	    			$resultsConversion->run($countrySelected, $args);
+	    			
+	    			if (true == $resultsConversion->isFatal) {
+	    				$form->addError(new FormError('Conversion not possible |Our conversion tool is offline, therefore, we are currenlty not able to process your request. Note: You have not been charged a conversion.'));
+	    			} else if (false == $resultsConversion->isValid) {
+	    				$form->addError(new FormError('Invalid Bank Account |The bank account provided is incorrect. Please check and try again.'));
+	    				$chargeUser = true;
+	    			}
+	    			else {
+	    				$accountValid = true;
+	    				$chargeUser = true;
+	    				
+	    				if (true == $resultsConversion->isTransposed)
+	    				{
+	    					if (isset($resultsConversion->transposedData['from']) && is_array($resultsConversion->transposedData['from']) && isset($resultsConversion->transposedData['to'])   && is_array($resultsConversion->transposedData['to']))
+	    					{
+	    						$formNew = $this->createForm(new ConvertSingleForm(), null, $options);
+	    						$formNew->get('country')->setData($form->get('country')->getData());
+	
+	    						$bban_count = 1;
+	    						foreach($resultsConversion->transposedData['from'] as $key => $value) {
+	    							if (isset($resultsConversion->transposedData['to'][$key]) && !empty($resultsConversion->transposedData['to'][$key])) {
+	    								$keyname = sprintf('bban%s', $bban_count);
+	    								if ($form->has($keyname)) {
+	    									$formData = $form->get($keyname)->getData();
+	    									if ($formData == $value) {
+	    										$formNew->get($keyname)->setData($resultsConversion->transposedData['to'][$key]);
+	    									}
+	    								}
+	    							} 
+	    							$bban_count++;
+	    						}
+	    						$form = $formNew;
+	    					}
+	    				}
+	    			}
+	    			
+	    			
+	    			if (true == $chargeUser) {
+	    				if ($this->conversionsRestricted()) {
+	    					$user = $this->get('user_manager');
+	    					$user->reduceCredit($this->getUserId());
+	    				}
+	    			}
+	    			
+	    			/*
+	    			$output = $this->processOutput($output);
+	    			$accountData = $this->getIbanAndBic($output);
+	    			#list($iban, $bic) = $this->getIbanAndBic($output);
+	    			
+	    			if (!is_null($accountData['iban']) && !is_null($accountData['bic']))
+	    			{
+	    				// check that the user had some credits
+	    				if ($this->conversionsRestricted()) {
+	    					$user = $this->get('user_manager');
+	    					$user->reduceCredit($this->getUserId());
+	    					$credits--;
+	    				}
+	    	
+	    				$accountValid = true;
+	    			}
+	    			else {
+	    				$form->addError(new FormError('Invalid Bank Account |The bank account provided is incorrect. Please check and try again.'));
+	    			}
+	    			*/
+    			
     			}
-    			
-    			/*
-    			$output = $this->runSingleConversionCommand($countrySelected, $args);
-    			
-    			$resultsConversion = new SingleConversion($countrySelected, $output);
-    			$resultsConversion->process();
-    			*/
-    			
-    			$resultsConversion = $this->get('single_conversion');
-    			$resultsConversion->run($countrySelected, $args);
-    			
-    			
-    			$chargeUser = false;
-    			if (true == $resultsConversion->isFatal) {
-    				$form->addError(new FormError('Conversion not possible |Our conversion tool is offline, therefore, we are currenlty not able to process your request. Note: You have not been charged a conversion.'));
-    			} else if (false == $resultsConversion->isValid) {
-    				$form->addError(new FormError('Invalid Bank Account |The bank account provided is incorrect. Please check and try again.'));
-    				$chargeUser = true;
-    			}
-    			else {
-    				$accountValid = true;
-    				$chargeUser = true;
-    				
-    				if (true == $resultsConversion->isTransposed)
-    				{
-    					if (isset($resultsConversion->transposedData['from']) && is_array($resultsConversion->transposedData['from']) && isset($resultsConversion->transposedData['to'])   && is_array($resultsConversion->transposedData['to']))
-    					{
-    						$formNew = $this->createForm(new ConvertSingleForm(), null, $options);
-    						$formNew->get('country')->setData($form->get('country')->getData());
-
-    						$bban_count = 1;
-    						foreach($resultsConversion->transposedData['from'] as $key => $value) {
-    							if (isset($resultsConversion->transposedData['to'][$key]) && !empty($resultsConversion->transposedData['to'][$key])) {
-    								$keyname = sprintf('bban%s', $bban_count);
-    								if ($form->has($keyname)) {
-    									$formData = $form->get($keyname)->getData();
-    									if ($formData == $value) {
-    										$formNew->get($keyname)->setData($resultsConversion->transposedData['to'][$key]);
-    									}
-    								}
-    							} 
-    							$bban_count++;
-    						}
-    						$form = $formNew;
-    					}
-    				}
-    			}
-    			
-    			
-    			if (true == $chargeUser) {
-    				if ($this->conversionsRestricted()) {
-    					$user = $this->get('user_manager');
-    					$user->reduceCredit($this->getUserId());
-    				}
-    			}
-    			
-    			/*
-    			$output = $this->processOutput($output);
-    			$accountData = $this->getIbanAndBic($output);
-    			#list($iban, $bic) = $this->getIbanAndBic($output);
-    			
-    			if (!is_null($accountData['iban']) && !is_null($accountData['bic']))
-    			{
-    				// check that the user had some credits
-    				if ($this->conversionsRestricted()) {
-    					$user = $this->get('user_manager');
-    					$user->reduceCredit($this->getUserId());
-    					$credits--;
-    				}
-    	
-    				$accountValid = true;
-    			}
-    			else {
-    				$form->addError(new FormError('Invalid Bank Account |The bank account provided is incorrect. Please check and try again.'));
-    			}
-    			*/
     			
     		}
     	}

@@ -55,7 +55,7 @@ class AccountController extends Controller
 					$newUserDetails = array_merge($user, $formData);
 					
 					$this->get('user_manager')->updatePersonalDetails($user['_id']->__toString(), $newUserDetails);
-					$session->saveLogin($form->getData()->getEmail(), $form->getData()->getFirstName());				// update the users username in the nav, as well as their email address is the session
+					$session->saveLogin($form->getData()->getEmail(), $form->getData()->getFirstName(), $user['_id']->__toString());				// update the users username in the nav, as well as their email address is the session
 					
 					
 					$this->get('session')->getFlashBag()->add('settingsPersonalUpdated', 'Your personal details have been successfully updated.');
