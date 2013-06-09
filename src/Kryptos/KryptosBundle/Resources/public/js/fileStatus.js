@@ -10,11 +10,33 @@ $(document).ready(function() {
         		cache: true,
         		success: function(result) {
         			$('section#fileStatus').html(result);
+        			progressTheBars();
                 }
         	});
 		}
 
 		// reload every minute
 		timerId = setInterval(timerMethod, 60000);
+		
+		
+		
+		
+		function progressTheBars() {
+			$('.fileStatusBar').each(function() {
+				
+				var bar = $(this);
+				
+				bar.css('width', bar.attr('progressfrom')+'%').animate({
+					width:  bar.attr('progressto')+'%',
+				}, {
+					 duration: 60000,
+				});
+				
+				console.log(bar.attr('progressfrom'));
+				console.log(bar.attr('progressto'));
+			});
+		}
+		
+		progressTheBars();
 	}
 });

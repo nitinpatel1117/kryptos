@@ -185,7 +185,7 @@ class AccountController extends Controller
 	    		'datetime' 		=> $date->format('d/m/Y H:i:s'),
 	    		'type' 			=> 'Credit',
 	    		'credits' 		=> isset($transaction['purchase']['credits']) 	? $transaction['purchase']['credits'] : '',
-	    		'cost' 			=> isset($transaction['purchase']['cost']) 		? number_format($transaction['purchase']['cost'], 2) : '',
+	    		'cost' 			=> isset($transaction['purchase']['total']) 		? number_format($transaction['purchase']['total'], 2) : '',
 	    		'status'		=> $status,
 	    	#	'creditsOld' 	=> isset($transaction['creditsOld']) 			? $transaction['creditsOld'] : '',
 	    	#	'creditsNew' 	=> isset($transaction['creditsNew']) 			? $transaction['creditsNew'] : '',
@@ -223,7 +223,7 @@ class AccountController extends Controller
     			'datetime' 		=> $date->format('d/m/Y H:i:s'),
     			'type' 			=> $type,
     			'credits' 		=> $credit,
-    			'cost' 			=> isset($history['totalCost']) ? $history['totalCost'] : null,
+    			'cost' 			=> isset($history['totalCost']) ? number_format($history['totalCost'], 2) : '',
     			'status' 		=> $status,
     		);
     	

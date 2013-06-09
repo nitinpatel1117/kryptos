@@ -41,7 +41,13 @@
 											<span>{{ file.stats.conversions_refund }}/{{ file.stats.processed }} Conversions refunded</span><br />
 										{% endif %}
 									{% else %}
-										<span>{{ file.status }}</span>
+										{% if "Pending" == file.status %}
+										<div class="progress">
+											<div id="{{ file.id }}" class="bar fileStatusBar" style="width: {{ file.progressFrom }}%;" progressfrom='{{ file.progressFrom }}' progressto='{{ file.progressTo }}'></div>
+										</div>
+										{% else %}
+											<span>{{ file.status }}</span>
+										{% endif %}
 									{% endif %}
 								</td>
 								<td>
@@ -56,3 +62,22 @@
 					</tbody>
 				</table>
 			</div>
+			
+
+{% block secondary_javascript %}
+<script type="text/javascript">
+/*
+{% for file in files %}
+	{% if "Pending" == file.status %}
+		$(document).ready(function() {
+			$('#{{ file.id }}').animate({
+				width: {{ file.progressTo }},
+			}, {
+				 duration: 1000,
+			});
+		});
+	{% endif %}
+{% endfor %}
+*/
+</script>
+{% endblock %}

@@ -162,13 +162,16 @@ class SageController extends Controller
 				$fileDate['status'] = $fileStatus;
 				
 				if ('pending' == $fileDate['status']) {
-					if ($user['credits'] >= $lines) {
-						$user['credits'] -= $lines;
-					}
+					$this->get('user_manager')->registerCreditsUsed( $user['_id'],  $fileDate['_id'], $user['credits'], ($user['credits']-$lines));
+					
+					
+					#if ($user['credits'] >= $lines) {
+					#	$user['credits'] -= $lines;
+					#}
 				}
 				
 				$this->get('file_manager')->save($fileDate);
-				$this->get('user_manager')->save($user);
+				#$this->get('user_manager')->save($user);
 			}
 		}
 		
