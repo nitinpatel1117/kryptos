@@ -13,8 +13,6 @@ class Parser
 	 */
 	protected $configManager = null;
 	
-	
-	
 	protected $fileReadyEOF = false;
 	protected $fileConvertedEOF = false;
 	
@@ -156,10 +154,9 @@ class Parser
 	{
 		$output = array();
 		
-		
 		// TODO: this is not working, for now lets just copy from a existing file and pretend it was the original file		
 		$batch_command = $this->getConfigManager()->get('bankwizard|batch_command');
-		$command = sprintf($batch_command, $this->readyLocation, $this->convertedLocation);
+		$command = sprintf($batch_command, $this->readyLocation, $this->convertedLocation, '');
 		exec($command, $output);
 		
 		/*
@@ -203,8 +200,9 @@ class Parser
 		#$dataReady = $this->getNextLineFromReady();
 		
 		// output header info
-		#
-		$file_headers = "0,Country ISO,BBAN 1,BBAN 2,BBAN 3,BBAN 4,BIC,IBAN,Status";
+		# $file_headers = "0,Country ISO,BBAN 1,BBAN 2,BBAN 3,BBAN 4,BIC,IBAN,Status";
+		$file_headers = "0,Country ISO,BBAN 1,BBAN 2,BBAN 3,BBAN 4,BIC,IBAN,BankName,BranchName,Address1,Address2,Address3,Address4,Address5,PostalCode,Status";
+		
 		$dataReady = explode(',', $file_headers);
 		$this->outputToProcessedFile($dataReady);
 		
@@ -229,7 +227,13 @@ class Parser
 			
 			
 			if ($dataReadLine == $dataConvertedLine) {
-				// If BIC present (IBAN is 7th item in converted file) add to dataReady array
+				
+				$dataReady[2] = isset($dataConverted[2]) ? $dataConverted[2] : '';		// BBAN1 - in case anything has been transposed
+				$dataReady[3] = isset($dataConverted[3]) ? $dataConverted[3] : '';		// BBAN2 - in case anything has been transposed
+				$dataReady[4] = isset($dataConverted[4]) ? $dataConverted[4] : '';		// BBAN3 - in case anything has been transposed
+				$dataReady[5] = isset($dataConverted[5]) ? $dataConverted[5] : '';		// BBAN4 - in case anything has been transposed
+				
+				// If BIC present (BIC is 7th item in converted file) add to dataReady array
 				// Note: at this point dataReady, first column is Id, hence we add to 7th column
 				if (isset($dataConverted[6])) {
 					$dataReady[6] = $dataConverted[6];
@@ -241,10 +245,19 @@ class Parser
 					$dataReady[7] = $dataConverted[7];
 				}
 				
-				// If Status present (Status is 9th item in converted file) add to dataReady array
-				// Note: at this point dataReady, first column is Id, hence we add to 9th column
-				if (isset($dataConverted[8])) {
-					$dataReady[8] = $this->retrieveStatus($dataConverted[8]);
+				$dataReady[8]  = isset($dataConverted[8])  ? $dataConverted[8] : '';		// BankName
+				$dataReady[9]  = isset($dataConverted[9])  ? $dataConverted[9] : '';		// BranchName
+				$dataReady[10] = isset($dataConverted[10]) ? $dataConverted[10] : '';		// Address1
+				$dataReady[11] = isset($dataConverted[11]) ? $dataConverted[11] : '';		// Address2
+				$dataReady[12] = isset($dataConverted[12]) ? $dataConverted[12] : '';		// Address3
+				$dataReady[13] = isset($dataConverted[13]) ? $dataConverted[13] : '';		// Address4
+				$dataReady[14] = isset($dataConverted[14]) ? $dataConverted[14] : '';		// Address5
+				$dataReady[15] = isset($dataConverted[15]) ? $dataConverted[15] : '';		// PostalCode
+				
+				// If Status present (Status is 19th item in converted file) add to dataReady array
+				// Note: at this point dataReady, first column is Id, and columns 16,17,18 are error,warning,info flags, hence we add to 16th column
+				if (isset($dataConverted[19])) {
+					$dataReady[16] = $this->retrieveStatus($dataConverted[19]);
 				}
 				
 				$dataReadyIsAhead = false;
@@ -312,7 +325,13 @@ class Parser
 				$newState = 'Reconfirm IBAN';
 				$this->stats_reconfirm_iban++;
 				$this->stats_conversions_refund++;
-				break;	
+				break;
+			
+			case 'EXCEPTION':
+				$newState = 'Not Validated';
+				$this->stats_not_validated++;
+				$this->stats_conversions_refund++;
+				break;
 		}
 		
 		$this->stats_processed++;
@@ -367,7 +386,7 @@ class Parser
 	 */
 	public function getNextLineFromConverted()
 	{
-		if (($dataConverted = fgetcsv($this->fileConverted, 1000, ",", "'")) !== FALSE) {
+		if (($dataConverted = fgetcsv($this->fileConverted, 1000, ",", '"')) !== FALSE) {
 			return $dataConverted;
 		}
 		

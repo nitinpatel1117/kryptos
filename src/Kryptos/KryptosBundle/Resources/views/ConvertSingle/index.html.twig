@@ -152,25 +152,7 @@
 									
 									{% if result.bankDetails.bank_address is defined %}
 										{% if '' != result.bankDetails.bank_address|trim %}
-											{% if 'true' == addressOutputMade %}, {% endif %}
-											{% set addressOutputMade = 'true' %}
 											{{ result.bankDetails.bank_address|trim }}
-										{% endif %}
-									{% endif %}
-									
-									{% if result.bankDetails.post_code is defined %}
-										{% if '' != result.bankDetails.post_code|trim %}
-											{% if 'true' == addressOutputMade %}, {% endif %}
-											{% set addressOutputMade = 'true' %}
-											{{ result.bankDetails.post_code|trim }}
-										{% endif %}
-									{% endif %}
-									
-									{% if result.bankDetails.city is defined %}
-										{% if '' != result.bankDetails.city|trim %}
-											{% if 'true' == addressOutputMade %}, {% endif %}
-											{% set addressOutputMade = 'true' %}
-											{{ result.bankDetails.city|trim }}
 										{% endif %}
 									{% endif %}
 									</span>

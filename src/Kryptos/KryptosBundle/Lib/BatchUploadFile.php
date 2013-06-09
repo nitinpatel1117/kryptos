@@ -208,7 +208,7 @@ class BatchUploadFile
 	public function makeCsvData($data)
 	{
 		// TODO: This is hard coded for now. The csv output we produce must contain 8 columns of data
-		$columns = 5;
+		$columns = 7;
 		
 		$data = array_pad($data, $columns, '');
 		
