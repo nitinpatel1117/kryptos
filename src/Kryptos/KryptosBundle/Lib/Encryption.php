@@ -59,4 +59,10 @@ class Encryption
 
 		return array($code1, $code2);
 	}
+	
+	
+	public function makePrivateKey($length = 32)
+	{
+		return $this->generateRandomString($length);
+	}
 }

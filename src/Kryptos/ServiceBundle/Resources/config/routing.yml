@@ -1,0 +1,7 @@
+services_convert_iban:
+    pattern:  /services/convert/iban/{publicKey}/{iban}
+    defaults: { _controller: KryptosServiceBundle:Convert:iban, publicKey: null, iban: null, }
+    
+services_convert_bban:
+    pattern:  /services/convert/bban/{publicKey}/{country}/{bban1}/{bban2}/{bban3}/{bban4}
+    defaults: { _controller: KryptosServiceBundle:Convert:bban, publicKey: null, country: null, bban1: null, bban2: null, bban3: null, bban4: null}

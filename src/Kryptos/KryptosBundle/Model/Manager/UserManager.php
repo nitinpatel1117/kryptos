@@ -94,11 +94,27 @@ class UserManager extends BaseManager
     		// activate account
     		$userItem['activation']['activated'] = true;
     		$userItem['activation']['activateDate'] = new \MongoDate();
+    		$userItem = $this->createPublicPrivateKeys($userItem);
 
     		return parent::save($userItem);
     	}
     	
     	throw new \Exception('Account could not be activated');
+    }
+    
+    
+    /**
+     * Function creates public and private keys for a user. User supplied as an array
+     *  
+     * @param array $userItem
+     * @return array
+     */
+    public function createPublicPrivateKeys($userItem)
+    {
+    	$userItem['publicKey'] = new \MongoId();
+    	$encryption = new Encryption();
+    	$userItem['privateKey'] = $encryption->makePrivateKey();
+    	return $userItem;
     }
 
 
@@ -156,8 +172,35 @@ class UserManager extends BaseManager
     	$item = array('_id' => $id);
     	return parent::findOne($item);
     }
-
-
+    
+    public function getUserByPublicKey($publicKey)
+    {
+    	$item = array('publicKey' => new \MongoId($publicKey));
+    	$fields = array('privateKey'=>1, 'publicKey'=>1, 'email'=>1, 'credits'=>1);
+    	return parent::findOne($item, $fields);
+    }
+    
+    
+    /* code to regenerate public and private keys for all users
+    public function getAllUsers()
+    {
+    	$item = array();
+    	$fields = array('firstName'=>1, 'email'=>1, 'publicKey'=>1, 'privateKey'=>1);
+    	return parent::retrieve($item, $fields);
+    }
+    public function updateUserKeys($user)
+    {
+    	$query = array('_id' => $user['_id']);
+    	$update = array(
+    		'$set' => array(
+    			'publicKey' => $user['publicKey'],
+    			'privateKey' =>$user['privateKey'],
+    		),
+    	);
+    	
+    	return parent::update($query, $update);
+    }
+    */
     
     public function checkSignin($formData)
     {

@@ -22,6 +22,7 @@ class AppKernel extends Kernel
             new Kryptos\KryptosBundle\KryptosKryptosBundle(),
             new Gregwar\CaptchaBundle\GregwarCaptchaBundle(),
             new Kryptos\SageBundle\KryptosSageBundle(),
+        	new Kryptos\ServiceBundle\KryptosServiceBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

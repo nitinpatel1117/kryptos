@@ -293,7 +293,7 @@ class SingleConversion
 		$fatal = false;
 		
 		$data = $this->getData();
-		if (!is_array($data)) {
+		if (!is_array($data) || empty($data)) {
 			$fatal = true;
 		}
 		else if (isset($data[19]) && ('EXCEPTION' == $data[19] || 'UNSUPPORTED_COUNTRY' == $data[19])) {
