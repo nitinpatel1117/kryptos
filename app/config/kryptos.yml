@@ -11,6 +11,14 @@ parameters:
     tmp_path:                  '/var/www/vhosts/kryptos.com/tmp/'
     csv_template_server_path:  '/var/www/vhosts/kryptos.com/symfony/src/Kryptos/KryptosBundle/Resources/public/template'
     csv_template_filename:     'batch_conversion_template.csv'
+    
+    download:
+      help_prepare_file:
+        server_path:           '/var/www/vhosts/kryptos.com/symfony/src/Kryptos/KryptosBundle/Resources/public/download/help_prepare_file.pdf'
+        filename:              'Prepare_file.pdf'
+      help_upload_file:
+        server_path:           '/var/www/vhosts/kryptos.com/symfony/src/Kryptos/KryptosBundle/Resources/public/download/help_upload_file.pdf'
+        filename:              'Upload_file.pdf'
   
   mongo_connection:
     server:           'mongodb://localhost:27017'
@@ -39,8 +47,9 @@ parameters:
     VPSProtocol:             2.23   
 #    Vendor:                  kryptos
     Vendor:                  everyonelovesca
-    Currency:                GBP
-    CurrencySymbol:          '&pound;'
+#    Currency:                GBP
+    Currency:                EUR
+    CurrencySymbol:          "&euro;"
     Description:             Conversions purchase
     NotificationURL:         sage_notification_page 
     error_payment_register:  'Ooops!, the system has been unable to contact our payment provider. Please try again. If you continue to experience this problem please give us a call.'
@@ -50,8 +59,8 @@ parameters:
   batch_convert:
     # 5 mins - used by each job that reads the queue - if we are uploading files and reading contents to mongodb 
     #locktime: 300
-    # locktime: 630
-    locktime: 15
+    locktime: 900
+    # locktime: 15
     ready_location:          'batch/ready/'
     converted_location:      'batch/converted/'
     processed_location:      'batch/processed/'
@@ -60,6 +69,8 @@ parameters:
   bankwizard:
     # param_1: source file;  param_2: destination file;  param_3: stats file;
     # batch_command:           'java --cp /var/www/bankwizard/FileScanningUtilityFinalV1.jar:/var/www/bankwizard/bwint10.jar DataScanMain.Datascan "%s" "%s" "%s"'
-    batch_command:           '/var/www/bankwizard/run_converter.sh "%s" "%s"'
+    # batch_command:           '/var/www/bankwizard/run_converter.sh "%s" "%s"'
+    batch_command:           'java -classpath /var/www/bankwizard/KryptosConversionSuite.jar:/var/www/bankwizard/bwint10.jar DataScanMain.TCPClient "B" "%s" "%s" "%s"'
     # param_1: country code;  param_2: sequence of bban entries, changes per country;
-    single_command:          '/var/www/bankwizard/bwibexam %s %s'
+    # single_command:          '/var/www/bankwizard/bwibexam %s %s'
+    single_command:          'java -classpath /var/www/bankwizard/KryptosConversionSuite.jar:/var/www/bankwizard/bwint10.jar DataScanMain.TCPClient "C" "ref" "%s" "%s" "%s" "%s" "%s" "%s" "%s"'
