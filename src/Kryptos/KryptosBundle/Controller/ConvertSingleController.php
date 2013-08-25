@@ -50,11 +50,16 @@ class ConvertSingleController extends Controller
     		// do our own validation on required fields. Can't work out how to get symfony 2 to do dynamic validation based on the result of country dropdown
     		$errorExists = false;
     		$bbanMaps = $mappings->getBbanMappings($countrySelected);
+    		$bbanOptional = $mappings->getBbanMappingsOptional($countrySelected);
     		if (is_array($bbanMaps)) {
 	    		foreach ($bbanMaps as $key => $value) {
-	    			if (!(isset($formPosted[$key]) && !empty($formPosted[$key]))) {
-	    				$errorExists = true;
-	    				$form->get($key)->addError(new FormError(sprintf('Invalid Details |%s is a required field. Please supply a value for %s and try again.', $value, $value)));
+	    			
+	    			if (!in_array($key, $bbanOptional))
+	    			{
+	    				if (!(isset($formPosted[$key]) && !empty($formPosted[$key]))) {
+	    					$errorExists = true;
+	    					$form->get($key)->addError(new FormError(sprintf('Invalid Details |%s is a required field. Please supply a value for %s and try again.', $value, $value)));
+	    				}
 	    			}
 	    		}
     		}

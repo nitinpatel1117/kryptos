@@ -273,6 +273,20 @@ class Mappings
 			'bban2' => 'Account no.',
 		),
 	);
+	
+	
+	
+	/**
+	 * The requirement mapping of each country code to its bban fields
+	 * 
+	 * @var array
+	 */
+	protected $bbanMappingsOptional = array(
+		'NL' => array(
+			'bban1',
+		),
+	);
+	
 
 	
 	
@@ -294,6 +308,19 @@ class Mappings
 			}
 		}
 		
+		return $data;
+	}
+	
+	public function getBbanMappingsOptional($countryCode = null)
+	{
+		$data = array();
+	
+		if (!is_null($countryCode)) {
+			if (isset($this->bbanMappingsOptional[$countryCode])) {
+				$data = $this->bbanMappingsOptional[$countryCode];
+			}
+		}
+	
 		return $data;
 	}
 	

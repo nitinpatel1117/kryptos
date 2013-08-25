@@ -161,9 +161,16 @@ class SingleConversion
 		
 		$single_command = $this->configManager->get('bankwizard|single_command');
 		$command = sprintf($single_command, '', '', '', '', '', '', $iban);
+
 		
 		putenv('BW3LIBS=/var/www/bankwizard');
-		putenv('BWTABLES=/var/www/bwtables');
+		
+		#if ('G' == $iban[0] && 'B' == $iban[1]) {
+		#	putenv('BWTABLES=/var/www/bwtables/GB');
+		#} else {
+			putenv('BWTABLES=/var/www/bwtables');
+		#}
+		
 		putenv('LD_LIBRARY_PATH=/var/www/bankwizard:');
 		
 		// set locale - this fixes UTF8 characters issues
@@ -199,8 +206,15 @@ class SingleConversion
 		$single_command = $this->configManager->get('bankwizard|single_command');
 		$command = sprintf($single_command, $this->countryCode, $bban1, $bban2, $bban3, $bban4, '', '');
 		
+		
 		putenv('BW3LIBS=/var/www/bankwizard');
-		putenv('BWTABLES=/var/www/bwtables');
+		
+		#if ('GB' == $this->countryCode) {
+		#	putenv('BWTABLES=/var/www/bwtables/GB');
+		#} else {
+			putenv('BWTABLES=/var/www/bwtables');
+		#}
+		
 		putenv('LD_LIBRARY_PATH=/var/www/bankwizard:');
 		
 		// set locale - this fixes UTF8 characters issues
@@ -234,12 +248,6 @@ class SingleConversion
 		foreach ($this->getData() as $line) {
 			$pos = strpos($line, 'ref');
 			if (0 === $pos) {
-				
-				// quick hack to fix while vik works on code
-				$line = str_replace('NW3""', 'NW3"', $line);
-				$line = str_replace('HARROW""', 'HARROW"', $line);
-				$line = str_replace('"""', '""', $line);
-				
 				$data = str_getcsv($line);
 			}
 		}
@@ -288,7 +296,7 @@ class SingleConversion
 		if (!is_array($data)) {
 			$fatal = true;
 		}
-		else if (isset($data[19]) && 'EXCEPTION' == $data[19]) {
+		else if (isset($data[19]) && ('EXCEPTION' == $data[19] || 'UNSUPPORTED_COUNTRY' == $data[19])) {
 			$fatal = true;
 		}
 
@@ -365,101 +373,11 @@ class SingleConversion
 				}
 			}
 		}
-		
-		
-		/*
-		$readNextlineAsTransposedTo = false;
-		foreach ($this->getData() as $line)
-		{
-				// Warning (18): Account does not support credit transfers
-				if (strpos($line, 'Warning (18)') !== false) {
-					$this->creditTransferSupported = false;
-					$this->warningMsg[] = $line;
-				}
-				
-				// Warning (20): Branch is not SEPA compliant for Direct Debits (DD)
-				if (strpos($line, 'Warning (20)') !== false) {
-					$this->directDebitsSupported = false;
-					$this->warningMsg[] = $line;
-				}
-			
-				// Warning (47): Account does not support business direct debits
-				if (strpos($line, 'Warning (47)') !== false) {
-					$this->businessDirectDebitsSupported = false;
-					$this->warningMsg[] = $line;
-				}
-				
-				// Warning (1): Account details were not in standard form and have been transposed
-				if (strpos($line, 'Warning (1)') !== false) {
-					$this->isTransposed = true;
-					$this->warningMsg[] = $line;
-				}
-				
-				# Transposed from/to
-				if (true == $this->isTransposed) {
-					if (strpos($line, 'Transposed from') !== false) {
-						$this->transposedData['from'] =  $this->getBbanFromTransposed($line);
-						$readNextlineAsTransposedTo = true;
-					}
-					else if (true == $readNextlineAsTransposedTo) {
-						$this->transposedData['to'] =  $this->getBbanFromTransposed($line);
-						$readNextlineAsTransposedTo = false;
-					}
-				}
-		}
-		*/
 	}
 	
-/*
-	public function getBbanFromTransposed($line)
-	{
-		$bban = array();
-		
-		$data = explode (':', $line);
-		if (isset($data[1])) {
-			$data[1] = trim($data[1]);
-			$bban = explode (' ', $data[1]);
-			
-			foreach ($bban as $key => $bbanData) {
-				$bban[$key] = str_replace("'", '', $bbanData);
-			}
-		}
-		
-		return $bban;
-	}
-	*/
+
 	
 	
-	/**
-	 * Function takes the output supplied by the single conversion tool and turns it into a
-	 * an associative array that can be transversd easily.
-	 *
-	 * @return array
-	 *
-	public function processHythenDelimited()
-	{
-		$data = array();
-			
-		foreach ($this->getData() as $lineout) {
-			$lineSplit = explode(' - ' , $lineout);
-	
-			if (isset($lineSplit[0]) && isset($lineSplit[1]))
-			{
-				$key = trim($lineSplit[0]);
-				$key = str_replace('Field ', '1', $key);
-	
-				$value = trim($lineSplit[1]);
-				$value = str_replace("'", '', $value);
-					
-				$data[$key] = $value;
-					
-				unset($key);
-				unset($value);
-			}
-		}
-	
-		$this->delimitedData = $data;
-	}*/
 	
 	
 	public function processBbans()

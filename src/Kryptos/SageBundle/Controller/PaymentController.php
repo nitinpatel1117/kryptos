@@ -70,11 +70,14 @@ class PaymentController extends Controller
 			}
 		}
 		
+		$currency = $this->get('config_manager')->get('sagepay|CurrencySymbol');
+		$currency = utf8_encode(html_entity_decode($currency));
+		
 		return $this->render('KryptosSageBundle:Payment:billing.html.twig', array(
 			'location' 	=> 'Billing Details',
 			'request' => $request,
 			'error' => $error,
-			'currency' 	=> utf8_encode('£'),
+			'currency' 	=> $currency,
 			'credits' 	=> $user['currentTrans']['credits'],
 			'cost' 		=> round($user['currentTrans']['cost'], 2),
 			'vat' 		=> round($user['currentTrans']['vat'], 2),

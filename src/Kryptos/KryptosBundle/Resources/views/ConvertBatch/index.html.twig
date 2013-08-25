@@ -15,7 +15,7 @@
 									<a style="text-align:right;" href="{{ path('convert_batch_template') }}" >
 										<button class="btn btn-primary" type="button"><i class="icon-download-alt icon-white"></i> Download</button>
 									</a>
-									<a style="text-align:right;" href="" >
+									<a style="text-align:right;" href="{{ path('download_help_prepare_file') }}" >
 										<button class="btn btn-primary" type="button"><i class="icon-question-sign icon-white"></i> Help</button>
 									</a>
 								</div>
@@ -48,7 +48,7 @@
 										
 										<button class="btn btn-primary" type="submit"><i class="icon-download-alt icon-upload icon-white"></i> {{ btn_submit }} </button>
 										
-										<a href="" >
+										<a href="{{ path('download_help_upload_file') }}" >
 											<button class="btn btn-primary" type="button"><i class="icon-question-sign icon-white"></i> Help </button>
 										</a> 
 									</div>
@@ -69,9 +69,9 @@
 				{% endif %}
 				
 				{% if attentionOnFile != '' %}
-					<div class="alert alert-block">
+					<div class="alert alert-error">
 						<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
-						<strong><i class="icon-question-sign"></i> Attention Required</strong> <br/>
+						<strong><i class="icon-exclamation-sign"></i> Attention Required</strong> <br/>
 						
 						<div>
 							You do not have enough conversions to proceed with the processing of the file that you have just uploaded.

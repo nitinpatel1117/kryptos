@@ -14,11 +14,11 @@ class SettingsUserPasswordForm extends AbstractType
     {    	
     	$builder->add('oldPassword', 'password', array(
     		'label'			=>'Old Password',
-    		'required'  	=> true,
+    	#	'required'  	=> true,
     		'attr' => array(
     			'placeholder'			=> 'Old Password',
     			'rel'					=> 'tooltip',
-    			'data-original-title'	=> 'Please enter your old Password',
+    	#		'data-original-title'	=> 'Please enter your old Password',
     			'autocomplete'	=> 'off',
     		),
     		'constraints' 	=> array(
@@ -36,7 +36,7 @@ class SettingsUserPasswordForm extends AbstractType
     	
     	$builder->add('password', 'repeated', array(
     		'type' => 'password',
-    		'required' => true,
+    	#	'required' => true,
     		'invalid_message' => "Password's do not match |The new passwords you have typed do not match. Please check and try again.",
     		'first_name' => 'password',
     		'second_name' => 'confirmPassword',
@@ -45,7 +45,7 @@ class SettingsUserPasswordForm extends AbstractType
     			'attr' => array(
     				'placeholder' 			=> 'New Password',
     				'rel'					=> 'tooltip',
-    				'data-original-title'	=> 'Please enter your new Password',
+    	#			'data-original-title'	=> 'Please enter your new Password',
     				'autocomplete'			=> 'off',
     			),
     		),
@@ -54,7 +54,7 @@ class SettingsUserPasswordForm extends AbstractType
     			'attr' => array(
     				'placeholder' 			=> 'Confirm New Password',
     				'rel'					=> 'tooltip',
-    				'data-original-title'	=> 'Please confirm your new Password',
+    	#			'data-original-title'	=> 'Please confirm your new Password',
     				'autocomplete'			=> 'off',
     			),
     		),

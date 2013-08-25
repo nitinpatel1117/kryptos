@@ -37,63 +37,63 @@ class RegistrationForm extends AbstractType
     	
     	$builder->add('title', 'choice', array(
     		'choices'   => $titles,
-    		'required'  => true,
+    	#	'required'  => true,
     		'empty_value' => ' - Title - ',
     	));
 
 		$builder->add('firstName', 'text', array(
 			'label'=>'Firstname',
-			'required' => true,
+		#	'required' => true,
 			'attr' => array(
 				'placeholder'			=> 'Forename',
 				'rel'					=> 'tooltip',
-				'data-original-title'	=> 'Please enter your Forename',
+		#		'data-original-title'	=> 'Please enter your Forename',
 			),
 		));
 		
 		$builder->add('lastName', 'text', array(
 			'label'=>'Lastname',
-			'required' => true,
+		#	'required' => true,
 			'attr' => array(
 				'placeholder'			=> 'Surname',
 				'rel'					=> 'tooltip',
-				'data-original-title'	=> 'Please enter your Surname',
+		#		'data-original-title'	=> 'Please enter your Surname',
 			),
 		));
 		
 		$builder->add('jobTitle', 'text', array(
 			'label'=>'Jobtitle',
-			'required' => true,
+		#	'required' => true,
 			'attr' => array(
 				'placeholder'			=> 'Jobtitle',
 				'rel'					=> 'tooltip',
-				'data-original-title'	=> 'Please enter your Jobtitle',
+		#		'data-original-title'	=> 'Please enter your Jobtitle',
 			),
 		));
 		
 		$builder->add('company', 'text', array(
 			'label'=>'Company',
-			'required' => true,
+		#	'required' => true,
 			'attr' => array(
 				'placeholder'			=> 'Company',
 				'rel'					=> 'tooltip',
-				'data-original-title'	=> 'Please enter your Company',
+		#		'data-original-title'	=> 'Please enter your Company',
 			),
 		));
 		
 		$builder->add('location', 'text', array(
 			'label'=>'Location',
-			'required' => true,
+		#	'required' => true,
 			'attr' => array(
 				'placeholder'			=> 'Location',
 				'rel'					=> 'tooltip',
-				'data-original-title'	=> 'Please enter your Location',
+		#		'data-original-title'	=> 'Please enter your Location',
 			),
 		));
 
 		$builder->add('email', 'repeated', array(
 			'type' => 'text',
-			'required' => true,
+		#	'required' => true,
 			'invalid_message' => "Email's do not match |The Email addresses you have typed do not match. Please check and try again.",
 			'first_name' => 'email',
 			'second_name' => 'confirmEmail',
@@ -102,7 +102,7 @@ class RegistrationForm extends AbstractType
 				'attr' => array(
 					'placeholder'			=> 'Email',
 					'rel'					=> 'tooltip',
-					'data-original-title'	=> 'Please enter your Email',
+		#			'data-original-title'	=> 'Please enter your Email',
 				),
 			),
 		    'second_options' => array(
@@ -110,14 +110,14 @@ class RegistrationForm extends AbstractType
 		    	'attr' => array(
 		    		'placeholder' 			=> 'Confirm Email',
 		    		'rel'					=> 'tooltip',
-		    		'data-original-title'	=> 'Please confirm your Email',
+		#    		'data-original-title'	=> 'Please confirm your Email',
 		    	),
 		    ),
 		));
 
 		$builder->add('password', 'repeated', array(
 			'type' => 'password',
-			'required' => true,
+		#	'required' => true,
 			'invalid_message' => "Password's do not match |The Passwords you have typed do not match. Please check and try again.",
 			'first_name' => 'password',
 			'second_name' => 'confirmPassword',
@@ -126,7 +126,7 @@ class RegistrationForm extends AbstractType
 				'attr' => array(
 					'placeholder' 			=> 'Password',
 					'rel'					=> 'tooltip',
-					'data-original-title'	=> 'Please enter your Password',
+		#			'data-original-title'	=> 'Please enter your Password',
 					'autocomplete'			=> 'off',
 				),
 			),
@@ -135,7 +135,7 @@ class RegistrationForm extends AbstractType
 		    	'attr' => array(
 		    		'placeholder' 			=> 'Confirm Password',
 		    		'rel'					=> 'tooltip',
-		    		'data-original-title'	=> 'Please confirm your Password',
+		#    		'data-original-title'	=> 'Please confirm your Password',
 		    		'autocomplete'			=> 'off',
 		    	),
 		    ),
@@ -160,7 +160,7 @@ class RegistrationForm extends AbstractType
 			'attr' => array(
 				'placeholder' 			=> 'Enter text',
 				'rel'					=> 'tooltip',
-				'data-original-title'	=> 'Please enter the text displayed in the image',
+		#		'data-original-title'	=> 'Please enter the text displayed in the image',
 				'autocomplete'			=> 'off',
 			),
 		));
@@ -171,8 +171,6 @@ class RegistrationForm extends AbstractType
 			'required' => true,
 		));
 		*/
-
-		#$builder->add('key', 'csrf');
     }
 
 

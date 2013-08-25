@@ -14,7 +14,7 @@ class ResetPasswordQuestionForm extends AbstractType
     {
     	$builder->add('password', 'repeated', array(
 			'type' => 'password',
-			'required' => true,
+		#	'required' => true,
 			'invalid_message' => "Password's do not match |The Passwords you have typed do not match. Please check and try again.",
 			'first_name' => 'password',
 			'second_name' => 'confirmPassword',
@@ -23,7 +23,7 @@ class ResetPasswordQuestionForm extends AbstractType
 				'attr' => array(
 					'placeholder' 			=> 'Password',
 					'rel'					=> 'tooltip',
-					'data-original-title'	=> 'Please enter your Password',
+		#			'data-original-title'	=> 'Please enter your Password',
 					'autocomplete'			=> 'off',
 				),
 			),
@@ -32,7 +32,7 @@ class ResetPasswordQuestionForm extends AbstractType
 		    	'attr' => array(
 		    		'placeholder' 			=> 'Confirm Password',
 		    		'rel'					=> 'tooltip',
-		    		'data-original-title'	=> 'Please confirm your Password',
+		#    		'data-original-title'	=> 'Please confirm your Password',
 		    		'autocomplete'			=> 'off',
 		    	),
 		    ),
@@ -47,8 +47,6 @@ class ResetPasswordQuestionForm extends AbstractType
 				new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'Invalid password|Password should only contain alphanumber characters. (a to z) and (0 to 9)')),
 			)
 		));
-		
-		#$builder->add('key', 'csrf');
     }
     
 

@@ -12,11 +12,11 @@ class ResetPasswordEmailForm extends AbstractType
     {
     	$builder->add('email', 'email', array(
     		'label'=>'Email',
-    		'required' => true,
+    	#	'required' => true,
     		'attr' => array(
     			'placeholder'			=> 'Email',
     			'rel'					=> 'tooltip',
-    			'data-original-title'	=> 'Please enter your Email.',
+    	#		'data-original-title'	=> 'Please enter your Email.',
     		),
     	));
 		

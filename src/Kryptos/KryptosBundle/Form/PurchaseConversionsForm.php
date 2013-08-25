@@ -17,7 +17,7 @@ class PurchaseConversionsForm extends AbstractType
     	
     	$builder->add('conversions', 'number', array(
     		'label'=>'No. of Conversions',
-    		'required' => true,
+    	#	'required' => true,
     	));
 			
 		$builder->add('cost', 'text', array(

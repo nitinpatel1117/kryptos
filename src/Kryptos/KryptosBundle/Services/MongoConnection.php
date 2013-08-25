@@ -78,7 +78,6 @@ class MongoConnection
     public function connectToCollection($collectionName)
     {    	
     	if (!in_array($collectionName, $this->allowedCollections)) {
-    		// log this later
     		die('collection does not exist in DB');
     	}
     	

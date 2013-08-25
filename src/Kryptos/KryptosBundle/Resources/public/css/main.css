@@ -76,8 +76,7 @@ form#settingsUserPassword .control-group .controls input { margin-top: 3px;}
 /*** Tables ***/
 
 /* File Status */
-table#fileStatus {width: 100%; border-collapse:collapse;}
-table#fileStatus td, table#fileStatus th {border:solid 1px black; padding: 3px}
+table.fileStatus div.progress { width:300px;}
 
 /* Account History */
 table#accountHistory {}

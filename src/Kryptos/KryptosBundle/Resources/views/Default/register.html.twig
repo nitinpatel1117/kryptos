@@ -51,7 +51,7 @@
     	
     	<div class="control-group">    
 			<div class="controls">
-				By clicking "sign-up" below you agree to our <a href="#">Terms and conditions </a> and that you have read and agreed to our <a href="#">Data use policy,</a> including our <a href="#">Cookie use </a> policy.
+				By clicking "sign-up" below you agree to our <a href="#modalTermsConditions" data-toggle="modal">Terms and conditions </a> and that you have read and agreed to our <a href="#modalDataUsePolicy" data-toggle="modal">Data use policy,</a> including our <a href="#modalCookieUse" data-toggle="modal">Cookie use </a> policy.
 			</div>  
 		</div>
     	
@@ -60,6 +60,17 @@
 				<button type="submit" class="btn btn-custom-block btn-primary">Sign-up</button> 
 			</div>  
 		</div>
+		
+		<div class="control-group">    
+			<div class="controls">          
+				<a href="{{ path('signin') }}">Back to login</a>
+			</div>  
+		</div>
     	
 	</form>
+
+	{% include 'KryptosKryptosBundle:Default:modalTermsConditions.html.twig' %}
+	{% include 'KryptosKryptosBundle:Default:modalDataUsePolicy.html.twig' %}
+	{% include 'KryptosKryptosBundle:Default:modalCookieUse.html.twig' %}
+	
 {% endblock %}

@@ -12,21 +12,21 @@ class SigninForm extends AbstractType
     {
     	$builder->add('email', 'text', array(
     		'label'=>'Email',
-    		'required' => true,
+    	#	'required' => true,
     		'attr' => array(
     			'placeholder'			=> 'Email',
     			'rel'					=> 'tooltip',
-    			'data-original-title'	=> 'Please enter your Email.',
+    	#		'data-original-title'	=> 'Please enter your Email.',
     		),
     	));
 			
 		$builder->add('password', 'password', array(
 			'label' => 'Password',
-			'required' => true,
+		#	'required' => true,
 			'attr' => array(
 				'placeholder'=>'Password',
 				'rel'					=> 'tooltip',
-				'data-original-title'	=> 'Please enter your Account Password.',
+		#		'data-original-title'	=> 'Please enter your Account Password.',
 			),
 		));
 		

@@ -25,63 +25,63 @@ class SettingsUserDetailsForm extends AbstractType
     	
     	$builder->add('title', 'choice', array(
     		'choices'   => $titles,
-    		'required'  => true,
+    	#	'required'  => true,
     		'empty_value' => ' - Title - ',
     	));
 
 		$builder->add('firstName', 'text', array(
 			'label'=>'Firstname',
-			'required' => true,
+		#	'required' => true,
 			'attr' => array(
 				'placeholder'			=> 'Forename',
 				'rel'					=> 'tooltip',
-				'data-original-title'	=> 'Please enter your Forename',
+		#		'data-original-title'	=> 'Please enter your Forename',
 			),
 		));
 		
 		$builder->add('lastName', 'text', array(
 			'label'=>'Lastname',
-			'required' => true,
+		#	'required' => true,
 			'attr' => array(
 				'placeholder'			=> 'Surname',
 				'rel'					=> 'tooltip',
-				'data-original-title'	=> 'Please enter your Surname',
+		#		'data-original-title'	=> 'Please enter your Surname',
 			),
 		));
 		
 		$builder->add('jobTitle', 'text', array(
 			'label'=>'Jobtitle',
-			'required' => true,
+		#	'required' => true,
 			'attr' => array(
 				'placeholder'			=> 'Jobtitle',
 				'rel'					=> 'tooltip',
-				'data-original-title'	=> 'Please enter your Jobtitle',
+		#		'data-original-title'	=> 'Please enter your Jobtitle',
 			),
 		));
 		
 		$builder->add('company', 'text', array(
 			'label'=>'Company',
-			'required' => true,
+		#	'required' => true,
 			'attr' => array(
 				'placeholder'			=> 'Company',
 				'rel'					=> 'tooltip',
-				'data-original-title'	=> 'Please enter your Company',
+		#		'data-original-title'	=> 'Please enter your Company',
 			),
 		));
 		
 		$builder->add('location', 'text', array(
 			'label'=>'Location',
-			'required' => true,
+		#	'required' => true,
 			'attr' => array(
 				'placeholder'			=> 'Location',
 				'rel'					=> 'tooltip',
-				'data-original-title'	=> 'Please enter your Location',
+		#		'data-original-title'	=> 'Please enter your Location',
 			),
 		));
 
 		$builder->add('email', 'repeated', array(
 			'type' => 'text',
-			'required' => true,
+		#	'required' => true,
 			'invalid_message' => "Email's do not match |The Email addresses you have typed do not match. Please check and try again.",
 			'first_name' => 'email',
 			'second_name' => 'confirmEmail',
@@ -90,7 +90,7 @@ class SettingsUserDetailsForm extends AbstractType
 				'attr' => array(
 					'placeholder'			=> 'Email',
 					'rel'					=> 'tooltip',
-					'data-original-title'	=> 'Please enter your Email',
+		#			'data-original-title'	=> 'Please enter your Email',
 				),
 			),
 		    'second_options' => array(
@@ -98,7 +98,7 @@ class SettingsUserDetailsForm extends AbstractType
 		    	'attr' => array(
 		    		'placeholder' 			=> 'Confirm Email',
 		    		'rel'					=> 'tooltip',
-		    		'data-original-title'	=> 'Please confirm your Email',
+		#    		'data-original-title'	=> 'Please confirm your Email',
 		    	),
 		    ),
 		));

@@ -122,7 +122,7 @@ class FileStatusController extends Controller
     	if ('pending' == $item['status'])
     	{
     		// number of lines divided by 100,000. Plus 1 minute, so that zeros are 1's. value in minutes
-    		$timeRequiredForFile = (int) (($item['approxLines']/100000) + 1);
+    		$timeRequiredForFile = (int) (($item['approxLines']/60000) + 1);
     		
     		// get number of other pending files and their counts
     		// add to time required for $timeRequiredForFile
