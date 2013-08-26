@@ -164,7 +164,8 @@ class AccountController extends Controller
     	$payments = array();
     	$date = new \DateTime();
     	
-    	list ($transactions, $conversionHistory) = $this->getUserPayments();
+    	$transactions 		= $this->getUserPayments();
+    	$conversionHistory 	= $this->getUserConversionHistory();
     	
     	$transactions = array_reverse($transactions);
     	foreach ($transactions as $transaction)
@@ -215,8 +216,8 @@ class AccountController extends Controller
     		if (isset($history['file'])) {
     			$id = $history['file']->__toString();
     		}
-    		else if (isset($history['id'])) {
-    			$id = $history['id']->__toString();
+    		else if (isset($history['_id'])) {
+    			$id = $history['_id']->__toString();
     		}
     		$payment = array(
     			'id' 			=> $id,
@@ -279,21 +280,30 @@ class AccountController extends Controller
     public function getUserPayments()
     {
     	$payments = array();
-    	$conversionHistory = array();
     	 
     	if ($this->get('config_manager')->signinRequired()) {
     		$userSessionDetails = $this->get('login_validator')->getLoggedInUserDetails();
-    		$fields = array('payment'=>1, 'conversionHistory'=>1);
+    		$fields = array('payment'=>1);
     		$user = $this->get('user_manager')->getUserByEmail($userSessionDetails['email'], $fields);
     		
     		if (isset($user['payment'])) {
     			$payments = $user['payment'];
     		}
-    		if (isset($user['conversionHistory'])) {
-    			$conversionHistory = $user['conversionHistory'];
-    		}
     	}
     	 
-    	return array($payments, $conversionHistory);
+    	return $payments;
+    }
+    
+    
+    public function getUserConversionHistory()
+    {
+    	$conversionHistory = array();
+    
+    	if ($this->get('config_manager')->signinRequired()) {
+    		$userSessionDetails = $this->get('login_validator')->getLoggedInUserDetails();
+    		$conversionHistory = $this->get('conversion_manager')->getItemsByUserId($userSessionDetails['id']);
+    	}
+    
+    	return $conversionHistory;
     }
 }

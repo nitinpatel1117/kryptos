@@ -3,12 +3,13 @@ parameters:
 
     config_manager.class:                Kryptos\KryptosBundle\Services\ConfigManager
     mongo_connection.class:              Kryptos\KryptosBundle\Services\MongoConnection
-    conversion_calculator.class:        Kryptos\KryptosBundle\Services\ConversionCalculator
+    conversion_calculator.class:         Kryptos\KryptosBundle\Services\ConversionCalculator
     user_manager.class:                  Kryptos\KryptosBundle\Model\Manager\UserManager
     sage_notification_manager.class:     Kryptos\KryptosBundle\Model\Manager\SageNotificationManager
     file_manager.class:                  Kryptos\KryptosBundle\Model\Manager\FileManager
     file_error_manager.class:            Kryptos\KryptosBundle\Model\Manager\FileErrorManager
     bank_account_manager.class:          Kryptos\KryptosBundle\Model\Manager\BankAccountManager
+    conversion_manager.class:            Kryptos\KryptosBundle\Model\Manager\ConversionManager
     unique_username_validator.class:     Kryptos\KryptosBundle\Validator\Constraints\UniqueUsernameValidator
     unique_email_validator.class:        Kryptos\KryptosBundle\Validator\Constraints\UniqueEmailValidator
     login_validator.class:               Kryptos\KryptosBundle\Lib\LoginValidator
@@ -37,7 +38,7 @@ services:
         
     user_manager:
         class:          %user_manager.class%
-        arguments:      [@mongo_connection, @conversion_calculator]
+        arguments:      [@mongo_connection, @conversion_calculator, @conversion_manager]
      
     sage_notification_manager:
         class:          %sage_notification_manager.class%
@@ -53,6 +54,10 @@ services:
 
     bank_account_manager:
         class:          %bank_account_manager.class%
+        arguments:      [@mongo_connection]
+        
+    conversion_manager:
+        class:          %conversion_manager.class%
         arguments:      [@mongo_connection]
 
 

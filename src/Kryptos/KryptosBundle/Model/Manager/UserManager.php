@@ -11,9 +11,11 @@ class UserManager extends BaseManager
     const COLLECTION = 'user';
     
     protected $conversionCalculator = null;
+    
+    protected $conversionManager = null;
 
 
-    public function __construct($mongoConnection, $conversionCalculator)
+    public function __construct($mongoConnection, $conversionCalculator, $conversionManager)
     {
     	$dbCollection = $mongoConnection->connectToCollection(self::COLLECTION);
 
@@ -21,6 +23,7 @@ class UserManager extends BaseManager
     	$this->setNameOfCollection(self::COLLECTION);
     	
     	$this->conversionCalculator = $conversionCalculator;
+    	$this->conversionManager 	= $conversionManager;
     }
 
 
@@ -252,19 +255,21 @@ class UserManager extends BaseManager
     {
     	$creditsUsed = $originalCredits - $credits;
     	$costs = $this->getCostOfCreditsUsed($creditsUsed);
-
-    	$query = array('_id' => new \MongoId($userId));
     	
+    	// update user's conversion history
+    	$conversion = array(
+    		'creditsUsed' 	=> $creditsUsed,
+    		'totalCost'		=> $costs,
+    		'time'			=> new \MongoDate(),
+    		'type'			=> 'batch',
+    		'file'			=> $fileId,
+    		'userId'		=> $userId,
+    	);
+    	$this->conversionManager->insert($conversion);
+    	
+    	// update user's credit
+    	$query = array('_id' => new \MongoId($userId));
     	$update = array(
-    		'$push' => array(
-    			'conversionHistory' => array(
-    				'creditsUsed' 	=> $creditsUsed,
-    				'totalCost'		=> $costs,
-    				'time'			=> new \MongoDate(),
-    				'type'			=> 'batch',
-    				'file'			=> $fileId,
-    			)
-    		), 
     		'$inc' => array ('credits' => ($creditsUsed * -1 ) ),
     	);
 
@@ -375,18 +380,20 @@ class UserManager extends BaseManager
     {
     	$costs = $this->getCostOfCreditsUsed($amount);
     	
+    	// update user's conversion history
+    	$conversion = array(
+    		'creditsRefunded' 	=> $amount,
+    		'totalCost'			=> $costs,
+    		'time'				=> new \MongoDate(),
+    		'type'				=> 'batch',
+    		'file'				=> $fileId,
+    		'userId'			=> $userId,
+    	);
+    	$this->conversionManager->insert($conversion);
+    	
+    	// update user's credit
     	$query = array('_id' => new \MongoId($userId));
-    	 
     	$update = array(
-    		'$push' => array(
-    			'conversionHistory' => array(
-    				'creditsRefunded' 	=> $amount,
-    				'totalCost'			=> $costs,
-    				'time'				=> new \MongoDate(),
-    				'type'				=> 'batch',
-    				'file'				=> $fileId,
-    			)
-    		),
     		'$inc' => array ('credits' => $amount ),
     	);
     	
@@ -396,27 +403,29 @@ class UserManager extends BaseManager
     
     
     /**
-     * Function reduces a users credit by 1
+     * Function reduces a users credit by 1, and registers a conversion in the conversion table
      *
      * @param string $userId			The user id of the user to reduce credit from
+     * @param string $type				The type of conversion to be recorded for this transaction, value of 'single' or 'singleApi'
      * @param int $amount				The amount of credits to reduce by
      */
-    public function reduceCredit($userId, $amount = 1)
+    public function reduceCredit($userId, $type = 'single', $amount = 1)
     {
     	$costs = $this->getCostOfCreditsUsed($amount);
     	
-    	$query = array('_id' => new \MongoId($userId));
+    	// update user's conversion history
+    	$conversion = array(
+    		'creditsUsed' 		=> $amount,
+    		'totalCost'			=> $costs,
+    		'time'				=> new \MongoDate(),
+    		'type'				=> $type,
+    		'userId'			=> $userId,
+    	);
+    	$this->conversionManager->insert($conversion);
     
+    	// update user's credit
+    	$query = array('_id' => new \MongoId($userId));
     	$update = array(
-    		'$push' => array(
-    			'conversionHistory' => array(
-    				'creditsUsed' 		=> $amount,
-    				'totalCost'			=> $costs,
-    				'time'				=> new \MongoDate(),
-    				'type'				=> 'single',
-    				'id'				=> new \MongoId(),
-    			)
-    		),
     		'$inc' => array ('credits' => ($amount * -1) ),
     	);
     	

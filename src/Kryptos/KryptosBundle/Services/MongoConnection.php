@@ -5,7 +5,7 @@ namespace Kryptos\KryptosBundle\Services;
 
 class MongoConnection
 {
-	protected $allowedCollections = array('user', 'sage_notification', 'cache', 'file', 'file_error', 'bank_account');
+	protected $allowedCollections = array('user', 'sage_notification', 'cache', 'file', 'file_error', 'bank_account', 'conversion');
 	
 	protected $serviceContainer;
 	
