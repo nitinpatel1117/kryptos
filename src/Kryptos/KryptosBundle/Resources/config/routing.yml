@@ -69,6 +69,10 @@ convert_single:
     pattern:  /convert/single
     defaults: { _controller: KryptosKryptosBundle:ConvertSingle:index }
 
+api_details:
+    pattern:  /api_details
+    defaults: { _controller: KryptosKryptosBundle:Api:details }
+
 
 file_status_ajax:
     pattern:  /file/status/ajax
@@ -90,7 +94,6 @@ account_history:
 account_settings:
     pattern:  /account/settings
     defaults: { _controller: KryptosKryptosBundle:Account:settings }
-
 
 download_help_prepare_file:
     pattern:  /download/help_prepare_file

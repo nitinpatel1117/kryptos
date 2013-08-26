@@ -441,4 +441,16 @@ class SingleConversion
 		
 		$this->bankDetails = $bank;
 	}
+	
+	public function getErrorsAsString()
+	{
+		$msg = '';
+		
+		if (count($this->errorMsg) > 0) {
+			$msg = implode('. ', $this->errorMsg);
+			$msg .= '.';
+		}
+		
+		return $msg;
+	}
 }

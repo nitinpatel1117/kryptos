@@ -79,7 +79,7 @@ class ApiResponse
 	 * @return mixed Json string or array.
 	 */
 	public function create($json = true)
-	{		
+	{
 		$response = array(
 			'diagnostics' => array(
 				'status'			=> $this->status,

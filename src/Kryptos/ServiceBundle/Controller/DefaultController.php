@@ -121,6 +121,19 @@ class DefaultController extends Controller
 		$this->getResponse()->setStatusCode($this->getApiResponse()->code);
 		$this->getResponse()->headers->set('Content-Type', 'application/json');
 	}
+	
+	
+	/**
+	 * Function adds an error to the API response and returns the API response.
+	 *
+	 * @param String $message		The message for this error
+	 * @param Integer $code			The status code fo this error message
+	 */
+	public function dieImmediately($message, $code = 500)
+	{
+		$this->getApiResponse()->error($message, $code);
+		return $this->getJsonResponse(array(), false);
+	}
 
 	
 	/**

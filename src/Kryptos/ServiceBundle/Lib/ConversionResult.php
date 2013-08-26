@@ -65,7 +65,7 @@ class ConversionResult
 		$data['direct_debits_supported'] 			= $this->singleConversion->directDebitsSupported;
 		$data['business_direct_debits_supported'] 	= $this->singleConversion->businessDirectDebitsSupported;
 		
-		$data['errors'] 	= $this->singleConversion->errorMsg;
+		// $data['errors'] 	= $this->singleConversion->errorMsg;
 		$data['warnings'] 	= $this->singleConversion->warningMsg;
 		
 		
