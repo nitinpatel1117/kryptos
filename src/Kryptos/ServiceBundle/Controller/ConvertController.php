@@ -62,7 +62,7 @@ class ConvertController extends DefaultController
 	    	if (true == $chargeUser) {
 	    		if ($this->conversionsRestricted()) {
 	    			$user = $this->get('user_manager');
-	    			$user->reduceCredit($this->getUserId());
+	    			$user->reduceCredit($this->getUserId(), 'singleApi');
 	    		}
 	    	}
     	}
@@ -151,7 +151,7 @@ class ConvertController extends DefaultController
     		if (true == $chargeUser) {
     			if ($this->conversionsRestricted()) {
     				$user = $this->get('user_manager');
-    				$user->reduceCredit($this->getUserId());
+    				$user->reduceCredit($this->getUserId(), 'singleApi');
     			}
     		}
     	}
