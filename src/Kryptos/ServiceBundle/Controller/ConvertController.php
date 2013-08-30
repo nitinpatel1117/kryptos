@@ -116,7 +116,7 @@ class ConvertController extends DefaultController
     		$credits = $this->getAllowedConversions();
     		if ($credits < 1) {
     			$errorExists = true;
-    			return $this->dieImmediately('Insufficient credit|You do not have sufficient funds in your account to carry out the check. Please credit your account and then try again.');
+    			return $this->dieImmediately('Insufficient credit. You do not have sufficient funds in your account to carry out the check. Please credit your account and then try again.');
     		}
     	}
     
