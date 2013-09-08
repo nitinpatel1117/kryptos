@@ -10,6 +10,7 @@ parameters:
     file_error_manager.class:            Kryptos\KryptosBundle\Model\Manager\FileErrorManager
     bank_account_manager.class:          Kryptos\KryptosBundle\Model\Manager\BankAccountManager
     conversion_manager.class:            Kryptos\KryptosBundle\Model\Manager\ConversionManager
+    translation_manager.class:            Kryptos\KryptosBundle\Model\Manager\TranslationManager
     unique_username_validator.class:     Kryptos\KryptosBundle\Validator\Constraints\UniqueUsernameValidator
     unique_email_validator.class:        Kryptos\KryptosBundle\Validator\Constraints\UniqueEmailValidator
     login_validator.class:               Kryptos\KryptosBundle\Lib\LoginValidator
@@ -58,6 +59,10 @@ services:
         
     conversion_manager:
         class:          %conversion_manager.class%
+        arguments:      [@mongo_connection]
+    
+    translation_manager:
+        class:          %translation_manager.class%
         arguments:      [@mongo_connection]
 
 
