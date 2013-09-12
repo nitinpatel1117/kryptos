@@ -17,6 +17,7 @@ parameters:
     batch_insert_file.class:             Kryptos\KryptosBundle\Lib\BatchInsertFile
     batch_upload_file.class:             Kryptos\KryptosBundle\Lib\BatchUploadFile
     single_conversion.class:             Kryptos\KryptosBundle\Lib\SingleConversion
+    locale_switcher.class:                Kryptos\KryptosBundle\Services\LocaleSwitcher
 
 
 services:
@@ -104,4 +105,10 @@ services:
     single_conversion:
         class:          %single_conversion.class%
         arguments:      [@config_manager]
+
+    locale_switcher:
+        class:          %locale_switcher.class%
+        arguments:      [@session, @service_container]
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
         

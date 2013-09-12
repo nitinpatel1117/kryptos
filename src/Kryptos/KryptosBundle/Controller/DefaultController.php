@@ -4,6 +4,7 @@ namespace Kryptos\KryptosBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Kryptos\KryptosBundle\Controller\LocaleInterface;
 use Kryptos\KryptosBundle\Form\RegistrationForm;
 use Kryptos\KryptosBundle\Form\SigninForm;
 use Kryptos\KryptosBundle\Form\ResetPasswordEmailForm;
@@ -11,7 +12,7 @@ use Kryptos\KryptosBundle\Form\ResetPasswordQuestionForm;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\Form\FormError;
 
-class DefaultController extends Controller
+class DefaultController extends Controller implements LocaleInterface
 {
 
 	protected function getSessionId()
@@ -44,6 +45,10 @@ class DefaultController extends Controller
 
 	public function signinAction(Request $request)
     {
+    	#$this->get('locale_switcher')->initLocale();
+    	#$this->get('locale_switcher')->setLocale('en_GB');
+    	#$this->get('locale_switcher')->setLocale('fr_FR');
+
     	$session = $this->get('login_validator');
     	if ($session->isLoginValid()) {
     		return $this->redirect($this->generateUrl('welcome'));
