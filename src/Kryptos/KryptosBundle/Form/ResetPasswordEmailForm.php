@@ -14,7 +14,7 @@ class ResetPasswordEmailForm extends AbstractType
     		'label'=>'Email',
     	#	'required' => true,
     		'attr' => array(
-    			'placeholder'			=> 'Email',
+    			'placeholder'			=> 'txt_email',
     			'rel'					=> 'tooltip',
     	#		'data-original-title'	=> 'Please enter your Email.',
     		),

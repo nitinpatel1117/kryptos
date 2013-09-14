@@ -14,7 +14,7 @@ class SigninForm extends AbstractType
     		'label'=>'Email',
     	#	'required' => true,
     		'attr' => array(
-    			'placeholder'			=> 'Email',
+    			'placeholder'			=> 'txt_email',
     			'rel'					=> 'tooltip',
     	#		'data-original-title'	=> 'Please enter your Email.',
     		),
@@ -24,7 +24,7 @@ class SigninForm extends AbstractType
 			'label' => 'Password',
 		#	'required' => true,
 			'attr' => array(
-				'placeholder'=>'Password',
+				'placeholder'			=> 'txt_password',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your Account Password.',
 			),

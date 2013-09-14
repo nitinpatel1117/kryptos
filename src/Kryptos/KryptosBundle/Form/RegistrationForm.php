@@ -45,7 +45,7 @@ class RegistrationForm extends AbstractType
 			'label'=>'Firstname',
 		#	'required' => true,
 			'attr' => array(
-				'placeholder'			=> 'Forename',
+				'placeholder'			=> 'txt_forename',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your Forename',
 			),
@@ -55,7 +55,7 @@ class RegistrationForm extends AbstractType
 			'label'=>'Lastname',
 		#	'required' => true,
 			'attr' => array(
-				'placeholder'			=> 'Surname',
+				'placeholder'			=> 'txt_surname',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your Surname',
 			),
@@ -65,7 +65,7 @@ class RegistrationForm extends AbstractType
 			'label'=>'Jobtitle',
 		#	'required' => true,
 			'attr' => array(
-				'placeholder'			=> 'Jobtitle',
+				'placeholder'			=> 'txt_job_title',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your Jobtitle',
 			),
@@ -75,7 +75,7 @@ class RegistrationForm extends AbstractType
 			'label'=>'Company',
 		#	'required' => true,
 			'attr' => array(
-				'placeholder'			=> 'Company',
+				'placeholder'			=> 'txt_company',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your Company',
 			),
@@ -85,7 +85,7 @@ class RegistrationForm extends AbstractType
 			'label'=>'Location',
 		#	'required' => true,
 			'attr' => array(
-				'placeholder'			=> 'Location',
+				'placeholder'			=> 'txt_location',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your Location',
 			),
@@ -100,7 +100,7 @@ class RegistrationForm extends AbstractType
 			'first_options' => array(
 				'label' => 'Email',
 				'attr' => array(
-					'placeholder'			=> 'Email',
+					'placeholder'			=> 'txt_email',
 					'rel'					=> 'tooltip',
 		#			'data-original-title'	=> 'Please enter your Email',
 				),
@@ -108,7 +108,7 @@ class RegistrationForm extends AbstractType
 		    'second_options' => array(
 		    	'label' => 'Confirm Email',
 		    	'attr' => array(
-		    		'placeholder' 			=> 'Confirm Email',
+		    		'placeholder' 			=> 'txt_confirm_email',
 		    		'rel'					=> 'tooltip',
 		#    		'data-original-title'	=> 'Please confirm your Email',
 		    	),
@@ -124,7 +124,7 @@ class RegistrationForm extends AbstractType
 			'first_options' => array(
 				'label' => 'Password',
 				'attr' => array(
-					'placeholder' 			=> 'Password',
+					'placeholder' 			=> 'txt_password',
 					'rel'					=> 'tooltip',
 		#			'data-original-title'	=> 'Please enter your Password',
 					'autocomplete'			=> 'off',
@@ -133,7 +133,7 @@ class RegistrationForm extends AbstractType
 		    'second_options' => array(
 		    	'label' => 'Confirm Password',
 		    	'attr' => array(
-		    		'placeholder' 			=> 'Confirm Password',
+		    		'placeholder' 			=> 'txt_confirm_password',
 		    		'rel'					=> 'tooltip',
 		#    		'data-original-title'	=> 'Please confirm your Password',
 		    		'autocomplete'			=> 'off',

@@ -45,10 +45,6 @@ class DefaultController extends Controller implements LocaleInterface
 
 	public function signinAction(Request $request)
     {
-    	#$this->get('locale_switcher')->initLocale();
-    	#$this->get('locale_switcher')->setLocale('en_GB');
-    	#$this->get('locale_switcher')->setLocale('fr_FR');
-
     	$session = $this->get('login_validator');
     	if ($session->isLoginValid()) {
     		return $this->redirect($this->generateUrl('welcome'));
@@ -70,11 +66,11 @@ class DefaultController extends Controller implements LocaleInterface
 				}
 				
 				if ("not_activated" === $status) {
-					$form->addError(new FormError('Your account has not been activated|Please click on the activation link that was sent to the email address that you registered with.'));
+					$form->addError(new FormError('msg_title_account_not_activated|msg_desc_account_not_activated'));
 				}
 
 				if (false === $status) {
-					$form->addError(new FormError('Incorrect email/password combination|Kryptos passwords are case sensitive. Please check your CAPS lock key. You can reset your password here.'));
+					$form->addError(new FormError('msg_title_incorrect_email_pass_combi|msg_desc_incorrect_email_pass_combi'));
 				}
 			}
 		}
@@ -127,7 +123,7 @@ class DefaultController extends Controller implements LocaleInterface
         return $this->render('KryptosKryptosBundle:Default:register.html.twig', array(
         	'form' => $form->createView(),
         	'location' => 'register',
-        	'captchaMessage' => 'Type the characters you see in the picture below.'
+        	'captchaMessage' => 'txt_captcha_type_the'
         ));
     }
 
@@ -172,7 +168,7 @@ class DefaultController extends Controller implements LocaleInterface
     	
     	try {
     		$userManager->activateAccount($userId, $code1, $code2);
-    		$message = "Your account has been activated";
+    		$message = "txt_title_account_activated";
     		$show_signin_link = true;
     	} catch (\Exception $e) {
     		$message = $e->getMessage();
@@ -190,9 +186,7 @@ class DefaultController extends Controller implements LocaleInterface
 
 	public function registerSubmittedAction(Request $request)
     {
-        return $this->render('KryptosKryptosBundle:Default:registerSubmitted.html.twig', array(
-        	'header' => 'Thankyou for your registration'
-        ));
+        return $this->render('KryptosKryptosBundle:Default:registerSubmitted.html.twig', array());
     }
 
 
@@ -227,7 +221,6 @@ class DefaultController extends Controller implements LocaleInterface
     	}
 
     	return $this->render('KryptosKryptosBundle:Default:welcome.html.twig', array(
-    		'location' 					=> 'Welcome page',
     		'purchase_conversion_url' 	=> $this->generateUrl('purchase_conversions'),
     		'account_summary_url' 		=> $this->generateUrl('account_summary'),
     		'convert_to_sepa_url_batch' => $this->generateUrl('convert_batch'),
@@ -315,7 +308,6 @@ class DefaultController extends Controller implements LocaleInterface
     	
     	return $this->render('KryptosKryptosBundle:Default:resetPasswordEmail.html.twig', array(
     		'form' => $form->createView(),
-    		'location' => 'Reset Password',
     	));
     }
     
@@ -334,8 +326,10 @@ class DefaultController extends Controller implements LocaleInterface
     		$passwordResetUrl
     	);
     
+    	$subject = $this->get('translator')->trans('email_subject_password_reset');
+    	
     	$message = \Swift_Message::newInstance()
-    		->setSubject('Kryptos: Password Reset')
+    		->setSubject($subject)
     		->setFrom(array(
     			$this->get('config_manager')->get('site|password_reset_from') => $this->get('config_manager')->get('site|password_reset_fromname')
     		))
@@ -353,9 +347,7 @@ class DefaultController extends Controller implements LocaleInterface
     
     public function resetPasswordEmailSubmittedAction(Request $request)
     {
-    	return $this->render('KryptosKryptosBundle:Default:resetPasswordEmailSubmitted.html.twig', array(
-    		'header' => 'Password Reset',
-    	));
+    	return $this->render('KryptosKryptosBundle:Default:resetPasswordEmailSubmitted.html.twig', array());
     }
     
     
@@ -394,14 +386,12 @@ class DefaultController extends Controller implements LocaleInterface
     		$message = $e->getMessage();
     		
     		return $this->render('KryptosKryptosBundle:Default:resetPasswordQuestionFail.html.twig', array(
-    			'header'  => 'Unable to reset password',
     			'message' => $message,
     		));
     	}
     	 
     	return $this->render('KryptosKryptosBundle:Default:resetPasswordQuestion.html.twig', array(
     		'form' 		=> $form->createView(),
-    		'location' 	=> 'Reset Password',
     		'userId' 	=> $userId,
     		'code1' 	=> $code1,
     		'code2' 	=> $code2,
@@ -411,9 +401,6 @@ class DefaultController extends Controller implements LocaleInterface
     
     public function resetPasswordQuestionSuccessAction(Request $request)
     {
-    	return $this->render('KryptosKryptosBundle:Default:resetPasswordQuestionSuccess.html.twig', array(
-    		'header' => 'Password reset',
-    		'message' => 'Your password has been successfully reset. Please use your new password from now on.',
-    	));
+    	return $this->render('KryptosKryptosBundle:Default:resetPasswordQuestionSuccess.html.twig', array());
     }
 }

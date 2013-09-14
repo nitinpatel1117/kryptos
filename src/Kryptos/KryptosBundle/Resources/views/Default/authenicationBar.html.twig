@@ -3,41 +3,41 @@
 		<a class="brand" href="#">Kryptos</a>
 		<ul class="nav">
 			<li class="{% if current_route in ['welcome'] %}active{% endif %}">
-				<a href="{{ path('welcome') }}"><i class="icon-home"></i> Home</a>
+				<a href="{{ path('welcome') }}"><i class="icon-home"></i> {% trans %}txt_home{% endtrans %}</a>
 			</li>
 			<li class="dropdown {% if current_route in ['convert_single', 'convert_batch'] %}active{% endif %}">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					Convert
+					{% trans %}txt_convert{% endtrans %}
 					<b class="caret"></b>
 				</a>
 				<ul class="dropdown-menu">
-					<li><a href="{{ path('convert_single') }}">Single conversion</a></li>
-					<li><a href="{{ path('convert_batch') }}">Batch Conversion</a></li>
+					<li><a href="{{ path('convert_single') }}">{% trans %}txt_single_conversion{% endtrans %}</a></li>
+					<li><a href="{{ path('convert_batch') }}">{% trans %}txt_batch_conversion{% endtrans %}</a></li>
 					<li><a href="{{ path('api_details') }}">API</a></li>
 				</ul>
 			</li>	
 			
 				<li class="dropdown {% if current_route in ['account_summary', 'purchase_conversions', 'payment_billing'] %}active{% endif %}">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						Account
+						{% trans %}txt_account{% endtrans %}
 						<b class="caret"></b>
 					</a>
 					<ul class="dropdown-menu">
-						<li><a href="{{ path('account_summary') }}">Payment History</a></li>
-						<li><a href="{{ path('purchase_conversions') }}">Purchase conversions</a></li>
+						<li><a href="{{ path('account_summary') }}">{% trans %}txt_account_history{% endtrans %}</a></li>
+						<li><a href="{{ path('purchase_conversions') }}">{% trans %}txt_purchase_conversions{% endtrans %}</a></li>
 					</ul>
 				</li>
 			
-			<li class="{% if current_route in ['settings'] %}active{% endif %}"><a href="{{ path('account_settings') }}">Settings</a></li>
+			<li class="{% if current_route in ['settings'] %}active{% endif %}"><a href="{{ path('account_settings') }}">{% trans %}txt_settings{% endtrans %}</a></li>
     	</ul>
 		<ul class="nav pull-right">
-			<li><a href="{{ path('logout') }}">Logout</a></li>
+			<li><a href="{{ path('logout') }}">{% trans %}txt_logout{% endtrans %}</a></li>
 		</ul>
 		<ul class="nav pull-right">
-			<li><a href="#">Balance: {{ conversions }}</a></li>
+			<li><a href="#">{% trans %}txt_balance{% endtrans %}: {{ conversions }}</a></li>
 		</ul>
 		<ul class="nav pull-right">
-			<li><a href="#">You are logged in as: <strong>{{ username }}</strong></a></li>
+			<li><a href="#">{% trans %}txt_you_are_logged_in_as{% endtrans %}: <strong>{{ username }}</strong></a></li>
 		</ul>
 	</div>
 </div>

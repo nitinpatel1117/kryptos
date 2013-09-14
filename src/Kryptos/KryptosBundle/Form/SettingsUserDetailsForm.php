@@ -33,7 +33,7 @@ class SettingsUserDetailsForm extends AbstractType
 			'label'=>'Firstname',
 		#	'required' => true,
 			'attr' => array(
-				'placeholder'			=> 'Forename',
+				'placeholder'			=> 'txt_forename',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your Forename',
 			),
@@ -43,7 +43,7 @@ class SettingsUserDetailsForm extends AbstractType
 			'label'=>'Lastname',
 		#	'required' => true,
 			'attr' => array(
-				'placeholder'			=> 'Surname',
+				'placeholder'			=> 'txt_surname',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your Surname',
 			),
@@ -53,7 +53,7 @@ class SettingsUserDetailsForm extends AbstractType
 			'label'=>'Jobtitle',
 		#	'required' => true,
 			'attr' => array(
-				'placeholder'			=> 'Jobtitle',
+				'placeholder'			=> 'txt_job_title',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your Jobtitle',
 			),
@@ -63,7 +63,7 @@ class SettingsUserDetailsForm extends AbstractType
 			'label'=>'Company',
 		#	'required' => true,
 			'attr' => array(
-				'placeholder'			=> 'Company',
+				'placeholder'			=> 'txt_company',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your Company',
 			),
@@ -73,7 +73,7 @@ class SettingsUserDetailsForm extends AbstractType
 			'label'=>'Location',
 		#	'required' => true,
 			'attr' => array(
-				'placeholder'			=> 'Location',
+				'placeholder'			=> 'txt_location',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your Location',
 			),
@@ -88,7 +88,7 @@ class SettingsUserDetailsForm extends AbstractType
 			'first_options' => array(
 				'label' => 'Email',
 				'attr' => array(
-					'placeholder'			=> 'Email',
+					'placeholder'			=> 'txt_email',
 					'rel'					=> 'tooltip',
 		#			'data-original-title'	=> 'Please enter your Email',
 				),
@@ -96,7 +96,7 @@ class SettingsUserDetailsForm extends AbstractType
 		    'second_options' => array(
 		    	'label' => 'Confirm Email',
 		    	'attr' => array(
-		    		'placeholder' 			=> 'Confirm Email',
+		    		'placeholder' 			=> 'txt_confirm_email',
 		    		'rel'					=> 'tooltip',
 		#    		'data-original-title'	=> 'Please confirm your Email',
 		    	),

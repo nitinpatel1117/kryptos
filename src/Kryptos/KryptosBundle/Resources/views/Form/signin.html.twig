@@ -14,7 +14,7 @@
 	<div class="alert alert-error">
 		<button class="close" data-dismiss="alert" type="button"><i class=" icon-remove"></i></button>
 		{% for error in errors %}
-			{{ error.messageTemplate|trans(error.messageParameters, 'validators') }}<br>
+			{{ error.messageTemplate|trans(error.messageParameters) }}<br>
 		{% endfor %}
 	</div>
 {% endif %}

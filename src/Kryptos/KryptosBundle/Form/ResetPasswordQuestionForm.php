@@ -21,7 +21,7 @@ class ResetPasswordQuestionForm extends AbstractType
 			'first_options' => array(
 				'label' => 'Password',
 				'attr' => array(
-					'placeholder' 			=> 'Password',
+					'placeholder' 			=> 'txt_password',
 					'rel'					=> 'tooltip',
 		#			'data-original-title'	=> 'Please enter your Password',
 					'autocomplete'			=> 'off',
@@ -30,7 +30,7 @@ class ResetPasswordQuestionForm extends AbstractType
 		    'second_options' => array(
 		    	'label' => 'Confirm Password',
 		    	'attr' => array(
-		    		'placeholder' 			=> 'Confirm Password',
+		    		'placeholder' 			=> 'txt_confirm_password',
 		    		'rel'					=> 'tooltip',
 		#    		'data-original-title'	=> 'Please confirm your Password',
 		    		'autocomplete'			=> 'off',

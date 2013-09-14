@@ -35,7 +35,7 @@
                 <target><![CDATA[Azienda]]></target>
             </trans-unit>			
 			<trans-unit id="9">
-                <source>txt_locatoin</source>
+                <source>txt_location</source>
                 <target><![CDATA[Posizione]]></target>
             </trans-unit>			
 			<trans-unit id="10">
@@ -141,6 +141,142 @@
 			<trans-unit id="35">
                 <source>txt_logout</source>
                 <target><![CDATA[Esci]]></target>
+            </trans-unit>			
+			<trans-unit id="36">
+                <source>txt_prepare_your_file</source>
+                <target><![CDATA[1. Preparare il file]]></target>
+            </trans-unit>			
+			<trans-unit id="37">
+                <source>txt_prepare_your_list_of</source>
+                <target><![CDATA[Preparare un elenco dei numeri di conto utilizzando il nostro modello. Salva una copia in caso di necessità di modificare in un secondo momento]]></target>
+            </trans-unit>			
+			<trans-unit id="38">
+                <source>txt_download</source>
+                <target><![CDATA[Caricare]]></target>
+            </trans-unit>			
+			<trans-unit id="39">
+                <source>txt_help</source>
+                <target><![CDATA[Aiuto]]></target>
+            </trans-unit>			
+			<trans-unit id="40">
+                <source>txt_upload_your_file</source>
+                <target><![CDATA[2. Carica il tuo file]]></target>
+            </trans-unit>			
+			<trans-unit id="41">
+                <source>txt_save_the_worksheet</source>
+                <target><![CDATA[Salvare il foglio di lavoro contenente i tuoi dati account numero come file. Csv e poi caricarlo qui.]]></target>
+            </trans-unit>			
+			<trans-unit id="42">
+                <source>txt_browse</source>
+                <target><![CDATA[Sfogliare]]></target>
+            </trans-unit>			
+			<trans-unit id="43">
+                <source>txt_upload</source>
+                <target><![CDATA[Caricare]]></target>
+            </trans-unit>			
+			<trans-unit id="44">
+                <source>txt_file_status_and_history</source>
+                <target><![CDATA[3. Stato del file e Storia]]></target>
+            </trans-unit>			
+			<trans-unit id="45">
+                <source>txt_filename</source>
+                <target><![CDATA[Nome del file]]></target>
+            </trans-unit>			
+			<trans-unit id="46">
+                <source>txt_status_result</source>
+                <target><![CDATA[Stato / Risultato]]></target>
+            </trans-unit>			
+			<trans-unit id="47">
+                <source>txt_download_file</source>
+                <target><![CDATA[Scarica File]]></target>
+            </trans-unit>			
+			<trans-unit id="48">
+                <source>txt_converted_successfully</source>
+                <target><![CDATA[Convertito con successo]]></target>
+            </trans-unit>			
+			<trans-unit id="49">
+                <source>txt_insufficient_funds</source>
+                <target><![CDATA[Fondi insufficienti]]></target>
+            </trans-unit>			
+			<trans-unit id="50">
+                <source>txt_payment_failed</source>
+                <target><![CDATA[Pagamento non riuscito]]></target>
+            </trans-unit>			
+			<trans-unit id="51">
+                <source>txt_failed</source>
+                <target><![CDATA[Impossibile]]></target>
+            </trans-unit>			
+			<trans-unit id="52">
+                <source>txt_type</source>
+                <target><![CDATA[Tipo]]></target>
+            </trans-unit>			
+			<trans-unit id="53">
+                <source>txt_cost_price</source>
+                <target><![CDATA[Prezzo di costo]]></target>
+            </trans-unit>			
+			<trans-unit id="54">
+                <source>txt_transaction_id</source>
+                <target><![CDATA[ID della transazione]]></target>
+            </trans-unit>			
+			<trans-unit id="55">
+                <source>txt_debit</source>
+                <target><![CDATA[Debito]]></target>
+            </trans-unit>			
+			<trans-unit id="56">
+                <source>txt_credit</source>
+                <target><![CDATA[Credito]]></target>
+            </trans-unit>			
+			<trans-unit id="57">
+                <source>txt_status</source>
+                <target><![CDATA[Stato]]></target>
+            </trans-unit>			
+			<trans-unit id="58">
+                <source>txt_ok</source>
+                <target><![CDATA[Ok]]></target>
+            </trans-unit>			
+			<trans-unit id="59">
+                <source>txt_pending</source>
+                <target><![CDATA[In attesa]]></target>
+            </trans-unit>			
+			<trans-unit id="60">
+                <source>txt_purchase_details</source>
+                <target><![CDATA[Dettagli acquistati]]></target>
+            </trans-unit>			
+			<trans-unit id="61">
+                <source>txt_no_of_conversions</source>
+                <target><![CDATA[Numero di conversioni]]></target>
+            </trans-unit>			
+			<trans-unit id="62">
+                <source>txt_total_cost</source>
+                <target><![CDATA[Costo totale]]></target>
+            </trans-unit>			
+			<trans-unit id="63">
+                <source>txt_total_vat</source>
+                <target><![CDATA[Totale IVA]]></target>
+            </trans-unit>			
+			<trans-unit id="64">
+                <source>txt_purchase</source>
+                <target><![CDATA[Acquisto]]></target>
+            </trans-unit>			
+			<trans-unit id="65">
+                <source>txt_personal_details</source>
+                <target><![CDATA[Dati personali]]></target>
+            </trans-unit>			
+			<trans-unit id="66">
+                <source>txt_firstname</source>
+                <target><![CDATA[Cognome]]></target>
+            </trans-unit>			
+			<trans-unit id="67">
+                <source>txt_lastname</source>
+                <target><![CDATA[Cognome]]></target>
+            </trans-unit>			
+			<trans-unit id="68">
+                <source>txt_old_password</source>
+                <target><![CDATA[vecchia password]]></target>
+            </trans-unit>			
+			<trans-unit id="69">
+                <source>txt_update</source>
+                <target><![CDATA[Aggiornare]]></target>
             </trans-unit>		
         </body>
     </file>

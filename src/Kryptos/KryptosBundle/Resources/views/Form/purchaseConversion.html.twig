@@ -10,7 +10,7 @@
     {% if label is empty %}
         {% set label = name|humanize %}
     {% endif %}
-    <label{% for attrname, attrvalue in label_attr %} {{ attrname }}="{{ attrvalue }}"{% endfor %}>{{ label|trans({}, translation_domain)|raw }}</label>
+    <label{% for attrname, attrvalue in label_attr %} {{ attrname }}="{{ attrvalue }}"{% endfor %}>{{ label|trans|raw }}</label>
 {% endspaceless %}
 {% endblock form_label %}
 
@@ -20,19 +20,19 @@
 	<div class="alert alert-error">
 		<button class="close" data-dismiss="alert" type="button"><i class=" icon-remove"></i></button>
 		{% for error in errors %}
-			{% set errorMessage = error.messageTemplate|trans(error.messageParameters, 'validators') %}
+			{% set errorMessage = error.messageTemplate %}
 			{% set errorMessageBits = errorMessage|split('|', 2) %}
 			
 			{% if errorMessageBits|length == 2 %}
-				{% set title = errorMessageBits[0] %}
-				{% set message = errorMessageBits[1] %}
+				{% set title = errorMessageBits[0]|trans(error.messageParameters) %}
+				{% set message = errorMessageBits[1]|trans(error.messageParameters) %}
 				<strong>
 					<i class=" icon-exclamation-sign"></i>
 					{{ title }}
 				</strong><br>
 				{{ message }}
 			{% else %}
-				{{ error.messageTemplate|trans(error.messageParameters, 'validators') }}<br>
+				{{ error.messageTemplate|trans(error.messageParameters) }}<br>
 			{% endif %}
 		{% endfor %}
 	</div>

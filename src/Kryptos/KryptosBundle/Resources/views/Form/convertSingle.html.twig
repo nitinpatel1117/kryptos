@@ -23,7 +23,7 @@
 	<span class="add-on"><i class="icon-globe"></i></span>&nbsp;
 	<select {{ block('widget_attributes') }}{% if multiple %} multiple="multiple"{% endif %}>
         {% if empty_value is not none %}
-            <option value="">{{ empty_value|trans({}, translation_domain) }}</option>
+            <option value="">{{ empty_value|trans }}</option>
         {% endif %}
         {% if preferred_choices|length > 0 %}
             {% set options = preferred_choices %}
@@ -45,19 +45,19 @@
 	<div class="alert alert-error">
 		<button class="close" data-dismiss="alert" type="button"><i class=" icon-remove"></i></button>
 		{% for error in errors %}
-			{% set errorMessage = error.messageTemplate|trans(error.messageParameters, 'validators') %}
+			{% set errorMessage = error.messageTemplate %}
 			{% set errorMessageBits = errorMessage|split('|', 2) %}
 			
 			{% if errorMessageBits|length == 2 %}
-				{% set title = errorMessageBits[0] %}
-				{% set message = errorMessageBits[1] %}
+				{% set title = errorMessageBits[0]|trans(error.messageParameters) %}
+				{% set message = errorMessageBits[1]|trans(error.messageParameters) %}
 				<strong>
 					<i class=" icon-exclamation-sign"></i>
 					{{ title }}
 				</strong><br>
 				{{ message }}
 			{% else %}
-				{{ error.messageTemplate|trans(error.messageParameters, 'validators') }}<br>
+				{{ error.messageTemplate|trans(error.messageParameters) }}<br>
 			{% endif %}
 		{% endfor %}
 	</div>
