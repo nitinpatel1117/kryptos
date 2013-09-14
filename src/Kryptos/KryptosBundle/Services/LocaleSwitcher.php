@@ -22,7 +22,7 @@ class LocaleSwitcher
     
     public function initLocale()
     {
-    	$val = $this->session->get('_locale');
+    	$val = $this->getLocale();
     	if (!is_null($val)) {
     		$this->request->setLocale($val);
     	}
@@ -33,6 +33,11 @@ class LocaleSwitcher
     {
     	$this->session->set('_locale', $locale);
     	$this->initLocale();
+    }
+    
+    public function getLocale()
+    {
+    	return $this->session->get('_locale');
     }
     
     

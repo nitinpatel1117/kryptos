@@ -7,9 +7,9 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
-use Kryptos\KryptosBundle\Lib\ImportTranslation\ImportTranslations;
+use Kryptos\KryptosBundle\Lib\ExportTranslation\ExportTranslations;
 
-class ImportTranslationsCommand extends ContainerAwareCommand
+class ExportTranslationsXliffCommand extends ContainerAwareCommand
 {
 	// the maximum time that we want to allow this script to sleep for
 	const MAX_SLEEPTIME = '3600';
@@ -24,15 +24,12 @@ class ImportTranslationsCommand extends ContainerAwareCommand
 	protected function configure()
 	{
 		$help =<<<EOF
-This script imports translations from the file declared in the --file parameter.
-The --drop_data=true parameter can be used to remove all existing translation data
+This script exports translations from mongodb to xliff files.
 EOF;
 		
 		$this
-			->setName('kryptos:import-translations')
-			->setDescription('Import translations from a CSV file')
-			->addOption('file', 		null, InputOption::VALUE_OPTIONAL, 'The file that we want to upload from', '')
-			->addOption('drop_data', 	null, InputOption::VALUE_OPTIONAL, 'Flag to determine whether the existing data should be dropped', false)
+			->setName('kryptos:export-translations-xliff')
+			->setDescription('Export translations to XLIFF format')
 			->setHelp($help)
 		;
 	}
@@ -80,12 +77,11 @@ EOF;
 	{
 		$translationManager = $this->getContainer()->get('translation_manager');
 		$configManager 		= $this->getContainer()->get('config_manager');
-		$file 				= $this->getInput()->getOption('file');
-		$dropData 			= $this->getInput()->getOption('drop_data');
-		
-		$importTranslations = new ImportTranslations($translationManager, $configManager, $file, $dropData);
-		$importTranslations->setLogger($this->getLogger());
-		$importTranslations->run();
+		$appPath 			= $this->getContainer()->getParameter('kernel.root_dir');
+
+		$exportTranslations = new ExportTranslations($translationManager, $configManager, $appPath);
+		$exportTranslations->setLogger($this->getLogger());
+		$exportTranslations->run();
 	}
 
 	
@@ -112,10 +108,10 @@ EOF;
 			switch(strtolower($type))
 			{
 				case 'error':
-					$logger->err(sprintf('Error thrown by ImportTranslations in kryptos: %s', $message));
+					$logger->err(sprintf('Error thrown by ExportTranslationsXliff in kryptos: %s', $message));
 					break;
 				default:
-					$logger->info(sprintf('Log from ImportTranslations in kryptos: %s', $message));
+					$logger->info(sprintf('Log from ExportTranslationsXliff in kryptos: %s', $message));
 					break;
 			} 
 		}

@@ -105,5 +105,9 @@ class BaseManager
 		return $this->getMongoCollection()->findAndModify ($query, $update);
 	}
 	
+	public function distinct($key, $query = array())
+	{
+		return $this->getMongoCollection()->distinct ($key, $query);
+	} 
 
 }

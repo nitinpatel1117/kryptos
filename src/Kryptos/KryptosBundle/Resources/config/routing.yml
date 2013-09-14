@@ -102,3 +102,10 @@ download_help_prepare_file:
 download_help_upload_file:
     pattern:  /download/help_upload_file
     defaults: { _controller: KryptosKryptosBundle:Download:helpUploadFile }
+    
+    
+locale_switch:
+    pattern:  /locale/switch/{_locale}
+    defaults: { _controller: KryptosKryptosBundle:Locale:switch, _locale: en}
+    requirements:
+        _locale: en|de|fr|sp|it

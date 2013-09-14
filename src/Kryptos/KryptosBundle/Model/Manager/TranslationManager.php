@@ -53,4 +53,17 @@ class TranslationManager extends BaseManager
     	$query = array('lang' => $translationData['lang'], 'name' =>$translationData['name']);
     	return $this->getMongoCollection()->remove($query, array("w" => 1, "j" => true));
     }
+    
+    
+    public function getDistinctLocales()
+    {
+    	return $this->distinct('lang');
+    }
+    
+    
+    public function getDataForLocale($locale)
+    {
+    	$query = array('lang' => $locale);
+    	return parent::retrieve($query);
+    }
 }

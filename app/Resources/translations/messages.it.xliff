@@ -4,39 +4,39 @@
         <body>			
 			<trans-unit id="1">
                 <source>btn_login</source>
-                <target><![CDATA[S'identifier]]></target>
+                <target><![CDATA[login]]></target>
             </trans-unit>			
 			<trans-unit id="2">
                 <source>txt_forgotten_your_password</source>
-                <target><![CDATA[Vous avez oublié votre mot de passe?]]></target>
+                <target><![CDATA[Hai dimenticato la password?]]></target>
             </trans-unit>			
 			<trans-unit id="3">
                 <source>btn_create_account</source>
-                <target><![CDATA[Créer un compte]]></target>
+                <target><![CDATA[Crea un account]]></target>
             </trans-unit>			
 			<trans-unit id="4">
                 <source>txt_title</source>
-                <target><![CDATA[Titre]]></target>
+                <target><![CDATA[Titolo]]></target>
             </trans-unit>			
 			<trans-unit id="5">
                 <source>txt_forename</source>
-                <target><![CDATA[Prénom]]></target>
+                <target><![CDATA[Prenome]]></target>
             </trans-unit>			
 			<trans-unit id="6">
                 <source>txt_surname</source>
-                <target><![CDATA[Nom]]></target>
+                <target><![CDATA[Cognome]]></target>
             </trans-unit>			
 			<trans-unit id="7">
                 <source>txt_job_title</source>
-                <target><![CDATA[Titre du poste]]></target>
+                <target><![CDATA[Qualifica]]></target>
             </trans-unit>			
 			<trans-unit id="8">
                 <source>txt_company</source>
-                <target><![CDATA[Entreprise]]></target>
+                <target><![CDATA[Azienda]]></target>
             </trans-unit>			
 			<trans-unit id="9">
                 <source>txt_locatoin</source>
-                <target><![CDATA[Emplacement]]></target>
+                <target><![CDATA[Posizione]]></target>
             </trans-unit>			
 			<trans-unit id="10">
                 <source>txt_email</source>
@@ -44,103 +44,103 @@
             </trans-unit>			
 			<trans-unit id="11">
                 <source>txt_confirm_email</source>
-                <target><![CDATA[Confirmez email]]></target>
+                <target><![CDATA[Conferma Email]]></target>
             </trans-unit>			
 			<trans-unit id="12">
                 <source>txt_password</source>
-                <target><![CDATA[Mot de passe]]></target>
+                <target><![CDATA[Parola d'ordine]]></target>
             </trans-unit>			
 			<trans-unit id="13">
                 <source>txt_confirm_password</source>
-                <target><![CDATA[Confirmez mot de passe]]></target>
+                <target><![CDATA[Conferma password]]></target>
             </trans-unit>			
 			<trans-unit id="14">
                 <source>txt_captcha_type_the</source>
-                <target><![CDATA[Tapez les caractères que vous voyez dans l'image ci-dessous.]]></target>
+                <target><![CDATA[Digita i caratteri che vedi nell'immagine qui sotto.]]></target>
             </trans-unit>			
 			<trans-unit id="15">
                 <source>txt_captcha_new_image</source>
-                <target><![CDATA[Nouvelle image]]></target>
+                <target><![CDATA[Nuova immagine]]></target>
             </trans-unit>			
 			<trans-unit id="16">
                 <source>txt_terms_and_cond</source>
-                <target><![CDATA[En cliquant sur "S'inscrire" ci-dessous, vous acceptez nos <a href="#modalTermsConditions" data-toggle="modal">Conditions d'utilisation</a> et que vous avez lu et accepté notre <a href="#modalDataUsePolicy" data-toggle="modal">politique d'utilisation des</a> données, y compris notre politique d'utilisation des <a href="#modalCookieUse" data-toggle="modal">cookies</a>.]]></target>
+                <target><![CDATA[Cliccando su "Sign-up" di seguito si accettano <a href="#modalTermsConditions" data-toggle="modal">Termini e condizioni</a> e di aver letto e accettato la nostra <a href="#modalDataUsePolicy" data-toggle="modal">politica di utilizzo dei dati</a>, tra cui la nostra <a href="#modalCookieUse" data-toggle="modal">politica di uso Cookie</a>.]]></target>
             </trans-unit>			
 			<trans-unit id="17">
                 <source>btn_signup</source>
-                <target><![CDATA[Inscrivez-vous]]></target>
+                <target><![CDATA[Sign-up]]></target>
             </trans-unit>			
 			<trans-unit id="18">
                 <source>txt_back_to_login</source>
-                <target><![CDATA[Retour à la connexion]]></target>
+                <target><![CDATA[Torna alla Login]]></target>
             </trans-unit>			
 			<trans-unit id="19">
                 <source>btn_reset_password</source>
-                <target><![CDATA[Réinitialiser le mot de]]></target>
+                <target><![CDATA[Resettare password]]></target>
             </trans-unit>			
 			<trans-unit id="20">
                 <source>txt_home</source>
-                <target><![CDATA[Maison]]></target>
+                <target><![CDATA[Domestico]]></target>
             </trans-unit>			
 			<trans-unit id="21">
                 <source>txt_convert</source>
-                <target><![CDATA[Convertir]]></target>
+                <target><![CDATA[Conversione]]></target>
             </trans-unit>			
 			<trans-unit id="22">
                 <source>txt_single_conversion</source>
-                <target><![CDATA[Conversion simple]]></target>
+                <target><![CDATA[Conversione Singola]]></target>
             </trans-unit>			
 			<trans-unit id="23">
                 <source>txt_batch_conversion</source>
-                <target><![CDATA[Conversion par lots]]></target>
+                <target><![CDATA[Conversione batch]]></target>
             </trans-unit>			
 			<trans-unit id="24">
                 <source>txt_account</source>
-                <target><![CDATA[Considération]]></target>
+                <target><![CDATA[Acconto]]></target>
             </trans-unit>			
 			<trans-unit id="25">
                 <source>txt_account_history</source>
-                <target><![CDATA[Historique des paiements]]></target>
+                <target><![CDATA[Cronologia pagamenti]]></target>
             </trans-unit>			
 			<trans-unit id="26">
                 <source>txt_purchase_conversions</source>
-                <target><![CDATA[Purchaise Conversions]]></target>
+                <target><![CDATA[Purchaise Conversioni]]></target>
             </trans-unit>			
 			<trans-unit id="27">
                 <source>txt_settings</source>
-                <target><![CDATA[Réglages]]></target>
+                <target><![CDATA[Impostazioni]]></target>
             </trans-unit>			
 			<trans-unit id="28">
                 <source>txt_conversion_summary</source>
-                <target><![CDATA[Résumé de la conversion]]></target>
+                <target><![CDATA[Riepilogo della conversione]]></target>
             </trans-unit>			
 			<trans-unit id="29">
                 <source>txt_datetime</source>
-                <target><![CDATA[Date / heure]]></target>
+                <target><![CDATA[Data / ora]]></target>
             </trans-unit>			
 			<trans-unit id="30">
                 <source>txt_conversions</source>
-                <target><![CDATA[Conversions]]></target>
+                <target><![CDATA[Conversioni]]></target>
             </trans-unit>			
 			<trans-unit id="31">
                 <source>txt_invalid</source>
-                <target><![CDATA[Invalide]]></target>
+                <target><![CDATA[Non valido]]></target>
             </trans-unit>			
 			<trans-unit id="32">
                 <source>txt_latest_sepa_news</source>
-                <target><![CDATA[Dernières Nouvelles SEPA]]></target>
+                <target><![CDATA[Ultime Notizie SEPA]]></target>
             </trans-unit>			
 			<trans-unit id="33">
                 <source>txt_you_are_logged_in_as</source>
-                <target><![CDATA[Vous êtes connecté en tant]]></target>
+                <target><![CDATA[Sei stato registrato come]]></target>
             </trans-unit>			
 			<trans-unit id="34">
                 <source>txt_balance</source>
-                <target><![CDATA[Solde]]></target>
+                <target><![CDATA[Saldo]]></target>
             </trans-unit>			
 			<trans-unit id="35">
                 <source>txt_logout</source>
-                <target><![CDATA[Déconnexion]]></target>
+                <target><![CDATA[Esci]]></target>
             </trans-unit>		
         </body>
     </file>

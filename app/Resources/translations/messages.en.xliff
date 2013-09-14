@@ -1,15 +1,147 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file source-language="en" datatype="plaintext" original="file.ext">
-        <body>
-            <trans-unit id="1">
+        <body>			
+			<trans-unit id="1">
                 <source>btn_login</source>
-                <target>Login</target>
-            </trans-unit>
-            <trans-unit id="2">
+                <target><![CDATA[login]]></target>
+            </trans-unit>			
+			<trans-unit id="2">
                 <source>txt_forgotten_your_password</source>
-                <target>Forgotten your password?</target>
-            </trans-unit>
+                <target><![CDATA[Forgotten your password?]]></target>
+            </trans-unit>			
+			<trans-unit id="3">
+                <source>btn_create_account</source>
+                <target><![CDATA[Create account]]></target>
+            </trans-unit>			
+			<trans-unit id="4">
+                <source>txt_title</source>
+                <target><![CDATA[Title]]></target>
+            </trans-unit>			
+			<trans-unit id="5">
+                <source>txt_forename</source>
+                <target><![CDATA[Forename]]></target>
+            </trans-unit>			
+			<trans-unit id="6">
+                <source>txt_surname</source>
+                <target><![CDATA[Surname]]></target>
+            </trans-unit>			
+			<trans-unit id="7">
+                <source>txt_job_title</source>
+                <target><![CDATA[Job title]]></target>
+            </trans-unit>			
+			<trans-unit id="8">
+                <source>txt_company</source>
+                <target><![CDATA[Company]]></target>
+            </trans-unit>			
+			<trans-unit id="9">
+                <source>txt_locatoin</source>
+                <target><![CDATA[Location]]></target>
+            </trans-unit>			
+			<trans-unit id="10">
+                <source>txt_email</source>
+                <target><![CDATA[Email]]></target>
+            </trans-unit>			
+			<trans-unit id="11">
+                <source>txt_confirm_email</source>
+                <target><![CDATA[Confirm Email]]></target>
+            </trans-unit>			
+			<trans-unit id="12">
+                <source>txt_password</source>
+                <target><![CDATA[Password]]></target>
+            </trans-unit>			
+			<trans-unit id="13">
+                <source>txt_confirm_password</source>
+                <target><![CDATA[Confirm Password]]></target>
+            </trans-unit>			
+			<trans-unit id="14">
+                <source>txt_captcha_type_the</source>
+                <target><![CDATA[Type the characters you see in the picture below.]]></target>
+            </trans-unit>			
+			<trans-unit id="15">
+                <source>txt_captcha_new_image</source>
+                <target><![CDATA[New image]]></target>
+            </trans-unit>			
+			<trans-unit id="16">
+                <source>txt_terms_and_cond</source>
+                <target><![CDATA[By clicking "sign-up" below you agree to our <a href="#modalTermsConditions" data-toggle="modal">Terms and conditions </a> and that you have read and agreed to our <a href="#modalDataUsePolicy" data-toggle="modal">Data use policy,</a> including our <a href="#modalCookieUse" data-toggle="modal">Cookie use </a> policy.]]></target>
+            </trans-unit>			
+			<trans-unit id="17">
+                <source>btn_signup</source>
+                <target><![CDATA[Sign-up]]></target>
+            </trans-unit>			
+			<trans-unit id="18">
+                <source>txt_back_to_login</source>
+                <target><![CDATA[Back to login]]></target>
+            </trans-unit>			
+			<trans-unit id="19">
+                <source>btn_reset_password</source>
+                <target><![CDATA[Reset Password]]></target>
+            </trans-unit>			
+			<trans-unit id="20">
+                <source>txt_home</source>
+                <target><![CDATA[Home]]></target>
+            </trans-unit>			
+			<trans-unit id="21">
+                <source>txt_convert</source>
+                <target><![CDATA[Convert]]></target>
+            </trans-unit>			
+			<trans-unit id="22">
+                <source>txt_single_conversion</source>
+                <target><![CDATA[Single Conversion]]></target>
+            </trans-unit>			
+			<trans-unit id="23">
+                <source>txt_batch_conversion</source>
+                <target><![CDATA[Batch Conversion]]></target>
+            </trans-unit>			
+			<trans-unit id="24">
+                <source>txt_account</source>
+                <target><![CDATA[Account]]></target>
+            </trans-unit>			
+			<trans-unit id="25">
+                <source>txt_account_history</source>
+                <target><![CDATA[Payment History]]></target>
+            </trans-unit>			
+			<trans-unit id="26">
+                <source>txt_purchase_conversions</source>
+                <target><![CDATA[Purchase Conversions]]></target>
+            </trans-unit>			
+			<trans-unit id="27">
+                <source>txt_settings</source>
+                <target><![CDATA[Settings]]></target>
+            </trans-unit>			
+			<trans-unit id="28">
+                <source>txt_conversion_summary</source>
+                <target><![CDATA[Conversion Summary]]></target>
+            </trans-unit>			
+			<trans-unit id="29">
+                <source>txt_datetime</source>
+                <target><![CDATA[Date/time]]></target>
+            </trans-unit>			
+			<trans-unit id="30">
+                <source>txt_conversions</source>
+                <target><![CDATA[Conversions]]></target>
+            </trans-unit>			
+			<trans-unit id="31">
+                <source>txt_invalid</source>
+                <target><![CDATA[Invalid]]></target>
+            </trans-unit>			
+			<trans-unit id="32">
+                <source>txt_latest_sepa_news</source>
+                <target><![CDATA[Latest SEPA News]]></target>
+            </trans-unit>			
+			<trans-unit id="33">
+                <source>txt_you_are_logged_in_as</source>
+                <target><![CDATA[You are logged in as]]></target>
+            </trans-unit>			
+			<trans-unit id="34">
+                <source>txt_balance</source>
+                <target><![CDATA[Balance]]></target>
+            </trans-unit>			
+			<trans-unit id="35">
+                <source>txt_logout</source>
+                <target><![CDATA[Logout]]></target>
+            </trans-unit>		
         </body>
     </file>
 </xliff>
