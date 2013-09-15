@@ -103,180 +103,1120 @@
                 <target><![CDATA[Payment History]]></target>
             </trans-unit>			
 			<trans-unit id="26">
-                <source>txt_purchase_conversions</source>
-                <target><![CDATA[Purchase Conversions]]></target>
-            </trans-unit>			
-			<trans-unit id="27">
                 <source>txt_settings</source>
                 <target><![CDATA[Settings]]></target>
             </trans-unit>			
-			<trans-unit id="28">
+			<trans-unit id="27">
                 <source>txt_conversion_summary</source>
                 <target><![CDATA[Conversion Summary]]></target>
             </trans-unit>			
-			<trans-unit id="29">
+			<trans-unit id="28">
                 <source>txt_datetime</source>
                 <target><![CDATA[Date/time]]></target>
             </trans-unit>			
-			<trans-unit id="30">
+			<trans-unit id="29">
                 <source>txt_conversions</source>
                 <target><![CDATA[Conversions]]></target>
             </trans-unit>			
-			<trans-unit id="31">
+			<trans-unit id="30">
                 <source>txt_invalid</source>
                 <target><![CDATA[Invalid]]></target>
             </trans-unit>			
-			<trans-unit id="32">
+			<trans-unit id="31">
                 <source>txt_latest_sepa_news</source>
                 <target><![CDATA[Latest SEPA News]]></target>
             </trans-unit>			
-			<trans-unit id="33">
+			<trans-unit id="32">
                 <source>txt_you_are_logged_in_as</source>
                 <target><![CDATA[You are logged in as]]></target>
             </trans-unit>			
-			<trans-unit id="34">
+			<trans-unit id="33">
                 <source>txt_balance</source>
                 <target><![CDATA[Balance]]></target>
             </trans-unit>			
-			<trans-unit id="35">
+			<trans-unit id="34">
                 <source>txt_logout</source>
                 <target><![CDATA[Logout]]></target>
             </trans-unit>			
-			<trans-unit id="36">
+			<trans-unit id="35">
                 <source>txt_prepare_your_file</source>
                 <target><![CDATA[1. Prepare your file]]></target>
             </trans-unit>			
-			<trans-unit id="37">
+			<trans-unit id="36">
                 <source>txt_prepare_your_list_of</source>
                 <target><![CDATA[Prepare a list of your account numbers using our template. Save a copy in case you need to edit it later]]></target>
             </trans-unit>			
-			<trans-unit id="38">
+			<trans-unit id="37">
                 <source>txt_download</source>
                 <target><![CDATA[Download]]></target>
             </trans-unit>			
-			<trans-unit id="39">
+			<trans-unit id="38">
                 <source>txt_help</source>
                 <target><![CDATA[Help]]></target>
             </trans-unit>			
-			<trans-unit id="40">
+			<trans-unit id="39">
                 <source>txt_upload_your_file</source>
                 <target><![CDATA[2. Upload your file]]></target>
             </trans-unit>			
-			<trans-unit id="41">
+			<trans-unit id="40">
                 <source>txt_save_the_worksheet</source>
                 <target><![CDATA[Save the worksheet containing your account number data as a .csv file and then upload it here.]]></target>
             </trans-unit>			
-			<trans-unit id="42">
+			<trans-unit id="41">
                 <source>txt_browse</source>
                 <target><![CDATA[Browse]]></target>
             </trans-unit>			
-			<trans-unit id="43">
+			<trans-unit id="42">
                 <source>txt_upload</source>
                 <target><![CDATA[Upload]]></target>
             </trans-unit>			
-			<trans-unit id="44">
+			<trans-unit id="43">
                 <source>txt_file_status_and_history</source>
                 <target><![CDATA[3. File status and History]]></target>
             </trans-unit>			
-			<trans-unit id="45">
+			<trans-unit id="44">
                 <source>txt_filename</source>
                 <target><![CDATA[Filename]]></target>
             </trans-unit>			
-			<trans-unit id="46">
+			<trans-unit id="45">
                 <source>txt_status_result</source>
                 <target><![CDATA[Status / Result]]></target>
             </trans-unit>			
-			<trans-unit id="47">
+			<trans-unit id="46">
                 <source>txt_download_file</source>
                 <target><![CDATA[Download File]]></target>
             </trans-unit>			
-			<trans-unit id="48">
+			<trans-unit id="47">
                 <source>txt_converted_successfully</source>
                 <target><![CDATA[Converted Sucessfully]]></target>
             </trans-unit>			
-			<trans-unit id="49">
+			<trans-unit id="48">
                 <source>txt_insufficient_funds</source>
                 <target><![CDATA[Insufficient Funds]]></target>
             </trans-unit>			
-			<trans-unit id="50">
+			<trans-unit id="49">
                 <source>txt_payment_failed</source>
                 <target><![CDATA[Payment Failed]]></target>
             </trans-unit>			
-			<trans-unit id="51">
+			<trans-unit id="50">
                 <source>txt_failed</source>
                 <target><![CDATA[Failed]]></target>
             </trans-unit>			
-			<trans-unit id="52">
+			<trans-unit id="51">
                 <source>txt_type</source>
                 <target><![CDATA[Type]]></target>
             </trans-unit>			
-			<trans-unit id="53">
+			<trans-unit id="52">
                 <source>txt_cost_price</source>
                 <target><![CDATA[Cost Price]]></target>
             </trans-unit>			
-			<trans-unit id="54">
+			<trans-unit id="53">
                 <source>txt_transaction_id</source>
                 <target><![CDATA[Transaction id]]></target>
             </trans-unit>			
-			<trans-unit id="55">
+			<trans-unit id="54">
                 <source>txt_debit</source>
                 <target><![CDATA[Debit]]></target>
             </trans-unit>			
-			<trans-unit id="56">
+			<trans-unit id="55">
                 <source>txt_credit</source>
                 <target><![CDATA[Credit]]></target>
             </trans-unit>			
-			<trans-unit id="57">
+			<trans-unit id="56">
                 <source>txt_status</source>
                 <target><![CDATA[Status]]></target>
             </trans-unit>			
-			<trans-unit id="58">
+			<trans-unit id="57">
                 <source>txt_ok</source>
                 <target><![CDATA[Ok]]></target>
             </trans-unit>			
-			<trans-unit id="59">
+			<trans-unit id="58">
                 <source>txt_pending</source>
                 <target><![CDATA[Pending]]></target>
             </trans-unit>			
-			<trans-unit id="60">
+			<trans-unit id="59">
                 <source>txt_purchase_details</source>
-                <target><![CDATA[Purchased Details]]></target>
+                <target><![CDATA[Purchase Details]]></target>
             </trans-unit>			
-			<trans-unit id="61">
+			<trans-unit id="60">
                 <source>txt_no_of_conversions</source>
                 <target><![CDATA[No. of conversions]]></target>
             </trans-unit>			
-			<trans-unit id="62">
+			<trans-unit id="61">
                 <source>txt_total_cost</source>
                 <target><![CDATA[Total Cost]]></target>
             </trans-unit>			
-			<trans-unit id="63">
+			<trans-unit id="62">
                 <source>txt_total_vat</source>
                 <target><![CDATA[Total VAT]]></target>
             </trans-unit>			
-			<trans-unit id="64">
+			<trans-unit id="63">
                 <source>txt_purchase</source>
-                <target><![CDATA[Purchase ]]></target>
+                <target><![CDATA[Purchase]]></target>
             </trans-unit>			
-			<trans-unit id="65">
+			<trans-unit id="64">
                 <source>txt_personal_details</source>
                 <target><![CDATA[Personal details]]></target>
             </trans-unit>			
-			<trans-unit id="66">
+			<trans-unit id="65">
                 <source>txt_firstname</source>
                 <target><![CDATA[Firstname]]></target>
             </trans-unit>			
-			<trans-unit id="67">
+			<trans-unit id="66">
                 <source>txt_lastname</source>
                 <target><![CDATA[Lastname]]></target>
             </trans-unit>			
-			<trans-unit id="68">
+			<trans-unit id="67">
                 <source>txt_old_password</source>
                 <target><![CDATA[old password]]></target>
             </trans-unit>			
-			<trans-unit id="69">
+			<trans-unit id="68">
                 <source>txt_update</source>
                 <target><![CDATA[Update]]></target>
+            </trans-unit>			
+			<trans-unit id="69">
+                <source>msg_title_login_incomplete</source>
+                <target><![CDATA[Login incomplete]]></target>
+            </trans-unit>			
+			<trans-unit id="70">
+                <source>msg_desc_enter_email</source>
+                <target><![CDATA[Please enter your email.]]></target>
+            </trans-unit>			
+			<trans-unit id="71">
+                <source>msg_desc_enter_password</source>
+                <target><![CDATA[Please enter your password.]]></target>
+            </trans-unit>			
+			<trans-unit id="72">
+                <source>msg_title_incorrect_email</source>
+                <target><![CDATA[Incorrect Email]]></target>
+            </trans-unit>			
+			<trans-unit id="73">
+                <source>msg_desc_incorrect_email</source>
+                <target><![CDATA[The email "test_test_test" is not a valid email.]]></target>
+            </trans-unit>			
+			<trans-unit id="74">
+                <source>msg_title_incorrect_email_pass_combi</source>
+                <target><![CDATA[Incorrect email/password combination]]></target>
+            </trans-unit>			
+			<trans-unit id="75">
+                <source>msg_desc_incorrect_email_pass_combi</source>
+                <target><![CDATA[Passwords are case sensitive. Please check your CAPS lock key. You can reset your password here.]]></target>
+            </trans-unit>			
+			<trans-unit id="76">
+                <source>msg_title_account_not_activated</source>
+                <target><![CDATA[Your account has not been activated]]></target>
+            </trans-unit>			
+			<trans-unit id="77">
+                <source>msg_desc_account_not_activated</source>
+                <target><![CDATA[Please click on the activation link that was sent to the email address that you registered with.]]></target>
+            </trans-unit>			
+			<trans-unit id="78">
+                <source>txt_title_item_mr</source>
+                <target><![CDATA[Mr.]]></target>
+            </trans-unit>			
+			<trans-unit id="79">
+                <source>txt_title_item_mrs</source>
+                <target><![CDATA[Mrs.]]></target>
+            </trans-unit>			
+			<trans-unit id="80">
+                <source>txt_title_item_miss</source>
+                <target><![CDATA[Miss.]]></target>
+            </trans-unit>			
+			<trans-unit id="81">
+                <source>txt_title_item_ms</source>
+                <target><![CDATA[Ms.]]></target>
+            </trans-unit>			
+			<trans-unit id="82">
+                <source>txt_title_item_dr</source>
+                <target><![CDATA[Dr .]]></target>
+            </trans-unit>			
+			<trans-unit id="83">
+                <source>txt_title_item_prof</source>
+                <target><![CDATA[Prof.]]></target>
+            </trans-unit>			
+			<trans-unit id="84">
+                <source>txt_title_item_other</source>
+                <target><![CDATA[Other]]></target>
+            </trans-unit>			
+			<trans-unit id="85">
+                <source>msg_title_registration_incomplete</source>
+                <target><![CDATA[Registration incomplete]]></target>
+            </trans-unit>			
+			<trans-unit id="86">
+                <source>msg_desc_select_title</source>
+                <target><![CDATA[Please select your title.]]></target>
+            </trans-unit>			
+			<trans-unit id="87">
+                <source>msg_desc_enter_forename</source>
+                <target><![CDATA[Please enter your forename.]]></target>
+            </trans-unit>			
+			<trans-unit id="88">
+                <source>msg_desc_enter_surname</source>
+                <target><![CDATA[Please enter your surname.]]></target>
+            </trans-unit>			
+			<trans-unit id="89">
+                <source>msg_desc_enter_job_title</source>
+                <target><![CDATA[Please enter your Job Title.]]></target>
+            </trans-unit>			
+			<trans-unit id="90">
+                <source>msg_desc_enter_company_name</source>
+                <target><![CDATA[Please enter your company name.]]></target>
+            </trans-unit>			
+			<trans-unit id="91">
+                <source>msg_desc_enter_location</source>
+                <target><![CDATA[Please enter your location.]]></target>
+            </trans-unit>			
+			<trans-unit id="92">
+                <source>msg_msg_incorrect_email</source>
+                <target><![CDATA[The email "{{ email }}" is not a valid email address. Please try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="93">
+                <source>msg_title_email_not_match</source>
+                <target><![CDATA[Email's do not match]]></target>
+            </trans-unit>			
+			<trans-unit id="94">
+                <source>msg_desc_email_not_match</source>
+                <target><![CDATA[The Email addresses you have typed do not match. Please check and try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="95">
+                <source>msg_title_email_already_registered</source>
+                <target><![CDATA[Email already registered]]></target>
+            </trans-unit>			
+			<trans-unit id="96">
+                <source>msg_desc_email_already_registered</source>
+                <target><![CDATA[The email "{{  email }}" already exists on our system. If you have previously registered and forgotten your password, please go back to the sign in screen and reset your password by clicking on 'Forgotten your password?']]></target>
+            </trans-unit>			
+			<trans-unit id="97">
+                <source>msg_title_password_not_match</source>
+                <target><![CDATA[Password's do not match]]></target>
+            </trans-unit>			
+			<trans-unit id="98">
+                <source>msg_desc_password_not_match</source>
+                <target><![CDATA[The Passwords you have typed do not match. Please check and try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="99">
+                <source>msg_title_invalid_password</source>
+                <target><![CDATA[Invalid password]]></target>
+            </trans-unit>			
+			<trans-unit id="100">
+                <source>msg_desc_password_too_short</source>
+                <target><![CDATA[Password value is too short. It should have 4 characters or more.]]></target>
+            </trans-unit>			
+			<trans-unit id="101">
+                <source>msg_desc_password_only_alphanum</source>
+                <target><![CDATA[Password should only contain alphanumber characters. (a to z) and (0 to 9)]]></target>
+            </trans-unit>			
+			<trans-unit id="102">
+                <source>msg_desc_accept_terms</source>
+                <target><![CDATA[You must accept the terms and conditions in order to proceed.]]></target>
+            </trans-unit>			
+			<trans-unit id="103">
+                <source>msg_title_character_mismatch</source>
+                <target><![CDATA[Character mismatch]]></target>
+            </trans-unit>			
+			<trans-unit id="104">
+                <source>msg_desc_character_mismatch</source>
+                <target><![CDATA[The characters that you have entered do not match with the ones shown in the image. Please try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="105">
+                <source>txt_title_registration_thanks</source>
+                <target><![CDATA[Thank you for your registration]]></target>
+            </trans-unit>			
+			<trans-unit id="106">
+                <source>txt_para_registration_thanks</source>
+                <target><![CDATA[You will shortly receive an activation email to the email address you provided. Please click on the activation link contained in the email to confirm your email address.]]></target>
+            </trans-unit>			
+			<trans-unit id="107">
+                <source>email_subject_activation</source>
+                <target><![CDATA[Kryptos: Account activation?]]></target>
+            </trans-unit>			
+			<trans-unit id="108">
+                <source>email_body_activation_1</source>
+                <target><![CDATA[Hello {{ firsname }} {{ surname }},]]></target>
+            </trans-unit>			
+			<trans-unit id="109">
+                <source>email_body_activation_2</source>
+                <target><![CDATA[Your registration at Kryptos has been received.]]></target>
+            </trans-unit>			
+			<trans-unit id="110">
+                <source>email_body_activation_3</source>
+                <target><![CDATA[Please confirm your email address by clicking on the URL below:]]></target>
+            </trans-unit>			
+			<trans-unit id="111">
+                <source>email_body_activation_4</source>
+                <target><![CDATA[If you are having difficulties accessing the above URL, try copy and pasting the full URL into your web browser.]]></target>
+            </trans-unit>			
+			<trans-unit id="112">
+                <source>email_body_activation_5</source>
+                <target><![CDATA[Kind Regards,]]></target>
+            </trans-unit>			
+			<trans-unit id="113">
+                <source>email_body_activation_6</source>
+                <target><![CDATA[This is an autogenerated email, please do not reply to this email.]]></target>
+            </trans-unit>			
+			<trans-unit id="114">
+                <source>txt_title_account_activated</source>
+                <target><![CDATA[Your account has been activated]]></target>
+            </trans-unit>			
+			<trans-unit id="115">
+                <source>txt_para_account_activated</source>
+                <target><![CDATA[You may now sign in via the <a href="{{ link_url }}" >{{ link_text }}</a> screen.]]></target>
+            </trans-unit>			
+			<trans-unit id="116">
+                <source>txt_title_account_already_activated</source>
+                <target><![CDATA[Account has already been activated]]></target>
+            </trans-unit>			
+			<trans-unit id="117">
+                <source>txt_title_activation_url_not_valid</source>
+                <target><![CDATA[This activation URL is NOT valid]]></target>
+            </trans-unit>			
+			<trans-unit id="118">
+                <source>txt_title_password_reset</source>
+                <target><![CDATA[Password Reset]]></target>
+            </trans-unit>			
+			<trans-unit id="119">
+                <source>txt_para_password_reset</source>
+                <target><![CDATA[An email has been sent to the email address you provided. Please click on the link contained in the email to confirm your email address. You will be able to reset your password once your email address has been confirmed.]]></target>
+            </trans-unit>			
+			<trans-unit id="120">
+                <source>email_subject_password_reset</source>
+                <target><![CDATA[Kryptos: Password Reset?]]></target>
+            </trans-unit>			
+			<trans-unit id="121">
+                <source>email_body_password_reset_1</source>
+                <target><![CDATA[Hello {{ firstname }} {{ lastname }},]]></target>
+            </trans-unit>			
+			<trans-unit id="122">
+                <source>email_body_password_reset_2</source>
+                <target><![CDATA[You requested that your password at Kryptos be reset.]]></target>
+            </trans-unit>			
+			<trans-unit id="123">
+                <source>email_body_password_reset_3</source>
+                <target><![CDATA[In order to proceed you will need to confirm your email address by clicking on the URL below.]]></target>
+            </trans-unit>			
+			<trans-unit id="124">
+                <source>email_body_password_reset_4</source>
+                <target><![CDATA[If you are having difficulties accessing the above URL, try copy and pasting the full URL into your web browser.]]></target>
+            </trans-unit>			
+			<trans-unit id="125">
+                <source>email_body_password_reset_5</source>
+                <target><![CDATA[If you did not request a change of password or do not wish to proceed with resetting your password, please ignore this email.]]></target>
+            </trans-unit>			
+			<trans-unit id="126">
+                <source>email_body_password_reset_6</source>
+                <target><![CDATA[Kind Regards,]]></target>
+            </trans-unit>			
+			<trans-unit id="127">
+                <source>email_body_password_reset_7</source>
+                <target><![CDATA[This is an autogenerated email, please do not reply to this email.]]></target>
+            </trans-unit>			
+			<trans-unit id="128">
+                <source>msg_title_password_reset_incomplete</source>
+                <target><![CDATA[Password reset incomplete]]></target>
+            </trans-unit>			
+			<trans-unit id="129">
+                <source>msg_desc_password_reset_incomplete</source>
+                <target><![CDATA[Please enter your password. This value should not be blank.]]></target>
+            </trans-unit>			
+			<trans-unit id="130">
+                <source>txt_title_password_reset_confirm</source>
+                <target><![CDATA[Password reset]]></target>
+            </trans-unit>			
+			<trans-unit id="131">
+                <source>txt_para_password_reset_confirm</source>
+                <target><![CDATA[Your password has been successfully reset. Please use your new password from now on.]]></target>
+            </trans-unit>			
+			<trans-unit id="132">
+                <source>txt_title_password_reset_unable</source>
+                <target><![CDATA[Unable to reset password]]></target>
+            </trans-unit>			
+			<trans-unit id="133">
+                <source>txt_para_password_reset_already_used</source>
+                <target><![CDATA[Password has already been reset using this password reset URL.]]></target>
+            </trans-unit>			
+			<trans-unit id="134">
+                <source>txt_para_password_reset_link_not_valid</source>
+                <target><![CDATA[This password reset URL is NOT valid.]]></target>
+            </trans-unit>			
+			<trans-unit id="135">
+                <source>txt_ok_refunded</source>
+                <target><![CDATA[Ok - Refund]]></target>
+            </trans-unit>			
+			<trans-unit id="136">
+                <source>txt_convert_bank_account</source>
+                <target><![CDATA[Convert Bank account]]></target>
+            </trans-unit>			
+			<trans-unit id="137">
+                <source>txt_convert_results</source>
+                <target><![CDATA[Converted Results]]></target>
+            </trans-unit>			
+			<trans-unit id="138">
+                <source>txt_bic</source>
+                <target><![CDATA[BIC]]></target>
+            </trans-unit>			
+			<trans-unit id="139">
+                <source>txt_bank</source>
+                <target><![CDATA[Bank]]></target>
+            </trans-unit>			
+			<trans-unit id="140">
+                <source>txt_branch</source>
+                <target><![CDATA[Branch]]></target>
+            </trans-unit>			
+			<trans-unit id="141">
+                <source>txt_address</source>
+                <target><![CDATA[Address]]></target>
+            </trans-unit>			
+			<trans-unit id="142">
+                <source>msg_title_invalid_details</source>
+                <target><![CDATA[Invalid Details]]></target>
+            </trans-unit>			
+			<trans-unit id="143">
+                <source>msg_desc_iban_or_country</source>
+                <target><![CDATA[Required fields have not been completed, either an IBAN must be supplied or a Country must be selected. Please try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="144">
+                <source>msg_title_invalid_bank_account</source>
+                <target><![CDATA[Invalid Bank Account]]></target>
+            </trans-unit>			
+			<trans-unit id="145">
+                <source>msg_desc_invalid_bank_account</source>
+                <target><![CDATA[The bank account provided is incorrect. Please check and try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="146">
+                <source>msg_desc_bban_required</source>
+                <target><![CDATA[<bban_fieldname> is a required field. Please supply a value for <bban_fieldname> and try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="147">
+                <source>msg_title_bank_account_valid</source>
+                <target><![CDATA[Bank Account valid]]></target>
+            </trans-unit>			
+			<trans-unit id="148">
+                <source>msg_desc_bank_account_valid</source>
+                <target><![CDATA[The bank account provided is valid and has been converted to SEPA format.]]></target>
+            </trans-unit>			
+			<trans-unit id="149">
+                <source>msg_title_bank_account_transposed</source>
+                <target><![CDATA[Bank Account Details Transposed]]></target>
+            </trans-unit>			
+			<trans-unit id="150">
+                <source>msg_desc_bank_account_transposed</source>
+                <target><![CDATA[Account details were not in standard form and have been transposed.]]></target>
+            </trans-unit>			
+			<trans-unit id="151">
+                <source>msg_title_sepa_dd_unsupported</source>
+                <target><![CDATA[SEPA Direct Debit unsupported]]></target>
+            </trans-unit>			
+			<trans-unit id="152">
+                <source>msg_desc_sepa_dd_unsupported</source>
+                <target><![CDATA[The bank/branch does not support SEPA Direct Debit]]></target>
+            </trans-unit>			
+			<trans-unit id="153">
+                <source>msg_title_sepa_ct_unsupported</source>
+                <target><![CDATA[SEPA Credit Transfer unsupported]]></target>
+            </trans-unit>			
+			<trans-unit id="154">
+                <source>msg_desc_sepa_ct_unsupported</source>
+                <target><![CDATA[The bank/branch does not support SEPA Credit Transfers]]></target>
+            </trans-unit>			
+			<trans-unit id="155">
+                <source>msg_title_sepa_bdd_unsupported</source>
+                <target><![CDATA[SEPA Business Direct Debit unsupported]]></target>
+            </trans-unit>			
+			<trans-unit id="156">
+                <source>msg_desc_sepa_bdd_unsupported</source>
+                <target><![CDATA[The bank/branch does not support SEPA Business Direct Debit payments]]></target>
+            </trans-unit>			
+			<trans-unit id="157">
+                <source>btn_cancel</source>
+                <target><![CDATA[Cancel]]></target>
+            </trans-unit>			
+			<trans-unit id="158">
+                <source>txt_need_verifying</source>
+                <target><![CDATA[Need verifying]]></target>
+            </trans-unit>			
+			<trans-unit id="159">
+                <source>txt_conversions_refunded</source>
+                <target><![CDATA[Conversions refunded]]></target>
+            </trans-unit>			
+			<trans-unit id="160">
+                <source>msg_title_attention_required</source>
+                <target><![CDATA[Attention Required]]></target>
+            </trans-unit>			
+			<trans-unit id="161">
+                <source>msg_desc_attention_required_1</source>
+                <target><![CDATA[You do not have enough conversions to proceed with the processing of the file that you have just uploaded.]]></target>
+            </trans-unit>			
+			<trans-unit id="162">
+                <source>msg_desc_attention_required_2</source>
+                <target><![CDATA[You will need to purchase conversions in order for the file to be processed. Click the 'purchase' button to purchase the correct amount of conversions and have your file processed.]]></target>
+            </trans-unit>			
+			<trans-unit id="163">
+                <source>msg_desc_attention_required_3</source>
+                <target><![CDATA[Alternatively, if you do not wish to purchase conversions at this time simply click 'cancel', and your uploaded file will be removed.]]></target>
+            </trans-unit>			
+			<trans-unit id="164">
+                <source>txt_purchase_conversions</source>
+                <target><![CDATA[Purchase Conversions]]></target>
+            </trans-unit>			
+			<trans-unit id="165">
+                <source>txt_please_wait</source>
+                <target><![CDATA[Please wait.]]></target>
+            </trans-unit>			
+			<trans-unit id="166">
+                <source>txt_no_of_conversion_being_calc</source>
+                <target><![CDATA[The number of conversions you require for your uploaded file is being calculated.]]></target>
+            </trans-unit>			
+			<trans-unit id="167">
+                <source>txt_cost</source>
+                <target><![CDATA[Cost]]></target>
+            </trans-unit>			
+			<trans-unit id="168">
+                <source>msg_title_login_incomplete</source>
+                <target><![CDATA[Login incomplete]]></target>
+            </trans-unit>			
+			<trans-unit id="169">
+                <source>msg_desc_enter_email</source>
+                <target><![CDATA[Please enter your email.]]></target>
+            </trans-unit>			
+			<trans-unit id="170">
+                <source>msg_desc_enter_password</source>
+                <target><![CDATA[Please enter your password.]]></target>
+            </trans-unit>			
+			<trans-unit id="171">
+                <source>msg_title_incorrect_email</source>
+                <target><![CDATA[Incorrect Email]]></target>
+            </trans-unit>			
+			<trans-unit id="172">
+                <source>msg_desc_incorrect_email</source>
+                <target><![CDATA[The email "test_test_test" is not a valid email.]]></target>
+            </trans-unit>			
+			<trans-unit id="173">
+                <source>msg_title_incorrect_email_pass_combi</source>
+                <target><![CDATA[Incorrect email/password combination]]></target>
+            </trans-unit>			
+			<trans-unit id="174">
+                <source>msg_desc_incorrect_email_pass_combi</source>
+                <target><![CDATA[Passwords are case sensitive. Please check your CAPS lock key. You can reset your password here.]]></target>
+            </trans-unit>			
+			<trans-unit id="175">
+                <source>msg_title_account_not_activated</source>
+                <target><![CDATA[Your account has not been activated]]></target>
+            </trans-unit>			
+			<trans-unit id="176">
+                <source>msg_desc_account_not_activated</source>
+                <target><![CDATA[Please click on the activation link that was sent to the email address that you registered with.]]></target>
+            </trans-unit>			
+			<trans-unit id="177">
+                <source>txt_title_item_mr</source>
+                <target><![CDATA[Mr.]]></target>
+            </trans-unit>			
+			<trans-unit id="178">
+                <source>txt_title_item_mrs</source>
+                <target><![CDATA[Mrs.]]></target>
+            </trans-unit>			
+			<trans-unit id="179">
+                <source>txt_title_item_miss</source>
+                <target><![CDATA[Miss.]]></target>
+            </trans-unit>			
+			<trans-unit id="180">
+                <source>txt_title_item_ms</source>
+                <target><![CDATA[Ms.]]></target>
+            </trans-unit>			
+			<trans-unit id="181">
+                <source>txt_title_item_dr</source>
+                <target><![CDATA[Dr .]]></target>
+            </trans-unit>			
+			<trans-unit id="182">
+                <source>txt_title_item_prof</source>
+                <target><![CDATA[Prof.]]></target>
+            </trans-unit>			
+			<trans-unit id="183">
+                <source>txt_title_item_other</source>
+                <target><![CDATA[Other]]></target>
+            </trans-unit>			
+			<trans-unit id="184">
+                <source>msg_title_registration_incomplete</source>
+                <target><![CDATA[Registration incomplete]]></target>
+            </trans-unit>			
+			<trans-unit id="185">
+                <source>msg_desc_select_title</source>
+                <target><![CDATA[Please select your title.]]></target>
+            </trans-unit>			
+			<trans-unit id="186">
+                <source>msg_desc_enter_forename</source>
+                <target><![CDATA[Please enter your forename.]]></target>
+            </trans-unit>			
+			<trans-unit id="187">
+                <source>msg_desc_enter_surname</source>
+                <target><![CDATA[Please enter your surname.]]></target>
+            </trans-unit>			
+			<trans-unit id="188">
+                <source>msg_desc_enter_job_title</source>
+                <target><![CDATA[Please enter your Job Title.]]></target>
+            </trans-unit>			
+			<trans-unit id="189">
+                <source>msg_desc_enter_company_name</source>
+                <target><![CDATA[Please enter your company name.]]></target>
+            </trans-unit>			
+			<trans-unit id="190">
+                <source>msg_desc_enter_location</source>
+                <target><![CDATA[Please enter your location.]]></target>
+            </trans-unit>			
+			<trans-unit id="191">
+                <source>msg_title_incorrect_email</source>
+                <target><![CDATA[Incorrect Email]]></target>
+            </trans-unit>			
+			<trans-unit id="192">
+                <source>msg_msg_incorrect_email</source>
+                <target><![CDATA[The email "{{ email }}" is not a valid email address. Please try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="193">
+                <source>msg_title_email_not_match</source>
+                <target><![CDATA[Email's do not match]]></target>
+            </trans-unit>			
+			<trans-unit id="194">
+                <source>msg_desc_email_not_match</source>
+                <target><![CDATA[The Email addresses you have typed do not match. Please check and try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="195">
+                <source>msg_title_email_already_registered</source>
+                <target><![CDATA[Email already registered]]></target>
+            </trans-unit>			
+			<trans-unit id="196">
+                <source>msg_desc_email_already_registered</source>
+                <target><![CDATA[The email "{{  email }}" already exists on our system. If you have previously registered and forgotten your password, please go back to the sign in screen and reset your password by clicking on 'Forgotten your password?']]></target>
+            </trans-unit>			
+			<trans-unit id="197">
+                <source>msg_title_password_not_match</source>
+                <target><![CDATA[Password's do not match]]></target>
+            </trans-unit>			
+			<trans-unit id="198">
+                <source>msg_desc_password_not_match</source>
+                <target><![CDATA[The Passwords you have typed do not match. Please check and try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="199">
+                <source>msg_title_invalid_password</source>
+                <target><![CDATA[Invalid password]]></target>
+            </trans-unit>			
+			<trans-unit id="200">
+                <source>msg_desc_password_too_short</source>
+                <target><![CDATA[Password value is too short. It should have 4 characters or more.]]></target>
+            </trans-unit>			
+			<trans-unit id="201">
+                <source>msg_desc_password_only_alphanum</source>
+                <target><![CDATA[Password should only contain alphanumber characters. (a to z) and (0 to 9)]]></target>
+            </trans-unit>			
+			<trans-unit id="202">
+                <source>msg_desc_accept_terms</source>
+                <target><![CDATA[You must accept the terms and conditions in order to proceed.]]></target>
+            </trans-unit>			
+			<trans-unit id="203">
+                <source>msg_title_character_mismatch</source>
+                <target><![CDATA[Character mismatch]]></target>
+            </trans-unit>			
+			<trans-unit id="204">
+                <source>msg_desc_character_mismatch</source>
+                <target><![CDATA[The characters that you have entered do not match with the ones shown in the image. Please try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="205">
+                <source>txt_title_registration_thanks</source>
+                <target><![CDATA[Thank you for your registration]]></target>
+            </trans-unit>			
+			<trans-unit id="206">
+                <source>txt_para_registration_thanks</source>
+                <target><![CDATA[You will shortly receive an activation email to the email address you provided. Please click on the activation link contained in the email to confirm your email address.]]></target>
+            </trans-unit>			
+			<trans-unit id="207">
+                <source>email_subject_activation</source>
+                <target><![CDATA[Kryptos: Account activation?]]></target>
+            </trans-unit>			
+			<trans-unit id="208">
+                <source>email_body_activation_1</source>
+                <target><![CDATA[Hello {{ firsname }} {{ surname }},]]></target>
+            </trans-unit>			
+			<trans-unit id="209">
+                <source>email_body_activation_2</source>
+                <target><![CDATA[Your registration at Kryptos has been received.]]></target>
+            </trans-unit>			
+			<trans-unit id="210">
+                <source>email_body_activation_3</source>
+                <target><![CDATA[Please confirm your email address by clicking on the URL below:]]></target>
+            </trans-unit>			
+			<trans-unit id="211">
+                <source>email_body_activation_4</source>
+                <target><![CDATA[If you are having difficulties accessing the above URL, try copy and pasting the full URL into your web browser.]]></target>
+            </trans-unit>			
+			<trans-unit id="212">
+                <source>email_body_activation_5</source>
+                <target><![CDATA[Kind Regards,]]></target>
+            </trans-unit>			
+			<trans-unit id="213">
+                <source>email_body_activation_6</source>
+                <target><![CDATA[This is an autogenerated email, please do not reply to this email.]]></target>
+            </trans-unit>			
+			<trans-unit id="214">
+                <source>txt_title_account_activated</source>
+                <target><![CDATA[Your account has been activated]]></target>
+            </trans-unit>			
+			<trans-unit id="215">
+                <source>txt_para_account_activated</source>
+                <target><![CDATA[You may now sign in via the <a href="{{ link_url }}" >{{ link_text }}</a> screen.]]></target>
+            </trans-unit>			
+			<trans-unit id="216">
+                <source>txt_title_account_already_activated</source>
+                <target><![CDATA[Account has already been activated]]></target>
+            </trans-unit>			
+			<trans-unit id="217">
+                <source>txt_title_activation_url_not_valid</source>
+                <target><![CDATA[This activation URL is NOT valid]]></target>
+            </trans-unit>			
+			<trans-unit id="218">
+                <source>msg_desc_enter_email</source>
+                <target><![CDATA[Please enter your email.]]></target>
+            </trans-unit>			
+			<trans-unit id="219">
+                <source>txt_title_password_reset</source>
+                <target><![CDATA[Password Reset]]></target>
+            </trans-unit>			
+			<trans-unit id="220">
+                <source>txt_para_password_reset</source>
+                <target><![CDATA[An email has been sent to the email address you provided. Please click on the link contained in the email to confirm your email address. You will be able to reset your password once your email address has been confirmed.]]></target>
+            </trans-unit>			
+			<trans-unit id="221">
+                <source>email_subject_password_reset</source>
+                <target><![CDATA[Kryptos: Password Reset?]]></target>
+            </trans-unit>			
+			<trans-unit id="222">
+                <source>email_body_password_reset_1</source>
+                <target><![CDATA[Hello {{ firstname }} {{ lastname }},]]></target>
+            </trans-unit>			
+			<trans-unit id="223">
+                <source>email_body_password_reset_2</source>
+                <target><![CDATA[You requested that your password at Kryptos be reset.]]></target>
+            </trans-unit>			
+			<trans-unit id="224">
+                <source>email_body_password_reset_3</source>
+                <target><![CDATA[In order to proceed you will need to confirm your email address by clicking on the URL below.]]></target>
+            </trans-unit>			
+			<trans-unit id="225">
+                <source>email_body_password_reset_4</source>
+                <target><![CDATA[If you are having difficulties accessing the above URL, try copy and pasting the full URL into your web browser.]]></target>
+            </trans-unit>			
+			<trans-unit id="226">
+                <source>email_body_password_reset_5</source>
+                <target><![CDATA[If you did not request a change of password or do not wish to proceed with resetting your password, please ignore this email.]]></target>
+            </trans-unit>			
+			<trans-unit id="227">
+                <source>email_body_password_reset_6</source>
+                <target><![CDATA[Kind Regards,]]></target>
+            </trans-unit>			
+			<trans-unit id="228">
+                <source>email_body_password_reset_7</source>
+                <target><![CDATA[This is an autogenerated email, please do not reply to this email.]]></target>
+            </trans-unit>			
+			<trans-unit id="229">
+                <source>msg_title_password_reset_incomplete</source>
+                <target><![CDATA[Password reset incomplete]]></target>
+            </trans-unit>			
+			<trans-unit id="230">
+                <source>msg_desc_password_reset_incomplete</source>
+                <target><![CDATA[Please enter your password. This value should not be blank.]]></target>
+            </trans-unit>			
+			<trans-unit id="231">
+                <source>txt_title_password_reset_confirm</source>
+                <target><![CDATA[Password reset]]></target>
+            </trans-unit>			
+			<trans-unit id="232">
+                <source>txt_para_password_reset_confirm</source>
+                <target><![CDATA[Your password has been successfully reset. Please use your new password from now on.]]></target>
+            </trans-unit>			
+			<trans-unit id="233">
+                <source>txt_title_password_reset_unable</source>
+                <target><![CDATA[Unable to reset password]]></target>
+            </trans-unit>			
+			<trans-unit id="234">
+                <source>txt_para_password_reset_already_used</source>
+                <target><![CDATA[Password has already been reset using this password reset URL.]]></target>
+            </trans-unit>			
+			<trans-unit id="235">
+                <source>txt_para_password_reset_link_not_valid</source>
+                <target><![CDATA[This password reset URL is NOT valid.]]></target>
+            </trans-unit>			
+			<trans-unit id="236">
+                <source>txt_ok_refunded</source>
+                <target><![CDATA[Ok - Refund]]></target>
+            </trans-unit>			
+			<trans-unit id="237">
+                <source>txt_convert_bank_account</source>
+                <target><![CDATA[Convert Bank account]]></target>
+            </trans-unit>			
+			<trans-unit id="238">
+                <source>txt_convert_results</source>
+                <target><![CDATA[Converted Results]]></target>
+            </trans-unit>			
+			<trans-unit id="239">
+                <source>txt_bic</source>
+                <target><![CDATA[BIC]]></target>
+            </trans-unit>			
+			<trans-unit id="240">
+                <source>txt_bank</source>
+                <target><![CDATA[Bank]]></target>
+            </trans-unit>			
+			<trans-unit id="241">
+                <source>txt_branch</source>
+                <target><![CDATA[Branch]]></target>
+            </trans-unit>			
+			<trans-unit id="242">
+                <source>txt_address</source>
+                <target><![CDATA[Address]]></target>
+            </trans-unit>			
+			<trans-unit id="243">
+                <source>msg_title_invalid_details</source>
+                <target><![CDATA[Invalid Details]]></target>
+            </trans-unit>			
+			<trans-unit id="244">
+                <source>msg_desc_iban_or_country</source>
+                <target><![CDATA[Required fields have not been completed, either an IBAN must be supplied or a Country must be selected. Please try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="245">
+                <source>msg_title_invalid_bank_account</source>
+                <target><![CDATA[Invalid Bank Account]]></target>
+            </trans-unit>			
+			<trans-unit id="246">
+                <source>msg_desc_invalid_bank_account</source>
+                <target><![CDATA[The bank account provided is incorrect. Please check and try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="247">
+                <source>msg_desc_bban_required</source>
+                <target><![CDATA[<bban_fieldname> is a required field. Please supply a value for <bban_fieldname> and try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="248">
+                <source>msg_title_bank_account_valid</source>
+                <target><![CDATA[Bank Account valid]]></target>
+            </trans-unit>			
+			<trans-unit id="249">
+                <source>msg_desc_bank_account_valid</source>
+                <target><![CDATA[The bank account provided is valid and has been converted to SEPA format.]]></target>
+            </trans-unit>			
+			<trans-unit id="250">
+                <source>msg_title_bank_account_transposed</source>
+                <target><![CDATA[Bank Account Details Transposed]]></target>
+            </trans-unit>			
+			<trans-unit id="251">
+                <source>msg_desc_bank_account_transposed</source>
+                <target><![CDATA[Account details were not in standard form and have been transposed.]]></target>
+            </trans-unit>			
+			<trans-unit id="252">
+                <source>msg_title_sepa_dd_unsupported</source>
+                <target><![CDATA[SEPA Direct Debit unsupported]]></target>
+            </trans-unit>			
+			<trans-unit id="253">
+                <source>msg_desc_sepa_dd_unsupported</source>
+                <target><![CDATA[The bank/branch does not support SEPA Direct Debit]]></target>
+            </trans-unit>			
+			<trans-unit id="254">
+                <source>msg_title_sepa_ct_unsupported</source>
+                <target><![CDATA[SEPA Credit Transfer unsupported]]></target>
+            </trans-unit>			
+			<trans-unit id="255">
+                <source>msg_desc_sepa_ct_unsupported</source>
+                <target><![CDATA[The bank/branch does not support SEPA Credit Transfers]]></target>
+            </trans-unit>			
+			<trans-unit id="256">
+                <source>msg_title_sepa_bdd_unsupported</source>
+                <target><![CDATA[SEPA Business Direct Debit unsupported]]></target>
+            </trans-unit>			
+			<trans-unit id="257">
+                <source>msg_desc_sepa_bdd_unsupported</source>
+                <target><![CDATA[The bank/branch does not support SEPA Business Direct Debit payments]]></target>
+            </trans-unit>			
+			<trans-unit id="258">
+                <source>btn_cancel</source>
+                <target><![CDATA[Cancel]]></target>
+            </trans-unit>			
+			<trans-unit id="259">
+                <source>txt_need_verifying</source>
+                <target><![CDATA[Need verifying]]></target>
+            </trans-unit>			
+			<trans-unit id="260">
+                <source>txt_conversions_refunded</source>
+                <target><![CDATA[Conversions refunded]]></target>
+            </trans-unit>			
+			<trans-unit id="261">
+                <source>msg_title_attention_required</source>
+                <target><![CDATA[Attention Required]]></target>
+            </trans-unit>			
+			<trans-unit id="262">
+                <source>msg_desc_attention_required_1</source>
+                <target><![CDATA[You do not have enough conversions to proceed with the processing of the file that you have just uploaded.]]></target>
+            </trans-unit>			
+			<trans-unit id="263">
+                <source>msg_desc_attention_required_2</source>
+                <target><![CDATA[You will need to purchase conversions in order for the file to be processed. Click the 'purchase' button to purchase the correct amount of conversions and have your file processed.]]></target>
+            </trans-unit>			
+			<trans-unit id="264">
+                <source>msg_desc_attention_required_3</source>
+                <target><![CDATA[Alternatively, if you do not wish to purchase conversions at this time simply click 'cancel', and your uploaded file will be removed.]]></target>
+            </trans-unit>			
+			<trans-unit id="265">
+                <source>txt_purchase_conversions</source>
+                <target><![CDATA[Purchase Conversions]]></target>
+            </trans-unit>			
+			<trans-unit id="266">
+                <source>txt_please_wait</source>
+                <target><![CDATA[Please wait.]]></target>
+            </trans-unit>			
+			<trans-unit id="267">
+                <source>txt_no_of_conversion_being_calc</source>
+                <target><![CDATA[The number of conversions you require for your uploaded file is being calculated.]]></target>
+            </trans-unit>			
+			<trans-unit id="268">
+                <source>txt_cost</source>
+                <target><![CDATA[Cost]]></target>
+            </trans-unit>			
+			<trans-unit id="269">
+                <source>txt_vat</source>
+                <target><![CDATA[VAT]]></target>
+            </trans-unit>			
+			<trans-unit id="270">
+                <source>txt_total</source>
+                <target><![CDATA[Total]]></target>
+            </trans-unit>			
+			<trans-unit id="271">
+                <source>txt_billing_details</source>
+                <target><![CDATA[Billing Details]]></target>
+            </trans-unit>			
+			<trans-unit id="272">
+                <source>txt_address_line_1</source>
+                <target><![CDATA[Address line 1]]></target>
+            </trans-unit>			
+			<trans-unit id="273">
+                <source>txt_address_line_2</source>
+                <target><![CDATA[Address line 2]]></target>
+            </trans-unit>			
+			<trans-unit id="274">
+                <source>txt_city</source>
+                <target><![CDATA[City]]></target>
+            </trans-unit>			
+			<trans-unit id="275">
+                <source>txt_postcode</source>
+                <target><![CDATA[Postcode]]></target>
+            </trans-unit>			
+			<trans-unit id="276">
+                <source>msg_title_billing_details_incomplete</source>
+                <target><![CDATA[Billing details incomplete]]></target>
+            </trans-unit>			
+			<trans-unit id="277">
+                <source>msg_desc_enter_firstname</source>
+                <target><![CDATA[Please enter your firstname.]]></target>
+            </trans-unit>			
+			<trans-unit id="278">
+                <source>msg_desc_enter_address_1</source>
+                <target><![CDATA[Please enter your first line of address.]]></target>
+            </trans-unit>			
+			<trans-unit id="279">
+                <source>msg_desc_enter_address_2</source>
+                <target><![CDATA[Please enter your second line of address.]]></target>
+            </trans-unit>			
+			<trans-unit id="280">
+                <source>msg_desc_enter_city</source>
+                <target><![CDATA[Please enter your city.]]></target>
+            </trans-unit>			
+			<trans-unit id="281">
+                <source>msg_desc_enter_postcode</source>
+                <target><![CDATA[Please enter your postcode.]]></target>
+            </trans-unit>			
+			<trans-unit id="282">
+                <source>msg_desc_enter_country</source>
+                <target><![CDATA[Please enter your country.]]></target>
+            </trans-unit>			
+			<trans-unit id="283">
+                <source>txt_confirm</source>
+                <target><![CDATA[Confirm]]></target>
+            </trans-unit>			
+			<trans-unit id="284">
+                <source>txt_trans_not_processed</source>
+                <target><![CDATA[Your transaction could NOT be processed]]></target>
+            </trans-unit>			
+			<trans-unit id="285">
+                <source>txt_payment_fail_desc_1</source>
+                <target><![CDATA[There was a problem processing your payment.]]></target>
+            </trans-unit>			
+			<trans-unit id="286">
+                <source>txt_payment_fail_desc_2</source>
+                <target><![CDATA[Our payment provider reported the following problem:]]></target>
+            </trans-unit>			
+			<trans-unit id="287">
+                <source>txt_payment_received</source>
+                <target><![CDATA[Payment Received]]></target>
+            </trans-unit>			
+			<trans-unit id="288">
+                <source>txt_trans_successfully_processed</source>
+                <target><![CDATA[Your transaction has been successfully processed]]></target>
+            </trans-unit>			
+			<trans-unit id="289">
+                <source>txt_payment_pass_desc_1</source>
+                <target><![CDATA[2290 conversions have been added to your account.]]></target>
+            </trans-unit>			
+			<trans-unit id="290">
+                <source>txt_payment_pass_desc_2</source>
+                <target><![CDATA[The file you uploaded will start processing shortly. 2501 conversions have been deducted from your account for the processing of this file.]]></target>
+            </trans-unit>			
+			<trans-unit id="291">
+                <source>txt_payment_pass_desc_3</source>
+                <target><![CDATA[You now have a total of 211 conversions.]]></target>
+            </trans-unit>			
+			<trans-unit id="292">
+                <source>msg_title_user_details_imcomplete</source>
+                <target><![CDATA[User details incomplete]]></target>
+            </trans-unit>			
+			<trans-unit id="293">
+                <source>msg_title_details_updated</source>
+                <target><![CDATA[Details Updated]]></target>
+            </trans-unit>			
+			<trans-unit id="294">
+                <source>msg_desc_details_updated</source>
+                <target><![CDATA[Your personal details have been successfully updated.]]></target>
+            </trans-unit>			
+			<trans-unit id="295">
+                <source>msg_title_details_incomplete</source>
+                <target><![CDATA[Details incomplete]]></target>
+            </trans-unit>			
+			<trans-unit id="296">
+                <source>msg_desc_enter_old_password</source>
+                <target><![CDATA[Please enter your old password. This value should not be blank.]]></target>
+            </trans-unit>			
+			<trans-unit id="297">
+                <source>msg_desc_enter_new_password</source>
+                <target><![CDATA[Please enter your new password. This value should not be blank.]]></target>
+            </trans-unit>			
+			<trans-unit id="298">
+                <source>msg_title_incorrect_password</source>
+                <target><![CDATA[Incorrect password]]></target>
+            </trans-unit>			
+			<trans-unit id="299">
+                <source>msg_desc_incorrect_password</source>
+                <target><![CDATA[Your old password is not correct. Kryptos passwords are case sensitive. Please check your CAPS lock key.]]></target>
+            </trans-unit>			
+			<trans-unit id="300">
+                <source>msg_desc_new_passwords_not_match</source>
+                <target><![CDATA[The new passwords you have typed do not match. Please check and try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="301">
+                <source>msg_title_password_updated</source>
+                <target><![CDATA[Password Updated]]></target>
+            </trans-unit>			
+			<trans-unit id="302">
+                <source>msg_desc_password_updated</source>
+                <target><![CDATA[Your password has been successfully updated.]]></target>
+            </trans-unit>			
+			<trans-unit id="303">
+                <source>txt_new_password</source>
+                <target><![CDATA[New Password]]></target>
+            </trans-unit>			
+			<trans-unit id="304">
+                <source>txt_confirm_new_password</source>
+                <target><![CDATA[Confirm New Password]]></target>
             </trans-unit>		
         </body>
     </file>
