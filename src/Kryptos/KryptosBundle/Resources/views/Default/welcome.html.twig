@@ -45,7 +45,7 @@
 	var feedurl="http://feeds.feedburner.com/europeanpaymentscouncil-blog?format=xml"
 	
 	var feedlimit=100
-	var rssoutput="<b style=\"text-align:center;\">Latest SEPA News:</b><br />"
+	var rssoutput="<b style=\"text-align:center;\">{% trans %}txt_latest_sepa_news{% endtrans %}:</b><br />"
 	
 	function rssfeedsetup(){
 		var feedpointer=new google.feeds.Feed(feedurl) //Google Feed API method

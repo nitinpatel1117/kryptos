@@ -146,6 +146,10 @@ class ImportTranslations
 						exit;
 					}
 					
+					$data[0] = trim($data[0]);
+					$data[1] = trim($data[1]);
+					$data[2] = trim($data[2]);
+					
 					// make sure value is utf8
 					$data[2] = $this->makeUTF8($data[2]);
 					

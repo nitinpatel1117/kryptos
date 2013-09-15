@@ -15,20 +15,20 @@ class ResetPasswordQuestionForm extends AbstractType
     	$builder->add('password', 'repeated', array(
 			'type' => 'password',
 		#	'required' => true,
-			'invalid_message' => "Password's do not match |The Passwords you have typed do not match. Please check and try again.",
+			'invalid_message' => "msg_title_password_not_match |msg_desc_password_not_match",
 			'first_name' => 'password',
 			'second_name' => 'confirmPassword',
 			'first_options' => array(
-				'label' => 'Password',
+				'label' => 'txt_password',
 				'attr' => array(
 					'placeholder' 			=> 'txt_password',
 					'rel'					=> 'tooltip',
-		#			'data-original-title'	=> 'Please enter your Password',
+		#			'data-original-title'	=> 'msg_desc_enter_password',
 					'autocomplete'			=> 'off',
 				),
 			),
 		    'second_options' => array(
-		    	'label' => 'Confirm Password',
+		    	'label' => 'txt_confirm_password',
 		    	'attr' => array(
 		    		'placeholder' 			=> 'txt_confirm_password',
 		    		'rel'					=> 'tooltip',
@@ -41,10 +41,10 @@ class ResetPasswordQuestionForm extends AbstractType
 				new Length(array(
 					'min' => 4, 
 					'max' => 20,
-					'maxMessage' => 'Invalid password|Password value is too long. It should have {{ limit }} characters or less.',
-					'minMessage' => 'Invalid password|Password value is too short. It should have {{ limit }} characters or more.',
+					'maxMessage' => 'msg_title_invalid_password|msg_desc_password_too_long',
+					'minMessage' => 'msg_title_invalid_password|msg_desc_password_too_short',
 				)),
-				new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'Invalid password|Password should only contain alphanumber characters. (a to z) and (0 to 9)')),
+				new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'msg_title_invalid_password|msg_desc_password_only_alphanum')),
 			)
 		));
     }

@@ -4,6 +4,7 @@ namespace Kryptos\KryptosBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Kryptos\KryptosBundle\Controller\LocaleInterface;
 use Kryptos\KryptosBundle\Form\SettingsUserDetailsForm;
 use Kryptos\KryptosBundle\Form\SettingsUserPasswordForm;
 use Kryptos\KryptosBundle\Entity\SettingsUserDetails;
@@ -13,7 +14,7 @@ use Kryptos\KryptosBundle\Model\User;
 use Symfony\Component\Form\FormError;
 
 
-class AccountController extends Controller
+class AccountController extends Controller implements LocaleInterface
 {
 	public function settingsAction(Request $request)
 	{
@@ -58,7 +59,7 @@ class AccountController extends Controller
 					$session->saveLogin($form->getData()->getEmail(), $form->getData()->getFirstName(), $user['_id']->__toString());				// update the users username in the nav, as well as their email address is the session
 					
 					
-					$this->get('session')->getFlashBag()->add('settingsPersonalUpdated', 'Your personal details have been successfully updated.');
+					$this->get('session')->getFlashBag()->add('settingsPersonalUpdated', 'msg_desc_details_updated');
 					return $this->redirect($this->generateUrl('account_settings'));
 				}
 			}
@@ -81,11 +82,11 @@ class AccountController extends Controller
 					if (true == $valid) {
 						$this->get('user_manager')->doPasswordReset($user, $passwordForm->get('password')->getData());
 						
-						$this->get('session')->getFlashBag()->add('settingsPasswordUpdated', 'Your password has been successfully updated.');
+						$this->get('session')->getFlashBag()->add('settingsPasswordUpdated', 'msg_desc_password_updated');
 						return $this->redirect($this->generateUrl('account_settings'));
 					}
 					
-					$passwordForm->addError(new FormError('Incorrect password |Your old password is not correct. Kryptos passwords are case sensitive. Please check your CAPS lock key.'));
+					$passwordForm->addError(new FormError('msg_title_incorrect_password |msg_desc_incorrect_password'));
 				}
 			}
 		}
@@ -94,7 +95,6 @@ class AccountController extends Controller
 		return $this->render('KryptosKryptosBundle:Account:settings.html.twig', array(
 			'form' 						=> $form->createView(),
 			'passwordForm' 				=> $passwordForm->createView(),
-			'location' 					=> 'User Details',
 			'personalDetailsUpdated'	=> $personalDetailsUpdated,
 			'passwordUpdated'			=> $passwordUpdated,
 		));
@@ -122,9 +122,7 @@ class AccountController extends Controller
     		return $this->redirect($this->generateUrl('welcome'));
     	}
     	
-        return $this->render('KryptosKryptosBundle:Account:summary.html.twig', array(
-        	'location' 	=> 'Account Summary',
-        ));
+        return $this->render('KryptosKryptosBundle:Account:summary.html.twig', array());
     }
     
     
@@ -172,21 +170,21 @@ class AccountController extends Controller
     	{
     		$date->setTimestamp($transaction['started']->sec);
     			
-    		$status = 'Pending';
+    		$status = 'txt_pending';
     		if (isset($transaction['status'])) {
     			if ('OK' == $transaction['status']) {
-    				$status = 'Ok';
+    				$status = 'txt_ok';
     			} else {
-    				$status = 'Failed';
+    				$status = 'txt_failed';
     			}
     		}
     			
 	    	$payment = array(
 	    		'id' 			=> $transaction['_id']->__toString(),
 	    		'datetime' 		=> $date->format('d/m/Y H:i:s'),
-	    		'type' 			=> 'Credit',
+	    		'type' 			=> 'txt_credit',
 	    		'credits' 		=> isset($transaction['purchase']['credits']) 	? $transaction['purchase']['credits'] : '',
-	    		'cost' 			=> isset($transaction['purchase']['total']) 		? number_format($transaction['purchase']['total'], 2) : '',
+	    		'cost' 			=> isset($transaction['purchase']['total']) 	? number_format($transaction['purchase']['total'], 2) : '',
 	    		'status'		=> $status,
 	    	#	'creditsOld' 	=> isset($transaction['creditsOld']) 			? $transaction['creditsOld'] : '',
 	    	#	'creditsNew' 	=> isset($transaction['creditsNew']) 			? $transaction['creditsNew'] : '',
@@ -200,14 +198,14 @@ class AccountController extends Controller
     	{
     		$credit = null;
     		$type = null;
-    		$status = 'Ok';
+    		$status = 'txt_ok';
     		if (isset($history['creditsUsed'])) {
-    			$type = 'Debit';
+    			$type = 'txt_debit';
     			$credit = $history['creditsUsed'];
     		} else if (isset($history['creditsRefunded'])) {
-    			$type = 'Credit';
+    			$type = 'txt_credit';
     			$credit = $history['creditsRefunded'];
-    			$status .= ' - Refund'; 
+    			$status = 'txt_ok_refunded'; 
     		}
     		
     		$date->setTimestamp($history['time']->sec);
@@ -240,7 +238,6 @@ class AccountController extends Controller
     	$currency = utf8_encode(html_entity_decode($currency));
     	
     	return $this->render('KryptosKryptosBundle:Account:history.html.twig', array(
-    		'location' => 'Payment History',
     		'currency' => $currency,
     		'payments' => $payments,
     	));

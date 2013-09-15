@@ -5,18 +5,18 @@
 	<div class="row-fluid">
 		<form action="{{ path('convert_batch') }}" method="post" {{ form_enctype(form) }} class="form-horizontal">
 			<div class="row" style="text-align:center;">
-				<legend style="text-align:left;">1. Prepare your file</legend>
+				<legend style="text-align:left;">{% trans %}txt_prepare_your_file{% endtrans %}</legend>
 				<table class="table table-striped">
 					<tbody>
 						<tr>
 							<td>
-								<div style="text-align:left;">Prepare a list of your account numbers using our template. Save a copy in case you need to edit it later</div>
+								<div style="text-align:left;">{% trans %}txt_prepare_your_list_of{% endtrans %}</div>
 								<div style="text-align:right;">
 									<a style="text-align:right;" href="{{ path('convert_batch_template') }}" >
-										<button class="btn btn-primary" type="button"><i class="icon-download-alt icon-white"></i> Download</button>
+										<button class="btn btn-primary" type="button"><i class="icon-download-alt icon-white"></i> {% trans %}txt_download{% endtrans %}</button>
 									</a>
 									<a style="text-align:right;" href="{{ path('download_help_prepare_file') }}" >
-										<button class="btn btn-primary" type="button"><i class="icon-question-sign icon-white"></i> Help</button>
+										<button class="btn btn-primary" type="button"><i class="icon-question-sign icon-white"></i> {% trans %}txt_help{% endtrans %}</button>
 									</a>
 								</div>
 							</td>
@@ -26,30 +26,30 @@
 			</div>
 			
 			<div class="row">
-				<legend style="text-align:left;">2. Upload your file</legend>
+				<legend style="text-align:left;">{% trans %}txt_upload_your_file{% endtrans %}</legend>
 				<table class="table table-striped">
 					<tbody>
 						<tr>
 							<td>
-								<div style="text-align:left;">Save the worksheet containing your account number data as a .csv file and then upload it here.</div>
+								<div style="text-align:left;">{% trans %}txt_save_the_worksheet{% endtrans %}</div>
 								<div style="text-align:right;">
 									<div class="fileupload fileupload-new" data-provides="fileupload">
 										<span class="fileupload-preview"></span>
 										<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none"><i class=" icon-remove"></i></a> &nbsp;
 										<span class="btn btn-file btn-primary">
 											<span class="fileupload-new">
-												<i class="icon-folder-open icon-upload icon-white"></i> Browse 
+												<i class="icon-folder-open icon-upload icon-white"></i> {% trans %}txt_browse{% endtrans %} 
 											</span>
 											<span class="fileupload-exists">
-											 	<i class="icon-file icon-white"></i> Change 
+											 	<i class="icon-file icon-white"></i> {% trans %}txt_change{% endtrans %} 
 											</span>
 											{{ form_widget(form.attachment) }}
 										</span>
 										
-										<button class="btn btn-primary" type="submit"><i class="icon-download-alt icon-upload icon-white"></i> {{ btn_submit }} </button>
+										<button class="btn btn-primary" type="submit"><i class="icon-download-alt icon-upload icon-white"></i> {% trans %}txt_upload{% endtrans %} </button>
 										
 										<a href="{{ path('download_help_upload_file') }}" >
-											<button class="btn btn-primary" type="button"><i class="icon-question-sign icon-white"></i> Help </button>
+											<button class="btn btn-primary" type="button"><i class="icon-question-sign icon-white"></i> {% trans %}txt_help{% endtrans %} </button>
 										</a> 
 									</div>
 									
@@ -63,34 +63,33 @@
 				{% if confirmUpload != '' %}
 					<div class="alert alert-success">
 						<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
-						<strong><i class="icon-ok-sign"></i> Upload Complete</strong> <br/>
-						{{ confirmUpload }}
+						<strong><i class="icon-ok-sign"></i> {% trans %}msg_title_upload_complete{% endtrans %}</strong> <br/>
+						{{ confirmUpload|trans }}
 					</div>
 				{% endif %}
 				
 				{% if attentionOnFile != '' %}
 					<div class="alert alert-error">
 						<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
-						<strong><i class="icon-exclamation-sign"></i> Attention Required</strong> <br/>
+						<strong><i class="icon-exclamation-sign"></i> {% trans %}msg_title_attention_required{% endtrans %}</strong> <br/>
 						
 						<div>
-							You do not have enough conversions to proceed with the processing of the file that you have just uploaded.
+							{% trans %}msg_desc_attention_required_1{% endtrans %}
 							<br><br>
-							You will need to purchase conversions in order for the file to be processed. Click the 'purchase' button to purchase the correct
-							amount of conversions and have your file processed.
+							{% trans %}msg_desc_attention_required_2{% endtrans %}
 							<br><br>
-							Alternatively, if you do not wish to purchase conversions at this time simply click 'cancel', and your uploaded file will be removed.
+							{% trans %}msg_desc_attention_required_3{% endtrans %}
 							<br><br>
 						</div>
 						
 						<a href="{{ path('convert_batch') }}?f={{ attentionOnFile }}" >
-							<button class="btn" type="button"><i class="icon-remove"></i> Cancel </button>
+							<button class="btn" type="button"><i class="icon-remove"></i> {% trans %}btn_cancel{% endtrans %} </button>
 						</a>
 						
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						
 						<a href="{{ path('purchase_conversions') }}?f={{ attentionOnFile }}" >
-							<button class="btn btn-primary" type="button"><i class="icon-shopping-cart icon-white"></i> Purchase </button>
+							<button class="btn btn-primary" type="button"><i class="icon-shopping-cart icon-white"></i> {% trans %}txt_purchase{% endtrans %} </button>
 						</a>
 					</div>
 				{% endif %}

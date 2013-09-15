@@ -4,9 +4,10 @@ namespace Kryptos\KryptosBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Kryptos\KryptosBundle\Controller\LocaleInterface;
 
 
-class FileStatusController extends Controller
+class FileStatusController extends Controller implements LocaleInterface
 {
 	
 	protected $user;
@@ -51,15 +52,14 @@ class FileStatusController extends Controller
     			'status' 		=> $this->makeStatus($item),
     			'stats' 		=> isset($item['stats']) ? $item['stats'] : null,
     			'downloadable'	=> ('complete' == $item['status']) ? true : false,
-    			'progressFrom' => $progressFrom,
-    			'progressTo' => $progressTo,
+    			'progressFrom' 	=> $progressFrom,
+    			'progressTo' 	=> $progressTo,
     		);
     		
     		$files[] = $file;
     	}
 
         return $this->render('KryptosKryptosBundle:FileStatus:index.html.twig', array(
-        	'location' 		=> 'File status',
         	'files' 		=> $files,
         	'downloadLink' 	=> $this->generateUrl('convert_batch_download'),
         ));
@@ -91,20 +91,20 @@ class FileStatusController extends Controller
     	
     	switch($item['status']) {
     		case 'pending':
-    			$status = 'Pending';
+    			$status = 'txt_pending';
     			break;
     		
     		case 'complete':
-    			$status = 'Complete';
+    			$status = 'txt_complete';
     			break;
     		
     		case 'payment_failed':
-    			$status = 'Payment Failed';
+    			$status = 'txt_payment_failed';
     			break;
     				
     		case 'awaiting_payment':
     		case 'insufficient_funds':
-    			$status = 'Insufficient Funds';
+    			$status = 'txt_insufficient_funds';
     			break;
     	}
     	

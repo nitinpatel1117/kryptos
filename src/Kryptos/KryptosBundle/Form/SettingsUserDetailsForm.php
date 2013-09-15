@@ -13,88 +13,88 @@ class SettingsUserDetailsForm extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
     	$titles = array(
-    		'Mr' 	=> 'Mr.',
-    		'Mrs' 	=> 'Mrs.',
-    		'Miss' 	=> 'Miss',
-    		'Ms' 	=> 'Ms.',
-    		'Dr' 	=> 'Dr.',
-    		'Prof' 	=> 'Prof.',
-    		'Rev' 	=> 'Rev.',
-    		'Other' => 'Other',
+    		'Mr' 	=> 'txt_title_item_mr',
+    		'Mrs' 	=> 'txt_title_item_mrs',
+    		'Miss' 	=> 'txt_title_item_miss',
+    		'Ms' 	=> 'txt_title_item_ms',
+    		'Dr' 	=> 'txt_title_item_dr',
+    		'Prof' 	=> 'txt_title_item_prof',
+    		'Other' => 'txt_title_item_other',
     	);
     	
     	$builder->add('title', 'choice', array(
+    		'label'		=> 'txt_title',
     		'choices'   => $titles,
     	#	'required'  => true,
-    		'empty_value' => ' - Title - ',
+    		'empty_value' => 'txt_title_item_empty'
     	));
 
 		$builder->add('firstName', 'text', array(
-			'label'=>'Firstname',
+			'label'=>'txt_firstname',
 		#	'required' => true,
 			'attr' => array(
 				'placeholder'			=> 'txt_forename',
 				'rel'					=> 'tooltip',
-		#		'data-original-title'	=> 'Please enter your Forename',
+		#		'data-original-title'	=> 'msg_desc_enter_forename',
 			),
 		));
 		
 		$builder->add('lastName', 'text', array(
-			'label'=>'Lastname',
+			'label'=>'txt_lastname',
 		#	'required' => true,
 			'attr' => array(
 				'placeholder'			=> 'txt_surname',
 				'rel'					=> 'tooltip',
-		#		'data-original-title'	=> 'Please enter your Surname',
+		#		'data-original-title'	=> 'msg_desc_enter_surname',
 			),
 		));
 		
 		$builder->add('jobTitle', 'text', array(
-			'label'=>'Jobtitle',
+			'label'=>'txt_job_title',
 		#	'required' => true,
 			'attr' => array(
 				'placeholder'			=> 'txt_job_title',
 				'rel'					=> 'tooltip',
-		#		'data-original-title'	=> 'Please enter your Jobtitle',
+		#		'data-original-title'	=> 'msg_desc_enter_job_title',
 			),
 		));
 		
 		$builder->add('company', 'text', array(
-			'label'=>'Company',
+			'label'=>'txt_company',
 		#	'required' => true,
 			'attr' => array(
 				'placeholder'			=> 'txt_company',
 				'rel'					=> 'tooltip',
-		#		'data-original-title'	=> 'Please enter your Company',
+		#		'data-original-title'	=> 'msg_desc_enter_company_name',
 			),
 		));
 		
 		$builder->add('location', 'text', array(
-			'label'=>'Location',
+			'label'=>'txt_location',
 		#	'required' => true,
 			'attr' => array(
 				'placeholder'			=> 'txt_location',
 				'rel'					=> 'tooltip',
-		#		'data-original-title'	=> 'Please enter your Location',
+		#		'data-original-title'	=> 'msg_desc_enter_location',
 			),
 		));
 
 		$builder->add('email', 'repeated', array(
 			'type' => 'text',
 		#	'required' => true,
-			'invalid_message' => "Email's do not match |The Email addresses you have typed do not match. Please check and try again.",
+			'invalid_message' => "msg_title_email_not_match |msg_desc_email_not_match",
 			'first_name' => 'email',
 			'second_name' => 'confirmEmail',
 			'first_options' => array(
-				'label' => 'Email',
+				'label' => 'txt_email',
 				'attr' => array(
 					'placeholder'			=> 'txt_email',
 					'rel'					=> 'tooltip',
-		#			'data-original-title'	=> 'Please enter your Email',
+		#			'data-original-title'	=> 'msg_desc_enter_email',
 				),
 			),
 		    'second_options' => array(
-		    	'label' => 'Confirm Email',
+		    	'label' => 'txt_confirm_email',
 		    	'attr' => array(
 		    		'placeholder' 			=> 'txt_confirm_email',
 		    		'rel'					=> 'tooltip',

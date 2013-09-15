@@ -16,21 +16,20 @@ class PurchaseConversionsForm extends AbstractType
     	}
     	
     	$builder->add('conversions', 'number', array(
-    		'label'=>'No. of Conversions',
-    	#	'required' => true,
+    		'label'		=>'txt_no_of_conversions',
+    	#	'required' 	=> true,
     	));
 			
 		$builder->add('cost', 'text', array(
-			'label' => 'Total Cost'.$currency,
-			'required' => false,
-			'disabled' => 'true',
+			'label' 	=> 'txt_total_cost_currency_euro',
+			'required' 	=> false,
+			'disabled' 	=> 'true',
 		));
 		
-		
 		$builder->add('vat', 'text', array(
-			'label' => 'Total VAT'.$currency,
-			'required' => false,
-			'disabled' => 'true',
+			'label' 	=> 'txt_total_vat_currency_euro',
+			'required' 	=> false,
+			'disabled' 	=> 'true',
 		));
     }
     

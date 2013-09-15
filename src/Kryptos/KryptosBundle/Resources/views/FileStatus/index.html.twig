@@ -1,12 +1,12 @@
 			<div class="row">
-				<legend style="text-align:left;">3. File status and History</legend>
+				<legend style="text-align:left;">{% trans %}txt_file_status_and_history{% endtrans %}</legend>
 				<table class="table table-striped fileStatus" style="text-align:center;">
 					<thead>
 						<tr>
-							<th>Date/Time</th>
-							<th>Filename</th>
-							<th>Status / Result</th>
-							<th>Download File</th>
+							<th>{% trans %}txt_datetime{% endtrans %}</th>
+							<th>{% trans %}txt_filename{% endtrans %}</th>
+							<th>{% trans %}txt_status_result{% endtrans %}</th>
+							<th>{% trans %}txt_download_file{% endtrans %}</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -15,35 +15,35 @@
 								<td>{{ file.datetime|e }}</td>
 								<td>{{ file.filename|e }}</td>
 								<td>
-									{% if "Complete" == file.status %}
-										<span>{{ file.stats.valid }}/{{ file.stats.processed }} Converted sucessfully</span><br />
+									{% if "txt_complete" == file.status %}
+										<span>{{ file.stats.valid }}/{{ file.stats.processed }} {% trans %}txt_converted_successfully{% endtrans %}</span><br />
 										
 										{% set need_verifying = file.stats.not_validated + file.stats.reconfirm_iban %}
 										{% if need_verifying > 0 %}
-											<span>{{ need_verifying }}/{{ file.stats.processed }} Need verifying</span><br />
+											<span>{{ need_verifying }}/{{ file.stats.processed }} {% trans %}txt_need_verifying{% endtrans %}</span><br />
 										{% endif %}
 										
 										{% if file.stats.invalid > 0 %}
-											<span>{{ file.stats.invalid }}/{{ file.stats.processed }} Incorrect accounts</span><br />
+											<span>{{ file.stats.invalid }}/{{ file.stats.processed }} {% trans %}txt_incorrect_accounts{% endtrans %}</span><br />
 										{% endif %}
 										
 										{% if file.stats.conversions_refund > 0 %}
-											<span>{{ file.stats.conversions_refund }}/{{ file.stats.processed }} Conversions refunded</span><br />
+											<span>{{ file.stats.conversions_refund }}/{{ file.stats.processed }} {% trans %}txt_conversions_refunded{% endtrans %}</span><br />
 										{% endif %}
 									{% else %}
-										{% if "Pending" == file.status %}
+										{% if "txt_pending" == file.status %}
 										<div class="progress">
 											<div id="{{ file.id }}" class="bar fileStatusBar" style="width: {{ file.progressFrom }}%;" progressfrom='{{ file.progressFrom }}' progressto='{{ file.progressTo }}'></div>
 										</div>
 										{% else %}
-											<span>{{ file.status }}</span>
+											<span>{{ file.status|trans }}</span>
 										{% endif %}
 									{% endif %}
 								</td>
 								<td>
 									{% if true == file.downloadable %}
 <!--										<a href="{{ downloadLink }}/{{ file.id|e }}" ><button class="btn btn-primary" type="button"><i class="icon-download-alt icon-white"></i> Download </button></a> <br><br> -->
-										<a href="{{ downloadLink }}/{{ file.id|e }}" ><button class="btn" type="button"><i class="icon-download-alt "></i> Download </button></a>
+										<a href="{{ downloadLink }}/{{ file.id|e }}" ><button class="btn" type="button"><i class="icon-download-alt "></i> {% trans %}txt_download{% endtrans %} </button></a>
 									{% endif %}
 								</td>
 							</tr>

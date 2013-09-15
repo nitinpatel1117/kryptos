@@ -4,7 +4,7 @@
 
 
 {% block content %}
-	<legend style="text-align:left;">Settings</legend>
+	<legend style="text-align:left;">{% trans %}txt_settings{% endtrans %}</legend>
 	<div class="row-fluid">
 		<div class="span6">
 			<div style="background-color:#F8F8F8">
@@ -12,7 +12,7 @@
 					<div class="row">
 					
 						<div class="control-group">    
-							<legend>Personal details</legend>
+							<legend>{% trans %}txt_personal_details{% endtrans %}</legend>
 										
 							<div class="control-group">
 								{{ form_row(form.title) }}
@@ -47,15 +47,15 @@
 							
 							<div class="control-group">
 								<div class="controls">
-									<button type="submit" class="btn btn-custom-block btn-primary">update</button> 
+									<button type="submit" class="btn btn-custom-block btn-primary">{% trans %}txt_update{% endtrans %}</button> 
 								</div>  
 							</div>
 							
-							{% if personalDetailsUpdated != '' %}
+							{% if personalDetailsUpdated|trans != '' %}
 								<div class="alert alert-success">
 									<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
-									<strong><i class="icon-ok-sign"></i> Details Updated</strong> <br/>
-									{{ personalDetailsUpdated }}
+									<strong><i class="icon-ok-sign"></i> {% trans %}msg_title_details_updated{% endtrans %}</strong> <br/>
+									{{ personalDetailsUpdated|trans }}
 								</div>
 							{% endif %}
 							
@@ -78,7 +78,7 @@
 				<form novalidate id="settingsUserPassword" action="{{ path('account_settings') }}" method="post" {{ form_enctype(passwordForm) }} class="form-horizontal">
 					<div class="row">
 						<div class="control-group">    
-							<legend>Password</legend>
+							<legend>{% trans %}txt_password{% endtrans %}</legend>
 							
 							<div class="control-group">
 								{{ form_row(passwordForm.oldPassword) }}
@@ -93,15 +93,15 @@
 							
 							<div class="control-group">
 								<div class="controls">
-									<button type="submit" class="btn btn-custom-block btn-primary">update</button> 
+									<button type="submit" class="btn btn-custom-block btn-primary">{% trans %}txt_update{% endtrans %}</button> 
 								</div>  
 							</div>
 							
-							{% if passwordUpdated != '' %}
+							{% if passwordUpdated|trans != '' %}
 								<div class="alert alert-success">
 									<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
-									<strong><i class="icon-ok-sign"></i> Password Updated</strong> <br/>
-									{{ passwordUpdated }}
+									<strong><i class="icon-ok-sign"></i> {% trans %}msg_title_password_updated{% endtrans %}</strong> <br/>
+									{{ passwordUpdated|trans }}
 								</div>
 							{% endif %}
 							

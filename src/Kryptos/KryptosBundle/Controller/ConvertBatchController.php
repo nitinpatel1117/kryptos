@@ -6,12 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Session;
+use Kryptos\KryptosBundle\Controller\LocaleInterface;
 use Kryptos\KryptosBundle\Form\ConvertBatchForm;
 use Symfony\Component\Form\FormError;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Kryptos\KryptosBundle\Lib\BatchInsertFile;
 
-class ConvertBatchController extends Controller
+class ConvertBatchController extends Controller implements LocaleInterface
 {
 	
 	protected $user;
@@ -43,12 +44,6 @@ class ConvertBatchController extends Controller
     	$form = $this->createForm(new ConvertBatchForm());
     	$credits = $this->getAllowedConversions();
     	
-    	if ($credits < 1) {
-    		$userNote = 'You no not have any conversions available. You will need to purchase conversions in order to proceed. Please make sure that you purchase sufficient conversions for your batch file.';
-    	} else {
-    		$userNote = sprintf('You have %s conversions available. If you upload a file with more than %s entries, only the first %s entries will be read and processed.', $credits, $credits, $credits);
-    	}
-    	
     	
     	try {
 	    	if ($request->isMethod('POST')) {
@@ -69,7 +64,7 @@ class ConvertBatchController extends Controller
 	    			$file = new UploadedFile(sprintf('%s/%s' , $tmp_path, $newFilename), $newFilename);
 	    			
 	    			if (!$this->isFirstLineValid($file)) {
-	    				throw new \Exception('Invalid file |The first line in the upload file is not valid. Please make sure that the first line contains column headers and that these column headers are unchanged from the values supplied in the original template file.', 101) ;
+	    				throw new \Exception('msg_title_invalid_file |msg_desc_invalid_file', 101) ;
 	    			}
 	    			
 	    			/*
@@ -126,7 +121,7 @@ class ConvertBatchController extends Controller
 	    				$this->get('session')->getFlashBag()->add('attentionUpload', 'attention is required');
 	    			}
 	    			else {
-	    				$this->get('session')->getFlashBag()->add('confirmUpload', 'File has been succesfully received. Processing of this file will start shortly');
+	    				$this->get('session')->getFlashBag()->add('confirmUpload', 'msg_desc_upload_complete');
 	    			}
 	    			
 	    			return $this->redirect($this->generateUrl('convert_batch'));
@@ -149,12 +144,9 @@ class ConvertBatchController extends Controller
     	
         return $this->render('KryptosKryptosBundle:ConvertBatch:index.html.twig', array(
         	'form' 						=> $form->createView(),
-        	'location' 					=> 'Batch Convert',
-        	'btn_submit' 				=> 'Upload',
         	'confirmUpload' 			=> $confirmUpload,
         	'credits' 					=> $credits,
         	'conversionsRestricted' 	=> $this->conversionsRestricted(),
-        	'userNote' 					=> $userNote,
         	'attentionOnFile' 			=> $attentionOnFile,
         ));
     }
@@ -362,7 +354,7 @@ class ConvertBatchController extends Controller
     
 
     /**
-     * Function checks if the lsat line in the supplied file contains a new line character
+     * Function checks if the last line in the supplied file contains a new line character
      * 
      * @param string $filePath
      * @return boolean

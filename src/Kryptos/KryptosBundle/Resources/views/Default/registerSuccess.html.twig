@@ -14,7 +14,7 @@
 		<div class="control-group">    
 			<div class="controls" >
 				{% if true == show_signin_link %}
-					You may now sign in via the <a href="{{ link_url }}" >{{ link_text }}</a> screen.
+					{% trans with {'{{ link_text }}': link_text, '{{ link_url }}': link_url } %}txt_para_account_activated{% endtrans %}
 				{% endif %}
 			</div>
 		</div>

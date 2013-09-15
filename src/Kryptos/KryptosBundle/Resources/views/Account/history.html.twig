@@ -1,26 +1,26 @@
 	<div class="row" style="text-align:center;">
-		<legend style="text-align:left;">{{ location }}</legend>
+		<legend style="text-align:left;">{% trans %}txt_account_history{% endtrans %}</legend>
 		<form class="form-horizontal" >
 			<table class="table table-striped">
 				<thead>
 					<tr>
-						<th>Date/Time</th>
-						<th>Type</th>
-						<th>Cost Price ({{ currency | raw}})</th>
-						<th>Conversions</th>
-						<th>Transaction id</th>
-						<th>Status</th>
+						<th>{% trans %}txt_datetime{% endtrans %}</th>
+						<th>{% trans %}txt_type{% endtrans %}</th>
+						<th>{% trans %}txt_cost_price{% endtrans %} ({{ currency | raw}})</th>
+						<th>{% trans %}txt_conversions{% endtrans %}</th>
+						<th>{% trans %}txt_transaction_id{% endtrans %}</th>
+						<th>{% trans %}txt_status{% endtrans %}</th>
 					</tr>
 				</thead>
 				<tbody>
 					 {% for payment in payments %}
 						 <tr>
-							<td>{{ payment.datetime|e }}</td>
-							<td>{{ payment.type|e }}</td>
-							<td>{{ payment.cost|e }}</td>
-							<td>{{ payment.credits|e }}</td>
-							<td>{{ payment.id|e }}</td>
-							<td>{{ payment.status|e }}</td>
+							<td>{{ payment.datetime|escape }}</td>
+							<td>{{ payment.type|trans|escape }}</td>
+							<td>{{ payment.cost|escape }}</td>
+							<td>{{ payment.credits|escape }}</td>
+							<td>{{ payment.id|escape }}</td>
+							<td>{{ payment.status|trans|escape }}</td>
 						</tr>
 					{% endfor %}
 				</tbody>

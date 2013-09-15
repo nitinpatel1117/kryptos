@@ -13,10 +13,10 @@ class SettingsUserPasswordForm extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {    	
     	$builder->add('oldPassword', 'password', array(
-    		'label'			=>'Old Password',
+    		'label'			=>'txt_old_password',
     	#	'required'  	=> true,
     		'attr' => array(
-    			'placeholder'			=> 'Old Password',
+    			'placeholder'			=> 'txt_old_password',
     			'rel'					=> 'tooltip',
     	#		'data-original-title'	=> 'Please enter your old Password',
     			'autocomplete'	=> 'off',
@@ -26,10 +26,10 @@ class SettingsUserPasswordForm extends AbstractType
     			new Length(array(
     				'min' => 4,
     				'max' => 20,
-    				'maxMessage' => 'Invalid password|Password value is too long. It should have {{ limit }} characters or less.',
-    				'minMessage' => 'Invalid password|Password value is too short. It should have {{ limit }} characters or more.',
+    				'maxMessage' => 'msg_title_invalid_password|msg_desc_password_too_long',
+    				'minMessage' => 'msg_title_invalid_password|msg_desc_password_too_short',
     			)),
-    			new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'Invalid password|Password should only contain alphanumber characters. (a to z) and (0 to 9)')),
+    			new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'msg_title_invalid_password|msg_desc_password_only_alphanum')),
     		)
     	));
     	
@@ -37,22 +37,22 @@ class SettingsUserPasswordForm extends AbstractType
     	$builder->add('password', 'repeated', array(
     		'type' => 'password',
     	#	'required' => true,
-    		'invalid_message' => "Password's do not match |The new passwords you have typed do not match. Please check and try again.",
+    		'invalid_message' => "msg_title_password_not_match|msg_desc_new_passwords_not_match",
     		'first_name' => 'password',
     		'second_name' => 'confirmPassword',
     		'first_options' => array(
-    			'label' => 'Password',
+    			'label' => 'txt_password',
     			'attr' => array(
-    				'placeholder' 			=> 'New Password',
+    				'placeholder' 			=> 'txt_new_password',
     				'rel'					=> 'tooltip',
     	#			'data-original-title'	=> 'Please enter your new Password',
     				'autocomplete'			=> 'off',
     			),
     		),
     		'second_options' => array(
-    			'label' => 'Confirm Password',
+    			'label' => 'txt_confirm_password',
     			'attr' => array(
-    				'placeholder' 			=> 'Confirm New Password',
+    				'placeholder' 			=> 'txt_confirm_new_password',
     				'rel'					=> 'tooltip',
     	#			'data-original-title'	=> 'Please confirm your new Password',
     				'autocomplete'			=> 'off',
@@ -63,10 +63,10 @@ class SettingsUserPasswordForm extends AbstractType
     			new Length(array(
     				'min' => 4,
     				'max' => 20,
-    				'maxMessage' => 'Invalid password|Password value is too long. It should have {{ limit }} characters or less.',
-    				'minMessage' => 'Invalid password|Password value is too short. It should have {{ limit }} characters or more.',
+    				'maxMessage' => 'msg_title_invalid_password|msg_desc_password_too_long',
+    				'minMessage' => 'msg_title_invalid_password|msg_desc_password_too_short',
     			)),
-    			new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'Invalid password|Password should only contain alphanumber characters. (a to z) and (0 to 9)')),
+    			new Regex(array('pattern' => '/^[a-z0-9]+$/i', 'message' => 'msg_title_invalid_password|msg_desc_password_only_alphanum')),
     		)
     	));
     }
