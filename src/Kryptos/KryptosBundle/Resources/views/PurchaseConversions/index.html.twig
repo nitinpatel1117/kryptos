@@ -1,7 +1,7 @@
 {% extends "KryptosKryptosBundle::layout.html.twig" %}
 
 {% block content %}
-	<legend style="text-align:left;">{{ location }}</legend>
+	<legend style="text-align:left;">{% trans %}txt_purchase_conversions{% endtrans %}</legend>
 	<div class="row-fluid">
 		
 		{% if purchaseRequired > 0 %}
@@ -11,8 +11,8 @@
 	
 		<div class="alert alert-block">
 			<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
-			<strong><i class="icon-info-sign"></i> Please wait.</strong> <br/>
-			The number of conversions you require for your uploaded file is being calculated.
+			<strong><i class="icon-info-sign"></i> {% trans %}txt_please_wait{% endtrans %}</strong> <br/>
+			{% trans %}txt_no_of_conversion_being_calc{% endtrans %}
 		</div>
 		{% endif %}
 	

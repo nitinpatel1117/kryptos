@@ -3,7 +3,7 @@
 	<div style="background-color:#F8F8F8">	    			
 		<form id="paymentBilling" action="{{ path('payment_billing') }}" method="post" {{ form_enctype(form) }} class="form-horizontal">
 	    	<fieldset>
-				<legend>{{ location }}</legend>
+				<legend>{% trans %}txt_billing_details{% endtrans %}</legend>
 				
 		    	<div class="control-group">
 				    {{ form_row(form.billingSurname) }}
@@ -30,7 +30,7 @@
 				
 				<div class="control-group">
 					<button id="PaymentBillingForm_btn_submit" class="btn btn-custom-block btn-primary" type="submit">
-						<i class="icon-shopping-cart icon-white"></i> {{ btn_submit }}
+						<i class="icon-shopping-cart icon-white"></i> {% trans %}btn_confirm{% endtrans %}
 					</button>
 				</div>
 			</fieldset>

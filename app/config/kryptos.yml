@@ -52,7 +52,6 @@ parameters:
     CurrencySymbol:          "&euro;"
     Description:             Conversions purchase
     NotificationURL:         sage_notification_page 
-    error_payment_register:  'Ooops!, the system has been unable to contact our payment provider. Please try again. If you continue to experience this problem please give us a call.'
     RedirectURLPass:         sage_redirect_pass
     RedirectURLFail:         sage_redirect_fail
     

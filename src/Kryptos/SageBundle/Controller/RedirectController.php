@@ -5,8 +5,9 @@ namespace Kryptos\SageBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Kryptos\KryptosBundle\Controller\LocaleInterface;
 
-class RedirectController extends Controller
+class RedirectController extends Controller implements LocaleInterface
 {
 	public function passAction(Request $request)
 	{
@@ -44,7 +45,6 @@ class RedirectController extends Controller
 		
 		
 		return $this->render('KryptosSageBundle:Redirect:pass.html.twig', array(
-			'location' 		=> 'Payment Received',
 			'credits_added' => $user['payment'][$paymentIndex]['purchase']['credits'],
 			'credits_total' => $user['credits'],
 			'lines'			=> $lines,
@@ -87,29 +87,28 @@ class RedirectController extends Controller
 		{
 			// NOTAUTHED – The Sage Pay system could not authorise the transaction because the details provided by the Customer were incorrect, or not authenticated by the acquiring bank.
 			case 'NOTAUTHED':
-				$msg = 'Could not authorise the payment because the details provided were incorrect, or not authenticated by the acquiring bank.';
+				$msg = $this->get('translator')->trans('txt_sage_error_status_notauthed');
 				break;
 			
 			// ABORT 	 – The Transaction could not be completed because the user clicked the CANCEL button on the payment pages, or went inactive for 15 minutes or longer.
 			case 'ABORT':
-				$msg = 'Could not authorise the payment because the user clicked the CANCEL button on the payment pages, or went inactive for 15 minutes or longer.';
+				$msg = $this->get('translator')->trans('txt_sage_error_status_abort');
 				break;
 				
 			// REJECTED  – The Sage Pay System rejected the transaction because of the rules you have set on your account.
 			case 'REJECTED':
-				$msg = 'The Sage Pay System rejected the transaction because validation rules were not met.';
+				$msg = $this->get('translator')->trans('txt_sage_error_status_rejected');
 				break;
 				
 			// ERROR 	 – An error occurred at Sage Pay which meant the transaction could not be completed successfully.
 			case 'ERROR':
 			default:
-				$msg = 'An error occurred at Sage Pay which meant the transaction could not be completed successfully.';
+				$msg = $this->get('translator')->trans('txt_sage_error_status_error');
 				break;
 		}
 		
     	
     	return $this->render('KryptosSageBundle:Redirect:fail.html.twig', array(
-    		'location' 	=> 'Payment Failed',
     		'msg' 		=> $msg,
     	));
     }

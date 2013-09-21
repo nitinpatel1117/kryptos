@@ -2,22 +2,22 @@ Kryptos\SageBundle\Entity\PaymentBilling:
     properties:
         billingSurname:
             - NotBlank:
-                message: Billing details incomplete|Please enter your surname.
+                message: msg_title_billing_details_incomplete|msg_desc_enter_surname
         billingFirstnames:
             - NotBlank:
-                message: Billing details incomplete|Please enter your firstname.
+                message: msg_title_billing_details_incomplete|msg_desc_enter_firstname
         billingAddress1:
             - NotBlank:
-                message: Billing details incomplete|Please enter your first line of address.
+                message: msg_title_billing_details_incomplete|msg_desc_enter_address_1
         billingAddress2:
             - NotBlank:  
-                message: Billing details incomplete|Please enter your second line of address.
+                message: msg_title_billing_details_incomplete|msg_desc_enter_address_2
         billingCity:
             - NotBlank:
-                message: Billing details incomplete|Please enter your city.
+                message: msg_title_billing_details_incomplete|msg_desc_enter_city
         billingPostCode:
             - NotBlank: 
-                message: Billing details incomplete|Please enter your postcode.
+                message: msg_title_billing_details_incomplete|msg_desc_enter_postcode
         billingCountry:
             - NotBlank: 
-                message: Billing details incomplete|Please enter your country.
+                message: msg_title_billing_details_incomplete|msg_desc_enter_country

@@ -1,7 +1,7 @@
 {% extends "KryptosKryptosBundle::layout.html.twig" %}
 
 {% block content %}
-	<legend style="text-align:left;">{{ location }}</legend>
+	<legend style="text-align:left;">{% trans %}txt_payment_received{% endtrans %}</legend>
 	<div class="row-fluid">
 		<div class="span12">
 			<div style="background-color:#F8F8F8">
@@ -9,15 +9,15 @@
 					<div class="row">	
 
 						<fieldset>
-							<legend>Your transaction has been successfully processed</legend>
+							<legend>{% trans %}txt_trans_successfully_processed{% endtrans %}</legend>
 
-							<p>{{ credits_added }} conversions have been added to your account.</p>
+							<p>{% trans with {'{{ credits_added }}': credits_added } %}txt_payment_pass_desc_1{% endtrans %}</p>
 							
 							{% if lines > 0 %}
-								<p>The file you uploaded will start processing shortly. {{ lines }} conversions have been deducted from your account for the processing of this file.</p>
+								<p>{% trans with {'{{ lines }}': lines } %}txt_payment_pass_desc_2{% endtrans %}</p>
 							{% endif %}
 
-							<p>You now have a total of {{ credits_total }} conversions.</p> 
+							<p>{% trans with {'{{ credits_total }}': credits_total } %}txt_payment_pass_desc_3{% endtrans %}</p> 
 						</fieldset>
 					</div>
 				</form>

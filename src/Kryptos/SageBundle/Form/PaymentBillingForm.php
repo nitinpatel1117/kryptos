@@ -14,66 +14,66 @@ class PaymentBillingForm extends AbstractType
     	// TODO: get Max length from config
     	
     	$builder->add('billingSurname', 'text', array(
-    		'label'=>'Surname',
+    		'label'=>'txt_surname',
     	#	'required' => true,
     		'max_length' => 20,
     		'attr' => array(
-    			'placeholder'			=> 'Surname',
+    			'placeholder'			=> 'txt_surname',
     			'rel'					=> 'tooltip',
     	#		'data-original-title'	=> 'Please enter your Surname',
     		),
     	));
 			
 		$builder->add('billingFirstnames', 'text', array(
-    		'label'=>'Firstname',
+    		'label'=>'txt_firstname',
     	#	'required' => true,
     		'max_length' => 20,
 			'attr' => array(
-				'placeholder'			=> 'Firstname',
+				'placeholder'			=> 'txt_firstname',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your Firstname',
 			),
     	));
 		
 		$builder->add('billingAddress1', 'text', array(
-    		'label'=>'Address line 1',
+    		'label'=>'txt_address_line_1',
     	#	'required' => true,
     		'max_length' => 100,
 			'attr' => array(
-				'placeholder'			=> 'Address line 1',
+				'placeholder'			=> 'txt_address_line_1',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your first line of Address',
 			),
     	));
 		
 		$builder->add('billingAddress2', 'text', array(
-			'label'=>'Address line 2',
+			'label'=>'txt_address_line_2',
 		#	'required' => false,
     		'max_length' => 100,
 			'attr' => array(
-				'placeholder'			=> 'Address line 2',
+				'placeholder'			=> 'txt_address_line_2',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your second line of Address',
 			),
 		));
 		
 		$builder->add('billingCity', 'text', array(
-			'label'=>'City',
+			'label'=>'txt_city',
 		#	'required' => true,
     		'max_length' => 40,
 			'attr' => array(
-				'placeholder'			=> 'City',
+				'placeholder'			=> 'txt_city',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your City',
 			),
 		));
 		
 		$builder->add('billingPostCode', 'text', array(
-			'label'=>'Postcode',
+			'label'=>'txt_postcode',
 		#	'required' => true,
     		'max_length' => 10,
 			'attr' => array(
-				'placeholder'			=> 'Postcode',
+				'placeholder'			=> 'txt_postcode',
 				'rel'					=> 'tooltip',
 		#		'data-original-title'	=> 'Please enter your Postcode',
 			),
@@ -81,7 +81,7 @@ class PaymentBillingForm extends AbstractType
 		
 		$countryCodes = new CountryCodes();
 		$builder->add('billingCountry', 'choice', array(
-			'label'=>'Country',
+			'label'=>'txt_country',
 		#	'required' => true,
     		'max_length' => 2,
 			'choices' => $countryCodes->getList(),

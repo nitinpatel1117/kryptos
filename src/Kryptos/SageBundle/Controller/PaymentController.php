@@ -5,12 +5,13 @@ namespace Kryptos\SageBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Kryptos\KryptosBundle\Controller\LocaleInterface;
 use Kryptos\SageBundle\Form\PaymentBillingForm;
 use Kryptos\SageBundle\Entity\PaymentBilling;
 use Kryptos\SageBundle\Lib\SageRegisterPayment;
 use Symfony\Component\Form\FormError;
 
-class PaymentController extends Controller
+class PaymentController extends Controller implements LocaleInterface
 {
 	public function billingAction(Request $request)
 	{
@@ -65,7 +66,7 @@ class PaymentController extends Controller
 					$logger = $this->get('logger');
 					$logger->err(sprintf('Error from payment gateway; Tried to register a payment request for user [%s]. Received Sagepay response : %s' , $user['_id'], $sageResult));
 					
-					$error = $this->get('config_manager')->get('sagepay|error_payment_register');
+					$error = $translator->trans('txt_sagepay_error_payment_register');
 				}
 			}
 		}
@@ -74,9 +75,8 @@ class PaymentController extends Controller
 		$currency = utf8_encode(html_entity_decode($currency));
 		
 		return $this->render('KryptosSageBundle:Payment:billing.html.twig', array(
-			'location' 	=> 'Billing Details',
-			'request' => $request,
-			'error' => $error,
+			'request' 	=> $request,
+			'error' 	=> $error,
 			'currency' 	=> $currency,
 			'credits' 	=> $user['currentTrans']['credits'],
 			'cost' 		=> round($user['currentTrans']['cost'], 2),
@@ -116,8 +116,6 @@ class PaymentController extends Controller
     	
     	return $this->render('KryptosSageBundle:Payment:billingForm.html.twig', array(
     		'form' 			=> $form->createView(),
-    		'btn_submit'	=> 'Confirm',
-    		'location'		=> 'Billing Details',
     	));
     }
     

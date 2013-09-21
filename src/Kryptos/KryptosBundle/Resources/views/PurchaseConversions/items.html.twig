@@ -10,7 +10,7 @@
 							{{ form_label(form.conversions) }}
 							{{ form_widget(form.conversions) }}
 					    </div>
-						<!-- <button id="PurchaseConversionForm_btn_cacl" type="button" class="btn btn-custom-block">{{ btn_calculate }}</button> -->
+						<!-- <button id="PurchaseConversionForm_btn_cacl" type="button" class="btn btn-custom-block">Calculate Costs</button> -->
 						
 					</div>
 					<div class="row cost">
@@ -31,7 +31,7 @@
 					<div class="row submit">
 						<div class="span12">
 						<button id="PurchaseConversionForm_btn_submit" type="submit" class="btn btn-custom-block btn-primary">
-							<i class="icon-shopping-cart icon-white"></i> {{ btn_submit }}
+							<i class="icon-shopping-cart icon-white"></i> {% trans %}btn_purchase{% endtrans %}
 						</button>
 						</div>
 					</div>

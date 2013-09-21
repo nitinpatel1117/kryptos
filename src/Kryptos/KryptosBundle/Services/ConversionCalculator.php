@@ -6,11 +6,13 @@ namespace Kryptos\KryptosBundle\Services;
 class ConversionCalculator
 {
 	protected $configManager = null;
+	protected $translator = null;
 	
 	
-	public function __construct($configManager)
+	public function __construct($configManager, $translator)
 	{
 		$this->configManager = $configManager;
+		$this->translator = $translator;
 	}
 	
 	
@@ -29,7 +31,8 @@ class ConversionCalculator
 			$conversionAmount = (int) $conversionAmount;
 		}else {
 			$error = true;
-			$error_msg = 'No. of Conversions must be entered as a number';
+			
+			$error_msg = $this->translator->trans('msg_desc_conversions_must_be_number');
 		}
 		 
 		if (is_numeric($conversionRate)) {
@@ -56,12 +59,20 @@ class ConversionCalculator
 			if (1 > $cost + $vat) {
 				$currency = $this->configManager->get('sagepay|CurrencySymbol');
 				$currency = utf8_encode(html_entity_decode($currency));
-				$data['body']['error'] = sprintf('Increase conversions |Total cost is less than %s1. Please increase the No. of conversions to meet the minimum total of %s1', $currency, $currency);
+				
+				$error_title 	= $this->translator->trans('msg_title_increase_conversions');
+				$error_message 	= $this->translator->trans('msg_desc_increase_conversions', array('{{ currency }}' => $currency));
+				
+				$data['body']['error'] = $error_title.'|'.$error_message;
 			}
 			else if ($cost + $vat > 100000) {
 				$currency = $this->configManager->get('sagepay|CurrencySymbol');
 				$currency = utf8_encode(html_entity_decode($currency));
-				$data['body']['error'] = sprintf('Increase conversions |Total cost is greater than %s100,000. Please decrease the No. of conversions to meet the maximum expenture total of %s100,000', $currency, $currency);
+				
+				$error_title 	= $this->translator->trans('msg_title_decrease_conversions');
+				$error_message 	= $this->translator->trans('msg_desc_decrease_conversions', array('{{ currency }}' => $currency));
+				
+				$data['body']['error'] = $error_title.'|'.$error_message;
 			}
 		
 		}

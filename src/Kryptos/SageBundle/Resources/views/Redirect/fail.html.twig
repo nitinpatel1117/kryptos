@@ -1,18 +1,18 @@
 {% extends "KryptosKryptosBundle::layout.html.twig" %}
 
 {% block content %}
-	<legend style="text-align:left;">{{ location }}</legend>
+	<legend style="text-align:left;">{% trans %}txt_payment_failed{% endtrans %}</legend>
 	<div class="row-fluid">
 		<div class="span12">
 			<div style="background-color:#F8F8F8">
 				<form>
 					<div class="row">
 						<fieldset>
-							<legend>Your transaction could NOT be processed</legend>
+							<legend>{% trans %}txt_trans_not_processed{% endtrans %}</legend>
 
-							<p>There was a problem processing your payment.</p>
+							<p>{% trans %}txt_payment_fail_desc_1{% endtrans %}</p>
 			
-							<p>Our payment provider reported the following problem:</p>
+							<p>{% trans %}txt_payment_fail_desc_2{% endtrans %}</p>
 							<p>{{ msg }}</p>
 						</fieldset>
 					</div>

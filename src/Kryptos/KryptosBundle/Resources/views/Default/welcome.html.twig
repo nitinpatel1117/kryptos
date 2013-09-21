@@ -20,7 +20,7 @@
 	google.setOnLoadCallback(drawChart);
 	function drawChart() {
 		var data = google.visualization.arrayToDataTable([
-			['Date/Time', 'Conversions', 'Invalid'],
+			['{% trans %}txt_datetime{% endtrans %}', '{% trans %}txt_conversions{% endtrans %}', '{% trans %}txt_invalid{% endtrans %}'],
 			{% for file in files %}
 			['{{ file.datetime }}',  {{ file.conversions }},      {{ file.invalid }}],
 			{% endfor %}
@@ -29,7 +29,7 @@
 		var options = {
 			title: '',
 			legend:{position: 'bottom'},
-			hAxis: {title: 'Date/Time',  titleTextStyle: {color: 'red'}}
+			hAxis: {title: '{% trans %}txt_datetime{% endtrans %}',  titleTextStyle: {color: 'red'}}
 		};
 
 		var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));

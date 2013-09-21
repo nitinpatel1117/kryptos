@@ -5,11 +5,12 @@ namespace Kryptos\KryptosBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Kryptos\KryptosBundle\Controller\LocaleInterface;
 use Kryptos\KryptosBundle\Form\PurchaseConversionsForm;
 use Symfony\Component\Form\FormError;
 
 
-class PurchaseConversionsController extends Controller
+class PurchaseConversionsController extends Controller implements LocaleInterface
 {
     public function indexAction(Request $request)
     {
@@ -48,7 +49,6 @@ class PurchaseConversionsController extends Controller
     	
 
         return $this->render('KryptosKryptosBundle:PurchaseConversions:index.html.twig', array(
-        	'location' 			=> 'Purchase Conversions',
         	'request' 			=> $request,
         	'error' 			=> $error,
         	'purchaseRequired' 	=> $purchaseRequired,
@@ -116,8 +116,6 @@ class PurchaseConversionsController extends Controller
     	
     	return $this->render('KryptosKryptosBundle:PurchaseConversions:items.html.twig', array(
     		'form' 				=> $form->createView(),
-    		'btn_calculate' 	=> 'Calculate Costs',
-    		'btn_submit' 		=> 'Purchase',
     		'formAction'		=> $formAction,
     	));
     }
