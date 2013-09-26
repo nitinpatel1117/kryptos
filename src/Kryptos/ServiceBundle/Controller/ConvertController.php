@@ -28,7 +28,7 @@ class ConvertController extends DefaultController
 
 
     	if ('' == $iban) {
-    		return $this->dieImmediately(sprintf('Required fields have not been supplied, an %s must be supplied.', 'IBAN'), 404);
+    		return $this->dieImmediately('Required fields have not been supplied, an IBAN must be supplied.', 404);
     	}
     	
     		
@@ -37,7 +37,7 @@ class ConvertController extends DefaultController
     		$credits = $this->getAllowedConversions();
     		if ($credits < 1) {
     			$errorExists = true;
-    			return $this->dieImmediately('Insufficient credit. You do not have sufficient funds in your account to carry out the check.', 404);
+    			return $this->dieImmediately('Insufficient credit. You do not have sufficient funds in your account to carry out the check. Please credit your account and then try again.', 404);
     		}
     	}
 
@@ -88,7 +88,7 @@ class ConvertController extends DefaultController
     	$this->setupUser($user);
     	
     	if (is_null($country) || ''== $country) {
-    		return $this->dieImmediately(sprintf('Required fields have not been supplied, a %s must be supplied.', 'Country Code'), 404);
+    		return $this->dieImmediately('Required fields have not been supplied, a Country Code must be supplied.', 404);
     	}
     	$country = strtoupper($country);
     	

@@ -3,7 +3,7 @@
 
 
 {% block content %}
-	<legend style="text-align:left;">Convert Bank account</legend>
+	<legend style="text-align:left;">{% trans %}txt_convert_bank_account{% endtrans %}</legend>
 	<div class="row-fluid">
 		<div class="span6">
 			<div style="background-color:#F8F8F8">
@@ -32,14 +32,14 @@
 						{% endif %}
 					
 						<fieldset>
-							<legend>Enter Bank Account</legend>
+							<legend>{% trans %}txt_enter_bank_account{% endtrans %}</legend>
 							
 							<div class="control-group">
 								{{ form_row(form.iban) }}
 							</div> 
 							
 							<div class="control-group or_splitter">
-								<p>OR</p>
+								<p>{% trans %}txt_or{% endtrans %}</p>
 							</div>
 							
 							<div class="control-group">
@@ -54,7 +54,7 @@
 					
 							<div class="control-group">    
 								<div class="controls">
-									<button type="submit" class="btn btn-custom-block btn-primary"><i class="icon-check icon-white"></i> {{ btn_submit }}</button>
+									<button type="submit" class="btn btn-custom-block btn-primary"><i class="icon-check icon-white"></i> {% trans %}txt_convert{% endtrans %}</button>
 								</div>  
 							</div>
 						</fieldset>
@@ -72,16 +72,16 @@
 						{% if result.isTransposed is defined and true == result.isTransposed %}
 							<div class="alert alert-info">
 								<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
-								<strong><i class="icon-ok-sign"></i> Bank Account Details Transposed</strong> <br/>
-								Account details were not in standard form and have been transposed.
+								<strong><i class="icon-ok-sign"></i> {% trans %}msg_title_bank_account_transposed{% endtrans %}</strong> <br/>
+								{% trans %}msg_desc_bank_account_transposed{% endtrans %}
 							</div>
 						{% endif %}
 				
 						{% if true == accountValid %}
 							<div class="alert alert-success">
 								<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
-								<strong><i class="icon-ok-sign"></i> Bank Account valid</strong> <br/>
-								The bank account provided is valid and has been converted to SEPA format.
+								<strong><i class="icon-ok-sign"></i> {% trans %}msg_title_bank_account_valid{% endtrans %}</strong> <br/>
+								{% trans %}msg_desc_bank_account_valid{% endtrans %}
 							</div>
 						{% endif %}
 					
@@ -97,10 +97,10 @@
 				<form class="form-horizontal">
 					<div class="row">
 						<div class="control-group">    
-							<legend>Converted Results</legend>
+							<legend>{% trans %}txt_convert_results{% endtrans %}</legend>
 							
 							<div class="control-group">
-								<label class="control-label" for="iban">IBAN</label>
+								<label class="control-label" for="iban">{% trans %}txt_iban{% endtrans %}</label>
 								<div class="controls">
 									<span class="input-xlarge uneditable-input" style="height:20px;" id="iban" rel="popover">
 									{% if result.iban is defined %}
@@ -111,7 +111,7 @@
 							</div>
 							
 							<div class="control-group">
-								<label class="control-label" for="bic">BIC</label>
+								<label class="control-label" for="bic">{% trans %}txt_bic{% endtrans %}</label>
 								<div class="controls">
 									<span class="input-xlarge uneditable-input"  style="height:20px;" id="bic" rel="popover">
 									{% if result.bic is defined %}
@@ -122,7 +122,7 @@
 							</div>
 	
 							<div class="control-group">
-								<label class="control-label" for="bank">Bank</label>
+								<label class="control-label" for="bank">{% trans %}txt_bank{% endtrans %}</label>
 								<div class="controls">
 									<span class="input-xlarge uneditable-input"  style="height:20px;" id="bank" rel="popover">
 									{% if result.bankDetails.bank_name is defined %}
@@ -134,7 +134,7 @@
 	
 						
 							<div class="control-group">
-								<label class="control-label" for="bank">Branch</label>
+								<label class="control-label" for="bank">{% trans %}txt_branch{% endtrans %}</label>
 								<div class="controls">
 									<span class="input-xlarge uneditable-input"  style="height:20px;" id="branch" rel="popover">
 									{% if result.bankDetails.branch_name is defined %}
@@ -145,7 +145,7 @@
 							</div>
 							
 							<div class="control-group">
-								<label class="control-label" for="address">Address</label>
+								<label class="control-label" for="address">{% trans %}txt_address{% endtrans %}</label>
 								<div class="controls">
 									<span class="input-xlarge uneditable-input"  style="height:20px;" id="address" rel="popover">
 									{% set addressOutputMade = 'false' %}
@@ -162,24 +162,24 @@
 							{% if false == result.directDebitsSupported %}
 								<div class="alert alert-info">
 									<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
-									<strong><i class="icon-info-sign"></i> SEPA Direct Debit unsupported</strong> <br/>
-									The bank/branch does not support SEPA Direct Debit
+									<strong><i class="icon-info-sign"></i> {% trans %}msg_title_sepa_dd_unsupported{% endtrans %}</strong> <br/>
+									{% trans %}msg_desc_sepa_dd_unsupported{% endtrans %}
 								</div>
 							{% endif %}
 						
 							{% if false == result.creditTransferSupported %}
 								<div class="alert alert-info">
 								  <button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
-								  <strong><i class=" icon-info-sign"></i> SEPA Credit Transfer unsupported</strong> <br/>
-								  The bank/branch does not support SEPA Credit Transfers
+								  <strong><i class=" icon-info-sign"></i> {% trans %}msg_title_sepa_ct_unsupported{% endtrans %}</strong> <br/>
+								  {% trans %}msg_desc_sepa_ct_unsupported{% endtrans %}
 								</div>
 				        	{% endif %}
 		
 							{% if false == result.businessDirectDebitsSupported %}
 								<div class="alert alert-info">
 									<button type="button" class="close" data-dismiss="alert"><i class=" icon-remove"></i></button>
-									<strong><i class=" icon-info-sign"></i> SEPA Business Direct Debit unsupported</strong> <br/>
-									The bank/branch does not support SEPA Business Direct Debit payments
+									<strong><i class=" icon-info-sign"></i> {% trans %}msg_title_sepa_bdd_unsupported{% endtrans %}</strong> <br/>
+									{% trans %}msg_desc_sepa_bdd_unsupported{% endtrans %}
 								</div>
 				        	{% endif %}
       

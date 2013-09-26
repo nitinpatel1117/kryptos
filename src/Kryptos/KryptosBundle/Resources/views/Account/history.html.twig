@@ -15,7 +15,7 @@
 				<tbody>
 					 {% for payment in payments %}
 						 <tr>
-							<td>{{ payment.datetime|escape }}</td>
+							<td>{{ payment.datetime|date('d/m/Y H:i:s') }}</td>
 							<td>{{ payment.type|trans|escape }}</td>
 							<td>{{ payment.cost|escape }}</td>
 							<td>{{ payment.credits|escape }}</td>

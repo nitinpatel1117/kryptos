@@ -181,7 +181,8 @@ class AccountController extends Controller implements LocaleInterface
     			
 	    	$payment = array(
 	    		'id' 			=> $transaction['_id']->__toString(),
-	    		'datetime' 		=> $date->format('d/m/Y H:i:s'),
+	    		#'datetime' 		=> $date->format('d/m/Y H:i:s'),
+	    		'datetime' 		=> clone $date,
 	    		'type' 			=> 'txt_credit',
 	    		'credits' 		=> isset($transaction['purchase']['credits']) 	? $transaction['purchase']['credits'] : '',
 	    		'cost' 			=> isset($transaction['purchase']['total']) 	? number_format($transaction['purchase']['total'], 2) : '',
@@ -219,7 +220,8 @@ class AccountController extends Controller implements LocaleInterface
     		}
     		$payment = array(
     			'id' 			=> $id,
-    			'datetime' 		=> $date->format('d/m/Y H:i:s'),
+    			#'datetime' 		=> $date->format('d/m/Y H:i:s'),
+    			'datetime' 		=> clone $date,
     			'type' 			=> $type,
     			'credits' 		=> $credit,
     			'cost' 			=> isset($history['totalCost']) ? number_format($history['totalCost'], 2) : '',
@@ -230,7 +232,7 @@ class AccountController extends Controller implements LocaleInterface
     	}
     	
     	usort($payments, function($a, $b) {
-    		return strcmp($a['datetime'], $b['datetime']);
+    		return ($a['datetime'] < $b['datetime']) ? -1 : 1;
     	});
     	
     	

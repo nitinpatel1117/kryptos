@@ -3,12 +3,13 @@ namespace Kryptos\KryptosBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Kryptos\KryptosBundle\Controller\LocaleInterface;
 use Kryptos\KryptosBundle\Form\ConvertSingleForm;
 use Symfony\Component\Form\FormError;
 use Kryptos\KryptosBundle\Lib\BbanCountryMappings\Mappings;
 
 
-class ConvertSingleController extends Controller
+class ConvertSingleController extends Controller implements LocaleInterface
 {
 	
 	protected $user;
@@ -58,7 +59,9 @@ class ConvertSingleController extends Controller
 	    			{
 	    				if (!(isset($formPosted[$key]) && !empty($formPosted[$key]))) {
 	    					$errorExists = true;
-	    					$form->get($key)->addError(new FormError(sprintf('Invalid Details |%s is a required field. Please supply a value for %s and try again.', $value, $value)));
+	    					
+	    					$description = $translated = $this->get('translator')->trans('msg_desc_bban_required', array('{{ field_name  }}' => $value));
+	    					$form->get($key)->addError(new FormError('msg_title_invalid_details|'.$description));
 	    				}
 	    			}
 	    		}
@@ -67,7 +70,7 @@ class ConvertSingleController extends Controller
     			if ('' == $ibanEntered) {
     				$errorExists = true;
     				// $form->addError(new FormError(sprintf('Invalid Details| %s is a required field. Please select a country and try again.', 'Country')));
-    				$form->addError(new FormError(sprintf('Invalid Details| Required fields have not been completed, either an %s must be supplied or a %s must be selected. Please try again.', 'IBAN', 'Country')));
+    				$form->addError(new FormError('msg_title_invalid_details|msg_desc_iban_or_country'));
     			}
     		}
     		
@@ -80,7 +83,7 @@ class ConvertSingleController extends Controller
     			$credits = $this->getAllowedConversions();
     			if ($credits < 1) {
     				$errorExists = true;
-    				$form->addError(new FormError('Insufficient credit|You do not have sufficient funds in your account to carry out the check. Please credit your account and then try again.'));
+    				$form->addError(new FormError('msg_title_insufficient_credit|msg_desc_insufficient_credit'));
     			}
     		}
 
@@ -109,9 +112,9 @@ class ConvertSingleController extends Controller
     			
 	    			
 	    		if (true == $resultsConversion->isFatal) {
-	    			$form->addError(new FormError('Conversion not possible |Our conversion tool is offline, therefore, we are currenlty not able to process your request. Note: You have not been charged a conversion.'));
+	    			$form->addError(new FormError('msg_title_conversion_tool_offline|msg_desc_conversion_tool_offline'));
 	    		} else if (false == $resultsConversion->isValid) {
-	    			$form->addError(new FormError('Invalid Bank Account |The bank account provided is incorrect. Please check and try again.'));
+	    			$form->addError(new FormError('msg_title_invalid_bank_account|msg_desc_invalid_bank_account'));
 	    			$chargeUser = true;
 	    		}
 	    		else {
@@ -143,12 +146,9 @@ class ConvertSingleController extends Controller
     	
         return $this->render('KryptosKryptosBundle:ConvertSingle:index.html.twig', array(
         	'form' 						=> $form->createView(),
-        	'location' 					=> 'Single Convert',
-        	'btn_submit' 				=> 'Convert',
         	'conversionsRestricted' 	=> $this->conversionsRestricted(),
         	'bbanMappings' 				=> $mappings->getBbanMappings(),
         	'countrySelected'			=> $countrySelected,
-        	
         	'accountValid'				=> $accountValid,
         	'result' 					=> isset($resultsConversion) ? $resultsConversion : null,
         ));
