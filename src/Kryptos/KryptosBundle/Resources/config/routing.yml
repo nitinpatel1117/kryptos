@@ -108,4 +108,4 @@ locale_switch:
     pattern:  /locale/switch/{_locale}
     defaults: { _controller: KryptosKryptosBundle:Locale:switch, _locale: en}
     requirements:
-        _locale: en|de|fr|sp|it
+        _locale: en|de|fr|es|it

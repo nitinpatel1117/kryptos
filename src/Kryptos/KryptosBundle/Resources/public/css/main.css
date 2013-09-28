@@ -7,10 +7,17 @@ section.blueHeader h1,
 section.blueHeader h2 { background-color: #4F81BD; color: white; margin-top:0px; padding:7px;  font-size:1.2em;}
 section.blueHeader section.innerWrap { padding:20px;}
 
+section.blueHeader section.innerWrap { padding:20px;}
+
 /* sub header - e.g. File Status */
 section.sub-blueHeader { margin-top: 40px; }
 section.sub-blueHeader h2 { background-color: #4F81BD; color: white; margin-top:0px; padding:7px;  font-size:1.2em; margin-bottom:0px; border: solid 1px black; border-bottom: none;}
 section.sub-blueHeader section.innerWrap { padding:20px;}
+
+
+
+/*** Nav ***/
+div#loggedInUser { margin:-15px 5px 0px 0px; }
 
 
 /*** Forms ***/

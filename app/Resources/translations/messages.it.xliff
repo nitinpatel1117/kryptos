@@ -1213,6 +1213,10 @@
 			<trans-unit id="303">
                 <source>txt_confirm_new_password</source>
                 <target><![CDATA[]]></target>
+            </trans-unit>			
+			<trans-unit id="304">
+                <source>txt_indigenous_lang</source>
+                <target><![CDATA[Italiano]]></target>
             </trans-unit>		
         </body>
     </file>

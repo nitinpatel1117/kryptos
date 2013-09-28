@@ -166,6 +166,10 @@ class ImportTranslations
 				fclose($handle);
 			}
 		}
+		else {
+			echo "File cannot be read".PHP_EOL;
+			exit;
+		}
 	}
 	
 	

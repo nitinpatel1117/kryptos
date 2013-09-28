@@ -1217,6 +1217,10 @@
 			<trans-unit id="304">
                 <source>txt_confirm_new_password</source>
                 <target><![CDATA[Confirm New Password]]></target>
+            </trans-unit>			
+			<trans-unit id="305">
+                <source>txt_indigenous_lang</source>
+                <target><![CDATA[English]]></target>
             </trans-unit>		
         </body>
     </file>
