@@ -12,9 +12,3 @@ parameters:
   locale: en
   secret: 6af2c3eb34f4323e416a9f85c3fd47271ccda47e
   database_path: null
-  supported_locales:
-    - en
-    - de
-    - fr
-    - es
-    - it

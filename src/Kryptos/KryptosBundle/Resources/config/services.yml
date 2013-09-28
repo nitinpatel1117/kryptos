@@ -108,7 +108,7 @@ services:
 
     locale_switcher:
         class:          %locale_switcher.class%
-        arguments:      [@session, @service_container]
+        arguments:      [@session, @service_container, @config_manager]
         tags:
             - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
         

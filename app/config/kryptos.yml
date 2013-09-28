@@ -1,6 +1,14 @@
 parameters:
   disable_sigin: no
-  
+  supported_locales:
+    - en
+    - de
+    - fr
+    - es
+    - it
+  locale_cookie_time:          31536000     # 3600 x 24 x 365 = 1 year
+  locale_cookie_name:          locale
+
   site:
     name:                      'Kryptos'
     url:                       'kryptos.nitin.me.uk'
@@ -30,7 +38,7 @@ parameters:
   session_memcache_port:               11211
   session_memcache_prefix:             sess_
   session_memcache_expire:             1200
-  
+
   purchase_conversions:
     # conversionRate is the amount that each conversion costs in pounds (or other currency). a value of less than 1 means each is less than 1 pound
     # rate of 1 means 1 pound gets you 1 conversion; rate of 0.5 means 1 pound gets you 2 conversions; rate of 2 means 2 pounds gets you 1 conversion;
