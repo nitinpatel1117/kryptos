@@ -12,7 +12,13 @@ class ConvertSingleForm extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
     	$mappings = new Mappings();
-    	$countries = $mappings->getCountries();
+    	$countryMappings = $mappings->getCountries();
+    	
+    	$countries = array();
+    	foreach($countryMappings as $countryCode => $countryName) {
+    		// generate array to contain our translation values as  'txt_country_GB'
+    		$countries[$countryCode] = sprintf('txt_country_%s', strtoupper($countryCode));
+    	}
     	
     	
     	$builder->add('iban', 'text', array(
@@ -20,16 +26,18 @@ class ConvertSingleForm extends AbstractType
     	#	'required' => false,
     		'attr' => array(
     			'placeholder'			=> 'IBAN',
-    			'rel'					=> 'poppver',
-    	#		'data-original-title'	=> 'Please enter the IBAN',
+    		#	'rel'					=> 'popover',
+    		#	'data-original-title'	=> 'IBAN',
+    		#	'data-content'			=> 'My Content IBAN',
+    		#	'data-placement'		=> 'top',
     			'autocomplete'			=> 'off',
     		),
     	));
     	
     	$builder->add('country', 'choice', array(
-    		'choices'   => $countries,
-    		'required'  => false,
-    		'empty_value' => 'Choose a country',
+    		'choices'   	=> $countries,
+    		'required'  	=> false,
+    		'empty_value' 	=> 'txt_choose_a_country',
     	));
     	
     	// determine required fields

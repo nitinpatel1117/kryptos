@@ -221,20 +221,6 @@ class ImportTranslations
 			}
 			$this->getTranslationManager()->insert($translation);
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		$this->translations[] = $translation;
-	
-		if (count($this->translations) > $this->entriesToRead) {
-			$this->getTranslationManager()->batchIsert($this->translations);
-			$this->translations = array();
-		}
 	}
 	
 	public function flushTranslations($translation)
