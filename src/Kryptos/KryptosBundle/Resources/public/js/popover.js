@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$("input[rel=popover]")
 	    .popover()
-	    .click(function(e) { 
+	    .click(function(e) {
 	        e.preventDefault(); 
 	    });
 });

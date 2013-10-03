@@ -25,8 +25,12 @@
 								bbanMap['{{ code }}'] = new Array();
 					        
 								{% for name, text in mappings %}
-								{% set myfield = 'iban_' ~ code ~ '_'  ~ name~ '_name' %}
-								bbanMap['{{ code }}']['{{ name }}'] = '{{ myfield|trans }}';
+									{% set fieldname = 'bban_' ~ code ~ '_'  ~ name~ '_name' %}
+									{% set fieldhint = 'bban_' ~ code ~ '_'  ~ name~ '_hint' %}
+
+									bbanMap['{{ code }}']['{{ name }}'] = new Array();
+									bbanMap['{{ code }}']['{{ name }}']['name'] = '{{ fieldname|trans }}';
+									bbanMap['{{ code }}']['{{ name }}']['hint'] = '{{ fieldhint|trans }}';
 					    	    {% endfor %}
 					    	{% endfor %}
 						</script>

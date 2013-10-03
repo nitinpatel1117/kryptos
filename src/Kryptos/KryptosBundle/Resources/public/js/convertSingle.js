@@ -9,11 +9,12 @@ hideAllFields = function()
 
 removeAllValues = function()
 {
-	$('#ConvertSingleForm_bban1').val('');
-	$('#ConvertSingleForm_bban2').val('');
-	$('#ConvertSingleForm_bban3').val('');
-	$('#ConvertSingleForm_bban4').val('');
-	$('#ConvertSingleForm_bban5').val('');
+	for (var i=1; i<6; i++) {
+		$('#ConvertSingleForm_bban'+i).val('');
+		$('#ConvertSingleForm_bban'+i).attr("placeholder", '');
+		$('#ConvertSingleForm_bban'+i).attr("data-original-title", '');
+		$('#ConvertSingleForm_bban'+i).attr("data-content", '');
+	}
 }
 
 
@@ -22,8 +23,6 @@ if (typeof countrySelected != 'undefined' && '' == countrySelected) {
 }
 
 $(document).ready(function() {
-	
-	
 	
 	changeToCountry = function(bbanMap, countryCode, hideFields)
 	{
@@ -40,10 +39,15 @@ $(document).ready(function() {
 			$('#ConvertSingleForm_bban5').removeAttr("required");
 			
 			for( var key in bbanMap[countryCode] ) {
-				var value = bbanMap[countryCode][key];
+				var fieldName = bbanMap[countryCode][key]['name'];
+				var fieldHint = bbanMap[countryCode][key]['hint'];
+				
 				// $('.form_row.'+key+' label').text(value);
 				$('#ConvertSingleForm_'+key).attr("required", "required");
-				$('#ConvertSingleForm_'+key).attr("placeholder", value);
+				$('#ConvertSingleForm_'+key).attr("placeholder", fieldName);
+				$('#ConvertSingleForm_'+key).attr("data-original-title", fieldName);
+				$('#ConvertSingleForm_'+key).attr("data-content", fieldHint);
+				
 				$('.form_row.'+key).css('visibility', 'visible');
 		    }
 		}
