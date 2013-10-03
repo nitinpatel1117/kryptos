@@ -60,7 +60,9 @@ class ConvertSingleController extends Controller implements LocaleInterface
 	    				if (!(isset($formPosted[$key]) && !empty($formPosted[$key]))) {
 	    					$errorExists = true;
 	    					
-	    					$description = $translated = $this->get('translator')->trans('msg_desc_bban_required', array('{{ field_name  }}' => $value));
+	    					$fieldname = $this->get('translator')->trans('bban_'.$countrySelected.'_'.$key.'_name');
+	    					$description = $this->get('translator')->trans('msg_desc_bban_required', array('{{ bban_fieldname }}' => $fieldname));
+	    					
 	    					$form->get($key)->addError(new FormError('msg_title_invalid_details|'.$description));
 	    				}
 	    			}
