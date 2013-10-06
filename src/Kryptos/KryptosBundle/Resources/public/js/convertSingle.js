@@ -17,6 +17,11 @@ removeAllValues = function()
 	}
 }
 
+placeholderIsSupported = function () {
+    var test = document.createElement('input');
+    return ('placeholder' in test);
+}
+
 
 if (typeof countrySelected != 'undefined' && '' == countrySelected) {
 	hideAllFields();
@@ -48,6 +53,11 @@ $(document).ready(function() {
 				$('#ConvertSingleForm_'+key).attr("data-original-title", fieldName);
 				$('#ConvertSingleForm_'+key).attr("data-content", fieldHint);
 				
+				if (!placeholderIsSupported()) {
+					$('#ConvertSingleForm_'+key).val(fieldName);
+					$('input[type=text], textarea').placeholder();
+				}
+				
 				$('.form_row.'+key).css('visibility', 'visible');
 		    }
 		}
@@ -64,11 +74,18 @@ $(document).ready(function() {
 
 	if ($('select#ConvertSingleForm_country').length) {
 		$('select#ConvertSingleForm_country').change(function() {
+			var countryCode, ibanPlaceholder;
+			
 			countryCode = $('select#ConvertSingleForm_country').val();
 			changeToCountry(bbanMap, countryCode, true);
 			
 			// remove iban value
-			$('#ConvertSingleForm_iban').val('');
+			if (placeholderIsSupported()) {
+				$('#ConvertSingleForm_iban').val('');
+			} else {
+				ibanPlaceholder = $('#ConvertSingleForm_iban').attr('placeholder');
+				$('#ConvertSingleForm_iban').val(ibanPlaceholder);
+			}
 		});
 		/*
 		$('select#ConvertSingleForm_country').click(function() {
