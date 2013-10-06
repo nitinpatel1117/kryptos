@@ -11,7 +11,7 @@ removeAllValues = function()
 {
 	for (var i=1; i<6; i++) {
 		$('#ConvertSingleForm_bban'+i).val('');
-		$('#ConvertSingleForm_bban'+i).attr("placeholder", '');
+		//$('#ConvertSingleForm_bban'+i).attr("placeholder", '');
 		$('#ConvertSingleForm_bban'+i).attr("data-original-title", '');
 		$('#ConvertSingleForm_bban'+i).attr("data-content", '');
 	}
@@ -52,10 +52,15 @@ $(document).ready(function() {
 				$('#ConvertSingleForm_'+key).attr("placeholder", fieldName);
 				$('#ConvertSingleForm_'+key).attr("data-original-title", fieldName);
 				$('#ConvertSingleForm_'+key).attr("data-content", fieldHint);
+
 				
 				if (!placeholderIsSupported()) {
-					$('#ConvertSingleForm_'+key).val(fieldName);
-					$('input[type=text], textarea').placeholder();
+					// $('#ConvertSingleForm_'+key).val(fieldName);
+					//$('input[type=text], textarea').placeholder();
+					
+					$('#ConvertSingleForm_'+key).placeholderEnhanced('destroy');
+					$('#ConvertSingleForm_'+key).val('');
+					$('#ConvertSingleForm_'+key).placeholderEnhanced();
 				}
 				
 				$('.form_row.'+key).css('visibility', 'visible');
@@ -82,9 +87,11 @@ $(document).ready(function() {
 			// remove iban value
 			if (placeholderIsSupported()) {
 				$('#ConvertSingleForm_iban').val('');
-			} else {
+			} 
+			else {
 				ibanPlaceholder = $('#ConvertSingleForm_iban').attr('placeholder');
 				$('#ConvertSingleForm_iban').val(ibanPlaceholder);
+				$('#ConvertSingleForm_iban').addClass('placeholder');
 			}
 		});
 		/*

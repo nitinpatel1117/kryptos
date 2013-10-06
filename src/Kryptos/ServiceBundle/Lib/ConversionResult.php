@@ -4,11 +4,13 @@ namespace Kryptos\ServiceBundle\Lib;
 class ConversionResult
 {
 	protected $singleConversion;
+	protected $translator = null;
 	
 	
-	public function __construct($singleConversion)
+	public function __construct($singleConversion, $translator)
 	{
 		$this->singleConversion = $singleConversion;
+		$this->translator = $translator;
 	}
 	
 	
@@ -61,12 +63,25 @@ class ConversionResult
 		$data['is_valid'] 		= $this->singleConversion->isValid;
 		$data['is_transposed'] 	= $this->singleConversion->isTransposed;
 		
-		$data['credit_transfer_supported'] 		= $this->singleConversion->creditTransferSupported;
 		$data['direct_debits_supported'] 			= $this->singleConversion->directDebitsSupported;
+		$data['credit_transfer_supported'] 			= $this->singleConversion->creditTransferSupported;
 		$data['business_direct_debits_supported'] 	= $this->singleConversion->businessDirectDebitsSupported;
 		
 		// $data['errors'] 	= $this->singleConversion->errorMsg;
-		$data['warnings'] 	= $this->singleConversion->warningMsg;
+		// $data['warnings'] 	= $this->singleConversion->warningMsg;
+		
+		
+		if (false == $this->singleConversion->directDebitsSupported) {
+			$data['warnings'][] = $this->translator->trans('msg_desc_sepa_dd_unsupported');
+		}
+		
+		if (false == $this->singleConversion->creditTransferSupported) {
+			$data['warnings'][] = $this->translator->trans('msg_desc_sepa_ct_unsupported');
+		}
+		
+		if (false == $this->singleConversion->businessDirectDebitsSupported) {
+			$data['warnings'][] = $this->translator->trans('msg_desc_sepa_bdd_unsupported');
+		}
 		
 		
 		return array($data);

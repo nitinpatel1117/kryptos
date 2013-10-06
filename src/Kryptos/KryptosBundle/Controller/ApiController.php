@@ -4,9 +4,10 @@ namespace Kryptos\KryptosBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Kryptos\KryptosBundle\Controller\LocaleInterface;
 
 
-class ApiController extends Controller
+class ApiController extends Controller implements LocaleInterface
 {
     public function detailsAction(Request $request)
     {

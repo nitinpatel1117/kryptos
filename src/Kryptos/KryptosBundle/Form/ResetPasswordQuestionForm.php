@@ -15,7 +15,7 @@ class ResetPasswordQuestionForm extends AbstractType
     	$builder->add('password', 'repeated', array(
 			'type' => 'password',
 		#	'required' => true,
-			'invalid_message' => "msg_title_password_not_match |msg_desc_password_not_match",
+			'invalid_message' => "msg_title_password_not_match|msg_desc_password_not_match",
 			'first_name' => 'password',
 			'second_name' => 'confirmPassword',
 			'first_options' => array(

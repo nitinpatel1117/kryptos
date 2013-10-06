@@ -18,7 +18,7 @@
 				</form>
 			</div>
 		</div>
-		
+		<!--
 		<div class="span6">
 			<div style="background-color:#F8F8F8">
 				<form>
@@ -33,6 +33,7 @@
 				</form>
 			</div>
 		</div>
+		 -->
 	</div>
 	
 	<div class="row-fluid">
@@ -42,10 +43,10 @@
 				The following API calls are available<br><br>
 				
 				IBAN endpoint:<br>
-				<code>/services/convert/iban/{publicKey}/{iban}</code><br><br>
+				<code>/services/{locale}/convert/iban/{publicKey}/{iban}</code><br><br>
 				
 				BBAN endpoint:<br>
-				<code>/services/convert/bban/{publicKey}/{country}/{bban1}/{bban2}/{bban3}/{bban4}</code><br>
+				<code>/services/{locale}/convert/bban/{publicKey}/{country}/{bban1}/{bban2}/{bban3}/{bban4}</code><br>
 				
 				<br>
 			</div>
@@ -61,18 +62,32 @@
 			</div>
 			
 			<div>
+				<br><br>
+				Both API calls require that you specify the language that you want the results return back in. Your language preferred should replace the text <code>{locale}</code> in both API calls.
+				The following locales are supported:<br>
+				<ul>
+					{% for supported_locale in supported_locales %}
+					<li>{{ supported_locale }}</li>
+					{% endfor %}
+				</ul>
+				{% for supported_locale in supported_locales %}
+					{{ supported_locale }} = {% trans into supported_locale %}txt_indigenous_lang{% endtrans %}, 
+				{% endfor %}
+				
+				<br>
+				<br>
 				<br>
 				Both API calls require that your public key (displayed above) is provided in the call. Your public key should replace the text <code>{publicKey}</code> in both API calls. 
 			</div>
 			
 			<div>
-				<br>
+				<br><br>
 				When using the BBAN endpoint, only the necessary bban fields for the specified country code can be supplied.<br>
 				e.g. If making a call on the GB country code then only bban1 and bban2 can be supplied, such as:<br>
 				<code>/services/convert/bban/{publicKey}/GB/{bban1}/{bban2}</code>
 			</div>
 			
-			
+			 <!--
 			<br><br>
 			<legend>What are Public/Private keys</legend>
 			<div>
@@ -89,6 +104,7 @@
 				Our API's do NOT currently support this feature.
 				More information will be added here once this feature has been implemented.
 			</div>
+			 -->
 			
 		</form>
 	</div>

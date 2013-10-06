@@ -29,7 +29,6 @@
 						try {
 							context.attr('type', 'text');
 						} catch(e) {
-							alert('failed to change password type to text');
 							return false;
 						}
 					}

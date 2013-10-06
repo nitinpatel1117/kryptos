@@ -39,7 +39,7 @@
 
 {% block javascripts %}
 <script src="/bundles/kryptoskryptos/js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="/bundles/kryptoskryptos/js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="/bundles/kryptoskryptos/js/jquery.placeholder-enhanced.js"></script>
 
 <script src="/bundles/kryptoskryptos/js/localeSwitcher.js"></script>
 
@@ -48,11 +48,7 @@
 <script type="text/javascript">
 $(document).ready(function() {
 	$("input[rel=tooltip]").tooltip({ trigger: 'hover' ,animation: 'true' , placement:'right'});
-});
-</script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('input[type=text], textarea').placeholder();
+	$('input[placeholder], textarea[placeholder]').placeholderEnhanced();
 });
 </script>
 {% endblock %}

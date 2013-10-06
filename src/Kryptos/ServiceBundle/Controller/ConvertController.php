@@ -5,15 +5,18 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Kryptos\ServiceBundle\Lib\ConversionResult;
 use Kryptos\KryptosBundle\Lib\BbanCountryMappings\Mappings;
+use Kryptos\KryptosBundle\Controller\LocaleInterface;
 
 
-class ConvertController extends DefaultController
+class ConvertController extends DefaultController implements LocaleInterface
 {
 	
 	protected $user;
 	
-    public function ibanAction(Request $request, $publicKey, $iban)
+    public function ibanAction(Request $request, $_locale, $publicKey, $iban)
     {
+    	$this->get('locale_switcher')->setLocale($_locale);
+    	
     	$userManager = $this->get('user_manager');
     	
     	$errorExists = false;
@@ -22,13 +25,13 @@ class ConvertController extends DefaultController
     	$user = $userManager->getUserByPublicKey($publicKey);
     	if (is_null($user)) {
     		$errorExists = true;
-    		return $this->dieImmediately('Invalid credentials.', 404);
+    		return $this->dieImmediately($this->get('translator')->trans('msg_title_invalid_credentials'), 404);
     	}
     	$this->setupUser($user);
 
 
     	if ('' == $iban) {
-    		return $this->dieImmediately('Required fields have not been supplied, an IBAN must be supplied.', 404);
+    		return $this->dieImmediately($this->get('translator')->trans('msg_desc_required_field_iban'), 404);
     	}
     	
     		
@@ -37,7 +40,8 @@ class ConvertController extends DefaultController
     		$credits = $this->getAllowedConversions();
     		if ($credits < 1) {
     			$errorExists = true;
-    			return $this->dieImmediately('Insufficient credit. You do not have sufficient funds in your account to carry out the check. Please credit your account and then try again.', 404);
+    			$msg = sprintf('%s %s', $this->get('translator')->trans('msg_title_insufficient_credit'), $this->get('translator')->trans('msg_desc_insufficient_credit'));
+    			return $this->dieImmediately($msg, 404);
     		}
     	}
 
@@ -49,7 +53,8 @@ class ConvertController extends DefaultController
     		$resultsConversion->runIban($iban);
 
     		if (true == $resultsConversion->isFatal) {
-    			$this->getApiResponse()->error('Conversion not possible. Our conversion tool is offline, therefore, we are currently not able to process your request. Note: You have not been charged a conversion.', 404);
+    			$msg = sprintf('%s %s', $this->get('translator')->trans('msg_title_conversion_tool_offline'), $this->get('translator')->trans('msg_desc_conversion_tool_offline'));
+    			$this->getApiResponse()->error($msg, 404);
     		} else if (false == $resultsConversion->isValid) {
     			$this->getApiResponse()->error($resultsConversion->getErrorsAsString(), 404);
     			$chargeUser = true;
@@ -67,14 +72,16 @@ class ConvertController extends DefaultController
 	    	}
     	}
     	
-    	$result = new ConversionResult($resultsConversion);
+    	$result = new ConversionResult($resultsConversion, $this->get('translator'));
     	return $this->getJsonResponse($result->toArray(), false);
     }
     
     
     
-    public function bbanAction(Request $request, $publicKey, $country, $bban1, $bban2, $bban3, $bban4)
+    public function bbanAction(Request $request, $_locale, $publicKey, $country, $bban1, $bban2, $bban3, $bban4)
     {
+    	$this->get('locale_switcher')->setLocale($_locale);
+    	
     	$userManager = $this->get('user_manager');
     	 
     	$errorExists = false;
@@ -83,12 +90,12 @@ class ConvertController extends DefaultController
     	$user = $userManager->getUserByPublicKey($publicKey);
     	if (is_null($user)) {
     		$errorExists = true;
-    		return $this->dieImmediately('Invalid credentials.', 404);
+    		return $this->dieImmediately($this->get('translator')->trans('msg_title_invalid_credentials'), 404);
     	}
     	$this->setupUser($user);
     	
     	if (is_null($country) || ''== $country) {
-    		return $this->dieImmediately('Required fields have not been supplied, a Country Code must be supplied.', 404);
+    		return $this->dieImmediately($this->get('translator')->trans('msg_desc_required_field_country_code'), 404);
     	}
     	$country = strtoupper($country);
     	
@@ -104,7 +111,8 @@ class ConvertController extends DefaultController
     			{
     				if (!(isset($$key) && !empty($$key))) {
     					$errorExists = true;
-    					return $this->dieImmediately(sprintf('Invalid Details. %s is a required field. Please supply a value for %s.', $value, $value), 404);
+    					$msg = sprintf('%s. %s', $this->get('translator')->trans('msg_title_invalid_details'), $this->get('translator')->trans('msg_desc_bban_required', array('{{ bban_fieldname }}' => $value)));
+    					return $this->dieImmediately($msg, 404);
     				}
     			}
     		}
@@ -116,7 +124,8 @@ class ConvertController extends DefaultController
     		$credits = $this->getAllowedConversions();
     		if ($credits < 1) {
     			$errorExists = true;
-    			return $this->dieImmediately('Insufficient credit. You do not have sufficient funds in your account to carry out the check. Please credit your account and then try again.');
+    			$msg = sprintf('%s %s', $this->get('translator')->trans('msg_title_insufficient_credit'), $this->get('translator')->trans('msg_desc_insufficient_credit'));
+    			return $this->dieImmediately($msg);
     		}
     	}
     
@@ -138,7 +147,8 @@ class ConvertController extends DefaultController
     		
     			 
     		if (true == $resultsConversion->isFatal) {
-    			$this->getApiResponse()->error('Conversion not possible. Our conversion tool is offline, therefore, we are currently not able to process your request. Note: You have not been charged a conversion.', 404);
+    			$msg = sprintf('%s %s', $this->get('translator')->trans('msg_title_conversion_tool_offline'), $this->get('translator')->trans('msg_desc_conversion_tool_offline'));
+    			$this->getApiResponse()->error($msg, 404);
     		} else if (false == $resultsConversion->isValid) {
     			$this->getApiResponse()->error($resultsConversion->getErrorsAsString(), 404);
     			$chargeUser = true;
@@ -156,7 +166,7 @@ class ConvertController extends DefaultController
     		}
     	}
     	
-    	$result = new ConversionResult($resultsConversion);
+    	$result = new ConversionResult($resultsConversion, $this->get('translator'));
     	return $this->getJsonResponse($result->toArray(), false);
     }
     

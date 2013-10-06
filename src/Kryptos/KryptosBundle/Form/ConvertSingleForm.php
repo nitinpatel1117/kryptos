@@ -74,7 +74,7 @@ class ConvertSingleForm extends AbstractType
     		'attr' => array(
     			'placeholder'			=> 'BBAN1',
     			'rel'					=> 'popover',
-    			'data-placement'		=> 'top',
+    			'data-placement'		=> 'right',
     			'data-original-title'	=> $label_bban1,
     			'data-content'			=> '',
     	#		'data-original-title'	=> 'Please enter your bban1.',
@@ -87,6 +87,7 @@ class ConvertSingleForm extends AbstractType
     		'attr' => array(
     			'placeholder'			=> 'BBAN2',
     			'rel'					=> 'popover',
+    			'data-placement'		=> 'right',
     			'data-original-title'	=> $label_bban2,
     			'data-content'			=> '',
     	#		'data-original-title'	=> 'Please enter your bban2.',
@@ -99,6 +100,7 @@ class ConvertSingleForm extends AbstractType
     		'attr' => array(
     			'placeholder'			=> 'BBAN3',
     			'rel'					=> 'popover',
+    			'data-placement'		=> 'right',
     			'data-original-title'	=> $label_bban3,
     			'data-content'			=> '',
     	#		'data-original-title'	=> 'Please enter your bban3.',
@@ -111,6 +113,7 @@ class ConvertSingleForm extends AbstractType
     		'attr' => array(
     			'placeholder'			=> 'BBAN4',
     			'rel'					=> 'popover',
+    			'data-placement'		=> 'right',
     			'data-original-title'	=> $label_bban4,
     			'data-content'			=> '',
     	#		'data-original-title'	=> 'Please enter your bban4.',
@@ -123,6 +126,7 @@ class ConvertSingleForm extends AbstractType
     		'attr' => array(
     			'placeholder'			=> 'BBAN5',
     			'rel'					=> 'popover',
+    			'data-placement'		=> 'right',
     			'data-original-title'	=> $label_bban5,
     			'data-content'			=> '',
     	#		'data-original-title'	=> 'Please enter your bban5.',

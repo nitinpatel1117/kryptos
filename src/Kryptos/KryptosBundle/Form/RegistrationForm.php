@@ -94,7 +94,7 @@ class RegistrationForm extends AbstractType
 		$builder->add('email', 'repeated', array(
 			'type' => 'text',
 		#	'required' => true,
-			'invalid_message' => "msg_title_email_not_match |msg_desc_email_not_match",
+			'invalid_message' => "msg_title_email_not_match|msg_desc_email_not_match",
 			'first_name' => 'email',
 			'second_name' => 'confirmEmail',
 			'first_options' => array(
