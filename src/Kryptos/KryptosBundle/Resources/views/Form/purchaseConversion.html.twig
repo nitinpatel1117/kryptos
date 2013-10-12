@@ -30,7 +30,7 @@
 					<i class=" icon-exclamation-sign"></i>
 					{{ title }}
 				</strong><br>
-				{{ message }}
+				{{ message|raw }}
 			{% else %}
 				{{ error.messageTemplate|trans(error.messageParameters) }}<br>
 			{% endif %}
