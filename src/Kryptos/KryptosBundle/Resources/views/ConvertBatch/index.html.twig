@@ -3,20 +3,23 @@
 
 {% block content %}
 	<div class="row-fluid">
-		<form action="{{ path('convert_batch') }}" method="post" {{ form_enctype(form) }} class="form-horizontal">
+		<form action="{{ path('convert_batch') }}" method="post" {{ form_enctype(form) }} class="form-horizontal batchUploadForm">
 			<div class="row" style="text-align:center;">
-				<legend style="text-align:left;">{% trans %}txt_prepare_your_file{% endtrans %}</legend>
+				<fieldset>
+					<legend style="text-align:left;">{% trans %}txt_prepare_your_file{% endtrans %}</legend>
+				</fieldset>
 				<table class="table table-striped">
 					<tbody>
 						<tr>
 							<td>
 								<div style="text-align:left;">{% trans %}txt_prepare_your_list_of{% endtrans %}</div>
 								<div style="text-align:right;">
-									<a style="text-align:right;" href="{{ path('convert_batch_template') }}" >
-										<button class="btn btn-primary" type="button"><i class="icon-download-alt icon-white"></i> {% trans %}txt_download{% endtrans %}</button>
+									<a class="btn btn-primary" style="text-align:right;" href="{{ path('convert_batch_template') }}" >
+										<i class="icon-download-alt icon-white"></i> {% trans %}txt_download{% endtrans %}
 									</a>
-									<a style="text-align:right;" href="{{ path('download_help_prepare_file') }}" >
-										<button class="btn btn-primary" type="button"><i class="icon-question-sign icon-white"></i> {% trans %}txt_help{% endtrans %}</button>
+									
+									<a class="btn btn-primary" style="text-align:right;" href="{{ path('download_help_prepare_file') }}" >
+										<i class="icon-question-sign icon-white"></i> {% trans %}txt_help{% endtrans %}
 									</a>
 								</div>
 							</td>
@@ -26,7 +29,9 @@
 			</div>
 			
 			<div class="row">
-				<legend style="text-align:left;">{% trans %}txt_upload_your_file{% endtrans %}</legend>
+				<fieldset>
+					<legend style="text-align:left;">{% trans %}txt_upload_your_file{% endtrans %}</legend>
+				</fieldset>
 				<table class="table table-striped">
 					<tbody>
 						<tr>
@@ -48,8 +53,8 @@
 										
 										<button class="btn btn-primary" type="submit"><i class="icon-download-alt icon-upload icon-white"></i> {% trans %}txt_upload{% endtrans %} </button>
 										
-										<a href="{{ path('download_help_upload_file') }}" >
-											<button class="btn btn-primary" type="button"><i class="icon-question-sign icon-white"></i> {% trans %}txt_help{% endtrans %} </button>
+										<a class="btn btn-primary" href="{{ path('download_help_upload_file') }}" >
+											<i class="icon-question-sign icon-white"></i> {% trans %}txt_help{% endtrans %}
 										</a> 
 									</div>
 									

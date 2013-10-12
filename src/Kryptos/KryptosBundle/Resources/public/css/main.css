@@ -31,6 +31,8 @@ div#loggedInUser { margin:-15px 5px 0px 0px; }
 /* Firefox 4+ */
 :-moz-placeholder { color: #aaa; }
 
+form.batchUploadForm { margin-top:20px; }
+
 
 /* Registration Form */
 form#register { }

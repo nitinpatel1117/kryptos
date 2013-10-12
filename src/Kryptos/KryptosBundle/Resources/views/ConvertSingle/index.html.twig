@@ -3,7 +3,9 @@
 
 
 {% block content %}
-	<legend style="text-align:left;">{% trans %}txt_convert_bank_account{% endtrans %}</legend>
+	<fieldset>
+		<legend style="text-align:left;">{% trans %}txt_convert_bank_account{% endtrans %}</legend>
+	</fieldset>
 	<div class="row-fluid">
 		<div class="span6">
 			<div style="background-color:#F8F8F8">
@@ -101,8 +103,10 @@
 			<div style="background-color:#F8F8F8" >
 				<form class="form-horizontal">
 					<div class="row">
-						<div class="control-group">    
-							<legend>{% trans %}txt_convert_results{% endtrans %}</legend>
+						<div class="control-group">
+							<fieldset>
+								<legend>{% trans %}txt_convert_results{% endtrans %}</legend>
+							</fieldset>
 							
 							<div class="control-group">
 								<label class="control-label" for="iban">{% trans %}txt_iban{% endtrans %}</label>

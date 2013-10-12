@@ -2,7 +2,9 @@
 
 
 {% block content %}
-	<legend style="text-align:left;">{{ location }}</legend>
+	<fieldset>
+		<legend style="text-align:left;">{{ location }}</legend>
+	</fieldset>
 	<div class="row-fluid">
 		<div class="span6">
 			<div style="background-color:#F8F8F8">
@@ -38,7 +40,9 @@
 	
 	<div class="row-fluid">
 		<form class="form-horizontal" >
-			<legend>Available endpoints</legend>
+			<fieldset>
+				<legend>Available endpoints</legend>
+			</fieldset>
 			<div>
 				The following API calls are available<br><br>
 				
@@ -53,7 +57,9 @@
 			
 			
 			<br><br>
-			<legend>Usage</legend>
+			<fieldset>
+				<legend>Usage</legend>
+			</fieldset>
 			<div>
 				The IBAN endpoint can be used to return SEPA bank details from a given IBAN number.
 			</div>
@@ -89,7 +95,9 @@
 			
 			 <!--
 			<br><br>
-			<legend>What are Public/Private keys</legend>
+			<fieldset>
+				<legend>What are Public/Private keys</legend>
+			</fieldset>
 			<div>
 				The Public key is a unique key that can be used to identify you. This key will need to be supplied in all transactional API calls.
 				A transactional API call refers to any API call that will modify your account details, such as your account credit.

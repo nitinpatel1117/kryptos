@@ -4,15 +4,19 @@
 
 
 {% block content %}
-	<legend style="text-align:left;">{% trans %}txt_settings{% endtrans %}</legend>
+	<fieldset>
+		<legend style="text-align:left;">{% trans %}txt_settings{% endtrans %}</legend>
+	</fieldset>
 	<div class="row-fluid">
 		<div class="span6">
 			<div style="background-color:#F8F8F8">
 				<form id="settingsUserDetails" action="{{ path('account_settings') }}" method="post" {{ form_enctype(form) }} class="form-horizontal">
 					<div class="row">
 					
-						<div class="control-group">    
-							<legend>{% trans %}txt_personal_details{% endtrans %}</legend>
+						<div class="control-group">
+							<fieldset>
+								<legend>{% trans %}txt_personal_details{% endtrans %}</legend>
+							</fieldset>
 										
 							<div class="control-group">
 								{{ form_row(form.title) }}
@@ -78,7 +82,9 @@
 				<form novalidate id="settingsUserPassword" action="{{ path('account_settings') }}" method="post" {{ form_enctype(passwordForm) }} class="form-horizontal">
 					<div class="row">
 						<div class="control-group">    
-							<legend>{% trans %}txt_password{% endtrans %}</legend>
+							<fieldset>
+								<legend>{% trans %}txt_password{% endtrans %}</legend>
+							</fieldset>
 							
 							<div class="control-group">
 								{{ form_row(passwordForm.oldPassword) }}

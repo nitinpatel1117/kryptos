@@ -1,5 +1,7 @@
 			<div class="row">
-				<legend style="text-align:left;">{% trans %}txt_file_status_and_history{% endtrans %}</legend>
+				<fieldset>
+					<legend style="text-align:left;">{% trans %}txt_file_status_and_history{% endtrans %}</legend>
+				</fieldset>
 				<table class="table table-striped fileStatus" style="text-align:center;">
 					<thead>
 						<tr>
@@ -42,8 +44,7 @@
 								</td>
 								<td>
 									{% if true == file.downloadable %}
-<!--										<a href="{{ downloadLink }}/{{ file.id|e }}" ><button class="btn btn-primary" type="button"><i class="icon-download-alt icon-white"></i> Download </button></a> <br><br> -->
-										<a href="{{ downloadLink }}/{{ file.id|e }}" ><button class="btn" type="button"><i class="icon-download-alt "></i> {% trans %}txt_download{% endtrans %} </button></a>
+										<a class="btn" href="{{ downloadLink }}/{{ file.id|e }}" ><i class="icon-download-alt "></i> {% trans %}txt_download{% endtrans %} </a>
 									{% endif %}
 								</td>
 							</tr>
