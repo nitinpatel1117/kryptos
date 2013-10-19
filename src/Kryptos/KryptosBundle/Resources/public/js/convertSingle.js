@@ -12,8 +12,8 @@ removeAllValues = function()
 	for (var i=1; i<6; i++) {
 		$('#ConvertSingleForm_bban'+i).val('');
 		//$('#ConvertSingleForm_bban'+i).attr("placeholder", '');
-		$('#ConvertSingleForm_bban'+i).attr("data-original-title", '');
-		$('#ConvertSingleForm_bban'+i).attr("data-content", '');
+		$('#ConvertSingleForm_bban'+i+'_tip').attr("data-original-title", '');
+		$('#ConvertSingleForm_bban'+i+'_tip').attr("data-content", '');
 	}
 }
 
@@ -50,8 +50,8 @@ $(document).ready(function() {
 				// $('.form_row.'+key+' label').text(value);
 				$('#ConvertSingleForm_'+key).attr("required", "required");
 				$('#ConvertSingleForm_'+key).attr("placeholder", fieldName);
-				$('#ConvertSingleForm_'+key).attr("data-original-title", fieldName);
-				$('#ConvertSingleForm_'+key).attr("data-content", fieldHint);
+				$('#ConvertSingleForm_'+key+'_tip').attr("data-original-title", fieldName);
+				$('#ConvertSingleForm_'+key+'_tip').attr("data-content", fieldHint);
 
 				
 				if (!placeholderIsSupported()) {
@@ -109,4 +109,12 @@ $(document).ready(function() {
 			removeAllValues();
 		});
 	}
+	
+	// register the popover on the bban fields
+	for (var i=1; i<6; i++) {
+		if ($('i#ConvertSingleForm_bban'+i+'_tip').length) {
+			$('i#ConvertSingleForm_bban'+i+'_tip').popover({ trigger: 'hover', animation: 'true', placement:'right'});
+		}
+	}
+	
 });

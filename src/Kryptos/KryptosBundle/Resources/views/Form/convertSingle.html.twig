@@ -10,17 +10,36 @@
 {% block form_widget_simple %}
 {% spaceless %}
     {% set type = type|default('text') %}
-    {% if 'text' == type %}
-    	<span class="add-on"><i class="icon-pencil"></i></span>&nbsp;
-    {% endif %}
     <input type="{{ type }}" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %}/>
+    {% if 'text' == type and 'bban' in name %}
+    	&nbsp;<span class="add-on" id="{{ id }}_tipss"><i class="icon-info-sign" id="{{ id }}_tip" {% for attrname, attrvalue in attr %}{% if attrname in ['data-placement', 'rel', 'data-original-title', 'data-content'] %} {{ attrname }}="{{ attrvalue }}" {% endif %}{% endfor %}></i></span>
+    {% else %}
+    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    {% endif %}
 {% endspaceless %}
 {% endblock form_widget_simple %}
 
 
+{% block widget_attributes %}
+{% spaceless %}
+    id="{{ id }}" name="{{ full_name }}"{% if read_only %} readonly="readonly"{% endif %}{% if disabled %} disabled="disabled"{% endif %}{% if required %} required="required"{% endif %}{% if max_length %} maxlength="{{ max_length }}"{% endif %}{% if pattern %} pattern="{{ pattern }}"{% endif %}
+    {% for attrname, attrvalue in attr %}
+    	{% if attrname in ['placeholder', 'title'] %}
+    		{{ attrname }}="{{ attrvalue|trans({}, translation_domain) }}"
+    	{% else %}
+    		{% if 'text' == type and 'bban' in name %}
+    			{% for attrname, attrvalue in attr %}{% if attrname not in ['rel', 'data-placement', 'data-original-title', 'data-content'] %} {{ attrname }}="{{ attrvalue }}" {% endif %}{% endfor %}
+    		{% else %}
+    			{{ attrname }}="{{ attrvalue }}" 
+    		{% endif %}
+    	{% endif %}
+    {% endfor %}
+{% endspaceless %}
+{% endblock widget_attributes %}
+
+
 {% block choice_widget_collapsed %}
 {% spaceless %}
-	<span class="add-on"><i class="icon-globe"></i></span>&nbsp;
 	<select {{ block('widget_attributes') }}{% if multiple %} multiple="multiple"{% endif %}>
         {% if empty_value is not none %}
             <option value="">{{ empty_value|trans }}</option>
@@ -35,6 +54,7 @@
         {% set options = choices %}
         {{ block('choice_widget_options') }}
     </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 {% endspaceless %}
 {% endblock choice_widget_collapsed %}
 
