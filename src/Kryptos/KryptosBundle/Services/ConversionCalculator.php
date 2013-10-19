@@ -20,12 +20,12 @@ class ConversionCalculator
 	public function calcRates($conversionAmount)
 	{
 		$data = array();
-		 
-		$conversionRate = $this->configManager->get('purchase_conversions|conversion_rate');
-		$vatRate = $this->configManager->get('purchase_conversions|vat_rate');
-		 
+		
 		$error = false;
 		$error_msg = '';
+		
+		$conversionRate = $this->getConversionRate($conversionAmount);
+		$vatRate = $this->configManager->get('purchase_conversions|vat_rate');
 		 
 		if (is_numeric($conversionAmount)) {
 			$conversionAmount = (int) $conversionAmount;
@@ -81,6 +81,61 @@ class ConversionCalculator
 		}
 		 
 		return $data;
+	}
+	
+	
+	public function getConversionRate($conversionAmount)
+	{
+		$conversionRate = 1;
+		
+		$conversionType = $this->configManager->get('purchase_conversions|conversion_type');
+		switch($conversionType) {
+			case 'linear':
+				$conversionRate = $this->getLinearConversionRate();
+				break;
+		
+			case 'graph':
+				$conversionRate = $this->getGraphConversionRate($conversionAmount);
+				break;
+		
+			default:
+				break;
+		}
+		
+		return $conversionRate;
+	}
+	
+	
+	public function getLinearConversionRate()
+	{
+		return $this->configManager->get('purchase_conversions|conversion_rate');
+	}
+	
+	
+	public function getGraphConversionRate($conversionAmount)
+	{
+		$conversionRate = 1;
+		
+		$conversionBandRates = $this->configManager->get('purchase_conversions|conversion_band_rates');
+		
+		$lastRate = null;
+		$rateFound = false;
+		foreach ($conversionBandRates as $amount => $rate)
+		{
+			$lastRate = $rate;
+			
+			if ($conversionAmount <= (int) $amount) {
+				$conversionRate = $rate;
+				$rateFound = true;
+				break;
+			}
+		}
+		
+		if (false == $rateFound) {
+			$conversionRate = $lastRate;
+		}
+		
+		return $conversionRate;
 	}
 	
 	
