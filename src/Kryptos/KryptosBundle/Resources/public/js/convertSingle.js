@@ -10,7 +10,7 @@ hideAllFields = function()
 removeAllValues = function()
 {
 	for (var i=1; i<6; i++) {
-		$('#ConvertSingleForm_bban'+i).val('');
+		//$('#ConvertSingleForm_bban'+i).val('');
 		//$('#ConvertSingleForm_bban'+i).attr("placeholder", '');
 		$('#ConvertSingleForm_bban'+i+'_tip').attr("data-original-title", '');
 		$('#ConvertSingleForm_bban'+i+'_tip').attr("data-content", '');
@@ -47,21 +47,15 @@ $(document).ready(function() {
 				var fieldName = bbanMap[countryCode][key]['name'];
 				var fieldHint = bbanMap[countryCode][key]['hint'];
 				
-				// $('.form_row.'+key+' label').text(value);
 				$('#ConvertSingleForm_'+key).attr("required", "required");
 				$('#ConvertSingleForm_'+key).attr("placeholder", fieldName);
+				
+				// on country changed in dropdown
+				if (true == hideFields) {
+					$('#ConvertSingleForm_'+key).val('');
+				}
 				$('#ConvertSingleForm_'+key+'_tip').attr("data-original-title", fieldName);
 				$('#ConvertSingleForm_'+key+'_tip').attr("data-content", fieldHint);
-
-				
-				if (!placeholderIsSupported()) {
-					// $('#ConvertSingleForm_'+key).val(fieldName);
-					//$('input[type=text], textarea').placeholder();
-					
-					$('#ConvertSingleForm_'+key).placeholderEnhanced('destroy');
-					$('#ConvertSingleForm_'+key).val('');
-					$('#ConvertSingleForm_'+key).placeholderEnhanced();
-				}
 				
 				$('.form_row.'+key).css('visibility', 'visible');
 		    }
