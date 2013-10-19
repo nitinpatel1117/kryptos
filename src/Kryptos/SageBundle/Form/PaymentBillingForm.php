@@ -79,12 +79,20 @@ class PaymentBillingForm extends AbstractType
 			),
 		));
 		
+		
 		$countryCodes = new CountryCodes();
+		
+		//create translation array for country list
+		$choices = array();
+		foreach (array_keys($countryCodes->getList()) as $countryCode) {
+			$choices[$countryCode] = sprintf('txt_country_%s', $countryCode);
+		}
+		
 		$builder->add('billingCountry', 'choice', array(
 			'label'=>'txt_country',
 		#	'required' => true,
     		'max_length' => 2,
-			'choices' => $countryCodes->getList(),
+			'choices' => $choices,
 			'preferred_choices' => array_keys($countryCodes->getTopList()),
 			'attr' => array(
 				'rel'					=> 'tooltip',
