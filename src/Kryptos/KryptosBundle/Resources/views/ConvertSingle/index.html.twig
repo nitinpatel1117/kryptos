@@ -32,7 +32,7 @@
 
 									bbanMap['{{ code }}']['{{ name }}'] = new Array();
 									bbanMap['{{ code }}']['{{ name }}']['name'] = '{{ fieldname|trans }}';
-									bbanMap['{{ code }}']['{{ name }}']['hint'] = '{{ fieldhint|trans }}';
+									bbanMap['{{ code }}']['{{ name }}']['hint'] = '{{ fieldhint|trans|raw }}';
 					    	    {% endfor %}
 					    	{% endfor %}
 						</script>
