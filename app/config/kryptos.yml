@@ -16,20 +16,21 @@ parameters:
     email_activate_fromname:   'Kryptos'
     password_reset_from:       'passwords@kryptos.com'
     password_reset_fromname:   'Kryptos'
-    tmp_path:                  '/var/www/vhosts/kryptos.com/tmp/'
-    csv_template_server_path:  '/var/www/vhosts/kryptos.com/symfony/src/Kryptos/KryptosBundle/Resources/public/template'
+    tmp_path:                  '/var/www/vhosts/kryptossystems.com/tmp/'
+    csv_template_server_path:  '/var/www/vhosts/kryptossystems.com/sepa.kryptossystems.com/src/Kryptos/KryptosBundle/Resources/public/template'
     csv_template_filename:     'batch_conversion_template.csv'
     
     download:
       help_prepare_file:
-        server_path:           '/var/www/vhosts/kryptos.com/symfony/src/Kryptos/KryptosBundle/Resources/public/download/help_prepare_file.pdf'
+        server_path:           '/var/www/vhosts/kryptossystems.com/sepa.kryptossystems.com/src/Kryptos/KryptosBundle/Resources/public/download/help_prepare_file.pdf'
         filename:              'Prepare_file.pdf'
       help_upload_file:
-        server_path:           '/var/www/vhosts/kryptos.com/symfony/src/Kryptos/KryptosBundle/Resources/public/download/help_upload_file.pdf'
+        server_path:           '/var/www/vhosts/kryptossystems.com/sepa.kryptossystems.com/src/Kryptos/KryptosBundle/Resources/public/download/help_upload_file.pdf'
         filename:              'Upload_file.pdf'
   
   mongo_connection:
-    server:           'mongodb://localhost:27017'
+    # server:           'mongodb://localhost:27017'
+    server:           'mongodb://kryptos:kJduAHqSyfc8xNmJsMADRRxd@localhost:27017/kryptos'
     options:          ''
     default_db:       'kryptos'
 

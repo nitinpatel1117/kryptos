@@ -209,16 +209,19 @@ class ConvertBatchController extends Controller implements LocaleInterface
     	// entry for this fileId was not found in DB
     	if (is_null($fileData)) {
     		// return 404. fileId is not valid
+    		throw $this->createNotFoundException('Download file could not be found');
     		die('4');
     	}
     	
     	if (!$this->canUserAccessFile($fileData)) {
     		// return 404. not allowed to access the file. either wrong user or sessionid
+    		throw $this->createNotFoundException('You are not allowed to access this file.');
     		die('1');
     	}
     	
     	if ('complete' != $fileData['status']) {
     		// return 404. file is not ready for download. it is not converted yet
+    		throw $this->createNotFoundException('File is not ready for download, it is still in the process of being converted.');
     		die('2');
     	}
     	
@@ -227,6 +230,7 @@ class ConvertBatchController extends Controller implements LocaleInterface
     	
     	if (!(file_exists($processedLocation) && is_readable($processedLocation))) {
     		// file does not exist or could not be read
+    		throw $this->createNotFoundException('The file is not available for download.');
     		die('3');
     	}
     	
