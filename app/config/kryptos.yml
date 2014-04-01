@@ -11,10 +11,10 @@ parameters:
 
   site:
     name:                      'Kryptos'
-    url:                       'kryptos.nitin.me.uk'
-    email_activate_from:       'activations@kryptos.com'
+    url:                       'sepa.kryptossystems.com'
+    email_activate_from:       'activations@kryptossystems.com'
     email_activate_fromname:   'Kryptos'
-    password_reset_from:       'passwords@kryptos.com'
+    password_reset_from:       'passwords@kryptossystems.com'
     password_reset_fromname:   'Kryptos'
     tmp_path:                  '/var/www/vhosts/kryptossystems.com/tmp/'
     csv_template_server_path:  '/var/www/vhosts/kryptossystems.com/sepa.kryptossystems.com/src/Kryptos/KryptosBundle/Resources/public/template'
