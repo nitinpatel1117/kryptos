@@ -10,7 +10,7 @@ $(document).ready(function() {
 		
 		function clearFormItems(){
 			$("#PurchaseConversionsForm_cost").val('');
-        	$("#PurchaseConversionsForm_vat").val('');
+        	//$("#PurchaseConversionsForm_vat").val('');
         	$("#PurchaseConversionForm_errors").text('');
 		}
 		
@@ -70,7 +70,7 @@ $(document).ready(function() {
         	
         	for (var i = 0; i < ajaxRequests.length; i++) {
         		xhr = ajaxRequests[i];
-        		if(typeof yourvar != 'undefined' && typeof xhr.abort === 'function') {
+        		if(typeof xhr != 'undefined' && typeof xhr.abort === 'function') {
             		xhr.abort()
             	}
         		delete ajaxRequests[i];
@@ -87,7 +87,7 @@ $(document).ready(function() {
 	        			if (result['body']['error'] === undefined) {
 		        			if (result['body']['cost'] !== undefined && result['body']['vat'] !== undefined) {
 		        				$("#PurchaseConversionsForm_cost").val(result['body']['cost']);
-		        				$("#PurchaseConversionsForm_vat").val(result['body']['vat']);
+		        				//$("#PurchaseConversionsForm_vat").val(result['body']['vat']);
 		        			}
 	        			}
 	        			else {
@@ -95,7 +95,7 @@ $(document).ready(function() {
 	        				// under an error scenario we may still return  the cost and vat. i.e when total is less than £0.01
 	        				if (result['body']['cost'] !== undefined && result['body']['vat'] !== undefined) {
 		        				$("#PurchaseConversionsForm_cost").val(result['body']['cost']);
-		        				$("#PurchaseConversionsForm_vat").val(result['body']['vat']);
+		        				//$("#PurchaseConversionsForm_vat").val(result['body']['vat']);
 		        			}
 	        			}
 	                }

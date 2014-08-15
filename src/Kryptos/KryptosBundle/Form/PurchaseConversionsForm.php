@@ -26,11 +26,13 @@ class PurchaseConversionsForm extends AbstractType
 			'disabled' 	=> 'true',
 		));
 		
+		/*
 		$builder->add('vat', 'text', array(
 			'label' 	=> 'txt_total_vat_currency_euro',
 			'required' 	=> false,
 			'disabled' 	=> 'true',
 		));
+		*/
     }
     
 

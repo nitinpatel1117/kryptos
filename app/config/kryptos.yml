@@ -56,7 +56,7 @@ parameters:
       10000:   0.1
     
     # a vat_rate as percentage, range from [0 - 100]
-    vat_rate: 20
+    vat_rate: 0
     
   credits:  0    # the number of conversions that all users start on, when signin enabled
 

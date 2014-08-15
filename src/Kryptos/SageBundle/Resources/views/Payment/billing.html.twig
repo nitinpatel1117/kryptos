@@ -16,7 +16,7 @@
 						<tr>
 							<th>{% trans %}txt_conversions{% endtrans %}</th>
 							<th>{% trans %}txt_cost{% endtrans %}</th>
-							<th>{% trans %}txt_vat{% endtrans %}</th>
+							{#<th>{% trans %}txt_vat{% endtrans %}</th>#}
 							<th>{% trans %}txt_total{% endtrans %}</th>
 						</tr>
 					</thead>
@@ -24,7 +24,7 @@
 						<tr>
 							<td>{{ credits}}</td>
 							<td>{{ currency|raw }}{{ cost }}</td>
-							<td>{{ currency|raw }}{{ vat }}</td>
+							{#<td>{{ currency|raw }}{{ vat }}</td>#}
 							<td>{{ currency|raw }}{{ total }}</td>
 						</tr>
 					</tbody>
