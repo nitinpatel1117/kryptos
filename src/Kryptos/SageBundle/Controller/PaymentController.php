@@ -66,7 +66,7 @@ class PaymentController extends Controller implements LocaleInterface
 					$logger = $this->get('logger');
 					$logger->err(sprintf('Error from payment gateway; Tried to register a payment request for user [%s]. Received Sagepay response : %s' , $user['_id'], $sageResult));
 					
-					$error = $translator->trans('txt_sagepay_error_payment_register');
+					$error = $this->get('translator')->trans('txt_sagepay_error_payment_register');
 				}
 			}
 		}
