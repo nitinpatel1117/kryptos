@@ -233,16 +233,16 @@ class Parser
 				$dataReady[4] = isset($dataConverted[4]) ? $dataConverted[4] : '';		// BBAN3 - in case anything has been transposed
 				$dataReady[5] = isset($dataConverted[5]) ? $dataConverted[5] : '';		// BBAN4 - in case anything has been transposed
 				
-				// If BIC present (BIC is 7th item in converted file) add to dataReady array
+				// If BIC present (BIC is 8th item in converted file) add to dataReady array
 				// Note: at this point dataReady, first column is Id, hence we add to 7th column
-				if (isset($dataConverted[6])) {
-					$dataReady[6] = $dataConverted[6];
+				if (isset($dataConverted[7])) {
+					$dataReady[6] = $dataConverted[7];
 				}
 				
-				// If IBAN present (IBAN is 8th item in converted file) add to dataReady array
+				// If IBAN present (IBAN is 7th item in converted file) add to dataReady array
 				// Note: at this point dataReady, first column is Id, hence we add to 8th column
-				if (isset($dataConverted[7])) {
-					$dataReady[7] = $dataConverted[7];
+				if (isset($dataConverted[6])) {
+					$dataReady[7] = $dataConverted[6];
 				}
 				
 				$dataReady[8]  = isset($dataConverted[8])  ? $dataConverted[8] : '';		// BankName
