@@ -1665,2804 +1665,2804 @@ The transposition is performed according to rules for the issuing institution, f
                 <target><![CDATA[Your transaction has been successfully processed]]></target>
             </trans-unit>			
 			<trans-unit id="416">
-                <source>txt_payment_pass_desc_1</source>
-                <target><![CDATA[2290 conversions have been added to your account.]]></target>
-            </trans-unit>			
-			<trans-unit id="417">
-                <source>txt_payment_pass_desc_2</source>
-                <target><![CDATA[The file you uploaded will start processing shortly. 2501 conversions have been deducted from your account for the processing of this file.]]></target>
-            </trans-unit>			
-			<trans-unit id="418">
-                <source>txt_payment_pass_desc_3</source>
-                <target><![CDATA[You now have a total of 211 conversions.]]></target>
-            </trans-unit>			
-			<trans-unit id="419">
                 <source>msg_title_user_details_imcomplete</source>
                 <target><![CDATA[User details incomplete]]></target>
             </trans-unit>			
-			<trans-unit id="420">
+			<trans-unit id="417">
                 <source>msg_title_details_updated</source>
                 <target><![CDATA[Details Updated]]></target>
             </trans-unit>			
-			<trans-unit id="421">
+			<trans-unit id="418">
                 <source>msg_desc_details_updated</source>
                 <target><![CDATA[Your personal details have been successfully updated.]]></target>
             </trans-unit>			
-			<trans-unit id="422">
+			<trans-unit id="419">
                 <source>msg_title_details_incomplete</source>
                 <target><![CDATA[Details incomplete]]></target>
             </trans-unit>			
-			<trans-unit id="423">
+			<trans-unit id="420">
                 <source>msg_desc_enter_old_password</source>
                 <target><![CDATA[Please enter your old password. This value should not be blank.]]></target>
             </trans-unit>			
-			<trans-unit id="424">
+			<trans-unit id="421">
                 <source>msg_desc_enter_new_password</source>
                 <target><![CDATA[Please enter your new password. This value should not be blank.]]></target>
             </trans-unit>			
-			<trans-unit id="425">
+			<trans-unit id="422">
                 <source>msg_title_incorrect_password</source>
                 <target><![CDATA[Incorrect password]]></target>
             </trans-unit>			
-			<trans-unit id="426">
+			<trans-unit id="423">
                 <source>msg_desc_incorrect_password</source>
                 <target><![CDATA[Your old password is not correct. Kryptos passwords are case sensitive. Please check your CAPS lock key.]]></target>
             </trans-unit>			
-			<trans-unit id="427">
+			<trans-unit id="424">
                 <source>msg_desc_new_passwords_not_match</source>
                 <target><![CDATA[The new passwords you have typed do not match. Please check and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="428">
+			<trans-unit id="425">
                 <source>msg_title_password_updated</source>
                 <target><![CDATA[Password Updated]]></target>
             </trans-unit>			
-			<trans-unit id="429">
+			<trans-unit id="426">
                 <source>msg_desc_password_updated</source>
                 <target><![CDATA[Your password has been successfully updated.]]></target>
             </trans-unit>			
-			<trans-unit id="430">
+			<trans-unit id="427">
                 <source>txt_new_password</source>
                 <target><![CDATA[New Password]]></target>
             </trans-unit>			
-			<trans-unit id="431">
+			<trans-unit id="428">
                 <source>txt_confirm_new_password</source>
                 <target><![CDATA[Confirm New Password]]></target>
             </trans-unit>			
-			<trans-unit id="432">
+			<trans-unit id="429">
                 <source>txt_close</source>
                 <target><![CDATA[close]]></target>
             </trans-unit>			
-			<trans-unit id="433">
+			<trans-unit id="430">
                 <source>txt_change</source>
                 <target><![CDATA[Change]]></target>
             </trans-unit>			
-			<trans-unit id="434">
+			<trans-unit id="431">
                 <source>txt_complete</source>
                 <target><![CDATA[Complete]]></target>
             </trans-unit>			
-			<trans-unit id="435">
+			<trans-unit id="432">
                 <source>btn_submit</source>
                 <target><![CDATA[Submit]]></target>
             </trans-unit>			
-			<trans-unit id="436">
+			<trans-unit id="433">
                 <source>txt_or</source>
                 <target><![CDATA[OR]]></target>
             </trans-unit>			
-			<trans-unit id="437">
+			<trans-unit id="434">
                 <source>txt_iban</source>
                 <target><![CDATA[IBAN]]></target>
             </trans-unit>			
-			<trans-unit id="438">
+			<trans-unit id="435">
                 <source>txt_enter_bank_account</source>
                 <target><![CDATA[Enter Bank Account]]></target>
             </trans-unit>			
-			<trans-unit id="439">
+			<trans-unit id="436">
                 <source>txt_country</source>
                 <target><![CDATA[Country]]></target>
             </trans-unit>			
-			<trans-unit id="440">
+			<trans-unit id="437">
                 <source>msg_title_upload_complete</source>
                 <target><![CDATA[Upload Complete]]></target>
             </trans-unit>			
-			<trans-unit id="441">
+			<trans-unit id="438">
                 <source>msg_desc_upload_complete</source>
                 <target><![CDATA[File has been succesfully received. Processing of this file will start shortly]]></target>
             </trans-unit>			
-			<trans-unit id="442">
+			<trans-unit id="439">
                 <source>txt_enter_text</source>
                 <target><![CDATA[Enter text]]></target>
             </trans-unit>			
-			<trans-unit id="443">
+			<trans-unit id="440">
                 <source>txt_word_verification</source>
                 <target><![CDATA[Word Verification]]></target>
             </trans-unit>			
-			<trans-unit id="444">
+			<trans-unit id="441">
                 <source>txt_title_item_empty</source>
                 <target><![CDATA[- Title -]]></target>
             </trans-unit>			
-			<trans-unit id="445">
+			<trans-unit id="442">
                 <source>msg_title_insufficient_credit</source>
                 <target><![CDATA[Insufficient credit]]></target>
             </trans-unit>			
-			<trans-unit id="446">
+			<trans-unit id="443">
                 <source>msg_desc_insufficient_credit</source>
                 <target><![CDATA[You do not have sufficient funds in your account to carry out the check. Please credit your account and then try again.]]></target>
             </trans-unit>			
-			<trans-unit id="447">
+			<trans-unit id="444">
                 <source>msg_title_invalid_file</source>
                 <target><![CDATA[Invalid file]]></target>
             </trans-unit>			
-			<trans-unit id="448">
+			<trans-unit id="445">
                 <source>msg_desc_invalid_file</source>
                 <target><![CDATA[The first line in the upload file is not valid. Please make sure that the first line contains column headers and that these column headers are unchanged from the values supplied in the original template file.]]></target>
             </trans-unit>			
-			<trans-unit id="449">
+			<trans-unit id="446">
                 <source>msg_desc_password_too_long</source>
                 <target><![CDATA[Password value is too long. It should have {{ limit }} characters or less.]]></target>
             </trans-unit>			
-			<trans-unit id="450">
+			<trans-unit id="447">
                 <source>txt_password_cound_not_be_reset</source>
                 <target><![CDATA[Password could not be reset]]></target>
             </trans-unit>			
-			<trans-unit id="451">
+			<trans-unit id="448">
                 <source>txt_incorrect_accounts</source>
                 <target><![CDATA[Incorrect accounts]]></target>
             </trans-unit>			
-			<trans-unit id="452">
+			<trans-unit id="449">
                 <source>txt_sagepay_error_payment_register</source>
                 <target><![CDATA[Ooops!, the system has been unable to contact our payment provider. Please try again. If you continue to experience this problem please give us a call.]]></target>
             </trans-unit>			
-			<trans-unit id="453">
+			<trans-unit id="450">
                 <source>msg_title_increase_conversions</source>
                 <target><![CDATA[Increase conversions]]></target>
             </trans-unit>			
-			<trans-unit id="454">
+			<trans-unit id="451">
                 <source>msg_desc_increase_conversions</source>
                 <target><![CDATA[Total cost is less than {{ currency }}1. Please increase the No. of conversions to meet the minimum total of {{ currency }}1]]></target>
             </trans-unit>			
-			<trans-unit id="455">
+			<trans-unit id="452">
                 <source>msg_title_decrease_conversions</source>
                 <target><![CDATA[Decrease conversions]]></target>
             </trans-unit>			
-			<trans-unit id="456">
+			<trans-unit id="453">
                 <source>msg_desc_decrease_conversions</source>
                 <target><![CDATA[Total cost is greater than {{ currency }}100,000. Please decrease the No. of conversions to meet the maximum expenture total of {{ currency }}100,000]]></target>
             </trans-unit>			
-			<trans-unit id="457">
+			<trans-unit id="454">
                 <source>msg_desc_conversions_must_be_number</source>
                 <target><![CDATA[No. of Conversions must be entered as a number]]></target>
             </trans-unit>			
-			<trans-unit id="458">
+			<trans-unit id="455">
                 <source>txt_sage_error_status_notauthed</source>
                 <target><![CDATA[Could not authorise the payment because the details provided were incorrect, or not authenticated by the acquiring bank.]]></target>
             </trans-unit>			
-			<trans-unit id="459">
+			<trans-unit id="456">
                 <source>txt_sage_error_status_abort</source>
                 <target><![CDATA[Could not authorise the payment because the user clicked the CANCEL button on the payment pages, or went inactive for 15 minutes or longer.]]></target>
             </trans-unit>			
-			<trans-unit id="460">
+			<trans-unit id="457">
                 <source>txt_sage_error_status_rejected</source>
                 <target><![CDATA[The Sage Pay System rejected the transaction because validation rules were not met.]]></target>
             </trans-unit>			
-			<trans-unit id="461">
+			<trans-unit id="458">
                 <source>txt_sage_error_status_error</source>
                 <target><![CDATA[An error occurred at Sage Pay which meant the transaction could not be completed successfully.]]></target>
             </trans-unit>			
-			<trans-unit id="462">
+			<trans-unit id="459">
                 <source>msg_title_invalid_credentials</source>
                 <target><![CDATA[Invalid credentials.]]></target>
             </trans-unit>			
-			<trans-unit id="463">
+			<trans-unit id="460">
                 <source>msg_desc_required_field_iban</source>
                 <target><![CDATA[Required fields have not been supplied, an IBAN must be supplied.]]></target>
             </trans-unit>			
-			<trans-unit id="464">
+			<trans-unit id="461">
                 <source>msg_desc_required_field_country_code</source>
                 <target><![CDATA[Required fields have not been supplied, a Country Code must be supplied.]]></target>
             </trans-unit>			
-			<trans-unit id="465">
+			<trans-unit id="462">
                 <source>msg_title_conversion_tool_offline</source>
                 <target><![CDATA[Conversion not possible.]]></target>
             </trans-unit>			
-			<trans-unit id="466">
+			<trans-unit id="463">
                 <source>msg_desc_conversion_tool_offline</source>
                 <target><![CDATA[Our conversion tool is offline, therefore, we are currently not able to process your request. Note: You have not been charged a conversion.]]></target>
             </trans-unit>			
-			<trans-unit id="467">
+			<trans-unit id="464">
                 <source>txt_choose_a_country</source>
                 <target><![CDATA[Choose a country]]></target>
             </trans-unit>			
-			<trans-unit id="468">
+			<trans-unit id="465">
                 <source>txt_indigenous_lang</source>
                 <target><![CDATA[English]]></target>
             </trans-unit>			
-			<trans-unit id="469">
+			<trans-unit id="466">
                 <source>txt_country_AF</source>
                 <target><![CDATA[Afghanistan]]></target>
             </trans-unit>			
-			<trans-unit id="470">
+			<trans-unit id="467">
                 <source>txt_country_AL</source>
                 <target><![CDATA[Albania]]></target>
             </trans-unit>			
-			<trans-unit id="471">
+			<trans-unit id="468">
                 <source>txt_country_DZ</source>
                 <target><![CDATA[Algeria]]></target>
             </trans-unit>			
-			<trans-unit id="472">
+			<trans-unit id="469">
                 <source>txt_country_AS</source>
                 <target><![CDATA[American Samoa]]></target>
             </trans-unit>			
-			<trans-unit id="473">
+			<trans-unit id="470">
                 <source>txt_country_AD</source>
                 <target><![CDATA[Andorra]]></target>
             </trans-unit>			
-			<trans-unit id="474">
+			<trans-unit id="471">
                 <source>txt_country_AO</source>
                 <target><![CDATA[Angola]]></target>
             </trans-unit>			
-			<trans-unit id="475">
+			<trans-unit id="472">
                 <source>txt_country_AI</source>
                 <target><![CDATA[Anguilla]]></target>
             </trans-unit>			
-			<trans-unit id="476">
+			<trans-unit id="473">
                 <source>txt_country_AQ</source>
                 <target><![CDATA[Antarctica]]></target>
             </trans-unit>			
-			<trans-unit id="477">
+			<trans-unit id="474">
                 <source>txt_country_AG</source>
                 <target><![CDATA[Antigua and Barbuda]]></target>
             </trans-unit>			
-			<trans-unit id="478">
+			<trans-unit id="475">
                 <source>txt_country_AR</source>
                 <target><![CDATA[Argentina]]></target>
             </trans-unit>			
-			<trans-unit id="479">
+			<trans-unit id="476">
                 <source>txt_country_AM</source>
                 <target><![CDATA[Armenia]]></target>
             </trans-unit>			
-			<trans-unit id="480">
+			<trans-unit id="477">
                 <source>txt_country_AW</source>
                 <target><![CDATA[Aruba]]></target>
             </trans-unit>			
-			<trans-unit id="481">
+			<trans-unit id="478">
                 <source>txt_country_AU</source>
                 <target><![CDATA[Australia]]></target>
             </trans-unit>			
-			<trans-unit id="482">
+			<trans-unit id="479">
                 <source>txt_country_AT</source>
                 <target><![CDATA[Austria]]></target>
             </trans-unit>			
-			<trans-unit id="483">
+			<trans-unit id="480">
                 <source>txt_country_AZ</source>
                 <target><![CDATA[Azerbaijan]]></target>
             </trans-unit>			
-			<trans-unit id="484">
+			<trans-unit id="481">
                 <source>txt_country_BS</source>
                 <target><![CDATA[Bahamas]]></target>
             </trans-unit>			
-			<trans-unit id="485">
+			<trans-unit id="482">
                 <source>txt_country_BH</source>
                 <target><![CDATA[Bahrain]]></target>
             </trans-unit>			
-			<trans-unit id="486">
+			<trans-unit id="483">
                 <source>txt_country_BD</source>
                 <target><![CDATA[Bangladesh]]></target>
             </trans-unit>			
-			<trans-unit id="487">
+			<trans-unit id="484">
                 <source>txt_country_BB</source>
                 <target><![CDATA[Barbados]]></target>
             </trans-unit>			
-			<trans-unit id="488">
+			<trans-unit id="485">
                 <source>txt_country_BY</source>
                 <target><![CDATA[Belarus]]></target>
             </trans-unit>			
-			<trans-unit id="489">
+			<trans-unit id="486">
                 <source>txt_country_BE</source>
                 <target><![CDATA[Belgium]]></target>
             </trans-unit>			
-			<trans-unit id="490">
+			<trans-unit id="487">
                 <source>txt_country_BZ</source>
                 <target><![CDATA[Belize]]></target>
             </trans-unit>			
-			<trans-unit id="491">
+			<trans-unit id="488">
                 <source>txt_country_BJ</source>
                 <target><![CDATA[Benin]]></target>
             </trans-unit>			
-			<trans-unit id="492">
+			<trans-unit id="489">
                 <source>txt_country_BM</source>
                 <target><![CDATA[Bermuda]]></target>
             </trans-unit>			
-			<trans-unit id="493">
+			<trans-unit id="490">
                 <source>txt_country_BT</source>
                 <target><![CDATA[Bhutan]]></target>
             </trans-unit>			
-			<trans-unit id="494">
+			<trans-unit id="491">
                 <source>txt_country_BO</source>
                 <target><![CDATA[Bolivia]]></target>
             </trans-unit>			
-			<trans-unit id="495">
+			<trans-unit id="492">
                 <source>txt_country_BA</source>
                 <target><![CDATA[Bosnia and Herzegovina]]></target>
             </trans-unit>			
-			<trans-unit id="496">
+			<trans-unit id="493">
                 <source>txt_country_BW</source>
                 <target><![CDATA[Botswana]]></target>
             </trans-unit>			
-			<trans-unit id="497">
+			<trans-unit id="494">
                 <source>txt_country_BV</source>
                 <target><![CDATA[Bouvet Island]]></target>
             </trans-unit>			
-			<trans-unit id="498">
+			<trans-unit id="495">
                 <source>txt_country_BR</source>
                 <target><![CDATA[Brazil]]></target>
             </trans-unit>			
-			<trans-unit id="499">
+			<trans-unit id="496">
                 <source>txt_country_IO</source>
                 <target><![CDATA[British Indian Ocean Territory]]></target>
             </trans-unit>			
-			<trans-unit id="500">
+			<trans-unit id="497">
                 <source>txt_country_BN</source>
                 <target><![CDATA[Brunei Darussalam]]></target>
             </trans-unit>			
-			<trans-unit id="501">
+			<trans-unit id="498">
                 <source>txt_country_BG</source>
                 <target><![CDATA[Bulgaria]]></target>
             </trans-unit>			
-			<trans-unit id="502">
+			<trans-unit id="499">
                 <source>txt_country_BF</source>
                 <target><![CDATA[Burkina Faso]]></target>
             </trans-unit>			
-			<trans-unit id="503">
+			<trans-unit id="500">
                 <source>txt_country_BI</source>
                 <target><![CDATA[Burundi]]></target>
             </trans-unit>			
-			<trans-unit id="504">
+			<trans-unit id="501">
                 <source>txt_country_KH</source>
                 <target><![CDATA[Cambodia]]></target>
             </trans-unit>			
-			<trans-unit id="505">
+			<trans-unit id="502">
                 <source>txt_country_CM</source>
                 <target><![CDATA[Cameroon]]></target>
             </trans-unit>			
-			<trans-unit id="506">
+			<trans-unit id="503">
                 <source>txt_country_CA</source>
                 <target><![CDATA[Canada]]></target>
             </trans-unit>			
-			<trans-unit id="507">
+			<trans-unit id="504">
                 <source>txt_country_CV</source>
                 <target><![CDATA[Cape Verde]]></target>
             </trans-unit>			
-			<trans-unit id="508">
+			<trans-unit id="505">
                 <source>txt_country_KY</source>
                 <target><![CDATA[Cayman Islands]]></target>
             </trans-unit>			
-			<trans-unit id="509">
+			<trans-unit id="506">
                 <source>txt_country_CF</source>
                 <target><![CDATA[Central African Republic]]></target>
             </trans-unit>			
-			<trans-unit id="510">
+			<trans-unit id="507">
                 <source>txt_country_TD</source>
                 <target><![CDATA[Chad]]></target>
             </trans-unit>			
-			<trans-unit id="511">
+			<trans-unit id="508">
                 <source>txt_country_CL</source>
                 <target><![CDATA[Chile]]></target>
             </trans-unit>			
-			<trans-unit id="512">
+			<trans-unit id="509">
                 <source>txt_country_CN</source>
                 <target><![CDATA[China]]></target>
             </trans-unit>			
-			<trans-unit id="513">
+			<trans-unit id="510">
                 <source>txt_country_CX</source>
                 <target><![CDATA[Christmas Island]]></target>
             </trans-unit>			
-			<trans-unit id="514">
+			<trans-unit id="511">
                 <source>txt_country_CC</source>
                 <target><![CDATA[Cocos (Keeling) Islands]]></target>
             </trans-unit>			
-			<trans-unit id="515">
+			<trans-unit id="512">
                 <source>txt_country_CO</source>
                 <target><![CDATA[Colombia]]></target>
             </trans-unit>			
-			<trans-unit id="516">
+			<trans-unit id="513">
                 <source>txt_country_KM</source>
                 <target><![CDATA[Comoros]]></target>
             </trans-unit>			
-			<trans-unit id="517">
+			<trans-unit id="514">
                 <source>txt_country_CG</source>
                 <target><![CDATA[Congo, Republic of (Brazzaville)]]></target>
             </trans-unit>			
-			<trans-unit id="518">
+			<trans-unit id="515">
                 <source>txt_country_CK</source>
                 <target><![CDATA[Cook Islands]]></target>
             </trans-unit>			
-			<trans-unit id="519">
+			<trans-unit id="516">
                 <source>txt_country_CR</source>
                 <target><![CDATA[Costa Rica]]></target>
             </trans-unit>			
-			<trans-unit id="520">
+			<trans-unit id="517">
                 <source>txt_country_HR</source>
                 <target><![CDATA[Croatia]]></target>
             </trans-unit>			
-			<trans-unit id="521">
+			<trans-unit id="518">
                 <source>txt_country_CU</source>
                 <target><![CDATA[Cuba]]></target>
             </trans-unit>			
-			<trans-unit id="522">
+			<trans-unit id="519">
                 <source>txt_country_CY</source>
                 <target><![CDATA[Cyprus]]></target>
             </trans-unit>			
-			<trans-unit id="523">
+			<trans-unit id="520">
                 <source>txt_country_CZ</source>
                 <target><![CDATA[Czech Republic]]></target>
             </trans-unit>			
-			<trans-unit id="524">
+			<trans-unit id="521">
                 <source>txt_country_CD</source>
                 <target><![CDATA[Democratic Republic of the Congo (Kinshasa)]]></target>
             </trans-unit>			
-			<trans-unit id="525">
+			<trans-unit id="522">
                 <source>txt_country_DK</source>
                 <target><![CDATA[Denmark]]></target>
             </trans-unit>			
-			<trans-unit id="526">
+			<trans-unit id="523">
                 <source>txt_country_DJ</source>
                 <target><![CDATA[Djibouti]]></target>
             </trans-unit>			
-			<trans-unit id="527">
+			<trans-unit id="524">
                 <source>txt_country_DM</source>
                 <target><![CDATA[Dominica]]></target>
             </trans-unit>			
-			<trans-unit id="528">
+			<trans-unit id="525">
                 <source>txt_country_DO</source>
                 <target><![CDATA[Dominican Republic]]></target>
             </trans-unit>			
-			<trans-unit id="529">
+			<trans-unit id="526">
                 <source>txt_country_EC</source>
                 <target><![CDATA[Ecuador]]></target>
             </trans-unit>			
-			<trans-unit id="530">
+			<trans-unit id="527">
                 <source>txt_country_EG</source>
                 <target><![CDATA[Egypt]]></target>
             </trans-unit>			
-			<trans-unit id="531">
+			<trans-unit id="528">
                 <source>txt_country_SV</source>
                 <target><![CDATA[El Salvador]]></target>
             </trans-unit>			
-			<trans-unit id="532">
+			<trans-unit id="529">
                 <source>txt_country_GQ</source>
                 <target><![CDATA[Equatorial Guinea]]></target>
             </trans-unit>			
-			<trans-unit id="533">
+			<trans-unit id="530">
                 <source>txt_country_ER</source>
                 <target><![CDATA[Eritrea]]></target>
             </trans-unit>			
-			<trans-unit id="534">
+			<trans-unit id="531">
                 <source>txt_country_EE</source>
                 <target><![CDATA[Estonia]]></target>
             </trans-unit>			
-			<trans-unit id="535">
+			<trans-unit id="532">
                 <source>txt_country_ET</source>
                 <target><![CDATA[Ethiopia]]></target>
             </trans-unit>			
-			<trans-unit id="536">
+			<trans-unit id="533">
                 <source>txt_country_FK</source>
                 <target><![CDATA[Falkland Islands]]></target>
             </trans-unit>			
-			<trans-unit id="537">
+			<trans-unit id="534">
                 <source>txt_country_FO</source>
                 <target><![CDATA[Faroe Islands]]></target>
             </trans-unit>			
-			<trans-unit id="538">
+			<trans-unit id="535">
                 <source>txt_country_FJ</source>
                 <target><![CDATA[Fiji]]></target>
             </trans-unit>			
-			<trans-unit id="539">
+			<trans-unit id="536">
                 <source>txt_country_FI</source>
                 <target><![CDATA[Finland]]></target>
             </trans-unit>			
-			<trans-unit id="540">
+			<trans-unit id="537">
                 <source>txt_country_FR</source>
                 <target><![CDATA[France]]></target>
             </trans-unit>			
-			<trans-unit id="541">
+			<trans-unit id="538">
                 <source>txt_country_GF</source>
                 <target><![CDATA[French Guiana]]></target>
             </trans-unit>			
-			<trans-unit id="542">
+			<trans-unit id="539">
                 <source>txt_country_PF</source>
                 <target><![CDATA[French Polynesia]]></target>
             </trans-unit>			
-			<trans-unit id="543">
+			<trans-unit id="540">
                 <source>txt_country_GA</source>
                 <target><![CDATA[Gabon]]></target>
             </trans-unit>			
-			<trans-unit id="544">
+			<trans-unit id="541">
                 <source>txt_country_GM</source>
                 <target><![CDATA[Gambia]]></target>
             </trans-unit>			
-			<trans-unit id="545">
+			<trans-unit id="542">
                 <source>txt_country_GE</source>
                 <target><![CDATA[Georgia]]></target>
             </trans-unit>			
-			<trans-unit id="546">
+			<trans-unit id="543">
                 <source>txt_country_DE</source>
                 <target><![CDATA[Germany]]></target>
             </trans-unit>			
-			<trans-unit id="547">
+			<trans-unit id="544">
                 <source>txt_country_GH</source>
                 <target><![CDATA[Ghana]]></target>
             </trans-unit>			
-			<trans-unit id="548">
+			<trans-unit id="545">
                 <source>txt_country_GI</source>
                 <target><![CDATA[Gibraltar]]></target>
             </trans-unit>			
-			<trans-unit id="549">
+			<trans-unit id="546">
                 <source>txt_country_GR</source>
                 <target><![CDATA[Greece]]></target>
             </trans-unit>			
-			<trans-unit id="550">
+			<trans-unit id="547">
                 <source>txt_country_GL</source>
                 <target><![CDATA[Greenland]]></target>
             </trans-unit>			
-			<trans-unit id="551">
+			<trans-unit id="548">
                 <source>txt_country_GD</source>
                 <target><![CDATA[Grenada]]></target>
             </trans-unit>			
-			<trans-unit id="552">
+			<trans-unit id="549">
                 <source>txt_country_GP</source>
                 <target><![CDATA[Guadeloupe]]></target>
             </trans-unit>			
-			<trans-unit id="553">
+			<trans-unit id="550">
                 <source>txt_country_GU</source>
                 <target><![CDATA[Guam]]></target>
             </trans-unit>			
-			<trans-unit id="554">
+			<trans-unit id="551">
                 <source>txt_country_GT</source>
                 <target><![CDATA[Guatemala]]></target>
             </trans-unit>			
-			<trans-unit id="555">
+			<trans-unit id="552">
                 <source>txt_country_GG</source>
                 <target><![CDATA[Guernsey]]></target>
             </trans-unit>			
-			<trans-unit id="556">
+			<trans-unit id="553">
                 <source>txt_country_GN</source>
                 <target><![CDATA[Guinea]]></target>
             </trans-unit>			
-			<trans-unit id="557">
+			<trans-unit id="554">
                 <source>txt_country_GW</source>
                 <target><![CDATA[Guinea-Bissau]]></target>
             </trans-unit>			
-			<trans-unit id="558">
+			<trans-unit id="555">
                 <source>txt_country_GY</source>
                 <target><![CDATA[Guyana]]></target>
             </trans-unit>			
-			<trans-unit id="559">
+			<trans-unit id="556">
                 <source>txt_country_HT</source>
                 <target><![CDATA[Haiti]]></target>
             </trans-unit>			
-			<trans-unit id="560">
+			<trans-unit id="557">
                 <source>txt_country_HM</source>
                 <target><![CDATA[Heard and Mc Donald Islands]]></target>
             </trans-unit>			
-			<trans-unit id="561">
+			<trans-unit id="558">
                 <source>txt_country_HN</source>
                 <target><![CDATA[Honduras]]></target>
             </trans-unit>			
-			<trans-unit id="562">
+			<trans-unit id="559">
                 <source>txt_country_HK</source>
                 <target><![CDATA[Hong Kong]]></target>
             </trans-unit>			
-			<trans-unit id="563">
+			<trans-unit id="560">
                 <source>txt_country_HU</source>
                 <target><![CDATA[Hungary]]></target>
             </trans-unit>			
-			<trans-unit id="564">
+			<trans-unit id="561">
                 <source>txt_country_IS</source>
                 <target><![CDATA[Iceland]]></target>
             </trans-unit>			
-			<trans-unit id="565">
+			<trans-unit id="562">
                 <source>txt_country_IN</source>
                 <target><![CDATA[India]]></target>
             </trans-unit>			
-			<trans-unit id="566">
+			<trans-unit id="563">
                 <source>txt_country_ID</source>
                 <target><![CDATA[Indonesia]]></target>
             </trans-unit>			
-			<trans-unit id="567">
+			<trans-unit id="564">
                 <source>txt_country_IR</source>
                 <target><![CDATA[Iran (Islamic Republic of)]]></target>
             </trans-unit>			
-			<trans-unit id="568">
+			<trans-unit id="565">
                 <source>txt_country_IQ</source>
                 <target><![CDATA[Iraq]]></target>
             </trans-unit>			
-			<trans-unit id="569">
+			<trans-unit id="566">
                 <source>txt_country_IE</source>
                 <target><![CDATA[Ireland]]></target>
             </trans-unit>			
-			<trans-unit id="570">
+			<trans-unit id="567">
                 <source>txt_country_IM</source>
                 <target><![CDATA[Isle of Man]]></target>
             </trans-unit>			
-			<trans-unit id="571">
+			<trans-unit id="568">
                 <source>txt_country_IL</source>
                 <target><![CDATA[Israel]]></target>
             </trans-unit>			
-			<trans-unit id="572">
+			<trans-unit id="569">
                 <source>txt_country_IT</source>
                 <target><![CDATA[Italy]]></target>
             </trans-unit>			
-			<trans-unit id="573">
+			<trans-unit id="570">
                 <source>txt_country_CI</source>
                 <target><![CDATA[Ivory Coast]]></target>
             </trans-unit>			
-			<trans-unit id="574">
+			<trans-unit id="571">
                 <source>txt_country_JM</source>
                 <target><![CDATA[Jamaica]]></target>
             </trans-unit>			
-			<trans-unit id="575">
+			<trans-unit id="572">
                 <source>txt_country_JP</source>
                 <target><![CDATA[Japan]]></target>
             </trans-unit>			
-			<trans-unit id="576">
+			<trans-unit id="573">
                 <source>txt_country_JE</source>
                 <target><![CDATA[Jersey]]></target>
             </trans-unit>			
-			<trans-unit id="577">
+			<trans-unit id="574">
                 <source>txt_country_JO</source>
                 <target><![CDATA[Jordan]]></target>
             </trans-unit>			
-			<trans-unit id="578">
+			<trans-unit id="575">
                 <source>txt_country_KZ</source>
                 <target><![CDATA[Kazakhstan]]></target>
             </trans-unit>			
-			<trans-unit id="579">
+			<trans-unit id="576">
                 <source>txt_country_KE</source>
                 <target><![CDATA[Kenya]]></target>
             </trans-unit>			
-			<trans-unit id="580">
+			<trans-unit id="577">
                 <source>txt_country_KI</source>
                 <target><![CDATA[Kiribati]]></target>
             </trans-unit>			
-			<trans-unit id="581">
+			<trans-unit id="578">
                 <source>txt_country_KP</source>
                 <target><![CDATA[Korea, Democratic People's Rep. (North Korea)]]></target>
             </trans-unit>			
-			<trans-unit id="582">
+			<trans-unit id="579">
                 <source>txt_country_KR</source>
                 <target><![CDATA[Korea, Republic of (South Korea)]]></target>
             </trans-unit>			
-			<trans-unit id="583">
+			<trans-unit id="580">
                 <source>txt_country_KW</source>
                 <target><![CDATA[Kuwait]]></target>
             </trans-unit>			
-			<trans-unit id="584">
+			<trans-unit id="581">
                 <source>txt_country_KG</source>
                 <target><![CDATA[Kyrgyzstan]]></target>
             </trans-unit>			
-			<trans-unit id="585">
+			<trans-unit id="582">
                 <source>txt_country_LA</source>
                 <target><![CDATA[Lao, People's Democratic Republic]]></target>
             </trans-unit>			
-			<trans-unit id="586">
+			<trans-unit id="583">
                 <source>txt_country_LV</source>
                 <target><![CDATA[Latvia]]></target>
             </trans-unit>			
-			<trans-unit id="587">
+			<trans-unit id="584">
                 <source>txt_country_LB</source>
                 <target><![CDATA[Lebanon]]></target>
             </trans-unit>			
-			<trans-unit id="588">
+			<trans-unit id="585">
                 <source>txt_country_LS</source>
                 <target><![CDATA[Lesotho]]></target>
             </trans-unit>			
-			<trans-unit id="589">
+			<trans-unit id="586">
                 <source>txt_country_LR</source>
                 <target><![CDATA[Liberia]]></target>
             </trans-unit>			
-			<trans-unit id="590">
+			<trans-unit id="587">
                 <source>txt_country_LY</source>
                 <target><![CDATA[Libya]]></target>
             </trans-unit>			
-			<trans-unit id="591">
+			<trans-unit id="588">
                 <source>txt_country_LI</source>
                 <target><![CDATA[Liechtenstein]]></target>
             </trans-unit>			
-			<trans-unit id="592">
+			<trans-unit id="589">
                 <source>txt_country_LT</source>
                 <target><![CDATA[Lithuania]]></target>
             </trans-unit>			
-			<trans-unit id="593">
+			<trans-unit id="590">
                 <source>txt_country_LU</source>
                 <target><![CDATA[Luxembourg]]></target>
             </trans-unit>			
-			<trans-unit id="594">
+			<trans-unit id="591">
                 <source>txt_country_MK</source>
                 <target><![CDATA[Macedonia, Rep. of]]></target>
             </trans-unit>			
-			<trans-unit id="595">
+			<trans-unit id="592">
                 <source>txt_country_MG</source>
                 <target><![CDATA[Madagascar]]></target>
             </trans-unit>			
-			<trans-unit id="596">
+			<trans-unit id="593">
                 <source>txt_country_MW</source>
                 <target><![CDATA[Malawi]]></target>
             </trans-unit>			
-			<trans-unit id="597">
+			<trans-unit id="594">
                 <source>txt_country_MY</source>
                 <target><![CDATA[Malaysia]]></target>
             </trans-unit>			
-			<trans-unit id="598">
+			<trans-unit id="595">
                 <source>txt_country_MV</source>
                 <target><![CDATA[Maldives]]></target>
             </trans-unit>			
-			<trans-unit id="599">
+			<trans-unit id="596">
                 <source>txt_country_ML</source>
                 <target><![CDATA[Mali]]></target>
             </trans-unit>			
-			<trans-unit id="600">
+			<trans-unit id="597">
                 <source>txt_country_MT</source>
                 <target><![CDATA[Malta]]></target>
             </trans-unit>			
-			<trans-unit id="601">
+			<trans-unit id="598">
                 <source>txt_country_MH</source>
                 <target><![CDATA[Marshall Islands]]></target>
             </trans-unit>			
-			<trans-unit id="602">
+			<trans-unit id="599">
                 <source>txt_country_MQ</source>
                 <target><![CDATA[Martinique]]></target>
             </trans-unit>			
-			<trans-unit id="603">
+			<trans-unit id="600">
                 <source>txt_country_MR</source>
                 <target><![CDATA[Mauritania]]></target>
             </trans-unit>			
-			<trans-unit id="604">
+			<trans-unit id="601">
                 <source>txt_country_MU</source>
                 <target><![CDATA[Mauritius]]></target>
             </trans-unit>			
-			<trans-unit id="605">
+			<trans-unit id="602">
                 <source>txt_country_YT</source>
                 <target><![CDATA[Mayotte]]></target>
             </trans-unit>			
-			<trans-unit id="606">
+			<trans-unit id="603">
                 <source>txt_country_MX</source>
                 <target><![CDATA[Mexico]]></target>
             </trans-unit>			
-			<trans-unit id="607">
+			<trans-unit id="604">
                 <source>txt_country_FM</source>
                 <target><![CDATA[Micronesia, Federal States of]]></target>
             </trans-unit>			
-			<trans-unit id="608">
+			<trans-unit id="605">
                 <source>txt_country_MD</source>
                 <target><![CDATA[Moldova, Republic of]]></target>
             </trans-unit>			
-			<trans-unit id="609">
+			<trans-unit id="606">
                 <source>txt_country_MC</source>
                 <target><![CDATA[Monaco]]></target>
             </trans-unit>			
-			<trans-unit id="610">
+			<trans-unit id="607">
                 <source>txt_country_MN</source>
                 <target><![CDATA[Mongolia]]></target>
             </trans-unit>			
-			<trans-unit id="611">
+			<trans-unit id="608">
                 <source>txt_country_ME</source>
                 <target><![CDATA[Montenegro]]></target>
             </trans-unit>			
-			<trans-unit id="612">
+			<trans-unit id="609">
                 <source>txt_country_MS</source>
                 <target><![CDATA[Montserrat]]></target>
             </trans-unit>			
-			<trans-unit id="613">
+			<trans-unit id="610">
                 <source>txt_country_MA</source>
                 <target><![CDATA[Morocco]]></target>
             </trans-unit>			
-			<trans-unit id="614">
+			<trans-unit id="611">
                 <source>txt_country_MZ</source>
                 <target><![CDATA[Mozambique]]></target>
             </trans-unit>			
-			<trans-unit id="615">
+			<trans-unit id="612">
                 <source>txt_country_MM</source>
                 <target><![CDATA[Myanmar, Burma]]></target>
             </trans-unit>			
-			<trans-unit id="616">
+			<trans-unit id="613">
                 <source>txt_country_NA</source>
                 <target><![CDATA[Namibia]]></target>
             </trans-unit>			
-			<trans-unit id="617">
+			<trans-unit id="614">
                 <source>txt_country_NR</source>
                 <target><![CDATA[Nauru]]></target>
             </trans-unit>			
-			<trans-unit id="618">
+			<trans-unit id="615">
                 <source>txt_country_NP</source>
                 <target><![CDATA[Nepal]]></target>
             </trans-unit>			
-			<trans-unit id="619">
+			<trans-unit id="616">
                 <source>txt_country_NL</source>
                 <target><![CDATA[Netherlands]]></target>
             </trans-unit>			
-			<trans-unit id="620">
+			<trans-unit id="617">
                 <source>txt_country_NC</source>
                 <target><![CDATA[New Caledonia]]></target>
             </trans-unit>			
-			<trans-unit id="621">
+			<trans-unit id="618">
                 <source>txt_country_NZ</source>
                 <target><![CDATA[New Zealand]]></target>
             </trans-unit>			
-			<trans-unit id="622">
+			<trans-unit id="619">
                 <source>txt_country_NI</source>
                 <target><![CDATA[Nicaragua]]></target>
             </trans-unit>			
-			<trans-unit id="623">
+			<trans-unit id="620">
                 <source>txt_country_NE</source>
                 <target><![CDATA[Niger]]></target>
             </trans-unit>			
-			<trans-unit id="624">
+			<trans-unit id="621">
                 <source>txt_country_NG</source>
                 <target><![CDATA[Nigeria]]></target>
             </trans-unit>			
-			<trans-unit id="625">
+			<trans-unit id="622">
                 <source>txt_country_NU</source>
                 <target><![CDATA[Niue]]></target>
             </trans-unit>			
-			<trans-unit id="626">
+			<trans-unit id="623">
                 <source>txt_country_NF</source>
                 <target><![CDATA[Norfolk Island]]></target>
             </trans-unit>			
-			<trans-unit id="627">
+			<trans-unit id="624">
                 <source>txt_country_MP</source>
                 <target><![CDATA[Northern Mariana Islands]]></target>
             </trans-unit>			
-			<trans-unit id="628">
+			<trans-unit id="625">
                 <source>txt_country_NO</source>
                 <target><![CDATA[Norway]]></target>
             </trans-unit>			
-			<trans-unit id="629">
+			<trans-unit id="626">
                 <source>txt_country_OM</source>
                 <target><![CDATA[Oman]]></target>
             </trans-unit>			
-			<trans-unit id="630">
+			<trans-unit id="627">
                 <source>txt_country_PK</source>
                 <target><![CDATA[Pakistan]]></target>
             </trans-unit>			
-			<trans-unit id="631">
+			<trans-unit id="628">
                 <source>txt_country_PW</source>
                 <target><![CDATA[Palau]]></target>
             </trans-unit>			
-			<trans-unit id="632">
+			<trans-unit id="629">
                 <source>txt_country_PS</source>
                 <target><![CDATA[Palestinian National Authority]]></target>
             </trans-unit>			
-			<trans-unit id="633">
+			<trans-unit id="630">
                 <source>txt_country_PA</source>
                 <target><![CDATA[Panama]]></target>
             </trans-unit>			
-			<trans-unit id="634">
+			<trans-unit id="631">
                 <source>txt_country_PG</source>
                 <target><![CDATA[Papua New Guinea]]></target>
             </trans-unit>			
-			<trans-unit id="635">
+			<trans-unit id="632">
                 <source>txt_country_PY</source>
                 <target><![CDATA[Paraguay]]></target>
             </trans-unit>			
-			<trans-unit id="636">
+			<trans-unit id="633">
                 <source>txt_country_PE</source>
                 <target><![CDATA[Peru]]></target>
             </trans-unit>			
-			<trans-unit id="637">
+			<trans-unit id="634">
                 <source>txt_country_PH</source>
                 <target><![CDATA[Philippines]]></target>
             </trans-unit>			
-			<trans-unit id="638">
+			<trans-unit id="635">
                 <source>txt_country_PN</source>
                 <target><![CDATA[Pitcairn Island]]></target>
             </trans-unit>			
-			<trans-unit id="639">
+			<trans-unit id="636">
                 <source>txt_country_PL</source>
                 <target><![CDATA[Poland]]></target>
             </trans-unit>			
-			<trans-unit id="640">
+			<trans-unit id="637">
                 <source>txt_country_PT</source>
                 <target><![CDATA[Portugal]]></target>
             </trans-unit>			
-			<trans-unit id="641">
+			<trans-unit id="638">
                 <source>txt_country_PR</source>
                 <target><![CDATA[Puerto Rico]]></target>
             </trans-unit>			
-			<trans-unit id="642">
+			<trans-unit id="639">
                 <source>txt_country_QA</source>
                 <target><![CDATA[Qatar]]></target>
             </trans-unit>			
-			<trans-unit id="643">
+			<trans-unit id="640">
                 <source>txt_country_RE</source>
                 <target><![CDATA[Reunion Island]]></target>
             </trans-unit>			
-			<trans-unit id="644">
+			<trans-unit id="641">
                 <source>txt_country_RO</source>
                 <target><![CDATA[Romania]]></target>
             </trans-unit>			
-			<trans-unit id="645">
+			<trans-unit id="642">
                 <source>txt_country_RU</source>
                 <target><![CDATA[Russian Federation]]></target>
             </trans-unit>			
-			<trans-unit id="646">
+			<trans-unit id="643">
                 <source>txt_country_RW</source>
                 <target><![CDATA[Rwanda]]></target>
             </trans-unit>			
-			<trans-unit id="647">
+			<trans-unit id="644">
                 <source>txt_country_SH</source>
                 <target><![CDATA[Saint Helena]]></target>
             </trans-unit>			
-			<trans-unit id="648">
+			<trans-unit id="645">
                 <source>txt_country_KN</source>
                 <target><![CDATA[Saint Kitts and Nevis]]></target>
             </trans-unit>			
-			<trans-unit id="649">
+			<trans-unit id="646">
                 <source>txt_country_LC</source>
                 <target><![CDATA[Saint Lucia]]></target>
             </trans-unit>			
-			<trans-unit id="650">
+			<trans-unit id="647">
                 <source>txt_country_VC</source>
                 <target><![CDATA[Saint Vincent and the Grenadines]]></target>
             </trans-unit>			
-			<trans-unit id="651">
+			<trans-unit id="648">
                 <source>txt_country_WS</source>
                 <target><![CDATA[Samoa]]></target>
             </trans-unit>			
-			<trans-unit id="652">
+			<trans-unit id="649">
                 <source>txt_country_SM</source>
                 <target><![CDATA[San Marino]]></target>
             </trans-unit>			
-			<trans-unit id="653">
+			<trans-unit id="650">
                 <source>txt_country_ST</source>
                 <target><![CDATA[Sao Tome and Príncipe]]></target>
             </trans-unit>			
-			<trans-unit id="654">
+			<trans-unit id="651">
                 <source>txt_country_SA</source>
                 <target><![CDATA[Saudi Arabia]]></target>
             </trans-unit>			
-			<trans-unit id="655">
+			<trans-unit id="652">
                 <source>txt_country_SN</source>
                 <target><![CDATA[Senegal]]></target>
             </trans-unit>			
-			<trans-unit id="656">
+			<trans-unit id="653">
                 <source>txt_country_RS</source>
                 <target><![CDATA[Serbia]]></target>
             </trans-unit>			
-			<trans-unit id="657">
+			<trans-unit id="654">
                 <source>txt_country_SC</source>
                 <target><![CDATA[Seychelles]]></target>
             </trans-unit>			
-			<trans-unit id="658">
+			<trans-unit id="655">
                 <source>txt_country_SL</source>
                 <target><![CDATA[Sierra Leone]]></target>
             </trans-unit>			
-			<trans-unit id="659">
+			<trans-unit id="656">
                 <source>txt_country_SG</source>
                 <target><![CDATA[Singapore]]></target>
             </trans-unit>			
-			<trans-unit id="660">
+			<trans-unit id="657">
                 <source>txt_country_SK</source>
                 <target><![CDATA[Slovakia (Slovak Republic)]]></target>
             </trans-unit>			
-			<trans-unit id="661">
+			<trans-unit id="658">
                 <source>txt_country_SI</source>
                 <target><![CDATA[Slovenia]]></target>
             </trans-unit>			
-			<trans-unit id="662">
+			<trans-unit id="659">
                 <source>txt_country_SB</source>
                 <target><![CDATA[Solomon Islands]]></target>
             </trans-unit>			
-			<trans-unit id="663">
+			<trans-unit id="660">
                 <source>txt_country_SO</source>
                 <target><![CDATA[Somalia]]></target>
             </trans-unit>			
-			<trans-unit id="664">
+			<trans-unit id="661">
                 <source>txt_country_ZA</source>
                 <target><![CDATA[South Africa]]></target>
             </trans-unit>			
-			<trans-unit id="665">
+			<trans-unit id="662">
                 <source>txt_country_GS</source>
                 <target><![CDATA[South Georgia and South Sandwich Islands]]></target>
             </trans-unit>			
-			<trans-unit id="666">
+			<trans-unit id="663">
                 <source>txt_country_SS</source>
                 <target><![CDATA[South Sudan]]></target>
             </trans-unit>			
-			<trans-unit id="667">
+			<trans-unit id="664">
                 <source>txt_country_ES</source>
                 <target><![CDATA[Spain]]></target>
             </trans-unit>			
-			<trans-unit id="668">
+			<trans-unit id="665">
                 <source>txt_country_LK</source>
                 <target><![CDATA[Sri Lanka]]></target>
             </trans-unit>			
-			<trans-unit id="669">
+			<trans-unit id="666">
                 <source>txt_country_PM</source>
                 <target><![CDATA[St. Pierre and Miquelon]]></target>
             </trans-unit>			
-			<trans-unit id="670">
+			<trans-unit id="667">
                 <source>txt_country_SD</source>
                 <target><![CDATA[Sudan]]></target>
             </trans-unit>			
-			<trans-unit id="671">
+			<trans-unit id="668">
                 <source>txt_country_SR</source>
                 <target><![CDATA[Suriname]]></target>
             </trans-unit>			
-			<trans-unit id="672">
+			<trans-unit id="669">
                 <source>txt_country_SJ</source>
                 <target><![CDATA[Svalbard and Jan Mayen Islands]]></target>
             </trans-unit>			
-			<trans-unit id="673">
+			<trans-unit id="670">
                 <source>txt_country_SZ</source>
                 <target><![CDATA[Swaziland]]></target>
             </trans-unit>			
-			<trans-unit id="674">
+			<trans-unit id="671">
                 <source>txt_country_SE</source>
                 <target><![CDATA[Sweden]]></target>
             </trans-unit>			
-			<trans-unit id="675">
+			<trans-unit id="672">
                 <source>txt_country_CH</source>
                 <target><![CDATA[Switzerland]]></target>
             </trans-unit>			
-			<trans-unit id="676">
+			<trans-unit id="673">
                 <source>txt_country_SY</source>
                 <target><![CDATA[Syria, Syrian Arab Republic]]></target>
             </trans-unit>			
-			<trans-unit id="677">
+			<trans-unit id="674">
                 <source>txt_country_TW</source>
                 <target><![CDATA[Taiwan (Republic of China)]]></target>
             </trans-unit>			
-			<trans-unit id="678">
+			<trans-unit id="675">
                 <source>txt_country_TJ</source>
                 <target><![CDATA[Tajikistan]]></target>
             </trans-unit>			
-			<trans-unit id="679">
+			<trans-unit id="676">
                 <source>txt_country_TZ</source>
                 <target><![CDATA[Tanzania]]></target>
             </trans-unit>			
-			<trans-unit id="680">
+			<trans-unit id="677">
                 <source>txt_country_TH</source>
                 <target><![CDATA[Thailand]]></target>
             </trans-unit>			
-			<trans-unit id="681">
+			<trans-unit id="678">
                 <source>txt_country_TG</source>
                 <target><![CDATA[Togo]]></target>
             </trans-unit>			
-			<trans-unit id="682">
+			<trans-unit id="679">
                 <source>txt_country_TK</source>
                 <target><![CDATA[Tokelau]]></target>
             </trans-unit>			
-			<trans-unit id="683">
+			<trans-unit id="680">
                 <source>txt_country_TO</source>
                 <target><![CDATA[Tonga]]></target>
             </trans-unit>			
-			<trans-unit id="684">
+			<trans-unit id="681">
                 <source>txt_country_TT</source>
                 <target><![CDATA[Trinidad and Tobago]]></target>
             </trans-unit>			
-			<trans-unit id="685">
+			<trans-unit id="682">
                 <source>txt_country_TN</source>
                 <target><![CDATA[Tunisia]]></target>
             </trans-unit>			
-			<trans-unit id="686">
+			<trans-unit id="683">
                 <source>txt_country_TR</source>
                 <target><![CDATA[Turkey]]></target>
             </trans-unit>			
-			<trans-unit id="687">
+			<trans-unit id="684">
                 <source>txt_country_TM</source>
                 <target><![CDATA[Turkmenistan]]></target>
             </trans-unit>			
-			<trans-unit id="688">
+			<trans-unit id="685">
                 <source>txt_country_TC</source>
                 <target><![CDATA[Turks and Caicos Islands]]></target>
             </trans-unit>			
-			<trans-unit id="689">
+			<trans-unit id="686">
                 <source>txt_country_TV</source>
                 <target><![CDATA[Tuvalu]]></target>
             </trans-unit>			
-			<trans-unit id="690">
+			<trans-unit id="687">
                 <source>txt_country_UM</source>
                 <target><![CDATA[U.S. Minor Outlying Islands]]></target>
             </trans-unit>			
-			<trans-unit id="691">
+			<trans-unit id="688">
                 <source>txt_country_UG</source>
                 <target><![CDATA[Uganda]]></target>
             </trans-unit>			
-			<trans-unit id="692">
+			<trans-unit id="689">
                 <source>txt_country_UA</source>
                 <target><![CDATA[Ukraine]]></target>
             </trans-unit>			
-			<trans-unit id="693">
+			<trans-unit id="690">
                 <source>txt_country_AE</source>
                 <target><![CDATA[United Arab Emirates]]></target>
             </trans-unit>			
-			<trans-unit id="694">
+			<trans-unit id="691">
                 <source>txt_country_GB</source>
                 <target><![CDATA[United Kingdom]]></target>
             </trans-unit>			
-			<trans-unit id="695">
+			<trans-unit id="692">
                 <source>txt_country_US</source>
                 <target><![CDATA[United States]]></target>
             </trans-unit>			
-			<trans-unit id="696">
+			<trans-unit id="693">
                 <source>txt_country_UY</source>
                 <target><![CDATA[Uruguay]]></target>
             </trans-unit>			
-			<trans-unit id="697">
+			<trans-unit id="694">
                 <source>txt_country_UZ</source>
                 <target><![CDATA[Uzbekistan]]></target>
             </trans-unit>			
-			<trans-unit id="698">
+			<trans-unit id="695">
                 <source>txt_country_VU</source>
                 <target><![CDATA[Vanuatu]]></target>
             </trans-unit>			
-			<trans-unit id="699">
+			<trans-unit id="696">
                 <source>txt_country_VA</source>
                 <target><![CDATA[Vatican City State (Holy See)]]></target>
             </trans-unit>			
-			<trans-unit id="700">
+			<trans-unit id="697">
                 <source>txt_country_VE</source>
                 <target><![CDATA[Venezuela]]></target>
             </trans-unit>			
-			<trans-unit id="701">
+			<trans-unit id="698">
                 <source>txt_country_VN</source>
                 <target><![CDATA[Vietnam]]></target>
             </trans-unit>			
-			<trans-unit id="702">
+			<trans-unit id="699">
                 <source>txt_country_VG</source>
                 <target><![CDATA[Virgin Islands (British)]]></target>
             </trans-unit>			
-			<trans-unit id="703">
+			<trans-unit id="700">
                 <source>txt_country_VI</source>
                 <target><![CDATA[Virgin Islands (U.S.)]]></target>
             </trans-unit>			
-			<trans-unit id="704">
+			<trans-unit id="701">
                 <source>txt_country_WF</source>
                 <target><![CDATA[Wallis and Futuna Islands]]></target>
             </trans-unit>			
-			<trans-unit id="705">
+			<trans-unit id="702">
                 <source>txt_country_EH</source>
                 <target><![CDATA[Western Sahara]]></target>
             </trans-unit>			
-			<trans-unit id="706">
+			<trans-unit id="703">
                 <source>txt_country_YE</source>
                 <target><![CDATA[Yemen]]></target>
             </trans-unit>			
-			<trans-unit id="707">
+			<trans-unit id="704">
                 <source>txt_country_ZM</source>
                 <target><![CDATA[Zambia]]></target>
             </trans-unit>			
-			<trans-unit id="708">
+			<trans-unit id="705">
                 <source>txt_country_ZW</source>
                 <target><![CDATA[Zimbabwe]]></target>
             </trans-unit>			
-			<trans-unit id="709">
+			<trans-unit id="706">
                 <source>iban_AD_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Andorra is 24 characters in total length. The first 2 characters are 'AD', followed by 10 numbers and ends with 12 alphanumeric characters. E.g. AD12 0001 2030 2003 5910 0100]]></target>
             </trans-unit>			
-			<trans-unit id="710">
+			<trans-unit id="707">
                 <source>iban_AT_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Austria is 20 characters in total length. The first 2 characters are 'AT', followed by 18 numbers. E.g. AT61 1904 3002 3457 3201]]></target>
             </trans-unit>			
-			<trans-unit id="711">
+			<trans-unit id="708">
                 <source>iban_BA_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Bosnia Herzegovina is 20 characters in total length. The first 2 characters are 'BA', followed by 18 numbers. E.g. BA39 1290 0794 0102 8494]]></target>
             </trans-unit>			
-			<trans-unit id="712">
+			<trans-unit id="709">
                 <source>iban_BE_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Belgium is 16 characters in total length. The first 2 characters are 'BE', followed by 14 numbers. E.g. BE68 5390 0754 7034]]></target>
             </trans-unit>			
-			<trans-unit id="713">
+			<trans-unit id="710">
                 <source>iban_BG_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Bulgaria is 22 characters in total length. The first 2 characters are 'BG', followed by 2 numbers,4 letters,6 numbers and ends with 8 alphanumeric characters. E.g. BG80 BNBG 9661 1020 3456 78]]></target>
             </trans-unit>			
-			<trans-unit id="714">
+			<trans-unit id="711">
                 <source>iban_CH_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Switzerland is 21 characters in total length. The first 2 characters are 'CH', followed by 7 numbers and ends with 12 alphanumeric characters. E.g. CH93 0076 2011 6238 5295 7]]></target>
             </trans-unit>			
-			<trans-unit id="715">
+			<trans-unit id="712">
                 <source>iban_CY_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Cyprus is 28 characters in total length. The first 2 characters are 'CY', followed by 10 numbers and ends with 16 alphanumeric characters. E.g. CY17 0020 0128 0000 0012 0052 7600]]></target>
             </trans-unit>			
-			<trans-unit id="716">
+			<trans-unit id="713">
                 <source>iban_CZ_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Czech Republic is 24 characters in total length. The first 2 characters are 'CZ', followed by 22 numbers. E.g. CZ65 0800 0000 1920 0014 5399]]></target>
             </trans-unit>			
-			<trans-unit id="717">
+			<trans-unit id="714">
                 <source>iban_DE_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Germany is 22 characters in total length. The first 2 characters are 'DE', followed by 20 numbers. E.g. DE89 3704 0044 0532 0130 00]]></target>
             </trans-unit>			
-			<trans-unit id="718">
+			<trans-unit id="715">
                 <source>iban_DK_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Denmark is 18 characters in total length. The first 2 characters are 'DK', followed by 16 numbers. E.g. DK50 0040 0440 1162 43]]></target>
             </trans-unit>			
-			<trans-unit id="719">
+			<trans-unit id="716">
                 <source>iban_EE_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Estonia is 20 characters in total length. The first 2 characters are 'EE', followed by 18 numbers. E.g. EE38 2200 2210 2014 5685]]></target>
             </trans-unit>			
-			<trans-unit id="720">
+			<trans-unit id="717">
                 <source>iban_ES_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Spain is 24 characters in total length. The first 2 characters are 'ES', followed by 22 numbers. E.g. ES91 2100 0418 4502 0005 1332]]></target>
             </trans-unit>			
-			<trans-unit id="721">
+			<trans-unit id="718">
                 <source>iban_FI_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Finland is 18 characters in total length. The first 2 characters are 'FI', followed by 16 numbers. E.g. FI21 1234 5600 0007 85]]></target>
             </trans-unit>			
-			<trans-unit id="722">
+			<trans-unit id="719">
                 <source>iban_FR_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for France is 27 characters in total length. The first 2 characters are 'FR', followed by 12 numbers,11 alhanumeric characters and ends with 2 numbers. E.g. FR14 2004 1010 0505 0001 3M02 606]]></target>
             </trans-unit>			
-			<trans-unit id="723">
+			<trans-unit id="720">
                 <source>iban_GB_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for the United Kingdom is 22 characters in total length. The first 2 characters are 'GB', followed by 2 numbers,4 letters and ends with 14 numbers. E.g. GB29 NWBK 6016 1331 9268 19]]></target>
             </trans-unit>			
-			<trans-unit id="724">
+			<trans-unit id="721">
                 <source>iban_GR_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Greece is 27 characters in total length. The first 2 characters are 'GR', followed by 9 numbers and ends with 16 alph characters. E.g. GR16 0110 1250 0000 0001 2300 695]]></target>
             </trans-unit>			
-			<trans-unit id="725">
+			<trans-unit id="722">
                 <source>iban_HR_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Croatia is 21 characters in total length. The first 2 characters are 'HR', followed by 19 numbers. E.g. HR12 1001 0051 8630 0016 0]]></target>
             </trans-unit>			
-			<trans-unit id="726">
+			<trans-unit id="723">
                 <source>iban_HU_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Hungary is 28 characters in total length. The first 2 characters are 'HU', followed by 26 numbers. E.g. HU42 1177 3016 1111 1018 0000 0000]]></target>
             </trans-unit>			
-			<trans-unit id="727">
+			<trans-unit id="724">
                 <source>iban_IE_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Ireland is 22 characters in total length. The first 2 characters are 'IE', followed by 2 numbers,4 letters and 14 numbers. E.g. IE29 AIBK 9311 5212 3456 78]]></target>
             </trans-unit>			
-			<trans-unit id="728">
+			<trans-unit id="725">
                 <source>iban_IS_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Iceland is 26 characters in total length. The first 2 characters are 'IS', followed by 24 numbers. E.g. IS14 0159 2600 7654 5510 7303 39]]></target>
             </trans-unit>			
-			<trans-unit id="729">
+			<trans-unit id="726">
                 <source>iban_IT_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Italy is 27 characters in total length. The first 2 characters are 'IT', followed by 2 numbers,1 letter,10 numbers and ends with 12 alphanumeric characters. E.g. IT60 X054 2811 1010 0000 0123 456]]></target>
             </trans-unit>			
-			<trans-unit id="730">
+			<trans-unit id="727">
                 <source>iban_LI_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Liechtenstein is 21 characters in total length. The first 2 characters are 'LI', followed by 7 numbers and ends with 12 alphanumeric characters. E.g. LI21 0881 0000 2324 013A A]]></target>
             </trans-unit>			
-			<trans-unit id="731">
+			<trans-unit id="728">
                 <source>iban_LT_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Lithuania is 20 characters in total length. The first 2 characters are 'LT', followed by 18 numbers. E.g. LT12 1000 0111 0100 1000]]></target>
             </trans-unit>			
-			<trans-unit id="732">
+			<trans-unit id="729">
                 <source>iban_LU_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Luxembourg is 20 characters in total length. The first 2 characters are 'LU', followed by 5 numbers and ends with 13 alphanumeric characters. E.g. LU28 0019 4006 4475 0000]]></target>
             </trans-unit>			
-			<trans-unit id="733">
+			<trans-unit id="730">
                 <source>iban_LV_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Latvia is 21 characters in total length. The first 2 characters are 'LV', followed by 2 numbers,4 letters and ends with 13 alphanumeric characters. E.g. LV80 BANK 0000 4351 9500 1]]></target>
             </trans-unit>			
-			<trans-unit id="734">
+			<trans-unit id="731">
                 <source>iban_ME_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Montenegro is 22 characters in total length. The first 2 characters are 'ME', followed by 20 numbers. E.g. ME25 5050 0001 2345 6789 51]]></target>
             </trans-unit>			
-			<trans-unit id="735">
+			<trans-unit id="732">
                 <source>iban_MT_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Malta is 31 characters in total length. The first 2 characters are 'MT', followed by 2 numbers,4 letters,5 numbers and ends with 18 alphanumeric characters. E.g. MT84 MALT 0110 0001 2345 MTLC AST0 01S]]></target>
             </trans-unit>			
-			<trans-unit id="736">
+			<trans-unit id="733">
                 <source>iban_NL_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Netherlands is 18 characters in total length. The first 2 characters are 'NL', followed by 2 numbers,4 letters and ends with 10 numbers. E.g. NL91 ABNA 0417 1643 00]]></target>
             </trans-unit>			
-			<trans-unit id="737">
+			<trans-unit id="734">
                 <source>iban_NO_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Norway is 15 characters in total length. The first 2 characters are 'NO', followed by 13 numbers. E.g. NO93 8601 1117 947]]></target>
             </trans-unit>			
-			<trans-unit id="738">
+			<trans-unit id="735">
                 <source>iban_PL_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Poland is 28 characters in total length. The first 2 characters are 'PL', followed by 26 numbers. E.g. PL61 1090 1014 0000 0712 1981 2874]]></target>
             </trans-unit>			
-			<trans-unit id="739">
+			<trans-unit id="736">
                 <source>iban_PT_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Portugal is 25 characters in total length. The first 2 characters are 'PT', followed by 23 numbers. E.g. PT50 0002 0123 1234 5678 9015 4]]></target>
             </trans-unit>			
-			<trans-unit id="740">
+			<trans-unit id="737">
                 <source>iban_RO_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Romania is 24 characters in total length. The first 2 characters are 'RO', followed by 2 numbers,4 letters and ends with 16 alphanumeric characters. E.g. RO49 AAAA 1B31 0075 9384 0000]]></target>
             </trans-unit>			
-			<trans-unit id="741">
+			<trans-unit id="738">
                 <source>iban_RS_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Serbia is 22 characters in total length. The first 2 characters are 'RS', followed by 20 numbers. E.g. RS35 2600 0560 1001 6113 79]]></target>
             </trans-unit>			
-			<trans-unit id="742">
+			<trans-unit id="739">
                 <source>iban_SE_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Sweden is 24 characters in total length. The first 2 characters are 'SE', followed by 22 numbers. E.g. SE45 5000 0000 0583 9825 7466]]></target>
             </trans-unit>			
-			<trans-unit id="743">
+			<trans-unit id="740">
                 <source>iban_SI_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Slovenia is 19 characters in total length. The first 2 characters are 'SI', followed by 17 numbers. E.g. SI56 2633 0001 2039 086]]></target>
             </trans-unit>			
-			<trans-unit id="744">
+			<trans-unit id="741">
                 <source>iban_SK_hint</source>
                 <target><![CDATA[The International Account Number (IBAN) for Slovak Republic is 24 characters in total length. The first 2 characters are 'SK', followed by 22 numbers. E.g. SK31 1200 0000 1987 4263 7541]]></target>
             </trans-unit>			
-			<trans-unit id="745">
+			<trans-unit id="742">
                 <source>err_1_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="746">
+			<trans-unit id="743">
                 <source>err_1_code</source>
                 <target><![CDATA[BWG_E_BANK_BRANCH_CODE_FORMAT]]></target>
             </trans-unit>			
-			<trans-unit id="747">
+			<trans-unit id="744">
                 <source>err_1_desc</source>
                 <target><![CDATA[The bank/branch number you have entered is incorrect. Please check and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="748">
+			<trans-unit id="745">
                 <source>err_1_user_message</source>
                 <target><![CDATA[The bank/branch number you have entered is incorrect. Please check and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="749">
+			<trans-unit id="746">
                 <source>err_10_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="750">
+			<trans-unit id="747">
                 <source>err_10_code</source>
                 <target><![CDATA[BWG_E_NO_INSTITUTION]]></target>
             </trans-unit>			
-			<trans-unit id="751">
+			<trans-unit id="748">
                 <source>err_10_desc</source>
                 <target><![CDATA[The bank code provided is incorrect. Please supply a correct bank code and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="752">
+			<trans-unit id="749">
                 <source>err_10_user_message</source>
                 <target><![CDATA[The bank code provided is incorrect. Please supply a correct bank code and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="753">
+			<trans-unit id="750">
                 <source>err_11_action</source>
                 <target><![CDATA[Ask for a new set of bank account details.]]></target>
             </trans-unit>			
-			<trans-unit id="754">
+			<trans-unit id="751">
                 <source>err_11_code</source>
                 <target><![CDATA[BWG_E_BRANCH_CLOSED]]></target>
             </trans-unit>			
-			<trans-unit id="755">
+			<trans-unit id="752">
                 <source>err_11_desc</source>
                 <target><![CDATA[We have identified the branch as being closed. Please  contact the account holder and obtain an updated bank account number.]]></target>
             </trans-unit>			
-			<trans-unit id="756">
+			<trans-unit id="753">
                 <source>err_11_user_message</source>
                 <target><![CDATA[We have identified the branch as being closed. Please  contact the account holder and obtain an updated bank account number.]]></target>
             </trans-unit>			
-			<trans-unit id="757">
+			<trans-unit id="754">
                 <source>err_12_action</source>
                 <target><![CDATA[In this scenario, Kryptos will return where possible the branch code that is now responsible for processing transactions for the given account. Where the updated branch code is not available, the transaction must be declined and the user must be asked to contact their bank/branch to confirm the new bank account details.]]></target>
             </trans-unit>			
-			<trans-unit id="758">
+			<trans-unit id="755">
                 <source>err_12_code</source>
                 <target><![CDATA[BWG_E_BRANCH_TRANSFERRED]]></target>
             </trans-unit>			
-			<trans-unit id="759">
+			<trans-unit id="756">
                 <source>err_12_desc</source>
                 <target><![CDATA[Branch has been transferred. This branch has been closed and the accounts have been redirected to another branch. Please contact the account holder and obtain an updated bank account number.]]></target>
             </trans-unit>			
-			<trans-unit id="760">
+			<trans-unit id="757">
                 <source>err_12_user_message</source>
                 <target><![CDATA[Branch has been transferred. This branch has been closed and the accounts have been redirected to another branch. Please contact the account holder and obtain an updated bank account number.]]></target>
             </trans-unit>			
-			<trans-unit id="761">
+			<trans-unit id="758">
                 <source>err_13_action</source>
                 <target><![CDATA[Ask for a new set of bank account details.]]></target>
             </trans-unit>			
-			<trans-unit id="762">
+			<trans-unit id="759">
                 <source>err_13_code</source>
                 <target><![CDATA[BWG_E_BANK_CLOSED]]></target>
             </trans-unit>			
-			<trans-unit id="763">
+			<trans-unit id="760">
                 <source>err_13_desc</source>
                 <target><![CDATA[We have identified the bank as being closed. Use an alternative bank account to process any payment/collection.]]></target>
             </trans-unit>			
-			<trans-unit id="764">
+			<trans-unit id="761">
                 <source>err_13_user_message</source>
                 <target><![CDATA[We have identified the bank as being closed. Use an alternative bank account to process any payment/collection.]]></target>
             </trans-unit>			
-			<trans-unit id="765">
+			<trans-unit id="762">
                 <source>err_14_action</source>
                 <target><![CDATA[Ask for a new set of bank account details.]]></target>
             </trans-unit>			
-			<trans-unit id="766">
+			<trans-unit id="763">
                 <source>err_14_code</source>
                 <target><![CDATA[BWG_E_BANK_TRANSFERRED]]></target>
             </trans-unit>			
-			<trans-unit id="767">
+			<trans-unit id="764">
                 <source>err_14_desc</source>
                 <target><![CDATA[The bank has been closed and the account has been redirected to another bank. Please contact the account holder to obtain updated bank account details.]]></target>
             </trans-unit>			
-			<trans-unit id="768">
+			<trans-unit id="765">
                 <source>err_14_user_message</source>
                 <target><![CDATA[The bank has been closed and the account has been redirected to another bank. Please contact the account holder to obtain updated bank account details.]]></target>
             </trans-unit>			
-			<trans-unit id="769">
+			<trans-unit id="766">
                 <source>err_15_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="770">
+			<trans-unit id="767">
                 <source>err_15_code</source>
                 <target><![CDATA[BWG_E_IBAN_FORMAT]]></target>
             </trans-unit>			
-			<trans-unit id="771">
+			<trans-unit id="768">
                 <source>err_15_desc</source>
                 <target><![CDATA[The IBAN  provided is incorrect. Please supply a correct IBAN and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="772">
+			<trans-unit id="769">
                 <source>err_15_user_message</source>
                 <target><![CDATA[The IBAN  provided is incorrect. Please supply a correct IBAN and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="773">
+			<trans-unit id="770">
                 <source>err_16_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="774">
+			<trans-unit id="771">
                 <source>err_16_code</source>
                 <target><![CDATA[BWG_E_IBAN_INVALID]]></target>
             </trans-unit>			
-			<trans-unit id="775">
+			<trans-unit id="772">
                 <source>err_16_desc</source>
                 <target><![CDATA[The IBAN  provided is incorrect. Please supply a correct IBAN and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="776">
+			<trans-unit id="773">
                 <source>err_16_user_message</source>
                 <target><![CDATA[The IBAN  provided is incorrect. Please supply a correct IBAN and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="777">
+			<trans-unit id="774">
                 <source>err_17_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="778">
+			<trans-unit id="775">
                 <source>err_17_code</source>
                 <target><![CDATA[BWG_E_IBAN_MODULUS]]></target>
             </trans-unit>			
-			<trans-unit id="779">
+			<trans-unit id="776">
                 <source>err_17_desc</source>
                 <target><![CDATA[The IBAN  provided is incorrect. Please supply a correct IBAN and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="780">
+			<trans-unit id="777">
                 <source>err_17_user_message</source>
                 <target><![CDATA[The IBAN  provided is incorrect. Please supply a correct IBAN and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="781">
+			<trans-unit id="778">
                 <source>err_18_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="782">
+			<trans-unit id="779">
                 <source>err_18_code</source>
                 <target><![CDATA[BWG_E_ACCOUNT_TYPE_FORMAT]]></target>
             </trans-unit>			
-			<trans-unit id="783">
+			<trans-unit id="780">
                 <source>err_18_desc</source>
                 <target><![CDATA[The account type provided is in the incorrect format. Please correct the account type and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="784">
+			<trans-unit id="781">
                 <source>err_18_user_message</source>
                 <target><![CDATA[The account type provided is in the incorrect format. Please correct the account type and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="785">
+			<trans-unit id="782">
                 <source>err_19_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="786">
+			<trans-unit id="783">
                 <source>err_19_code</source>
                 <target><![CDATA[BWG_E_IDENTIFICATION_FORMAT]]></target>
             </trans-unit>			
-			<trans-unit id="787">
+			<trans-unit id="784">
                 <source>err_19_desc</source>
                 <target><![CDATA[The identification number provided is in the incorrect format. Please supply a correct identification number and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="788">
+			<trans-unit id="785">
                 <source>err_19_user_message</source>
                 <target><![CDATA[The identification number provided is in the incorrect format. Please supply a correct identification number and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="789">
+			<trans-unit id="786">
                 <source>err_2_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="790">
+			<trans-unit id="787">
                 <source>err_2_code</source>
                 <target><![CDATA[BWG_E_BANK_CODE_FORMAT]]></target>
             </trans-unit>			
-			<trans-unit id="791">
+			<trans-unit id="788">
                 <source>err_2_desc</source>
                 <target><![CDATA[The bank code you have entered is incorrect. Please check and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="792">
+			<trans-unit id="789">
                 <source>err_2_user_message</source>
                 <target><![CDATA[The bank code you have entered is incorrect. Please check and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="793">
+			<trans-unit id="790">
                 <source>err_20_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="794">
+			<trans-unit id="791">
                 <source>err_20_code</source>
                 <target><![CDATA[BWG_E_BIC_FORMAT]]></target>
             </trans-unit>			
-			<trans-unit id="795">
+			<trans-unit id="792">
                 <source>err_20_desc</source>
                 <target><![CDATA[The BIC  provided is incorrect. Please supply a correct IBAN and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="796">
+			<trans-unit id="793">
                 <source>err_20_user_message</source>
                 <target><![CDATA[The BIC  provided is incorrect. Please supply a correct IBAN and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="797">
+			<trans-unit id="794">
                 <source>err_21_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="798">
+			<trans-unit id="795">
                 <source>err_21_code</source>
                 <target><![CDATA[BWG_E_BIC_INVALID]]></target>
             </trans-unit>			
-			<trans-unit id="799">
+			<trans-unit id="796">
                 <source>err_21_desc</source>
                 <target><![CDATA[The BIC  provided is incorrect. Please supply a correct IBAN and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="800">
+			<trans-unit id="797">
                 <source>err_21_user_message</source>
                 <target><![CDATA[The BIC  provided is incorrect. Please supply a correct IBAN and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="801">
+			<trans-unit id="798">
                 <source>err_3_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="802">
+			<trans-unit id="799">
                 <source>err_3_code</source>
                 <target><![CDATA[BWG_E_BRANCH_CODE_FORMAT]]></target>
             </trans-unit>			
-			<trans-unit id="803">
+			<trans-unit id="800">
                 <source>err_3_desc</source>
                 <target><![CDATA[The branch code you have entered is incorrect. Please check and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="804">
+			<trans-unit id="801">
                 <source>err_3_user_message</source>
                 <target><![CDATA[The branch code you have entered is incorrect. Please check and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="805">
-                <source>msg_desc_incorrect_email</source>
-                <target><![CDATA[The email "{{ value }}" is not a valid email.]]></target>
-            </trans-unit>			
-			<trans-unit id="806">
-                <source>msg_desc_incorrect_email_try_again</source>
-                <target><![CDATA[The email "{{ value }}" is not a valid email address. Please try again.]]></target>
-            </trans-unit>			
-			<trans-unit id="807">
-                <source>msg_desc_email_already_registered</source>
-                <target><![CDATA[The email "{{ value }}" already exists on our system. If you have previously registered and forgotten your password, please go back to the sign in screen and reset your password by clicking on 'Forgotten your password?']]></target>
-            </trans-unit>			
-			<trans-unit id="808">
+			<trans-unit id="802">
                 <source>err_4_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="809">
+			<trans-unit id="803">
                 <source>err_4_code</source>
                 <target><![CDATA[BWG_E_ACCOUNT_NO_FORMAT]]></target>
             </trans-unit>			
-			<trans-unit id="810">
+			<trans-unit id="804">
                 <source>err_4_desc</source>
                 <target><![CDATA[The account number provided is incorrect. Please supply a correct account number and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="811">
+			<trans-unit id="805">
                 <source>err_4_user_message</source>
                 <target><![CDATA[The account number provided is incorrect. Please supply a correct account number and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="812">
+			<trans-unit id="806">
                 <source>err_5_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="813">
+			<trans-unit id="807">
                 <source>err_5_code</source>
                 <target><![CDATA[BWG_E_CD_FORMAT]]></target>
             </trans-unit>			
-			<trans-unit id="814">
+			<trans-unit id="808">
                 <source>err_5_desc</source>
                 <target><![CDATA[The check digit provided is in the incorrect format. Please supply a correct check digit and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="815">
+			<trans-unit id="809">
                 <source>err_5_user_message</source>
                 <target><![CDATA[The check digit provided is in the incorrect format. Please supply a correct check digit and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="816">
+			<trans-unit id="810">
                 <source>err_6_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="817">
+			<trans-unit id="811">
                 <source>err_6_code</source>
                 <target><![CDATA[BWG_E_NO_BRANCH]]></target>
             </trans-unit>			
-			<trans-unit id="818">
+			<trans-unit id="812">
                 <source>err_6_desc</source>
                 <target><![CDATA[The bank-branch code provided is not in use. Please provide a valid bank-branch code and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="819">
+			<trans-unit id="813">
                 <source>err_6_user_message</source>
                 <target><![CDATA[The bank-branch code provided is not in use. Please provide a valid bank-branch code and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="820">
+			<trans-unit id="814">
                 <source>err_7_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="821">
+			<trans-unit id="815">
                 <source>err_7_code</source>
                 <target><![CDATA[BWG_E_MODULUS_CHECK]]></target>
             </trans-unit>			
-			<trans-unit id="822">
+			<trans-unit id="816">
                 <source>err_7_desc</source>
                 <target><![CDATA[The account number provided is in an incorrect format. Please supply a correct account number and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="823">
+			<trans-unit id="817">
                 <source>err_7_user_message</source>
                 <target><![CDATA[The account number provided is in an incorrect format. Please supply a correct account number and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="824">
+			<trans-unit id="818">
                 <source>err_8_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="825">
+			<trans-unit id="819">
                 <source>err_8_code</source>
                 <target><![CDATA[BWG_E_MODULUS_CHECK_BANK_CODE]]></target>
             </trans-unit>			
-			<trans-unit id="826">
+			<trans-unit id="820">
                 <source>err_8_desc</source>
                 <target><![CDATA[The bank code provided is in the incorrect format. Please supply a correct bank code and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="827">
+			<trans-unit id="821">
                 <source>err_8_user_message</source>
                 <target><![CDATA[The bank code provided is in the incorrect format. Please supply a correct bank code and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="828">
+			<trans-unit id="822">
                 <source>err_9_action</source>
                 <target><![CDATA[Ask user to provide correct information before allowing the user to proceed to the next stage.]]></target>
             </trans-unit>			
-			<trans-unit id="829">
+			<trans-unit id="823">
                 <source>err_9_code</source>
                 <target><![CDATA[BWG_E_MODULUS_CHECK_ACCOUNT_NO]]></target>
             </trans-unit>			
-			<trans-unit id="830">
+			<trans-unit id="824">
                 <source>err_9_desc</source>
                 <target><![CDATA[The account number provided is in an incorrect format. Please supply a correct account number and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="831">
+			<trans-unit id="825">
                 <source>err_9_user_message</source>
                 <target><![CDATA[The account number provided is in an incorrect format. Please supply a correct account number and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="832">
+			<trans-unit id="826">
                 <source>bban_AD_bban1_hint</source>
                 <target><![CDATA[The bank code identifies the bank who is the issuer of the bank account. The bank code for Andorra is made up of 4 numbers. E.g. 0004]]></target>
             </trans-unit>			
-			<trans-unit id="833">
+			<trans-unit id="827">
                 <source>bban_AD_bban1_name</source>
                 <target><![CDATA[Bank code]]></target>
             </trans-unit>			
-			<trans-unit id="834">
+			<trans-unit id="828">
                 <source>bban_AD_bban1_rule</source>
                 <target><![CDATA[4 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="835">
+			<trans-unit id="829">
                 <source>bban_AD_bban2_hint</source>
                 <target><![CDATA[The branch code identifies the account holders branch at the bank. The branch code for Andorra is also made up 4 numbers. E.g.0009]]></target>
             </trans-unit>			
-			<trans-unit id="836">
+			<trans-unit id="830">
                 <source>bban_AD_bban2_name</source>
                 <target><![CDATA[Branch code]]></target>
             </trans-unit>			
-			<trans-unit id="837">
+			<trans-unit id="831">
                 <source>bban_AD_bban2_rule</source>
                 <target><![CDATA[4 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="838">
+			<trans-unit id="832">
                 <source>bban_AD_bban3_hint</source>
                 <target><![CDATA[The account number identifies the actual bank account at the given bank/branch. The account number in Andorra is between 6-12 characters in length and may contain alpha characters and numbers. e.g. 123456ABCDEF]]></target>
             </trans-unit>			
-			<trans-unit id="839">
+			<trans-unit id="833">
                 <source>bban_AD_bban3_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="840">
+			<trans-unit id="834">
                 <source>bban_AD_bban3_rule</source>
                 <target><![CDATA[6 - 12 alpha-numeric]]></target>
             </trans-unit>			
-			<trans-unit id="841">
+			<trans-unit id="835">
                 <source>bban_AT_bban1_hint</source>
                 <target><![CDATA[The Bankleitzahl (BLZ) number identifies the bank and branch who is the issuer of the bank account. The BLZ is 5 numbers in length. E.g. 19960]]></target>
             </trans-unit>			
-			<trans-unit id="842">
+			<trans-unit id="836">
                 <source>bban_AT_bban1_name</source>
                 <target><![CDATA[BLZ]]></target>
             </trans-unit>			
-			<trans-unit id="843">
+			<trans-unit id="837">
                 <source>bban_AT_bban1_rule</source>
                 <target><![CDATA[5 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="844">
+			<trans-unit id="838">
                 <source>bban_AT_bban2_hint</source>
                 <target><![CDATA[The account number identifies the actual bank account at the given bank/branch. The account number in Austria is 11 numbers in length. E.g. 89456132155]]></target>
             </trans-unit>			
-			<trans-unit id="845">
+			<trans-unit id="839">
                 <source>bban_AT_bban2_name</source>
                 <target><![CDATA[Account No.]]></target>
             </trans-unit>			
-			<trans-unit id="846">
+			<trans-unit id="840">
                 <source>bban_AT_bban2_rule</source>
                 <target><![CDATA[11 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="847">
+			<trans-unit id="841">
                 <source>bban_BA_bban1_hint</source>
                 <target><![CDATA[The branch code identifies the account holders branch at the bank. The branch code is made up for 3 numbers. E.g. 134]]></target>
             </trans-unit>			
-			<trans-unit id="848">
+			<trans-unit id="842">
                 <source>bban_BA_bban1_name</source>
                 <target><![CDATA[Bank code]]></target>
             </trans-unit>			
-			<trans-unit id="849">
+			<trans-unit id="843">
                 <source>bban_BA_bban1_rule</source>
                 <target><![CDATA[3 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="850">
+			<trans-unit id="844">
                 <source>bban_BA_bban2_hint</source>
                 <target><![CDATA[The branch code identifies the account holders branch at the bank. The branch code is also made up 3 numbers. E.g. 111]]></target>
             </trans-unit>			
-			<trans-unit id="851">
+			<trans-unit id="845">
                 <source>bban_BA_bban2_name</source>
                 <target><![CDATA[Branch code]]></target>
             </trans-unit>			
-			<trans-unit id="852">
+			<trans-unit id="846">
                 <source>bban_BA_bban2_rule</source>
                 <target><![CDATA[3 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="853">
+			<trans-unit id="847">
                 <source>bban_BA_bban3_hint</source>
                 <target><![CDATA[The account number identifies the actual bank account at the given bank/branch. The account number is 8 numbers in length. E.g. 78945652]]></target>
             </trans-unit>			
-			<trans-unit id="854">
+			<trans-unit id="848">
                 <source>bban_BA_bban3_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="855">
+			<trans-unit id="849">
                 <source>bban_BA_bban3_rule</source>
                 <target><![CDATA[8 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="856">
+			<trans-unit id="850">
                 <source>bban_BA_bban4_hint</source>
                 <target><![CDATA[The check digit is used to detect any errors in the complete account number provided. It is 2 numerics in length. E.g. 11]]></target>
             </trans-unit>			
-			<trans-unit id="857">
+			<trans-unit id="851">
                 <source>bban_BA_bban4_name</source>
                 <target><![CDATA[Check digit]]></target>
             </trans-unit>			
-			<trans-unit id="858">
+			<trans-unit id="852">
                 <source>bban_BA_bban4_rule</source>
                 <target><![CDATA[2 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="859">
+			<trans-unit id="853">
                 <source>bban_BE_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch is 3 numbers in length. E.g. 953]]></target>
             </trans-unit>			
-			<trans-unit id="860">
+			<trans-unit id="854">
                 <source>bban_BE_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="861">
+			<trans-unit id="855">
                 <source>bban_BE_bban1_rule</source>
                 <target><![CDATA[3 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="862">
+			<trans-unit id="856">
                 <source>bban_BE_bban2_hint</source>
                 <target><![CDATA[The account number identifies the actual bank account at the given bank/branch. The account number is 7 numbers in length. E.g. 7532125]]></target>
             </trans-unit>			
-			<trans-unit id="863">
+			<trans-unit id="857">
                 <source>bban_BE_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="864">
+			<trans-unit id="858">
                 <source>bban_BE_bban2_rule</source>
                 <target><![CDATA[7 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="865">
+			<trans-unit id="859">
                 <source>bban_BE_bban3_hint</source>
                 <target><![CDATA[The check digit is used to detect any errors in the complete account number provided. It is 2 numerics in length. E.g. 44]]></target>
             </trans-unit>			
-			<trans-unit id="866">
+			<trans-unit id="860">
                 <source>bban_BE_bban3_name</source>
                 <target><![CDATA[Check digits]]></target>
             </trans-unit>			
-			<trans-unit id="867">
+			<trans-unit id="861">
                 <source>bban_BE_bban3_rule</source>
                 <target><![CDATA[2 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="868">
+			<trans-unit id="862">
                 <source>bban_BG_bban1_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 22 characters in length and may contain alph characters and numbers. E.g. BG93CITI92501212345678]]></target>
             </trans-unit>			
-			<trans-unit id="869">
+			<trans-unit id="863">
                 <source>bban_BG_bban1_name</source>
                 <target><![CDATA[Account no (bban)]]></target>
             </trans-unit>			
-			<trans-unit id="870">
+			<trans-unit id="864">
                 <source>bban_BG_bban1_rule</source>
                 <target><![CDATA[22 alpha-numeric]]></target>
             </trans-unit>			
-			<trans-unit id="871">
+			<trans-unit id="865">
                 <source>bban_CH_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 5 numbers in length. E.g. 00110]]></target>
             </trans-unit>			
-			<trans-unit id="872">
+			<trans-unit id="866">
                 <source>bban_CH_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="873">
+			<trans-unit id="867">
                 <source>bban_CH_bban1_rule</source>
                 <target><![CDATA[5 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="874">
+			<trans-unit id="868">
                 <source>bban_CH_bban2_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is between 1 and 12 characters in length and may contain alph-characters and numbers. E.g. A23456789012]]></target>
             </trans-unit>			
-			<trans-unit id="875">
+			<trans-unit id="869">
                 <source>bban_CH_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="876">
+			<trans-unit id="870">
                 <source>bban_CH_bban2_rule</source>
                 <target><![CDATA[1 - 12 alpha-numeric]]></target>
             </trans-unit>			
-			<trans-unit id="877">
+			<trans-unit id="871">
                 <source>bban_CY_bban1_hint</source>
                 <target><![CDATA[The bank code identifies the account holders bank. The bank code is made up for 3 numbers. E.g. 014]]></target>
             </trans-unit>			
-			<trans-unit id="878">
+			<trans-unit id="872">
                 <source>bban_CY_bban1_name</source>
                 <target><![CDATA[Bank code]]></target>
             </trans-unit>			
-			<trans-unit id="879">
+			<trans-unit id="873">
                 <source>bban_CY_bban1_rule</source>
                 <target><![CDATA[3 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="880">
+			<trans-unit id="874">
                 <source>bban_CY_bban2_hint</source>
                 <target><![CDATA[The branch code identifies the account holders branch at the bank. The branch code is also made up 5 numbers. E.g.00001]]></target>
             </trans-unit>			
-			<trans-unit id="881">
+			<trans-unit id="875">
                 <source>bban_CY_bban2_name</source>
                 <target><![CDATA[Branch code]]></target>
             </trans-unit>			
-			<trans-unit id="882">
+			<trans-unit id="876">
                 <source>bban_CY_bban2_rule</source>
                 <target><![CDATA[5 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="883">
+			<trans-unit id="877">
                 <source>bban_CY_bban3_hint</source>
                 <target><![CDATA[The account number identifies the actual bank account at the given bank/branch. The account number is 16 numbers in length. E.g. 1234567890123450]]></target>
             </trans-unit>			
-			<trans-unit id="884">
+			<trans-unit id="878">
                 <source>bban_CY_bban3_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="885">
+			<trans-unit id="879">
                 <source>bban_CY_bban3_rule</source>
                 <target><![CDATA[16 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="886">
+			<trans-unit id="880">
                 <source>bban_CZ_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch is 4 numbers in length. E.g. 5400]]></target>
             </trans-unit>			
-			<trans-unit id="887">
+			<trans-unit id="881">
                 <source>bban_CZ_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="888">
+			<trans-unit id="882">
                 <source>bban_CZ_bban1_rule</source>
                 <target><![CDATA[4 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="889">
+			<trans-unit id="883">
                 <source>bban_CZ_bban2_hint</source>
                 <target><![CDATA[An account number in Czech Republic is made up of 2 key parts (Prefix and Basic), The prefix identifies the first part of actual bank account at the given bank/branch. The prefix of the account number is 6 numbers in length. E.g. 337873]]></target>
             </trans-unit>			
-			<trans-unit id="890">
+			<trans-unit id="884">
                 <source>bban_CZ_bban2_name</source>
                 <target><![CDATA[Prefix]]></target>
             </trans-unit>			
-			<trans-unit id="891">
+			<trans-unit id="885">
                 <source>bban_CZ_bban2_rule</source>
                 <target><![CDATA[6 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="892">
+			<trans-unit id="886">
                 <source>bban_CZ_bban3_hint</source>
                 <target><![CDATA[An account number in Czech Republic is made up of 2 key parts (Prefix and Basic), The Basic part identifies the later part of actual bank account at the given bank/branch. This part of the account number is 10 numbers in length. E.g. 8796543210]]></target>
             </trans-unit>			
-			<trans-unit id="893">
+			<trans-unit id="887">
+                <source>txt_payment_pass_desc_3</source>
+                <target><![CDATA[You now have a total of {{ credits_total }} conversions.]]></target>
+            </trans-unit>			
+			<trans-unit id="888">
                 <source>bban_CZ_bban3_name</source>
                 <target><![CDATA[Basic]]></target>
             </trans-unit>			
-			<trans-unit id="894">
+			<trans-unit id="889">
                 <source>bban_CZ_bban3_rule</source>
                 <target><![CDATA[10 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="895">
+			<trans-unit id="890">
                 <source>bban_DE_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 8 numbers in length. E.g. 10010010]]></target>
             </trans-unit>			
-			<trans-unit id="896">
+			<trans-unit id="891">
                 <source>bban_DE_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="897">
+			<trans-unit id="892">
                 <source>bban_DE_bban1_rule</source>
                 <target><![CDATA[8 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="898">
+			<trans-unit id="893">
                 <source>bban_DE_bban2_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is between 1 and 10 numbers in length. E.g. 1111111116]]></target>
             </trans-unit>			
-			<trans-unit id="899">
+			<trans-unit id="894">
                 <source>bban_DE_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="900">
+			<trans-unit id="895">
                 <source>bban_DE_bban2_rule</source>
                 <target><![CDATA[1 - 10 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="901">
+			<trans-unit id="896">
                 <source>bban_DK_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch is 4 numbers in length. E.g. 5420]]></target>
             </trans-unit>			
-			<trans-unit id="902">
+			<trans-unit id="897">
                 <source>bban_DK_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="903">
+			<trans-unit id="898">
                 <source>bban_DK_bban1_rule</source>
                 <target><![CDATA[4 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="904">
+			<trans-unit id="899">
                 <source>bban_DK_bban2_hint</source>
                 <target><![CDATA[The account number identifies the actual bank account at the given bank/branch. The account number is 10 numbers in length. E.g. 0000245871]]></target>
             </trans-unit>			
-			<trans-unit id="905">
+			<trans-unit id="900">
                 <source>bban_DK_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="906">
+			<trans-unit id="901">
                 <source>bban_DK_bban2_rule</source>
                 <target><![CDATA[10 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="907">
+			<trans-unit id="902">
                 <source>bban_EE_bban1_hint</source>
                 <target><![CDATA[The bank code identifies the account holders bank and branch. The bank code is made up for 2 numbers. E.g. 42]]></target>
             </trans-unit>			
-			<trans-unit id="908">
+			<trans-unit id="903">
                 <source>bban_EE_bban1_name</source>
                 <target><![CDATA[Bank code]]></target>
             </trans-unit>			
-			<trans-unit id="909">
+			<trans-unit id="904">
                 <source>bban_EE_bban1_rule</source>
                 <target><![CDATA[2 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="910">
+			<trans-unit id="905">
                 <source>bban_EE_bban2_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number between 2 and 12 numbers in length. E.g. 123456789014]]></target>
             </trans-unit>			
-			<trans-unit id="911">
+			<trans-unit id="906">
                 <source>bban_EE_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="912">
+			<trans-unit id="907">
                 <source>bban_EE_bban2_rule</source>
                 <target><![CDATA[2 - 12 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="913">
+			<trans-unit id="908">
                 <source>bban_ES_bban1_hint</source>
                 <target><![CDATA[The bank code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 4 numbers in length. E.g. 0003]]></target>
             </trans-unit>			
-			<trans-unit id="914">
+			<trans-unit id="909">
                 <source>bban_ES_bban1_name</source>
                 <target><![CDATA[Bank code]]></target>
             </trans-unit>			
-			<trans-unit id="915">
+			<trans-unit id="910">
                 <source>bban_ES_bban1_rule</source>
                 <target><![CDATA[4 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="916">
+			<trans-unit id="911">
                 <source>bban_ES_bban2_hint</source>
                 <target><![CDATA[The branch code identifies the account holders branch at the bank. The branch code is also made up 4 numbers. E.g.0001]]></target>
             </trans-unit>			
-			<trans-unit id="917">
+			<trans-unit id="912">
                 <source>bban_ES_bban2_name</source>
                 <target><![CDATA[Branch code]]></target>
             </trans-unit>			
-			<trans-unit id="918">
+			<trans-unit id="913">
                 <source>bban_ES_bban2_rule</source>
                 <target><![CDATA[4 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="919">
+			<trans-unit id="914">
                 <source>bban_ES_bban3_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 10 numbers in length. E.g. 1234567890]]></target>
             </trans-unit>			
-			<trans-unit id="920">
+			<trans-unit id="915">
                 <source>bban_ES_bban3_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="921">
+			<trans-unit id="916">
                 <source>bban_ES_bban3_rule</source>
                 <target><![CDATA[10 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="922">
+			<trans-unit id="917">
                 <source>bban_ES_bban4_hint</source>
                 <target><![CDATA[The check digit is used to detect any errors in the complete account number provided. It is 2 numbers in length. E.g. 86]]></target>
             </trans-unit>			
-			<trans-unit id="923">
+			<trans-unit id="918">
                 <source>bban_ES_bban4_name</source>
                 <target><![CDATA[Check digit]]></target>
             </trans-unit>			
-			<trans-unit id="924">
+			<trans-unit id="919">
                 <source>bban_ES_bban4_rule</source>
                 <target><![CDATA[2 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="925">
+			<trans-unit id="920">
                 <source>bban_FI_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be between 4 and 6 numbers in length. E.g. 800017]]></target>
             </trans-unit>			
-			<trans-unit id="926">
+			<trans-unit id="921">
                 <source>bban_FI_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="927">
+			<trans-unit id="922">
                 <source>bban_FI_bban1_rule</source>
                 <target><![CDATA[4 - 6 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="928">
+			<trans-unit id="923">
                 <source>bban_FI_bban2_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 8 numbers in length. E.g. 01791619]]></target>
             </trans-unit>			
-			<trans-unit id="929">
+			<trans-unit id="924">
                 <source>bban_FI_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="930">
+			<trans-unit id="925">
                 <source>bban_FI_bban2_rule</source>
                 <target><![CDATA[8 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="931">
+			<trans-unit id="926">
                 <source>bban_FR_bban1_hint</source>
                 <target><![CDATA[The bank code identifies the account holders bank and branch. The bank code is made up for 5 numbers. E.g.10011]]></target>
             </trans-unit>			
-			<trans-unit id="932">
+			<trans-unit id="927">
                 <source>bban_FR_bban1_name</source>
                 <target><![CDATA[Bank code]]></target>
             </trans-unit>			
-			<trans-unit id="933">
+			<trans-unit id="928">
                 <source>bban_FR_bban1_rule</source>
                 <target><![CDATA[5 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="934">
+			<trans-unit id="929">
                 <source>bban_FR_bban2_hint</source>
                 <target><![CDATA[The branch code identifies the account holders branch at the bank. The branch code is also made up 5 numbers. E.g. 00200]]></target>
             </trans-unit>			
-			<trans-unit id="935">
+			<trans-unit id="930">
                 <source>bban_FR_bban2_name</source>
                 <target><![CDATA[Branch code]]></target>
             </trans-unit>			
-			<trans-unit id="936">
+			<trans-unit id="931">
                 <source>bban_FR_bban2_rule</source>
                 <target><![CDATA[5 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="937">
+			<trans-unit id="932">
                 <source>bban_FR_bban3_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 11 characters in length and may contain alph characters and numbers. E.g. 00123456789]]></target>
             </trans-unit>			
-			<trans-unit id="938">
+			<trans-unit id="933">
                 <source>bban_FR_bban3_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="939">
+			<trans-unit id="934">
                 <source>bban_FR_bban3_rule</source>
                 <target><![CDATA[11 alpha-numeric]]></target>
             </trans-unit>			
-			<trans-unit id="940">
+			<trans-unit id="935">
                 <source>bban_FR_bban4_hint</source>
                 <target><![CDATA[The check digit is used to detect any errors in the complete account number provided. It is 2 numerics in length. E.g. 34]]></target>
             </trans-unit>			
-			<trans-unit id="941">
+			<trans-unit id="936">
                 <source>bban_FR_bban4_name</source>
                 <target><![CDATA[Check digit]]></target>
             </trans-unit>			
-			<trans-unit id="942">
+			<trans-unit id="937">
                 <source>bban_FR_bban4_rule</source>
                 <target><![CDATA[2 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="943">
+			<trans-unit id="938">
                 <source>bban_GR_bban1_hint</source>
                 <target><![CDATA[The bank code identifies the account holders bank and branch. The bank code is made up for 3 numbers. E.g. 012]]></target>
             </trans-unit>			
-			<trans-unit id="944">
+			<trans-unit id="939">
                 <source>bban_GR_bban1_name</source>
                 <target><![CDATA[Bank code]]></target>
             </trans-unit>			
-			<trans-unit id="945">
+			<trans-unit id="940">
                 <source>bban_GR_bban1_rule</source>
                 <target><![CDATA[3 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="946">
+			<trans-unit id="941">
                 <source>bban_GR_bban2_hint</source>
                 <target><![CDATA[The branch code identifies the account holders branch at the bank. The branch code is also made up 4 numbers. E.g. 0034]]></target>
             </trans-unit>			
-			<trans-unit id="947">
+			<trans-unit id="942">
                 <source>bban_GR_bban2_name</source>
                 <target><![CDATA[Branch code]]></target>
             </trans-unit>			
-			<trans-unit id="948">
+			<trans-unit id="943">
                 <source>bban_GR_bban2_rule</source>
                 <target><![CDATA[4 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="949">
+			<trans-unit id="944">
                 <source>bban_GR_bban3_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 16 characters in length and may contain alph characters and numbers. E.g. A234567890123456]]></target>
             </trans-unit>			
-			<trans-unit id="950">
+			<trans-unit id="945">
                 <source>bban_GR_bban3_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="951">
+			<trans-unit id="946">
                 <source>bban_GR_bban3_rule</source>
                 <target><![CDATA[16 alpha-numeric]]></target>
             </trans-unit>			
-			<trans-unit id="952">
+			<trans-unit id="947">
                 <source>bban_HR_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch is 7 numbers in length. E.g. 2489004]]></target>
             </trans-unit>			
-			<trans-unit id="953">
+			<trans-unit id="948">
                 <source>bban_HR_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="954">
+			<trans-unit id="949">
                 <source>bban_HR_bban1_rule</source>
                 <target><![CDATA[7 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="955">
+			<trans-unit id="950">
                 <source>bban_HR_bban2_hint</source>
                 <target><![CDATA[The account number identifies the actual bank account at the given bank/branch. The account number is 10 numbers in length. E.g. 1234567897]]></target>
             </trans-unit>			
-			<trans-unit id="956">
+			<trans-unit id="951">
                 <source>bban_HR_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="957">
+			<trans-unit id="952">
                 <source>bban_HR_bban2_rule</source>
                 <target><![CDATA[10 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="958">
+			<trans-unit id="953">
                 <source>bban_HU_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 8 numbers in length. E.g. 12001008]]></target>
             </trans-unit>			
-			<trans-unit id="959">
+			<trans-unit id="954">
                 <source>bban_HU_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="960">
+			<trans-unit id="955">
                 <source>bban_HU_bban1_rule</source>
                 <target><![CDATA[8 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="961">
+			<trans-unit id="956">
                 <source>bban_HU_bban2_hint</source>
                 <target><![CDATA[An account number in Hungary is made up of 2 key parts. The first part of the account number is 8 numbers in length. E.g. 00222222]]></target>
             </trans-unit>			
-			<trans-unit id="962">
+			<trans-unit id="957">
                 <source>bban_HU_bban2_name</source>
                 <target><![CDATA[Account part 1]]></target>
             </trans-unit>			
-			<trans-unit id="963">
+			<trans-unit id="958">
                 <source>bban_HU_bban2_rule</source>
                 <target><![CDATA[8 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="964">
+			<trans-unit id="959">
                 <source>bban_HU_bban3_hint</source>
                 <target><![CDATA[An account number in Hungary is made up of 2 key parts. The second part of the account number is also 8 numbers in length. E.g. 00200006]]></target>
             </trans-unit>			
-			<trans-unit id="965">
+			<trans-unit id="960">
                 <source>bban_HU_bban3_name</source>
                 <target><![CDATA[Account part 2]]></target>
             </trans-unit>			
-			<trans-unit id="966">
+			<trans-unit id="961">
                 <source>bban_HU_bban3_rule</source>
                 <target><![CDATA[8 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="967">
+			<trans-unit id="962">
                 <source>bban_IE_bban1_hint</source>
                 <target><![CDATA[The sort code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 6 numbers in length. E.g. 901490]]></target>
             </trans-unit>			
-			<trans-unit id="968">
+			<trans-unit id="963">
                 <source>bban_IE_bban1_name</source>
                 <target><![CDATA[Sort code]]></target>
             </trans-unit>			
-			<trans-unit id="969">
+			<trans-unit id="964">
                 <source>bban_IE_bban1_rule</source>
                 <target><![CDATA[6 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="970">
+			<trans-unit id="965">
                 <source>bban_IE_bban2_hint</source>
                 <target><![CDATA[Mandatory - The account number identifies the complete bank account at the given bank/branch. The account number is 8 numbers in length. E.g. 71124326]]></target>
             </trans-unit>			
-			<trans-unit id="971">
+			<trans-unit id="966">
                 <source>bban_IE_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="972">
+			<trans-unit id="967">
                 <source>bban_IE_bban2_rule</source>
                 <target><![CDATA[8 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="973">
+			<trans-unit id="968">
                 <source>bban_IS_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 4 numbers in length. E.g. 0130]]></target>
             </trans-unit>			
-			<trans-unit id="974">
+			<trans-unit id="969">
                 <source>bban_IS_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="975">
+			<trans-unit id="970">
                 <source>bban_IS_bban1_rule</source>
                 <target><![CDATA[4 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="976">
+			<trans-unit id="971">
                 <source>bban_IS_bban2_hint</source>
                 <target><![CDATA[The account type field identifies the actual type of bank account. The account type is 2 numbers in length. E.g. 12]]></target>
             </trans-unit>			
-			<trans-unit id="977">
+			<trans-unit id="972">
                 <source>bban_IS_bban2_name</source>
                 <target><![CDATA[Account type]]></target>
             </trans-unit>			
-			<trans-unit id="978">
+			<trans-unit id="973">
                 <source>bban_IS_bban2_rule</source>
                 <target><![CDATA[2 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="979">
+			<trans-unit id="974">
                 <source>bban_IS_bban3_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 6 numbers in length. E.g. 123456]]></target>
             </trans-unit>			
-			<trans-unit id="980">
+			<trans-unit id="975">
                 <source>bban_IS_bban3_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="981">
+			<trans-unit id="976">
                 <source>bban_IS_bban3_rule</source>
                 <target><![CDATA[6 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="982">
+			<trans-unit id="977">
                 <source>bban_IS_bban4_hint</source>
                 <target><![CDATA[Bank accounts is Iceland are also made up of an identification number, which is 10 numbers in length. E.g. 1234567859]]></target>
             </trans-unit>			
-			<trans-unit id="983">
+			<trans-unit id="978">
                 <source>bban_IS_bban4_name</source>
                 <target><![CDATA[Identification no.]]></target>
             </trans-unit>			
-			<trans-unit id="984">
+			<trans-unit id="979">
                 <source>bban_IS_bban4_rule</source>
                 <target><![CDATA[10 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="985">
+			<trans-unit id="980">
                 <source>bban_IT_bban1_hint</source>
                 <target><![CDATA[The bank code identifies the account holders bank and branch. The bank code is made up for 5 numbers. E.g.05428]]></target>
             </trans-unit>			
-			<trans-unit id="986">
+			<trans-unit id="981">
                 <source>bban_IT_bban1_name</source>
                 <target><![CDATA[Bank code]]></target>
             </trans-unit>			
-			<trans-unit id="987">
+			<trans-unit id="982">
                 <source>bban_IT_bban1_rule</source>
                 <target><![CDATA[5 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="988">
+			<trans-unit id="983">
                 <source>bban_IT_bban2_hint</source>
                 <target><![CDATA[The branch code identifies the account holders branch at the bank. The branch code is also made up 5 numbers. E.g.11101]]></target>
             </trans-unit>			
-			<trans-unit id="989">
+			<trans-unit id="984">
                 <source>bban_IT_bban2_name</source>
                 <target><![CDATA[Branch code]]></target>
             </trans-unit>			
-			<trans-unit id="990">
+			<trans-unit id="985">
                 <source>bban_IT_bban2_rule</source>
                 <target><![CDATA[5 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="991">
+			<trans-unit id="986">
                 <source>bban_IT_bban3_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 12 characters in length and may contain alpha-characters and numbers. E.g. 000000123456]]></target>
             </trans-unit>			
-			<trans-unit id="992">
+			<trans-unit id="987">
                 <source>bban_IT_bban3_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="993">
+			<trans-unit id="988">
                 <source>bban_IT_bban3_rule</source>
                 <target><![CDATA[12 alpha-numeric]]></target>
             </trans-unit>			
-			<trans-unit id="994">
+			<trans-unit id="989">
                 <source>bban_IT_bban4_hint</source>
                 <target><![CDATA[The check digit is used to detect any errors in the complete account number provided. It is 1 alpha character in length. E.g.x]]></target>
             </trans-unit>			
-			<trans-unit id="995">
+			<trans-unit id="990">
                 <source>bban_IT_bban4_name</source>
                 <target><![CDATA[Check digit]]></target>
             </trans-unit>			
-			<trans-unit id="996">
+			<trans-unit id="991">
                 <source>bban_IT_bban4_rule</source>
                 <target><![CDATA[1 alpha]]></target>
             </trans-unit>			
-			<trans-unit id="997">
+			<trans-unit id="992">
                 <source>bban_LI_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 5 numbers in length. E.g. 08805]]></target>
             </trans-unit>			
-			<trans-unit id="998">
+			<trans-unit id="993">
                 <source>bban_LI_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="999">
+			<trans-unit id="994">
                 <source>bban_LI_bban1_rule</source>
                 <target><![CDATA[5 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1000">
+			<trans-unit id="995">
                 <source>bban_LI_bban2_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is between 1 and 12 characters in length and may contain alpha-characters and numbers. E.g. 12345678901A]]></target>
             </trans-unit>			
-			<trans-unit id="1001">
+			<trans-unit id="996">
                 <source>bban_LI_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="1002">
+			<trans-unit id="997">
                 <source>bban_LI_bban2_rule</source>
                 <target><![CDATA[1 - 12 alpha-numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1003">
+			<trans-unit id="998">
                 <source>bban_LT_bban1_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 20 characters in length and may contain alph characters and numbers. E.g. LT267044012345678901]]></target>
             </trans-unit>			
-			<trans-unit id="1004">
+			<trans-unit id="999">
                 <source>bban_LT_bban1_name</source>
                 <target><![CDATA[Account no (bban)]]></target>
             </trans-unit>			
-			<trans-unit id="1005">
+			<trans-unit id="1000">
                 <source>bban_LT_bban1_rule</source>
                 <target><![CDATA[20 alpha-numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1006">
+			<trans-unit id="1001">
                 <source>bban_LU_bban1_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 20 characters in length and may contain alph characters and numbers. E.g. LU230079400644750000]]></target>
             </trans-unit>			
-			<trans-unit id="1007">
+			<trans-unit id="1002">
                 <source>bban_LU_bban1_name</source>
                 <target><![CDATA[Account no (bban)]]></target>
             </trans-unit>			
-			<trans-unit id="1008">
+			<trans-unit id="1003">
                 <source>bban_LU_bban1_rule</source>
                 <target><![CDATA[20 alpha-numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1009">
+			<trans-unit id="1004">
                 <source>bban_LV_bban1_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 21 characters in length and may contain alph characters and numbers. E.g. LV34LATB1111111111111]]></target>
             </trans-unit>			
-			<trans-unit id="1010">
+			<trans-unit id="1005">
                 <source>bban_LV_bban1_name</source>
                 <target><![CDATA[Account no (bban)]]></target>
             </trans-unit>			
-			<trans-unit id="1011">
+			<trans-unit id="1006">
                 <source>bban_LV_bban1_rule</source>
                 <target><![CDATA[21 alpha-numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1012">
+			<trans-unit id="1007">
                 <source>bban_ME_bban1_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 13 numbers in length. E.g. 1234567890123]]></target>
             </trans-unit>			
-			<trans-unit id="1013">
+			<trans-unit id="1008">
                 <source>bban_ME_bban1_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="1014">
+			<trans-unit id="1009">
                 <source>bban_ME_bban1_rule</source>
                 <target><![CDATA[13 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1015">
+			<trans-unit id="1010">
                 <source>bban_ME_bban2_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 3 numbers in length. E.g 505]]></target>
             </trans-unit>			
-			<trans-unit id="1016">
+			<trans-unit id="1011">
                 <source>bban_ME_bban2_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="1017">
+			<trans-unit id="1012">
                 <source>bban_ME_bban2_rule</source>
                 <target><![CDATA[3 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1018">
+			<trans-unit id="1013">
                 <source>bban_ME_bban3_hint</source>
                 <target><![CDATA[The check digit is used to detect any errors in the complete account number provided. It is 2 numbers in length. E.g. 07]]></target>
             </trans-unit>			
-			<trans-unit id="1019">
+			<trans-unit id="1014">
                 <source>bban_ME_bban3_name</source>
                 <target><![CDATA[Check digit]]></target>
             </trans-unit>			
-			<trans-unit id="1020">
+			<trans-unit id="1015">
                 <source>bban_ME_bban3_rule</source>
                 <target><![CDATA[2 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1021">
+			<trans-unit id="1016">
                 <source>bban_MT_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 5 numbers in length. E.g. 01100]]></target>
             </trans-unit>			
-			<trans-unit id="1022">
+			<trans-unit id="1017">
                 <source>bban_MT_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="1023">
+			<trans-unit id="1018">
                 <source>bban_MT_bban1_rule</source>
                 <target><![CDATA[5 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1024">
+			<trans-unit id="1019">
                 <source>bban_MT_bban2_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is between 8 and 16 characters in length and may contain alph characters and numbers. E.g. 1234567890123456]]></target>
             </trans-unit>			
-			<trans-unit id="1025">
+			<trans-unit id="1020">
                 <source>bban_MT_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="1026">
+			<trans-unit id="1021">
                 <source>bban_MT_bban2_rule</source>
                 <target><![CDATA[8 - 16 alpha-numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1027">
+			<trans-unit id="1022">
                 <source>bban_NL_bban1_hint</source>
                 <target><![CDATA[Optional - The bank code identifies the account holders bank and branch. The bank code is made up for 4 alpha characters in length. This field is not mandatory as its common in Netherlands to only provide the account number. E.g.ABNA]]></target>
             </trans-unit>			
-			<trans-unit id="1028">
+			<trans-unit id="1023">
                 <source>bban_NL_bban1_name</source>
                 <target><![CDATA[Bank identifier]]></target>
             </trans-unit>			
-			<trans-unit id="1029">
+			<trans-unit id="1024">
                 <source>bban_NL_bban1_rule</source>
                 <target><![CDATA[4 alpha]]></target>
             </trans-unit>			
-			<trans-unit id="1030">
+			<trans-unit id="1025">
                 <source>bban_NL_bban2_hint</source>
                 <target><![CDATA[Mandatory - The account number identifies the complete bank account at the given bank/branch. The account number is 10 numbers in length. E.g. 0123456789]]></target>
             </trans-unit>			
-			<trans-unit id="1031">
+			<trans-unit id="1026">
                 <source>bban_NL_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="1032">
+			<trans-unit id="1027">
                 <source>bban_NL_bban2_rule</source>
                 <target><![CDATA[10 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1033">
+			<trans-unit id="1028">
                 <source>bban_NO_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 4 numbers in length. E.g. 8601]]></target>
             </trans-unit>			
-			<trans-unit id="1034">
+			<trans-unit id="1029">
                 <source>bban_NO_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="1035">
+			<trans-unit id="1030">
                 <source>bban_NO_bban1_rule</source>
                 <target><![CDATA[4 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1036">
+			<trans-unit id="1031">
                 <source>bban_NO_bban2_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 7 numbers in length. E.g. 1117947]]></target>
             </trans-unit>			
-			<trans-unit id="1037">
+			<trans-unit id="1032">
                 <source>bban_NO_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="1038">
+			<trans-unit id="1033">
                 <source>bban_NO_bban2_rule</source>
                 <target><![CDATA[7 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1039">
+			<trans-unit id="1034">
                 <source>bban_PL_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 8 numbers in length. E.g. 13200019]]></target>
             </trans-unit>			
-			<trans-unit id="1040">
+			<trans-unit id="1035">
                 <source>bban_PL_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="1041">
+			<trans-unit id="1036">
                 <source>bban_PL_bban1_rule</source>
                 <target><![CDATA[8 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1042">
+			<trans-unit id="1037">
                 <source>bban_PL_bban2_hint</source>
                 <target><![CDATA[Mandatory - The account number identifies the complete bank account at the given bank/branch. The account number is 16 numbers in length. E.g. 1234567890123456]]></target>
             </trans-unit>			
-			<trans-unit id="1043">
+			<trans-unit id="1038">
                 <source>bban_PL_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="1044">
+			<trans-unit id="1039">
                 <source>bban_PL_bban2_rule</source>
                 <target><![CDATA[16 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1045">
+			<trans-unit id="1040">
                 <source>bban_PL_bban3_hint</source>
                 <target><![CDATA[The check digit is used to detect any errors in the complete account number provided. It is 2 numbers in length. E.g. 21]]></target>
             </trans-unit>			
-			<trans-unit id="1046">
+			<trans-unit id="1041">
                 <source>bban_PL_bban3_name</source>
                 <target><![CDATA[Check digit]]></target>
             </trans-unit>			
-			<trans-unit id="1047">
+			<trans-unit id="1042">
                 <source>bban_PL_bban3_rule</source>
                 <target><![CDATA[2 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1048">
+			<trans-unit id="1043">
                 <source>bban_PT_bban1_hint</source>
                 <target><![CDATA[The bank code identifies the account holders bank and branch. The bank code is made up for 4 numbers. E.g.0035]]></target>
             </trans-unit>			
-			<trans-unit id="1049">
+			<trans-unit id="1044">
                 <source>bban_PT_bban1_name</source>
                 <target><![CDATA[Bank code]]></target>
             </trans-unit>			
-			<trans-unit id="1050">
+			<trans-unit id="1045">
                 <source>bban_PT_bban1_rule</source>
                 <target><![CDATA[4 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1051">
+			<trans-unit id="1046">
                 <source>bban_PT_bban2_hint</source>
                 <target><![CDATA[The branch code identifies the account holders branch at the bank. The branch code is also made up 4 numbers. E.g.0906]]></target>
             </trans-unit>			
-			<trans-unit id="1052">
+			<trans-unit id="1047">
                 <source>bban_PT_bban2_name</source>
                 <target><![CDATA[Branch code]]></target>
             </trans-unit>			
-			<trans-unit id="1053">
+			<trans-unit id="1048">
                 <source>bban_PT_bban2_rule</source>
                 <target><![CDATA[4 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1054">
+			<trans-unit id="1049">
                 <source>bban_PT_bban3_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 11 numbers in length. E.g. 00083630030]]></target>
             </trans-unit>			
-			<trans-unit id="1055">
+			<trans-unit id="1050">
                 <source>bban_PT_bban3_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="1056">
+			<trans-unit id="1051">
                 <source>bban_PT_bban3_rule</source>
                 <target><![CDATA[11 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1057">
+			<trans-unit id="1052">
                 <source>bban_PT_bban4_hint</source>
                 <target><![CDATA[The check digit is used to detect any errors in the complete account number provided. It is 2 numbers in length. E.g. 41]]></target>
             </trans-unit>			
-			<trans-unit id="1058">
+			<trans-unit id="1053">
                 <source>bban_PT_bban4_name</source>
                 <target><![CDATA[Check digit]]></target>
             </trans-unit>			
-			<trans-unit id="1059">
+			<trans-unit id="1054">
                 <source>bban_PT_bban4_rule</source>
                 <target><![CDATA[2 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1060">
+			<trans-unit id="1055">
                 <source>bban_RO_bban1_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 24 characters in length and may contain alph characters and numbers. E.g. RO30MIND1234567812345678]]></target>
             </trans-unit>			
-			<trans-unit id="1061">
+			<trans-unit id="1056">
                 <source>bban_RO_bban1_name</source>
                 <target><![CDATA[Account no (bban)]]></target>
             </trans-unit>			
-			<trans-unit id="1062">
+			<trans-unit id="1057">
                 <source>bban_RO_bban1_rule</source>
                 <target><![CDATA[24 alpha-numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1063">
+			<trans-unit id="1058">
                 <source>bban_RS_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 3 numbers in length. E.g. 220]]></target>
             </trans-unit>			
-			<trans-unit id="1064">
+			<trans-unit id="1059">
                 <source>bban_RS_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="1065">
+			<trans-unit id="1060">
                 <source>bban_RS_bban1_rule</source>
                 <target><![CDATA[3 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1066">
+			<trans-unit id="1061">
                 <source>bban_RS_bban2_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 13 numbers in length. E.g. 0000012345670]]></target>
             </trans-unit>			
-			<trans-unit id="1067">
+			<trans-unit id="1062">
                 <source>bban_RS_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="1068">
+			<trans-unit id="1063">
                 <source>bban_RS_bban2_rule</source>
                 <target><![CDATA[13 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1069">
+			<trans-unit id="1064">
                 <source>bban_RS_bban3_hint</source>
                 <target><![CDATA[The check digit is used to detect any errors in the complete account number provided. It is 2 numbers in length. E.g. 10]]></target>
             </trans-unit>			
-			<trans-unit id="1070">
+			<trans-unit id="1065">
                 <source>bban_RS_bban3_name</source>
                 <target><![CDATA[Check digit]]></target>
             </trans-unit>			
-			<trans-unit id="1071">
+			<trans-unit id="1066">
                 <source>bban_RS_bban3_rule</source>
                 <target><![CDATA[2 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1072">
+			<trans-unit id="1067">
                 <source>bban_SE_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 4 or 5 numbers in length. E.g. 1214]]></target>
             </trans-unit>			
-			<trans-unit id="1073">
+			<trans-unit id="1068">
                 <source>bban_SE_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="1074">
+			<trans-unit id="1069">
                 <source>bban_SE_bban1_rule</source>
                 <target><![CDATA[4 - 5 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1075">
+			<trans-unit id="1070">
                 <source>bban_SE_bban2_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is between 2 and 10 numbers in length. E.g. 123456789]]></target>
             </trans-unit>			
-			<trans-unit id="1076">
+			<trans-unit id="1071">
                 <source>bban_SE_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="1077">
+			<trans-unit id="1072">
                 <source>bban_SE_bban2_rule</source>
                 <target><![CDATA[2 - 10 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1078">
+			<trans-unit id="1073">
                 <source>bban_SI_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 5 numbers in length. E.g. 01000]]></target>
             </trans-unit>			
-			<trans-unit id="1079">
+			<trans-unit id="1074">
                 <source>bban_SI_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="1080">
+			<trans-unit id="1075">
                 <source>bban_SI_bban1_rule</source>
                 <target><![CDATA[5 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1081">
+			<trans-unit id="1076">
                 <source>bban_SI_bban2_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 10 numbers in length. E.g. 1234567874]]></target>
             </trans-unit>			
-			<trans-unit id="1082">
+			<trans-unit id="1077">
                 <source>bban_SI_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="1083">
+			<trans-unit id="1078">
                 <source>bban_SI_bban2_rule</source>
                 <target><![CDATA[10 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1084">
+			<trans-unit id="1079">
                 <source>bban_SK_bban1_hint</source>
                 <target><![CDATA[The Bank-branch code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 4 numbers in length. E.g. 0900]]></target>
             </trans-unit>			
-			<trans-unit id="1085">
+			<trans-unit id="1080">
                 <source>bban_SK_bban1_name</source>
                 <target><![CDATA[Bank-branch code]]></target>
             </trans-unit>			
-			<trans-unit id="1086">
+			<trans-unit id="1081">
                 <source>bban_SK_bban1_rule</source>
                 <target><![CDATA[4 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1087">
+			<trans-unit id="1082">
                 <source>bban_SK_bban2_hint</source>
                 <target><![CDATA[An account number in Czech Republic is made up of 2 key parts (Prefix and Basic), The prefix identifies the first part of actual bank account at the given bank/branch. The prefix of the account number is 6 numbers in length. E.g. 083237]]></target>
             </trans-unit>			
-			<trans-unit id="1088">
+			<trans-unit id="1083">
                 <source>bban_SK_bban2_name</source>
                 <target><![CDATA[Prefix]]></target>
             </trans-unit>			
-			<trans-unit id="1089">
+			<trans-unit id="1084">
                 <source>bban_SK_bban2_rule</source>
                 <target><![CDATA[6 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1090">
+			<trans-unit id="1085">
                 <source>bban_SK_bban3_hint</source>
                 <target><![CDATA[An account number in Czech Republic is made up of 2 key parts (Prefix and Basic), The Basic part identifies the later part of actual bank account at the given bank/branch. This part of the account number is 10 numbers in length. E.g. 1234567891]]></target>
             </trans-unit>			
-			<trans-unit id="1091">
+			<trans-unit id="1086">
                 <source>bban_SK_bban3_name</source>
                 <target><![CDATA[Basic]]></target>
             </trans-unit>			
-			<trans-unit id="1092">
+			<trans-unit id="1087">
                 <source>bban_SK_bban3_rule</source>
                 <target><![CDATA[10 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1093">
+			<trans-unit id="1088">
                 <source>bban_TN_bban1_hint</source>
                 <target><![CDATA[The bank code identifies the bank and branch who is the issuer of the bank account. The Bank code is 2 numbers in length. E.g. 11]]></target>
             </trans-unit>			
-			<trans-unit id="1094">
+			<trans-unit id="1089">
                 <source>bban_TN_bban1_name</source>
                 <target><![CDATA[Bank code]]></target>
             </trans-unit>			
-			<trans-unit id="1095">
+			<trans-unit id="1090">
                 <source>bban_TN_bban1_rule</source>
                 <target><![CDATA[2 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1096">
+			<trans-unit id="1091">
                 <source>bban_TN_bban2_hint</source>
                 <target><![CDATA[The branch code identifies the account holders branch at the bank. The branch code is also made up 3 numbers. E.g.004]]></target>
             </trans-unit>			
-			<trans-unit id="1097">
+			<trans-unit id="1092">
                 <source>bban_TN_bban2_name</source>
                 <target><![CDATA[Branch code]]></target>
             </trans-unit>			
-			<trans-unit id="1098">
+			<trans-unit id="1093">
                 <source>bban_TN_bban2_rule</source>
                 <target><![CDATA[3 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1099">
+			<trans-unit id="1094">
                 <source>bban_TN_bban3_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is between 13 numbers in length. E.g. 1234567890123]]></target>
             </trans-unit>			
-			<trans-unit id="1100">
+			<trans-unit id="1095">
                 <source>bban_TN_bban3_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="1101">
+			<trans-unit id="1096">
                 <source>bban_TN_bban3_rule</source>
                 <target><![CDATA[13 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1102">
+			<trans-unit id="1097">
                 <source>bban_TN_bban4_hint</source>
                 <target><![CDATA[The check digit is used to detect any errors in the complete account number provided. It is 2 numbers in length. E.g. 38]]></target>
             </trans-unit>			
-			<trans-unit id="1103">
+			<trans-unit id="1098">
                 <source>bban_TN_bban4_name</source>
                 <target><![CDATA[Check digit]]></target>
             </trans-unit>			
-			<trans-unit id="1104">
+			<trans-unit id="1099">
                 <source>bban_TN_bban4_rule</source>
                 <target><![CDATA[2 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1105">
+			<trans-unit id="1100">
                 <source>bban_GB_bban1_hint</source>
                 <target><![CDATA[The sort code identifies the bank and branch who is the issuer of the bank account. The Bank-branch can be 6 numbers in length. E.g. 309136]]></target>
             </trans-unit>			
-			<trans-unit id="1106">
+			<trans-unit id="1101">
                 <source>bban_GB_bban1_name</source>
                 <target><![CDATA[Sort code]]></target>
             </trans-unit>			
-			<trans-unit id="1107">
+			<trans-unit id="1102">
                 <source>bban_GB_bban1_rule</source>
                 <target><![CDATA[6 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1108">
+			<trans-unit id="1103">
                 <source>bban_GB_bban2_hint</source>
                 <target><![CDATA[The account number identifies the complete bank account at the given bank/branch. The account number is 8 numbers in length. E.g. 34697856]]></target>
             </trans-unit>			
-			<trans-unit id="1109">
+			<trans-unit id="1104">
                 <source>bban_GB_bban2_name</source>
                 <target><![CDATA[Account no.]]></target>
             </trans-unit>			
-			<trans-unit id="1110">
+			<trans-unit id="1105">
                 <source>bban_GB_bban2_rule</source>
                 <target><![CDATA[8 numeric]]></target>
             </trans-unit>			
-			<trans-unit id="1111">
+			<trans-unit id="1106">
                 <source>btn_purchase</source>
                 <target><![CDATA[Purchase]]></target>
             </trans-unit>			
-			<trans-unit id="1112">
+			<trans-unit id="1107">
                 <source>txt_total_cost_currency_euro</source>
                 <target><![CDATA[Total Cost (&euro;)]]></target>
             </trans-unit>			
-			<trans-unit id="1113">
+			<trans-unit id="1108">
                 <source>txt_total_vat_currency_euro</source>
                 <target><![CDATA[Total VAT (&euro;)]]></target>
             </trans-unit>			
-			<trans-unit id="1114">
+			<trans-unit id="1109">
                 <source>btn_confirm</source>
                 <target><![CDATA[Confirm]]></target>
             </trans-unit>			
-			<trans-unit id="1115">
+			<trans-unit id="1110">
                 <source>msg_desc_bban_required</source>
                 <target><![CDATA[{{ bban_fieldname }} is a required field. Please supply a value for {{ bban_fieldname }} and try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="1111">
+                <source>msg_desc_incorrect_email</source>
+                <target><![CDATA[The email "{{ value }}" is not a valid email.]]></target>
+            </trans-unit>			
+			<trans-unit id="1112">
+                <source>msg_desc_incorrect_email_try_again</source>
+                <target><![CDATA[The email "{{ value }}" is not a valid email address. Please try again.]]></target>
+            </trans-unit>			
+			<trans-unit id="1113">
+                <source>msg_desc_email_already_registered</source>
+                <target><![CDATA[The email "{{ value }}" already exists on our system. If you have previously registered and forgotten your password, please go back to the sign in screen and reset your password by clicking on 'Forgotten your password?']]></target>
+            </trans-unit>			
+			<trans-unit id="1114">
+                <source>txt_payment_pass_desc_1</source>
+                <target><![CDATA[{{ credits_added }} conversions have been added to your account.]]></target>
+            </trans-unit>			
+			<trans-unit id="1115">
+                <source>txt_payment_pass_desc_2</source>
+                <target><![CDATA[The file you uploaded will start processing shortly. {{ lines }} conversions have been deducted from your account for the processing of this file.]]></target>
             </trans-unit>		
         </body>
     </file>
