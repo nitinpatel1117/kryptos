@@ -69,7 +69,7 @@
 			
 			<div>
 				<br><br>
-				Both API calls require that you specify the language that you want the results return back in. Your language preferred should replace the text <code>{locale}</code> in both API calls.
+				Both API calls require that you specify the language that you want the results returned back in. Your language preference should replace the text <code>{locale}</code> in both API calls.
 				The following locales are supported:<br>
 				<ul>
 					{% for supported_locale in supported_locales %}
@@ -90,7 +90,7 @@
 				<br><br>
 				When using the BBAN endpoint, only the necessary bban fields for the specified country code can be supplied.<br>
 				e.g. If making a call on the GB country code then only bban1 and bban2 can be supplied, such as:<br>
-				<code>/services/convert/bban/{publicKey}/GB/{bban1}/{bban2}</code>
+				<code>/services/{locale}/convert/bban/{publicKey}/GB/{bban1}/{bban2}</code>
 			</div>
 			
 			 <!--

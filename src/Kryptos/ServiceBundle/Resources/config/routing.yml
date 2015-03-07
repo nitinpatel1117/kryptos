@@ -9,3 +9,15 @@ services_convert_bban:
     defaults: { _controller: KryptosServiceBundle:Convert:bban, _locale: en, publicKey: null, country: null, bban1: null, bban2: null, bban3: null, bban4: null}
     requirements:
         _locale: en|de|fr|es|it
+
+dummy_services_convert_iban:
+    pattern:  /dummy_services/{_locale}/convert/iban/{publicKey}/{iban}
+    defaults: { _controller: KryptosServiceBundle:Convert:ibanDummy, _locale: en, publicKey: null, iban: null }
+    requirements:
+        _locale: en|de|fr|es|it
+
+dummy_services_convert_bban:
+    pattern:  /dummy_services/{_locale}/convert/bban/{publicKey}/{country}/{bban1}/{bban2}/{bban3}/{bban4}
+    defaults: { _controller: KryptosServiceBundle:Convert:bbanDummy, _locale: en, publicKey: null, country: null, bban1: null, bban2: null, bban3: null, bban4: null}
+    requirements:
+        _locale: en|de|fr|es|it
