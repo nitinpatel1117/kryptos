@@ -22,11 +22,13 @@ parameters:
     
     download:
       help_prepare_file:
-        server_path:           '/var/www/vhosts/kryptossystems.com/sepa.kryptossystems.com/src/Kryptos/KryptosBundle/Resources/public/download/help_prepare_file.pdf'
-        filename:              'Prepare_file.pdf'
+        server_path:           '/var/www/vhosts/kryptossystems.com/sepa.kryptossystems.com/src/Kryptos/KryptosBundle/Resources/public/download/{_locale}/help_prepare_file.pdf'
+        filename:              'txt_help|txt_prepare_your_file'
+        extension:             'pdf' # entension of the file download to user's pc
       help_upload_file:
-        server_path:           '/var/www/vhosts/kryptossystems.com/sepa.kryptossystems.com/src/Kryptos/KryptosBundle/Resources/public/download/help_upload_file.pdf'
-        filename:              'Upload_file.pdf'
+        server_path:           '/var/www/vhosts/kryptossystems.com/sepa.kryptossystems.com/src/Kryptos/KryptosBundle/Resources/public/download/{_locale}/help_upload_file.pdf'
+        filename:              'txt_help|txt_upload_your_file'
+        extension:             'pdf' # entension of the file download to user's pc
   
   mongo_connection:
     # server:           'mongodb://localhost:27017'

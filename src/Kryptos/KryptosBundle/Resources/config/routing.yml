@@ -96,13 +96,16 @@ account_settings:
     defaults: { _controller: KryptosKryptosBundle:Account:settings }
 
 download_help_prepare_file:
-    pattern:  /download/help_prepare_file
-    defaults: { _controller: KryptosKryptosBundle:Download:helpPrepareFile }
+    pattern:  /download/{_locale}/help_prepare_file
+    defaults: { _controller: KryptosKryptosBundle:Download:helpPrepareFile, _locale: en}
+    requirements:
+        _locale: en|de|fr|es|it
 
 download_help_upload_file:
-    pattern:  /download/help_upload_file
-    defaults: { _controller: KryptosKryptosBundle:Download:helpUploadFile }
-    
+    pattern:  /download/{_locale}/help_upload_file
+    defaults: { _controller: KryptosKryptosBundle:Download:helpUploadFile, _locale: en}
+    requirements:
+        _locale: en|de|fr|es|it
     
 locale_switch:
     pattern:  /locale/switch/{_locale}
