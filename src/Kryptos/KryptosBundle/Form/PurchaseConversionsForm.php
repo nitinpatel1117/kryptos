@@ -16,7 +16,8 @@ class PurchaseConversionsForm extends AbstractType
     	}
     	
     	$builder->add('conversions', 'number', array(
-    		'label'		=>'txt_no_of_conversions',
+    		'label'		=> 'txt_no_of_conversions',
+    		'attr' 		=> array('autocomplete' => 'off'),
     	#	'required' 	=> true,
     	));
 			
