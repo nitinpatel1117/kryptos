@@ -47,6 +47,7 @@ div#signin { }
 /* Purchase Conversions Form */
 form#purchaseConversion { }
 form#purchaseConversion input { height:20px;}
+form#purchaseConversion input#PurchaseConversionsForm_cost {cursor: pointer;}
 form#purchaseConversion #PurchaseConversionForm_btn_cacl {margin-top:22px;}
 
 
