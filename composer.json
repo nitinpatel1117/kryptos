@@ -19,7 +19,8 @@
         "jms/security-extra-bundle": "1.2.*",
         "jms/di-extra-bundle": "1.1.*",
         "kriswallsmith/assetic": "1.1.*@dev",
-        "gregwar/captcha-bundle": "dev-master"
+        "gregwar/captcha-bundle": "dev-master",
+        "itbz/fpdf": "1.7.2"
     },
     "scripts": {
         "post-install-cmd": [
