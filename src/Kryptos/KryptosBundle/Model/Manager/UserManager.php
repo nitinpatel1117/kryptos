@@ -401,7 +401,6 @@ class UserManager extends BaseManager
     }
     
     
-    
     /**
      * Function reduces a users credit by 1, and registers a conversion in the conversion table
      *
@@ -452,5 +451,26 @@ class UserManager extends BaseManager
     	);
     	 
     	return parent::update($query, $update);
+    }
+    
+    
+    /**
+     * Retreive transaction details by user's email and transaction id
+     * 
+     * @param string $email					The user's email address
+     * @param string $transactionId			The transaction id to search for
+     */
+    public function getTransactionDetails($email, $transactionId)
+    {
+    	$item = array(
+    		'email' => $email,
+    		'payment._id' => new \MongoId($transactionId)
+    	);
+    	
+    	$fields = array(
+    		'payment.$' => 1
+    	);
+    	
+    	return parent::findOne($item, $fields);
     }
 }

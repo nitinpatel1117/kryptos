@@ -95,6 +95,12 @@ account_settings:
     pattern:  /account/settings
     defaults: { _controller: KryptosKryptosBundle:Account:settings }
 
+
+invoice:
+    pattern:  /invoice/{transactionId}
+    defaults: { _controller: KryptosKryptosBundle:Invoice:index, transactionId: null}
+
+
 download_help_prepare_file:
     pattern:  /download/{_locale}/help_prepare_file
     defaults: { _controller: KryptosKryptosBundle:Download:helpPrepareFile, _locale: en}
@@ -106,7 +112,7 @@ download_help_upload_file:
     defaults: { _controller: KryptosKryptosBundle:Download:helpUploadFile, _locale: en}
     requirements:
         _locale: en|de|fr|es|it
-    
+
 locale_switch:
     pattern:  /locale/switch/{_locale}
     defaults: { _controller: KryptosKryptosBundle:Locale:switch, _locale: en}
