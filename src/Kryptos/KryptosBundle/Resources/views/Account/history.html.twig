@@ -12,6 +12,7 @@
 						<th>{% trans %}txt_conversions{% endtrans %}</th>
 						<th>{% trans %}txt_transaction_id{% endtrans %}</th>
 						<th>{% trans %}txt_status{% endtrans %}</th>
+						<th>{% trans %}txt_invoice{% endtrans %}</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -23,6 +24,11 @@
 							<td>{{ payment.credits|escape }}</td>
 							<td>{{ payment.id|escape }}</td>
 							<td>{{ payment.status|trans|escape }}</td>
+							<td>
+								{% if  payment.show_invoice %}
+								    <a href="{{ path('invoice', { 'transactionId': payment.id }) }}" target="_blank"><i class="icon-file"></i></a>
+								{% endif %}
+							</td>
 						</tr>
 					{% endfor %}
 				</tbody>

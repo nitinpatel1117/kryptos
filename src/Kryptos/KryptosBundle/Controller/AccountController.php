@@ -171,9 +171,11 @@ class AccountController extends Controller implements LocaleInterface
     		$date->setTimestamp($transaction['started']->sec);
     			
     		$status = 'txt_pending';
+    		$show_invoice = false;
     		if (isset($transaction['status'])) {
     			if ('OK' == $transaction['status']) {
     				$status = 'txt_ok';
+    				$show_invoice = true;
     			} else {
     				$status = 'txt_failed';
     			}
@@ -187,6 +189,7 @@ class AccountController extends Controller implements LocaleInterface
 	    		'credits' 		=> isset($transaction['purchase']['credits']) 	? $transaction['purchase']['credits'] : '',
 	    		'cost' 			=> isset($transaction['purchase']['total']) 	? number_format($transaction['purchase']['total'], 2) : '',
 	    		'status'		=> $status,
+	    		'show_invoice'	=> $show_invoice,
 	    	#	'creditsOld' 	=> isset($transaction['creditsOld']) 			? $transaction['creditsOld'] : '',
 	    	#	'creditsNew' 	=> isset($transaction['creditsNew']) 			? $transaction['creditsNew'] : '',
 	    	);
@@ -226,6 +229,7 @@ class AccountController extends Controller implements LocaleInterface
     			'credits' 		=> $credit,
     			'cost' 			=> isset($history['totalCost']) ? number_format($history['totalCost'], 2) : '',
     			'status' 		=> $status,
+    			'show_invoice'	=> false,
     		);
     	
     		$payments[] = $payment;
