@@ -41,6 +41,7 @@ class LocaleSwitcher
     	}
     
     	if (!is_null($val)) {
+    		setlocale(LC_ALL, $this->POSIXLocale($val));
     		$this->request->setLocale($val);
     	}
     }
@@ -100,6 +101,20 @@ class LocaleSwitcher
 		$response->sendHeaders();
     }
     
+    
+    public function POSIXLocale($val)
+    {
+    	$localeFull = 'en_GB';
+    	switch($val) {
+    		case 'en':   $localeFull = 'en_GB'; break;
+    		case 'de':   $localeFull = 'de_DE'; break;
+    		case 'es':   $localeFull = 'es_ES'; break;
+    		case 'fr':   $localeFull = 'fr_FR'; break;
+    		case 'it':   $localeFull = 'it_IT'; break;
+    	}
+
+    	return $localeFull;
+    }
     
     
     public function onKernelController(FilterControllerEvent $event)
