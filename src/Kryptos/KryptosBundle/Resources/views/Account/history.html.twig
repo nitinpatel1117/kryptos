@@ -24,7 +24,7 @@
 							<td>{{ payment.credits|escape }}</td>
 							<td>{{ payment.id|escape }}</td>
 							<td>{{ payment.status|trans|escape }}</td>
-							<td>
+							<td class="text-center">
 								{% if  payment.show_invoice %}
 								    <a href="{{ path('invoice', { 'transactionId': payment.id }) }}" target="_blank"><i class="icon-file"></i></a>
 								{% endif %}
