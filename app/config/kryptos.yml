@@ -98,3 +98,6 @@ parameters:
 
   dummy_service:
     filepath: '/var/www/vhosts/kryptossystems.com/sepa.kryptossystems.com/src/Kryptos/ServiceBundle/Dummy'
+    public_key: 521a53c1632ed4931100000a
+    bban_creater: 'http://sepa.kryptossystems.com/services/{lang}/convert/bban/521a53c1632ed4931100000a/{country_iso}/{bban1}/{bban2}/{bban3}/{bban4}'
+    iban_creater: 'http://sepa.kryptossystems.com/services/{lang}/convert/iban/521a53c1632ed4931100000a/{iban}'

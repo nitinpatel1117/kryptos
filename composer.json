@@ -20,7 +20,8 @@
         "jms/di-extra-bundle": "1.1.*",
         "kriswallsmith/assetic": "1.1.*@dev",
         "gregwar/captcha-bundle": "dev-master",
-        "itbz/fpdf": "1.7.2"
+        "itbz/fpdf": "1.7.2",
+        "guzzlehttp/guzzle": "3.8.1"
     },
     "scripts": {
         "post-install-cmd": [

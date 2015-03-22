@@ -180,10 +180,7 @@ class SingleConversion
 		
 		exec($command, $this->data);
 		
-		#echo "<pre>";
-		#var_dump($command);
-		#print_r($this->data);
-		#var_dump($this->data);
+		#echo "<pre>"; var_dump($command); print_r($this->data); var_dump($this->data); exit;
 		
 		$this->findLine();
 		
@@ -224,10 +221,7 @@ class SingleConversion
 		
 		exec($command, $this->data);
 		
-		#echo "<pre>";
-		#var_dump($command);
-		#print_r($this->data);
-		#var_dump($this->data);
+		#echo "<pre>"; var_dump($command); print_r($this->data); var_dump($this->data); exit;
 
 		
 		$this->findLine();
