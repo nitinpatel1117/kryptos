@@ -3,6 +3,7 @@ namespace Kryptos\ServiceBundle\Lib;
 
 
 use Guzzle\Http\Client;
+use Guzzle\Http\Exception\ClientErrorResponseException;
 
 class CreateDummyFiles
 {
@@ -126,12 +127,13 @@ class CreateDummyFiles
 			// TODO:write come to delete files here
 		}
 	}
-	
+
 	
 	public function processFile()
 	{
 		if (true == $this->validateFile()) {
 			$row = 0;
+
 			if (($handle = fopen($this->getFile(), "r")) !== FALSE) {
 				while (($data = fgetcsv($handle)) !== FALSE) {
 					$row++;
@@ -141,6 +143,8 @@ class CreateDummyFiles
 						continue;
 					}
 					
+					var_dump('Reading line: '.$row);
+
 					$result = $this->processLine($data);
 					$this->saveResponse($result);
 				}
@@ -152,7 +156,7 @@ class CreateDummyFiles
 			exit;
 		}
 	}
-	
+
 	/**
 	 * Process each line of the data
 	 * 
@@ -254,10 +258,22 @@ class CreateDummyFiles
 	 * @param string $url
 	 * @return string
 	 */
-	public function getReponse($url) {
-		$client = new Client();
-		$client = $client->get($url);
-		$response = $client->send();
+	public function getReponse($url)
+	{
+		$response = '';
+
+		try {
+			$client = new Client();
+			$client = $client->get($url);
+			$response = $client->send();
+		}
+		catch (ClientErrorResponseException $e) {
+			// nothing wrong here - client just gave a 404 - we want to save 404's
+			$response = $e->getResponse();
+		}
+		catch (\Exception $e) {
+			// TODO: log something here
+		}
 		
 		return $response->getBody();
 	}
