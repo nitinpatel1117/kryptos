@@ -103,3 +103,9 @@ table.fileStatus div.progress { width:300px;}
 table#accountHistory {}
 
 td.text-center { text-align: center; }
+
+
+/* Modal texts */
+#modalCookieUse .modal-body { text-align: left; }
+#modalDataUsePolicy .modal-body { text-align: left; }
+#modalTermsConditions .modal-body { text-align: left; }
