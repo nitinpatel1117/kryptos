@@ -109,3 +109,6 @@ td.text-center { text-align: center; }
 #modalCookieUse .modal-body { text-align: left; }
 #modalDataUsePolicy .modal-body { text-align: left; }
 #modalTermsConditions .modal-body { text-align: left; }
+
+/* Single page message e.g. password reset success page */
+fieldset { border:none; }
