@@ -19,6 +19,8 @@ section.sub-blueHeader section.innerWrap { padding:20px;}
 /*** Nav ***/
 div#loggedInUser { margin:-15px 5px 0px 0px; }
 .navbar .nav > li > span { float: none; padding: 10px 15px; color: #777; text-decoration: none; text-shadow: 0px 1px 0px #FFF; display: block; }
+.navbar a.brand { padding: 0px 10px 0px 10px; }
+.navbar a.brand img { margin: 0px; padding: 0px; width: 100px; }
 
 
 /*** Forms ***/
