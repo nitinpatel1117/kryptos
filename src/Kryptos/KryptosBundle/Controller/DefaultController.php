@@ -327,6 +327,7 @@ class DefaultController extends Controller implements LocaleInterface
     	);
     
     	$subject = $this->get('translator')->trans('email_subject_password_reset');
+    	//$recipient = 'check-auth@verifier.port25.com';
     	
     	$message = \Swift_Message::newInstance()
     		->setSubject($subject)

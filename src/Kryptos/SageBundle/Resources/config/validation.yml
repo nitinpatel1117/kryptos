@@ -21,3 +21,6 @@ Kryptos\SageBundle\Entity\PaymentBilling:
         billingCountry:
             - NotBlank: 
                 message: msg_title_billing_details_incomplete|msg_desc_enter_country
+        acceptTerms:
+            - NotBlank: 
+                message: msg_title_billing_details_incomplete|msg_desc_accept_terms

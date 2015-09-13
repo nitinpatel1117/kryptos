@@ -7,6 +7,15 @@
 {% endblock form_row %}
 
 
+{% block checkbox_widget %}
+{% spaceless %}
+<label for="{{ id }}">
+<input type="checkbox" {{ block('widget_attributes') }}{% if value is defined %} value="{{ value }}"{% endif %}{% if checked %} checked="checked"{% endif %} />
+{{ label|trans({}, translation_domain)|raw }}</label>
+{% endspaceless %}
+{% endblock checkbox_widget %}
+
+
 {% block form_errors %}
 {% spaceless %}
 {% if errors|length > 0 %}

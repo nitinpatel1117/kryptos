@@ -26,6 +26,11 @@
 				<div class="control-group">
 				    {{ form_row(form.billingCountry) }}
 				</div>
+				
+				<div class="control-group">
+				    {{ form_row(form.acceptTerms) }}
+				</div>
+
 				{{ form_rest(form) }}
 				
 				<div class="control-group">
@@ -44,6 +49,8 @@
 			{{ form_errors(form.billingCity) }}
 			{{ form_errors(form.billingPostCode) }}
 			{{ form_errors(form.billingCountry) }}
+			{{ form_errors(form.acceptTerms) }}
 			
+			{% include 'KryptosKryptosBundle:Default:modalTermsConditions.html.twig' %}
 	    </form>
 	</div>

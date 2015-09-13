@@ -12,6 +12,7 @@ class PaymentBilling
 	protected $billingCity;
 	protected $billingPostCode;
 	protected $billingCountry;
+	protected $acceptTerms;
 	
 	protected $deliverySurname;
 	protected $deliveryFirstnames;
@@ -73,7 +74,14 @@ class PaymentBilling
 		return $this->billingCountry;
 	}
 	
+	public function setAcceptTerms($acceptTerms) {
+		$this->acceptTerms = $acceptTerms;
+	}
+	public function getAcceptTerms() {
+		return $this->acceptTerms;
+	}
 	
+
 	
 	public function setDeliverySurname($deliverySurname) {
 		$this->deliverySurname = $deliverySurname;
@@ -160,6 +168,7 @@ class PaymentBilling
 		$data['BillingCity'] 		= $this->getBillingCity();
 		$data['BillingPostCode'] 	= $this->getBillingPostCode();
 		$data['BillingCountry'] 	= $this->getBillingCountry();
+		$data['AcceptTerms'] 	 	= $this->getAcceptTerms();
 		 
 		$data['DeliverySurname'] 	= $this->getDeliverySurname();
 		$data['DeliveryFirstnames'] = $this->getDeliveryFirstnames();

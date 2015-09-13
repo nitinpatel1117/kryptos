@@ -58,6 +58,7 @@ form#purchaseConversion #PurchaseConversionForm_btn_cacl {margin-top:22px;}
 form#paymentBilling { }
 form#paymentBilling input { height:20px; width: 220px; }
 form#paymentBilling select { width: 235px; }
+form#paymentBilling input#PaymentBillingForm_acceptTerms { width: 20px; margin-top: 0px; }
 
 
 /* Convert Batch File Form */

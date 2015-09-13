@@ -99,6 +99,11 @@ class PaymentBillingForm extends AbstractType
 		#		'data-original-title'	=> 'Please enter your Country',
 			),
 		));
+		
+		$builder->add('acceptTerms', 'checkbox', array(
+			'label'    =>'txt_accept_terms',
+			'required' => true,
+		));
     }
     
     
