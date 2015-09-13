@@ -3291,8 +3291,8 @@
                 <target><![CDATA[Choose a country]]></target>
             </trans-unit>			
 			<trans-unit id="823">
-                <source>txt_invoice</source>
-                <target><![CDATA[Invoice]]></target>
+                <source>txt_accept_terms</source>
+                <target><![CDATA[I accept the <a href="#modalTermsConditions" data-toggle="modal">terms and conditions</a>]]></target>
             </trans-unit>			
 			<trans-unit id="824">
                 <source>warn_1_action</source>

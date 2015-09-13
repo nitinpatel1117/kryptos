@@ -3293,8 +3293,8 @@ El IBAN tiene el formato básico correcto, pero no tiene el formato correcto par
                 <target><![CDATA[Elija un país]]></target>
             </trans-unit>			
 			<trans-unit id="823">
-                <source>txt_invoice</source>
-                <target><![CDATA[Factura]]></target>
+                <source>txt_accept_terms</source>
+                <target><![CDATA[acepto los <a href="#modalTermsConditions" data-toggle="modal">términos y condiciones</a>]]></target>
             </trans-unit>			
 			<trans-unit id="824">
                 <source>warn_1_action</source>
