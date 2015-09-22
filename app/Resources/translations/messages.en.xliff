@@ -2812,7 +2812,7 @@
             </trans-unit>			
 			<trans-unit id="703">
                 <source>email_subject_password_reset</source>
-                <target><![CDATA[Kryptos: Password Reset?]]></target>
+                <target><![CDATA[Kryptos: Password Reset]]></target>
             </trans-unit>			
 			<trans-unit id="704">
                 <source>email_body_password_reset_1</source>
