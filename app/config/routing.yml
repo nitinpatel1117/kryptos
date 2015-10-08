@@ -11,7 +11,7 @@ kryptos_service:
     prefix:   /
 
 Gregwar_CaptchaBundle:
-    resource: "@GregwarCaptchaBundle/Resources/config/routing.yml"
+    resource: "@GregwarCaptchaBundle/Resources/config/routing/routing.yml"
     prefix:   /
 
 # Internal routing configuration to handle ESI

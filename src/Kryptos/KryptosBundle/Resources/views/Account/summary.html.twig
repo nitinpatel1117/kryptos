@@ -3,9 +3,9 @@
 
 {% block content %}
 <!--
-	{% render 'KryptosKryptosBundle:Account:balance'  %}
+	{% render controller('KryptosKryptosBundle:Account:balance')  %}
 -->
 	<div class="row-fluid">
-			{% render 'KryptosKryptosBundle:Account:history'  %}
+			{% render controller('KryptosKryptosBundle:Account:history')  %}
 	</div>
 {% endblock %}

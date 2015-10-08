@@ -14,7 +14,7 @@
 {% endblock %}
 
 {% block body %}
-	{% render 'KryptosKryptosBundle:Default:authenicationBar' with { 'route': app.request.attributes.get('_route') } %}
+	{% render controller('KryptosKryptosBundle:Default:authenicationBar', { 'route': app.request.attributes.get('_route') }) %}
 	<div class="container-fluid">
 		{% block content %}{% endblock %}
 	</div>

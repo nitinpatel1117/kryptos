@@ -327,9 +327,23 @@ class DefaultController extends Controller implements LocaleInterface
     	);
     
     	$subject = $this->get('translator')->trans('email_subject_password_reset');
-    	//$recipient = 'check-auth@verifier.port25.com';
+    	#$recipient = 'check-auth@verifier.port25.com';
+    	#$recipient = 'p6J55S5ZKqVkpX@dkimvalidator.com';
+
     	
-    	$message = \Swift_Message::newInstance()
+    	$privateKey = file_get_contents($this->get('kernel')->getRootDir().'/dkim/default.private');
+    	$domainName = 'kryptossystems.com';
+    	$selector = 'default';
+    	$signer = new \Swift_Signers_DKIMSigner($privateKey, $domainName, $selector);
+    	$signer->setHashAlgorithm('rsa-sha1');
+    	$signer->setHeaderCanon('relaxed');
+    	$signer->setBodyCanon('relaxed');
+    	
+    	$message = \Swift_SignedMessage::newInstance();
+    	
+    	$message->attachSigner($signer);
+
+    	$message
     		->setSubject($subject)
     		->setFrom(array(
     			$this->get('config_manager')->get('site|password_reset_from') => $this->get('config_manager')->get('site|password_reset_fromname')

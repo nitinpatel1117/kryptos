@@ -33,7 +33,7 @@
 		</div>
 		
 		<div class="span6" style="text-align:center;">
-			{% render 'KryptosSageBundle:Payment:billingForm' with { request: request, error: error } %}
+			{% render controller('KryptosSageBundle:Payment:billingForm', { request: request, error: error }) %}
 		</div>
 	</div>
 
