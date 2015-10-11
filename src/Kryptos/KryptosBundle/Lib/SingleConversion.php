@@ -331,6 +331,13 @@ class SingleConversion
 	{
 		$data = $this->getData();
 		
+		# used in making fake data for dummy service endpoint
+		#echo "<pre>";
+		#print_r($data);
+		#$data[17] = '18-Account does not support credit transfers';
+		#print_r($data);
+		#exit;
+
 		if (isset($data[17]) && '' != $data[17])
 		{
 			// find the warning messages
