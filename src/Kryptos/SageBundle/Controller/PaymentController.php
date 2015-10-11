@@ -35,7 +35,7 @@ class PaymentController extends Controller implements LocaleInterface
 				$data = $paymentBilling->toArray();
 				
 				$sagePayment = new SageRegisterPayment($this->get('config_manager'));
-				list($data, $user) = $sagePayment->makePaymentParameters($data, $user, $this->getNotificationUrl());
+				list($data, $user) = $sagePayment->makePaymentParameters($data, $user, $this->getNotificationUrl($request));
 
 				$this->get('user_manager')->save($user);
 				
@@ -122,16 +122,16 @@ class PaymentController extends Controller implements LocaleInterface
     
     
     
-    public function getNotificationUrl()
+    public function getNotificationUrl(Request $request)
     {
     	$baseUrl 		= $this->get('config_manager')->get('site|url');
     	$route 			= $this->get('config_manager')->get('sagepay|NotificationURL');
-    	return sprintf('%s%s%s', $this->getProtocol(), $baseUrl, $this->generateUrl($route));
+    	return sprintf('%s%s%s', $this->getProtocol($request), $baseUrl, $this->generateUrl($route));
     }
     
-    public function getProtocol()
+    public function getProtocol(Request $request)
     {
-    	return strtolower(substr($_SERVER["SERVER_PROTOCOL"],0,5))=='https'? 'https://' : 'http://';
+    	return $request->isSecure() ? 'https://' : 'http://';
     }
     
     

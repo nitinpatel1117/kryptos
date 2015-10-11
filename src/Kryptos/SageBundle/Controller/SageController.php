@@ -184,9 +184,9 @@ class SageController extends Controller
 	public function sendOkResponse(Request $request, $status, $msg = '')
 	{
 		if ('OK' == $status) {
-			$redirectUrl = $this ->makePassRedirect();
+			$redirectUrl = $this ->makePassRedirect($request);
 		} else {
-			$redirectUrl = $this ->makeFailRedirect();
+			$redirectUrl = $this ->makeFailRedirect($request);
 		}
 		
 		return $this->render('KryptosSageBundle:Sage:notify.html.twig', array(
@@ -202,7 +202,7 @@ class SageController extends Controller
 	{		
 		return $this->render('KryptosSageBundle:Sage:notify.html.twig', array(
 				'Status' 		=> 'INVALID',
-				'RedirectURL' 	=> $this ->makeFailRedirect(),
+				'RedirectURL' 	=> $this ->makeFailRedirect($request),
 				'StatusDetail' 	=> $error,
 				'CRLF'			=> "\r\n",
 		));
@@ -213,7 +213,7 @@ class SageController extends Controller
 	{
 		return $this->render('KryptosSageBundle:Sage:notify.html.twig', array(
 				'Status' 		=> 'ERROR',
-				'RedirectURL' 	=> $this ->makeFailRedirect(),
+				'RedirectURL' 	=> $this ->makeFailRedirect($request),
 				'StatusDetail' 	=> $error,
 				'CRLF'			=> "\r\n",
 		));
@@ -222,25 +222,25 @@ class SageController extends Controller
 	
 	
 	
-	public function makePassRedirect()
+	public function makePassRedirect(Request $request)
 	{
 		$baseUrl 		= $this->get('config_manager')->get('site|url');
 		$route 			= $this->get('config_manager')->get('sagepay|RedirectURLPass');
 		$queryString	= $this->makeQueryString();
-		return sprintf('%s%s%s%s', $this->getProtocol(), $baseUrl, $this->generateUrl($route), $queryString);
+		return sprintf('%s%s%s%s', $this->getProtocol($request), $baseUrl, $this->generateUrl($route), $queryString);
 	}
 	
-	public function makeFailRedirect()
+	public function makeFailRedirect(Request $request)
 	{
 		$baseUrl 		= $this->get('config_manager')->get('site|url');
 		$route 			= $this->get('config_manager')->get('sagepay|RedirectURLFail');
 		$queryString	= $this->makeQueryString();
-		return sprintf('%s%s%s%s', $this->getProtocol(), $baseUrl, $this->generateUrl($route), $queryString);
+		return sprintf('%s%s%s%s', $this->getProtocol($request), $baseUrl, $this->generateUrl($route), $queryString);
 	}
 	
-	public function getProtocol()
+	public function getProtocol(Request $request)
 	{
-		return strtolower(substr($_SERVER["SERVER_PROTOCOL"],0,5))=='https'? 'https://' : 'http://';
+		return $request->isSecure() ? 'https://' : 'http://';
 	}
 	
 	
