@@ -14,8 +14,12 @@ parameters:
     url:                       'sepa.kryptossystems.com'
     email_activate_from:       'activations@kryptossystems.com'
     email_activate_fromname:   'Kryptos'
+    email_activate_sender:     'activations@sepa.kryptossystems.com'
+    email_activate_sendername: 'Kryptos'
     password_reset_from:       'passwords@kryptossystems.com'
     password_reset_fromname:   'Kryptos'
+    password_reset_sender:     'passwords@sepa.kryptossystems.com'
+    password_reset_sendername: 'Kryptos'
     tmp_path:                  '/var/www/vhosts/kryptossystems.com/tmp/'
     csv_template_server_path:  '/var/www/vhosts/kryptossystems.com/sepa.kryptossystems.com/src/Kryptos/KryptosBundle/Resources/public/template'
     csv_template_filename:     'batch_conversion_template.csv'
@@ -64,10 +68,11 @@ parameters:
 
 
   sagepay:
-    PaymentUrl:              https://test.sagepay.com/Simulator/VSPServerGateway.asp?Service=VendorRegisterTx
-#    PaymentUrl:              https://test.sagepay.com/gateway/service/vspserver-register.vsp
+#    PaymentUrl:              https://test.sagepay.com/Simulator/VSPServerGateway.asp?Service=VendorRegisterTx
+    PaymentUrl:              https://test.sagepay.com/gateway/service/vspserver-register.vsp
+#    PaymentUrl:              https://live.sagepay.com/gateway/service/vspserver-register.vsp
     VPSProtocol:             2.23
-    Vendor:                  kryptos
+    Vendor:                  kryptossyste899
 #    Vendor:                  everyonelovesca
 #    Currency:                GBP
     Currency:                EUR

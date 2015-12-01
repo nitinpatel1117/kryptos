@@ -142,7 +142,7 @@ class RegistrationForm extends AbstractType
 			'constraints' => array(
 				new NotBlank(),
 				new Length(array(
-					'min' => 4, 
+					'min' => 8, 
 					'max' => 20,
 					'maxMessage' => 'msg_title_invalid_password|msg_desc_password_too_long',
 					'minMessage' => 'msg_title_invalid_password|msg_desc_password_too_short',

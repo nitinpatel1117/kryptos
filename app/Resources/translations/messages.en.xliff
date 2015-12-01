@@ -2812,7 +2812,7 @@
             </trans-unit>			
 			<trans-unit id="703">
                 <source>email_subject_password_reset</source>
-                <target><![CDATA[Kryptos: Password Reset]]></target>
+                <target><![CDATA[Kryptos: Password Reset?]]></target>
             </trans-unit>			
 			<trans-unit id="704">
                 <source>email_body_password_reset_1</source>
@@ -3291,1260 +3291,1268 @@
                 <target><![CDATA[Choose a country]]></target>
             </trans-unit>			
 			<trans-unit id="823">
+                <source>txt_invoice</source>
+                <target><![CDATA[Invoice]]></target>
+            </trans-unit>			
+			<trans-unit id="824">
                 <source>txt_accept_terms</source>
                 <target><![CDATA[I accept the <a href="#modalTermsConditions" data-toggle="modal">terms and conditions</a>]]></target>
             </trans-unit>			
-			<trans-unit id="824">
+			<trans-unit id="825">
+                <source>txt_check_spam_folder</source>
+                <target><![CDATA[If you do not receive an email from us, please make sure to check your spam and junk folders.]]></target>
+            </trans-unit>			
+			<trans-unit id="826">
                 <source>warn_1_action</source>
                 <target><![CDATA[Use the transposed details that Kryptos returns and use this for further processings.]]></target>
             </trans-unit>			
-			<trans-unit id="825">
+			<trans-unit id="827">
                 <source>warn_1_code</source>
                 <target><![CDATA[BWG_W_TRANSPOSED]]></target>
             </trans-unit>			
-			<trans-unit id="826">
+			<trans-unit id="828">
                 <source>warn_1_desc</source>
                 <target><![CDATA[Kryptos has standardised the bank account details in a format that can be electronically processed.]]></target>
             </trans-unit>			
-			<trans-unit id="827">
+			<trans-unit id="829">
                 <source>warn_1_user_message</source>
                 <target><![CDATA[The Bank Account provided has been standardised in a format that can be electronically processed. Please use the updated bank account details to successfully process the payment/collection.]]></target>
             </trans-unit>			
-			<trans-unit id="828">
+			<trans-unit id="830">
                 <source>warn_100_action</source>
                 <target><![CDATA[Depends on payment channel.]]></target>
             </trans-unit>			
-			<trans-unit id="829">
+			<trans-unit id="831">
                 <source>warn_100_code</source>
                 <target><![CDATA[100]]></target>
             </trans-unit>			
-			<trans-unit id="830">
+			<trans-unit id="832">
                 <source>warn_100_desc</source>
                 <target><![CDATA[This bank branch does not accept FPS payments.]]></target>
             </trans-unit>			
-			<trans-unit id="831">
+			<trans-unit id="833">
                 <source>warn_100_user_message</source>
                 <target><![CDATA[The bank/branch does not support Faster Payments. It is suggested you use an alternative payment mechanism to avoid rejection.]]></target>
             </trans-unit>			
-			<trans-unit id="832">
+			<trans-unit id="834">
                 <source>warn_101_action</source>
                 <target><![CDATA[Depends on payment channel.]]></target>
             </trans-unit>			
-			<trans-unit id="833">
+			<trans-unit id="835">
                 <source>warn_101_code</source>
                 <target><![CDATA[101]]></target>
             </trans-unit>			
-			<trans-unit id="834">
+			<trans-unit id="836">
                 <source>warn_101_desc</source>
                 <target><![CDATA[This account does not accept FPS payments.]]></target>
             </trans-unit>			
-			<trans-unit id="835">
+			<trans-unit id="837">
                 <source>warn_101_user_message</source>
                 <target><![CDATA[The account does not support Faster Payments. It is suggested you use an alternative payment mechanism to avoid rejection.]]></target>
             </trans-unit>			
-			<trans-unit id="836">
+			<trans-unit id="838">
                 <source>warn_102_action</source>
                 <target><![CDATA[Depends on payment channel.]]></target>
             </trans-unit>			
-			<trans-unit id="837">
+			<trans-unit id="839">
                 <source>warn_102_code</source>
                 <target><![CDATA[102]]></target>
             </trans-unit>			
-			<trans-unit id="838">
+			<trans-unit id="840">
                 <source>warn_102_desc</source>
                 <target><![CDATA[This bank branch is a direct agency participant within Faster Payments.]]></target>
             </trans-unit>			
-			<trans-unit id="839">
+			<trans-unit id="841">
                 <source>warn_102_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="840">
+			<trans-unit id="842">
                 <source>warn_103_action</source>
                 <target><![CDATA[Depends on payment channel.]]></target>
             </trans-unit>			
-			<trans-unit id="841">
+			<trans-unit id="843">
                 <source>warn_103_code</source>
                 <target><![CDATA[103]]></target>
             </trans-unit>			
-			<trans-unit id="842">
+			<trans-unit id="844">
                 <source>warn_103_desc</source>
                 <target><![CDATA[This bank branch is an indirect agency participant within Faster Payments.]]></target>
             </trans-unit>			
-			<trans-unit id="843">
+			<trans-unit id="845">
                 <source>warn_103_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="844">
+			<trans-unit id="846">
                 <source>warn_104_action</source>
                 <target><![CDATA[Depends on payment channel.]]></target>
             </trans-unit>			
-			<trans-unit id="845">
+			<trans-unit id="847">
                 <source>warn_104_code</source>
                 <target><![CDATA[104]]></target>
             </trans-unit>			
-			<trans-unit id="846">
+			<trans-unit id="848">
                 <source>warn_104_desc</source>
                 <target><![CDATA[This bank branch will be closing for Faster Payments clearing within 30 days.]]></target>
             </trans-unit>			
-			<trans-unit id="847">
+			<trans-unit id="849">
                 <source>warn_104_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="848">
+			<trans-unit id="850">
                 <source>warn_105_action</source>
                 <target><![CDATA[Depends on payment channel.]]></target>
             </trans-unit>			
-			<trans-unit id="849">
+			<trans-unit id="851">
                 <source>warn_105_code</source>
                 <target><![CDATA[105]]></target>
             </trans-unit>			
-			<trans-unit id="850">
+			<trans-unit id="852">
                 <source>warn_105_desc</source>
                 <target><![CDATA[This bank branch has been redirected to another sort code for Faster Payments.]]></target>
             </trans-unit>			
-			<trans-unit id="851">
+			<trans-unit id="853">
                 <source>warn_105_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="852">
+			<trans-unit id="854">
                 <source>warn_106_action</source>
                 <target><![CDATA[You must reject this payment because the sort code has been redirected and this account number is not valid for the new sort code.]]></target>
             </trans-unit>			
-			<trans-unit id="853">
+			<trans-unit id="855">
                 <source>warn_106_code</source>
                 <target><![CDATA[106]]></target>
             </trans-unit>			
-			<trans-unit id="854">
+			<trans-unit id="856">
                 <source>warn_106_desc</source>
                 <target><![CDATA[This sort code has been redirected and all account numbers have been renumbered.]]></target>
             </trans-unit>			
-			<trans-unit id="855">
+			<trans-unit id="857">
                 <source>warn_106_user_message</source>
                 <target><![CDATA[The bank account details no longer exist. Please contact your bank to get updated details or provide details for an additional account.]]></target>
             </trans-unit>			
-			<trans-unit id="856">
+			<trans-unit id="858">
                 <source>warn_11_action</source>
                 <target><![CDATA[If its a 'one-off' transaction then process it as 'business as usual'. If however it is a recurring payment/collection, then it might be worth asking the user to check the details with their bank before proceeding.]]></target>
             </trans-unit>			
-			<trans-unit id="857">
+			<trans-unit id="859">
                 <source>warn_11_code</source>
                 <target><![CDATA[BWG_W_BRANCH_TRANSFERRING]]></target>
             </trans-unit>			
-			<trans-unit id="858">
+			<trans-unit id="860">
                 <source>warn_11_desc</source>
                 <target><![CDATA[Processing of payments to/from the given account is in the process of being transferred to a different branch.]]></target>
             </trans-unit>			
-			<trans-unit id="859">
+			<trans-unit id="861">
                 <source>warn_11_user_message</source>
                 <target><![CDATA[The branch that has issued the provided bank account is due to close and all transactions are to be handled by an alternative branch. If its a 'one-off' payment/collection then you should be ok. If however it is a reccuring payment/collection then it is suggested that you obtain an alternative/updated bank account.]]></target>
             </trans-unit>			
-			<trans-unit id="860">
+			<trans-unit id="862">
                 <source>warn_14_action</source>
                 <target><![CDATA[Ask user to provide a valid BIC prior.]]></target>
             </trans-unit>			
-			<trans-unit id="861">
+			<trans-unit id="863">
                 <source>warn_14_code</source>
                 <target><![CDATA[BWG_W_TEST_ONLY]]></target>
             </trans-unit>			
-			<trans-unit id="862">
+			<trans-unit id="864">
                 <source>warn_14_desc</source>
                 <target><![CDATA[The BIC provided is for test purposes only.]]></target>
             </trans-unit>			
-			<trans-unit id="863">
+			<trans-unit id="865">
                 <source>warn_14_user_message</source>
                 <target><![CDATA[The BIC provided has been identified as a Test BIC. Please provide a valid BIC.]]></target>
             </trans-unit>			
-			<trans-unit id="864">
+			<trans-unit id="866">
                 <source>warn_15_action</source>
                 <target><![CDATA[Payment will not be processed sucessfully if payment is to be processed via SWIFT. Payment could be routed via an alternative branch.]]></target>
             </trans-unit>			
-			<trans-unit id="865">
+			<trans-unit id="867">
                 <source>warn_15_code</source>
                 <target><![CDATA[BWG_W_NOT_SWIFT_BIC]]></target>
             </trans-unit>			
-			<trans-unit id="866">
+			<trans-unit id="868">
                 <source>warn_15_desc</source>
                 <target><![CDATA[The BIC provided is not connected to the SWIFT network.]]></target>
             </trans-unit>			
-			<trans-unit id="867">
+			<trans-unit id="869">
                 <source>warn_15_user_message</source>
                 <target><![CDATA[The BIC provided is not connected to the SWIFT network. If you are processing the payment/collection under SWIFT then it may be rejected. It is suggested that you process the payment via an alternative payment mechanism.]]></target>
             </trans-unit>			
-			<trans-unit id="868">
+			<trans-unit id="870">
                 <source>warn_17_action</source>
                 <target><![CDATA[Process the payment as 'business as usual'.]]></target>
             </trans-unit>			
-			<trans-unit id="869">
+			<trans-unit id="871">
                 <source>warn_17_code</source>
                 <target><![CDATA[BWG_W_IBAN_UNABLE_TO_DECOMPOSE]]></target>
             </trans-unit>			
-			<trans-unit id="870">
+			<trans-unit id="872">
                 <source>warn_17_desc</source>
                 <target><![CDATA[The bank account details provided may be correct, but do not follow the standard rules. Particularly Sweden and Portugal.]]></target>
             </trans-unit>			
-			<trans-unit id="871">
+			<trans-unit id="873">
                 <source>warn_17_user_message</source>
                 <target><![CDATA[The account details may be correct, but rules, data and intelligence used to perform an in-depth check are not available.]]></target>
             </trans-unit>			
-			<trans-unit id="872">
+			<trans-unit id="874">
                 <source>warn_18_action</source>
                 <target><![CDATA[Branch is not SEPA compliant for Credit Transfers (CT). If this is a SEPA transfer, reject the details. Otherwise, you can ignore this warning.]]></target>
             </trans-unit>			
-			<trans-unit id="873">
+			<trans-unit id="875">
                 <source>warn_18_code</source>
                 <target><![CDATA[BWG_W_SEPA_NO_CT]]></target>
             </trans-unit>			
-			<trans-unit id="874">
+			<trans-unit id="876">
                 <source>warn_18_desc</source>
                 <target><![CDATA[Branch is not SEPA compliant for Credit Transfers (CT). If this is a SEPA transfer, reject the details. Otherwise, you can ignore this warning.]]></target>
             </trans-unit>			
-			<trans-unit id="875">
+			<trans-unit id="877">
                 <source>warn_18_user_message</source>
                 <target><![CDATA[The bank account details provided do not support SEPA Credit Transfer transactions and therefore it is suggested than an alternative bank account is used to avoid rejection.]]></target>
             </trans-unit>			
-			<trans-unit id="876">
+			<trans-unit id="878">
                 <source>warn_19_action</source>
                 <target><![CDATA[If this is a one-off SEPA Credit Transfer it is unlikely to be rejected. However, you should obtain an updated set of bank account details to avoid a rejection in the future.]]></target>
             </trans-unit>			
-			<trans-unit id="877">
+			<trans-unit id="879">
                 <source>warn_19_code</source>
                 <target><![CDATA[BWG_W_SEPA_CEASE_CT]]></target>
             </trans-unit>			
-			<trans-unit id="878">
+			<trans-unit id="880">
                 <source>warn_19_desc</source>
                 <target><![CDATA[Branch will cease to be SEPA compliant for Credit Transfers (CT) within 30 days.]]></target>
             </trans-unit>			
-			<trans-unit id="879">
+			<trans-unit id="881">
                 <source>warn_19_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="880">
+			<trans-unit id="882">
                 <source>warn_2_action</source>
                 <target><![CDATA[To be decided by the business based on the risk. Kryptos is able to validate the bank/branch code, but not the account number in its entirety.]]></target>
             </trans-unit>			
-			<trans-unit id="881">
+			<trans-unit id="883">
                 <source>warn_2_code</source>
                 <target><![CDATA[BWG_W_UNAVAILABLE_MODULUS]]></target>
             </trans-unit>			
-			<trans-unit id="882">
+			<trans-unit id="884">
                 <source>warn_2_desc</source>
                 <target><![CDATA[No modulus checking is available for the given branch.]]></target>
             </trans-unit>			
-			<trans-unit id="883">
+			<trans-unit id="885">
                 <source>warn_2_user_message</source>
                 <target><![CDATA[Rules typically used to perform a in-depth validation and conversion of the bank account details provided are not available. A basic check has been performed and standard rules have been used to perform the conversion.]]></target>
             </trans-unit>			
-			<trans-unit id="884">
+			<trans-unit id="886">
                 <source>warn_20_action</source>
                 <target><![CDATA[If this is a one-off SEPA Credit Transfer it is unlikely to be rejected. However, you should obtain an updated set of bank account details to avoid a rejection in the future.]]></target>
             </trans-unit>			
-			<trans-unit id="885">
+			<trans-unit id="887">
                 <source>warn_20_code</source>
                 <target><![CDATA[BWG_W_SEPA_NO_DD]]></target>
             </trans-unit>			
-			<trans-unit id="886">
+			<trans-unit id="888">
                 <source>warn_20_desc</source>
                 <target><![CDATA[Branch is not SEPA compliant for Direct Debits (DD). If this is a SEPA payment, reject the details. Otherwise, you can ignore this warning.]]></target>
             </trans-unit>			
-			<trans-unit id="887">
+			<trans-unit id="889">
                 <source>warn_20_user_message</source>
                 <target><![CDATA[The bank account details provided do not support SEPA Direct Debit transactions and therefore it is suggested than an alternative bank account is used to avoid rejection.]]></target>
             </trans-unit>			
-			<trans-unit id="888">
+			<trans-unit id="890">
                 <source>warn_21_action</source>
                 <target><![CDATA[If this is a one-off SEPA Direct Debit it is unlikely to be rejected. However, you should reject the details because they could be wrong in the future.]]></target>
             </trans-unit>			
-			<trans-unit id="889">
+			<trans-unit id="891">
                 <source>warn_21_code</source>
                 <target><![CDATA[BWG_W_SEPA_CEASE_DD]]></target>
             </trans-unit>			
-			<trans-unit id="890">
+			<trans-unit id="892">
                 <source>warn_21_desc</source>
                 <target><![CDATA[Branch will cease to be SEPA compliant for Direct Debits (DD) within 30 days.]]></target>
             </trans-unit>			
-			<trans-unit id="891">
+			<trans-unit id="893">
                 <source>warn_21_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="892">
+			<trans-unit id="894">
                 <source>warn_22_action</source>
                 <target><![CDATA[]]></target>
             </trans-unit>			
-			<trans-unit id="893">
+			<trans-unit id="895">
                 <source>warn_22_code</source>
                 <target><![CDATA[BWG_E_IBAN_NOT_SUPPORTED]]></target>
             </trans-unit>			
-			<trans-unit id="894">
+			<trans-unit id="896">
                 <source>warn_22_desc</source>
                 <target><![CDATA[The IBAN provided is for a country that does not support IBAN.]]></target>
             </trans-unit>			
-			<trans-unit id="895">
+			<trans-unit id="897">
                 <source>warn_22_user_message</source>
                 <target><![CDATA[The IBAN provided is incorrect, please check and try again.]]></target>
             </trans-unit>			
-			<trans-unit id="896">
+			<trans-unit id="898">
                 <source>warn_26_action</source>
                 <target><![CDATA[Process the payment as 'business as usual'.]]></target>
             </trans-unit>			
-			<trans-unit id="897">
+			<trans-unit id="899">
                 <source>warn_26_code</source>
                 <target><![CDATA[BWG_W_FOREIGN_CURRENCY_ACCT]]></target>
             </trans-unit>			
-			<trans-unit id="898">
+			<trans-unit id="900">
                 <source>warn_26_desc</source>
                 <target><![CDATA[The given account is a foreign currency account.]]></target>
             </trans-unit>			
-			<trans-unit id="899">
+			<trans-unit id="901">
                 <source>warn_26_user_message</source>
                 <target><![CDATA[The bank account details provided have been identified as a foreign currency account.]]></target>
             </trans-unit>			
-			<trans-unit id="900">
+			<trans-unit id="902">
                 <source>warn_3_action</source>
                 <target><![CDATA[To be decided by the business based on the risk. Kryptos is able to validate the bank/branch code, but not the account number in its entirety.]]></target>
             </trans-unit>			
-			<trans-unit id="901">
+			<trans-unit id="903">
                 <source>warn_3_code</source>
                 <target><![CDATA[BWG_W_NO_MODULUS]]></target>
             </trans-unit>			
-			<trans-unit id="902">
+			<trans-unit id="904">
                 <source>warn_3_desc</source>
                 <target><![CDATA[No modulus checking is available for the given branch.]]></target>
             </trans-unit>			
-			<trans-unit id="903">
+			<trans-unit id="905">
                 <source>warn_3_user_message</source>
                 <target><![CDATA[Rules typically used to perform a in-depth validation and conversion of the bank account details provided are not available. A basic check has been performed and standard rules have been used to perform the conversion.]]></target>
             </trans-unit>			
-			<trans-unit id="904">
+			<trans-unit id="906">
                 <source>warn_4_action</source>
                 <target><![CDATA[If its a 'one-off' transaction then process it as 'business as usual'. If however it is a recurring payment/collection, then it might be worth asking the user to check the details with their bank before proceeding.]]></target>
             </trans-unit>			
-			<trans-unit id="905">
+			<trans-unit id="907">
                 <source>warn_4_code</source>
                 <target><![CDATA[BWG_W_BRANCH_CLOSING]]></target>
             </trans-unit>			
-			<trans-unit id="906">
+			<trans-unit id="908">
                 <source>warn_4_desc</source>
                 <target><![CDATA[We have been informed that the given branch will be closing soon.]]></target>
             </trans-unit>			
-			<trans-unit id="907">
+			<trans-unit id="909">
                 <source>warn_4_user_message</source>
                 <target><![CDATA[The branch that has issued the provided bank account is due to close. If its a 'one-off' payment/collection then you should be ok. If however it is a recurring payment/collection then it is suggested that you obtain an alternative/updated bank account.]]></target>
             </trans-unit>			
-			<trans-unit id="908">
+			<trans-unit id="910">
                 <source>warn_47_action</source>
                 <target><![CDATA[Branch is not SEPA compliant for Business Direct Debit. If this is a SEPA Business DD, reject the details. Otherwise, you can ignore this warning.]]></target>
             </trans-unit>			
-			<trans-unit id="909">
+			<trans-unit id="911">
                 <source>warn_47_code</source>
                 <target><![CDATA[BWG_W_SEPA_NO_BD]]></target>
             </trans-unit>			
-			<trans-unit id="910">
+			<trans-unit id="912">
                 <source>warn_47_desc</source>
                 <target><![CDATA[Branch is not SEPA compliant for Business Direct Debits.]]></target>
             </trans-unit>			
-			<trans-unit id="911">
+			<trans-unit id="913">
                 <source>warn_47_user_message</source>
                 <target><![CDATA[The bank account details provided do not support SEPA Business Direct Debit transactions and therefore it is suggested than an alternative bank account is used to avoid rejection.]]></target>
             </trans-unit>			
-			<trans-unit id="912">
+			<trans-unit id="914">
                 <source>warn_48_action</source>
                 <target><![CDATA[If this is a one-off SEPA Business Direct Debit it is unlikely to be rejected. However, you should reject the details because they could be wrong in the future.]]></target>
             </trans-unit>			
-			<trans-unit id="913">
+			<trans-unit id="915">
                 <source>warn_48_code</source>
                 <target><![CDATA[BWG_W_SEPA_CEASE_BD]]></target>
             </trans-unit>			
-			<trans-unit id="914">
+			<trans-unit id="916">
                 <source>warn_48_desc</source>
                 <target><![CDATA[Branch will cease to be SEPA compliant for Business Direct Debits within 30 days.]]></target>
             </trans-unit>			
-			<trans-unit id="915">
+			<trans-unit id="917">
                 <source>warn_48_user_message</source>
                 <target><![CDATA[Branch will cease to be SEPA compliant for Business Direct Debits within 30 days.]]></target>
             </trans-unit>			
-			<trans-unit id="916">
+			<trans-unit id="918">
                 <source>warn_5_action</source>
                 <target><![CDATA[To be decided by the business based on the risk. Kryptos is able to validate the bank/branch code, but not the account number in its entirety.]]></target>
             </trans-unit>			
-			<trans-unit id="917">
+			<trans-unit id="919">
                 <source>warn_5_code</source>
                 <target><![CDATA[BWG_W_ACCOUNT_NO_DD]]></target>
             </trans-unit>			
-			<trans-unit id="918">
+			<trans-unit id="920">
                 <source>warn_5_desc</source>
                 <target><![CDATA[Modulus check algorithm is unavailable for these account details. This may be because Experian are awaiting the algorithm or because the bank does not have these checks or does not make them available.]]></target>
             </trans-unit>			
-			<trans-unit id="919">
+			<trans-unit id="921">
                 <source>warn_5_user_message</source>
                 <target><![CDATA[The account provided does not support Direct Debits. If you are looking to setup a Direct Debit using these account details then it may be rejected. It is suggested that you obtain an alternative bank account that does support Direct Debit or that you process the payment under an alternative scheme.]]></target>
             </trans-unit>			
-			<trans-unit id="920">
+			<trans-unit id="922">
                 <source>warn_6_action</source>
                 <target><![CDATA[Either accept the details and process the payment using an alternative channel, or reject the details and request an alternative bank account. If you are not collecting payments from your customers then you may choose to ignore this message.]]></target>
             </trans-unit>			
-			<trans-unit id="921">
+			<trans-unit id="923">
                 <source>warn_6_code</source>
                 <target><![CDATA[BWG_W_BRANCH_NO_DD]]></target>
             </trans-unit>			
-			<trans-unit id="922">
+			<trans-unit id="924">
                 <source>warn_6_desc</source>
                 <target><![CDATA[The account does not support domestic direct debit transactions (these are different from SEPA DD transactions).]]></target>
             </trans-unit>			
-			<trans-unit id="923">
+			<trans-unit id="925">
                 <source>warn_6_user_message</source>
                 <target><![CDATA[The branch that has issued the given bank account does not support Direct Debit. If you are looking to setup a Direct Debit using these account details then it will be rejected. It is suggested that you obtain an alternative bank account that does support Direct Debit or that you collect the payment using an alternative scheme.]]></target>
             </trans-unit>			
-			<trans-unit id="924">
+			<trans-unit id="926">
                 <source>warn_64A_action</source>
                 <target><![CDATA[Reject the details if you should not be using Foreign Currency Accounts for your application.]]></target>
             </trans-unit>			
-			<trans-unit id="925">
+			<trans-unit id="927">
                 <source>warn_64A_code</source>
                 <target><![CDATA[64]]></target>
             </trans-unit>			
-			<trans-unit id="926">
+			<trans-unit id="928">
                 <source>warn_64A_desc</source>
                 <target><![CDATA[Account is a Foreign Currency account.]]></target>
             </trans-unit>			
-			<trans-unit id="927">
+			<trans-unit id="929">
                 <source>warn_64A_user_message</source>
                 <target><![CDATA[The bank account has been identified as a foreign currency account.]]></target>
             </trans-unit>			
-			<trans-unit id="928">
+			<trans-unit id="930">
                 <source>warn_64B_action</source>
                 <target><![CDATA[Kryptos cannot confirm the validity of this account number. Manually reconfirm the account details before continuing. Typically, you should not treat this condition as an error.]]></target>
             </trans-unit>			
-			<trans-unit id="929">
+			<trans-unit id="931">
                 <source>warn_64B_code</source>
                 <target><![CDATA[64]]></target>
             </trans-unit>			
-			<trans-unit id="930">
+			<trans-unit id="932">
                 <source>warn_64B_desc</source>
                 <target><![CDATA[Modulus checking cannot be applied.
 This account cannot be modulus checked because the bank-branch code is 4 or 5 digits.]]></target>
             </trans-unit>			
-			<trans-unit id="931">
+			<trans-unit id="933">
                 <source>warn_64B_user_message</source>
                 <target><![CDATA[Bank account cannot be validated. Please reconfirm bank account.]]></target>
             </trans-unit>			
-			<trans-unit id="932">
+			<trans-unit id="934">
                 <source>warn_64C_action</source>
                 <target><![CDATA[Reconfirm the details.]]></target>
             </trans-unit>			
-			<trans-unit id="933">
+			<trans-unit id="935">
                 <source>warn_64C_code</source>
                 <target><![CDATA[64]]></target>
             </trans-unit>			
-			<trans-unit id="934">
+			<trans-unit id="936">
                 <source>warn_64C_desc</source>
                 <target><![CDATA[Sub-account number is ambiguous. This warning is returned if two different transpositions of the account number would pass modulus checking, therefore Kryptos cannot determine what the account number is, for example 532013000 or 005320130.]]></target>
             </trans-unit>			
-			<trans-unit id="935">
+			<trans-unit id="937">
                 <source>warn_64C_user_message</source>
                 <target><![CDATA[Sub-account number cannot be validated. Please check before processing.]]></target>
             </trans-unit>			
-			<trans-unit id="936">
+			<trans-unit id="938">
                 <source>warn_64D_action</source>
                 <target><![CDATA[If this is not an electronic payment, ignore this warning.]]></target>
             </trans-unit>			
-			<trans-unit id="937">
+			<trans-unit id="939">
                 <source>warn_64D_code</source>
                 <target><![CDATA[64]]></target>
             </trans-unit>			
-			<trans-unit id="938">
+			<trans-unit id="940">
                 <source>warn_64D_desc</source>
                 <target><![CDATA[The branch does not support electronic payment clearing.]]></target>
             </trans-unit>			
-			<trans-unit id="939">
+			<trans-unit id="941">
                 <source>warn_64D_user_message</source>
                 <target><![CDATA[The branch does not support electronic payment clearing.]]></target>
             </trans-unit>			
-			<trans-unit id="940">
+			<trans-unit id="942">
                 <source>warn_64E_action</source>
                 <target><![CDATA[If this is a one-off payment or Direct Debit collection on an existing account, it is unlikely to be rejected. However, you should reject the details because in the future they may not be valid.]]></target>
             </trans-unit>			
-			<trans-unit id="941">
+			<trans-unit id="943">
                 <source>warn_64E_code</source>
                 <target><![CDATA[64]]></target>
             </trans-unit>			
-			<trans-unit id="942">
+			<trans-unit id="944">
                 <source>warn_64E_desc</source>
                 <target><![CDATA[The bank-branch has been redirected.]]></target>
             </trans-unit>			
-			<trans-unit id="943">
+			<trans-unit id="945">
                 <source>warn_64E_user_message</source>
                 <target><![CDATA[The bank-branch has been redirected. Please use the updated bank account details for any electronic processing.]]></target>
             </trans-unit>			
-			<trans-unit id="944">
+			<trans-unit id="946">
                 <source>warn_64F_action</source>
                 <target><![CDATA[If this is a one-off payment or a direct debit or credit on an existing account, it is unlikely to be rejected. However, you should reject the details because they could be wrong in the future.]]></target>
             </trans-unit>			
-			<trans-unit id="945">
+			<trans-unit id="947">
                 <source>warn_64F_code</source>
                 <target><![CDATA[64]]></target>
             </trans-unit>			
-			<trans-unit id="946">
+			<trans-unit id="948">
                 <source>warn_64F_desc</source>
                 <target><![CDATA[This bank-branch code is now linked to the new BC number and will be closed in the future.]]></target>
             </trans-unit>			
-			<trans-unit id="947">
+			<trans-unit id="949">
                 <source>warn_64F_user_message</source>
                 <target><![CDATA[This bank-branch code is now linked to the new Bank Code number and will be closed in the future. If this is a one-off payment or collection it is unlikely to be rejected. However, you should re-check these details with the account holder before any future payment/collection.]]></target>
             </trans-unit>			
-			<trans-unit id="948">
+			<trans-unit id="950">
                 <source>warn_65A_action</source>
                 <target><![CDATA[Check the details are correct, and if so, determine the roll number required.]]></target>
             </trans-unit>			
-			<trans-unit id="949">
+			<trans-unit id="951">
                 <source>warn_65A_code</source>
                 <target><![CDATA[65]]></target>
             </trans-unit>			
-			<trans-unit id="950">
+			<trans-unit id="952">
                 <source>warn_65A_desc</source>
                 <target><![CDATA[Collection account requires a reference or roll account number. The account requires a reference or roll number to debit or credit the account.]]></target>
             </trans-unit>			
-			<trans-unit id="951">
+			<trans-unit id="953">
                 <source>warn_65A_user_message</source>
                 <target><![CDATA[The account requires a roll number or reference number to perform an electronic payment/collection. If no roll or reference number has been provided then obtain this prior to processing any payments.]]></target>
             </trans-unit>			
-			<trans-unit id="952">
+			<trans-unit id="954">
                 <source>warn_65B_action</source>
                 <target><![CDATA[If you need to use the bank-branch code you should reject the details. Otherwise ignore this warning.]]></target>
             </trans-unit>			
-			<trans-unit id="953">
+			<trans-unit id="955">
                 <source>warn_65B_code</source>
                 <target><![CDATA[65]]></target>
             </trans-unit>			
-			<trans-unit id="954">
+			<trans-unit id="956">
                 <source>warn_65B_desc</source>
                 <target><![CDATA[Account type for Nordea bank-branch is not recognised. This is generated when a branch has been found that matches the first 4 digits but the last 2 digits are not one of the recognised account type numbers for Nordea.]]></target>
             </trans-unit>			
-			<trans-unit id="955">
+			<trans-unit id="957">
                 <source>warn_65B_user_message</source>
                 <target><![CDATA[Account Type for bank-branch is not recognised. The first 4 digits appear to be valid, but the last 2 digits are invalid.]]></target>
             </trans-unit>			
-			<trans-unit id="956">
+			<trans-unit id="958">
                 <source>warn_65C_action</source>
                 <target><![CDATA[If this is not a cheque payment, ignore this warning.]]></target>
             </trans-unit>			
-			<trans-unit id="957">
+			<trans-unit id="959">
                 <source>warn_65C_code</source>
                 <target><![CDATA[65]]></target>
             </trans-unit>			
-			<trans-unit id="958">
+			<trans-unit id="960">
                 <source>warn_65C_desc</source>
                 <target><![CDATA[This branch does not support cheque clearing.]]></target>
             </trans-unit>			
-			<trans-unit id="959">
+			<trans-unit id="961">
                 <source>warn_65C_user_message</source>
                 <target><![CDATA[This branch does not support cheque clearing.]]></target>
             </trans-unit>			
-			<trans-unit id="960">
+			<trans-unit id="962">
                 <source>warn_65D_action</source>
                 <target><![CDATA[If this is a one-off payment or Direct Debit collection on an existing account, it is unlikely to be rejected. However, you should reject the details because in the future they may not be valid.]]></target>
             </trans-unit>			
-			<trans-unit id="961">
+			<trans-unit id="963">
                 <source>warn_65D_code</source>
                 <target><![CDATA[65]]></target>
             </trans-unit>			
-			<trans-unit id="962">
+			<trans-unit id="964">
                 <source>warn_65D_desc</source>
                 <target><![CDATA[This bank code is being taken over by another institution.]]></target>
             </trans-unit>			
-			<trans-unit id="963">
+			<trans-unit id="965">
                 <source>warn_65D_user_message</source>
                 <target><![CDATA[This bank code is being taken over by another institution. If this is a one-off payment or collection it is unlikely to be rejected. However, you should re-check these details with the account holder before any future payment/collection.]]></target>
             </trans-unit>			
-			<trans-unit id="964">
+			<trans-unit id="966">
                 <source>warn_65E_action</source>
                 <target><![CDATA[Ignore this message if the payment is not a Swiss Francs payment.]]></target>
             </trans-unit>			
-			<trans-unit id="965">
+			<trans-unit id="967">
                 <source>warn_65E_code</source>
                 <target><![CDATA[65]]></target>
             </trans-unit>			
-			<trans-unit id="966">
+			<trans-unit id="968">
                 <source>warn_65E_desc</source>
                 <target><![CDATA[Branch cannot participate in SIC using Swiss Francs.]]></target>
             </trans-unit>			
-			<trans-unit id="967">
+			<trans-unit id="969">
                 <source>warn_65E_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="968">
+			<trans-unit id="970">
                 <source>warn_66A_action</source>
                 <target><![CDATA[If you need the IBAN, reject the details. Otherwise ignore this warning.]]></target>
             </trans-unit>			
-			<trans-unit id="969">
+			<trans-unit id="971">
                 <source>warn_66A_code</source>
                 <target><![CDATA[66]]></target>
             </trans-unit>			
-			<trans-unit id="970">
+			<trans-unit id="972">
                 <source>warn_66A_desc</source>
                 <target><![CDATA[IBAN cannot be generated. The IBAN cannot be generated from a 4 or 5 digit bank-branch code.]]></target>
             </trans-unit>			
-			<trans-unit id="971">
+			<trans-unit id="973">
                 <source>warn_66A_user_message</source>
                 <target><![CDATA[IBAN cannot be generated. The IBAN cannot be generated from a 4 or 5 digit bank-branch code.]]></target>
             </trans-unit>			
-			<trans-unit id="972">
+			<trans-unit id="974">
                 <source>warn_66B_action</source>
                 <target><![CDATA[Ignore this message if this payment is not a direct debit.]]></target>
             </trans-unit>			
-			<trans-unit id="973">
+			<trans-unit id="975">
                 <source>warn_66B_code</source>
                 <target><![CDATA[66]]></target>
             </trans-unit>			
-			<trans-unit id="974">
+			<trans-unit id="976">
                 <source>warn_66B_desc</source>
                 <target><![CDATA[Branch cannot participate in SIC Direct Debits for Swiss Francs.]]></target>
             </trans-unit>			
-			<trans-unit id="975">
+			<trans-unit id="977">
                 <source>warn_66B_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="976">
+			<trans-unit id="978">
                 <source>warn_67A_action</source>
                 <target><![CDATA[For credit accounts this should not cause a problem. However, for AUDDIS instructions, either contact the branch or reject the details.]]></target>
             </trans-unit>			
-			<trans-unit id="977">
+			<trans-unit id="979">
                 <source>warn_67A_code</source>
                 <target><![CDATA[67]]></target>
             </trans-unit>			
-			<trans-unit id="978">
+			<trans-unit id="980">
                 <source>warn_67A_desc</source>
                 <target><![CDATA[Sort code does not support AUDDIS transactions.]]></target>
             </trans-unit>			
-			<trans-unit id="979">
+			<trans-unit id="981">
                 <source>warn_67A_user_message</source>
                 <target><![CDATA[Sort code does not support AUDDIS transactions. If the account details are for the setting up of an Automated Direct Debit instruction then the instruction may be rejected. Contact the account holder for alternative bank account details.]]></target>
             </trans-unit>			
-			<trans-unit id="980">
+			<trans-unit id="982">
                 <source>warn_67B_action</source>
                 <target><![CDATA[This message can be ignored if this payment is not in Swiss Francs or a direct credit.]]></target>
             </trans-unit>			
-			<trans-unit id="981">
+			<trans-unit id="983">
                 <source>warn_67B_code</source>
                 <target><![CDATA[67]]></target>
             </trans-unit>			
-			<trans-unit id="982">
+			<trans-unit id="984">
                 <source>warn_67B_desc</source>
                 <target><![CDATA[Branch cannot participate in SIC Direct Credits for Swiss Francs.]]></target>
             </trans-unit>			
-			<trans-unit id="983">
+			<trans-unit id="985">
                 <source>warn_67B_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="984">
+			<trans-unit id="986">
                 <source>warn_68_action</source>
                 <target><![CDATA[This message can be ignored if this is not a bank to bank transaction.]]></target>
             </trans-unit>			
-			<trans-unit id="985">
+			<trans-unit id="987">
                 <source>warn_68_code</source>
                 <target><![CDATA[68]]></target>
             </trans-unit>			
-			<trans-unit id="986">
+			<trans-unit id="988">
                 <source>warn_68_desc</source>
                 <target><![CDATA[Branch only accepts bank to bank transactions for Swiss francs.]]></target>
             </trans-unit>			
-			<trans-unit id="987">
+			<trans-unit id="989">
                 <source>warn_68_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="988">
+			<trans-unit id="990">
                 <source>warn_69_action</source>
                 <target><![CDATA[This message can be ignored if the payment is not a Euros payment.]]></target>
             </trans-unit>			
-			<trans-unit id="989">
+			<trans-unit id="991">
                 <source>warn_69_code</source>
                 <target><![CDATA[69]]></target>
             </trans-unit>			
-			<trans-unit id="990">
+			<trans-unit id="992">
                 <source>warn_69_desc</source>
                 <target><![CDATA[Branch cannot participate in SIC using Euros.]]></target>
             </trans-unit>			
-			<trans-unit id="991">
+			<trans-unit id="993">
                 <source>warn_69_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="992">
+			<trans-unit id="994">
                 <source>warn_7_action</source>
                 <target><![CDATA[Use the transposed details that Kryptos returns and use this for further processings.]]></target>
             </trans-unit>			
-			<trans-unit id="993">
+			<trans-unit id="995">
                 <source>warn_7_code</source>
                 <target><![CDATA[BWG_W_ACCOUNT_NO_DC]]></target>
             </trans-unit>			
-			<trans-unit id="994">
+			<trans-unit id="996">
                 <source>warn_7_desc</source>
                 <target><![CDATA[Account details were not in standard format and have been transposed.
 The transposition is performed according to rules for the issuing institution, for example converting all letters to upper case, removing separators, or by padding, typically with zeroes, to a fixed width. This is the standard message that Kryptos returns when any of the account details (including the bank and branch details) have been transposed to the format needed to transmit to the ACH. Whenever it is returned, recover the strings from the core by calling BWI_CC_TRANSPOSED]]></target>
             </trans-unit>			
-			<trans-unit id="995">
+			<trans-unit id="997">
                 <source>warn_7_user_message</source>
                 <target><![CDATA[The account details that you provided were not in standard format and have been standardised for electronic processing. Please use the updated bank account details.]]></target>
             </trans-unit>			
-			<trans-unit id="996">
+			<trans-unit id="998">
                 <source>warn_70_action</source>
                 <target><![CDATA[This message can be ignored if this payment is not a direct debit.]]></target>
             </trans-unit>			
-			<trans-unit id="997">
+			<trans-unit id="999">
                 <source>warn_70_code</source>
                 <target><![CDATA[70]]></target>
             </trans-unit>			
-			<trans-unit id="998">
+			<trans-unit id="1000">
                 <source>warn_70_desc</source>
                 <target><![CDATA[Branch cannot participate in SIC Direct Debits for Euros.]]></target>
             </trans-unit>			
-			<trans-unit id="999">
+			<trans-unit id="1001">
                 <source>warn_70_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="1000">
+			<trans-unit id="1002">
                 <source>warn_71_action</source>
                 <target><![CDATA[This message can be ignored if this payment is not a direct credit.]]></target>
             </trans-unit>			
-			<trans-unit id="1001">
+			<trans-unit id="1003">
                 <source>warn_71_code</source>
                 <target><![CDATA[71]]></target>
             </trans-unit>			
-			<trans-unit id="1002">
+			<trans-unit id="1004">
                 <source>warn_71_desc</source>
                 <target><![CDATA[Branch cannot participate in SIC Direct Credits for Euros.]]></target>
             </trans-unit>			
-			<trans-unit id="1003">
+			<trans-unit id="1005">
                 <source>warn_71_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="1004">
+			<trans-unit id="1006">
                 <source>warn_72_action</source>
                 <target><![CDATA[The sort code provided does not support credit transactions.]]></target>
             </trans-unit>			
-			<trans-unit id="1005">
+			<trans-unit id="1007">
                 <source>warn_72_code</source>
                 <target><![CDATA[72]]></target>
             </trans-unit>			
-			<trans-unit id="1006">
+			<trans-unit id="1008">
                 <source>warn_72_desc</source>
                 <target><![CDATA[Sort code does not support Building Society Credit transactions.]]></target>
             </trans-unit>			
-			<trans-unit id="1007">
+			<trans-unit id="1009">
                 <source>warn_72_user_message</source>
                 <target><![CDATA[The account details is not able to receive credit transactions. Please provide an alternative bank account that accepts credit transactions.]]></target>
             </trans-unit>			
-			<trans-unit id="1008">
+			<trans-unit id="1010">
                 <source>warn_73_action</source>
                 <target><![CDATA[If this limitation is a problem for your application, reject the details.]]></target>
             </trans-unit>			
-			<trans-unit id="1009">
+			<trans-unit id="1011">
                 <source>warn_73_code</source>
                 <target><![CDATA[73]]></target>
             </trans-unit>			
-			<trans-unit id="1010">
+			<trans-unit id="1012">
                 <source>warn_73_desc</source>
                 <target><![CDATA[Sort code does not support Dividend Interest Payment transactions.]]></target>
             </trans-unit>			
-			<trans-unit id="1011">
+			<trans-unit id="1013">
                 <source>warn_73_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="1012">
+			<trans-unit id="1014">
                 <source>warn_74_action</source>
                 <target><![CDATA[If this limitation is a problem for your application, reject the details.]]></target>
             </trans-unit>			
-			<trans-unit id="1013">
+			<trans-unit id="1015">
                 <source>warn_74_code</source>
                 <target><![CDATA[74]]></target>
             </trans-unit>			
-			<trans-unit id="1014">
+			<trans-unit id="1016">
                 <source>warn_74_desc</source>
                 <target><![CDATA[Account does not support Claims for Unpaid Cheque transactions.]]></target>
             </trans-unit>			
-			<trans-unit id="1015">
+			<trans-unit id="1017">
                 <source>warn_74_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="1016">
+			<trans-unit id="1018">
                 <source>warn_76_action</source>
                 <target><![CDATA[If this limitation is a problem for your application, reject the details.]]></target>
             </trans-unit>			
-			<trans-unit id="1017">
+			<trans-unit id="1019">
                 <source>warn_76_code</source>
                 <target><![CDATA[76]]></target>
             </trans-unit>			
-			<trans-unit id="1018">
+			<trans-unit id="1020">
                 <source>warn_76_desc</source>
                 <target><![CDATA[Account does not support Building Society Credit transactions.]]></target>
             </trans-unit>			
-			<trans-unit id="1019">
+			<trans-unit id="1021">
                 <source>warn_76_user_message</source>
                 <target><![CDATA[Depends on payment channel.]]></target>
             </trans-unit>			
-			<trans-unit id="1020">
+			<trans-unit id="1022">
                 <source>warn_77_action</source>
                 <target><![CDATA[If this limitation is a problem for your application, reject the details.]]></target>
             </trans-unit>			
-			<trans-unit id="1021">
+			<trans-unit id="1023">
                 <source>warn_77_code</source>
                 <target><![CDATA[77]]></target>
             </trans-unit>			
-			<trans-unit id="1022">
+			<trans-unit id="1024">
                 <source>warn_77_desc</source>
                 <target><![CDATA[Account does not support Dividend Interest Payment transactions.]]></target>
             </trans-unit>			
-			<trans-unit id="1023">
+			<trans-unit id="1025">
                 <source>warn_77_user_message</source>
                 <target><![CDATA[None.]]></target>
             </trans-unit>			
-			<trans-unit id="1024">
+			<trans-unit id="1026">
                 <source>warn_78_action</source>
                 <target><![CDATA[]]></target>
             </trans-unit>			
-			<trans-unit id="1025">
+			<trans-unit id="1027">
                 <source>warn_78_code</source>
                 <target><![CDATA[78]]></target>
             </trans-unit>			
-			<trans-unit id="1026">
+			<trans-unit id="1028">
                 <source>warn_78_desc</source>
                 <target><![CDATA[Account does not support AUDDIS transactions.]]></target>
             </trans-unit>			
-			<trans-unit id="1027">
+			<trans-unit id="1029">
                 <source>warn_78_user_message</source>
                 <target><![CDATA[Account does not support AUDDIS transactions. If the account details are for the setting up of an Automated Direct Debit instruction then the instruction may be rejected. Contact the account holder for alternative bank account details.]]></target>
             </trans-unit>			
-			<trans-unit id="1028">
+			<trans-unit id="1030">
                 <source>warn_8_action</source>
                 <target><![CDATA[Either accept the details and process the payment using an alternative channel, or reject the details and request an alternative bank account.]]></target>
             </trans-unit>			
-			<trans-unit id="1029">
+			<trans-unit id="1031">
                 <source>warn_8_code</source>
                 <target><![CDATA[BWG_W_BRANCH_NO_DC]]></target>
             </trans-unit>			
-			<trans-unit id="1030">
+			<trans-unit id="1032">
                 <source>warn_8_desc</source>
                 <target><![CDATA[The account does not support domestic direct credit transactions (these are different from SEPA CT transactions).]]></target>
             </trans-unit>			
-			<trans-unit id="1031">
+			<trans-unit id="1033">
                 <source>warn_8_user_message</source>
                 <target><![CDATA[The branch does not support Direct Credits. If you are looking to setup a Direct Credit using these account details then it may be rejected. It is suggested that you obtain an alternative bank account that does support Direct Credit or process the payment using an alternative payment scheme.]]></target>
             </trans-unit>			
-			<trans-unit id="1032">
+			<trans-unit id="1034">
                 <source>warn_90_action</source>
                 <target><![CDATA[Manually reconfirm the roll number before continuing. Do not treat this condition as an error.]]></target>
             </trans-unit>			
-			<trans-unit id="1033">
+			<trans-unit id="1035">
                 <source>warn_90_code</source>
                 <target><![CDATA[90]]></target>
             </trans-unit>			
-			<trans-unit id="1034">
+			<trans-unit id="1036">
                 <source>warn_90_desc</source>
                 <target><![CDATA[Roll number modulus check algorithm is unavailable for these account details. The institution has not provided a modulus checking rule for the roll number, but has not confirmed that one does not exist. This can only occur when performing a roll number check.]]></target>
             </trans-unit>			
-			<trans-unit id="1035">
+			<trans-unit id="1037">
                 <source>warn_90_user_message</source>
                 <target><![CDATA[Rules, data and intelligence required to validate the roll number are unavailable for these account details.]]></target>
             </trans-unit>			
-			<trans-unit id="1036">
+			<trans-unit id="1038">
                 <source>warn_91_action</source>
                 <target><![CDATA[Manually reconfirm the roll number before continuing. Do not treat this condition as an error.]]></target>
             </trans-unit>			
-			<trans-unit id="1037">
+			<trans-unit id="1039">
                 <source>warn_91_code</source>
                 <target><![CDATA[91]]></target>
             </trans-unit>			
-			<trans-unit id="1038">
+			<trans-unit id="1040">
                 <source>warn_91_desc</source>
                 <target><![CDATA[Roll number does not use a modulus check algorithm. The institution has confirmed that there is no modulus checking rule that can be applied to validate the roll number. This can only occur when performing a roll number check.]]></target>
             </trans-unit>			
-			<trans-unit id="1039">
+			<trans-unit id="1041">
                 <source>warn_91_user_message</source>
                 <target><![CDATA[Rules, data and intelligence required to validate the roll number are unavailable for these account details.]]></target>
             </trans-unit>			
-			<trans-unit id="1040">
+			<trans-unit id="1042">
                 <source>warn_92_action</source>
                 <target><![CDATA[Manually reconfirm the roll number before continuing. Do not treat this condition as an error.]]></target>
             </trans-unit>			
-			<trans-unit id="1041">
+			<trans-unit id="1043">
                 <source>warn_92_code</source>
                 <target><![CDATA[92]]></target>
             </trans-unit>			
-			<trans-unit id="1042">
+			<trans-unit id="1044">
                 <source>warn_92_desc</source>
                 <target><![CDATA[Roll number format check is unavailable for these account details. The institution has not provided a format rule for the roll number, but has not confirmed that one does not exist. This can only occur when performing a roll number check.]]></target>
             </trans-unit>			
-			<trans-unit id="1043">
+			<trans-unit id="1045">
                 <source>warn_92_user_message</source>
                 <target><![CDATA[Rules, data and intelligence required to validate the roll number are unavailable for these account details.]]></target>
             </trans-unit>			
-			<trans-unit id="1044">
+			<trans-unit id="1046">
                 <source>warn_93_action</source>
                 <target><![CDATA[Manually reconfirm the roll number details before continuing. Do not treat this condition as an error.]]></target>
             </trans-unit>			
-			<trans-unit id="1045">
+			<trans-unit id="1047">
                 <source>warn_93_code</source>
                 <target><![CDATA[93]]></target>
             </trans-unit>			
-			<trans-unit id="1046">
+			<trans-unit id="1048">
                 <source>warn_93_desc</source>
                 <target><![CDATA[Roll number does not use a format check. The institution has confirmed that there is no format rule that can be applied to validate the roll number. This can only occur when performing a roll number check.]]></target>
             </trans-unit>			
-			<trans-unit id="1047">
+			<trans-unit id="1049">
                 <source>warn_93_user_message</source>
                 <target><![CDATA[Rules, data and intelligence required to validate the roll number are unavailable for these account details.]]></target>
             </trans-unit>			
-			<trans-unit id="1048">
+			<trans-unit id="1050">
                 <source>warn_94_action</source>
                 <target><![CDATA[Manually reconfirm the roll number details before continuing. Do not treat this condition as an error.]]></target>
             </trans-unit>			
-			<trans-unit id="1049">
+			<trans-unit id="1051">
                 <source>warn_94_code</source>
                 <target><![CDATA[94]]></target>
             </trans-unit>			
-			<trans-unit id="1050">
+			<trans-unit id="1052">
                 <source>warn_94_desc</source>
                 <target><![CDATA[Roll number information is unavailable for these account details. The sort code and account number are not in the Kryptos database and therefore the roll number cannot be validated. This can only occur when performing a roll number check.]]></target>
             </trans-unit>			
-			<trans-unit id="1051">
+			<trans-unit id="1053">
                 <source>warn_94_user_message</source>
                 <target><![CDATA[Roll number information is unavailable for these account details. The bank account has been identified as invalid and therefore the roll number cannot be validated]]></target>
             </trans-unit>			
-			<trans-unit id="1052">
+			<trans-unit id="1054">
                 <source>warn_95_action</source>
                 <target><![CDATA[Use the converted roll number in further processings.]]></target>
             </trans-unit>			
-			<trans-unit id="1053">
+			<trans-unit id="1055">
                 <source>warn_95_code</source>
                 <target><![CDATA[95]]></target>
             </trans-unit>			
-			<trans-unit id="1054">
+			<trans-unit id="1056">
                 <source>warn_95_desc</source>
                 <target><![CDATA[Non Bacs characters in the roll number were converted to spaces. This can only occur when performing a roll number check.]]></target>
             </trans-unit>			
-			<trans-unit id="1055">
+			<trans-unit id="1057">
                 <source>warn_95_user_message</source>
                 <target><![CDATA[The bank account details provided were not in standard format. All non BACS characters have been removed to avoid rejection.]]></target>
             </trans-unit>			
-			<trans-unit id="1056">
+			<trans-unit id="1058">
                 <source>btn_create_account</source>
                 <target><![CDATA[Create account]]></target>
             </trans-unit>			
-			<trans-unit id="1057">
+			<trans-unit id="1059">
                 <source>btn_login</source>
                 <target><![CDATA[login]]></target>
             </trans-unit>			
-			<trans-unit id="1058">
+			<trans-unit id="1060">
                 <source>btn_reset_password</source>
                 <target><![CDATA[Reset Password]]></target>
             </trans-unit>			
-			<trans-unit id="1059">
+			<trans-unit id="1061">
                 <source>btn_signup</source>
                 <target><![CDATA[Sign-up]]></target>
             </trans-unit>			
-			<trans-unit id="1060">
+			<trans-unit id="1062">
                 <source>txt_account</source>
                 <target><![CDATA[Account]]></target>
             </trans-unit>			
-			<trans-unit id="1061">
+			<trans-unit id="1063">
                 <source>txt_account_history</source>
                 <target><![CDATA[Payment History]]></target>
             </trans-unit>			
-			<trans-unit id="1062">
+			<trans-unit id="1064">
                 <source>txt_back_to_login</source>
                 <target><![CDATA[Back to login]]></target>
             </trans-unit>			
-			<trans-unit id="1063">
+			<trans-unit id="1065">
                 <source>txt_balance</source>
                 <target><![CDATA[Balance]]></target>
             </trans-unit>			
-			<trans-unit id="1064">
+			<trans-unit id="1066">
                 <source>txt_batch_conversion</source>
                 <target><![CDATA[Batch Conversion]]></target>
             </trans-unit>			
-			<trans-unit id="1065">
+			<trans-unit id="1067">
                 <source>txt_browse</source>
                 <target><![CDATA[Browse]]></target>
             </trans-unit>			
-			<trans-unit id="1066">
+			<trans-unit id="1068">
                 <source>txt_captcha_new_image</source>
                 <target><![CDATA[New image]]></target>
             </trans-unit>			
-			<trans-unit id="1067">
+			<trans-unit id="1069">
                 <source>txt_captcha_type_the</source>
                 <target><![CDATA[Type the characters you see in the picture below.]]></target>
             </trans-unit>			
-			<trans-unit id="1068">
+			<trans-unit id="1070">
                 <source>txt_company</source>
                 <target><![CDATA[Company]]></target>
             </trans-unit>			
-			<trans-unit id="1069">
+			<trans-unit id="1071">
                 <source>txt_confirm_email</source>
                 <target><![CDATA[Confirm Email]]></target>
             </trans-unit>			
-			<trans-unit id="1070">
+			<trans-unit id="1072">
                 <source>txt_confirm_password</source>
                 <target><![CDATA[Confirm Password]]></target>
             </trans-unit>			
-			<trans-unit id="1071">
+			<trans-unit id="1073">
                 <source>txt_conversion_summary</source>
                 <target><![CDATA[Conversion Summary]]></target>
             </trans-unit>			
-			<trans-unit id="1072">
+			<trans-unit id="1074">
                 <source>txt_conversions</source>
                 <target><![CDATA[Conversions]]></target>
             </trans-unit>			
-			<trans-unit id="1073">
+			<trans-unit id="1075">
                 <source>txt_convert</source>
                 <target><![CDATA[Convert]]></target>
             </trans-unit>			
-			<trans-unit id="1074">
+			<trans-unit id="1076">
                 <source>txt_converted_successfully</source>
                 <target><![CDATA[Converted Sucessfully]]></target>
             </trans-unit>			
-			<trans-unit id="1075">
+			<trans-unit id="1077">
                 <source>txt_cost_price</source>
                 <target><![CDATA[Cost Price]]></target>
             </trans-unit>			
-			<trans-unit id="1076">
+			<trans-unit id="1078">
                 <source>txt_credit</source>
                 <target><![CDATA[Credit]]></target>
             </trans-unit>			
-			<trans-unit id="1077">
+			<trans-unit id="1079">
                 <source>txt_datetime</source>
                 <target><![CDATA[Date/time]]></target>
             </trans-unit>			
-			<trans-unit id="1078">
+			<trans-unit id="1080">
                 <source>txt_debit</source>
                 <target><![CDATA[Debit]]></target>
             </trans-unit>			
-			<trans-unit id="1079">
+			<trans-unit id="1081">
                 <source>txt_download</source>
                 <target><![CDATA[Download]]></target>
             </trans-unit>			
-			<trans-unit id="1080">
+			<trans-unit id="1082">
                 <source>txt_download_file</source>
                 <target><![CDATA[Download File]]></target>
             </trans-unit>			
-			<trans-unit id="1081">
+			<trans-unit id="1083">
                 <source>txt_email</source>
                 <target><![CDATA[Email]]></target>
             </trans-unit>			
-			<trans-unit id="1082">
+			<trans-unit id="1084">
                 <source>txt_failed</source>
                 <target><![CDATA[Failed]]></target>
             </trans-unit>			
-			<trans-unit id="1083">
+			<trans-unit id="1085">
                 <source>txt_file_status_and_history</source>
                 <target><![CDATA[3. File status and History]]></target>
             </trans-unit>			
-			<trans-unit id="1084">
+			<trans-unit id="1086">
                 <source>txt_filename</source>
                 <target><![CDATA[Filename]]></target>
             </trans-unit>			
-			<trans-unit id="1085">
+			<trans-unit id="1087">
                 <source>txt_firstname</source>
                 <target><![CDATA[Firstname]]></target>
             </trans-unit>			
-			<trans-unit id="1086">
+			<trans-unit id="1088">
                 <source>txt_forename</source>
                 <target><![CDATA[Forename]]></target>
             </trans-unit>			
-			<trans-unit id="1087">
+			<trans-unit id="1089">
                 <source>txt_forgotten_your_password</source>
                 <target><![CDATA[Forgotten your password?]]></target>
             </trans-unit>			
-			<trans-unit id="1088">
+			<trans-unit id="1090">
                 <source>txt_help</source>
                 <target><![CDATA[Help]]></target>
             </trans-unit>			
-			<trans-unit id="1089">
+			<trans-unit id="1091">
                 <source>txt_home</source>
                 <target><![CDATA[Home]]></target>
             </trans-unit>			
-			<trans-unit id="1090">
+			<trans-unit id="1092">
                 <source>txt_insufficient_funds</source>
                 <target><![CDATA[Insufficient Funds]]></target>
             </trans-unit>			
-			<trans-unit id="1091">
+			<trans-unit id="1093">
                 <source>txt_invalid</source>
                 <target><![CDATA[Invalid]]></target>
             </trans-unit>			
-			<trans-unit id="1092">
+			<trans-unit id="1094">
                 <source>txt_job_title</source>
-                <target><![CDATA[Job title]]></target>
+                <target><![CDATA[Job Title]]></target>
             </trans-unit>			
-			<trans-unit id="1093">
+			<trans-unit id="1095">
                 <source>txt_lastname</source>
                 <target><![CDATA[Lastname]]></target>
             </trans-unit>			
-			<trans-unit id="1094">
+			<trans-unit id="1096">
                 <source>txt_latest_sepa_news</source>
                 <target><![CDATA[Latest SEPA News]]></target>
             </trans-unit>			
-			<trans-unit id="1095">
+			<trans-unit id="1097">
                 <source>txt_location</source>
                 <target><![CDATA[Location]]></target>
             </trans-unit>			
-			<trans-unit id="1096">
+			<trans-unit id="1098">
                 <source>txt_logout</source>
                 <target><![CDATA[Logout]]></target>
             </trans-unit>			
-			<trans-unit id="1097">
+			<trans-unit id="1099">
                 <source>txt_no_of_conversions</source>
                 <target><![CDATA[No. of conversions]]></target>
             </trans-unit>			
-			<trans-unit id="1098">
+			<trans-unit id="1100">
                 <source>txt_ok</source>
                 <target><![CDATA[Ok]]></target>
             </trans-unit>			
-			<trans-unit id="1099">
+			<trans-unit id="1101">
                 <source>txt_old_password</source>
-                <target><![CDATA[old password]]></target>
+                <target><![CDATA[Old Password]]></target>
             </trans-unit>			
-			<trans-unit id="1100">
+			<trans-unit id="1102">
                 <source>txt_password</source>
                 <target><![CDATA[Password]]></target>
             </trans-unit>			
-			<trans-unit id="1101">
+			<trans-unit id="1103">
                 <source>txt_payment_failed</source>
                 <target><![CDATA[Payment Failed]]></target>
             </trans-unit>			
-			<trans-unit id="1102">
+			<trans-unit id="1104">
                 <source>txt_pending</source>
                 <target><![CDATA[Pending]]></target>
             </trans-unit>			
-			<trans-unit id="1103">
+			<trans-unit id="1105">
                 <source>txt_personal_details</source>
                 <target><![CDATA[Personal details]]></target>
             </trans-unit>			
-			<trans-unit id="1104">
+			<trans-unit id="1106">
                 <source>txt_prepare_your_file</source>
                 <target><![CDATA[1. Prepare your file]]></target>
             </trans-unit>			
-			<trans-unit id="1105">
+			<trans-unit id="1107">
                 <source>txt_prepare_your_list_of</source>
                 <target><![CDATA[Prepare a list of your account numbers using our template. Save a copy in case you need to edit it later]]></target>
             </trans-unit>			
-			<trans-unit id="1106">
+			<trans-unit id="1108">
                 <source>txt_purchase</source>
                 <target><![CDATA[Purchase]]></target>
             </trans-unit>			
-			<trans-unit id="1107">
+			<trans-unit id="1109">
                 <source>btn_purchase</source>
                 <target><![CDATA[Purchase]]></target>
             </trans-unit>			
-			<trans-unit id="1108">
+			<trans-unit id="1110">
                 <source>txt_purchase_conversions</source>
                 <target><![CDATA[Purchase Conversions]]></target>
             </trans-unit>			
-			<trans-unit id="1109">
+			<trans-unit id="1111">
                 <source>txt_purchase_details</source>
                 <target><![CDATA[Purchase Details]]></target>
             </trans-unit>			
-			<trans-unit id="1110">
+			<trans-unit id="1112">
                 <source>txt_save_the_worksheet</source>
                 <target><![CDATA[Save the worksheet containing your account number data as a .csv file and then upload it here.]]></target>
             </trans-unit>			
-			<trans-unit id="1111">
+			<trans-unit id="1113">
                 <source>txt_settings</source>
                 <target><![CDATA[Settings]]></target>
             </trans-unit>			
-			<trans-unit id="1112">
+			<trans-unit id="1114">
                 <source>txt_single_conversion</source>
                 <target><![CDATA[Single Conversion]]></target>
             </trans-unit>			
-			<trans-unit id="1113">
+			<trans-unit id="1115">
                 <source>txt_status</source>
                 <target><![CDATA[Status]]></target>
             </trans-unit>			
-			<trans-unit id="1114">
+			<trans-unit id="1116">
                 <source>txt_status_result</source>
                 <target><![CDATA[Status / Result]]></target>
             </trans-unit>			
-			<trans-unit id="1115">
+			<trans-unit id="1117">
                 <source>txt_surname</source>
                 <target><![CDATA[Surname]]></target>
             </trans-unit>			
-			<trans-unit id="1116">
+			<trans-unit id="1118">
                 <source>txt_terms_and_cond</source>
                 <target><![CDATA[By clicking "sign-up" below you acknowledge that you agree to our <a href="#modalTermsConditions" data-toggle="modal">Terms and conditions</a> and that you have read and agreed to our <a href="#modalDataUsePolicy" data-toggle="modal">Data use policy</a>, including our <a href="#modalCookieUse" data-toggle="modal">Cookie use policy</a>.]]></target>
             </trans-unit>			
-			<trans-unit id="1117">
+			<trans-unit id="1119">
                 <source>txt_title</source>
                 <target><![CDATA[Title]]></target>
             </trans-unit>			
-			<trans-unit id="1118">
+			<trans-unit id="1120">
                 <source>txt_total_cost</source>
                 <target><![CDATA[Total Cost]]></target>
             </trans-unit>			
-			<trans-unit id="1119">
+			<trans-unit id="1121">
                 <source>txt_total_cost_currency_euro</source>
                 <target><![CDATA[Total Cost (&euro;)]]></target>
             </trans-unit>			
-			<trans-unit id="1120">
+			<trans-unit id="1122">
                 <source>txt_total_vat</source>
                 <target><![CDATA[Total VAT]]></target>
             </trans-unit>			
-			<trans-unit id="1121">
+			<trans-unit id="1123">
                 <source>txt_total_vat_currency_euro</source>
                 <target><![CDATA[Total VAT (&euro;)]]></target>
             </trans-unit>			
-			<trans-unit id="1122">
+			<trans-unit id="1124">
                 <source>txt_transaction_id</source>
                 <target><![CDATA[Transaction id]]></target>
             </trans-unit>			
-			<trans-unit id="1123">
+			<trans-unit id="1125">
                 <source>txt_type</source>
                 <target><![CDATA[Type]]></target>
             </trans-unit>			
-			<trans-unit id="1124">
+			<trans-unit id="1126">
                 <source>txt_update</source>
                 <target><![CDATA[Update]]></target>
             </trans-unit>			
-			<trans-unit id="1125">
+			<trans-unit id="1127">
                 <source>txt_upload</source>
                 <target><![CDATA[Upload]]></target>
             </trans-unit>			
-			<trans-unit id="1126">
+			<trans-unit id="1128">
                 <source>txt_upload_your_file</source>
                 <target><![CDATA[2. Upload your file]]></target>
             </trans-unit>			
-			<trans-unit id="1127">
+			<trans-unit id="1129">
                 <source>txt_you_are_logged_in_as</source>
                 <target><![CDATA[You are logged in as]]></target>
             </trans-unit>			
-			<trans-unit id="1128">
+			<trans-unit id="1130">
                 <source>txt_modal_terms_and_cond_title</source>
                 <target><![CDATA[Terms and Conditions]]></target>
             </trans-unit>			
-			<trans-unit id="1129">
+			<trans-unit id="1131">
                 <source>txt_modal_terms_and_cond_body_1</source>
                 <target><![CDATA[<p> Software as a Service Agreement</p><p> This is an agreement between:</p><p> (1) <strong>Kryptos Systems Ltd </strong>(Company Number: 08640789), with registered address at 29 Hertford Court, Meadowfields, Northampton, NN3 9TD trading as <strong>"Kryptos Systems Ltd"</strong>; and</p><p> (2) the <strong>Customer </strong></p><p> Acknowledgment By The Customer</p><p> The Customer acknowledges and agrees to the following:</p><p> &#8226; The Agreement governs the use of the Service by the Customer.</p><p> &#8226; The individual accepting the Agreement, confirms that it is authorised to do so, as an agent on behalf of the Customer.</p><p> &#8226; The Customer acknowledges that by accepting the Agreement, it will also be entering into separate licensing agreements with the respective third party Licensors (where applicable).</p><p> &#8226; The Customer acknowledges that KRYPTOS SYSTEMS LTD's third party data Licensors require:</p><p> KRYPTOS SYSTEMS LTD to observe certain requirements in using their data (the Third Party Licences) to provide the Service; and KRYPTOS SYSTEMS LTD's customers to comply with certain end user licence agreements (the Third Party EULAs).</p><p> Consequently, the Customer agrees that it will not undertake any activities which would result in any of the above arrangements (the Third Party Contracts) to be breached.</p><p> &#8226; The Service and Software Materials are licensed to the Customer. The Service and Software Materials are, and remain the property of KRYPTOS SYSTEMS LTD and its third party licensors.</p><p> &#8226; By in any way installing, activating, copying or otherwise using the Service or Software Materials, or any part of them, the Customer agrees to be bound by the terms of this Agreement. If the Customer does not agree to the terms of this Agreement, the Customer may not install, activate, copy or in any way use the Service or Software Materials, or any part of them.</p><p> Installation And/Or Activation By An Authorised Reseller</p><p> &#8226; If the Service or the Software Material is being installed and/or activated by the Authorised Reseller for the Customer's use, then the Authorised Reseller and the Customer each confirms that the Customer has appointed the Authorised Reseller as its agent to confirm acceptance of this Agreement on its behalf, and the Customer hereby agrees to be bound by this Agreement.</p><p> 1 Definitions &amp; Interpretation</p><p> Definitions</p><p> 1.1 In this Agreement the following words and expressions shall have the following meanings:</p><p> <strong>"Account Code" </strong> means a unique code which is used to identify and manage a Customer's account.</p><p> <strong>"Account Section" </strong> means the Customer's account section made available to the Customer, or the Authorised Reseller on behalf of the Customer, by KRYPTOS SYSTEMS LTD on the KRYPTOS SYSTEMS LTD Website.</p><p> <strong>"Additional Liability Cap" </strong> has the meaning attributed to it in Clause 9.8.2.</p><p> <strong>"Agreement" </strong> means this agreement.</p><p> <strong>"Authorised Reseller" </strong> means an authorised reseller of KRYPTOS SYSTEMS LTD.</p><p> <strong>"Business Days" </strong> means days falling within Monday to Friday (excluding Public and Bank Holidays).</p><p> <strong>"Business Hours" </strong> means hours falling within 9am to 5.30pm UK time, during Business Days.</p><p> <strong>"Commercially </strong> means the same degree of priority and diligence with which KRYPTOS SYSTEMS LTD meets the support needs of its other similar customers</p><p> <strong>"Credit" </strong> means a pre-paid credit purchased by the Customer from KRYPTOS SYSTEMS LTD, and which is identified by KRYPTOS SYSTEMS LTD at the time of purchase as a 'credit'.</p><p> <strong>"Customer" </strong> means the organisation named as the 'Customer' or 'Business' or 'Company' in either:</p><p> (1) the registration form for use of the Service and Software Materials;</p><p> (2) the KRYPTOS SYSTEMS LTD; or</p><p> (3) the Agreement.</p><p> <strong>"Customer Cause" </strong> means any of the following causes:</p><p> (1) any improper use, misuse or unauthorised alteration of the Software or Service by the Customer;</p><p> (2) any use of the Software or Service by the Customer in a manner inconsistent with the then-current Documentation or KRYPTOS SYSTEMS LTD's instructions which are provided from time to time;</p><p> <strong>Reasonable Efforts</strong></p><p> (3) the use by the Customer of any hardware or software not provided by KRYPTOS SYSTEMS LTD or approved by KRYPTOS SYSTEMS LTD in writing for use by the Customer in connection with the Software or Service; or</p><p> (4) the use of a non-current version or release of the Software.</p><p> <strong>"Customer Hoster" </strong> has the meaning attributed to it in Clause 3.1.2.</p><p> <strong>"Database" </strong> means a third party database, access to the whole or part of which is made available to the Customer by KRYPTOS SYSTEMS LTD.</p><p> <strong>"Defaulting Party" </strong> has the meaning attributed to it in Clause 10.11.</p><p> <strong>"Documentation" </strong> means the PDF or hard copy user documentation made available to the Customer by KRYPTOS SYSTEMS LTD, or the online support pages under the respective 'Support' section on the KRYPTOS SYSTEMS LTD Website.</p><p> <strong>"Effective Date" </strong> means the date that the contract formed by this Agreement comes into force, being the date that it is accepted by the Customer (whether via the Authorised Reseller or otherwise) on-line, or the date it is signed by both Parties.</p><p> <strong>"Emergency Maintenance" </strong> means a Maintenance Event which is undertaken on less than 5 days advance notice, or with no notice at all, which is necessary to:</p><p> (1) address a security issue;</p><p> (2) aim to prevent, or to address, a Service disruption;</p><p> (3) aim to prevent data corruption;</p><p> (4) aim to prevent incorrect output from a Service; or</p><p> (5) comply with legislative requirements.</p><p> <strong>"Enterprise Software" </strong> means the software, databases and data made available by KRYPTOS SYSTEMS LTD to the Customer for the Customer's local installation and hosting, in order for the Customer to use the Service.</p><p> <strong>"Evaluation Offerings" </strong> has the meaning attributed to it in Clause 2.12.1.</p><p> <strong>"External Use" </strong> means use of the Royal Mail data or services in any public facing website use.</p><p> <strong>"Fault" </strong> means any failure of the KRYPTOS SYSTEMS LTD Offering to operate in all material respects in accordance with its Documentation, including any failure or error with the</p><p> KRYPTOS SYSTEMS LTD Offering as referred to in the incident level table shown in Paragraph 9.1.2 of the SLA.</p><p> <strong>"Force Majeure Event" </strong> has the meaning attributed to it in Clause 11.1.</p><p> <strong>"Help Desk Support" </strong> means support provided, or agreed to be provided, by help desk technicians to assist with, identify and/or resolve Faults.</p><p> <strong>"Internal Use" </strong> means use of the Royal Mail data or services in any non-public facing website use (including without limitation in relation to any CRM, ERP, intranet, extranet or internal office use).</p><p> <strong>"Liability Cap" </strong> has the meaning attributed to it in Clause 9.8.1.</p><p> <strong>"Licence Key" </strong> means a licence key issued to the Customer to use the Service.</p><p> <strong>"Licensor" </strong> means a third party licensor of the Database or any of the Software Materials.</p><p> <strong>"Maintenance Events" </strong> has the meaning attributed to it in Paragraph 5.1 of the SLA.</p><p> <strong>"Monthly Recurring Fee" </strong> means 1/12 of the Current Year's Subscription Fees paid by the Customer, but if the Customer has not paid any Subscription Fees during that Year, then the 'Monthly Recurring Fee' means 1/12 of the Current Year's Subscription Fees which have been agreed to be paid by the Customer during that Year.</p><p> <strong>"New Charges Date" </strong> has the meaning attributed to it in Clause 5.7.</p><p> <strong>"Ordnance Survey Data" </strong> has the meaning attributed to it in Clause 2.13.1.</p><p> <strong>"Out Of Scope Support" </strong> means:</p><p> (1) any services (including any investigational work) performed by KRYPTOS SYSTEMS LTD in connection with any apparent problem regarding the Service reasonably determined by the Supplier:</p><p> a. not to have been caused by a Fault; or</p><p> b. to have been caused by a Customer Cause or a cause outside the Supplier's control;</p><p> (2) any services in relation to issues with: any software and data which do not form part of the KRYPTOS SYSTEMS LTD Offering;</p><p> (3) any services in relation to issues with: any hardware or networks which Version:</p><p> are not under the direct control of KRYPTOS SYSTEMS LTD or the KRYPTOS SYSTEMS LTD Hoster.</p><p> <strong>"Parties" </strong> means the Customer and KRYPTOS SYSTEMS LTD.</p><p> <strong>"Party" </strong> means the Customer or KRYPTOS SYSTEMS LTD (as applicable).</p><p> <strong>"Password" </strong> means the password selected by the Customer (or on its behalf by the Authorised Reseller) to use the Service.</p><p> <strong>"KRYPTOS SYSTEMS LTD" </strong> has the meaning attributed to it above.</p><p> <strong>"KRYPTOS SYSTEMS LTD Hoster" </strong> has the meaning attributed to it in Paragraph 2.2 of the SLA.</p><p> <strong>"KRYPTOS SYSTEMS LTD Offering" </strong> means that part of the Software Materials and Service which is owned and developed by KRYPTOS SYSTEMS LTD or its group companies, but for the avoidance of doubt, excludes: the Database; any third party data; any third party software; any third party materials; any third party services; any third party documentation; (for the avoidance of doubt, such exclusions also include any third party software, documentation, materials, services and documentation provided or made available by the Authorised Reseller).</p><p> <strong>"KRYPTOS SYSTEMS LTD Privacy Policy" </strong> means KRYPTOS SYSTEMS LTD's privacy policy, which is available from the KRYPTOS SYSTEMS LTD Website, as such policy is updated from time to time by KRYPTOS SYSTEMS LTD.</p><p> <strong>"KRYPTOS SYSTEMS LTD Quote Sheet" </strong> means a document, issued by KRYPTOS SYSTEMS LTD to the Customer, headed 'Quote', which is intended by KRYPTOS SYSTEMS LTD to be binding with regard to pricing or the types of services which are to be offered (however, for the avoidance of doubt, this excludes the details contained in any separate sales proposal documentation (whether attached or not to the document headed 'Quote')).</p><p> <strong>"KRYPTOS SYSTEMS LTD Website" </strong> means any websites operated by KRYPTOS SYSTEMS LTD, which offer software or services, including the website with the url of: www.postcodeanywhere.co.uk</p><p> <strong>"Planned Maintenance" </strong> means a Maintenance Event in respect of which KRYPTOS SYSTEMS LTD has provided at least 5 days advance notice by email or by a notice on the KRYPTOS SYSTEMS LTD Website.</p><p> <strong>"Premium Service" </strong> means the ability for the Customer to have the additional arrangements referred to in the SLA, in respect of the Services in relation to which this option is made available by KRYPTOS SYSTEMS LTD and accepted by the Customer.</p><p> <strong>"Service" </strong> means the respective online service made available, or agreed to be made available, by KRYPTOS SYSTEMS LTD to the Customer pursuant to this Agreement (but for the avoidance of doubt, 'Service' excludes the Premium Service). Version: November 2013 - Page 7</p><p> <strong>"Service Credit" </strong> has the meaning attributed to it in Paragraph 4.1. of the SLA.</p><p> <strong>"Service Output" </strong> means any output response generated by the Service.</p><p> <strong>"SLA" </strong> means the document shown in Schedule 1.</p><p> <strong>"SLA Charge" </strong> means the annual fee for the Premium Service.</p><p> <strong>"SLA Report" </strong> means the Uptime Service Level report shown at www.postcodeanywhere. co.uk/status.</p><p> <strong>"Software" </strong> means the software (including any Enterprise Software) and data (including the relevant Databases) made available by or on behalf of KRYPTOS SYSTEMS LTD, which enable the Customer to access or use the Service; including any updates to this which are made available to the Customer from time to time by or on behalf of KRYPTOS SYSTEMS LTD; (but for the avoidance of doubt, 'Software' excludes any software, data or databases provided by the Authorised Reseller independently of KRYPTOS SYSTEMS LTD, as such software, data and databases provided by the Authorised Reseller are provided pursuant to a separate contract between the Customer and the Authorised Reseller).</p><p> <strong>"Software Materials" </strong> means the Software and the Documentation.</p><p> <strong>"Solution" </strong> means either of the following outcomes:</p><p> (1) correction of a Fault; or</p><p> (2) a workaround in relation to a Fault (including a reversal of any changes to the Software if deemed appropriate by KRYPTOS SYSTEMS LTD) that is reasonable in the circumstances.</p><p> <strong>"Subject Matter" </strong> has the meaning attributed to it in Clause 17.1.</p><p> <strong>"Subscription Fee" </strong> means a payment made by the Customer for the use of the respective Service for the respective Subscription Period, which may consist of Credits and/or Licence Fees.</p><p> <strong>"Subscription Period" </strong> means the respective limited time period during which the Customer may use the respective Service, as determined by the payment made to the Supplier in respect of such Service.</p><p> <strong>"Supplier" </strong> means KRYPTOS SYSTEMS LTD, or if the Customer is obtaining access to the Service via an Authorised Reseller, then it means the Authorised Reseller.Version:</p><p> <strong>"Support Hours" </strong> means Business Hours.</p><p> <strong>"Support Period" </strong> means the 12 month period commencing from the Support Start Date.</p><p> <strong>"Support Request" </strong> means a request made by the Customer in accordance with the SLA for support in relation to the Service.</p><p> <strong>"Support Services" </strong> means maintenance of the then-current version or release of the Services, including Help Desk Support, but excluding any Out Of Scope Support.</p><p> <strong>"Support Start Date" </strong> means the date that KRYPTOS SYSTEMS LTD accepts the Customer's election to have the Premium Service.</p><p> <strong>"Terminating Party" </strong> has the meaning attributed to it in Clause 10.11.</p><p> <strong>"Third Party Contracts" </strong> means the Third Party Licences and Third Party EULAs.</p><p> <strong>"Third Party Licences" </strong> means the third party licences (which are available from the KRYPTOS SYSTEMS LTD Website) imposed by the Licensors on KRYPTOS SYSTEMS LTD in respect of the Software Materials and/ or Service.</p><p> <strong>"Third Party EULAs" </strong> means the third party end user licences (which are available from the KRYPTOS SYSTEMS LTD Website) which are stated as being applicable to the Customer's use of the Software Materials and/or Service.</p><p> <strong>"Uptime Service Level" </strong> has the meaning attributed to it in Paragraph 2 of the SLA.</p><p> <strong>"Year" </strong> means a period of 12 months commencing from: the Effective Date; or from an anniversary of the Effective Date.</p><p> Interpretation</p><p> 1.2 The headings contained in this Agreement are for convenience of reference only and shall not affect any interpretation.</p><p> 1.3 References to "person" includes an individual, company, firm, partnership, government body, public body, charity, association, or other legal entity.</p><p> 1.4 Words indicating the singular shall include the plural and vice versa. Words indicating a gender shall include each gender.</p><p> 1.5 The words and phrases "including" and "in particular" shall be without limitation to the generality of any preceding words and any preceding words shall not be construed as being limited to a particular class Version:</p><p> where a wider interpretation of those words and phrases is possible. Furthermore (except where already stated) such words shall be deemed to be immediately followed by the words "without limitation".</p><p> 1.6 References to any statute or statutory provision shall include:</p><p> 1.6.1 any subordinate legislation made under it; and</p><p> 1.6.2 any provision which subsequently supersedes it or re-enacts it (whether with or without modification).</p><p> 1.7 All sums payable hereunder are expressed exclusive of VAT and any other applicable tax and duty payable upon such sums which shall be added if appropriate at the rate prevailing at the relevant tax point.</p><p> 1.8 To the extent of any conflict or ambiguity between the provisions of the Agreement and the Third Party Contracts, the provisions of the Third Party Contracts shall prevail.</p><p> 2 Subscription</p><p> Grant of Licence</p><p> 2.1 KRYPTOS SYSTEMS LTD hereby grants to the Customer the non-exclusive, non-transferable, revocable right for the Subscription Period to use the Service, subject to the terms and conditions referred to in this Agreement.</p><p> 2.2 The Customer must pay a Subscription Fee to reflect the number of users which are going to be accessing the respective Service. It is the Customer's responsibility to ensure that the Customer licenses the correct number of users that will be accessing the Service.</p><p> Subscription Fees And Subscription Periods</p><p> 2.3 The Customer may use only those Services in respect of which it has paid the respective Subscription Fees.</p><p> 2.4 Subscription Fees can be paid using a Credit and/or Licence Fee, as communicated by KRYPTOS SYSTEMS LTD in respect of the relevant Service at the respective time.</p><p> 2.5 A Licence Fee is valid for use of the Service for the limited time period specified by KRYPTOS SYSTEMS LTD at the time the Licence Fee is paid.</p><p> 2.6 A Service is only accessible for a limited time period equating to the respective Subscription Period reflecting the level of Subscription Fee paid. No Service is available on a perpetual licence or perpetual subscription basis.Version:</p><p> Prohibitions</p><p> 2.7 This Agreement prohibits the Customer from re-selling (whether for free or by charging) the Service Output or Service.</p><p> 2.8 The Customer agrees that it may not undertake any of the following acts (except to the extent expressly permitted by law or as expressly permitted separately in writing by KRYPTOS SYSTEMS LTD):</p><p> 2.8.1 use the Service to provide any software or a service which competes with the Software Materials or Service;</p><p> 2.8.2 undertake any data cleansing activities other than to the extent expressly permitted by the respective Third Party Contracts;</p><p> 2.8.3 make use of the Service (whether through an application or an integration or otherwise) which would adversely affect the reputation of: KRYPTOS SYSTEMS LTD; the Licensors; or KRYPTOS SYSTEMS LTD's or the Licensors' services or offerings; or</p><p> 2.8.4 any act or omission which has the objective of circumventing the intention of any of the restrictions within the Agreement.</p><p> Retention Of Title And Ownership Of The Software Materials</p><p> 2.9 KRYPTOS SYSTEMS LTD and its third party licensors retain title and ownership of the Software Materials. No intellectual property rights (including without limitation copyright) are transferred pursuant to this Agreement other than the licence to use the Software Materials and Service as expressly granted by this Agreement. All rights in the Software Materials and Service not specifically granted in this Agreement are reserved by KRYPTOS SYSTEMS LTD and its licensors.</p><p> Third Party EULAs</p><p> 2.10 The Customer agrees that by requesting access to any third party software or data which is subject to a Third Party EULA, the Customer is entering into such Third Party EULA (where this is the intention of the Third Party EULA), and the Licensor will therefore have rights and remedies against the Customer pursuant to this Agreement and the Third Party EULA.</p><p> 2.11 The Customer agrees that where it is entering into a Third Party EULA, it will bring any claims in respect of the third party software and data which is governed by that agreement, against the Licensor pursuant to the Third Party EULA and not against KRYPTOS SYSTEMS LTD</p><p> Evaluations</p><p> 2.12 The Customer may be permitted to use certain software, data sets or services on an evaluation basis by KRYPTOS SYSTEMS LTD. If any such evaluation is expressly permitted by KRYPTOS SYSTEMS LTD, then the evaluation will be subject to the Version:</p><p> following additional conditions:</p><p>2.12.1 the Customer will not use any software, data sets or services provided for evaluation purposes (collectively known as the <strong>"Evaluation Offerings") </strong>for any commercial purpose whatsoever, nor within any form of live environment whereby the Customer or a third party could suffer any form of loss from any issues with the Evaluation Offerings;</p><p> 2.12.2 Subject to Clause 9.1, KRYPTOS SYSTEMS LTD will not be liable for any performance issues with such Evaluation Offerings;</p><p> 2.12.3 any applicable provisions relating to the use of the Evaluation Offerings that are contained in the Third Party Contracts;</p><p> 2.12.4 KRYPTOS SYSTEMS LTD may be obliged to provide details in respect of the Customer's evaluation use to the Licensor of the Evaluation Offerings, and the Customer agrees to such disclosure being made by KRYPTOS SYSTEMS LTD to the respective Licensor;</p><p> 2.12.5 the Customer will permit the respective Licensors of the Evaluation Offerings to contact the Customer for the purpose of monitoring the Customer's use of the Licensors' intellectual property rights, as well as for checking compliance by the Customer with the Third Party Contracts and for enforcing the Licensors' rights in respect of the Evaluation Offerings;</p><p> 2.12.6 the Customer will not use the Evaluation Offerings in any manner whatsoever after the expiration of any evaluation period granted by KRYPTOS SYSTEMS LTD.</p><p> Evaluation: Ordnance Survey</p><p> 2.13 With regard to the evaluation of any data, services or software which relate to the Ordnance Survey, the following additional conditions apply:</p><p> 2.13.1 the Customer agrees that it will use the Ordnance Survey's data (the <strong>"Ordnance Survey Data"</strong>) for the purposes of testing KRYPTOS SYSTEMS LTD's software or services which make use of such data within the Customer's own organisation;</p><p> 2.13.2 the Customer will not commercially exploit the Ordnance Survey Data and/or provide any copies of it to any third party;</p><p> 2.13.3 the Customer agrees that it will destroy all copies of KRYPTOS SYSTEMS LTD's software which is in its possession which uses the Ordnance Survey Data, on expiry or termination of the evaluation period; and</p><p> 2.13.4 the Customer will only use the Ordnance Survey Data on a secure password protected area of the Customer's computer system or network, and will not allow the Ordnance Survey Data to be used or accessed on or via the internet or for any purpose which is only permitted by using a non-evaluation service.Version:</p><p> 3 Enterprise Software</p><p> 3.1 The Customer agrees to the following additional provisions in respect of Enterprise Software:</p><p> Licensing</p><p> 3.1.1 KRYPTOS SYSTEMS LTD hereby grants to the Customer on, and subject to, the terms and conditions of this Agreement, a non-exclusive, non-transferable licence to allow its personnel to use the Enterprise Software solely to access the respective Services for the benefit of the Customer;</p><p> 3.1.2 the Customer must obtain KRYPTOS SYSTEMS LTD's prior written approval (such approval not to be unreasonably withheld) if the Customer requires the Enterprise Software to be hosted by the Customer's third party (the <strong>"Customer Hoster"</strong>). If such approval is provided by KRYPTOS SYSTEMS LTD, then the Customer must ensure that the same obligations which the Customer must accept in respect of the Enterprise Software pursuant to this Agreement (other than payment obligations, which will reside solely with the Customer), are also complied with by the Customer's third party;</p><p> 3.1.3 the Customer will maintain accurate and up-to-date records of the number and location of all copies of the Enterprise Software, and make such records available upon request to KRYPTOS SYSTEMS LTD, the Authorised Reseller and/or the Licensors;</p><p> 3.1.4 the Enterprise Software does not provide the Customer with any additional rights or remedies in respect of the Services compared to the non-Enterprise Software use of the Services;</p><p> Hosting, Maintenance &amp; Support</p><p> 3.1.5 the Customer will host the Enterprise Software in an environment which complies with KRYPTOS SYSTEMS LTD's minimum specification requirements, as such requirements are notified from time to time by KRYPTOS SYSTEMS LTD (with KRYPTOS SYSTEMS LTD acting reasonably);</p><p> 3.1.6 the Customer agrees that it will be responsible for all installation, maintenance and configuration of the Enterprise Software and the Customer's infrastructure (and the Customer will likewise put in place equivalent measures with the Customer Hoster, where the Customer has obtained KRYPTOS SYSTEMS LTD's consent to the use of the Customer Hoster pursuant to Clause 3.1.2);</p><p> 3.1.7 the SLA will not apply in respect of any issues arising from the local hosting, installation, configuration or maintenance of the Enterprise Software, nor the effect which any of the afore-mentioned have on the Services;</p><p> 3.1.8 the Customer will promptly apply to the Enterprise Software, any updates which are made available from time to time by KRYPTOS SYSTEMS LTD;Version:</p><p> Return Or Destruction Of Software Materials</p><p> 3.1.9 within 7 days after the termination of this Agreement, or termination of KRYPTOS SYSTEMS LTD's obligation to make available any part of the Software Materials or Service (including following expiration of the respective Subscription Period where access to the Service is not renewed), for whatever reason, Customer agrees to destroy or return the Software Materials (including all copies) in respect of which this Agreement has been terminated (in whole or in part), in the reasonable manner directed by KRYPTOS SYSTEMS LTD, and where requested, certify this in writing to KRYPTOS SYSTEMS LTD as having been completed;</p><p> Prohibitions</p><p> 3.1.10 the Customer agrees that it may not undertake any of the following acts (except to the extent expressly permitted by law or as expressly permitted separately in writing by KRYPTOS SYSTEMS LTD):</p><p> 3.1.10.1 copy the Software Materials or any part of them (although the Customer may make a copy of the Software (and any Documentation provided electronically) for back-up purposes only);</p><p> 3.1.10.2 translate, adapt, vary, modify the Software Materials or Services;</p><p> 3.1.10.3 disassemble, decompile or reverse engineer the Software;</p><p> 3.1.10.4 rent, lease, loan, resell, distribute, network or create derivative works based upon the Software Materials, Service, or any part of them.</p><p> 4 Assurances</p><p> Provision Of Software Materials</p><p> 4.1 Subject to the other provisions of the Agreement, KRYPTOS SYSTEMS LTD agrees that:</p><p> 4.1.1 during the respective Subscription Period, it has agreements in place with its Licensors, which confirm that it is licensed to provide access to the respective Software Materials and Services to the Customer;</p><p> 4.1.2 subject to Clause 4.7.1, it will use reasonable endeavours during the respective Subscription Period to:</p><p> 4.1.2.1 ensure that the Software which is made available by KRYPTOS SYSTEMS LTD to be used as part of the Service is free of viruses;</p><p> 4.1.2.2 allow access to the respective Service during the relevant Subscription Period, subject to any maintenance, or matters outside KRYPTOS SYSTEMS LTD's reasonable control, as the Customer acknowledges that from time to time events may occur which affect the availability of the Service due to the nature of the internet, IT equipment and media;</p><p> 4.1.2.3 make available updates to the Database, where such updates are provided by its Licensors.Version:</p><p> Errors In Software And Data</p><p> 4.2 The Customer agrees to the following:</p><p> 4.2.1 that software and data in general are not error-free and agrees that the existence of such errors in the Software, Service or Service Output shall not constitute a breach of this Agreement;</p><p> 4.2.2 where the software integration code which is made available by KRYPTOS SYSTEMS LTD on the KRYPTOS SYSTEMS LTD Website, is provided on a free of charge basis, the Customer agrees that such software integration code is provided on an 'as is' basis, without any assurance (including without limitation any warranty) whatsoever, and therefore no assurance whatsoever is provided (without limitation) in respect of its suitability, performance, functionality, quality or otherwise. The Customer agrees that its sole and exclusive remedy in respect of such software integration code is to simply cease using such software integration code;</p><p> 4.2.3 where the software integration code which is made available by KRYPTOS SYSTEMS LTD on the KRYPTOS SYSTEMS LTD Website, is provided on a chargeable basis by KRYPTOS SYSTEMS LTD to the Customer, then the Customer agrees that such software integration code is provided solely on the basis that it will materially comply with its stated description on the KRYPTOS SYSTEMS LTD Website. If there is any issue with such software integration code where it fails to materially comply with its stated description on the KRYPTOS SYSTEMS LTD Website, then the Customer agrees that it will inform KRYPTOS SYSTEMS LTD of this fact (with reasonable details) in writing within 7 days of paying the licence fee in respect of such software integration code, and if KRYPTOS SYSTEMS LTD is unable to remedy the issue to achieve the afore-mentioned material compliance with the description on the KRYPTOS SYSTEMS LTD Website within 30 days of receiving the notification from the Customer, then the Customer's sole and exclusive remedy in respect of such software integration code, is a refund of the charges which the Customer paid to KRYPTOS SYSTEMS LTD in respect of such software integration code (with the Customer accepting that its licence to use such software integration code will terminate from the date of such refund);</p><p> 4.2.4 if any third party makes any updates to its software or platform, such that this causes an issue in respect of the Software or Service, then the Customer accepts that this is not an issue with the Software or Service itself, nor a breach by KRYPTOS SYSTEMS LTD of any of its obligations under this Agreement. However, KRYPTOS SYSTEMS LTD may at its sole discretion, choose to provide any updates to the KRYPTOS SYSTEMS LTD Offering to address any compatibility issues caused by any third party changes.</p><p> Database</p><p> 4.3 The Customer acknowledges that in view of the fact that the Database contains third party data, the data in the Database is provided on an 'as is' basis, and no assurance in respect of it is provided (including without limitation any assurance with regard to its co]]></target>
             </trans-unit>			
-			<trans-unit id="1130">
+			<trans-unit id="1132">
                 <source>txt_modal_terms_and_cond_body_2</source>
                 <target><![CDATA[rrectness, accuracy, completeness, fitness for any purpose, or otherwise). This exclusion of assurances applies only to the extent permitted by law.Version:</p><p> KRYPTOS SYSTEMS LTD Offering</p><p> 4.4 KRYPTOS SYSTEMS LTD warrants for the respective Subscription Period that the respective Service is made available to the Customer, that the KRYPTOS SYSTEMS LTD Offering will materially function in accordance with its Documentation. In the event that the KRYPTOS SYSTEMS LTD Offering does not function in material accordance with the Documentation, and the Customer notifies KRYPTOS SYSTEMS LTD of the non-compliance, KRYPTOS SYSTEMS LTD shall use reasonable endeavours to correct and provide within a reasonable period of time by patch or new release (at its option) that part of the KRYPTOS SYSTEMS LTD Offering which does not so comply, provided that such non compliance has not been caused by:</p><p> 4.4.1 any modification, variation, configuration or addition to the Software or Service not performed by KRYPTOS SYSTEMS LTD (for the avoidance of doubt, any issues resulting from the acts or omissions of the Authorised Reseller are to be addressed by the Customer directly with the Authorised Reseller as KRYPTOS SYSTEMS LTD will not be liable for such issues);</p><p> 4.4.2 its incorrect use, abuse or corruption of the Software or Service by the Customer or its third parties;</p><p> 4.4.3 use of the Software or Service with other software, data or on equipment with which it is incompatible; or</p><p> 4.4.4 as a result of the third party updates referred to in Clause 4.2.4.</p><p> IPR Warranty</p><p> 4.5 KRYPTOS SYSTEMS LTD warrants for the respective Subscription Period, that such software, documentation, data and services which form the KRYPTOS SYSTEMS LTD Offering, will not infringe any third party's intellectual property rights</p><p> Exclusion Of Assurances Not Contained In This Agreement</p><p> 4.6 The Customer acknowledges that KRYPTOS SYSTEMS LTD has provided various express assurances in this Agreement. Therefore, to the extent permitted by law, and except as expressly set out in this Agreement, KRYPTOS SYSTEMS LTD excludes all other assurances (including without limitation, warranties and conditions) with respect to the Software Materials and Service, including without limitation any assurances relating to satisfactory quality or fitness for any particular purpose.</p><p> Customer Obligations</p><p> 4.7 The Customer agrees:</p><p> 4.7.1 to have in place daily back-up and disaster recovery measures in respect of its and its third parties' (where third parties are permitted by KRYPTOS SYSTEMS LTD) systems and data with which the Software Materials or Services are used, and effective firewall together with virus prevention measures (with the Customer being responsible for virus scanning all of its interaction with the Software Materials and Services; Version:</p><p> and the Customer being responsible for its own anti-virus protection measures to safeguard it against possible virus infection from use of the Software Materials and Services);</p><p> 4.7.2 to supervise and ensure use of the Services in accordance with the terms of this Agreement;</p><p> 4.7.3 to ensure that no third party who is not authorised by this Agreement to access the Software Materials or Services, is provided with such access by the Customer (whether such access is provided deliberately or negligently);</p><p> 4.7.4 to ensure that any of the Customer's systems that rely upon the use of the Software or Services for data entry or data lookup, also have a reasonable alternative manual means to continue to operate in the event that the Software Materials and Services are unavailable;</p><p> 4.7.5 to ensure that the Customer's technical implementation to use the Services, avoids binding to a single datacentre and instead uses the standard KRYPTOS SYSTEMS LTD load balanced service (details of how to do this are available upon request from KRYPTOS SYSTEMS LTD);</p><p> 4.7.6 that with regard to any use of the data or services relating to Royal Mail, the Customer must use the respective services in accordance with the Internal Use or External Use which has been authorised for the respective services, with the Customer acknowledging that there are differing charges applicable to whether the service is used for Internal Use or External Use, and it is the Customer's obligation to ensure that it has selected the correct licensing use option corresponding to its intended use by the Customer. If the Customer does not select the correct licensing option for its use, then without prejudice to KRYPTOS SYSTEMS LTD's and the Licensors' rights and remedies, the Customer will also make the additional payments pursuant to Clause 9.14.</p><p> 4.7.7 that KRYPTOS SYSTEMS LTD may block any Service use, which violate KRYPTOS SYSTEMS LTD's fair use policy in force from time to time;</p><p> 4.7.8 not to undertake any act or omission, or use or otherwise make available the Software Materials or Service in a way, which would cause KRYPTOS SYSTEMS LTD to be in breach of the Third Party Licences; and</p><p> 4.7.9 not to undertake any act or omission, or use or otherwise make available the Software Materials or Service in a way, which would cause the Customer to be in breach of the Third Party EULAs.</p><p> 4.8 Without prejudice to KRYPTOS SYSTEMS LTD's and the Licensors' additional rights and remedies, to the extent that the Customer fails to comply with Clause 4.7.2, 4.7.3, 4.7.6, 4.7.8, 4.7.9, the Customer will immediately upon request pay to KRYPTOS SYSTEMS LTD such amount as is required by the Licensors to be paid by KRYPTOS SYSTEMS LTD for the Customer's non-compliance with the afore-mentioned provisions.</p><p> Mutual Reasonable Skill And Care</p><p> 4.9 Each Party agrees to use reasonable skill and care in undertaking its obligations.Version:</p><p> Authorised Reseller As Customer's Agent</p><p> 4.10 The Authorised Reseller and Customer agree that any of the obligations of the Customer can be exercised by the Authorised Reseller on the Customer's behalf, with the Authorised Reseller acting as the Customer's agent in this respect.</p><p> 5 Charges and Payment</p><p> Charges</p><p> 5.1 The charges (and the basis for calculation and the respective due dates) for the Services are set out on the KRYPTOS SYSTEMS LTD Website (as updated from time to time), or if different in a KRYPTOS SYSTEMS LTD Quote Sheet or on a KRYPTOS SYSTEMS LTD written request for payment.</p><p> 5.2 The charges which are applicable in respect of the services, are:</p><p> 5.2.1 Subscription Fees for access to the respective Services; and</p><p> 5.2.2 SLA Charge for the Premium Service.</p><p> Making Payments</p><p> 5.3 All payments are due in accordance with the provisions referred to in Clause 5.1.</p><p> 5.4 The Customer confirms that it expressly authorises KRYPTOS SYSTEMS LTD (or the Authorised Reseller at KRYPTOS SYSTEMS LTD's discretion), to take payment from the Customer if the auto-top up payment option has been set up for the Customer (the amount of a top up or an auto-top up is deemed to be a new Credit) by the relevant due date, with payments being automatically debited to the respective credit card or debit card (where such payment methods are provided as part of the registration process (as such details are updated in the Account Section thereafter by the Customer from time to time)) at the respective intervals or dates, in order to meet the payment requirements of the respective Service. For the avoidance of doubt, if the Customer's payment method cannot be debited or is declined, then the Customer will still be liable for the respective charges which are due. Subject to the other provisions of this Agreement, top ups and auto-top ups to any Credit cannot be refunded.</p><p> Late Or Non-Payment</p><p> 5.5 Without prejudice to KRYPTOS SYSTEMS LTD's rights and remedies, to the extent that the Customer fails to make any payments on time, KRYPTOS SYSTEMS LTD may:</p><p> 5.5.1 charge the Customer interest in accordance with the applicable statutory provisions; and/or</p><p> 5.5.2 suspend and/or terminate any of the Customer's Services and/or Premium Service. Version:</p><p> 5.6 If the Customer's Services are suspended or terminated for non-payment, then the Customer's Premium Service will be likewise suspended or terminated, and this will not give rise to any Service Credits, nor any other rights or remedies for the Customer pursuant to the SLA or the Agreement.</p><p> Variation Of Charges</p><p> 5.7 The Customer acknowledges that KRYPTOS SYSTEMS LTD may vary the charges applicable pursuant to this Agreement, from time to time (including without limitation, due to the ability of certain of its Licensors to vary the charges to KRYPTOS SYSTEMS LTD, its customers, or its resellers, pursuant to the Third Party Licences). The Customer agrees that once it is informed of any such increase in charges and the date that the charges will be effective from (the "New Charges Date"), it will be deemed to accept such changes in the charges if it continues to use the respective Service or Premium Service affected by the change in charges from or after the New Charges Date.</p><p> Refunds By KRYPTOS SYSTEMS LTD &amp; Credit Expiry</p><p> 5.8 Details of refunds are included in Clause 10.15.</p><p> 5.9 Except as expressly stated in this Agreement, no refunds are available in respect of any Credit or other charges.</p><p> 5.10 The Customer acknowledges that the Credit has an expiry date, following which any unused Credit will no longer be usable and nor will it be refunded, so it is the Customer's responsibility to use the Credit within the respective period that the Credit is valid for, as the Credit simply provides the Customer with a right to use the respective Service (subject to payment of any additional Licence Fee where applicable) prior to the expiry date for the respective Credit.</p><p> Effect Of Customer Purchase Orders</p><p> 5.11 Where the Customer issues a purchase order to KRYPTOS SYSTEMS LTD relating to the Software Materials, Service, Premium Service or this Agreement, the Customer agrees that unless otherwise agreed in writing by KRYPTOS SYSTEMS LTD on KRYPTOS SYSTEMS LTD's letter headed paper signed by a company director of KRYPTOS SYSTEMS LTD, with express reference being made in writing to this Clause 5.11, the terms of such purchase order shall not apply and such purchase order shall be accepted by KRYPTOS SYSTEMS LTD for the sole purpose of referencing a purchase order reference in any invoices in order to facilitate payment by the Customer.</p><p> Credits</p><p> 5.12 A Credit is valid for the earlier of:</p><p> 5.12.1 a maximum period of twelve months from the date of purchasing the respective Credit; and Version:</p><p> 5.12.2 when the Credit has been fully expended to purchase one or more Services.</p><p> 5.13 Each auto-top-up or a top-up applied to an existing Credit, is deemed to be a new Credit reflecting the amount of the top-up or auto-top-up.</p><p> 5.14 Subject to Clauses 12 and 13, the Customer acknowledges that Credit is not transferrable to third parties, nor may it be used for the benefit of third parties by the Customer.</p><p> 6 The Service</p><p> Account Code</p><p> 6.1 Once the Customer's request to use the Services is accepted by KRYPTOS SYSTEMS LTD, the Customer will be given a unique Account Code and shall be granted a non-exclusive, non-transferable, licence to download and use the respective Software Materials for the purpose of accessing and using the Services in respect of which it has agreed to pay the relevant Subscription Fees.</p><p> Customer's Confirmation of Accuracy Of Registration Details</p><p> 6.2 The Customer confirms that all information which it provides to use the respective Service and any additional information which it provides pursuant to this Agreement, will at the time it is provided (and will continue to) be accurate and complete. If the information becomes inaccurate, incomplete or misleading any time thereafter, then (without prejudice to KRYPTOS SYSTEMS LTD's additional rights and remedies), the Customer will promptly update its details in the Account Section, to ensure that its details remain accurate and complete. The Customer also agrees that it will promptly notify KRYPTOS SYSTEMS LTD in writing if it ceases to use, or changes, its Authorised Reseller.</p><p> 6.3 The Customer acknowledges, without prejudice to KRYPTOS SYSTEMS LTD's additional rights and remedies, that any failure to comply with Clause 6.2 may result in KRYPTOS SYSTEMS LTD exercising its rights pursuant to Clause 5.5, if payments are not made by the respective due dates.</p><p> Customer's Own Use Only &amp; Audits</p><p> 6.4 The Service and Software Materials are provided solely for the Customer's own use pursuant to this Agreement. The Customer is explicitly prohibited from reselling or attempting to resell the Service Output, or marketing or otherwise distributing the Software Materials or Service, without the explicit written permission of KRYPTOS SYSTEMS LTD.</p><p> 6.5 KRYPTOS SYSTEMS LTD reserves the right to check the URL of the Customer's website which is using the Service to assist it in determining that the Service is being used in accordance with this Agreement. Version:</p><p> 6.6 The Customer agrees to provide: reasonable access to the premises, facilities and personnel of the Customer; and reasonable information; to allow KRYPTOS SYSTEMS LTD or the Licensors to verify that the Customer is using the Software Materials and Service in accordance with the provisions of this Agreement and the requirements of the Licensors. Furthermore, the Customer acknowledges that KRYPTOS SYSTEMS LTD may need to provide information in relation to the identity of the Customer and the Customer's use of the respective Software Materials and Service to the Licensors (and in the case of any data services using data from Ordnance Survey, then the disclosure requirement would also extend to Royal Mail Group plc, for the purposes of this Clause), as a requirement to allow the Customer to use the Licensor's data, software and materials. The Customer hereby expressly consents to such disclosure by KRYPTOS SYSTEMS LTD to the Licensors pursuant to this Clause 6.6, and for the respective Licensors to contact the Customer in relation to the Customer's use of the Licensor's licensed data, software and other materials.</p><p> Account &amp; Technical Changes By KRYPTOS SYSTEMS LTD</p><p> 6.7 KRYPTOS SYSTEMS LTD (acting reasonably) reserves the right to vary the technical specifications of the Software and Service at any time, or change Account Codes, Licence Keys or Passwords, giving the Customer as much notice as is reasonably possible.</p><p> Support Arrangements</p><p> 6.8 The Customer acknowledges that KRYPTOS SYSTEMS LTD may provide limited free support in respect of the Software Materials or the Service. Typically, such support may consist of:</p><p> 6.8.1 limited telephone advice and documentation in respect of set-up arrangements;</p><p> 6.8.2 limited post set-up general telephone assistance for issues specifically caused by KRYPTOS SYSTEMS LTD rather than its third parties.</p><p> If KRYPTOS SYSTEMS LTD provides any such support, it will be provided on a discretionary basis by KRYPTOS SYSTEMS LTD (and will give rise to no obligation for KRYPTOS SYSTEMS LTD to provide such further support on any future occasion). KRYPTOS SYSTEMS LTD reserves the right to charge for any support requests (at KRYPTOS SYSTEMS LTD's standard rate as in force at such time) or refuse any support requests in its sole discretion, to the extent that KRYPTOS SYSTEMS LTD considers that the support requests are over and above what KRYPTOS SYSTEMS LTD considers would be reasonable in view of the free and limited nature of such support.</p><p> 6.9 The Customer acknowledges that KRYPTOS SYSTEMS LTD provides enhanced support via the Premium Service, which the Customer can elect to use, by agreeing to pay the respective SLA Charge, in which event the additional provisions contained in the SLA will also apply.</p><p> 6.10 The Customer acknowledges that the SLA does not apply in respect of those services which are expressly excluded from the scope of the SLA, as stated under the 'Support' section of the KRYPTOS SYSTEMS LTD Website.</p><p> 6.11 The Customer also acknowledges that KRYPTOS SYSTEMS LTD will not be liable for any support nor Service availability Version:</p><p> issues, unless the Customer elects the Premium Service and pays the SLA Charge for the respective Services.</p><p> 6.12 If the Customer elects the Premium Service, then KRYPTOS SYSTEMS LTD's liability in respect of any support or Service availability issues relating to the respective Services, will be as referred to in the SLA.</p><p> 6.13 The Customer acknowledges that if the Customer does not have a valid Subscription Period (in respect of which it has paid the respective Subscription Fees) which is at least equal to the period covered by the Premium Service, no refund will be provided in respect of the Premium Service as a result.</p><p> 6.14 To the extent that KRYPTOS SYSTEMS LTD is held liable by a Court or similar competent body, for any support issues relating to Out Of Scope Support, then KRYPTOS SYSTEMS LTD's liability will be limited in the same manner, and to the same amount, which would be applicable if the relevant issues were arising from support services delivered by KRYPTOS SYSTEMS LTD which were within the scope of the Premium Service.</p><p> 6.15 To the extent that KRYPTOS SYSTEMS LTD is held liable by a Court or similar competent body, for any support issues or Service availability issues where this is held not to be limited or excluded by Clauses 6.11, 6.12 or 6.14, then KRYPTOS SYSTEMS LTD's liability will be subject to the limitations and exclusions of liability under Clause 9 (Liability) of this Agreement.</p><p> 7 Records</p><p> Visibility Of Records By The Customer</p><p> 7.1 KRYPTOS SYSTEMS LTD shall keep records of the Customer's usage of Credit, which information can be viewed by the Customer within the Account Section. KRYPTOS SYSTEMS LTD's determination of such usage shall be definitive and final (provided that KRYPTOS SYSTEMS LTD has acted reasonably).</p><p> Visibility Of Records By The Supplier</p><p> 7.2 The Customer also acknowledges that KRYPTOS SYSTEMS LTD will (and the relevant Authorised Reseller may) be able to view certain of the details in the Account Section, together with other information related to the Customer's use of the Service (including without limitation, the Customer's Account Code and Licence Key).</p><p> 8 Password Security</p><p> Confidentiality</p><p> 8.1 The Customer shall maintain the confidentiality and security of its Passwords and any Account Code and Licence Keys disclosed to it. The Customer shall notify KRYPTOS SYSTEMS LTD immediately if it believes that the</p><p> Code, Licence Key or Password has been, or is reasonably likely to be, used in any unauthorised way.</p><p> Changing The Details</p><p> 8.2 If there has been unauthorised use of the Customer's account which is brought to KRYPTOS SYSTEMS LTD's attention, or if the Customer has forgotten the Password, then KRYPTOS SYSTEMS LTD may issue a new Account Code, Licence Key, or Password to enable continued use of the Service (or alternatively KRYPTOS SYSTEMS LTD may disable the Customer's access to the Account Section and any Services and the Premium Service, if KRYPTOS SYSTEMS LTD reasonably believes that the unauthorised use of the Customer's account is due to the wrongful or negligent acts or omissions of the Customer). This is without prejudice to KRYPTOS SYSTEMS LTD's additional rights and remedies against the Customer.</p><p> Responsibility For Unauthorised Use</p><p> 8.3 The Customer agrees that it is liable and responsible for all transactions undertaken using the Account Code, Licence Key or Password. With regard to any unauthorised transactions, these must be promptly reported to KRYPTOS SYSTEMS LTD, and except to the extent that such transactions have occurred due to the wrongful acts of the Supplier, the Customer accepts full responsibility and liability for such transactions.</p><p> 9 Liability</p><p> Caveat To Limitations And Exclusions Of Liability</p><p> 9.1 Notwithstanding any provision to the contrary, nothing in this Agreement shall limit or exclude KRYPTOS SYSTEMS LTD's liability for: death; personal injury; fraud; fraudulent misrepresentation; and any liability which may not be lawfully limited or excluded.</p><p> Exclusions</p><p> 9.2 Subject to Clauses 5.5, 9.1 and 9.14, neither Party shall be liable in any circumstances to the other Party for consequential, special, incidental or indirect losses, or the following losses whether direct, consequential, special, incidental or indirect losses: loss of profits; loss of revenue; loss of turnover; loss of sales; economic loss; loss of business or contracts; loss of anticipated savings or goodwill; loss of software or data; (or any losses arising from a claim by a third party for any of the afore-mentioned losses); whether such losses arise under contract (including without limitation in relation to any deliberate repudiatory and fundamental breaches), statute, tort (including without limitation, negligence), or otherwise. However, Clauses 9.2 and 9.8, do not operate to negate any express refund obligations explicitly stated to be accepted by KRYPTOS SYSTEMS LTD in Clause 10.15.1.</p><p> Liability Limits</p><p> 9.3 Where any software, data, documents or service is expressed to be provided on an 'as is' basis, or where KRYPTOS SYSTEMS LTD has expressly excluded its liability for the respective issue, then subject to Clause 9.1, KRYPTOS SYSTEMS LTD accepts no liability in such circumstances.</p><p> 9.4 Subject to Clause 9.1, where any remedy is expressed to be a sole and exclusive remedy, then that respective remedy applies.</p><p> 9.5 In respect of all support or Service availability issues where the Customer has not elected the Premium Service, then Clause 6.11 applies;</p><p> 9.6 in respect of all support or Service availability issues where the Customer has elected the Premium Service, then the liability amount will be as expressly stated in the SLA;</p><p> 9.7 Subject to Clause 9.1, the liability limits in Clause 9.8 apply where:</p><p> 9.7.1 the liability is not limited or excluded within the scope of any of Clauses 9.2 to 9.6 (inclusive); or</p><p> 9.7.2 Clause 6.15 is applicable (in which case Clause 9.8.1 will be applicable).</p><p> 9.8 Subject to Clauses 9.1 to 9.7 (inclusive) and 9.14, the aggregate liability of KRYPTOS SYSTEMS LTD for all claims arising under or in connection with this Agreement (whether arising under contract (including without limitation in relation to any deliberate repudiatory and fundamental breaches), statute, tort (including without limitation, negligence), or otherwise) shall be limited as follows in respect of the issues for which KRYPTOS SYSTEMS LTD is found liable:</p><p> 9.8.1 in respect of the totality of all issues with the Software Materials, Services, Premium Service and Service Output, where the causes giving rise to the liability on the part of KRYPTOS SYSTEMS LTD occur within a particular Year, to a total aggregate amount of that respective Year's paid amounts by the Customer to KRYPTOS SYSTEMS LTD (the <strong>"Liability Cap"</strong>) (for the avoidance of doubt, any amount spent from a Credit whether in the same or a different Year, will not constitute an additional amount of charges for the purposes of this Clause, as the purchase of the Credit counts towards the 'paid amounts' by the Customer to KRYPTOS SYSTEMS LTD, and therefore spending of Credits does not count, to avoid double-counting)), with such Liability Cap limiting KRYPTOS SYSTEMS LTD's collective liability for the totality of all such issues within that Year (and for the avoidance of doubt, if there are two issues within a Year, then the aggregate liability of KRYPTOS SYSTEMS LTD arising in respect of such 2 issues collectively, would equate to 100% of the charges paid in that respective Year and not 200% of the charges paid in that respective Year); or</p><p> 9.8.2 in respect of the totality of all liability for collectively all other issues arising under or in connection with this Agreement, which are notlimited by Clause 9.8.1, nor limited or excluded by any other provision of this Agreement, to the aggregate amount of &#163;100 (the <strong>"Additional Liability Cap"</strong>).</p><p> 9.9 If the Customer has not paid any amounts invoiced in a particular Year, but suffers an issue in that Year</p><p> for which KRYPTOS SYSTEMS LTD is liable, then for the purposes of Clause 9.8.1, the 'Liability Cap' for the current Year will equate to the greater of:</p><p> 9.9.1 &#163;100; or</p><p> 9.9.2 the total amount paid by the Customer to KRYPTOS SYSTEMS LTD in the immediately preceding Year.</p><p> Customer's Acknowledgment</p><p> 9.10 The Customer acknowledges that the charges in respect of this Agreement have been calculated on the basis that KRYPTOS SYSTEMS LTD will exclude and limit its liability as set out in this Agreement, and that the limitations and exclusions of liability in this Agreement are therefore reasonable.</p><p> 9.11 Notwithstanding any provision to the contrary (but subject to Clause 9.1):</p><p> 9.11.1 the exclusions of liability in Clause 9 prevail; and</p><p> 9.11.2 KRYPTOS SYSTEMS LTD's liability under or in connection with this Agreement will not exceed the limits referred to in Clause 9; and</p><p> 9.11.3 where the Agreement refers to any limitation or exclusion of liability of KRYPTOS SYSTEMS LTD, such limitation or exclusion applies whether the respective liability arises under contract (including without limitation in relation to any deliberate repudiatory and fundamental breaches), statute, tort (including without limitation, negligence), or otherwise.</p><p> Limitation Time Period</p><p> 9.12 The Customer acknowledges that any claims which it wishes to pursue against KRYPTOS SYSTEMS LTD will be raised promptly. The Parties therefore agree that KRYPTOS SYSTEMS LTD shall not be held liable for any liability in respect of events occurring during the term of this Agreement, where the respective claim is not brought through legal proceedings against KRYPTOS SYSTEMS LTD within 12 months following the earlier of: (1) when the event giving rise to the cause of action arose; and (2) termination of the Agreement.</p><p> Consequences For Exhaustion Of Liability Limits</p><p> 9.13 The Parties agree that either Party may terminate the Agreement for convenience, if the Liability Cap or Additional Liability Cap becomes exhausted by the Customer successfully bringing claims against KRYPTOS SYSTEMS LTD (which are determined by a Court, or agreed between the Parties, as owing) for at least the total amount of the Liability Cap or the Additional Liability Cap. In such circumstances, such termination of itself will not give rise to any additional remedies nor refund rights.</p><p> Customer's Additional Obligations In Respect Of Wrongful Actions</p><p> 9.14 The Customer agrees that it will be liable for all amounts to (whether arising in respect of any or all of the following circumstances):</p><p> 9.14.1 KRYPTOS SYSTEMS LTD and the Licensors in respect of, and relating to, any claim made against, or loss incurred or suffered by, KRYPTOS SYSTEMS LTD and/or the Licensors where this is wholly or in part attributable directly or indirectly to the Customer breaching any of the provisions of the Third Party Contracts. Furthermore, the Customer agrees that if KRYPTOS SYSTEMS LTD is required to pay any sums to any third party as a result of the Customer breaching any of the Third Party Contracts, then the Customer will, immediately upon notice, reimburse KRYPTOS SYSTEMS LTD in full with the amount which KRYPTOS SYSTEMS LTD has had to pay to such third party as a result;</p><p> 9.14.2 KRYPTOS SYSTEMS LTD in respect of any breaches of KRYPTOS SYSTEMS LTD's or its third parties' intellectual property rights (including without limitation, copyright and trademarks); and</p><p> 9.14.3 KRYPTOS SYSTEMS LTD for any breaches of the Agreement which are undertaken with the deliberate intention of breaching this Agreement (with the Customer being deemed to be aware of all of the provisions of this Agreement).</p><p> 10 Term, Termination and Suspension</p><p> Duration</p><p> 10.1 The Agreement will commence on the Effective Date and continue in force until it is terminated in accordance with the provisions of the Agreement.</p><p> 10.2 The licences granted to use the respective Services pursuant to the Agreement (either for use of the respective Services or any Software Materials) will be valid for the shorter of the following respective periods:</p><p> 10.2.1 the expiration of the respective Subscription Period; or</p><p> 10.2.2 where the use is granted subject to Credit, until such Credit expires through time or use as appropriate; or</p><p> 10.2.3 the specified period in the Account Section or invoice (or as otherwise agreed between the Parties in writing); or</p><p> 10.2.4 the termination of the Agreement.</p><p> Temporary Suspension Of Service</p><p> 10.3 KRYPTOS SYSTEMS LTD may temporarily suspend:</p><p> 10.3.1 the Service; and/or</p><p> 10.3.2 making available any of the Software Materials;</p><p> for emergency or urgent operational reasons, but where reasonably practicable, it will give the Customer advance warning of such suspension.</p><p> Suspension For Abnormal Use</p><p> 10.4 If KRYPTOS SYSTEMS LTD reasonably believes that the Customer's abnormal use of the Service or Software Materials is impairing the Service's performance or resulting in abnormal Credit consumption (as reasonably determined by KRYPTOS SYSTEMS LTD), then KRYPTOS SYSTEMS LTD may suspend the Customer's access until the cause of the impairment has been resolved (such suspension will not affect the Customer's requirement to continue paying the relevant charges for the suspended Service or Software Materials, nor will it extend the respective Subscription Period in respect of any Credit).</p><p> Termination Or Suspension by KRYPTOS SYSTEMS LTD</p><p> 10.5 KRYPTOS SYSTEMS LTD will have the right to suspend or terminate this Agreement immediately upon notice (however, suspension will occur automatically following email notification if any payment is not made by the respective due date by the Customer) if the Customer fails to comply with any provision of this Agreement (such suspension will not affect the Customer's requirement to continue paying the relevant charges for the suspended Service or Premium Service (as applicable), nor will it extend the respective Subscription Period in respect of any Credit; termination of the Agreement in such circumstances will also not entitle the Customer to any refund).</p><p> 10.6 KRYPTOS SYSTEMS LTD may terminate the Agreement (in whole or in part) immediately upon notice to the Customer at any time, if:</p><p> 10.6.1 KRYPTOS SYSTEMS LTD is no longer able to make available the Service or Software Materials (in whole or in part) due to the acts or omissions of the Licensors;</p><p> 10.6.2 any of the Third Party Contracts terminate for any reason;</p><p> 10.6.3 the Licensors vary their terms and conditions, requirements, or pricing in a manner which adversely affects KRYPTOS SYSTEMS LTD or the Customer;</p><p> 10.6.4 a Licensor claims that the use of the Database or the Softw]]></target>
             </trans-unit>			
-			<trans-unit id="1131">
+			<trans-unit id="1133">
                 <source>txt_modal_terms_and_cond_body_3</source>
                 <target><![CDATA[are Materials in the manner in which they are being used by KRYPTOS SYSTEMS LTD or the Customer is not permitted; or</p><p> 10.6.5 The Customer brings KRYPTOS SYSTEMS LTD or the Licensors into disrepute.</p><p> 10.7 Without prejudice to Clause 10.6, KRYPTOS SYSTEMS LTD may terminate the Agreement for convenience on 90 days' notice to the Customer at any time, and in such event, KRYPTOS SYSTEMS LTD will provide a pro-rata refund in accordance with Clause 10.15.1.</p><p> 10.8 The respective Third Party EULA will automatically terminate with immediate effect if the corresponding Third Party Licence is terminated, and consequently the respective Service which was subject to such Third Party Contracts, together with the Premium Service in respect of such Service (if applicable), will also automatically terminate immediately. KRYPTOS SYSTEMS LTD will provide prompt notice of such event to the Customer.</p><p> 10.9 KRYPTOS SYSTEMS LTD may terminate the Agreement in whole or in part for convenience at any time upon written notice (with such termination being effective on the date specified in the respective notice), where such termination is necessary for KRYPTOS SYSTEMS LTD to comply with the Third Party Licences.</p><p> Termination By The Customer</p><p> 10.10 The Customer may terminate the Agreement with immediate effect, if KRYPTOS SYSTEMS LTD is in material breach of this Agreement (however, where such breach is capable of remedy, the Customer must provide KRYPTOS SYSTEMS LTD with at least 30 days written notice (with express written reference to its right to terminate the Agreement pursuant to this Clause) allowing KRYPTOS SYSTEMS LTD to remedy the breach, and only if KRYPTOS SYSTEMS LTD does not remedy the breach within this time period, may the Customer terminate the Agreement).</p><p> Termination By Either Party</p><p>10.11 Either Party (the <strong>"Terminating Party"</strong>) may terminate the Agreement immediately by notice to the other Party (the <strong>"Defaulting Party"</strong>) if:</p><p> 10.11.1 the Defaulting Party is unable to pay its debts as they fall due or otherwise becomes insolvent, or if a receiver or an administrative receiver is appointed over any or all of the assets of the Defaulting Party, or if any arrangement, compromise or composition of the Defaulting Party's debts is proposed or made by the Defaulting Party, or if the Defaulting Party enters or is entered into any proceedings for administration or liquidation or otherwise becomes subject to dissolution proceedings, or if any analogous event occurs in any other jurisdiction in which the Defaulting Party carries out its business;</p><p> 10.11.2 the Defaulting Party unreasonably discloses any confidential information of the Terminating Party (or of the Licensor); (where any reasonable disclosure is necessary, then the disclosing Party will ensure that any such disclosure is subject to a reasonable duty of confidentiality being accepted by the third party recipient of such confidential information).</p><p> SLA Consequences In Respect Of Suspensions Or Termination</p><p> 10.12 Suspension pursuant to Clause 10.4, or any other suspensions or terminations which are attributable to:</p><p> 10.12.1 the wrongful actions of the Customer; or</p><p> 10.12.2 a Force Majeure Event;</p><p> will not constitute downtime in calculating the Uptime Service Level in respect of the SLA, and will not give rise to any Service Credits, payments or other remedies to the Customer.</p><p> Consequences Of Termination</p><p> 10.13 Termination of the Agreement is without prejudice to both Parties' accrued rights and remedies.</p><p> 10.14 The provisions of this Agreement which are expressed to, or intended to, survive termination, shall continue in full force and effect.</p><p> Refunds On Termination</p><p> 10.15 Where:</p><p> 10.15.1 the Agreement is terminated by KRYPTOS SYSTEMS LTD (other than directly or indirectly as a result of the wrongful acts or omissions of the Customer); or</p><p> 10.15.2 the Agreement is terminated by the Customer pursuant to Clauses 10.10 or 10.11;</p><p> then the Customer will be entitled to a pro-rata refund of the amount of: any unused Credits; and Licence Fees; and SLA Charge; at the date of termination of the Agreement, to reflect the extent to which it is no longer able to use the respective Service for the unexpired Subscription Period or Premium Service for the unexpired Support Period, with such payment being calculated and determined by KRYPTOS SYSTEMS LTD acting reasonably. The Customer agrees that this is the sole and exclusive financial remedy of the Customer in such circumstances.</p><p> 11 Force Majeure</p><p> 11.1 If either Party is prevented from complying with its obligations due to any event beyond its reasonable control (such event being referred to as a "Force Majeure Event") (including without limitation, any issues arising from the data, software or documentation supplied by the Licensors), it shall not be in breach of this Agreement nor otherwise liable to the other Party by reason of any delay in performance or non-performance of any of its obligations due to such events. However, this Clause does not excuse the Customer from complying with its payment obligations, nor from compliance with the Third Party Contracts, by itself claiming the benefit of a Force Majeure Event.</p><p> 11.2 If a Force Majeure Event continues for a period of more than 14 consecutive days, then either Party may terminate the Agreement for convenience during the continuance of such Force Majeure Event. In such circumstances, both Parties acknowledge that there will be no compensation due from either Party to the other for termination in such circumstances</p><p> 12 Assignment And Subcontracting</p><p> 12.1 The Customer may not assign this Agreement (whether in whole or in part) without the prior written consent of KRYPTOS SYSTEMS LTD (such consent not to be unreasonably withheld).</p><p> 12.2 KRYPTOS SYSTEMS LTD may subcontract and assign any or all of its obligations and rights pursuant to this Agreement, without requiring the prior consent of the Customer.</p><p> 13 3rd Parties &amp; Contracts (Rights of Third Parties) Act 1999</p><p> Third Party Group Company &amp; Related Organisation Use</p><p> 13.1 Where the Customer is permitted by the Agreement pursuant to Clause 13.3, to allow use of the Software Materials, Services and Premium Service by its group companies or other related organisations, then the Customer confirms that it will remain responsible for all payment obligations, and the Customer accepts responsibility for ensuring compliance by such third parties with the Agreement (with the Customer ensuring that such third parties comply with the same obligations and restrictions as those that the Customer is subject to, in relation to the Agreement). The Customer confirms that it will ensure that, such third parties and the Customer have joint and several liability to KRYPTOS SYSTEMS LTD and the Licensors in respect of the Agreement.</p><p> 13.2 The Customer agrees that it is authorised to accept as agent, on behalf of its group companies and its related third party organisations, any changes made to the Agreement by KRYPTOS SYSTEMS LTD and to the Third Party Contracts by the Licensors.</p><p> 13.3 Any of the Customer's third parties as referred to in a schedule of authorised third parties issued by KRYPTOS SYSTEMS LTD, are hereby authorised to use the Software Materials and Service (and where the SLA Charge has been agreed to be paid in respect of the Customer and each of its third parties, the Premium Service) in accordance with the provisions of the Agreement, with the Customer acknowledging that each third party will need to pay additional charges for their use of the Services, with such payment to be made via the Customer. KRYPTOS SYSTEMS LTD and the Customer may update the schedule of authorised third parties from time to time by written agreement between them (which includes agreement by email).</p><p> 1999 Act</p><p> 13.4 The Licensors, and the Customer's third parties listed in the schedule referred to in Clause 13.3 (albeit that for conduct of claims, the Customer agrees that it will ensure that it will bring any and all claims of such third parties against KRYPTOS SYSTEMS LTD, on behalf of such third parties, as the Customer will ensure than such third parties do not bring their claims direct against KRYPTOS SYSTEMS LTD), shall have the right to enforce the provisions of this Agreement which are for their benefit, by virtue of section 1 of the Contracts (Rights of Third</p><p> Parties) Act 1999. No other third party shall have the right to enforce any term of this Agreement.</p><p> 13.5 The Parties may, notwithstanding section 2(1) of the Contracts (Rights of Third Parties) Act 1999, vary or terminate this Agreement (in whole or in part) without requiring the consent of the Licensors or any other third parties (whether referred to in Clause 13.4 or otherwise).</p><p> 14 Variations</p><p> 14.1 No variation of this Agreement shall be effective unless it is in writing and is signed by an authorised representative of each Party, although any pricing arrangements tailored to the Customer may be expressly agreed by KRYPTOS SYSTEMS LTD by email.</p><p> 14.2 Any discretion exercised by KRYPTOS SYSTEMS LTD from time to time, to afford the Customer any additional rights or benefits which are not afforded by the Agreement (in circumstances where such additional rights or benefits were the clear and deliberate intention of KRYPTOS SYSTEMS LTD), will only operate on that occasion and not operate as a variation of the Agreement with regard to any other occasions, unless otherwise expressly stated with the provisions of Clause 14.1 having been complied with.</p><p> 15 Severability</p><p> 15.1 If at any time any part of this Agreement becomes void or unenforceable under any applicable law it shall be deemed to be deleted from this Agreement and the remaining provisions of this Agreement shall continue unaffected. In such circumstances, the Parties will use reasonable endeavours to substitute the omitted provision with a valid replacement which achieves to the closest extent reasonably and lawfully possible, the intention of the omitted provision. .</p><p> 16 Waiver</p><p> 16.1 No provision of the Agreement shall be waived unless expressly stated otherwise in this Agreement in respect of any rights or remedies, or agreed to be waived by both Parties in writing; however, where a right must be exercised within a specified time period, then that right will be waived if it is not exercised within such time period. If any provision is waived, then that waiver shall operate for that instance only and not future instances, unless agreed otherwise by both Parties in writing.</p><p> 17 Entire Agreement</p><p> 17.1 This Agreement (which includes the relevant Third Party Contracts) contains the entire agreement between the Parties with respect to the subject matter of this Agreement (the <strong>"Subject Matter"</strong>) and supersedes and replaces all other written and oral communications between the Parties relating to the Subject Matter. Except for the express provisions in this Agreement (and any express provisions contained in any documentation which is expressly incorporated), all other warranties, conditions, terms, representations, statements, undertakings and obligations whether express or implied by statute, common law, custom, usage or otherwise are hereby excluded to the maximum extent permitted by law. The Parties hereby confirm that they have not relied upon any representations, communications or other matters which have not been expressly stated in this Agreement, whether as an inducement to enter into this Agreement or otherwise. This Clause 17.1 operates subject to Clauses 17.2 and 17.3.</p><p> 17.2 Notwithstanding any provision to the contrary in this Agreement, all implied: terms, conditions and warranties, (including without limitation those relating to satisfactory quality and fitness for purpose); whether:</p><p> 17.2.1 implied by statute, common law, custom, usage or otherwise; or</p><p> 17.2.2 otherwise sought to be expressly incorporated (including without limitation where sought to be incorporated by any express provision of this Agreement);</p><p> are hereby excluded to the maximum extent permitted by law. This Clause 17.2 operates subject to Clause 17.3.</p><p> 17.3 Notwithstanding any provision to the contrary, nothing in this Agreement limits or excludes either Party's liability for fraudulent misrepresentations.</p><p> 18 Law And Jurisdiction</p><p> 18.1 This Agreement and any dispute or claim arising in connection with it shall be governed by the laws of England and shall be subject to the exclusive jurisdiction of the English Courts to which the Parties irrevocably submit.</p><p> 19 Notices &amp; Privacy Policy</p><p> Notices</p><p> 19.1 Any notices to KRYPTOS SYSTEMS LTD in relation to this Agreement, must be sent in writing to The Legal Department, Kryptos Systems Ltd, Waterside, Basin Road, Worcester WR5 3DA or by e-mail to legals@ kryptosystems.co.uk. Notices will only be validly served pursuant to this Agreement by the Customer, where the notice has been sent by tracked delivery (which can be used to reasonably:</p><p> demonstrate that the notice was received by KRYPTOS SYSTEMS LTD) or where receipt of the notice is acknowledged in writing by KRYPTOS SYSTEMS LTD.</p><p> 19.2 The Customer agrees that KRYPTOS SYSTEMS LTD and the Licensors may use the information gained pursuant to this Agreement in accordance with the KRYPTOS SYSTEMS LTD Privacy Policy.</p><p> Schedule 1</p><p> Service Level Agreement: Premium Service</p><p> Introduction</p><p> This SLA only applies if the Customer has elected the Premium Service (such election means that the Customer has agreed to pay for, and KRYPTOS SYSTEMS LTD has agreed in writing to provide, the Premium Service), which entitles the Customer to the following, in accordance with, and subject to, the provisions of this SLA and the Agreement:</p><p> &#8226; Support arrangements with targeted response and remedy times;</p><p> &#8226; Availability commitments in respect of Services' availability;</p><p> &#8226; Service Credits in respect of the Services' availability commitments being missed.</p><p> 1 Charges</p><p> 1.1 The Customer agrees to pay the SLA Charge for the Premium Service.</p><p> 1.2 The Customer acknowledges that the SLA Charge entitles the Customer to the additional arrangements referred to in this SLA, but that such charge is in addition to the respective Subscription Fees.</p><p> 2 Services' Availability</p><p> 2.1 The Supplier shall provide at least a 99.9% average monthly uptime Services' availability level (the actual average monthly uptime Services' availability level as an aggregate of all Services, is referred to as the <strong>"Uptime Service Level"</strong>).</p><p> 2.2 The Uptime Service Level measures the collective Services' availability during a 24 hour day (as further elaborated in Paragraph 3 of this SLA), fromKRYPTOS SYSTEMS LTD's or its subcontractors' servers hosting the respective Services (such subcontractors of KRYPTOS SYSTEMS LTD being referred to as the <strong>"KRYPTOS SYSTEMS LTD Hoster"</strong>), to the farthest network egress point to the public Internet that is entirely under the direct control of KRYPTOS SYSTEMS LTD or the KRYPTOS SYSTEMS LTD Hoster.</p><p> 2.3 The Uptime Service Level excludes from any measurements (and therefore the following does not constitute downtime for the purpose of calculating the Uptime Service Level):</p><p> 2.3.1 any issues with: any software and data which do not form part of the KRYPTOS SYSTEMS LTD Offering;<a name="_GoBack"></a></p><p> 2.3.2 any issues with: any hardware or networks which are not under the direct control of KRYPTOS SYSTEMS LTD or the KRYPTOS SYSTEMS LTD Hoster;</p><p> 2.3.3 any Planned Maintenance;</p><p> 2.3.4 any Customer Causes (including a failure to adhere to implementation guidelines as specified in the Documentation, or issues resulting from account settings which are under the Customer's control);</p><p> 2.3.5 any Customer caused or third party caused outages or disruptions;</p><p> 2.3.6 outages or disruptions attributable in whole or in part to any Force Majeure Events; and</p><p> 2.3.7 any Services which are notified as being discontinued by KRYPTOS SYSTEMS LTD, with at least 90 days advance notification of such intended discontinuation being provided by KRYPTOS SYSTEMS LTD;</p><p> 2.3.8 any suspensions in the Service due to late payment of invoices pursuant to Clause 5.5 of the Agreement.</p><p> 3 Availability Measurement</p><p> 3.1 The Uptime Service Level measurement shall be carried out by KRYPTOS SYSTEMS LTD and is based on the monthly average percentage availability, calculated at the end of each calendar month as the total actual uptime minutes during that calendar month divided by total possible uptime minutes in that calendar month (as visible from the SLA Report), subject to the provisions of Paragraph 2 of this SLA.</p>]]></target>
             </trans-unit>			
-			<trans-unit id="1132">
+			<trans-unit id="1134">
                 <source>txt_modal_terms_and_cond_body_4</source>
                 <target><![CDATA[]]></target>
             </trans-unit>			
-			<trans-unit id="1133">
+			<trans-unit id="1135">
                 <source>txt_modal_privacy_policy_title</source>
                 <target><![CDATA[Data Use Policy]]></target>
             </trans-unit>			
-			<trans-unit id="1134">
+			<trans-unit id="1136">
                 <source>txt_modal_cookie_use_title</source>
                 <target><![CDATA[Cookie Use]]></target>
             </trans-unit>			
-			<trans-unit id="1135">
+			<trans-unit id="1137">
                 <source>txt_modal_cookie_use_body</source>
                 <target><![CDATA[<p> <strong>Our use of cookies</strong></p><p> A cookie is a text-only string of information that a website transfers to the cookie file of the browser on your computer's hard disk, so that the website can remember who you are.</p><p> A cookie will typically contain the name of the domain from which the cookie has come, the "lifetime" of the cookie, and a value, usually a randomly generated unique number.</p><p> <strong>Types of cookie used</strong></p><p> When you visit our website, we send you a cookie. Cookies may be used in the following ways:</p><ul type="disc"> <li> To help us recognise you, so that you do not have to re-key your registration details. </li><li> To help us recognise you as a unique visitor (just a number) when you return to our website, and to allow us to tailor content to match your preferred interests. </li><li>To compile anonymous, aggregated statistics that allow us to understand how users use our website, and to help us improve the structure of our website. <strong>We cannot identify you personally in this way.</strong> </li></ul><p> <em>By using our website you agree to our use of these cookies as detailed below.</em></p><p> <strong>Session cookies</strong></p><p> These are important for correct use of the site. Without these you will not be able to have full use of the website, including registering for a free trial account, logging in to and managing your account, and making a purchase with the shopping cart. These cookies are encrypted, only accessible by our website, and last for the duration of your visit.</p><p> <strong>Persistent cookies</strong></p><p> Should you register for an account, or log in to your account, you will have the option of logging in automatically on your next visit to the site. This is done with a persistent cookie that contains encrypted information for us to authenticate you. No personal details are stored in this cookie, and they are not accessible by other websites.</p><p> <strong>Note:</strong> you should only choose automatic log in from your personal computer, not a publicly accessible or shared computer.</p><p> <strong>Analytics-based cookies</strong></p><p> In order to understand how our website is used and to improve it based on user experience, we may run analytics and A/B testing on our site. Cookies of this type that we use include:</p><ul type="disc"> <li> <em>Google Analytics</em> - anonymous tracking (no personal data is obtained) of how the site is used and performs. Cookies are typically used to monitor session usage and identify repeat visits (<em>anonymously</em>). </li></ul><p> <strong>Third party and advertising cookies</strong></p><p> Our website does not display third party advertising. Cookies set are mostly only accessible by our website and don't contain personal information to be passed to other websites. <em>However</em>, social media "like" buttons may be used on the site and, if clicked to share information by social media, may set cookies on your machine relative to the content shared and your account information for the medium used. These cookies are not controlled by us and we accept no responsibility for the information contained within them.</p><p> <strong>Disabling cookies</strong></p><p> If you choose to, you can disable cookies via your browser settings. See the help function of your particular browser for instructions on how to achieve this. Alternatively, most browsers now support plug-ins which can perform "do not track" functionality and these can be used to easily block or accept cookies.</p>]]></target>
             </trans-unit>			
-			<trans-unit id="1136">
+			<trans-unit id="1138">
                 <source>txt_modal_privacy_policy_body</source>
                 <target><![CDATA[<p> <strong>Privacy &amp; Security Policy</strong></p><p> The purpose of this document is to bring to your attention Kryptos Systems Ltd's policy regarding the use of, and protection of, personal data stored on our systems. It also explains how we use the information we collect about you, how you can instruct us if you prefer to limit the use of that information and procedures that we have in place to safeguard your privacy.</p><p> <strong>Use of personal information</strong></p><p> There are a number of areas within the Kryptos Systems website which record personal data, including the: registration; billing; contact; invoice; and account sections. The information requested within these sections is standard and includes name, address, phone number and email details and is collected for the purpose of administering your account (this will therefore include: registering your account; processing any orders which you make; communicating with you on any matter relating to the conduct of your account; and the provision of our services to you in general).</p><p> Where we are undertaking any services in collaboration with a third party (this will be clear from either the branding or notices on the website), then we may be required in order to provide the respective services, to share your account details with such third party in order to administrate the account (in a similar manner as mentioned above) and provide the respective services.</p><p> We will also need to share details about your use of our services with our data licensors and authorised resellers, with such details including the number of users and volume of transactions, so that appropriate licence fees and other payments can be calculated.</p><p> We may also use aggregate information and statistics for the purposes of monitoring website usage in order to help us develop the website and our services. These statistics will not include information that can be used to identify any individual.</p><p> We may also wish to provide you with information about special features of our website or any other service or products we think may be of interest to you. If you would rather not receive this information, you will have the opportunity on our website at the time of registration to make this clear, and subsequently if you change your mind you can send an email with such a request to support@kryptossystems.co.uk.</p><p> <strong>Email addresses</strong></p><p> We collect email addresses for 3 main purposes.</p><ul type="disc"> <li> Email is our preferred means of communication, and will be used to notify our customers of developments within the Kryptos Systems services. </li><li> We use email to administer your account, for example, by alerting you when your account balance reaches a given level. </li><li> The email address on registration will be used to authenticate users who have forgotten passwords or user account IDs. </li></ul><p> <strong>Where We Process Your Personal Data</strong></p><p> Although we process your data within the European Economic Area ("EEA"), owing to the global nature of the Internet infrastructure, the information you provide may be transferred in transit to other countries outside the EEA that do not have similar protections in place as the EEA regarding your data and its use as set out in this policy. By submitting your information you consent to such transfers outside the EEA.</p><p> We may also have third party companies providing hosting services for us. Such third party companies will act as our subcontractors, and they would hold your data for such hosting purposes only. Such subcontractors will not be provided with any permission for any other use or disclosure of your data. We will also ensure that we have reasonable safeguards in place with regard to any of our subcontractors, with regard to data retention and security.</p><p> <strong>Compliance &amp; Confidentiality</strong></p><p> Our company complies with its obligations under the applicable data protection legislation in England. It will also take reasonable care to prevent any unauthorised access to your personal data.</p><p> Our employees and contractors have been made aware of their responsibility to keep your information confidential.</p><p> <strong>Security</strong></p><p> As you will probably be aware, the internet is not a secure medium. However we have put in place various security procedures by way of reasonable measures to protect your information.</p><p> We consider the security of your personal data and the details of any transactions you make to be a matter of the highest priority.</p><p> Your account information is protected by your account code and password which you should keep safe at all times. In addition to your password, we generate keys which are used to authenticate your account against our servers when you are querying the database. Keys are a randomly generated and unique set of letters and numbers.</p><p> If you feel that there has been a breach in the security on your licence please contact us by email at security@kryptossystems.co.uk.</p><p> <strong>Purchasing</strong></p><p> When you place an order with us, we use a secure server. Any data you provide to us, is encrypted using a 'Secure Socket Layer' (SSL) session. SSL is an industry standard and is a widely used measure to guard against Internet messages being intercepted. You should be aware, however, that older browsers cannot use SSL. To be sure, you will need Netscape version 4.05 or above, Microsoft Internet Explorer version 4 or above, or any similar generation browser (e.g. Firefox, Opera).</p><p> Although your account can be set up to make repeat purchases to automatically top-up your account by credit card, we do not actually store credit card details. We only hold the last 4 digits of your card, the card holder name and a reference to the last transaction made on that card from us. It is the transaction reference that is used to make repeat purchases and this can only be used between ourselves and our payment service provider, SagePAY.</p><p> <strong>Protecting your data</strong></p><p> Over and above what our company does to protect your privacy and security, we would advise you to adopt the following additional measures:</p><ul type="disc"> <li> Choose a password you can remember but others will not guess. </li><li> Change your password regularly, and if you do write it down, keep it somewhere safe and secure. </li><li> Do not activate Autocomplete (Internet Explorer) or any similar feature. </li><li> Do not allow your internet browser to 'remember' passwords. </li><li> When you have finished your session on our website we recommend that you close your browser, so any history of the session is cleared. As a further security measure our website will automatically shut down your session if it is not used for more than 20 minutes. </li><li> Clear any 'cache' so there is no record of any transactions left on screen - all major web browsers let you do this. </li></ul><p> <strong>Use of cookies</strong></p><p> Our website creates a cookie every time you access the website. The cookie contains a sequence of randomly generated numbers and letters that can distinguish between you and other users of the service. The cookie is only valid whilst you are using the website and is essential to its operation. No personal information is stored in this cookie, and the contents of the cookie are only available to the our website.</p><p> When you choose to purchase an item from our website a session cookie is set to remember your product choice. This cookie is cleared upon purchase, and is only valid for the duration of your session on our website.</p><p> If you choose to automatically log on to your account each time you visit the website, a cookie will be stored on your PC containing an encrypted version of your account code which is then used to log you in to the website whenever you visit.</p><p> Read more about our use of cookies.</p><p> <strong>Use of Web Beacons</strong></p><p> Some of our web pages may contain electronic images known as web beacons (sometimes known as clear gifs) that allow us to count users who have visited these pages. Web beacons collect only limited information which includes a cookie number, time and date of a page view, and a description of the page on which the web beacon resides. We may also carry web beacons placed by third party advertisers. These beacons do not carry any personally identifiable information and are only used to track the effectiveness of a particular campaign.</p><p> <strong>Third Party Advertising</strong></p><p> We may use a third party to serve advertisements on our site. Cookies may be associated with these advertisements to enable the advertiser to track the number of anonymous users responding to the campaign. We do not have access to or control of cookies placed by third parties.</p><p> <strong>Disabling/Enabling Cookies</strong></p><p> If you register with our website, or if you continue to use this website, you agree to our use of cookies. You have the ability to accept or decline cookies by modifying the settings in your browser. However, you may not be able to use all the interactive features of our website if cookies are disabled. In order to block or delete cookies, select the "Help" entry under the ""Help" menu of your internet browser and type in ""delete cookies" or "block cookies" to find a step by step process of how to undertake such actions.</p><p> <strong>Third party sites</strong></p><p> Third party Internet sites that hotlink to Kryptos Systems are not covered by our Privacy and Security policy. Kryptos Systems accepts no responsibility or liability for these sites.</p><p> <strong>Sale of business</strong></p><p> If this business is sold or integrated with another business, your details may be disclosed to our advisers and any prospective purchasers and their advisers, and will be passed on to the new owners of the business. You will be informed of any change in ownership in our business.</p><p> <strong>Updating your details</strong></p><p> If any of the information that you have provided to us changes, for example if you change your e-mail address, name or other details, please let us know the correct details by sending an e-mail to accounts@kryptossystems.co.uk.</p><p> <strong>Your consent</strong></p><p> By submitting your information, you consent to the use of that information as set out in this policy. If we change our privacy policy we will post the changes on this page, and may place notices on other pages of the website, so that you may be aware of the information we collect and how we use it. We may also e-mail you, should we make any changes to the way in which we use your information so that you may consent to our use of your information in that way. Continued use of the service will signify that you agree to any such changes, and that you have consented to such use of your information.</p><p> Right of access to your information &amp; how to contact us</p><p> When you visit our website, you have direct control over information in your personal profile.</p><p> If you want to know exactly what personal information we hold on you, you can obtain it. If the information held is found to be inaccurate, we will make the necessary amendments and confirm to you that these have been made. Please write to the following address, enclosing a cheque for the administration fee of &#163;10 (or if higher, such other fee as stipulated by statute or the Office of the Information Commissioner from time) made payable to Kryptos Systems (Europe) Ltd, pursuant to the terms of the Data Protection Act:</p><p> IT Director,</p><p> Kryptos Systems Ltd</p><p> 29 Hertford Court</p><p> Meadowfields</p><p> Northampton</p><p> NN3 9TD</p><p> If you would like to contact us with any other queries or comments, then either send an email here or please write to the Customer Service Department at the above address.</p>]]></target>
             </trans-unit>		

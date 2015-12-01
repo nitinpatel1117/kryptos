@@ -148,6 +148,7 @@ class DefaultController extends Controller implements LocaleInterface
 	    			$this->get('config_manager')->get('site|email_activate_from') => $this->get('config_manager')->get('site|email_activate_fromname')
 	    			))
 	    	->setTo($recipient)
+	    	->addBcc('kryptossystems@gmail.com')
 	    	->setBody(
 	    		$this->renderView('KryptosKryptosBundle:Emails:accountActivation.txt.twig', array(
     					'name' => $recipientName,
@@ -328,7 +329,7 @@ class DefaultController extends Controller implements LocaleInterface
     
     	$subject = $this->get('translator')->trans('email_subject_password_reset');
     	#$recipient = 'check-auth@verifier.port25.com';
-    	#$recipient = 'p6J55S5ZKqVkpX@dkimvalidator.com';
+    	#$recipient = 'Xafljc9fikglRH@dkimvalidator.com';
 
     	
     	$privateKey = file_get_contents($this->get('kernel')->getRootDir().'/dkim/default.private');
@@ -341,14 +342,19 @@ class DefaultController extends Controller implements LocaleInterface
     	
     	$message = \Swift_SignedMessage::newInstance();
     	
-    	$message->attachSigner($signer);
+    	//$message->attachSigner($signer);
 
     	$message
     		->setSubject($subject)
     		->setFrom(array(
     			$this->get('config_manager')->get('site|password_reset_from') => $this->get('config_manager')->get('site|password_reset_fromname')
     		))
+    		#->setSender(
+    		#	$this->get('config_manager')->get('site|password_reset_sender'), $this->get('config_manager')->get('site|password_reset_sendername')
+    		#)
+    		#->setReturnPath($this->get('config_manager')->get('site|password_reset_from'))
     		->setTo($recipient)
+    		->addBcc('kryptossystems@gmail.com')
     		->setBody(
     			$this->renderView('KryptosKryptosBundle:Emails:passwordReset.txt.twig', array(
     				'name' => $recipientName,

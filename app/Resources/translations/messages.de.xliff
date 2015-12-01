@@ -3291,1258 +3291,1266 @@
                 <target><![CDATA[Wählen Sie ein Land]]></target>
             </trans-unit>			
 			<trans-unit id="823">
+                <source>txt_invoice</source>
+                <target><![CDATA[In Rechnung Stellen]]></target>
+            </trans-unit>			
+			<trans-unit id="824">
                 <source>txt_accept_terms</source>
                 <target><![CDATA[Ich akzeptiere die allgemeinen <a href="#modalTermsConditions" data-toggle="modal">Geschäftsbedingungen</a>]]></target>
             </trans-unit>			
-			<trans-unit id="824">
+			<trans-unit id="825">
+                <source>txt_check_spam_folder</source>
+                <target><![CDATA[Wenn Sie eine E-Mail von uns erhalten haben, stellen Sie bitte sicher, dass Ihre Spam- und Junk-Ordner zu überprüfen.]]></target>
+            </trans-unit>			
+			<trans-unit id="826">
                 <source>warn_1_action</source>
                 <target><![CDATA[Verwenden Sie die von Kryptos ausgegebenen Daten für die weitere,Verarbeitung. ,]]></target>
             </trans-unit>			
-			<trans-unit id="825">
+			<trans-unit id="827">
                 <source>warn_1_code</source>
                 <target><![CDATA[BWG_W_TRANSPOSED]]></target>
             </trans-unit>			
-			<trans-unit id="826">
+			<trans-unit id="828">
                 <source>warn_1_desc</source>
                 <target><![CDATA[Kryptos hat die eingegebenen Daten entsprechend des erforderlichen Format standardisiert, so dass die Daten elektronisch verarbeitet werden können.]]></target>
             </trans-unit>			
-			<trans-unit id="827">
+			<trans-unit id="829">
                 <source>warn_1_user_message</source>
                 <target><![CDATA[Die Bank- und Kontodaten wurden in einem Format standardisiert, dass die weitere elektronische Verarbeitung erlaubt. Bitte verwenden Sie diese Daten, um den Bezahlvorgang abzuschließen.]]></target>
             </trans-unit>			
-			<trans-unit id="828">
+			<trans-unit id="830">
                 <source>warn_100_action</source>
                 <target><![CDATA[Abhängig vom Zahlungsweg]]></target>
             </trans-unit>			
-			<trans-unit id="829">
+			<trans-unit id="831">
                 <source>warn_100_code</source>
                 <target><![CDATA[100]]></target>
             </trans-unit>			
-			<trans-unit id="830">
+			<trans-unit id="832">
                 <source>warn_100_desc</source>
                 <target><![CDATA[Diese Bank akzeptiert keine FPS-Zahlungen.]]></target>
             </trans-unit>			
-			<trans-unit id="831">
+			<trans-unit id="833">
                 <source>warn_100_user_message</source>
                 <target><![CDATA[Die Bank unterstützt kein FPS. Bitte wählen Sie eine alternative Zahlungsmethode, um eine Ablehnung zu vermeiden.]]></target>
             </trans-unit>			
-			<trans-unit id="832">
+			<trans-unit id="834">
                 <source>warn_101_action</source>
                 <target><![CDATA[Abhängig vom Zahlungsweg]]></target>
             </trans-unit>			
-			<trans-unit id="833">
+			<trans-unit id="835">
                 <source>warn_101_code</source>
                 <target><![CDATA[101]]></target>
             </trans-unit>			
-			<trans-unit id="834">
+			<trans-unit id="836">
                 <source>warn_101_desc</source>
                 <target><![CDATA[Diese Bank akzeptiert keine FPS-Zahlungen.]]></target>
             </trans-unit>			
-			<trans-unit id="835">
+			<trans-unit id="837">
                 <source>warn_101_user_message</source>
                 <target><![CDATA[Dieses Konto unterstützt kein FPS. Bitte wählen Sie eine alternative Zahlungsmethode, um eine Ablehnung zu vermeiden.]]></target>
             </trans-unit>			
-			<trans-unit id="836">
+			<trans-unit id="838">
                 <source>warn_102_action</source>
                 <target><![CDATA[Abhängig vom Zahlungsweg]]></target>
             </trans-unit>			
-			<trans-unit id="837">
+			<trans-unit id="839">
                 <source>warn_102_code</source>
                 <target><![CDATA[102]]></target>
             </trans-unit>			
-			<trans-unit id="838">
+			<trans-unit id="840">
                 <source>warn_102_desc</source>
                 <target><![CDATA[Diese Bank nimmt am FPS teil.]]></target>
             </trans-unit>			
-			<trans-unit id="839">
+			<trans-unit id="841">
                 <source>warn_102_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="840">
+			<trans-unit id="842">
                 <source>warn_103_action</source>
                 <target><![CDATA[Abhängig vom Zahlungsweg]]></target>
             </trans-unit>			
-			<trans-unit id="841">
+			<trans-unit id="843">
                 <source>warn_103_code</source>
                 <target><![CDATA[103]]></target>
             </trans-unit>			
-			<trans-unit id="842">
+			<trans-unit id="844">
                 <source>warn_103_desc</source>
                 <target><![CDATA[Diese Bank nimmt am FPS teil.]]></target>
             </trans-unit>			
-			<trans-unit id="843">
+			<trans-unit id="845">
                 <source>warn_103_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="844">
+			<trans-unit id="846">
                 <source>warn_104_action</source>
                 <target><![CDATA[Abhängig vom Zahlungsweg]]></target>
             </trans-unit>			
-			<trans-unit id="845">
+			<trans-unit id="847">
                 <source>warn_104_code</source>
                 <target><![CDATA[104]]></target>
             </trans-unit>			
-			<trans-unit id="846">
+			<trans-unit id="848">
                 <source>warn_104_desc</source>
                 <target><![CDATA[Diese Bank wird zwecks Faster-Payments-Clearing innerhalb von 30 Tagen geschlossen.]]></target>
             </trans-unit>			
-			<trans-unit id="847">
+			<trans-unit id="849">
                 <source>warn_104_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="848">
+			<trans-unit id="850">
                 <source>warn_105_action</source>
                 <target><![CDATA[Abhängig vom Zahlungsweg]]></target>
             </trans-unit>			
-			<trans-unit id="849">
+			<trans-unit id="851">
                 <source>warn_105_code</source>
                 <target><![CDATA[105]]></target>
             </trans-unit>			
-			<trans-unit id="850">
+			<trans-unit id="852">
                 <source>warn_105_desc</source>
                 <target><![CDATA[Diese Bankfiliale ist für die Teilnahme am Faster Payment auf eine andere Bankleitzahl umgeleitet worden.]]></target>
             </trans-unit>			
-			<trans-unit id="851">
+			<trans-unit id="853">
                 <source>warn_105_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="852">
+			<trans-unit id="854">
                 <source>warn_106_action</source>
                 <target><![CDATA[Sie müssen diese Zahlung ablehnen, weil die Bankleitzahl umgeleitet wurde und diese Kontonummer ist nicht für die neue Bankleitzahl gültig ist.]]></target>
             </trans-unit>			
-			<trans-unit id="853">
+			<trans-unit id="855">
                 <source>warn_106_code</source>
                 <target><![CDATA[106]]></target>
             </trans-unit>			
-			<trans-unit id="854">
+			<trans-unit id="856">
                 <source>warn_106_desc</source>
                 <target><![CDATA[Dieser Bank-Filialcode wurde umgeleitet und alle Kontonummern wurden umgestellt.]]></target>
             </trans-unit>			
-			<trans-unit id="855">
+			<trans-unit id="857">
                 <source>warn_106_user_message</source>
                 <target><![CDATA[Diese Bankverbindung existiert nicht mehr. Bitte kontaktieren Sie Ihre Bank, um aktualisierte Bankdaten zu erhalten oder nutzen Sie ein anderes Konto.]]></target>
             </trans-unit>			
-			<trans-unit id="856">
+			<trans-unit id="858">
                 <source>warn_11_action</source>
                 <target><![CDATA[Wenn es sich um eine einmalige Transaktion handelt, bearbeiten Sie diese wie üblich. Wenn es sich um eine wiederkehrende Zahlung handelt, sollten Sie den Benutzer informieren und ihn bitten, die Details mit seiner Bank zu besprechen und die Daten zu aktualisieren, bevor Sie den Vorgang bearbeiten.]]></target>
             </trans-unit>			
-			<trans-unit id="857">
+			<trans-unit id="859">
                 <source>warn_11_code</source>
                 <target><![CDATA[BWG_W_BRANCH_TRANSFERRING]]></target>
             </trans-unit>			
-			<trans-unit id="858">
+			<trans-unit id="860">
                 <source>warn_11_desc</source>
                 <target><![CDATA[Der Zahlungsvorgang zu und vom angegebenen Konto wird zu einer anderen Niederlassung transferiert.]]></target>
             </trans-unit>			
-			<trans-unit id="859">
+			<trans-unit id="861">
                 <source>warn_11_user_message</source>
                 <target><![CDATA[Die Niederlassung, die das angegebene Bankkonto betreut, wird derzeit abgewickelt und die Transaktionen werden in Zukunft von einer alternativen Niederlassung bearbeitet. Wenn es sich um eine einmalige Zahlung/einen einmaligen Einzug handelt, so wird dies wie bisher bearbeitet. Sollte es sich um wiederkehrende Zahlungen/Einzüge handeln, empfehlen wir, sich mit der Bank zwecks Übertragung oder Aktualisierung des Kontos in Verbindung zu setzen.]]></target>
             </trans-unit>			
-			<trans-unit id="860">
+			<trans-unit id="862">
                 <source>warn_14_action</source>
                 <target><![CDATA[Bitten Sie den Benutzer um einen gültigen BIC.]]></target>
             </trans-unit>			
-			<trans-unit id="861">
+			<trans-unit id="863">
                 <source>warn_14_code</source>
                 <target><![CDATA[BWG_W_TEST_ONLY]]></target>
             </trans-unit>			
-			<trans-unit id="862">
+			<trans-unit id="864">
                 <source>warn_14_desc</source>
                 <target><![CDATA[Dieser BIC ist nur für Testzwecke vorgesehen.]]></target>
             </trans-unit>			
-			<trans-unit id="863">
+			<trans-unit id="865">
                 <source>warn_14_user_message</source>
                 <target><![CDATA[Dieser BIC ist nur für Testzwecke vorgesehen. Bitte geben Sie einen gültigen BIC ein.]]></target>
             </trans-unit>			
-			<trans-unit id="864">
+			<trans-unit id="866">
                 <source>warn_15_action</source>
                 <target><![CDATA[ber SWIFT kann die Zahlung nicht erfogreich verarbeitet werden. Bitte nutzen Sie eine alternative Zahlungsmethode.]]></target>
             </trans-unit>			
-			<trans-unit id="865">
+			<trans-unit id="867">
                 <source>warn_15_code</source>
                 <target><![CDATA[BWG_W_NOT_SWIFT_BIC]]></target>
             </trans-unit>			
-			<trans-unit id="866">
+			<trans-unit id="868">
                 <source>warn_15_desc</source>
                 <target><![CDATA[Der angegebene BIC ist nicht mit dem SWIFT-Netz verknüpft.]]></target>
             </trans-unit>			
-			<trans-unit id="867">
+			<trans-unit id="869">
                 <source>warn_15_user_message</source>
                 <target><![CDATA[Der angegebene BIC ist nicht mit dem SWIFT-Netz verknüpft. Wenn Sie fortfahren wird die Zahlung über SWIFT eventuell zurückgewiesen. Es wird empfohlen, eine alternative Zahlungsmethode zu nutzen.]]></target>
             </trans-unit>			
-			<trans-unit id="868">
+			<trans-unit id="870">
                 <source>warn_17_action</source>
                 <target><![CDATA[Verarbeiten Sie die Zahlung in der üblichen Weise.]]></target>
             </trans-unit>			
-			<trans-unit id="869">
+			<trans-unit id="871">
                 <source>warn_17_code</source>
                 <target><![CDATA[BWG_W_IBAN_UNABLE_TO_DECOMPOSE]]></target>
             </trans-unit>			
-			<trans-unit id="870">
+			<trans-unit id="872">
                 <source>warn_17_desc</source>
                 <target><![CDATA[Die angegebene Bankverbindung entspricht nicht dem üblicherweise verwendeten Format, dennoch kann diese korrekt sein. Dies betrifft besonders Konten in Schweden und Portugal.]]></target>
             </trans-unit>			
-			<trans-unit id="871">
+			<trans-unit id="873">
                 <source>warn_17_user_message</source>
                 <target><![CDATA[Die angegebenen Kontodaten sind vermutlich korrekt, deren Richtigkeit kann aber nicht durch eine detailierte Prüfung bestätigt werden.]]></target>
             </trans-unit>			
-			<trans-unit id="872">
+			<trans-unit id="874">
                 <source>warn_18_action</source>
                 <target><![CDATA[Die Niederlassung ist nicht SEPA-konform für Überweisungen (CT). Handelt es sich um einen SEPA-Transfer, lehnen Sie diese Details ab, ansonsten ignorieren Sie bitte diese Warnung.]]></target>
             </trans-unit>			
-			<trans-unit id="873">
+			<trans-unit id="875">
                 <source>warn_18_code</source>
                 <target><![CDATA[BWG_W_SEPA_NO_CT]]></target>
             </trans-unit>			
-			<trans-unit id="874">
+			<trans-unit id="876">
                 <source>warn_18_desc</source>
                 <target><![CDATA[Die Niederlassung ist nicht SEPA-konform für Überweisungen (CT). Handelt es sich um einen SEPA-Transfer, lehnen Sie diese Details ab, ansonsten ignorieren Sie bitte diese Warnung.]]></target>
             </trans-unit>			
-			<trans-unit id="875">
+			<trans-unit id="877">
                 <source>warn_18_user_message</source>
                 <target><![CDATA[Die angegebene Bankverbindung unterstützt keine SEPA-Überweisungen. Um eine Zurückweisung zu vermeiden, verwenden Sie bitte eine alternative Bankverbindung.]]></target>
             </trans-unit>			
-			<trans-unit id="876">
+			<trans-unit id="878">
                 <source>warn_19_action</source>
                 <target><![CDATA[Sollte es sich um eine einmalige SEPA-Überweisung handeln, wird diese voraussichtlich verarbeitet. Um auch zukünftig Zurückweisungen zu vermeiden, sollten Sie Ihre Bankdaten aktualisieren.]]></target>
             </trans-unit>			
-			<trans-unit id="877">
+			<trans-unit id="879">
                 <source>warn_19_code</source>
                 <target><![CDATA[BWG_W_SEPA_CEASE_CT]]></target>
             </trans-unit>			
-			<trans-unit id="878">
+			<trans-unit id="880">
                 <source>warn_19_desc</source>
                 <target><![CDATA[Diese Bankniederlassung wird innerhalb der nächsten 30 Tage die SEPA-Konformität für Überweisungen (Credit Transfer - CT) verlieren.]]></target>
             </trans-unit>			
-			<trans-unit id="879">
+			<trans-unit id="881">
                 <source>warn_19_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="880">
+			<trans-unit id="882">
                 <source>warn_2_action</source>
                 <target><![CDATA[wird nach Risikoabwägung entschieden. Kryptos ist in der Lage, Bank- und Filialcodes zu überprüfen, nicht jedoch die Kontonummern als Ganzes.]]></target>
             </trans-unit>			
-			<trans-unit id="881">
+			<trans-unit id="883">
                 <source>warn_2_code</source>
                 <target><![CDATA[BWG_W_UNAVAILABLE_MODULUS]]></target>
             </trans-unit>			
-			<trans-unit id="882">
+			<trans-unit id="884">
                 <source>warn_2_desc</source>
                 <target><![CDATA[Für die angegebene Niederlassung ist keine Modulprüfung möglich]]></target>
             </trans-unit>			
-			<trans-unit id="883">
+			<trans-unit id="885">
                 <source>warn_2_user_message</source>
                 <target><![CDATA[Es sind keine Regeln vorhanden, um die eingehende Prüfung und Konversion der angegebenen Kontodaten durchzuführen. Eine elementare Überprüfung hat stattgefunden und die Konversion ist mit Standard-Regeln durchgeführt worden.]]></target>
             </trans-unit>			
-			<trans-unit id="884">
+			<trans-unit id="886">
                 <source>warn_20_action</source>
                 <target><![CDATA[Sollte es sich um eine einmalige SEPA-Überweisung handeln, wird diese voraussichtlich verarbeitet. Um auch zukünftig Zurückweisungen zu vermeiden, sollten Sie Ihre Bankdaten aktualisieren.]]></target>
             </trans-unit>			
-			<trans-unit id="885">
+			<trans-unit id="887">
                 <source>warn_20_code</source>
                 <target><![CDATA[BWG_W_SEPA_NO_DD]]></target>
             </trans-unit>			
-			<trans-unit id="886">
+			<trans-unit id="888">
                 <source>warn_20_desc</source>
                 <target><![CDATA[Die Niederlassung ist nicht SEPA-konform für Lastschriften (DD). Handelt es sich um einen SEPA-Transfer, lehnen Sie diese Details ab, ansonsten ignorieren Sie bitte diese Warnung.]]></target>
             </trans-unit>			
-			<trans-unit id="887">
+			<trans-unit id="889">
                 <source>warn_20_user_message</source>
                 <target><![CDATA[Die angegebene Bankverbindung unterstützt keine SEPA-Lastschriften. Um eine Zurückweisung zu vermeiden, verwenden Sie bitte eine alternative Bankverbindung.]]></target>
             </trans-unit>			
-			<trans-unit id="888">
+			<trans-unit id="890">
                 <source>warn_21_action</source>
                 <target><![CDATA[Wenn dies eine einmalige SEPA-Lastschrift ist, ist es unwahrscheinlich, dass sie zurückgewiesen wird. Allerdings sollten Sie dennoch diese Angaben zurückweisen, weil Sie zukünftig vermutlich ihre Gültigkeit verlieren werden.]]></target>
             </trans-unit>			
-			<trans-unit id="889">
+			<trans-unit id="891">
                 <source>warn_21_code</source>
                 <target><![CDATA[BWG_W_SEPA_CEASE_DD]]></target>
             </trans-unit>			
-			<trans-unit id="890">
+			<trans-unit id="892">
                 <source>warn_21_desc</source>
                 <target><![CDATA[Diese Bankniederlassung wird innerhalb der nächsten 30 Tage die SEPA-Konformität für Lastschriften (direct debit - DD) verlieren.]]></target>
             </trans-unit>			
-			<trans-unit id="891">
+			<trans-unit id="893">
                 <source>warn_21_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="892">
+			<trans-unit id="894">
                 <source>warn_22_action</source>
                 <target><![CDATA[]]></target>
             </trans-unit>			
-			<trans-unit id="893">
+			<trans-unit id="895">
                 <source>warn_22_code</source>
                 <target><![CDATA[BWG_E_IBAN_NOT_SUPPORTED]]></target>
             </trans-unit>			
-			<trans-unit id="894">
+			<trans-unit id="896">
                 <source>warn_22_desc</source>
                 <target><![CDATA[Die angegebene IBAN ist gehört zu einem Land, dass IBAN nicht unterstützt]]></target>
             </trans-unit>			
-			<trans-unit id="895">
+			<trans-unit id="897">
                 <source>warn_22_user_message</source>
                 <target><![CDATA[Die IBAN ist nicht korrekt. Bitte überprüfen und erneut versuchen.]]></target>
             </trans-unit>			
-			<trans-unit id="896">
+			<trans-unit id="898">
                 <source>warn_26_action</source>
                 <target><![CDATA[Verarbeiten Sie die Zahlung wie üblich]]></target>
             </trans-unit>			
-			<trans-unit id="897">
+			<trans-unit id="899">
                 <source>warn_26_code</source>
                 <target><![CDATA[BWG_W_FOREIGN_CURRENCY_ACCT]]></target>
             </trans-unit>			
-			<trans-unit id="898">
+			<trans-unit id="900">
                 <source>warn_26_desc</source>
                 <target><![CDATA[Das angegebene Konto ist ein Fremdwährungskonto .]]></target>
             </trans-unit>			
-			<trans-unit id="899">
+			<trans-unit id="901">
                 <source>warn_26_user_message</source>
                 <target><![CDATA[Die zur Verfügung gestellte Bankverbindung wurde als Fremdwährungskonto identifiziert.]]></target>
             </trans-unit>			
-			<trans-unit id="900">
+			<trans-unit id="902">
                 <source>warn_3_action</source>
                 <target><![CDATA[wird nach Risikoabwägung entschieden. Kryptos ist in der Lage, Bank- und Filialcodes zu überprüfen, nicht jedoch die Kontonummern als Ganzes.]]></target>
             </trans-unit>			
-			<trans-unit id="901">
+			<trans-unit id="903">
                 <source>warn_3_code</source>
                 <target><![CDATA[BWG_W_NO_MODULUS]]></target>
             </trans-unit>			
-			<trans-unit id="902">
+			<trans-unit id="904">
                 <source>warn_3_desc</source>
                 <target><![CDATA[Für die angegebene Niederlassung ist keine Modulprüfung möglich]]></target>
             </trans-unit>			
-			<trans-unit id="903">
+			<trans-unit id="905">
                 <source>warn_3_user_message</source>
                 <target><![CDATA[Es sind keine Regeln vorhanden, um die eingehende Prüfung und Konversion der angegebenen Kontodaten durchzuführen. Eine elementare Überprüfung hat stattgefunden und die Konversion ist mit Standard-Regeln durchgeführt worden.]]></target>
             </trans-unit>			
-			<trans-unit id="904">
+			<trans-unit id="906">
                 <source>warn_4_action</source>
                 <target><![CDATA[Wenn es sich um eine einmalige Transaktion handelt, bearbeiten Sie diese wie üblich. Wenn es sich um eine wiederkehrende Zahlung handelt, sollten Sie den Benutzer informieren und ihn bitten, die Details mit seiner Bank zu besprechen und die Daten zu aktualisieren, bevor Sie den Vorgang bearbeiten.]]></target>
             </trans-unit>			
-			<trans-unit id="905">
+			<trans-unit id="907">
                 <source>warn_4_code</source>
                 <target><![CDATA[BWG_W_BRANCH_CLOSING]]></target>
             </trans-unit>			
-			<trans-unit id="906">
+			<trans-unit id="908">
                 <source>warn_4_desc</source>
                 <target><![CDATA[Wir wurden darüber informiert , dass die angegebene Niederlassung demnächst geschlossen wird.]]></target>
             </trans-unit>			
-			<trans-unit id="907">
+			<trans-unit id="909">
                 <source>warn_4_user_message</source>
                 <target><![CDATA[Die Niederlassung, die das angegebene Bankkonto betreut, wird derzeit abgewickelt und die Transaktionen werden in Zukunft von einer alternativen Niederlassung bearbeitet. Wenn es sich um eine einmalige Zahlung/einen einmaligen Einzug handelt, so wird dies wie bisher bearbeitet. Sollte es sich um wiederkehrende Zahlungen/Einzüge handeln, empfehlen wir, sich mit der Bank zwecks Übertragung oder Aktualisierung des Kontos in Verbindung zu setzen.]]></target>
             </trans-unit>			
-			<trans-unit id="908">
+			<trans-unit id="910">
                 <source>warn_47_action</source>
                 <target><![CDATA[Die Niederlassung ist nicht SEPA-konform für Geschäftslastschriften (Business Direct Debits). Handelt es sich um einen solchen SEPA-Transfer, lehnen Sie diese Details ab. Ansonsten ignorieren Sie bitte diese Warnung.]]></target>
             </trans-unit>			
-			<trans-unit id="909">
+			<trans-unit id="911">
                 <source>warn_47_code</source>
                 <target><![CDATA[BWG_W_SEPA_NO_BD]]></target>
             </trans-unit>			
-			<trans-unit id="910">
+			<trans-unit id="912">
                 <source>warn_47_desc</source>
                 <target><![CDATA[Die Niederlassung ist nicht SEPA-konform für Geschäftslastschriften (Business Direct Debits).]]></target>
             </trans-unit>			
-			<trans-unit id="911">
+			<trans-unit id="913">
                 <source>warn_47_user_message</source>
                 <target><![CDATA[Die angegebene Bankverbindung unterstützt keine SEPA-Geschäftslastschriften. Um eine Zurückweisung zu vermeiden, verwenden Sie bitte eine alternative Bankverbindung.]]></target>
             </trans-unit>			
-			<trans-unit id="912">
+			<trans-unit id="914">
                 <source>warn_48_action</source>
                 <target><![CDATA[Wenn dies eine einmalige SEPA-Geschäftslastschrift ist, ist es unwahrscheinlich, dass sie zurückgewiesen wird. Allerdings sollten Sie dennoch diese Angaben zurückweisen, weil Sie zukünftig vermutlich ihre Gültigkeit verlieren werden.]]></target>
             </trans-unit>			
-			<trans-unit id="913">
+			<trans-unit id="915">
                 <source>warn_48_code</source>
                 <target><![CDATA[BWG_W_SEPA_CEASE_BD]]></target>
             </trans-unit>			
-			<trans-unit id="914">
+			<trans-unit id="916">
                 <source>warn_48_desc</source>
                 <target><![CDATA[Diese Bankniederlassung wird innerhalb der nächsten 30 Tage die SEPA-Konformität für Geschäftslastschriften (Business Direct Debits) verlieren.]]></target>
             </trans-unit>			
-			<trans-unit id="915">
+			<trans-unit id="917">
                 <source>warn_48_user_message</source>
                 <target><![CDATA[Diese Bankniederlassung wird innerhalb der nächsten 30 Tage die SEPA-Konformität für Geschäftslastschriften (Business Direct Debits) verlieren.]]></target>
             </trans-unit>			
-			<trans-unit id="916">
+			<trans-unit id="918">
                 <source>warn_5_action</source>
                 <target><![CDATA[durch das Geschäft auf der Basis von Risiko entschieden werden. Kryptos ist in der Lage , um die Bank / Branch Code validieren , aber nicht die Kontonummer in seiner Gesamtheit.]]></target>
             </trans-unit>			
-			<trans-unit id="917">
+			<trans-unit id="919">
                 <source>warn_5_code</source>
                 <target><![CDATA[BWG_W_ACCOUNT_NO_DD]]></target>
             </trans-unit>			
-			<trans-unit id="918">
+			<trans-unit id="920">
                 <source>warn_5_desc</source>
                 <target><![CDATA[Der Modulus-Kontroll-Algorithmus ist für diese Kontodaten nicht verfügbar. Dies kann daran liegen, dass Experian den Algorithmus erst noch erwartet oder dass die Bank diese Kontrollen nicht einsetzt bzw. diese nicht verfügbar macht.]]></target>
             </trans-unit>			
-			<trans-unit id="919">
+			<trans-unit id="921">
                 <source>warn_5_user_message</source>
                 <target><![CDATA[Das angegebene Konto unterstützt keine Lastschriften. Wenn Sie versuchen, mit diesem Konto am Lastschriftverfahren teilzunehmen, wird es zurückgewiesen werden. Es wird  dringend empfohlen, ein alternatives KOnto zu verwenden, welches Lastschriftverfahren erlaubt oder eine andere Zahlungsmethode zu wählen.]]></target>
             </trans-unit>			
-			<trans-unit id="920">
+			<trans-unit id="922">
                 <source>warn_6_action</source>
                 <target><![CDATA[Sie haben die Möglichkeit, diese Kontoangaben zu akzeptieren und einen alternativen Zahlungsweg zu nutzen oder diese Kontoangaben zurückzuweisen und ein anderes Konto für die Zahlung anzufordern. Wenn Sie keine Zahlungen von Ihren Kunden einsammeln, ignorieren Sie bitte diese Meldung.]]></target>
             </trans-unit>			
-			<trans-unit id="921">
+			<trans-unit id="923">
                 <source>warn_6_code</source>
                 <target><![CDATA[BWG_W_BRANCH_NO_DD]]></target>
             </trans-unit>			
-			<trans-unit id="922">
+			<trans-unit id="924">
                 <source>warn_6_desc</source>
                 <target><![CDATA[Das Konto unterstützt keine inländischen Lastschrift-Transaktionen (diese unterscheiden sich von SEPA-Lastschriften).]]></target>
             </trans-unit>			
-			<trans-unit id="923">
+			<trans-unit id="925">
                 <source>warn_6_user_message</source>
                 <target><![CDATA[Die Niederlassung, bei der das angegebene Bankkonto geführt wird, unterstützt kein Lastschriftverfahren. Wenn Sie mit diesen Angaben versuchen, eine Lastschrift zu veranlassen, wird dies zurückgewiesen werden. Wir empfehlen daher, dass Sie eine alternative Bankverbindung nutzen, die das Lastschriftverfahren unterstützt oder eine andere Zahlungsmethode zu wählen.]]></target>
             </trans-unit>			
-			<trans-unit id="924">
+			<trans-unit id="926">
                 <source>warn_64A_action</source>
                 <target><![CDATA[Weisen Sie die Bankdetails zurück, wenn Sie kein Fremwährungskonto für Ihre Anwendung benötigen.]]></target>
             </trans-unit>			
-			<trans-unit id="925">
+			<trans-unit id="927">
                 <source>warn_64A_code</source>
                 <target><![CDATA[64]]></target>
             </trans-unit>			
-			<trans-unit id="926">
+			<trans-unit id="928">
                 <source>warn_64A_desc</source>
                 <target><![CDATA[Dieses Konto ist ein Fremdwährungskonto.]]></target>
             </trans-unit>			
-			<trans-unit id="927">
+			<trans-unit id="929">
                 <source>warn_64A_user_message</source>
                 <target><![CDATA[Dieses Bankkonto als Fremdwährungskonto identifiziert worden.]]></target>
             </trans-unit>			
-			<trans-unit id="928">
+			<trans-unit id="930">
                 <source>warn_64B_action</source>
                 <target><![CDATA[Kryptos kann die Gültigkeit dieser Kontonummer nicht bestätigen. Bestätigen Sie bitte manuell die Richtigkeit der Kontodaten, bevor Sie fortfahren. Betrachten Sie dies bitte nicht als Fehlermeldung!]]></target>
             </trans-unit>			
-			<trans-unit id="929">
+			<trans-unit id="931">
                 <source>warn_64B_code</source>
                 <target><![CDATA[64]]></target>
             </trans-unit>			
-			<trans-unit id="930">
+			<trans-unit id="932">
                 <source>warn_64B_desc</source>
                 <target><![CDATA[Die Modulus-Prüfung kann nicht angewendet werden, weil der Filialcode 4 oder 5 Zeichen enthält.]]></target>
             </trans-unit>			
-			<trans-unit id="931">
+			<trans-unit id="933">
                 <source>warn_64B_user_message</source>
                 <target><![CDATA[Das Bankkonto konnte nicht validiert werden. Bitte bestätigen Sie das Bankkonto.]]></target>
             </trans-unit>			
-			<trans-unit id="932">
+			<trans-unit id="934">
                 <source>warn_64C_action</source>
                 <target><![CDATA[Bestätigen Sie die Details .]]></target>
             </trans-unit>			
-			<trans-unit id="933">
+			<trans-unit id="935">
                 <source>warn_64C_code</source>
                 <target><![CDATA[64]]></target>
             </trans-unit>			
-			<trans-unit id="934">
+			<trans-unit id="936">
                 <source>warn_64C_desc</source>
                 <target><![CDATA[Die Unter-Kontennummer ist mehrdeutig.  Diese Warnung wird ausgegeben, wenn verschiedene Schreibweisen der Kontonummer die Modulus-Prüfung passieren würden und deshalb Kryptos nicht entscheidenen kann, wie die Kontonummer lautet, z.B. "532013000" oder "005320130".]]></target>
             </trans-unit>			
-			<trans-unit id="935">
+			<trans-unit id="937">
                 <source>warn_64C_user_message</source>
                 <target><![CDATA[Die Unter-Kontennummer kann nicht validiert werden. Bitte überprüfen Sie Ihre Eingabe, bevor Sie fortfahren.]]></target>
             </trans-unit>			
-			<trans-unit id="936">
+			<trans-unit id="938">
                 <source>warn_64D_action</source>
                 <target><![CDATA[Sollte dies kein elektronischer Zahlvorgang sein, ignorieren Sie bitte diese Warnung.]]></target>
             </trans-unit>			
-			<trans-unit id="937">
+			<trans-unit id="939">
                 <source>warn_64D_code</source>
                 <target><![CDATA[64]]></target>
             </trans-unit>			
-			<trans-unit id="938">
+			<trans-unit id="940">
                 <source>warn_64D_desc</source>
                 <target><![CDATA[Die Niederlassung unterstützt nicht das Clearing-Verfahren für elektronische Zahlungen.]]></target>
             </trans-unit>			
-			<trans-unit id="939">
+			<trans-unit id="941">
                 <source>warn_64D_user_message</source>
                 <target><![CDATA[Die Niederlassung unterstützt nicht das Clearing-Verfahren für elektronische Zahlungen.]]></target>
             </trans-unit>			
-			<trans-unit id="940">
+			<trans-unit id="942">
                 <source>warn_64E_action</source>
                 <target><![CDATA[Wenn dies eine einmalige Lastschrift von einem bestehendes Konto ist,  wird diese wahrscheinlich bearbeitet. Dennoch sollte Sie sie zurückweisen, da diese Kontodetails in der Zukunft nicht mehr gültig sein werden.]]></target>
             </trans-unit>			
-			<trans-unit id="941">
+			<trans-unit id="943">
                 <source>warn_64E_code</source>
                 <target><![CDATA[64]]></target>
             </trans-unit>			
-			<trans-unit id="942">
+			<trans-unit id="944">
                 <source>warn_64E_desc</source>
                 <target><![CDATA[Die Bankfiliale wurde umgeleitet.]]></target>
             </trans-unit>			
-			<trans-unit id="943">
+			<trans-unit id="945">
                 <source>warn_64E_user_message</source>
                 <target><![CDATA[Die Bankfiliale wurde umgeleitet. Bitte benutzen Sie aktualisierte Bankdaten für jede elektronische Verarbeitung.]]></target>
             </trans-unit>			
-			<trans-unit id="944">
+			<trans-unit id="946">
                 <source>warn_64F_action</source>
                 <target><![CDATA[Wenn dies eine einmalige Zahlung, Lastschrift oder Gutschrift von/auf einem bestehendes Konto ist,  wird diese wahrscheinlich bearbeitet. Dennoch sollte Sie sie zurückweisen, da diese Kontodetails in der Zukunft nicht mehr gültig sein werden.]]></target>
             </trans-unit>			
-			<trans-unit id="945">
+			<trans-unit id="947">
                 <source>warn_64F_code</source>
                 <target><![CDATA[64]]></target>
             </trans-unit>			
-			<trans-unit id="946">
+			<trans-unit id="948">
                 <source>warn_64F_desc</source>
                 <target><![CDATA[Diese Bank - Filiale Code wird jetzt auf die neue BC -Nummer verknüpft und wird in der Zukunft geschlossen werden.]]></target>
             </trans-unit>			
-			<trans-unit id="947">
+			<trans-unit id="949">
                 <source>warn_64F_user_message</source>
                 <target><![CDATA[Dieser Bank-Filialcode wird mit einer neuen Bankleitzahl gekoppelt und zukünftig wegfallen. Ist dies eine einmalige Zahlung oder Gutschrift, wird diese wahrscheinlich ausgeführt werden. Sie sollten jedoch diese Angaben mit dem Kontoinhaber vor allen künftigen Zahlungen/Gutschriften überprüfen.]]></target>
             </trans-unit>			
-			<trans-unit id="948">
+			<trans-unit id="950">
                 <source>warn_65A_action</source>
                 <target><![CDATA[Überprüfen Sie, ob die Angaben korrekt sind, und wenn ja, geben Sie die erforderliche Mitgliedsnummer ein.]]></target>
             </trans-unit>			
-			<trans-unit id="949">
+			<trans-unit id="951">
                 <source>warn_65A_code</source>
                 <target><![CDATA[65]]></target>
             </trans-unit>			
-			<trans-unit id="950">
+			<trans-unit id="952">
                 <source>warn_65A_desc</source>
                 <target><![CDATA[Die Gutschrift erfordert eine Referenz- oder Mitgliedsnummer. Das Konto erfordert eine Referenz- oder Mitgliedsnummer, um Zahlungen vom oder aufs Konto vornehmen zu können.]]></target>
             </trans-unit>			
-			<trans-unit id="951">
+			<trans-unit id="953">
                 <source>warn_65A_user_message</source>
                 <target><![CDATA[Das Konto erfordert eine Referenz- oder Mitgliedsnummer, um elektronische Zahlungen oder Gutschriften vom oder aufs Konto vornehmen zu können. Sollten Sie noch keine Referenz- oder Mitgliednummer haben, fordern Sie diese an, bevor Sie mit dem Vorgang fortfahren.]]></target>
             </trans-unit>			
-			<trans-unit id="952">
+			<trans-unit id="954">
                 <source>warn_65B_action</source>
                 <target><![CDATA[Wenn Sie den Bank-Filialcode benötigen, sollten Sie die Details ablehnen. Ansonsten ignorieren Sie diese Meldung.]]></target>
             </trans-unit>			
-			<trans-unit id="953">
+			<trans-unit id="955">
                 <source>warn_65B_code</source>
                 <target><![CDATA[65]]></target>
             </trans-unit>			
-			<trans-unit id="954">
+			<trans-unit id="956">
                 <source>warn_65B_desc</source>
                 <target><![CDATA[Konto-Typ für Nordea Bank-Filiale wird nicht erkannt. Diese Meldung erscheint, wenn eine Filiale gefunden wurde, für die die ersten 4 Zeichen zutreffen, die letzten zwei Zeichen aber nicht als Nordea-Konten erkannt werden.]]></target>
             </trans-unit>			
-			<trans-unit id="955">
+			<trans-unit id="957">
                 <source>warn_65B_user_message</source>
                 <target><![CDATA[Das Konto wurde nicht erkannt. Die ersten 4 Ziffern scheinen gültig zu sein, aber die letzten 2 Ziffern sind ungültig.]]></target>
             </trans-unit>			
-			<trans-unit id="956">
+			<trans-unit id="958">
                 <source>warn_65C_action</source>
                 <target><![CDATA[sollte dies keine Scheck-Zahlung sein, ignorieren Sie bitte diese Warnung.]]></target>
             </trans-unit>			
-			<trans-unit id="957">
+			<trans-unit id="959">
                 <source>warn_65C_code</source>
                 <target><![CDATA[65]]></target>
             </trans-unit>			
-			<trans-unit id="958">
+			<trans-unit id="960">
                 <source>warn_65C_desc</source>
                 <target><![CDATA[Diese Niederlassung unterstützt kein Scheck-Clearing.]]></target>
             </trans-unit>			
-			<trans-unit id="959">
+			<trans-unit id="961">
                 <source>warn_65C_user_message</source>
                 <target><![CDATA[Diese Niederlassung unterstützt kein Scheck-Clearing.]]></target>
             </trans-unit>			
-			<trans-unit id="960">
+			<trans-unit id="962">
                 <source>warn_65D_action</source>
                 <target><![CDATA[Wenn dies eine einmalige Zahlung oder Lastschrift von einem bestehendes Konto ist,  wird diese wahrscheinlich bearbeitet. Dennoch sollte Sie sie zurückweisen, da diese Kontodetails in der Zukunft nicht mehr gültig sein werden.]]></target>
             </trans-unit>			
-			<trans-unit id="961">
+			<trans-unit id="963">
                 <source>warn_65D_code</source>
                 <target><![CDATA[65]]></target>
             </trans-unit>			
-			<trans-unit id="962">
+			<trans-unit id="964">
                 <source>warn_65D_desc</source>
                 <target><![CDATA[Diese Bankleitzahl wird auf eine andere Bank übertragen.]]></target>
             </trans-unit>			
-			<trans-unit id="963">
+			<trans-unit id="965">
                 <source>warn_65D_user_message</source>
                 <target><![CDATA[Diese Bankleitzahl wird auf eine andere Bank übertragen. Ist dies eine einmalige Zahlung oder Gutschrift, wird diese wahrscheinlich ausgeführt werden. Sie sollten jedoch diese Angaben mit dem Kontoinhaber vor allen künftigen Zahlungen/Gutschriften überprüfen.]]></target>
             </trans-unit>			
-			<trans-unit id="964">
+			<trans-unit id="966">
                 <source>warn_65E_action</source>
                 <target><![CDATA[Ignorieren Sie diese Meldung, wenn die Zahlung nicht in Schweizer Franken erfolgt.]]></target>
             </trans-unit>			
-			<trans-unit id="965">
+			<trans-unit id="967">
                 <source>warn_65E_code</source>
                 <target><![CDATA[65]]></target>
             </trans-unit>			
-			<trans-unit id="966">
+			<trans-unit id="968">
                 <source>warn_65E_desc</source>
                 <target><![CDATA[Die Niederlassung kann nicht am SIC (Swiss Interbanking Clearing) für Schweizer Franken teilnehmen.]]></target>
             </trans-unit>			
-			<trans-unit id="967">
+			<trans-unit id="969">
                 <source>warn_65E_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="968">
+			<trans-unit id="970">
                 <source>warn_66A_action</source>
                 <target><![CDATA[Wenn Sie die IBAN benötigen, weisen sie die Details zurück. Ansonsten ignorieren Sie diese Warnung.]]></target>
             </trans-unit>			
-			<trans-unit id="969">
+			<trans-unit id="971">
                 <source>warn_66A_code</source>
                 <target><![CDATA[66]]></target>
             </trans-unit>			
-			<trans-unit id="970">
+			<trans-unit id="972">
                 <source>warn_66A_desc</source>
                 <target><![CDATA[Der IBAN-Code kann nicht generiert. Der IBAN-Code kann nicht von einem 4- oder 5-stellige Bank-Filialcode generiert werden.]]></target>
             </trans-unit>			
-			<trans-unit id="971">
+			<trans-unit id="973">
                 <source>warn_66A_user_message</source>
                 <target><![CDATA[Der IBAN-Code kann nicht generiert. Der IBAN-Code kann nicht von einem 4- oder 5-stellige Bank-Filialcode generiert werden.]]></target>
             </trans-unit>			
-			<trans-unit id="972">
+			<trans-unit id="974">
                 <source>warn_66B_action</source>
                 <target><![CDATA[Ignorieren Sie diese Meldung, wenn diese Zahlung keine Lastschrift ist.]]></target>
             </trans-unit>			
-			<trans-unit id="973">
+			<trans-unit id="975">
                 <source>warn_66B_code</source>
                 <target><![CDATA[66]]></target>
             </trans-unit>			
-			<trans-unit id="974">
+			<trans-unit id="976">
                 <source>warn_66B_desc</source>
                 <target><![CDATA[Die Niederlassung kann am SIC-Lastschriftverfahren für Schweizer Franken teilnehmen.]]></target>
             </trans-unit>			
-			<trans-unit id="975">
+			<trans-unit id="977">
                 <source>warn_66B_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="976">
+			<trans-unit id="978">
                 <source>warn_67A_action</source>
                 <target><![CDATA[Für Guthaben-Konten sollte dies kein Problem verursachen, für AUDDIS-Anweisungen nehmen Sie entweder Kontakt mit der Niderlassung auf oder weisen Sie die Details zurück.]]></target>
             </trans-unit>			
-			<trans-unit id="977">
+			<trans-unit id="979">
                 <source>warn_67A_code</source>
                 <target><![CDATA[67]]></target>
             </trans-unit>			
-			<trans-unit id="978">
+			<trans-unit id="980">
                 <source>warn_67A_desc</source>
                 <target><![CDATA[Die BLZ unterstützt keine AUDDIS-Transaktionen.]]></target>
             </trans-unit>			
-			<trans-unit id="979">
+			<trans-unit id="981">
                 <source>warn_67A_user_message</source>
                 <target><![CDATA[Die BLZ unterstützt keine AUDDIS-Transaktionen. Wenn die Kontodaten für die Einrichtung einer automatisierten Lastschrift verwendet werden sollen, weisen Sie diese zurück und fragen Sie den Kontoinhaber nach einer alternativen Bankverbindung.]]></target>
             </trans-unit>			
-			<trans-unit id="980">
+			<trans-unit id="982">
                 <source>warn_67B_action</source>
                 <target><![CDATA[Ignorieren Sie diese Meldung, wenn die Zahlung nicht in Schweizer Franken oder als Lastschrift erfolgt.]]></target>
             </trans-unit>			
-			<trans-unit id="981">
+			<trans-unit id="983">
                 <source>warn_67B_code</source>
                 <target><![CDATA[67]]></target>
             </trans-unit>			
-			<trans-unit id="982">
+			<trans-unit id="984">
                 <source>warn_67B_desc</source>
                 <target><![CDATA[Die Niederlassung kann am SIC-Lastschriftverfahren für Schweizer Franken teilnehmen.]]></target>
             </trans-unit>			
-			<trans-unit id="983">
+			<trans-unit id="985">
                 <source>warn_67B_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="984">
+			<trans-unit id="986">
                 <source>warn_68_action</source>
                 <target><![CDATA[Diese Meldung kann ignoriert werden, wenn dies nicht eine Interbanken-Transaktion ist.]]></target>
             </trans-unit>			
-			<trans-unit id="985">
+			<trans-unit id="987">
                 <source>warn_68_code</source>
                 <target><![CDATA[68]]></target>
             </trans-unit>			
-			<trans-unit id="986">
+			<trans-unit id="988">
                 <source>warn_68_desc</source>
                 <target><![CDATA[Die Niederlassung akzeptiert für Schweizer Franken nur Interbanken-Transaktionen]]></target>
             </trans-unit>			
-			<trans-unit id="987">
+			<trans-unit id="989">
                 <source>warn_68_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="988">
+			<trans-unit id="990">
                 <source>warn_69_action</source>
                 <target><![CDATA[Diese Meldung kann ignoriert werden, wenn die Zahlung nicht in Euro erfolgen soll.]]></target>
             </trans-unit>			
-			<trans-unit id="989">
+			<trans-unit id="991">
                 <source>warn_69_code</source>
                 <target><![CDATA[69]]></target>
             </trans-unit>			
-			<trans-unit id="990">
+			<trans-unit id="992">
                 <source>warn_69_desc</source>
                 <target><![CDATA[Die Niederlassung kann in Euro-Währung nicht am SIC teilnehmen.]]></target>
             </trans-unit>			
-			<trans-unit id="991">
+			<trans-unit id="993">
                 <source>warn_69_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="992">
+			<trans-unit id="994">
                 <source>warn_7_action</source>
                 <target><![CDATA[Verwenden Sie die Deteils, die Kryptos ausgibt für die weitere Verarbeitung.]]></target>
             </trans-unit>			
-			<trans-unit id="993">
+			<trans-unit id="995">
                 <source>warn_7_code</source>
                 <target><![CDATA[BWG_W_ACCOUNT_NO_DC]]></target>
             </trans-unit>			
-			<trans-unit id="994">
+			<trans-unit id="996">
                 <source>warn_7_desc</source>
                 <target><![CDATA[Die Kontodaten entsprachen nicht dem Standard und wurden angepasst. Die Anpassung wurde entsprechend der Regeln der ausgebenden Institution vorgenommen. Zum Beispiel wurden alle Buchstaben in Großbuchstaben dargestellt, Trennzeichen entfernt oder die Kontonummer entsprechend des Standards mit Nullen aufgefüllt. Dies ist die Standard-Mitteilung von Kryptos, wenn ein Kontodetail (inklusive Bank- oder Filial-Details) ins notwendigen Format für die Verarbeitung mit ACH verändert werden musste. Wann immer diese ausgegeben wird, ersetzen Sie das Kommando durch BWI_CC_TRANSPOSED]]></target>
             </trans-unit>			
-			<trans-unit id="995">
+			<trans-unit id="997">
                 <source>warn_7_user_message</source>
                 <target><![CDATA[Die angegebenen Kontodaten entsprachen nicht dem Standard und wurden für die elektronische Verabeitung angepasst. Bitte nutzen Sie die standardisierten Daten.]]></target>
             </trans-unit>			
-			<trans-unit id="996">
+			<trans-unit id="998">
                 <source>warn_70_action</source>
                 <target><![CDATA[Diese Meldung kann ignoriert werden, wenn diese Zahlung keine Lastschrift ist.]]></target>
             </trans-unit>			
-			<trans-unit id="997">
+			<trans-unit id="999">
                 <source>warn_70_code</source>
                 <target><![CDATA[70]]></target>
             </trans-unit>			
-			<trans-unit id="998">
+			<trans-unit id="1000">
                 <source>warn_70_desc</source>
                 <target><![CDATA[Die Niederlassung kann in Euro-Währung nicht am SIC-Lastschriftverfahren teilnehmen.]]></target>
             </trans-unit>			
-			<trans-unit id="999">
+			<trans-unit id="1001">
                 <source>warn_70_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="1000">
+			<trans-unit id="1002">
                 <source>warn_71_action</source>
                 <target><![CDATA[Diese Meldung kann ignoriert werden, wenn diese Zahlung keine Lastschrift ist.]]></target>
             </trans-unit>			
-			<trans-unit id="1001">
+			<trans-unit id="1003">
                 <source>warn_71_code</source>
                 <target><![CDATA[71]]></target>
             </trans-unit>			
-			<trans-unit id="1002">
+			<trans-unit id="1004">
                 <source>warn_71_desc</source>
                 <target><![CDATA[Die Niederlassung kann in Euro-Währung nicht am SIC-Lastschriftverfahren teilnehmen.]]></target>
             </trans-unit>			
-			<trans-unit id="1003">
+			<trans-unit id="1005">
                 <source>warn_71_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="1004">
+			<trans-unit id="1006">
                 <source>warn_72_action</source>
                 <target><![CDATA[Die angegebene Bankleitzahl unterstützt keine Kreditgeschäfte.]]></target>
             </trans-unit>			
-			<trans-unit id="1005">
+			<trans-unit id="1007">
                 <source>warn_72_code</source>
                 <target><![CDATA[72]]></target>
             </trans-unit>			
-			<trans-unit id="1006">
+			<trans-unit id="1008">
                 <source>warn_72_desc</source>
                 <target><![CDATA[Die Bankleitzahl  unterstützt keine Bausparkredit-Geschäfte.]]></target>
             </trans-unit>			
-			<trans-unit id="1007">
+			<trans-unit id="1009">
                 <source>warn_72_user_message</source>
                 <target><![CDATA[Dieses Konto ist nicht in der Lage, Kreditgeschäfte zu verarbeiten. Bitte geben Sie eine alternative Bankkonto, das Kredittransaktionen akzeptiert.]]></target>
             </trans-unit>			
-			<trans-unit id="1008">
+			<trans-unit id="1010">
                 <source>warn_73_action</source>
                 <target><![CDATA[Wenn diese Einschränkung ein Problem für Ihre Anwendung ist, lehnen die Details ab.]]></target>
             </trans-unit>			
-			<trans-unit id="1009">
+			<trans-unit id="1011">
                 <source>warn_73_code</source>
                 <target><![CDATA[73]]></target>
             </trans-unit>			
-			<trans-unit id="1010">
+			<trans-unit id="1012">
                 <source>warn_73_desc</source>
                 <target><![CDATA[Die Bankleitzahl unterstützt keinen Dividenden-Zahlungsverkehr.]]></target>
             </trans-unit>			
-			<trans-unit id="1011">
+			<trans-unit id="1013">
                 <source>warn_73_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="1012">
+			<trans-unit id="1014">
                 <source>warn_74_action</source>
                 <target><![CDATA[Wenn diese Einschränkung ein Problem für Ihre Anwendung ist, lehnen die Details ab.]]></target>
             </trans-unit>			
-			<trans-unit id="1013">
+			<trans-unit id="1015">
                 <source>warn_74_code</source>
                 <target><![CDATA[74]]></target>
             </trans-unit>			
-			<trans-unit id="1014">
+			<trans-unit id="1016">
                 <source>warn_74_desc</source>
                 <target><![CDATA[Konto unterstützt keine Forderungen aus unbezahlten Scheck-Transaktionen.]]></target>
             </trans-unit>			
-			<trans-unit id="1015">
+			<trans-unit id="1017">
                 <source>warn_74_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="1016">
+			<trans-unit id="1018">
                 <source>warn_76_action</source>
                 <target><![CDATA[Wenn diese Einschränkung ein Problem für Ihre Anwendung ist, lehnen die Details ab.]]></target>
             </trans-unit>			
-			<trans-unit id="1017">
+			<trans-unit id="1019">
                 <source>warn_76_code</source>
                 <target><![CDATA[76]]></target>
             </trans-unit>			
-			<trans-unit id="1018">
+			<trans-unit id="1020">
                 <source>warn_76_desc</source>
                 <target><![CDATA[Konto unterstützt keinen Bausparkreditverkehr.]]></target>
             </trans-unit>			
-			<trans-unit id="1019">
+			<trans-unit id="1021">
                 <source>warn_76_user_message</source>
                 <target><![CDATA[Abhängig vom Zahlungsverfahren]]></target>
             </trans-unit>			
-			<trans-unit id="1020">
+			<trans-unit id="1022">
                 <source>warn_77_action</source>
                 <target><![CDATA[Wenn diese Einschränkung ein Problem für Ihre Anwendung ist, lehnen die Details ab.]]></target>
             </trans-unit>			
-			<trans-unit id="1021">
+			<trans-unit id="1023">
                 <source>warn_77_code</source>
                 <target><![CDATA[77]]></target>
             </trans-unit>			
-			<trans-unit id="1022">
+			<trans-unit id="1024">
                 <source>warn_77_desc</source>
                 <target><![CDATA[Das Konto unterstützt keinen Dividenden-Zahlungsverkehr.]]></target>
             </trans-unit>			
-			<trans-unit id="1023">
+			<trans-unit id="1025">
                 <source>warn_77_user_message</source>
                 <target><![CDATA[Keine.]]></target>
             </trans-unit>			
-			<trans-unit id="1024">
+			<trans-unit id="1026">
                 <source>warn_78_action</source>
                 <target><![CDATA[]]></target>
             </trans-unit>			
-			<trans-unit id="1025">
+			<trans-unit id="1027">
                 <source>warn_78_code</source>
                 <target><![CDATA[78]]></target>
             </trans-unit>			
-			<trans-unit id="1026">
+			<trans-unit id="1028">
                 <source>warn_78_desc</source>
                 <target><![CDATA[Konto unterstützt keine AUDDIS-Transaktionen.]]></target>
             </trans-unit>			
-			<trans-unit id="1027">
+			<trans-unit id="1029">
                 <source>warn_78_user_message</source>
                 <target><![CDATA[Konto unterstützt keine AUDDIS-Transaktionen. Wenn die Kontodaten für die Einrichtung einer Automatischen Lastschrift verwendet werden sollen, wird diese eventuell abgelehnt werden. Kontaktieren Sie den Kontoinhaber für eine alternative Bankverbindung.]]></target>
             </trans-unit>			
-			<trans-unit id="1028">
+			<trans-unit id="1030">
                 <source>warn_8_action</source>
                 <target><![CDATA[Entweder akzeptieren die Details und verarbeiten die Zahlung durch einen alternativen Kanal oder lehnen Sie sich die Details ab und fordern ein alternatives Bankkonto an.]]></target>
             </trans-unit>			
-			<trans-unit id="1029">
+			<trans-unit id="1031">
                 <source>warn_8_code</source>
                 <target><![CDATA[BWG_W_BRANCH_NO_DC]]></target>
             </trans-unit>			
-			<trans-unit id="1030">
+			<trans-unit id="1032">
                 <source>warn_8_desc</source>
                 <target><![CDATA[Das Konto unterstützt keine inländische direkte Kreditgeschäfte (diese unterscheiden sich von SEPA-Transaktionen)]]></target>
             </trans-unit>			
-			<trans-unit id="1031">
+			<trans-unit id="1033">
                 <source>warn_8_user_message</source>
                 <target><![CDATA[Die Niederlassung unterstützt keine Direktkredite. Wenn Sie dieses Konto nutzen möchten, um einen Direktkredit zu erhalten, wird es wahrscheinlich abgelehnt werden. Es wird empfohlen, ein alternatives Bankkonto zu verwenden, das Direktkredite erlaubt oder eine andere Zahlungsmethode zu wählen.]]></target>
             </trans-unit>			
-			<trans-unit id="1032">
+			<trans-unit id="1034">
                 <source>warn_90_action</source>
                 <target><![CDATA[Bestätigen Sie bitte die Mitgliednummer manuell. Dies ist keine Fehlermeldung!]]></target>
             </trans-unit>			
-			<trans-unit id="1033">
+			<trans-unit id="1035">
                 <source>warn_90_code</source>
                 <target><![CDATA[90]]></target>
             </trans-unit>			
-			<trans-unit id="1034">
+			<trans-unit id="1036">
                 <source>warn_90_desc</source>
                 <target><![CDATA[Der Modulus-Prüfalgorithmus ist für diese Mitgliednummer nicht möglich. Das Institut hat die Prüfregeln für das Modulus-Verfahren nicht zur Verfügung gestellt. Das bedeutet nicht, dass die angegebene Nummer nicht korrekt ist. Diese Meldung erscheint nur bei einer Mitgliednummerprüfung.]]></target>
             </trans-unit>			
-			<trans-unit id="1035">
+			<trans-unit id="1037">
                 <source>warn_90_user_message</source>
                 <target><![CDATA[Es liegen uns keine Regeln oder Standards vor, nach denen wir die angegebene Mitgliednummer für dieses Konto überprüfen können.]]></target>
             </trans-unit>			
-			<trans-unit id="1036">
+			<trans-unit id="1038">
                 <source>warn_91_action</source>
                 <target><![CDATA[Bestätigen Sie bitte die Mitgliednummer manuell. Dies ist keine Fehlermeldung!]]></target>
             </trans-unit>			
-			<trans-unit id="1037">
+			<trans-unit id="1039">
                 <source>warn_91_code</source>
                 <target><![CDATA[91]]></target>
             </trans-unit>			
-			<trans-unit id="1038">
+			<trans-unit id="1040">
                 <source>warn_91_desc</source>
                 <target><![CDATA[Die Mitgliedsnummer verwendet keinen Modulus-Prüf Algorithmus. Das Institut hat bestätigt, dass es keine Prüfregeln zur Überprüfung der Mitgliednummer gibt. Diese Meldung erscheint nur bei einer Mitgliednummerprüfung.]]></target>
             </trans-unit>			
-			<trans-unit id="1039">
+			<trans-unit id="1041">
                 <source>warn_91_user_message</source>
                 <target><![CDATA[Es liegen uns keine Regeln oder Standards vor, nach denen wir die angegebene Mitgliednummer für dieses Konto überprüfen können.]]></target>
             </trans-unit>			
-			<trans-unit id="1040">
+			<trans-unit id="1042">
                 <source>warn_92_action</source>
                 <target><![CDATA[Bestätigen Sie bitte die Mitgliednummer manuell. Dies ist keine Fehlermeldung!]]></target>
             </trans-unit>			
-			<trans-unit id="1041">
+			<trans-unit id="1043">
                 <source>warn_92_code</source>
                 <target><![CDATA[92]]></target>
             </trans-unit>			
-			<trans-unit id="1042">
+			<trans-unit id="1044">
                 <source>warn_92_desc</source>
                 <target><![CDATA[Die Formatprüfung ist für diese Mitgliednummer nicht möglich. Das Institut hat keine Prüfregeln für das Kontoformat zur Verfügung gestellt. Das bedeutet nicht, dass die angegebene Nummer nicht existiert. Diese Meldung erscheint nur bei einer Mitgliednummerprüfung.]]></target>
             </trans-unit>			
-			<trans-unit id="1043">
+			<trans-unit id="1045">
                 <source>warn_92_user_message</source>
                 <target><![CDATA[Es liegen uns keine Regeln oder Standards vor, nach denen wir die angegebene Mitgliednummer für dieses Konto überprüfen können.]]></target>
             </trans-unit>			
-			<trans-unit id="1044">
+			<trans-unit id="1046">
                 <source>warn_93_action</source>
                 <target><![CDATA[Bestätigen Sie bitte die Mitgliednummer manuell. Dies ist keine Fehlermeldung!]]></target>
             </trans-unit>			
-			<trans-unit id="1045">
+			<trans-unit id="1047">
                 <source>warn_93_code</source>
                 <target><![CDATA[93]]></target>
             </trans-unit>			
-			<trans-unit id="1046">
+			<trans-unit id="1048">
                 <source>warn_93_desc</source>
                 <target><![CDATA[Die Formatprüfung ist für diese Mitgliednummer nicht möglich. Das Institut hat keine Prüfregeln für das Kontoformat zur Verfügung gestellt. Das bedeutet nicht, dass die angegebene Nummer nicht existiert. Diese Meldung erscheint nur bei einer Mitgliednummerprüfung.]]></target>
             </trans-unit>			
-			<trans-unit id="1047">
+			<trans-unit id="1049">
                 <source>warn_93_user_message</source>
                 <target><![CDATA[Es liegen uns keine Regeln oder Standards vor, nach denen wir die angegebene Mitgliednummer für dieses Konto überprüfen können.]]></target>
             </trans-unit>			
-			<trans-unit id="1048">
+			<trans-unit id="1050">
                 <source>warn_94_action</source>
                 <target><![CDATA[Bestätigen Sie bitte die Mitgliednummer manuell. Dies ist keine Fehlermeldung!]]></target>
             </trans-unit>			
-			<trans-unit id="1049">
+			<trans-unit id="1051">
                 <source>warn_94_code</source>
                 <target><![CDATA[94]]></target>
             </trans-unit>			
-			<trans-unit id="1050">
+			<trans-unit id="1052">
                 <source>warn_94_desc</source>
                 <target><![CDATA[Informationen zur Mitgliednummer sind für dieses Konto nicht verfügbar. Bankleitzahl und Kontonummer sind nicht in der Bank-Wizard-Datenbank, deshalb kann die Mitgliedsnummer nicht bestätigt werden. Dies erscheint nur bei einer Mitgliednummerprüfung.]]></target>
             </trans-unit>			
-			<trans-unit id="1051">
+			<trans-unit id="1053">
                 <source>warn_94_user_message</source>
                 <target><![CDATA[Informationen zur Mitgliednummer sind für dieses Konto nicht verfügbar Das Bankkonto ist als ungültig erkannt worden, weshlab auch keine Prüfung der Mitgliednummer erfolgen kann.]]></target>
             </trans-unit>			
-			<trans-unit id="1052">
+			<trans-unit id="1054">
                 <source>warn_95_action</source>
                 <target><![CDATA[Verwenden Sie umgestellte Mitgliedsnummer für die weitere Verarbeitung.]]></target>
             </trans-unit>			
-			<trans-unit id="1053">
+			<trans-unit id="1055">
                 <source>warn_95_code</source>
                 <target><![CDATA[95]]></target>
             </trans-unit>			
-			<trans-unit id="1054">
+			<trans-unit id="1056">
                 <source>warn_95_desc</source>
                 <target><![CDATA[Nicht-BACS-kompatible Zeichen in der Mitgliednummer wurden in Leerzeichen umgewandelt. Dies kann nur während einer Mitgliedsnummerpfrüung erfolgen.]]></target>
             </trans-unit>			
-			<trans-unit id="1055">
+			<trans-unit id="1057">
                 <source>warn_95_user_message</source>
                 <target><![CDATA[Die angegebenen Kontodaten entsprachen nicht dem BACS-Standard. Alle nicht-BACS-kompatiblen Zeichen wurden entfernt, um eine Zurückweisung zu vermeiden.]]></target>
             </trans-unit>			
-			<trans-unit id="1056">
+			<trans-unit id="1058">
                 <source>btn_create_account</source>
                 <target><![CDATA[Konto erstellen]]></target>
             </trans-unit>			
-			<trans-unit id="1057">
+			<trans-unit id="1059">
                 <source>btn_login</source>
                 <target><![CDATA[Anmelden]]></target>
             </trans-unit>			
-			<trans-unit id="1058">
+			<trans-unit id="1060">
                 <source>btn_reset_password</source>
                 <target><![CDATA[Passwort zurücksetzen]]></target>
             </trans-unit>			
-			<trans-unit id="1059">
+			<trans-unit id="1061">
                 <source>btn_signup</source>
                 <target><![CDATA[Registrieren]]></target>
             </trans-unit>			
-			<trans-unit id="1060">
+			<trans-unit id="1062">
                 <source>txt_account</source>
                 <target><![CDATA[Konto]]></target>
             </trans-unit>			
-			<trans-unit id="1061">
+			<trans-unit id="1063">
                 <source>txt_account_history</source>
                 <target><![CDATA[Zahlungsverhalten]]></target>
             </trans-unit>			
-			<trans-unit id="1062">
+			<trans-unit id="1064">
                 <source>txt_back_to_login</source>
                 <target><![CDATA[Zurück zur Anmeldung]]></target>
             </trans-unit>			
-			<trans-unit id="1063">
+			<trans-unit id="1065">
                 <source>txt_balance</source>
                 <target><![CDATA[Saldo]]></target>
             </trans-unit>			
-			<trans-unit id="1064">
+			<trans-unit id="1066">
                 <source>txt_batch_conversion</source>
                 <target><![CDATA[Stapelverarbeitung]]></target>
             </trans-unit>			
-			<trans-unit id="1065">
+			<trans-unit id="1067">
                 <source>txt_browse</source>
                 <target><![CDATA[Durchsuchen]]></target>
             </trans-unit>			
-			<trans-unit id="1066">
+			<trans-unit id="1068">
                 <source>txt_captcha_new_image</source>
                 <target><![CDATA[Neues Bild]]></target>
             </trans-unit>			
-			<trans-unit id="1067">
+			<trans-unit id="1069">
                 <source>txt_captcha_type_the</source>
                 <target><![CDATA[Geben Sie die angezeigten Zeichen in das unten stehende Feld ein.]]></target>
             </trans-unit>			
-			<trans-unit id="1068">
+			<trans-unit id="1070">
                 <source>txt_company</source>
                 <target><![CDATA[Unternehmen]]></target>
             </trans-unit>			
-			<trans-unit id="1069">
+			<trans-unit id="1071">
                 <source>txt_confirm_email</source>
                 <target><![CDATA[Email bestätigen]]></target>
             </trans-unit>			
-			<trans-unit id="1070">
+			<trans-unit id="1072">
                 <source>txt_confirm_password</source>
                 <target><![CDATA[Passwort bestätigen]]></target>
             </trans-unit>			
-			<trans-unit id="1071">
+			<trans-unit id="1073">
                 <source>txt_conversion_summary</source>
                 <target><![CDATA[Zusammenfassung der Konversionen]]></target>
             </trans-unit>			
-			<trans-unit id="1072">
+			<trans-unit id="1074">
                 <source>txt_conversions</source>
                 <target><![CDATA[Konversionen]]></target>
             </trans-unit>			
-			<trans-unit id="1073">
+			<trans-unit id="1075">
                 <source>txt_convert</source>
                 <target><![CDATA[Konvertieren]]></target>
             </trans-unit>			
-			<trans-unit id="1074">
+			<trans-unit id="1076">
                 <source>txt_converted_successfully</source>
                 <target><![CDATA[Erfolgreich konvertiert]]></target>
             </trans-unit>			
-			<trans-unit id="1075">
+			<trans-unit id="1077">
                 <source>txt_cost_price</source>
                 <target><![CDATA[Kosten]]></target>
             </trans-unit>			
-			<trans-unit id="1076">
+			<trans-unit id="1078">
                 <source>txt_credit</source>
                 <target><![CDATA[Gutschrift]]></target>
             </trans-unit>			
-			<trans-unit id="1077">
+			<trans-unit id="1079">
                 <source>txt_datetime</source>
                 <target><![CDATA[Datum / Zeit]]></target>
             </trans-unit>			
-			<trans-unit id="1078">
+			<trans-unit id="1080">
                 <source>txt_debit</source>
                 <target><![CDATA[Soll]]></target>
             </trans-unit>			
-			<trans-unit id="1079">
+			<trans-unit id="1081">
                 <source>txt_download</source>
                 <target><![CDATA[Downloaden]]></target>
             </trans-unit>			
-			<trans-unit id="1080">
+			<trans-unit id="1082">
                 <source>txt_download_file</source>
                 <target><![CDATA[Datei downloaden]]></target>
             </trans-unit>			
-			<trans-unit id="1081">
+			<trans-unit id="1083">
                 <source>txt_email</source>
                 <target><![CDATA[Email]]></target>
             </trans-unit>			
-			<trans-unit id="1082">
+			<trans-unit id="1084">
                 <source>txt_failed</source>
                 <target><![CDATA[Gescheitert]]></target>
             </trans-unit>			
-			<trans-unit id="1083">
+			<trans-unit id="1085">
                 <source>txt_file_status_and_history</source>
                 <target><![CDATA[3. Datei-Status und -Entwicklung]]></target>
             </trans-unit>			
-			<trans-unit id="1084">
+			<trans-unit id="1086">
                 <source>txt_filename</source>
                 <target><![CDATA[Dateiname]]></target>
             </trans-unit>			
-			<trans-unit id="1085">
+			<trans-unit id="1087">
                 <source>txt_firstname</source>
                 <target><![CDATA[Vorname]]></target>
             </trans-unit>			
-			<trans-unit id="1086">
+			<trans-unit id="1088">
                 <source>txt_forename</source>
                 <target><![CDATA[Vorname]]></target>
             </trans-unit>			
-			<trans-unit id="1087">
+			<trans-unit id="1089">
                 <source>txt_forgotten_your_password</source>
                 <target><![CDATA[Passwort vergessen?]]></target>
             </trans-unit>			
-			<trans-unit id="1088">
+			<trans-unit id="1090">
                 <source>txt_help</source>
                 <target><![CDATA[Hilfe]]></target>
             </trans-unit>			
-			<trans-unit id="1089">
+			<trans-unit id="1091">
                 <source>txt_home</source>
                 <target><![CDATA[Home]]></target>
             </trans-unit>			
-			<trans-unit id="1090">
+			<trans-unit id="1092">
                 <source>txt_insufficient_funds</source>
                 <target><![CDATA[Unzureichende Deckung]]></target>
             </trans-unit>			
-			<trans-unit id="1091">
+			<trans-unit id="1093">
                 <source>txt_invalid</source>
                 <target><![CDATA[Ungültig]]></target>
             </trans-unit>			
-			<trans-unit id="1092">
+			<trans-unit id="1094">
                 <source>txt_job_title</source>
                 <target><![CDATA[Beruf]]></target>
             </trans-unit>			
-			<trans-unit id="1093">
+			<trans-unit id="1095">
                 <source>txt_lastname</source>
                 <target><![CDATA[Nachname]]></target>
             </trans-unit>			
-			<trans-unit id="1094">
+			<trans-unit id="1096">
                 <source>txt_latest_sepa_news</source>
                 <target><![CDATA[Aktuelle SEPA Mitteilungen]]></target>
             </trans-unit>			
-			<trans-unit id="1095">
+			<trans-unit id="1097">
                 <source>txt_location</source>
                 <target><![CDATA[Ort]]></target>
             </trans-unit>			
-			<trans-unit id="1096">
+			<trans-unit id="1098">
                 <source>txt_logout</source>
                 <target><![CDATA[Abmelden]]></target>
             </trans-unit>			
-			<trans-unit id="1097">
+			<trans-unit id="1099">
                 <source>txt_no_of_conversions</source>
                 <target><![CDATA[Anzahl der Konversionen]]></target>
             </trans-unit>			
-			<trans-unit id="1098">
+			<trans-unit id="1100">
                 <source>txt_ok</source>
                 <target><![CDATA[Ok]]></target>
             </trans-unit>			
-			<trans-unit id="1099">
+			<trans-unit id="1101">
                 <source>txt_old_password</source>
                 <target><![CDATA[Altes Passwort]]></target>
             </trans-unit>			
-			<trans-unit id="1100">
+			<trans-unit id="1102">
                 <source>txt_password</source>
                 <target><![CDATA[Passwort]]></target>
             </trans-unit>			
-			<trans-unit id="1101">
+			<trans-unit id="1103">
                 <source>txt_payment_failed</source>
                 <target><![CDATA[Zahlung fehlgeschlagen]]></target>
             </trans-unit>			
-			<trans-unit id="1102">
+			<trans-unit id="1104">
                 <source>txt_pending</source>
                 <target><![CDATA[Ausstehend]]></target>
             </trans-unit>			
-			<trans-unit id="1103">
+			<trans-unit id="1105">
                 <source>txt_personal_details</source>
                 <target><![CDATA[Persönliche Angaben]]></target>
             </trans-unit>			
-			<trans-unit id="1104">
+			<trans-unit id="1106">
                 <source>txt_prepare_your_file</source>
                 <target><![CDATA[1. Bereiten Sie Ihre Datei vor]]></target>
             </trans-unit>			
-			<trans-unit id="1105">
+			<trans-unit id="1107">
                 <source>txt_prepare_your_list_of</source>
                 <target><![CDATA[Erstellen Sie eine Liste Ihrer Kontonummern mithilfe unserer Vorlage. Speichern Sie eine Kopie, falls Sie sie später bearbeiten müssen.]]></target>
             </trans-unit>			
-			<trans-unit id="1106">
+			<trans-unit id="1108">
                 <source>txt_purchase</source>
                 <target><![CDATA[Kaufen]]></target>
             </trans-unit>			
-			<trans-unit id="1107">
+			<trans-unit id="1109">
                 <source>btn_purchase</source>
                 <target><![CDATA[Kaufen]]></target>
             </trans-unit>			
-			<trans-unit id="1108">
+			<trans-unit id="1110">
                 <source>txt_purchase_conversions</source>
                 <target><![CDATA[Konvertierung kaufen]]></target>
             </trans-unit>			
-			<trans-unit id="1109">
+			<trans-unit id="1111">
                 <source>txt_purchase_details</source>
                 <target><![CDATA[Erworbene Details]]></target>
             </trans-unit>			
-			<trans-unit id="1110">
+			<trans-unit id="1112">
                 <source>txt_save_the_worksheet</source>
                 <target><![CDATA[Speichern Sie die Datei mit Ihrer Kontonummer Daten als CSV-Datei und uploaden Sie sie bitte hier.]]></target>
             </trans-unit>			
-			<trans-unit id="1111">
+			<trans-unit id="1113">
                 <source>txt_settings</source>
                 <target><![CDATA[Einstellungen]]></target>
             </trans-unit>			
-			<trans-unit id="1112">
+			<trans-unit id="1114">
                 <source>txt_single_conversion</source>
                 <target><![CDATA[Einzelkonversion]]></target>
             </trans-unit>			
-			<trans-unit id="1113">
+			<trans-unit id="1115">
                 <source>txt_status</source>
                 <target><![CDATA[Status]]></target>
             </trans-unit>			
-			<trans-unit id="1114">
+			<trans-unit id="1116">
                 <source>txt_status_result</source>
                 <target><![CDATA[Status / Ergebnis]]></target>
             </trans-unit>			
-			<trans-unit id="1115">
+			<trans-unit id="1117">
                 <source>txt_surname</source>
                 <target><![CDATA[Nachname]]></target>
             </trans-unit>			
-			<trans-unit id="1116">
+			<trans-unit id="1118">
                 <source>txt_terms_and_cond</source>
                 <target><![CDATA[Mit dem Klick auf "Registrieren" stimmen Sie unseren <a href="#modalTermsConditions" data-toggle="modal">AGB´s</a> zu und bestätigen, dass Sie ebenfalls unsere <a href="#modalDataUsePolicy" data-toggle="modal">Datenschutzerklärung</a> einschließlich unserer Erklärung zur <a href="#modalCookieUse" data-toggle="modal">Cookie-Nutzung</a> gelesen und akzeptiert haben.]]></target>
             </trans-unit>			
-			<trans-unit id="1117">
+			<trans-unit id="1119">
                 <source>txt_title</source>
                 <target><![CDATA[Titel]]></target>
             </trans-unit>			
-			<trans-unit id="1118">
+			<trans-unit id="1120">
                 <source>txt_total_cost</source>
                 <target><![CDATA[Gesamtkosten]]></target>
             </trans-unit>			
-			<trans-unit id="1119">
+			<trans-unit id="1121">
                 <source>txt_total_cost_currency_euro</source>
                 <target><![CDATA[Gesamtkosten (&euro;)]]></target>
             </trans-unit>			
-			<trans-unit id="1120">
+			<trans-unit id="1122">
                 <source>txt_total_vat</source>
                 <target><![CDATA[MwSt.]]></target>
             </trans-unit>			
-			<trans-unit id="1121">
+			<trans-unit id="1123">
                 <source>txt_total_vat_currency_euro</source>
                 <target><![CDATA[MwSt. (&euro;)]]></target>
             </trans-unit>			
-			<trans-unit id="1122">
+			<trans-unit id="1124">
                 <source>txt_transaction_id</source>
                 <target><![CDATA[Transaktionsnummer]]></target>
             </trans-unit>			
-			<trans-unit id="1123">
+			<trans-unit id="1125">
                 <source>txt_type</source>
                 <target><![CDATA[Typ]]></target>
             </trans-unit>			
-			<trans-unit id="1124">
+			<trans-unit id="1126">
                 <source>txt_update</source>
                 <target><![CDATA[Aktualisieren]]></target>
             </trans-unit>			
-			<trans-unit id="1125">
+			<trans-unit id="1127">
                 <source>txt_upload</source>
                 <target><![CDATA[Hochladen]]></target>
             </trans-unit>			
-			<trans-unit id="1126">
+			<trans-unit id="1128">
                 <source>txt_upload_your_file</source>
                 <target><![CDATA[2. Laden Sie Ihre Datei hoch]]></target>
             </trans-unit>			
-			<trans-unit id="1127">
+			<trans-unit id="1129">
                 <source>txt_you_are_logged_in_as</source>
                 <target><![CDATA[Sie sind angemeldet als]]></target>
             </trans-unit>			
-			<trans-unit id="1128">
+			<trans-unit id="1130">
                 <source>txt_modal_terms_and_cond_title</source>
                 <target><![CDATA[Geschäftsbedingungen]]></target>
             </trans-unit>			
-			<trans-unit id="1129">
+			<trans-unit id="1131">
                 <source>txt_modal_terms_and_cond_body_1</source>
                 <target><![CDATA[<p> Software as a Service-Abkommen</p><p> <u>Dies ist eine Vereinbarung zwischen:</u></p><p> (1) <strong>Kryptos Systems Ltd</strong> (Firmennummer: 08640789), mit eingetragener Adresse in 29 Hertford Platz, Meadowfields, Northampton, NN3 9TD Handel <strong>als "Kryptos Systems Ltd";</strong> und</p><p> (2) <strong>ist</strong> der Kunde</p><p> <u>Anerkennung durch den Kunden</u></p><p> Der Kunde best&#228;tigt und stimmt auf die folgenden:</p><p> &#8226; Die Vereinbarung regelt die Nutzung des Services durch den Kunden.</p><p> &#8226; Die individuelle Annahme des Abkommens, best&#228;tigt, dass sie zugelassen ist, so zu tun, als Agent im Namen des Kunden.</p><p> &#8226; Der Kunde erkennt an, dass durch die Annahme der Vereinbarung, wird es auch in separate Lizenzvereinbarungen der Eingabe werden mit den jeweiligen Drittlizenzgebern (falls zutreffend).</p><p> &#8226; Der Kunde erkennt an, dass Daten Dritter Lizenzgeber KRYPTOS SYSTEMS LTD erfordern:</p><p> KRYPTOS SYSTEMS LTD bestimmte Anforderungen bei der Verwendung ihrer Daten (die Third Party Lizenzen), den Service bereitzustellen zu beobachten; und Kunden KRYPTOS SYSTEMS LTD ist, die mit bestimmten Endbenutzer-Lizenzvertr&#228;gen (Dritt EULAs) entsprechen.</p><p> Folglich verpflichtet sich der Kunde, dass er alle T&#228;tigkeiten, die in einer der oben genannten Vereinbarungen (die Third Party Contracts) durchbrochen werden, ergeben w&#252;rde, nicht vornehmen.</p><p> &#8226; Der Service und die Software Materialien werden an den Kunden lizenziert. Der Service und die Software Materialien sind und bleiben Eigentum von KRYPTOS SYSTEMS LTD und deren Drittlizenzgebern.</p><p> &#8226; Durch die in irgendeiner Weise Installieren, Aktivieren, Kopieren oder anderweitige Nutzung der Services oder Software Materialien oder Teile von ihnen, verpflichtet sich der Kunde an die Bedingungen dieser Vereinbarung gebunden zu sein. Wenn der Kunde nicht mit den Bedingungen dieser Vereinbarung zustimmen, kann der Kunde nicht zu installieren, zu aktivieren, zu kopieren oder in irgendeiner Weise die Nutzung des Service oder Software Materialien oder Teile von ihnen.</p><p> <u>Installation und / oder Aktivierung von einem autorisierten Reseller</u></p><p> &#8226; Wenn der Dienst oder der Software-Material wird installiert und / oder durch den Vertragsh&#228;ndler f&#252;r den Kunden die Nutzung aktiviert ist, dann wird der Vertragsh&#228;ndler und dem Kunden jeweils best&#228;tigt, dass der Kunde die Vertragsh&#228;ndler als Mittel zur Annahme dieser Vereinbarung best&#228;tigen ernannt in ihrem Namen, und der Kunde verpflichtet sich, durch dieses &#220;bereinkommen gebunden werden.</p><p> 1 Definitionen und Interpretation</p><p> <u>Begriffsbestimmungen</u></p><p> 1.1 In diesem Vertrag haben die folgenden W&#246;rter und Ausdr&#252;cke haben folgende Bedeutung:</p><p> <strong>"Projektcode" ist ein</strong> eindeutiger Code, der verwendet wird, um zu erkennen und Konto eines Kunden zu verwalten.</p><p> <strong>"Konto"</strong> bedeutet Kontobereich des Kunden gegen&#252;ber dem Kunden oder der Vertragsh&#228;ndler im Auftrag des Kunden, durch KRYPTOS SYSTEMS LTD auf der KRYPTOS SYSTEMS LTD Webseite zur Verf&#252;gung gestellt.</p><p> <strong>"Additional Liability Cap"</strong> hat die in Ziffer 9.8.2 zugewiesene Bedeutung.</p><p> <strong>"Vertrag"</strong> bedeutet diese Vereinbarung.</p><p> <strong>"Authorised Reseller" bezeichnet einen</strong> autorisierten Wiederverk&#228;ufer von KRYPTOS SYSTEMS LTD.</p><p> <strong>"Werktage" sind</strong> Tage innerhalb Montag fallen bis Freitag (ausgenommen &#246;ffentlichen und Feiertagen).</p><p> <strong>"Gesch&#228;ftszeiten" bedeutet</strong> Stunden innerhalb 09.00 Uhr fiel auf 05.30 britischer Zeit, w&#228;hrend der Gesch&#228;ftstage.</p><p> <strong>"Im Handel</strong> bedeutet, den gleichen Grad der Priorit&#228;t und Sorgfalt, mit der KRYPTOS SYSTEMS LTD erf&#252;llt die Support-Anforderungen seiner Kunden zu anderen &#228;hnlichen</p><p> <strong>"Credit" ist eine</strong> Prepaid-Kredit vom Kunden aus KRYPTOS SYSTEMS LTD gekauft, und die durch KRYPTOS SYSTEMS LTD zum Zeitpunkt des Kaufs als "Kredit" identifiziert wird.</p><p> <strong>"Kunde" ist</strong> die Organisation als "Kunde" oder "Gesch&#228;ftlich" oder "Unternehmen" entweder mit dem Namen:</p><p> (1) das Anmeldeformular f&#252;r die Nutzung des Service und Software-Materialien;</p><p> (2) die KRYPTOS SYSTEMS LTD; oder</p><p> (3) das Abkommen.</p><p> <strong>"Customer Ursache" eine</strong> der folgenden Ursachen:</p><p> (1) Jede missbr&#228;uchliche Verwendung, Missbrauch oder unbefugte Ver&#228;nderung der Software oder Leistung durch den Kunden;</p><p> (2) die Verwendung der Software oder der Leistung durch den Kunden in einer Weise, die dem damals aktuellen Dokumentation oder KRYPTOS SYSTEMS LTD Anweisungen, die von Zeit zu Zeit zur Verf&#252;gung gestellt werden;</p><p> <strong>Angemessene Anstrengungen</strong></p><p> (3) die Verwendung durch den Kunden von Hardware oder Software nicht durch KRYPTOS SYSTEMS LTD durch KRYPTOS SYSTEMS LTD schriftlich f&#252;r die Verwendung durch den Kunden im Zusammenhang mit der Software oder den Service vorgesehen oder zugelassen ist; oder</p><p> (4) die Verwendung eines nicht-aktuelle Version oder die Freigabe der Software.</p><p> <strong>"Customer Hoster"</strong> hat die in Ziffer 3.1.2 zugewiesene Bedeutung.</p><p> <strong>"Datenbank"</strong> bezeichnet einen Dritten Datenbank Zugriff auf die gesamte oder ein Teil davon wird zur Verf&#252;gung, um den Kunden von KRYPTOS SYSTEMS LTD.</p><p> <strong>"S&#228;umige Partei"</strong> hat die in Ziffer 10.11 zugewiesene Bedeutung.</p><p> <strong>"Dokumentation" bezeichnet</strong> die PDF oder Hardcopy Benutzerdokumentation durch KRYPTOS SYSTEMS LTD, oder den Online-Support-Seiten unter dem jeweiligen Abschnitt "Support" auf der KRYPTOS SYSTEMS LTD Webseite an den Kunden zur Verf&#252;gung gestellt werden.</p><p> <strong>"Datum des Inkrafttretens" bedeutet das</strong> Datum, an dem die unter dieses Abkommen gebildet Vertrag in Kraft tritt, wobei der Zeitpunkt, dass es durch den Kunden (&#252;ber den autorisierten H&#228;ndler oder auf andere Weise, ob) angenommen on-line, oder das Datum, es wird von beiden Parteien unterzeichnet .</p><p> <strong>"Emergency Maintenance" ist ein</strong> Wartungsereignis, die weniger als 5 Tage im Voraus vorgenommen wird, oder ohne vorherige Ank&#252;ndigung an allen, die notwendig ist:</p><p> (1) Adresse ein Sicherheitsproblem;</p><p> (2) Ziel ist es, zu verhindern, oder zur Adresse, eine Service-Unterbrechung;</p><p> (3) zielen darauf ab, Datenverlust zu verhindern;</p><p> (4) Ziel ist es, fehlerhafte Ausgabe von einem Dienst zu verhindern; oder</p><p> (5) mit gesetzlichen Anforderungen entsprechen.</p><p> <strong>"Enterprise Software" bezeichnet die</strong> Software, Datenbanken und Daten von KRYPTOS SYSTEMS LTD an den Kunden f&#252;r die lokale Installation des Kunden und Hosting, f&#252;r den Kunden zur Nutzung des Service gemacht, um.</p><p> <strong>"Evaluation Offerings"</strong> hat die in Ziffer 2.12.1 zugewiesene Bedeutung.</p><p> <strong>"Externe Nutzung" bedeutet</strong> die Verwendung der Royal Mail Daten oder Dienstleistungen in einem &#246;ffentlich zug&#228;nglichen Website.</p><p> <strong>"St&#246;rung"</strong> bedeutet das Vers&#228;umnis der KRYPTOS SYSTEMS LTD Angebot an alle wesentlichen Belangen nicht in &#220;bereinstimmung mit seiner Dokumentation arbeiten, darunter Ausf&#228;lle oder Fehler bei der</p><p> KRYPTOS SYSTEMS LTD Offering wie sie in der in Absatz 9.1.2 des SLA gezeigten Lichtintensit&#228;t Tabelle bezeichnet.</p><p> <strong>"Ereignis h&#246;herer Gewalt"</strong> hat die in Ziffer 11.1 zugewiesene Bedeutung.</p><p> <strong>"Help Desk Support" bedeutet</strong> Unterst&#252;tzung zur Verf&#252;gung gestellt, oder abgesprochen wird, die von Helpdesk-Techniker, um mit zu helfen, zu identifizieren und / oder zu beheben St&#246;rungen.</p><p> <strong>"Internal Use" bedeutet</strong> die Verwendung der Royal Mail Daten oder Dienstleistungen in einem nicht-&#246;ffentlich zug&#228;nglichen Website (einschlie&#223;lich, ohne Einschr&#228;nkung in Bezug auf eine CRM, ERP, Intranet, Extranet oder interne Office-Einsatz).</p><p> <strong>"Haftung Cap"</strong> hat die in Ziffer 9.8.1 zugewiesene Bedeutung.</p><p> <strong>"Lizenzschl&#252;ssel" bezeichnet einen</strong> Lizenzschl&#252;ssel an den Kunden ausgegeben, um den Service zu nutzen.</p><p> <strong>"Lizenzgeber": ein</strong> dritter Lizenzgeber der Datenbank oder einen der Software Materialien.</p><p> <strong>"Maintenance Events" hat die</strong> in Paragraph 5.1 des SLA zugewiesene Bedeutung.</p><p> <strong>"Wiederkehrende monatliche Geb&#252;hr" bedeutet</strong> 1/12 des aktuellen Jahresabonnement vom Kunden gezahlte Geb&#252;hren, aber, wenn der Kunde keine Zeichnungsgeb&#252;hren w&#228;hrend dieses Jahres zu zahlen, dann bedeutet 1/12 des laufenden Jahres-Abonnement der "Wiederkehrende monatliche Geb&#252;hr" Geb&#252;hren, die vereinbart worden, um durch den Kunden w&#228;hrend dieses Jahres zu entrichten.</p><p> <strong>"Neue Geb&#252;hren Date"</strong> hat die in Ziffer 5.7 zugewiesene Bedeutung.</p><p> <strong>"Ordnance Survey Data"</strong> hat die in Ziffer 2.13.1 zugewiesene Bedeutung.</p><p> <strong>"Out of scope Support"</strong> bedeutet:</p><p> (1) alle Dienste (einschlie&#223;lich der Untersuchungsarbeit) durch KRYPTOS SYSTEMS LTD durchgef&#252;hrt in Verbindung mit einem scheinbaren Problem in Bezug auf den Dienst angemessen durch den Lieferanten festgelegt:</p><p> ein. nicht durch eine St&#246;rung hervorgerufen wurden; oder</p><p> b. die von einem Kunden Ursache oder eine Ursache, die der Anbieter keinen Steuer verursacht worden sein;</p><p> (2) alle Dienstleistungen im Zusammenhang mit Problemen mit: jede Software und Daten, die nicht Teil der KRYPTOS SYSTEMS LTD Offering;</p><p> (3) alle Dienstleistungen im Zusammenhang mit Problemen mit: Hardware oder Netzwerke, die Version:</p><p> stehen nicht unter der direkten Kontrolle des KRYPTOS SYSTEMS LTD oder KRYPTOS SYSTEMS LTD Hoster.</p><p> <strong>"Vertragsparteien" die</strong> Kunden und KRYPTOS SYSTEMS LTD.</p><p> <strong>"Vertragspartei"</strong> die Kunden oder KRYPTOS SYSTEMS LTD (sofern zutreffend).</p><p> <strong>"Password" ist die</strong> vom Kunden gew&#228;hlte Passwort (oder in seinem Namen durch die Vertragsh&#228;ndler), um den Service zu nutzen.</p><p> <strong>"KRYPTOS SYSTEMS LTD" hat die</strong> oben, um es zugewiesene Bedeutung.</p><p> <strong>"KRYPTOS SYSTEMS LTD Hoster" hat die</strong> in Paragraph 2.2 des SLA zugewiesene Bedeutung.</p><p> <strong>"KRYPTOS SYSTEMS LTD Offering"</strong> bedeutet, dass ein Teil der Software Materialien und Dienstleister, die im Besitz und wird von KRYPTOS SYSTEMS LTD oder mit ihr verbundene Unternehmen entwickelt, sondern f&#252;r den Zweifel zu vermeiden, schlie&#223;t: die Datenbank; Alle Drittdaten; Software von Drittanbietern; Materialien Dritter; Alle Drittdienstleistungen; Dritte Dokumentation; (zur Vermeidung von Missverst&#228;ndnissen, geh&#246;ren solche Ausnahmen auch alle Drittanbieter-Software, Dokumentation, Materialien, Dienstleistungen und Dokumentation zur Verf&#252;gung gestellt oder zur Verf&#252;gung gestellt durch die autorisierten Reseller).</p><p> <strong>"KRYPTOS SYSTEMS LTD Datenschutz" bedeutet</strong> KRYPTOS SYSTEMS LTD der Datenschutzerkl&#228;rung, die von der KRYPTOS SYSTEMS LTD Webseite, die als solche Politik von Zeit zu Zeit durch KRYPTOS SYSTEMS LTD aktualisiert.</p><p> <strong>"KRYPTOS SYSTEMS LTD Quote Sheet" ist ein</strong> Dokument, das von KRYPTOS SYSTEMS LTD an den Kunden ausgegeben werden, mit der &#220;berschrift "Quote", die von KRYPTOS SYSTEMS LTD dazu bestimmt ist, im Hinblick auf die Preisgestaltung oder die Arten von Dienstleistungen, die angeboten werden sollen (verbindlich Doch f&#252;r Zweifel zu vermeiden, schlie&#223;t dies die in jedem getrennten Verkaufs Vorschlag Unterlagen enthaltenen Angaben (ob angebracht oder nicht zu dem Dokument mit der &#220;berschrift "Quote")).</p><p> <strong>"KRYPTOS SYSTEMS LTD Webseite" alle</strong> Webseiten, die von KRYPTOS SYSTEMS LTD betrieben, die Software oder Dienstleistungen, einschlie&#223;lich der Website mit der URL Ihres bieten: www.postcodeanywhere.co.uk</p><p> <strong>"Planned Maintenance" ist ein</strong> Wartungsereignis, f&#252;r die KRYPTOS SYSTEMS LTD hat mindestens 5 Tage im Voraus per E-Mail oder durch einen Hinweis auf der KRYPTOS SYSTEMS LTD Webseite zur Verf&#252;gung gestellt.</p><p> <strong>"Premium Service" die F&#228;higkeit</strong> f&#252;r den Kunden, um die zus&#228;tzlichen Vorkehrungen, um in der SLA bezeichnet, in Bezug auf die Dienstleistungen in Bezug auf die diese Option ist standard KRYPTOS SYSTEMS LTD zur Verf&#252;gung gestellt und vom Kunden akzeptiert.</p><p> <strong>"Service"</strong> bedeutet, dass das jeweilige Online-Service zur Verf&#252;gung gestellt oder vereinbart, den Kunden gem&#228;&#223; dieser Vereinbarung zur Verf&#252;gung gestellt werden, indem KRYPTOS SYSTEMS LTD (aber f&#252;r die Klarstellung, "Service" umfasst nicht das Premium Service) Version:. November 2013 - Seite 7</p><p> <strong>"Service Credit" hat die</strong> in Ziffer 4.1 zugewiesene Bedeutung. des SLA.</p><p> <strong>"Service Output" jede</strong> Ausgangsantwort des Flugdienstes.</p><p> <strong>"SLA" bezeichnet die</strong> in Anhang 1 dargestellt Dokument.</p><p> <strong>"SLA Charge"</strong> bedeutet die j&#228;hrliche Geb&#252;hr f&#252;r den Premium Service.</p><p> <strong>"SLA Bericht" das auf</strong> www.postcodeanywhere gezeigt Uptime Service Level Report. co.uk/status.</p><p> <strong>"Software" bezeichnet</strong> die Software (einschlie&#223;lich aller Unternehmenssoftware) und Daten (einschlie&#223;lich der einschl&#228;gigen Datenbanken) von oder im Namen von KRYPTOS SYSTEMS LTD, die dem Kunden erm&#246;glichen, Zugang oder die Nutzung des Service zur Verf&#252;gung gestellt; einschlie&#223;lich aller Aktualisierungen, dies die zur Verf&#252;gung f&#252;r den Kunden von Zeit zu Zeit vom oder im Namen des KRYPTOS SYSTEMS LTD gemacht werden; (aber f&#252;r die Klarstellung, "Software", keine Software, Daten oder Datenbanken, die von den Vertragsh&#228;ndler unabh&#228;ngig KRYPTOS SYSTEMS LTD vorgesehen ist, als solcher Software, Daten und Datenbanken, die von der Vertragsh&#228;ndler vorgesehen ausgeschlossen werden gem&#228;&#223; eines separaten Vertrages zwischen dem vorgesehenen Kunden und der Vertragsh&#228;ndler).</p><p> <strong>"Software-Materialien" bezeichnet die</strong> Software und die Dokumentation.</p><p> <strong>"L&#246;sung" bedeutet</strong> eine der folgenden Ergebnisse:</p><p> (1) Korrektur einer St&#246;rung; oder</p><p> (2) eine Abhilfe in Bezug auf eine St&#246;rung (einschlie&#223;lich einer Umkehrung der &#196;nderungen an der Software, ob durch KRYPTOS SYSTEMS LTD als angemessen), die den Umst&#228;nden angemessen ist.</p><p> <strong>"Subject Matter"</strong> hat die in Ziffer 17.1 zugewiesene Bedeutung.</p><p> <strong>"Zeichnungsgeb&#252;hr" bezeichnet eine</strong> Zahlung durch den Kunden f&#252;r die Nutzung der jeweiligen Dienstleistung f&#252;r den jeweiligen Zeichnungsfrist, die Punkte und / oder Lizenzgeb&#252;hren aus vorgenommen.</p><p> <strong>"Zeichnungsfrist" bezeichnet die</strong> jeweiligen begrenzten Zeitraum, in dem der Kunde kann den jeweiligen Dienst zu verwenden, da durch die Zahlung an den Lieferanten in Bezug auf diesen Dienst gemacht bestimmt.</p><p> <strong>"Lieferant"</strong> bedeutet KRYPTOS SYSTEMS LTD, oder wenn der Kunde den Zugang zu dem Dienst &#252;ber einen autorisierten H&#228;ndler, dann bedeutet es, die Authorised Reseller Version.:</p><p> <strong>"Support-Zeiten" sind</strong> Gesch&#228;ftszeiten.</p><p> <strong>"Supportzeitraum" bezeichnet den</strong> Zeitraum von 12 Monaten beginnend mit dem Support-Startdatum.</p><p> <strong>Bedeutet "Support Request"</strong> eine Anforderung durch den Kunden in &#220;bereinstimmung mit der SLA f&#252;r die Unterst&#252;tzung in Bezug auf den Dienst gestellt.</p><p> <strong>"Support Services" ist</strong> die Wartung der dann aktuellen Version oder die Freigabe der Dienstleistungen, einschlie&#223;lich Help Desk Support, aber ohne jede Nicht betroffen Unterst&#252;tzung.</p><p> <strong>"Support Startdatum": das</strong> Datum, das KRYPTOS SYSTEMS LTD erkennt der Kunde die Wahl, um den Premium Service haben.</p><p> <strong>"K&#252;ndigende Partei"</strong> hat die in Ziffer 10.11 zugewiesene Bedeutung.</p><p> <strong>"Third Party Contracts" sind die</strong> Drittanbieter-Lizenzen und Third Party EULAs.</p><p> <strong>"Third Party Lizenzen" die</strong> Dritten Lizenzen (die von der KRYPTOS SYSTEMS LTD Webseite sind) von den Lizenzgebern auf KRYPTOS SYSTEMS LTD in Bezug auf die Software Materialien und / oder Dienst verh&#228;ngt.</p><p> <strong>"Third Party EULAs" die</strong> Dritten Endbenutzerlizenzen (die von der KRYPTOS SYSTEMS LTD Webseite sind), die als anwendbar auf die Verwendung der Software Materialien und / oder Dienst des Kunden angegeben werden.</p><p> <strong>"Uptime Service Level" hat die</strong> in &#167; 2 des SLA zugewiesene Bedeutung.</p><p> <strong>"Jahr" bedeutet einen</strong> Zeitraum von 12 Monaten, beginnend ab: Datum des Inkrafttretens; oder von einem Jahrestag des Wirksamkeitsdatum.</p><p> <u>Deutung</u></p><p> 1.2 Die &#220;berschriften in dieser Vereinbarung enthalten sind, zur Erleichterung der nur als Referenz und unbeschadet der Interpretation.</p><p> 1.3 Verweise auf "Person" nat&#252;rliche Personen, Unternehmen, Firma, Partnerschaft, Regierungsstelle, &#246;ffentliche Einrichtungen, Wohlt&#228;tigkeit, Vereinigung oder eine andere juristische Person.</p><p> 1.4 W&#246;rter, die den Singular schlie&#223;en den Plural und umgekehrt. Worte, die einen Geschlecht beinhalten jedes Geschlecht.</p><p> 1.5 Die W&#246;rter und S&#228;tze "mit" und "insbesondere" ist ohne Einschr&#228;nkung der Allgemeing&#252;ltigkeit von einem der vorhergehenden Worte sein und alle vorangegangenen Worte werden nicht als auf eine bestimmte Klasse Version beschr&#228;nkt angesehen werden:</p><p> wo eine breitere Auslegung dieser W&#246;rter und Ausdr&#252;cke ist m&#246;glich. Dar&#252;ber hinaus (sofern nicht bereits ausgef&#252;hrt) solcher W&#246;rter gelten als unmittelbar durch die Worte "ohne Einschr&#228;nkung" folgen werden.</p><p> 1.6 Verweise auf jedem Gesetz oder gesetzliche Bestimmung muss Folgendes enthalten:</p><p> 1.6.1 Jeder untergeordnete Gesetzgebung Rahmen getroffen werden; und</p><p> 1.6.2 eine Bestimmung, die sp&#228;ter ersetzt sie oder re-inszeniert sie (ob mit oder ohne &#196;nderungen).</p><p> 1.7 Alle zu zahlenden Betr&#228;ge im folgenden ausgedr&#252;ckt werden ohne Mehrwertsteuer und anderen geltenden Steuer- und Zoll zahlbar bei solchen Summen, die, wenn mit dem Kurs an der jeweiligen Steuerpunkt Rate angemessen aufgenommen werden soll.</p><p> 1.8 Soweit es Konflikte oder Diskrepanzen zwischen den Bestimmungen des Abkommens und dem Dritten Vertr&#228;ge gelten die Bestimmungen der Dritten Vertr&#228;ge durchsetzen.</p><p> 2 Abonnement</p><p> <u>Lizenzgew&#228;hrung</u></p><p> 2.1 KRYPTOS SYSTEMS LTD r&#228;umt dem Kunden das nicht ausschlie&#223;liche, nicht &#252;bertragbare und widerrufliche Recht, f&#252;r die Zeichnungsfrist, den Service, vorbehaltlich der in diesem Abkommen genannten Bedingungen zu nutzen.</p><p> 2.2 Der Kunde muss eine Zeichnungsgeb&#252;hr zahlen, um die Anzahl der Benutzer, die vorhaben, werden den Zugriff auf den jeweiligen Dienst zu reflektieren. Es ist die Verantwortung des Kunden, sicherzustellen, dass der Kunde Lizenzen die richtige Anzahl der Benutzer, die Zugriff werden die Dienstleister.</p><p> <u>Teilnehmerentgelte und Zeichnungsfristen</u></p><p> 2.3 Der Kunde kann nur mit solchen Dienstleistungen, f&#252;r die sie die entsprechenden Ausgabeaufschlag gezahlt zu verwenden.</p><p> 2.4 Zeichnungsgeb&#252;hren k&#246;nnen mit einem Kredit und / oder Lizenzgeb&#252;hr bezahlt werden, wie von KRYPTOS SYSTEMS LTD in Bezug auf den jeweiligen Dienst zum jeweiligen Zeitpunkt kommuniziert.</p><p> 2.5 Eine Lizenzgeb&#252;hr ist g&#252;ltig f&#252;r die Nutzung des Service f&#252;r die von KRYPTOS SYSTEMS LTD zum Zeitpunkt der Lizenzgeb&#252;hr gezahlt wird angegeben begrenzten Zeitraum.</p><p> 2.6 A Der Service ist nur f&#252;r eine begrenzte Zeitdauer erf&#252;llt, der dem jeweiligen Zeichnungsperiode spiegelt die H&#246;he der Abonnementgeb&#252;hr bezahlen zug&#228;nglich. Kein Dienst ist auf einer unbefristeten Lizenz oder unbefristete Abonnementbasis zur Verf&#252;gung Version.:</p><p> <u>Verbote</u></p><p> 2.7 Dieser Vertrag verbietet die Kunden von der Wiederverkaufs (ob kostenlos oder durch Aufladen) der Dienst Output oder Dienstleistung.</p><p> 2.8 Der Kunde verpflichtet sich, dass es nicht verpflichten jede der folgenden Handlungen (au&#223;er soweit gesetzlich ausdr&#252;cklich zugelassen oder ausdr&#252;cklich gesondert schriftlich durch KRYPTOS SYSTEMS LTD erlaubt):</p><p> 2.8.1 den Service nutzen, um Software oder eine Dienstleistung, die mit der Software Materialien oder Dienstleistung konkurriert bereitzustellen;</p><p> 2.8.2 f&#252;hren die sonst als in dem Umfang, die von den jeweiligen Dritten Vertr&#228;ge zul&#228;ssigen Datenbereinigungsaktivit&#228;ten;</p><p> 2.8.3 Make Nutzung des Dienstes (entweder durch eine Anwendung oder eine Integration oder auf andere Weise), die nachteilig beeinflussen w&#252;rde den Ruf: KRYPTOS SYSTEMS LTD; die Lizenzgeber; oder KRYPTOS SYSTEMS LTD oder die Lizenzgeber "Dienstleistungen oder Angebote; oder</p><p> 2.8.4 einer Handlung oder Unterlassung, die dem Ziel der Umgehung der Absicht, eine der Beschr&#228;nkungen in der Vereinbarung hat.</p><p> <u>Eigentumsvorbehalt und Eigentum an der Software Materialien</u></p><p> 2.9 KRYPTOS SYSTEMS LTD und deren Drittlizenzgebern behalten uns das Eigentum und das Eigentum an der Software Materialien. Keine Rechte an geistigem Eigentum (einschlie&#223;lich Urheberrechte) werden im Rahmen dieses Abkommens mit Ausnahme der Lizenz, die Software Materialien und Service als ausdr&#252;cklich durch diese Vereinbarung gew&#228;hrt verwenden &#252;bertragen. Alle Rechte an den Software-Service-Materialien und die nicht ausdr&#252;cklich in diesem Vertrag gew&#228;hrt werden, sind KRYPTOS SYSTEMS LTD und ihren Lizenzgebern vorbehalten.</p><p> <u>Third Party EULAs</u></p><p> 2.10 Der Kunde stimmt zu, dass durch einen Zugriff auf Software von Drittanbietern oder Daten, die Gegenstand einer Drittlizenz, der Kunde ist in solchen Drittlizenz (sofern dies die Absicht der Drittlizenz) Eingabe ist, und der Lizenzgeber haben also Rechte und Rechtsmittel gegen den Kunden gem&#228;&#223; diesem Vertrag und dem Drittlizenz.</p><p> 2.11 Der Kunde stimmt zu, dass, wo es in einem Drittlizenz Eingabe, wird es jegliche Anspr&#252;che in Bezug auf die Software von Drittanbietern und Daten, die durch diese Vereinbarung geregelt ist, gegen&#252;ber dem Lizenzgeber nach dem Drittlizenz und nicht gegen KRYPTOS SYSTEMS bringen LTD</p><p> <u>Auswertungen</u></p><p> 2.12 Der Kunde kann zugelassen werden, um bestimmte Software, Datens&#228;tzen oder Dienstleistungen auf einer Auswertung anhand von KRYPTOS SYSTEMS LTD verwenden. Wenn eine solche Bewertung ist ausdr&#252;cklich KRYPTOS SYSTEMS LTD erlaubt, dann ist die Evaluierung werden, unterliegen der Version:</p><p> folgenden zus&#228;tzlichen Bedingungen:</p><p>2.12.1 der Kunde keine Software, Datens&#228;tzen oder Dienstleistungen zu Evaluierungszwecken (zusammen als die <strong>"Evaluation Angebote" genannt)</strong> f&#252;r kommerzielle Zwecke auch immer vorgesehen, noch in irgendeiner Form der Live-Umgebung, wodurch der Kunde oder ein Dritter k&#246;nnte leiden unter jeder Form von Verlust von irgendwelchen Problemen mit der Auswertung Angebote;</p><p> 2.12.2 Vorbehaltlich Ziffer 9.1 wird KRYPTOS SYSTEMS LTD haftet nicht f&#252;r Leistungsprobleme mit solchen Evaluierung Offerings werden;</p><p> 2.12.3 etwaige anwendbare Bestimmungen &#252;ber die Verwendung der Evaluierungs Offerings, die in den Third Party Vertr&#228;ge enthalten sind;</p><p> 2.12.4 KRYPTOS SYSTEMS LTD kann verpflichtet sein, Informationen in Bezug auf Evaluierungszwecken des Kunden an den Lizenzgeber der Auswertung Angebote bieten, und der Kunde verpflichtet sich, solche Offenlegung durch KRYPTOS SYSTEMS LTD an den jeweiligen Lizenzgeber hergestellt;</p><p> 2.12.5 der Kunde die jeweiligen Lizenzgeber der Auswertung Angebote zu erm&#246;glichen, den Kunden zum Zwecke der &#220;berwachung der Nutzung von Rechten an geistigem Eigentum die Lizenzgeber "des Kunden als auch f&#252;r die &#220;berpr&#252;fung der Einhaltung der Kunde mit dem Dritten Vertr&#228;ge und f&#252;r den Kontakt Durchsetzung der Lizenzgeber die Rechte in Bezug auf die Bewertung Offerings;</p><p> 2.12.6 der Kunde wird nicht mit der Bewertung Offerings in irgendeiner Weise nach Ablauf jeder von KRYPTOS SYSTEMS LTD gew&#228;hrten Evaluierungszeitraum.</p><p> <u>Bewertung: Ordnance Survey</u></p><p> 2.13 Im Hinblick auf die Auswertung aller Daten, Dienstleistungen oder Software, die der Ordnance Survey beziehen, gelten die folgenden zus&#228;tzlichen Bedingungen:</p><p> 2.13.1 Der Kunde erkl&#228;rt sich bereit, die Ordnance Survey die Daten <strong>(der "Ordnance Survey Daten")</strong> f&#252;r die Zwecke der Pr&#252;fung KRYPTOS SYSTEMS LTD Software oder Dienstleistungen, die Verwendung solcher Daten innerhalb des Kunden eigene Organisation zu nutzen;</p><p> 2.13.2 der Kunde die Ordnance Survey Daten nicht kommerziell zu nutzen und / oder bieten keine Kopien davon an Dritte;</p><p> 2.13.3 Der Kunde erkl&#228;rt sich bereit, alle Kopien der KRYPTOS SYSTEMS LTD Software, die sich in seinem Besitz, die die Ordnance Survey Daten nutzt, nach Ablauf oder Beendigung des Testzeitraum ist zu vernichten; und</p><p> 2.13.4 der Kunde nur die Ordnance Survey Daten verwenden, auf ein sicheres Passwort gesch&#252;tzten Bereich des Kunden Computersystem oder Netzwerk, und wird nicht zulassen, die Ordnance Survey Daten verwendet oder aufgerufen werden oder &#252;ber das Internet oder f&#252;r irgendeinen Zweck, das ist nur durch die Verwendung eines nicht-Evaluation Service gestattet Version.:</p><p> 3 Enterprise Software</p><p> 3.1 Der Kunde verpflichtet sich, den folgenden zus&#228;tzlichen Bestimmungen in Bezug auf Unternehmenssoftware:</p><p> <u>Lizenzierung</u></p><p> 3.1.1 KRYPTOS SYSTEMS LTD r&#228;umt dem Kunden auf und unterliegt den Bestimmungen und Bedingungen dieser Vereinbarung eine nicht ausschlie&#223;liche, nicht &#252;bertragbare Lizenz, damit ihr Personal, um die Enterprise-Software nur verwenden, um Zugriff auf die jeweiligen Dienstleistungen der Nutzen des Kunden;</p><p> 3.1.2 Der Kunde muss die vorherige schriftliche Zustimmung KRYPTOS SYSTEMS LTD einholen (eine solche Genehmigung nicht unbillig verweigert werden darf), wenn der Kunde verlangt die Unternehmenssoftware, die von den Kunden Dritten <strong>(der</strong> "Kunde <strong>Hoster")</strong> gehostet werden. Wenn eine solche Zulassung wird vom KRYPTOS SYSTEMS LTD vorgesehen, so muss der Kunde sicherstellen, dass die gleichen Verpflichtungen, die der Kunde muss in Bezug auf die Unternehmenssoftware im Rahmen dieses Vertrags (ausgenommen Zahlungsverpflichtungen, die ausschlie&#223;lich mit dem Kunden befinden wird) zu akzeptieren, sind auch bei den Kunden Dritten eingehalten werden;</p><p> 3.1.3 der Kunde zu erhalten genaue und up-to-date Aufzeichnungen &#252;ber die Anzahl und die Lage aller Kopien der Unternehmenssoftware, und stellen diese Aufzeichnungen auf Anfrage zur KRYPTOS SYSTEMS LTD, der Authorised Reseller und / oder den Lizenzgebern;</p><p> 3.1.4 Die Enterprise Software nicht bieten dem Kunden alle weiteren Rechte oder Rechtsmittel in Bezug auf die Dienstleistungen im Vergleich zu den nicht-Enterprise Software die Nutzung der Dienste;</p><p> <u>Hosting, Wartung und Support</u></p><p> 3.1.5 Der Kunde wird die Enterprise Software in einer Umgebung, die mit minimalen Spezifikationsanforderungen KRYPTOS SYSTEMS LTD ist erf&#252;llt Gastgeber als solche Anforderungen werden von Zeit zu Zeit durch KRYPTOS SYSTEMS LTD (mit KRYPTOS SYSTEMS LTD billigem Ermessen) benachrichtigt;</p><p> 3.1.6 Der Kunde stimmt zu, dass es f&#252;r alle Installation, Wartung und Konfiguration der Enterprise Software und Infrastruktur des Kunden verantwortlich sein (und der Kunde wird ebenfalls eingef&#252;hrt gleichwertige Ma&#223;nahmen mit dem Kunden Hoster, wenn der Kunde erhalten KRYPTOS SYSTEMS LTD ist Zustimmung zur Nutzung des Kunden Hoster gem&#228;&#223; Ziffer 3.1.2);</p><p> 3.1.7 die SLA nicht in Bezug auf alle Fragen, die sich aus der lokalen Hosting, Installation, Konfiguration und Wartung der Enterprise Software, noch die Wirkung, die eine der oben genannten haben auf die Dienstleistungen anzuwenden;</p><p> 3.1.8 der Kunde unverz&#252;glich an das Enterprise Software gelten, werden alle Updates, die von Zeit zu Zeit durch KRYPTOS SYSTEMS LTD zur Verf&#252;gung gestellt werden; Version:</p><p> <u>Return oder Zerst&#246;rung von Software Materialien</u></p><p> 3.1.9 innerhalb von 7 Tagen nach der Beendigung dieser Vereinbarung oder Beendigung des KRYPTOS SYSTEMS LTD Verpflichtung zur Verf&#252;gung ein Teil der Software Materialien oder Service (einschlie&#223;lich der nach Ablauf des jeweiligen Abonnementzeitraums, wo Zugang zu dem Service nicht verl&#228;ngert wird) zu machen, warum auch immer, stimmt der Kunde zu vernichten oder zur&#252;ckzugeben, die Software Materialien (einschlie&#223;lich aller Kopien), f&#252;r die diese Vereinbarung beendet wurde (im Ganzen oder in Teilen), in der angemessenen Weise durch KRYPTOS SYSTEMS LTD gerichtet ist, und in dem Wunsch zertifizieren dies schriftlich KRYPTOS SYSTEMS LTD als abgeschlossen;</p><p> <u>Verbote</u></p><p> 3.1.10 Der Kunde stimmt zu, dass es m&#246;glicherweise nicht verpflichten jede der folgenden Handlungen (au&#223;er soweit gesetzlich ausdr&#252;cklich zugelassen oder ausdr&#252;cklich gesondert schriftlich durch KRYPTOS SYSTEMS LTD erlaubt):</p><p> 3.1.10.1 kopieren Sie die Software Materialien oder Teile von ihnen (auch wenn der Kunde darf eine Kopie der Software (und alle Unterlagen elektronisch zur Verf&#252;gung gestellt) f&#252;r Sicherungszwecke nur);</p><p> 3.1.10.2 zu &#252;bersetzen, anzupassen, zu variieren, die Software Materialien oder Dienstleistungen zu modifizieren;</p><p> 3.1.10.3 disassemblieren, dekompilieren oder zur&#252;ckentwickeln, die Software;</p><p> 3.1.10.4 vermieten, verleasen, verleihen, verkaufen sie wieder, zu verteilen, Netzwerk oder abgeleitete Arbeiten auf Basis der Software Materialien, Dienstleistung, oder ein Teil von ihnen.</p><p> 4 Assurances</p><p> <u>Bereitstellung von Software-Werkstoffe</u></p><p> 4.1 Vorbehaltlich der sonstigen Bestimmungen des Abkommens, KRYPTOS SYSTEMS LTD stimmt zu, dass:</p><p> 4.1.1 w&#228;hrend der jeweiligen Zeichnungsfrist, hat es Vereinbarungen mit ihre Lizenzgeber, die, dass es lizenziert ist, um den Zugang zu den jeweiligen Software-Materialien und Dienstleistungen an den Kunden liefern zu best&#228;tigen;</p><p> 4.1.2 vorbehaltlich Ziffer 4.7.1, wird sie angemessene Anstrengungen w&#228;hrend des jeweiligen Abonnementzeitraums zu verwenden:</p><p> 4.1.2.1 sicherstellen, dass die Software, die von KRYPTOS SYSTEMS LTD zur Verf&#252;gung gestellt werden, wird als Teil des Services verwendet wird, ist frei von Viren werden;</p><p> 4.1.2.2 erm&#246;glichen den Zugang zum jeweiligen Dienst w&#228;hrend des entsprechenden Zeic]]></target>
             </trans-unit>			
-			<trans-unit id="1130">
+			<trans-unit id="1132">
                 <source>txt_modal_terms_and_cond_body_2</source>
                 <target><![CDATA[hnungsfrist, vorbehaltlich einer Wartung oder Angelegenheiten, die au&#223;erhalb KRYPTOS SYSTEMS LTD der angemessenen Kontrolle, wie der Kunde best&#228;tigt, dass von Zeit zu Zeit Ereignisse auftreten, die die Verf&#252;gbarkeit des Service aufgrund beeinflussen die Natur des Internet, IT-Ger&#228;te und Medien;</p><p> 4.1.2.3 zur Verf&#252;gung Aktualisierungen der Datenbank, wenn diese Updates werden durch ihre Lizenzgeber bereitgestellt Version.:</p><p> <u>Fehler in Software und Daten</u></p><p> 4.2 Der Kunde verpflichtet sich, die folgenden:</p><p> 4.2.1, dass Software und Daten sind im Allgemeinen nicht fehlerfrei und stimmt zu, dass die Existenz solcher Fehler in der Software, Service oder Leistungen gilt nicht als Versto&#223; gegen diese Vereinbarung dar;</p><p> 4.2.2, wo die Software-Integration-Code, der zur Verf&#252;gung durch KRYPTOS SYSTEMS LTD auf der KRYPTOS SYSTEMS LTD Website ver&#246;ffentlicht wird, basiert auf einer kostenlosen Basis vorgesehen ist, verpflichtet sich der Kunde, dass solche Software-Integration-Code wird auf einer "as is" Basis zur Verf&#252;gung gestellt, ohne jegliche Zusicherung (einschlie&#223;lich und ohne Einschr&#228;nkung jegliche Garantie) auch immer und daher nicht zugesichert werden, was in Bezug auf ihre Eignung, Leistung, Funktionalit&#228;t, Qualit&#228;t oder anderweitig zur Verf&#252;gung gestellt (ohne Einschr&#228;nkung). Der Kunde stimmt zu, dass seine einzige und ausschlie&#223;liche Rechtsmittel in Bezug auf solche Software-Integration-Code ist, einfach aufh&#246;ren Verwendung solcher Software-Integration-Code;</p><p> 4.2.3, wo die Software-Integration-Code, der zur Verf&#252;gung durch KRYPTOS SYSTEMS LTD auf der KRYPTOS SYSTEMS LTD Webseite besteht, ist auf kostenpflichtiger Basis von KRYPTOS SYSTEMS LTD an den Kunden zur Verf&#252;gung gestellt, so wird der Kunde stimmt zu, dass solche Software-Integration-Code wird ausschlie&#223;lich auf bereitgestellt die Grundlage, dass es wesentlich mit ihrer erkl&#228;rten Beschreibung auf der KRYPTOS SYSTEMS LTD Webseite entsprechen. Wenn es irgendein Problem mit solchen Softwareintegration Code, wo es nicht wesentlich mit ihrer erkl&#228;rten Beschreibung auf der KRYPTOS SYSTEMS LTD Webseite entsprechen, dann ist der Kunde stimmt zu, dass es KRYPTOS SYSTEMS LTD dieser Tatsache (mit vern&#252;nftigen Details) schriftlich innerhalb von 7 informieren Tage der Zahlung der Lizenzgeb&#252;hr in Bezug auf solche Software-Integration-Code, und wenn KRYPTOS SYSTEMS LTD nicht in der Lage, das Problem zu beheben, um die oben genannten Material Compliance mit der Beschreibung auf der KRYPTOS SYSTEMS LTD Webseite innerhalb von 30 Tagen nach Erhalt der Mitteilung zu erzielen der Kunde, dann einzige und ausschlie&#223;liche Rechtsmittel des Kunden in Bezug auf solche Software-Integration-Code, ist eine R&#252;ckerstattung der Geb&#252;hren, die der Kunde zu KRYPTOS SYSTEMS LTD bezahlte in Bezug auf solche Software-Integration-Code (mit dem Kunden zu akzeptieren, dass die Lizenz wie zu bedienen Software-Integrationscode wird ab dem Datum der Erstattung) zu beenden;</p><p> 4.2.4 falls Dritte macht keine Updates seiner Software oder Plattform, so dass dies bewirkt, dass ein Problem in Bezug auf die Software oder den Service, dann ist der Kunde akzeptiert, dass dies nicht ein Problem mit der Software oder den Service selbst, noch eine Verletzung von KRYPTOS SYSTEMS LTD einer ihrer Verpflichtungen aus diesem Abkommen. Allerdings KRYPTOS SYSTEMS LTD kann nach eigenem Ermessen w&#228;hlen, um alle Updates der KRYPTOS SYSTEMS LTD Angebot bereitzustellen, um Kompatibilit&#228;tsprobleme von Drittanbietern verursacht Ver&#228;nderungen anzugehen.</p><p> <u>Database</u></p><p> 4.3 Der Kunde erkennt an, dass im Hinblick auf die Tatsache, dass die Datenbank Daten Dritter enth&#228;lt, werden die Daten in der Datenbank ist auf einer "as is" Basis zur Verf&#252;gung gestellt, und keine Zusicherung in Bezug auf ist vorgesehen (einschlie&#223;lich und ohne Einschr&#228;nkung Zusicherung hinsichtlich f&#252;r deren Richtigkeit, Genauigkeit, Vollst&#228;ndigkeit, die Eignung f&#252;r einen bestimmten Zweck oder anderweitig). Dieser Ausschluss des Zusicherungen gilt nur soweit gesetzlich Version gestattet.:</p><p> <u>KRYPTOS SYSTEMS LTD Offering</u></p><p> 4.4 KRYPTOS SYSTEMS LTD Optionsscheinen auf den jeweiligen Zeichnungsfrist, dass die jeweilige Service ist f&#252;r den Kunden gemacht, dass die KRYPTOS SYSTEMS LTD Offering wird Funktion in &#220;bereinstimmung mit seiner Dokumentation materiell. F&#252;r den Fall, dass die KRYPTOS SYSTEMS LTD Offering nicht in der Material &#220;bereinstimmung mit der Dokumentation funktionieren und der Kunde benachrichtigt KRYPTOS SYSTEMS LTD der Nichteinhaltung wird KRYPTOS SYSTEMS LTD Kr&#228;ften bem&#252;hen, zu korrigieren und innerhalb einer angemessenen Frist durch Patches oder neue Version (nach seiner Wahl), dass ein Teil der KRYPTOS SYSTEMS LTD Offering, die nicht so nicht entspricht, sofern diese Nichterf&#252;llung nicht durch verursacht wurde:</p><p> 4.4.1 irgendeine Modifikation, Variation, Konfiguration oder zus&#228;tzlich zu der Software oder den Service nicht durch KRYPTOS SYSTEMS LTD (zur Vermeidung von Zweifeln durchgef&#252;hrt, alle Probleme aus den Handlungen oder Unterlassungen des Authorised Reseller resultieren, sind vom Kunden direkt angesprochen werden die Authorised Reseller als KRYPTOS SYSTEMS LTD haftet nicht f&#252;r solche Fragen sein);</p><p> 4.4.2 seine falschen Gebrauch, Missbrauch oder Korruption der Software oder Service von den Kunden bzw. dessen Dritte;</p><p> 4.4.3 Nutzung der Software oder Dienstleister mit anderer Software, Daten oder f&#252;r Ausr&#252;stung, mit der es nicht vereinbar ist; oder</p><p> 4.4.4 infolge der Dritten Aktuelles zu in Ziffer 4.2.4 Bezug genommen.</p><p> <u>IPR-Garantie</u></p><p> 4,5 KRYPTOS SYSTEMS LTD Optionsscheinen auf den jeweiligen Zeichnungsfrist, dass solche Software, Dokumentation, Daten und Dienstleistungen, die die KRYPTOS SYSTEMS LTD Offering zu bilden, wird nicht die geistigen Eigentumsrechte eines Dritten verletzen,</p><p> <u>Ausschluss des Assurances Nicht Enthalten in dieser Vereinbarung</u></p><p> 4.6 Der Kunde erkennt an, dass KRYPTOS SYSTEMS LTD hat verschiedene ausdr&#252;ckliche Zusicherung in diesem Abkommen vorgesehenen. Deshalb, soweit dies gesetzlich zul&#228;ssig ist, und sofern dies nicht ausdr&#252;cklich in diesem Vertrag festgelegt, KRYPTOS SYSTEMS LTD schlie&#223;t alle anderen Garantien (einschlie&#223;lich, ohne Einschr&#228;nkung, Garantien und Bedingungen) in Bezug auf die Software Materialien und Dienstleistung, einschlie&#223;lich und ohne Einschr&#228;nkung jegliche Zusicherung in Bezug um zufriedenstellende Qualit&#228;t oder Eignung f&#252;r einen bestimmten Zweck.</p><p> <u>Pflichten des Kunden</u></p><p> 4.7 Der Kunde verpflichtet sich:</p><p> 4.7.1 an Stelle t&#228;glichen Backup- und Disaster-Recovery-Ma&#223;nahmen in Bezug auf ihre und seine Dritter (soweit Dritte durch KRYPTOS SYSTEMS LTD erlaubt) Systeme und Daten, mit denen die Software Materialien oder Dienstleistungen verwendet werden, haben, und effektiv Firewall mit Virenschutzma&#223;nahmen (mit dem Kunden ist f&#252;r die Virenpr&#252;fung aller seiner Interaktion mit der Software Materialien und Dienstleistungen zust&#228;ndig sind; Version:</p><p> und der Kunde ist f&#252;r die eigene Anti-Viren-Schutzma&#223;nahmen, um so eventuellen Virusinfektion aus der Verwendung der Software Materialien und Dienstleistungen) verantwortlich zu sichern;</p><p> 4.7.2 zu &#252;berwachen und zu gew&#228;hrleisten, die Nutzung der Dienste im Einklang mit den Bedingungen dieser Vereinbarung;</p><p> 4.7.3 sicherstellen, dass kein Dritter, die nicht unter dieses Abkommen, um die Software Materialien oder Dienstleistungen zugreifen darf, wird mit diesen Zugang durch den Kunden (ob dieser Zugang vors&#228;tzlich oder fahrl&#228;ssig vorgesehen) vorgesehen ist;</p><p> 4.7.4 sicherstellen, dass jede von Systemen des Kunden, die auf die Nutzung der Software oder Services f&#252;r die Dateneingabe oder Daten Lookup verlassen, haben auch eine sinnvolle Alternative Handbuch bedeutet, auch weiterhin f&#252;r den Fall zu betreiben, dass die Software Materialien und Dienstleistungen nicht verf&#252;gbar sind ;</p><p> 4.7.5 sicherstellen, dass die technische Umsetzung des Kunden die Dienste zu verwenden, vermeidet zu einem einzelnen Rechenzentrum verbindlich und verwendet stattdessen die Standard-KRYPTOS SYSTEMS LTD Lastenausgleich Dienst (Details wie dies zu tun ist auf Anfrage von KRYPTOS SYSTEMS LTD zur Verf&#252;gung);</p><p> 4.7.6, dass im Hinblick auf die weitere Verwendung der Daten oder Dienstleistungen im Zusammenhang mit Royal Mail, muss der Kunde die entsprechenden Dienstleistungen in &#220;bereinstimmung mit den internen Gebrauch oder externen Gebrauch, die f&#252;r die entsprechenden Dienstleistungen erm&#228;chtigt wurde, verwenden k&#246;nnen, mit dem Kunden anerkennen, dass es es unterschiedliche Geb&#252;hren erhoben, ob der Dienst f&#252;r den internen Gebrauch oder externen Anwendung verwendet, und es ist die Pflicht des Kunden, um sicherzustellen, dass es die korrekte Lizenzierung Verwendung Option entsprechend seinem bestimmungsgem&#228;&#223;en Gebrauch durch den Kunden ausgew&#228;hlt. Wenn der Kunde die korrekte Lizenzoption f&#252;r den Einsatz nicht aus, und unbeschadet KRYPTOS SYSTEMS LTD und die Rechte der Lizenzgebern und Heilmittel, wird der Kunde auch die zus&#228;tzlichen Zahlungen gem&#228;&#223; Ziffer 9.14 zu machen.</p><p> 4.7.7 die KRYPTOS SYSTEMS LTD kann jeden Service zu nutzen, die fair use policy KRYPTOS SYSTEMS LTD ist von Zeit zu Zeit zu verletzen in Kraft zu blockieren;</p><p> 4.7.8 nicht f&#252;r Handlungen oder Unterlassungen &#252;bernehmen, oder nutzen oder anderweitig verf&#252;gbar zu machen die Software Materialien oder Dienstleistung in einer Weise, die dazu f&#252;hren w&#252;rde KRYPTOS SYSTEMS LTD, um einen Versto&#223; gegen die Third Party Lizenzen werden; und</p><p> 4.7.9 nicht f&#252;r Handlungen oder Unterlassungen &#252;bernehmen, oder nutzen oder anderweitig verf&#252;gbar zu machen die Software Materialien oder Dienstleistung in einer Weise, die dazu f&#252;hren w&#252;rde der Kunde unter Versto&#223; gegen die Third Party EULAs k&#246;nnen.</p><p> 4.8 Unbeschadet KRYPTOS SYSTEMS LTD und zus&#228;tzliche Rechte und Rechtsmittel der Lizenzgebern, sofern der Kunde Ziffer 4.7.2, 4.7.3, 4.7.6, 4.7.8, 4.7.9 zu erf&#252;llen, muss der Kunde auf Verlangen unverz&#252;glich zahlen, um KRYPTOS SYSTEMS LTD solchen Menge, von den Lizenzgebern erforderlich, um durch KRYPTOS SYSTEMS LTD f&#252;r die Nichteinhaltung des Kunden mit den vorstehenden Bestimmungen gezahlt werden wird.</p><p> <u>Mutual angemessene F&#228;higkeiten und Sorgfalt</u></p><p> 4.9 Jede Vertragspartei erkl&#228;rt sich bereit, angemessene F&#228;higkeiten und Sorgfalt bei der Durchf&#252;hrung seiner Verpflichtungen zu verwenden. Version:</p><p> <u>Als Authorised Reseller des Kunden-Agent</u></p><p> 4.10 Der Authorised Reseller und Kunden stimmen zu, dass eine der Pflichten des Kunden kann durch die Vertragsh&#228;ndler im Auftrag des Kunden ausge&#252;bt werden, mit dem Vertragsh&#228;ndler als Beauftragte des Kunden in dieser Hinsicht.</p><p> 5 zu Preisen und Zahlung</p><p> <u>Geb&#252;hren</u></p><p> 5.1 Die Geb&#252;hren (und die Berechnungsgrundlage und der jeweiligen F&#228;lligkeitstermine) f&#252;r die Dienstleistungen werden auf dem KRYPTOS SYSTEMS LTD Webseite falls abweichend in einem KRYPTOS SYSTEMS LTD Quote Sheet oder auf einem KRYPTOS gesetzt (wie von Zeit zu Zeit aktualisiert werden), oder SYSTEMS LTD schriftliche Zahlungsaufforderung.</p><p> 5.2 Die Geb&#252;hren, die in Bezug auf die Dienstleistungen anwendbar sind, sind:</p><p> 5.2.1 Ausgabeaufschlag f&#252;r den Zugang zu den jeweiligen Dienstleistungen; und</p><p> 5.2.2 SLA Geb&#252;hr f&#252;r den Premium Service.</p><p> <u>Zahlungen</u></p><p> 5.3 S&#228;mtliche Zahlungen sind in &#220;bereinstimmung mit den Bestimmungen in Paragraph 5.1 bezeichnet.</p><p> 5.4 Der Kunde best&#228;tigt, dass er ausdr&#252;cklich erm&#228;chtigt KRYPTOS SYSTEMS LTD (oder den autorisierten H&#228;ndler im Ermessen KRYPTOS SYSTEMS LTD ist), um die Zahlung des Kunden &#252;bernehmen, wenn die Zahlungsoption auto-Top-up wurde f&#252;r den Kunden die Menge eines oben gesetzt ( oben oder ein Auto-Top-up gilt als neue Kredit) nach dem betreffenden F&#228;lligkeitstag zu sein, mit den Zahlungen automatisch auf die jeweilige Kreditkarte oder EC-Karte (sofern diese Zahlungsmethoden werden im Rahmen des Registrierungsprozesses bereitgestellt abgebucht (als solcher Details sind im Abschnitt Konto danach durch den Kunden von Zeit zu Zeit)) an den jeweiligen Abst&#228;nden oder die daten wurden aktualisiert, um die Zahlungs Anforderungen des jeweiligen Service. Zur Vermeidung von Zweifeln, ob Zahlungsart des Kunden kann nicht abgebucht oder abgelehnt wird, dann wird der Kunde noch Haftung f&#252;r den jeweiligen Ladungen, die f&#228;llig werden k&#246;nnen. Vorbehaltlich der sonstigen Bestimmungen dieses Abkommens, k&#246;nnen Top-ups und Auto-Top-Ups, um jeden Kredit nicht zur&#252;ckerstattet.</p><p> <u>Versp&#228;tete oder nicht erfolgte Zahlung</u></p><p> 5.5 Unbeschadet der Rechte und Rechtsmittel KRYPTOS SYSTEMS LTD ist, in dem Ma&#223;e, dass der Kunde keine Zahlungen auf Zeit, k&#246;nnen KRYPTOS SYSTEMS LTD:</p><p> 5.5.1 Laden Sie den Kundenzinsen gem&#228;&#223; den gesetzlichen Bestimmungen; und oder</p><p> 5.5.2 auszusetzen und / oder zu beenden, jeder des Kunden Services und / oder Premium Service. Version:</p><p> 5.6 Wenn der Kunde die Dienstleistungen ausgesetzt oder wegen Nichtzahlung beendet wird, dann des Kunden Premium Service wird ebenfalls ausgesetzt oder beendet wird, und das wird nicht Anlass zu Service-Gutschriften, noch irgendwelche anderen Rechte oder Rechtsmittel f&#252;r den Kunden im Rahmen des SLA oder das Abkommen.</p><p> <u>Variation der Geb&#252;hren</u></p><p> 5.7 Der Kunde erkennt an, dass KRYPTOS SYSTEMS LTD kann die Ladungen dieser Vereinbarung von Zeit zu Zeit (einschlie&#223;lich und ohne Einschr&#228;nkung variieren anwendbar auf der Grundlage, aufgrund der F&#228;higkeit bestimmter ihrer Lizenzgeber, um die Ladungen zu KRYPTOS SYSTEMS LTD, seinen Kunden oder &#228;ndern ihre Wiederverk&#228;ufer, gem&#228;&#223; den Third Party Lizenzen). Der Kunde stimmt zu, dass, sobald es von einer solchen Erh&#246;hung der Entgelte und dem Datum, an dem die Geb&#252;hren g&#252;ltig ab (die "Neue Geb&#252;hren Datum") werden informiert, wird es als solche Ver&#228;nderungen in den Geb&#252;hren zu akzeptieren, wenn es um die Nutzung weiterhin werden jeweiligen Dienst oder Premium Service durch die &#196;nderung der Ladungen von oder nach der neuen Geb&#252;hren Datum betroffen.</p><p> <u>Erstattungen von KRYPTOS SYSTEMS LTD &amp; Credit Verfall</u></p><p> 5.8 Einzelheiten der Erstattungen sind in Abschnitt 10.15 enthalten.</p><p> 5.9 Sofern nicht ausdr&#252;cklich in diesem Vertrag festgelegt, keine R&#252;ckerstattungen in Bezug auf einen Kredit oder andere Belastungen zur Verf&#252;gung.</p><p> 5.10 Der Kunde erkennt an, dass der Kredit hat ein Ablaufdatum, wonach nicht verwendete Kreditkarten werden nicht mehr verwendet werden und es wird auch zur&#252;ckerstattet, so ist es der Verantwortung des Kunden, um die Kredit innerhalb des jeweiligen Zeitraums zu verwenden, dass die Kredit gilt f&#252;r, da die Kredit bietet einfach die Kunden mit einem Recht, den jeweiligen Dienst nutzen (gegen Zahlung einer zus&#228;tzlichen Lizenzgeb&#252;hr soweit erhoben) vor dem Ablaufdatum f&#252;r die jeweilige Kredit.</p><p> <u>Wirkung von Kundenbestellungen</u></p><p> 5.11 Wenn der Kunde gibt eine Bestellung an KRYPTOS SYSTEMS LTD in Bezug auf die Software Materialien, Dienstleistung, Premium Service oder dieser Vereinbarung verpflichtet sich der Kunde, dass, wenn nicht anders schriftlich von KRYPTOS SYSTEMS LTD auf KRYPTOS SYSTEMS LTD Brief vereinbart Briefpapier von einer Firma unterzeichnet Direktor KRYPTOS SYSTEMS LTD, mit ausdr&#252;cklicher Bezugnahme schriftlich an dieser Ziffer 5.11 gef&#252;hrt, sind die Bedingungen einer solchen Bestellung gilt nicht, und eine solche Bestellung durch KRYPTOS SYSTEMS LTD f&#252;r den alleinigen Zweck der Bezugnahme auf eine Bestellbezug in jeder akzeptiert Rechnungen, um die Zahlung durch den Kunden zu erleichtern.</p><p> <u>Credits</u></p><p> 5.12 Ein Kredit ist g&#252;ltig f&#252;r die fr&#252;heren von:</p><p> 5.12.1 eine maximale Laufzeit von zw&#246;lf Monaten ab dem Datum des Erwerbs der jeweiligen Kredit; und Version:</p><p> 5.12.2 wenn die Kredit vollst&#228;ndig aufgewendet worden, um zu kaufen einen oder mehrere Services.</p><p> 5.13 Jede Auto-Top-up oder ein Top-up zu einem bestehenden Kredit angelegt wird, wird als ein neues Kredit was die H&#246;he der Top-up-oder Auto-Top-up ist.</p><p> 5.14 Vorbehaltlich der Klauseln 12 und 13 erkennt der Kunde an, dass die Credit ist nicht &#252;bertragbar an Dritte, noch darf sie zum Nutzen der Dritte durch den Kunden verwendet werden.</p><p> 6 Das Service</p><p> <u>Projektcode</u></p><p> 6.1 Sobald der Antrag des Kunden zur Nutzung der Dienstleistungen wird durch KRYPTOS SYSTEMS LTD akzeptiert, wird der Kunde eine einzigartige Projektcode angegeben werden, und legt eine nicht-exklusive, nicht &#252;bertragbare, Lizenz zum Download und die Verwendung der entsprechenden Software Materialien f&#252;r den Zweck gew&#228;hrt werden f&#252;r den Zugriff und der Nutzung der Dienste, f&#252;r die es hat sich bereit erkl&#228;rt, die entsprechenden Ausgabeaufschlag zu zahlen.</p><p> <u>Kundenbereich Best&#228;tigung der Richtigkeit der Registrierungsdetails</u></p><p> 6.2 Der Kunde best&#228;tigt, dass alle Informationen, die sie bietet die jeweilige Dienstleistung sowie alle zus&#228;tzlichen Informationen, die sie bietet im Rahmen dieses Abkommens zu verwenden, wird zu dem Zeitpunkt ist vorgesehen (und wird weiterhin) richtig und vollst&#228;ndig sein. Wenn die Informationen ungenau, unvollst&#228;ndig oder jederzeit irref&#252;hrend danach dann (unbeschadet KRYPTOS SYSTEMS LTD die zus&#228;tzlichen Rechte und Rechtsmittel), wird der Kunde umgehend die Dateien zu bearbeiten im Abschnitt Konto, um sicherzustellen, dass seine Angaben bleiben richtig und vollst&#228;ndig. Der Kunde stimmt auch, dass es unverz&#252;glich KRYPTOS SYSTEMS LTD schriftlich, wenn er aufh&#246;rt, oder &#196;nderungen, die autorisierte Reseller verwenden.</p><p> 6.3 Der Kunde erkennt an, unbeschadet KRYPTOS SYSTEMS LTD die zus&#228;tzlichen Rechte und Rechtsmittel, dass jeder Versto&#223; gegen Ziffer 6.2 entsprechen, d&#252;rfen in KRYPTOS SYSTEMS LTD Aus&#252;bung seiner Rechte gem&#228;&#223; Ziffer 5.5, wenn Zahlungen nicht durch die jeweiligen F&#228;lligkeitstermine vorgenommen f&#252;hren.</p><p> <u>Eigenverbrauch des Kunden Nur &amp; Audits</u></p><p> 6.4 Der Service und die Software Materialien werden ausschlie&#223;lich f&#252;r den Kunden den eigenen Gebrauch im Rahmen dieses Abkommens zur Verf&#252;gung gestellt. Der Kunde ist ausdr&#252;cklich aus dem Weiterverkauf oder der Versuch, den Service Output weiterzuverkaufen oder Marketing oder auf andere Weise die Verteilung der Software Materialien oder Dienstleistung untersagt, ohne ausdr&#252;ckliche schriftliche Genehmigung von KRYPTOS SYSTEMS LTD.</p><p> 6.5 KRYPTOS SYSTEMS LTD beh&#228;lt sich vor, die URL der Website des Kunden, die mit der Service ist, um es in der Bestimmung, dass der Dienst in &#220;bereinstimmung mit diesem Abkommen zu unterst&#252;tzen, zu &#252;berpr&#252;fen. Version:</p><p> 6.6 Der Kunde verpflichtet sich zur Verf&#252;gung: angemessenen Zugang zu den R&#228;umlichkeiten, Einrichtungen und das Personal des Kunden; und angemessene Information; damit KRYPTOS SYSTEMS LTD oder die Lizenzgeber, um zu &#252;berpr&#252;fen, dass der Kunde mit Hilfe der Software Materialien und Service im Einklang mit den Bestimmungen dieses Abkommens und den Anforderungen der Lizenzgeber. Dar&#252;ber hinaus erkennt der Kunde an, dass KRYPTOS SYSTEMS LTD M&#246;glicherweise m&#252;ssen Sie Informationen in Bezug auf die Identit&#228;t des Kunden und die Nutzung der entsprechenden Software Materialien des Kunden und Dienst an der Lizenzgeber zur Verf&#252;gung (und im Falle von Datendiensten mit Daten von Ordnance Survey , dann ist der Mitteilungspflicht w&#252;rde auch zu Royal Mail Group plc zu verl&#228;ngern, f&#252;r die Zwecke dieser Ziffer), als eine Voraussetzung, damit der Kunde die Daten, Software und Materialien des Lizenzgebers zu verwenden. Der Kunde wird hiermit ausdr&#252;cklich damit einverstanden, dass eine solche Offenlegung von KRYPTOS SYSTEMS LTD an den Lizenzgeber gem&#228;&#223; dieser Ziffer 6.6 und f&#252;r die jeweiligen Lizenzgeber, den Kunden in Bezug auf die Nutzung des Lizenzgebers lizenziert Daten, Software und andere Materialien des Kunden zu kontaktieren.</p><p> <u>Konto &amp; Technische &#196;nderungen KRYPTOS SYSTEMS LTD</u></p><p> 6.7 KRYPTOS SYSTEMS LTD (nach billigem Ermessen) beh&#228;lt sich vor, die technischen Spezifikationen der Software und der Service jederzeit &#228;ndern, oder &#228;ndern Verrechnungsnummern, Lizenzschl&#252;ssel oder Passw&#246;rter und gibt dem Kunden so fr&#252;h wie vern&#252;nftigerweise m&#246;glich ist.</p><p> <u>Support Arrangements</u></p><p> 6.8 Der Kunde erkennt an, dass KRYPTOS SYSTEMS LTD kann begrenzt kostenlose Unterst&#252;tzung in Bezug auf die Software Materialien oder dem Service zur Verf&#252;gung stellen. Typischerweise kann eine solche Unterst&#252;tzung bestehen aus:</p><p> 6.8.1 begrenzte telefonische Beratung und Dokumentation in Bezug auf Set-up Vereinbarungen;</p><p> 6.8.2 begrenzten Beitrag Aufbau allgemeinen Telefonhilfe f&#252;r Fragen speziell durch KRYPTOS SYSTEMS LTD anstatt seine Dritte verursacht.</p><p> Wenn KRYPTOS SYSTEMS LTD bietet eine solche Unterst&#252;tzung, es wird auf diskretion&#228;rer Basis von KRYPTOS SYSTEMS LTD zur Verf&#252;gung gestellt werden (und wird Anlass zu nicht verpflichtet zu geben f&#252;r KRYPTOS SYSTEMS LTD, solche weitere Unterst&#252;tzung auf jedem zuk&#252;nftigen Gelegenheit zur Verf&#252;gung stellen). KRYPTOS GmbH beh&#228;lt sich das Recht vor, f&#252;r alle Support-Anfragen (at KRYPTOS SYSTEMS LTD Standardrate wie in Kraft zu diesem Zeitpunkt) zu laden oder zu verweigern, keine Support-Anfragen nach eigenem Ermessen, in dem Ma&#223;e, KRYPTOS SYSTEMS LTD Auffassung, dass die Support-Anfragen sind vorbei und &#252;ber das, was KRYPTOS SYSTEMS LTD Auffassung w&#252;rde vern&#252;nftig sein im Hinblick auf die freie und Begrenztheit solcher Unterst&#252;tzung.</p><p> 6.9 Der Kunde erkennt an, dass KRYPTOS SYSTEMS LTD bietet erweiterte Unterst&#252;tzung &#252;ber den Premium Service, der dem Kunden k&#246;nnen sich daf&#252;r entscheiden, zu verwenden, indem sie sich auf den jeweiligen SLA Laden, in welchem &#8203;&#8203;Fall die in der SLA enthalten zus&#228;tzliche Bestimmungen gelten auch dann zu zahlen.</p><p> 6.10 Der Kunde erkennt an, dass die SLA nicht in Bezug auf diese Dienste, die ausdr&#252;cklich vom Anwendungsbereich des SLA ausgeschlossen sind, wie im Abschnitt "Support" der KRYPTOS SYSTEMS LTD Webseite angegeben anzuwenden.</p><p> 6.11 Der Kunde erkennt an, dass KRYPTOS SYSTEMS LTD wird keine Haftung f&#252;r die Unterst&#252;tzung noch Serviceverf&#252;gbarkeit Version sein:</p><p> Themen, es sei denn, der Kunde w&#228;hlt den Premium Service und zahlt die SLA Geb&#252;hr f&#252;r die entsprechenden Dienstleistungen.</p><p> 6.12 Ist der Kunde w&#228;hlt den Premium Service, dann Haftung KRYPTOS SYSTEMS LTD ist in Bezug auf alle Support oder Service-Verf&#252;gbarkeit Fragen im Zusammenhang mit den jeweiligen Dienstleistungen, werden als in der SLA bezeichnet.</p><p> 6.13 Der Kunde erkennt an, dass, wenn der Kunde nicht im Besitz einer g&#252;ltigen Zeichnungsfrist (bei denen sie die jeweiligen Ausgabeaufschlag gezahlt), die zumindest gleich der Laufzeit des Premium Service abgedeckt ist, wird keine Erstattung f&#252;r zur Verf&#252;gung gestellt werden das Premium Service als Ergebnis.</p><p> 6.14 Soweit KRYPTOS SYSTEMS LTD wird haftet durch ein Gericht oder eine &#228;hnliche zust&#228;ndige Stelle, f&#252;r alle Supportfragen im Zusammenhang mit den G&#252;ltigkeitsbereich Unterst&#252;tzung gehalten, dann Haftung KRYPTOS SYSTEMS LTD ist wird auf die gleiche Weise eingeschr&#228;nkt werden, und um den gleichen Betrag, der anwendbar w&#228;re, wenn die relevanten Themen wurden von Support-Services von KRYPTOS SYSTEMS LTD, die im Rahmen des Premium Service waren geliefert entstehen.</p><p> 6.15 Soweit KRYPTOS SYSTEMS LTD wird haftbar gemacht durch einen Gerichtshof oder eine &#228;hnliche zust&#228;ndige Stelle, f&#252;r jegliche Unterst&#252;tzung Fragen oder Serviceverf&#252;gbarkeit Fragen, bei denen dies nicht gehalten beschr&#228;nkt oder durch Klauseln 6.11, 6.12 oder 6.14 ausgeschlossen werden, dann Haftung KRYPTOS SYSTEMS LTD ist unterliegen den Einschr&#228;nkungen und Ausschl&#252;sse der Haftung nach Ziffer 9 (Haftung) dieses Abkommens.</p><p> 7 Datens&#228;tze</p><p> <u>Sichtbarkeit von Aufzeichnungen durch den Kunden</u></p><p> 7.1 KRYPTOS SYSTEMS LTD f&#252;hren Aufzeichnungen &#252;ber Nutzung der Kreditw&#252;rdigkeit des Kunden, die Informationen, die der Kunde im Rahmen des &#167; Konto angezeigt werden kann halten. KRYPTOS SYSTEMS LTD Entschlossenheit solcher Nutzung ma&#223;gebend und letzte (sofern KRYPTOS SYSTEMS LTD hat angemessen gehandelt).</p><p> <u>Sichtbarkeit von Aufzeichnungen durch den Lieferanten</u></p><p> 7.2 Der Kunde erkennt an, dass KRYPTOS SYSTEMS LTD wird (und der relevante Authorised Reseller k&#246;nnen) in der Lage, mit anderen Informationen, um die Nutzung des Service des Kunden in Beziehung stehen bestimmte der Angaben im Abschnitt Konto zusammen (einschlie&#223;lich und ohne Einschr&#228;nkung des Kunden Konto-Code und Lizenzschl&#252;ssel).</p><p> 8 Passwortsicherheit</p><p> <u>Vertraulichkeit</u></p><p> 8.1 Der Kunde hat die Vertraulichkeit und Sicherheit der Passw&#246;rter und jede Projektcode zu erhalten und Lizenzschl&#252;ssel, um sie offenbart. Der Kunde ist KRYPTOS SYSTEMS LTD sofort zu benachrichtigen, wenn er der Auffassung ist, dass die</p><p> Code, Lizenzschl&#252;ssel oder Passwort ist, oder wahrscheinlich zu sein, in unbefugt verwendet.</p><p> <u>&#196;ndern Sie die Details</u></p><p> 8.2 Wenn gab es unberechtigte Nutzung des dem Konto des Kunden, die KRYPTOS SYSTEMS LTD zur Kenntnis gebracht wird, oder wenn der Kunde das Passwort vergessen, dann KRYPTOS SYSTEMS LTD kann dann eine neue Verrechnungscode, Lizenzschl&#252;ssel oder Password, um weitere Nutzung zu erm&#246;glichen der Service (oder alternativ KRYPTOS SYSTEMS LTD kann des Kunden Zugriff auf das Konto Section und alle Services und dem Premium Service, zu deaktivieren, wenn KRYPTOS SYSTEMS LTD vern&#252;nftigerweise glaubt, dass die unberechtigte Nutzung der dem Konto des Kunden wegen der widerrechtlichen oder fahrl&#228;ssige Handlungen oder Unterlassungen ist dem Kunden). Dies gilt unbeschadet KRYPTOS SYSTEMS LTD die zus&#228;tzlichen Rechte und Rechtsmittel gegen den Kunden.</p><p> <u>Verantwortung f&#252;r unberechtigte Verwendung</u></p><p> 8.3 Der Kunde stimmt zu, dass er und haftet f&#252;r alle Transaktionen durchgef&#252;hrt mit dem Projektcode, Lizenzschl&#252;ssel oder Kennwort verantwortlich ist. Im Hinblick auf nicht autorisierten Transaktionen, m&#252;ssen diese umgehend gemeldet werden, um KRYPTOS SYSTEMS LTD, und au&#223;er in dem Umfang, dass solche Transaktionen aufgrund der unrechtm&#228;&#223;ige Handlungen des Lieferanten eingetreten ist, der Kunde &#252;bernimmt die volle Verantwortung und Haftung f&#252;r solche Transaktionen.</p><p> 9 Haftung</p><p> <u>Caveat von Einschr&#228;nkungen und Haftungsausschl&#252;sse</u></p><p> 9.1 Ungeachtet der Bedingungen f&#252;r das Gegenteil, soll nichts in dieser Vereinbarung einschr&#228;nken oder ausschlie&#223;en KRYPTOS SYSTEMS LTD Haftung f&#252;r: der Tod; Personensch&#228;den; Betrug; betr&#252;gerische Falschdarstellung; und jegliche Haftung, die nicht rechtm&#228;&#223;ig eingeschr&#228;nkt oder ausgeschlossen werden kann.</p><p> <u>Ausschl&#252;sse</u></p><p> 9.2 Vorbehaltlich der Klauseln 5.5, 9.1 und 9.14, Keine Partei ist in jedem Fall der anderen Vertragspartei f&#252;r Folge-, spezielle, zuf&#228;llige oder indirekte Verluste oder folgende Verluste haftet, ob direkte, Folge-, spezielle, zuf&#228;llige oder indirekte Verluste: Verlust von Gewinnen; Verlust von Einnahmen; Umsatzverlust; Umsatzverlust; wirtschaftlichen Verlust; Verlust von gesch&#228;ftlichen oder Vertr&#228;ge; Verlust von erwarteten Einsparungen oder Firmenwert; Verlust von Software oder Daten; (oder Verluste, die durch eine Forderung von einem Dritten f&#252;r eine der oben genannten Verluste); ob solche Verluste ergeben sich unter Vertrag (einschlie&#223;lich und ohne Einschr&#228;nkung in Bezug auf eine vors&#228;tzliche repudiatory und Grundbr&#252;che), Satzung, unerlaubter Handlung (einschlie&#223;lich Fahrl&#228;ssigkeit) oder anderweitig. Allerdings wissen die Paragraphen 9.2 und 9.8, nicht arbeiten, um irgendwelche ausdr&#252;cklichen Erstattungsverpflichtungen ausdr&#252;cklich festgestellt, die von KRYPTOS SYSTEMS LTD in Paragraph 10.15.1 akzeptiert zu negieren.</p><p> <u>Haftungsgrenzen</u></p><p> 9.3 Wird eine Software, Daten, Dokumente oder Dienst exprimiert wird, um auf einer "as is" Basis zur Verf&#252;gung gestellt werden, oder in denen KRYPTOS SYSTEMS LTD ist ausdr&#252;cklich ausgeschlossen, diese Haftpflicht f&#252;r das jeweilige Thema, dann vorbehaltlich Ziffer 9.1, &#252;bernimmt KRYPTOS SYSTEMS LTD keinerlei Haftung aus gegebenem Anlass.</p><p> 9.4 Vorbehaltlich Ziffer 9.1, in denen ein Anspruch zum Ausdruck, um eine einzige und ausschlie&#223;liche Abhilfe ist, dann gilt, dass entsprechende Mittel.</p><p> 9.5 Im Hinblick auf alle Support oder Service-Verf&#252;gbarkeit Fragen, bei denen der Kunde nicht w&#228;hlte den Premium Service, dann Klausel 6.11 gilt;</p><p> 9.6 in Bezug auf alle Support oder Service-Verf&#252;gbarkeit Fragen, bei denen der Kunde die Premium Service, dann ist der Haftungsbetrag wird ausdr&#252;cklich in der SLA festgestellt werden, gew&#228;hlt;</p><p> 9.7 Vorbehaltlich Ziffer 9.1, die Haftungsgrenzen in Ziffer 9.8 gelten, wenn:</p><p> 9.7.1 ist die Haftung nicht eingeschr&#228;nkt oder im Rahmen der einem der Klauseln ausgeschlossen 9,2-9,6 (einschlie&#223;lich); oder</p><p> 9.7.2 Satz 6.15 gilt (in diesem Fall Ziffer 9.8.1 anwendbar sein wird).</p><p> 9.8 Vorbehaltlich der Klauseln 9,1-9,7 (einschlie&#223;lich) und 9,14, die Gesamthaftung von KRYPTOS SYSTEMS LTD f&#252;r alle Anspr&#252;che aus oder im Zusammenhang mit dieser Vereinbarung (ob sich unter Vertrag (einschlie&#223;lich und ohne Einschr&#228;nkung in Bezug auf eine vors&#228;tzliche repudiatory und Grundbr&#252;che) , Satzung, unerlaubter Handlung (einschlie&#223;lich Fahrl&#228;ssigkeit) oder anderweitig) wird wie in Bezug auf die Themen, zu denen KRYPTOS SYSTEMS LTD wird haftbar gemacht folgt begrenzt:</p><p> 9.8.1 in Bezug auf die Gesamtheit aller Fragen mit den Software Materialien, Dienstleistungen, Premium Service und Service-Ausgang, wo die Ursachen, die zu der Haftung des KRYPTOS SYSTEMS LTD in einem bestimmten Jahr auftreten, auf insgesamt Gesamtbetrag der ist das jeweilige Jahr gezahlten Betr&#228;ge durch den Kunden an KRYPTOS SYSTEMS LTD (der <strong>"Haftung </strong>Cap") (zur Klarstellung: eine beliebige Menge von einem Kredit verbracht]]></target>
             </trans-unit>			
-			<trans-unit id="1131">
+			<trans-unit id="1133">
                 <source>txt_modal_terms_and_cond_body_3</source>
                 <target><![CDATA[, ob im gleichen oder einem anderen Jahr, wird nicht einen zus&#228;tzlichen Betrag von Ladungen bilden f&#252;r die Zwecke dieser Ziffer, wie den Kauf der Kredit z&#228;hlt zu den "gezahlten Betr&#228;ge" durch den Kunden an KRYPTOS SYSTEMS LTD, und damit die Ausgaben Punkte z&#228;hlt nicht, um Doppelz&#228;hlungen zu vermeiden)), mit einer solchen Haftung Cap Begrenzungs KRYPTOS SYSTEMS LTD kollektiven Haftung f&#252;r die Gesamtheit aller solcher Fragen in diesem Jahr (und zur Vermeidung von Missverst&#228;ndnissen, wenn es zwei Probleme innerhalb eines Jahres, so ist die Gesamthaftung des KRYPTOS SYSTEMS LTD sich in Bezug auf diese 2 Fragen kollektiv w&#252;rde gleichzusetzen, um 100% der Kosten in diesem jeweiligen Jahres bezahlt und nicht 200% der in diesem Jahr jeweiligen Ausgabeaufschlags); oder</p><p> 9.8.2 in Bezug auf die Gesamtheit aller Haftung f&#252;r kollektiv alle anderen Fragen, die sich aus oder im Zusammenhang mit diesem Vertrag, die nicht unter Ziffer 9.8.1, noch beschr&#228;nkt beschr&#228;nkt werden oder durch eine andere Bestimmung dieser Vereinbarung ausgeschlossen, um das Aggregat Betrag von &#163; 100 (die <strong>"Additional Liability </strong>Cap").</p><p> 9.9 Hat der Kunde keine in einem bestimmten Jahr in Rechnung gestellten Betr&#228;ge zu zahlen, leidet aber ein Problem in diesem Jahr</p><p> f&#252;r die KRYPTOS SYSTEMS LTD haftet dann f&#252;r die Zwecke der Ziffer 9.8.1 wird die Haftpflicht Cap "f&#252;r das laufende Jahr auf die gr&#246;&#223;ere der gleichzusetzen:</p><p> 9.9.1 100 &#163;; oder</p><p> 9.9.2 den Gesamtbetrag durch den Kunden an KRYPTOS SYSTEMS LTD in dem unmittelbar vorhergehenden Jahr gezahlt.</p><p> <u>Kunden-Anerkennung</u></p><p> 9.10 Der Kunde erkennt an, dass die Geb&#252;hren in Bezug auf dieses Abkommens haben sich auf der Grundlage, dass KRYPTOS SYSTEMS LTD wird ausgeschlossen und ihre Haftung zu beschr&#228;nken, wie sie in diesem Abkommen festgelegten berechnet worden ist, und dass die Beschr&#228;nkungen und Haftungsausschl&#252;sse in dieser Vereinbarung sind daher vern&#252;nftig.</p><p> 9.11 Ungeachtet der Bedingungen f&#252;r das Gegenteil (jedoch vorbehaltlich Ziffer 9.1):</p><p> 9.11.1 die Haftungsausschl&#252;sse in Ziffer 9 durchsetzen; und</p><p> 9.11.2 KRYPTOS SYSTEMS LTD Haftung aus oder im Zusammenhang mit dieser Vereinbarung werden die in Paragraph 9 genannten Grenzwerte nicht &#252;berschreiten; und</p><p> 9.11.3, wo die Vereinbarung bezieht sich auf jede Beschr&#228;nkung oder den Ausschluss der Haftung der KRYPTOS SYSTEMS LTD, gilt eine solche Beschr&#228;nkung oder den Ausschluss, ob der jeweilige Pflicht entsteht unter Vertrag (einschlie&#223;lich und ohne Einschr&#228;nkung in Bezug auf eine vors&#228;tzliche repudiatory und Grundbr&#252;che), Satzung, unerlaubter Handlung ( einschlie&#223;lich und ohne Einschr&#228;nkung Fahrl&#228;ssigkeit) oder anderweitig.</p><p> <u>Begrenzung Zeitraum</u></p><p> 9.12 Der Kunde erkennt an, dass alle Anspr&#252;che, die sie gegen KRYPTOS SYSTEMS LTD aus&#252;ben m&#246;chte, wird umgehend angehoben werden. Die Vertragsparteien kommen daher &#252;berein, dass KRYPTOS SYSTEMS LTD haftet nicht f&#252;r eine Haftung in Bezug auf Ereignisse w&#228;hrend der Laufzeit dieser Vereinbarung, in dem die jeweiligen Anspr&#252;che nicht durch rechtliche Schritte gegen KRYPTOS SYSTEMS LTD innerhalb von 12 Monaten nach dem fr&#252;heren der brachte auftretenden gehalten werden: (1), wenn der Umstand, durch den der Entstehung des Klage; und (2) K&#252;ndigung der Vereinbarung.</p><p> Folgen f&#252;r die Ersch&#246;pfung der Haftungsgrenzen</p><p> 9.13 Die Vertragsparteien vereinbaren, dass jede Vertragspartei das Abkommen f&#252;r die Bequemlichkeit zu k&#252;ndigen, wenn die Haftungsh&#246;chstgrenze oder Additional Liability Cap wird durch den Kunden erfolgreich bringen Anspr&#252;che gegen KRYPTOS SYSTEMS LTD (die von einem Gericht festgestellt werden, oder zwischen den Vertragsparteien vereinbarten ersch&#246;pft, da aufgrund ) f&#252;r mindestens den Gesamtbetrag der Haftungsh&#246;chstgrenze oder die Additional Liability Cap. In einem solchen Fall wird die K&#252;ndigung an sich keinen Anlass zu zus&#228;tzlicher Heilmittel noch das Recht auf R&#252;ckerstattung.</p><p> <u>Des Kunden Zus&#228;tzliche Verpflichtungen in Bezug auf unrechtm&#228;&#223;ige Aktionen</u></p><p> 9.14 Der Kunde erkl&#228;rt sich bereit, haftet f&#252;r alle Betr&#228;ge, die (ob die sich in Bezug auf eine oder alle der folgenden Umst&#228;nde):</p><p> 9.14.1 KRYPTOS SYSTEMS LTD und die Lizenzgeber in Bezug auf, und in Bezug auf, Anspr&#252;che gegen gemacht, oder Schaden entstanden oder durch, KRYPTOS SYSTEMS LTD und / oder den Lizenzgebern, wo dies ganz oder teilweise entfallen direkt oder indirekt an die erlittenen Kunden Verletzung einer der Bestimmungen der Dritten Vertr&#228;ge. Dar&#252;ber hinaus verpflichtet sich der Kunde, dass, wenn KRYPTOS SYSTEMS LTD ist erforderlich, um alle Betr&#228;ge an Dritte als Folge des Kunden Verletzung einer der Third Party-Kontrakte bezahlen, dann wird der Kunde sofort nach Ank&#252;ndigung, erstatten KRYPTOS SYSTEMS LTD in vollem Umfang die Menge, die KRYPTOS SYSTEMS LTD musste, um den Dritten als Folge zahlen;</p><p> 9.14.2 KRYPTOS SYSTEMS LTD in Bezug auf alle Verst&#246;&#223;e gegen KRYPTOS SYSTEMS LTD oder Rechte an geistigem Eigentum ihrer Dritter (einschlie&#223;lich, ohne Einschr&#228;nkung, Urheber- und Markenrechte); und</p><p> 9.14.3 KRYPTOS SYSTEMS LTD f&#252;r etwaige Verst&#246;&#223;e gegen die Vereinbarung, die mit der bewussten Absicht der Verletzung dieses &#220;bereinkommens durchgef&#252;hrt werden (mit dem Kunden wird als bewusst alle Bestimmungen dieses Abkommens sein).</p><p> 10 Laufzeit, K&#252;ndigung und Aussetzung</p><p> <u>Dauer</u></p><p> 10.1 Das Abkommen wird am Datum des Inkrafttretens beginnen und weiter in Kraft, bis es in &#220;bereinstimmung mit den Bestimmungen des Abkommens wird beendet.</p><p> 10.2 Die Lizenzen erteilt, um die jeweiligen Leistungen im Rahmen des Abkommens zu verwenden (entweder f&#252;r die Verwendung der jeweiligen Dienstleistungen oder irgendwelche Software Materials) gelten f&#252;r den k&#252;rzeren der folgenden jeweiligen Perioden:</p><p> 10.2.1 der Ablauf des jeweiligen Abonnementzeitraums; oder</p><p> 10.2.2 in denen die Verwendung gew&#228;hrt vorbehaltlich der Kredit, bis zu dem Guthaben verf&#228;llt durch die Zeit oder die Verwendung als angemessen; oder</p><p> 10.2.3 der angegebene Zeitraum im Abschnitt Konto oder Rechnung (oder zu einem anderen von den Vertragsparteien schriftlich vereinbart); oder</p><p> 10.2.4 die Beendigung der Vereinbarung.</p><p> <u>Vor&#252;bergehende Aussetzung der Service-</u></p><p> 10.3 KRYPTOS SYSTEMS LTD vor&#252;bergehend aussetzen:</p><p> 10.3.1 die Service; und oder</p><p> 10.3.2 Bereitstellung eines der Software-Materialien;</p><p> in Notf&#228;llen oder dringenden betrieblichen Gr&#252;nden, aber soweit praktisch durchf&#252;hrbar, wird es den Kunden Vorwarnung der Aussetzung zu geben.</p><p> <u>Aufh&#228;ngung f&#252;r zweckfremde Nutzung</u></p><p> 10.4 Wenn KRYPTOS SYSTEMS LTD Grund zu der Annahme, dass der Kunde die zweckfremde Nutzung des Services oder Software Materialien ist die Service-Performance zu beeintr&#228;chtigen oder was zu abnormalen Kreditaufnahme (wie vern&#252;nftigerweise von KRYPTOS SYSTEMS LTD bestimmt wird), dann KRYPTOS SYSTEMS LTD kann den Zugang des Kunden, bis die Aussetzung Ursache der Wertminderung aufgel&#246;st worden (Aussetzung wird der Anforderung des Kunden keine Auswirkungen, auch weiterhin die Zahlung der entsprechenden Geb&#252;hren f&#252;r die suspendierten Dienst oder Software Materialien, noch wird es verl&#228;ngern die jeweiligen Zeichnungsfrist in Bezug auf jede Kredit).</p><p> <u>K&#252;ndigung oder Aussetzung von KRYPTOS SYSTEMS LTD</u></p><p> 10.5 KRYPTOS SYSTEMS LTD hat das Recht, auszusetzen oder zu beenden, diese Vereinbarung unverz&#252;glich nach K&#252;ndigung, wenn der Kunde mit irgend entsprechen (jedoch wird Federung automatisch folgende E-Mail-Benachrichtigung, wenn eine Zahlung nicht durch die jeweiligen F&#228;lligkeitstermin durch den Kunden auftreten) haben in K&#252;ndigung des Abkommens; Bestimmung dieser Vereinbarung (Aussetzung wird der Anforderung des Kunden keine Auswirkungen, auch weiterhin die Zahlung der entsprechenden Geb&#252;hren f&#252;r die suspendierten Dienst oder Premium Service (sofern zutreffend), noch wird es verl&#228;ngern die jeweiligen Zeichnungsfrist in Bezug auf jede Kredit solchen Umst&#228;nden wird auch berechtigen den Kunden nicht zu einer R&#252;ckerstattung).</p><p> 10.6 KRYPTOS SYSTEMS LTD kann den Vertrag (im Ganzen oder in Teilen) unverz&#252;glich nach Mitteilung an den Kunden jederzeit zu k&#252;ndigen, wenn:</p><p> 10.6.1 KRYPTOS SYSTEMS LTD ist nicht mehr in der Lage, zur Verf&#252;gung den Service oder Software Materialien (ganz oder teilweise) durch die Handlungen oder Unterlassungen der Lizenzgeber zu machen;</p><p> Aus irgendeinem Grund 10.6.2 einer der Third Party Vertr&#228;ge zu beenden;</p><p> 10.6.3 die Lizenzgeber variieren die Bedingungen und Konditionen, Anforderungen, oder die Preisgestaltung in einer Weise beeintr&#228;chtigt KRYPTOS SYSTEMS LTD oder des Kunden;</p><p> 10.6.4 ein Lizenzgeber geltend, dass die Nutzung der Datenbank oder die Software Materialien in der Art und Weise, in der sie durch KRYPTOS SYSTEMS LTD oder dem Kunden verwendet wird, nicht erlaubt; oder</p><p> 10.6.5 Der Kunde bringt KRYPTOS SYSTEMS LTD oder den Lizenzgebern in Verruf.</p><p> 10.7 Unbeschadet der Klausel 10.6 kann KRYPTOS SYSTEMS LTD, das Abkommen f&#252;r die Bequemlichkeit von 90 Tagen Mitteilung an den Kunden jederzeit zu beenden, und in einem solchen Fall wird KRYPTOS SYSTEMS LTD eine anteilige R&#252;ckerstattung gem&#228;&#223; Ziffer 10.15.1 liefern .</p><p> 10.8 Die jeweilige Drittlizenz wird automatisch mit sofortiger Wirkung k&#252;ndigen, wenn der entsprechende Third Party Lizenz beendet wird, und folglich die jeweiligen Dienstleister, die Gegenstand einer solchen Dritten Vertr&#228;ge war, zusammen mit dem Premium Service in Bezug auf diesen Service (falls zutreffend), wird auch automatisch mit sofortiger Wirkung k&#252;ndigen. KRYPTOS SYSTEMS LTD liefert unverz&#252;glich Kenntnis von einem solchen Fall gegen&#252;ber dem Kunden.</p><p> 10,9 KRYPTOS SYSTEMS LTD kann das Abkommen in ganz oder teilweise f&#252;r die Bequemlichkeit jederzeit durch schriftliche Mitteilung (mit einer solchen K&#252;ndigung wirksam auf die in der jeweiligen Mitteilung angegebenen Datum), in dem eine solche K&#252;ndigung ist notwendig f&#252;r KRYPTOS SYSTEMS LTD, mit dem nicht entsprochen wird Third Party Lizenzen.</p><p> <u>K&#252;ndigung durch den Kunden</u></p><p> 10.10 Der Kunde kann den Vertrag mit sofortiger Wirkung zu k&#252;ndigen, wenn KRYPTOS SYSTEMS LTD ist in wesentlichen Verletzung dieser Vereinbarung (jedoch, wo diese Verletzung geheilt werden kann, muss der Kunde KRYPTOS SYSTEMS LTD mit mindestens 30 Tagen schriftlich mit ausdr&#252;cklicher liefern ( schriftliche Hinweis auf sein Recht, die Vereinbarung nach dieser Ziffer) erm&#246;glicht KRYPTOS SYSTEMS LTD, um die Verletzung zu beheben zu beenden, und nur wenn KRYPTOS SYSTEMS LTD die Verletzung nicht innerhalb dieser Frist zu beheben, kann der Kunde den Vertrag k&#252;ndigen).</p><p> <u>K&#252;ndigung durch eine der Parteien</u></p><p>10.11 Jede Partei (die <strong>"k&#252;ndigende </strong>Partei") kann die Vereinbarung sofort durch Mitteilung an die andere Partei (die zu beenden <strong>"s&#228;umige </strong>Partei"), wenn:</p><p> 10.11.1 die s&#228;umige Partei nicht in der Lage ist, ihre Schulden zu zahlen, wenn diese f&#228;llig oder anderweitig zahlungsunf&#228;hig wird, oder wenn ein Receiver oder eine Verwaltungs Empf&#228;nger wird &#252;ber eine oder alle der Verm&#246;genswerte der s&#228;umigen Partei ernannt, oder wird eine Anordnung, Vergleich oder Zusammensetzung der Schulden der zur Leistung verpflichteten Partei vorgeschlagen oder von der s&#228;umigen Partei gemacht, oder wenn der s&#228;umige Partei eintritt oder in einem Verfahren f&#252;r die Verwaltung oder der Liquidation eingetragen oder in anderer Weise wird je nach Aufl&#246;sungsverfahren, oder wenn eine analoge Veranstaltung in einer anderen Jurisdiktion in auftritt was der s&#228;umigen Partei f&#252;hrt sein Gesch&#228;ft;</p><p> 10.11.2 der s&#228;umigen Partei unzumutbar offenbart keine vertraulichen Informationen der k&#252;ndigende Partei (oder des Lizenzgebers); (wo jeder vern&#252;nftige Offenlegung erforderlich ist, dann ist der offenlegenden Partei wird daf&#252;r sorgen, dass eine solche Offenlegung unterliegt einer angemessenen Geheimhaltungspflicht durch den Dritten Empf&#228;nger der vertraulichen Informationen akzeptiert).</p><p> <u>SLA Konsequenzen bei den Suspensionen oder K&#252;ndigung</u></p><p> 10.12 Suspension gem&#228;&#223; Ziffer 10.4 oder anderer Suspensionen oder K&#252;ndigungen, die zugeordnet werden k&#246;nnen:</p><p> 10.12.1 die unrechtm&#228;&#223;ige Handlungen des Kunden; oder</p><p> 10.12.2 ein Ereignis h&#246;herer Gewalt;</p><p> werden nicht als Ausfallzeiten bei der Berechnung des Uptime Service Level hinsichtlich der SLA und wird zu keinerlei Service-Gutschriften, Zahlungen oder andere Mittel an den Kunden zu geben.</p><p> <u>Wirkungen der K&#252;ndigung</u></p><p> 10.13 K&#252;ndigung der Vereinbarung gilt unbeschadet beider Parteien aufgelaufene Rechte und Rechtsmittel.</p><p> 10.14 Die Bestimmungen dieses Abkommens, die zum Ausdruck gebracht werden, oder soll, &#252;ber die Beendigung, werden in vollem Umfang in Kraft und wirksam.</p><p> <u>Erstattungen bei K&#252;ndigung</u></p><p> 10.15 Wo:</p><p> 10.15.1 Das Abkommen wird von KRYPTOS SYSTEMS LTD (andere als die direkt oder indirekt infolge der missbr&#228;uchlichen Handlungen oder Unterlassungen des Kunden) abgeschlossen; oder</p><p> 10.15.2 der Vertrag durch den Kunden gem&#228;&#223; den Klauseln 10.10 oder 10.11 beendet wird;</p><p> dann wird der Kunde auf eine anteilige R&#252;ckerstattung des Betrags berechtigt: nicht verwendete Credits; und Lizenzgeb&#252;hren; und SLA kostenlos; zum Zeitpunkt der Beendigung des Abkommens, um das Ausma&#223;, in dem es nicht mehr in der Lage, den jeweiligen Dienst f&#252;r den noch nicht abgelaufenen Bezugsfrist oder Premium Service f&#252;r den noch nicht abgelaufenen Unterst&#252;tzungszeitraum zu verwenden, mit einer solchen Zahlung durch KRYPTOS SYSTEMS LTD berechnet und bestimmt zu reflektieren nach billigem Ermessen. Der Kunde verpflichtet sich, dass dies die einzige und ausschlie&#223;liche finanzielle Mittel des Kunden unter solchen Umst&#228;nden.</p><p> 11 H&#246;here Gewalt</p><p> 11.1 Ist eine Vertragspartei wird von der Erf&#252;llung ihrer Verpflichtungen aufgrund jedem Fall au&#223;erhalb der Kontrolle verhindert (einschlie&#223;lich, ohne Einschr&#228;nkung, (ein solches Ereignis als ein "Ereignis h&#246;herer Gewalt" bezeichnet) alle Fragen im Zusammenhang mit dem Daten, Software oder Dokumentation geliefert die Lizenzgeber), so bleibt sie bei Versto&#223; gegen diese Vereinbarung noch anderweitig verpflichtet, der anderen Vertragspartei auf Grund der Verz&#246;gerungen bei der Erf&#252;llung oder Nichterf&#252;llung einer seiner Verpflichtungen aufgrund solcher Ereignisse. Allerdings bedeutet diese Klausel den Kunden nicht zu entschuldigen von der Erf&#252;llung ihrer Zahlungsverpflichtungen, noch von der Einhaltung der Third Party-Kontrakte, f&#252;r sich beanspruchen den Vorteil eines Ereignisses h&#246;herer Gewalt.</p><p> 11.2 Wenn ein Ereignis h&#246;herer Gewalt andauert f&#252;r einen Zeitraum von mehr als 14 aufeinander folgenden Tagen, so kann jede Vertragspartei das Abkommen f&#252;r die Bequemlichkeit w&#228;hrend der Dauer eines solchen Ereignis h&#246;herer Gewalt zu beenden. In einem solchen Fall erkennen die Vertragsparteien, dass es keine Entsch&#228;digung aufgrund von einer Vertragspartei auf die andere f&#252;r die K&#252;ndigung unter solchen Umst&#228;nden sein</p><p> 12 Abtretung und Vergabe von Unterauftr&#228;gen</p><p> 12.1 Der Kunde kann diese Vereinbarung (ganz oder teilweise) nicht berechtigt, ohne vorherige schriftliche Zustimmung von KRYPTOS SYSTEMS LTD (diese Zustimmung nicht unbillig verweigert werden darf).</p><p> 12.2 KRYPTOS SYSTEMS LTD kann vergeben und weisen eine oder alle seine Rechte und Pflichten im Rahmen dieses Abkommens, ohne die vorherige Zustimmung des Kunden erforderlich ist.</p><p> 13 3rd Parties &amp; Contracts (Rights of Third Parties) Act 1999</p><p> <u>Third Party Group Company und Genuss Organisation verwenden</u></p><p> 13.1 Ist der Kunde mit dem Abkommen gem&#228;&#223; Ziffer 13.3, die Nutzung der Software Materialien, Dienstleistungen und Premium Service durch ihre Konzernunternehmen oder anderen verwandten Organisationen erm&#246;glichen erlaubt ist, dann wird der Kunde best&#228;tigt, dass es f&#252;r alle Zahlungsverpflichtungen verantwortlich bleiben, und der Kunde &#252;bernimmt die Verantwortung f&#252;r die Einhaltung der von diesen Parteien mit der Vereinbarung (mit dem Kunden sicherzustellen, dass diesen Parteien mit denselben Verpflichtungen und Einschr&#228;nkungen wie die, die der Kunde unterliegt, in Bezug auf die Vereinbarung nicht einhalten). Der Kunde best&#228;tigt, dass sie sicherstellen, dass, diese Dritten und dem Kunden eine gesamtschuldnerische Haftung zu KRYPTOS SYSTEMS LTD und den Lizenzgebern in Bezug auf das Abkommen.</p><p> 13.2 Der Kunde stimmt zu, dass er berechtigt ist, als Agent im Namen ihrer Konzerngesellschaften und die damit verbundenen Parteiorganisationen dritten akzeptieren, werden die &#196;nderungen zu dem Abkommen von KRYPTOS SYSTEMS LTD und den Dritten Vertr&#228;ge von den Lizenzgebern gemacht.</p><p> 13.3 Jede Dritter des Kunden gem&#228;&#223; einem Zeitplan der berechtigten Dritten durch KRYPTOS SYSTEMS LTD ausgestellt bezeichnet werden, sind erm&#228;chtigt, die Software Materialien und Service zu nutzen (und wo die SLA-Lade wurde vereinbart, im Hinblick auf die Kunden bezahlt werden und jedes seiner Dritten, dem Premium Service) in &#220;bereinstimmung mit den Bestimmungen des Abkommens, mit dem Kunden die Anerkennung, dass jeder Dritte m&#252;ssen mit zus&#228;tzlichen Kosten f&#252;r die Nutzung der Dienste, mit einer solchen Zahlung zu zahlen, um &#252;ber den Kunden vorgenommen werden . KRYPTOS SYSTEMS LTD und der Kunde kann den Zeitplan f&#252;r die autorisierte Dritte von Zeit zu Zeit durch eine schriftliche Vereinbarung zwischen ihnen (die Vereinbarung per E-Mail enth&#228;lt) zu aktualisieren.</p><p> <u>Act 1999</u></p><p> 13.4 Die in der Anlage aufgef&#252;hrten Lizenzgeber und Dritten des Kunden, in Paragraph 13.3 (wenn auch, dass f&#252;r die Durchf&#252;hrung der Anspr&#252;che, verpflichtet sich der Kunde, dass sie sicherstellen, dass sie alle Anspr&#252;che dieser Dritten gegen KRYPTOS SYSTEMS LTD zu bringen, im Auftrag von diesen Parteien, wie der Kunde stellt sicher, &#252;ber diesen Parteien nicht bringen ihre Anspr&#252;che direkt gegen KRYPTOS SYSTEMS LTD), hat das Recht, die Bestimmungen dieses Abkommens, die zu ihren Gunsten sind durchzusetzen, wird aufgrund von &#167; 1 haben der Contracts (Rights of Third</p><p> Parties) Act 1999. Keine andere Dritte haben das Recht, jede Laufzeit dieser Vereinbarung durchzusetzen.</p><p> 13.5 Die Vertragsparteien k&#246;nnen abweichend von &#167; 2 (1) der Contracts (Rights of Third Parties) Act 1999, abweichen oder diesen Vertrag (ganz oder teilweise) nur mit Zustimmung der Lizenzgeber oder sonstige Dritte erfordern (auch bezeichnet In den in Ziffer 13.4 oder anderweitig).</p><p> 14 Variations</p><p> 14.1 &#196;nderung dieses Abkommens werden erst wirksam, wenn sie schriftlich erfolgt und von einem bevollm&#228;chtigten Vertreter der Vertragsparteien unterzeichnet wurde, obwohl keine Preisvereinbarungen auf den Kunden zugeschnittene kann ausdr&#252;cklich KRYPTOS SYSTEMS LTD vereinbart werden per E-Mail.</p><p> 14.2 Jede Ermessen KRYPTOS SYSTEMS LTD von Zeit zu Zeit ausge&#252;bt, um den Kunden leisten zus&#228;tzliche Rechte oder Vorteile, die nicht unter das Abkommen gew&#228;hrt werden (in F&#228;llen, in denen eine solche zus&#228;tzliche Rechte oder Vorteile waren die klare und bewusste Absicht KRYPTOS SYSTEMS LTD), werden nur bei dieser Gelegenheit zu betreiben und nicht als eine &#196;nderung des Abkommens in Bezug auf andere Anl&#228;sse zu betreiben, sofern nicht ausdr&#252;cklich mit den Bestimmungen der Klausel 14.1 mit mit als erf&#252;llt erkl&#228;rt.</p><p> 15 Teilnichtigkeit</p><p> 15.1 Wenn zu irgendeinem Zeitpunkt irgendein Teil dieser Vereinbarung ung&#252;ltig oder nicht durchsetzbar wird nach geltendem Recht gilt er als von dieser Vereinbarung und den &#252;brigen Bestimmungen dieses Abkommens gestrichen werden weiterhin unber&#252;hrt. In einem solchen Fall werden die Parteien sich angemessen bem&#252;hen, das weggelassen Bestimmung durch eine wirksame Ersatz, die dem am n&#228;chsten soweit angemessen und rechtm&#228;&#223;ig m&#246;glich erreicht, die Absicht des weggelassen Bestimmung zu ersetzen. .</p><p> 16 Waiver</p><p> 16.1 Keine Bestimmung des Abkommens aufgehoben werden, sofern nicht ausdr&#252;cklich anderweitig in dieser Vereinbarung in Bezug auf alle Rechte oder Rechtsmittel, angegeben oder vereinbart, von beiden Vertragsparteien schriftlich verzichtet werden; Wenn jedoch ein Recht muss innerhalb eines bestimmten Zeitraums ausge&#252;bt werden, dann ist das Recht verzichtet wird, wenn es nicht innerhalb eines solchen Zeitraums ausge&#252;bt. Sollte eine Bestimmung verzichtet wird, dann, dass Verzicht gilt f&#252;r diese Instanz zu betreiben und nicht nur zuk&#252;nftigen Instanzen, wenn nicht anders von den Vertragsparteien schriftlich vereinbart wurde.</p><p> 17. Gesamte Vereinbarung</p><p> 17.1 Diese Vereinbarung (die vom jeweiligen Drittanbieter Vertr&#228;ge enth&#228;lt) enth&#228;lt die gesamte Vereinbarung zwischen den Parteien in Bezug auf den Gegenstand dieser Vereinbarung (die <strong>"Subject </strong>Matter") und ersetzt alle anderen schriftlichen und m&#252;ndlichen Kommunikation zwischen den Parteien in Bezug auf Der Gegenstand. Mit Ausnahme der ausdr&#252;cklichen Bestimmungen dieses Abkommens (und alle ausdr&#252;cklichen Bestimmungen in irgendeiner Dokumentation, die ausdr&#252;cklich eingeschlossen ist enthalten), alle anderen Garantien, Bedingungen, Bedingungen, Zusicherungen, Erkl&#228;rungen, Zusagen und Verpflichtungen ob ausdr&#252;cklich oder durch Gesetz, Gewohnheitsrecht, individuell stillschweigend, Nutzung oder anderweitig werden hiermit zu der maximalen gesetzlich zul&#228;ssigen Umfang ausgeschlossen. Die Vertragsparteien best&#228;tigen, dass sie nicht auf Zusicherungen, Mitteilungen oder anderen Angelegenheiten, die nicht ausdr&#252;cklich in diesem Vertrag festgelegt haben, ob als Anreiz, diese Vereinbarung oder anderweitig geben verlassen. Diese Klausel 17.1 Fahrt nur auf den Abschnitten 17.2 und 17.3.</p><p> 17.2 Ungeachtet gegenteiliger Bestimmungen in dieser Vereinbarung, die alle stillschweige: Allgemeine Gesch&#228;ftsbedingungen und Garantien (einschlie&#223;lich und ohne Einschr&#228;nkung die Bestimmungen &#252;ber zufriedenstellende Qualit&#228;t und Gebrauchstauglichkeit); ob:</p><p> 17.2.1 durch Gesetz, Gewohnheitsrecht, kundenspezifische, Nutzung oder anderweitig impliziert; oder</p><p> 17.2.2 sonst suchte ausdr&#252;cklich einbezogen werden (einschlie&#223;lich, ohne Einschr&#228;nkung, wo versucht, durch ausdr&#252;ckliche Bestimmung dieses Abkommen aufgenommen werden);</p><p> werden hiermit zu der maximalen gesetzlich zul&#228;ssigen Umfang ausgeschlossen. Diese Klausel 17.2 betreibt unter Klausel 17.3.</p><p> 17.3 Ungeachtet der Bedingungen f&#252;r das Gegenteil, nichts in dieser Vereinbarung begrenzt oder schlie&#223;t Haftung beider Parteien f&#252;r betr&#252;gerische Falschdarstellungen.</p><p> 18. Recht und Gerichtsstand</p><p> 18.1 Dieser Vertrag und alle Streitigkeiten oder Anspr&#252;che im Zusammenhang damit werden von den Gesetzen von England werden und unterliegt der ausschlie&#223;lichen Zust&#228;ndigkeit der englischen Gerichte, auf die die Parteien unwiderruflich.</p><p> 19 Hinweise &amp; Datenschutz</p><p> <u>Hinweise</u></p><p> 19.1 Alle Mitteilungen KRYPTOS SYSTEMS LTD im Zusammenhang mit dieser Vereinbarung ist schriftlich an die Rechtsabteilung, Kryptos Systems Ltd, Ufer, Basin Road, Worcester WR5 3DA oder per E-Mail an legals @ kryptosystems.co.uk gesendet werden. Hinweise werden nur wirksam gedient gem&#228;&#223; diesem Vertrag durch den Kunden, wo der Bekanntmachung durch verfolgt geliefert worden sein (die verwendet werden k&#246;nnen, um einigerma&#223;en:</p><p> zeigen, dass die Ank&#252;ndigung wurde von KRYPTOS SYSTEMS LTD empfangen), oder wenn Eingang der Mitteilung schriftlich von KRYPTOS SYSTEMS LTD anerkannt.</p><p> 19.2 Der Kunde verpflichtet sich, dass KRYPTOS SYSTEMS LTD und der Lizenzgeber kann die Informationen nach diesem Abkommen in &#220;bereinstimmung mit der KRYPTOS SYSTEMS LTD Datenschutz gewonnen zu verwenden.</p><p> Zeitplan 1</p><p> Service Level Agreement: Premium Service</p><p> <u>Einbringen</u></p><p> Dieses SLA gilt nur, wenn der Kunde die Premium Service (zB Wahl bedeutet, dass der Kunde zugestimmt hat, f&#252;r zu zahlen, und KRYPTOS SYSTEMS LTD hat schriftlich zu, das Premium Service bieten vereinbart), die der Kunde auf der folgenden berechtigt, in gew&#228;hlten gem&#228;&#223; und vorbehaltlich der Bestimmungen dieses SLA und dem Abkommen:</p><p> &#8226; Support Vereinbarungen mit gezielten Reaktion und Abhilfe Zeiten;</p><p> &#8226; Verf&#252;gbarkeit Verpflichtungen im Hinblick auf Services Verf&#252;gbarkeit;</p><p> &#8226; Service-Gutschriften in Bezug auf die Verf&#252;gbarkeit Zusagen der Dienstleistung "verpasst.</p><p> 1 Nebenkosten</p><p> 1.1 Der Kunde verpflichtet sich, die SLA-Geb&#252;hr f&#252;r den Premium Service zu zahlen.</p><p> 1.2 Der Kunde erkennt an, dass die SLA Geb&#252;hr berechtigt den Kunden, um die zus&#228;tzlichen Vorkehrungen, um in diesem SLA bezeichnet, aber dass eine solche Geb&#252;hr ist zus&#228;tzlich zu den jeweiligen Ausgabeaufschlag.</p><p> 2 Services Verf&#252;gbarkeit</p><p> 2.1 Der Lieferant stellt mindestens eine 99.9% 'Verf&#252;gbarkeitsniveau (die tats&#228;chliche durchschnittliche monatliche Uptime Servicesdurchschnittliche monatliche Uptime Service Verf&#252;gbarkeitsniveau als ein Aggregat aller Dienstleistungen, wird bezeichnet als die <strong>"Uptime Service </strong>Level").</p><p> 2.2 Der Uptime Service Level misst 'Verf&#252;gbarkeit innerhalb eines 24-Stunden-Tag (wie in Absatz 3 dieses SLA weiter ausgearbeitet), aus KRYPTOS SYSTEMS LTD oder seine Subunternehmer die kollektive Services-Server als Host f&#252;r die entsprechenden Dienstleistungen (wie Unterauftragnehmer von KRYPTOS SYSTEMS LTD wird bezeichnet als <strong>"KRYPTOS SYSTEMS LTD </strong>Hoster"), zum am weitesten entfernten Netzausgangspunkt, um das &#246;ffentliche Internet, die komplett unter der direkten Kontrolle des KRYPTOS SYSTEMS LTD oder KRYPTOS SYSTEMS LTD Hoster ist.</p><p> 2.3 Die Uptime Service Level umfasst nicht von allen Messungen (und damit die folgenden stellt keine Ausfallzeiten f&#252;r die Zwecke der Berechnung des Uptime Service Level):</p><p> 2.3.1 Probleme mit: jede Software und Daten, die nicht Teil der KRYPTOS SYSTEMS LTD Offering;</p><p> 2.3.2 Probleme mit: Hardware oder Netzwerke, die nicht unter der direkten Kontrolle des KRYPTOS SYSTEMS LTD oder KRYPTOS SYSTEMS LTD Hoster gibt;</p><p> 2.3.3 Jeder Planned Maintenance;</p><p> 2.3.4 Jeder Kunde Ursachen (einschlie&#223;lich einer Mi&#223;achtung von Implementierungsrichtlinien, wie in der Dokumentation angegeben ist, oder Probleme von Kontoeinstellungen resultierende, die unter der Kontrolle des Kunden sind einzuhalten);</p><p> 2.3.5 Jeder Kunde verursacht oder Dritten verursacht Ausf&#228;lle oder St&#246;rungen;</p><p> 2.3.6 Ausf&#228;lle oder St&#246;rungen in ganz oder teilweise auf alle Ereignisse h&#246;herer Gewalt zur&#252;ckzuf&#252;hren; und</p><p> 2.3.7 alle Dienstleistungen, die als von KRYPTOS SYSTEMS LTD abgesetzt benachrichtigt werden, wobei mindestens 90 Tage im voraus von solchen beabsichtigten Absetzen von KRYPTOS SYSTEMS LTD vorgesehen ist;</p><p> 2.3.8 jegliche Suspensionen im Service wegen versp&#228;teter Bezahlung der Rechnungen gem&#228;&#223; Ziffer 5.5 des Abkommens.</p><p> 3 Verf&#252;gbarkeit Measurement</p><p> 3.1 Der Uptime Service Level-Messung erfolgt durch KRYPTOS SYSTEMS LTD durchgef&#252;hrt werden und ist auf der Monatsdurchschnitt prozentuale Verf&#252;gbarkeit, am Ende eines jeden Kalendermonats, wie die tats&#228;chlichen Gesamtbetriebszeit Minuten w&#228;hrend dieses Kalendermonats dividiert durch die Gesamt m&#246;glich uptime Minuten, dass ermittelt wurde Kalendermonat (als sichtbar von der SLA-Bericht), vorbehaltlich der Bestimmungen von Absatz 2 dieses SLA.</p>]]></target>
             </trans-unit>			
-			<trans-unit id="1132">
+			<trans-unit id="1134">
                 <source>txt_modal_terms_and_cond_body_4</source>
                 <target><![CDATA[]]></target>
             </trans-unit>			
-			<trans-unit id="1133">
+			<trans-unit id="1135">
                 <source>txt_modal_privacy_policy_title</source>
                 <target><![CDATA[Datenverwendungsrichtlinien]]></target>
             </trans-unit>			
-			<trans-unit id="1134">
+			<trans-unit id="1136">
                 <source>txt_modal_privacy_policy_body</source>
                 <target><![CDATA[<p> <strong>Datenschutz- und Sicherheitsrichtlinie</strong></p><p> Der Zweck dieses Dokuments ist es, Ihre Aufmerksamkeit Kryptos Systems Ltd die Politik in Bezug auf die Verwendung von und den Schutz der, auf unseren Systemen gespeicherten personenbezogenen Daten zu bringen. Es erkl&#228;rt auch, wie wir die Informationen, die wir &#252;ber Sie sammeln, wie Sie uns anweisen, wenn Sie es vorziehen, um die Verwendung dieser Informationen und Vorgehensweisen, die wir in Ort, um Ihre Privatsph&#228;re zu sch&#252;tzen haben, zu begrenzen.</p><p> <strong>Verwendung personenbezogener Daten</strong></p><p> Es gibt eine Reihe von Bereichen innerhalb des Kryptos Systems Website die Aufzeichnung personenbezogener Daten, einschlie&#223;lich der: Registrierung; Abrechnung; wenden; Rechnung; und Konto Abschnitte. Die in diesen Abschnitten angeforderten Informationen ist Standard und umfasst Namen, Anschrift, Telefonnummer und E-Mail-Details und ist f&#252;r die Zwecke der Verwaltung Ihres Kontos gesammelt (dies wird daher beinhalten: Registrierung Ihres Kontos; Verarbeitung aller Auftr&#228;ge, die Sie vornehmen, die Kommunikation mit Ihnen auf alle Fragen, die die Durchf&#252;hrung von Ihrem Konto und die Bereitstellung unserer Dienstleistungen, um Sie im Allgemeinen).</p><p> Wo wir mit einem Dritten der Vornahme von Dienstleistungen in Zusammenarbeit (dies wird entweder von der Branding oder Mitteilungen auf der Website klar sein), so k&#246;nnen wir, um die jeweiligen Dienste, auf Ihre Kontodaten mit Dritten zu teilen erforderlich Um das Konto (in einer &#228;hnlichen Weise wie oben erw&#228;hnt) zu verwalten und stellen die jeweiligen Dienste.</p><p> Wir m&#252;ssen auch Informationen &#252;ber Ihre Nutzung unserer Dienste mit unseren Daten Lizenzgebern und autorisierte Wiederverk&#228;ufer zu teilen, mit solchen Details, einschlie&#223;lich der Anzahl der Benutzer und Volumen der Transaktionen, so dass entsprechende Lizenzgeb&#252;hren und andere Zahlungen berechnet werden kann.</p><p> Wir k&#246;nnen auch aggregierte Informationen und Statistiken f&#252;r die Zwecke der &#220;berwachung der Websitenutzung verwenden, um uns dabei helfen, die Website und unsere Dienstleistungen. Diese Statistiken enthalten keine Informationen, die verwendet werden k&#246;nnen, um jede Person zu identifizieren.</p><p> Wir k&#246;nnen auch zu Ihnen Informationen &#252;ber spezielle Funktionen auf unserer Website oder einer anderen Dienstleistung oder Produkte, die wir denken, kann f&#252;r Sie von Interesse sein werden. Wenn Sie diese Informationen nicht erhalten m&#246;chten, haben Sie die M&#246;glichkeit auf unserer Website zum Zeitpunkt der Eintragung dieses deutlich zu machen haben, und anschlie&#223;end, wenn Sie Ihre Meinung &#228;ndern, k&#246;nnen Sie eine E-Mail mit einer solchen Anfrage an support@kryptossystems.co schicken. uk.</p><p> <strong>E-Mail-Adressen</strong></p><p> Wir sammeln E-Mail-Adressen f&#252;r die 3 Hauptziele.</p><p> &#183; E-Mail ist unsere bevorzugte Kommunikationsmittel, und werden verwendet, um unseren Kunden die Entwicklungen innerhalb der Kryptos Systeme Dienstleistungen informieren.</p><p> &#183; Wir verwenden E-Mail, um Ihr Konto zu verwalten, beispielsweise durch warnt Sie, wenn Ihr Kontostand einen bestimmten Wert erreicht.</p><p> &#183; Die E-Mail-Adresse bei der Anmeldung verwendet werden, um Benutzer, die vergessene Passw&#246;rter oder Benutzerkonto IDs zu authentifizieren.</p><p> <strong>Wo Wir verarbeiten Ihre pers&#246;nlichen Daten</strong></p><p> Obwohl wir Ihre Daten innerhalb des Europ&#228;ischen Wirtschaftsraums ("EWR"), aufgrund der globalen Natur des Internet-Infrastruktur zu verarbeiten, die Informationen, die Sie m&#246;glicherweise auf der Durchreise in andere L&#228;nder au&#223;erhalb des EWR, die nicht &#252;ber &#228;hnliche Schutzvorrichtungen an Ort und Stelle, wie &#252;bertragen werden die EUA in Bezug auf Ihre Daten und deren Verwendung als die in dieser Richtlinie festgelegt. Mit dem Absenden Ihrer Daten, die Sie solche &#220;bertragungen au&#223;erhalb des EWR einverstanden.</p><p> Wir k&#246;nnen auch Drittunternehmen die Bereitstellung Hosting-Dienste f&#252;r uns. Solche Drittunternehmen werden als unsere Subunternehmer fungieren, und sie w&#252;rden Ihre Daten nur f&#252;r solche Hosting-Zwecke zu halten. Solche Subunternehmer werden nicht an die Erlaubnis f&#252;r jede andere Verwendung oder Weitergabe Ihrer Daten zur Verf&#252;gung gestellt werden. Wir werden auch daf&#252;r sorgen, dass wir angemessene Sicherheitsvorkehrungen in Bezug auf irgendwelche unserer Subunternehmer, im Hinblick auf die Datenaufbewahrung und Sicherheit.</p><p> <strong>Compliance &amp; Vertraulichkeit</strong></p><p> Unser Unternehmen erf&#252;llt seine Verpflichtungen aus dem geltenden Datenschutzbestimmungen in England. Es wird auch mit angemessener Sorgfalt, um unbefugten Zugriff auf Ihre pers&#246;nlichen Daten zu verhindern.</p><p> Unsere Mitarbeiter und Vertragspartner sind sich ihrer Verantwortung bewusst, Ihre Daten vertraulich zu behandeln gemacht worden.</p><p> <strong>Sicherheit</strong></p><p> Wie Sie wahrscheinlich bewusst sein, das Internet ist kein sicheres Medium. Allerdings haben wir an Ort und Stelle verschiedene Sicherheitsverfahren durch angemessene Ma&#223;nahmen, um Ihre Daten zu sch&#252;tzen gesetzt haben.</p><p> Wir betrachten die Sicherheit Ihrer pers&#246;nlichen Daten und die Details der Transaktionen, die Sie an eine Frage von h&#246;chster Priorit&#228;t sein.</p><p> Ihre Kontoinformationen wird von Ihrem Konto Code und Passwort, die Sie sollten zu jeder Zeit sicher zu halten gesch&#252;tzt. Zus&#228;tzlich zu vergessen, wir erzeugen Schl&#252;ssel, die verwendet werden, um Ihr Konto gegen unsere Server authentifizieren, wenn Sie Abfragen der Datenbank. Keys sind eine zuf&#228;llig generierte und einzigartige Reihe von Buchstaben und Zahlen.</p><p> Wenn Sie das Gef&#252;hl, dass es auf dem Lizenz eine Verletzung der Sicherheits kontaktieren Sie uns bitte per E-Mail an security@kryptossystems.co.uk.</p><p> <strong>Purchasing</strong></p><p> Wenn Sie einen Auftrag mit uns vergeben, verwenden wir einen sicheren Server. Alle Daten, die Sie uns zur Verf&#252;gung stellen, wird unter Verwendung eines 'Secure Socket Layer' (SSL) Sitzung verschl&#252;sselt. SSL ist ein Industriestandard und ist eine weit verbreitete Ma&#223;nahme, um gegen die Internet-Nachrichten sch&#252;tzen abgefangen. Sie sollten sich jedoch bewusst sein, dass &#228;ltere Browser k&#246;nnen keine SSL. Um sicher zu sein, m&#252;ssen Sie Netscape Version 4.05 oder h&#246;her, Microsoft Internet Explorer Version 4 oder h&#246;her, oder jede &#228;hnliche Generation-Browser (zB Firefox, Opera).</p><p> Obwohl Ihr Konto kann eingerichtet werden, um Wiederholungsk&#228;ufe automatisch top-up Ihr Konto per Kreditkarte zu machen, die wir nicht wirklich Kreditkarten-Daten zu speichern. Wir halten nur die letzten 4 Ziffern Ihrer Karte, den Kartenhalter-Namen und einem Verweis auf die letzte Transaktion auf dieser Karte aus uns gemacht. Es ist die Transaktion Referenz, die verwendet wird, um Wiederholungsk&#228;ufe zu machen und dies kann nur zwischen uns und unseren Zahlungsdienstleister, SagePAY verwendet werden.</p><p> <strong>Schutz Ihrer Daten</strong></p><p> Dar&#252;ber, was unser Unternehmen tut, um Ihre Privatsph&#228;re und Sicherheit zu sch&#252;tzen, w&#252;rden wir Ihnen raten, die folgenden zus&#228;tzlichen Ma&#223;nahmen:</p><p> &#183; W&#228;hlen Sie ein Passwort, das Sie sich erinnern k&#246;nnen, aber andere nicht erraten.</p><p> &#183; &#196;ndern Sie Ihr Passwort regelm&#228;&#223;ig, und wenn Sie schreiben Sie es zu tun, halten Sie es an einem sicheren Ort und sicher.</p><p> &#183; Autocomplete (Internet Explorer) oder &#228;hnliche Funktion nicht aktivieren.</p><p> &#183; Lassen Sie Ihren Internet-Browser zu "erinnern" Passw&#246;rter.</p><p> &#183; Wenn Sie Ihre Sitzung auf unserer Website abgeschlossen haben, empfehlen wir, dass Sie Ihren Browser schlie&#223;en, so dass jede Geschichte der Sitzung gel&#246;scht. Als weitere Sicherheitsma&#223;nahme unsere Website wird automatisch heruntergefahren Ihre Sitzung, wenn es nicht mehr als 20 Minuten nicht benutzt.</p><p> &#183; L&#246;schen Sie alle "Cache", so gibt es keine Aufzeichnungen von Transaktionen links auf dem Bildschirm - alle g&#228;ngigen Web-Browsern k&#246;nnen Sie dies tun.</p><p> <strong>Einsatz von Cookies</strong></p><p> Unsere Webseite erstellt ein Cookie bei jedem Zugriff auf die Website. Das Cookie enth&#228;lt eine Folge von zuf&#228;llig generierten Zahlen und Buchstaben, die zwischen Ihnen und anderen Nutzern des Dienstes unterscheiden kann. Das Cookie ist nur g&#252;ltig, w&#228;hrend Sie mit der Website und ist wesentlich f&#252;r seinen Betrieb. Werden keine pers&#246;nlichen Informationen in diesem Cookie gespeichert, und der Inhalt des Cookies sind nur f&#252;r die auf unserer Website zur Verf&#252;gung.</p><p> Wenn Sie einen Artikel aus unserer Webseite kaufen w&#228;hlen Sie eine Session-Cookie wird eingestellt, um Ihre Produktwahl zu erinnern. Dieses Cookie wird nach dem Kauf kl&#228;ren, und ist nur f&#252;r die Dauer Ihrer Sitzung auf unserer Website g&#252;ltig.</p><p> Wenn Sie bei jedem Besuch der Website automatisch melden Sie sich an Ihrem Konto wird ein Cookie auf Ihrem PC enth&#228;lt eine verschl&#252;sselte Version Ihrer Kontocode, der dann verwendet wird, um Sie bei der Website, wenn Sie besuchen log gespeichert werden.</p><p> Lesen Sie mehr &#252;ber unseren Einsatz von Cookies.</p><p> <strong>Verwendung von Web Beacons</strong></p><p> Einige unserer Webseiten k&#246;nnen elektronische Bilder als Web Beacons (auch als Clear GIFs bekannt), die uns f&#252;r die Nutzer, die diese Seiten besucht haben, z&#228;hlen zu erm&#246;glichen bekannt sind. Web Beacons sammeln nur begrenzte Informationen, die ein Cookie-Nummer, Uhrzeit und Datum des Seitenaufrufs sowie eine Beschreibung der Seite, auf der der Web-Beacon befindet umfasst. Wir k&#246;nnen es auch mit Web Beacons von Dritten zu Werbe platziert. Diese Baken tragen keine pers&#246;nlich identifizierbaren Informationen und werden nur verwendet, um die Wirksamkeit einer bestimmten Kampagne zu verfolgen.</p><p> <strong>Third Party Werbung</strong></p><p> Wir kann einen Dritten zu verwenden, um Anzeigen auf unserer Seite zu dienen. Cookies k&#246;nnen mit diesen Anzeigen zugeordnet werden, um den Inserenten zu erm&#246;glichen, die Anzahl der anonymen Benutzer als Reaktion auf die Kampagne zu verfolgen. Wir haben keinen Zugriff auf oder Kontrolle von Cookies durch Dritte get&#228;tigt.</p><p> <strong>Cookies aktivieren / deaktivieren</strong></p><p> Wenn Sie sich registrieren mit unserer Website, oder wenn Sie weiterhin zur Nutzung dieser Website erkl&#228;ren Sie sich mit der Verwendung von Cookies. Sie haben die M&#246;glichkeit, Cookies annehmen oder ablehnen, indem Sie die Einstellungen in Ihrem Browser. Allerdings k&#246;nnen Sie nicht in der Lage, alle interaktiven Funktionen unserer Website benutzen, wenn Cookies deaktiviert sind. Um zu blockieren oder Cookies l&#246;schen, w&#228;hlen Sie die "Hilfe" unter dem Men&#252;eintrag Ihres Internet-Browsers "" Hilfe "und geben Sie" oder "Block Cookies" "Cookies l&#246;schen", um eine Schritt f&#252;r Schritt, wie man &#252;bt solche zu finden Aktionen.</p><p> <strong>Websites Dritter</strong></p><p> Fremde Internetseiten, die auf Kryptos Systeme Hotlink werden nicht durch unsere Datenschutz- und Sicherheitspolitik fallen. Kryptos Systeme &#252;bernimmt keine Verantwortung oder Haftung f&#252;r diese Webseiten.</p><p> <strong>Verkauf von Unternehmen</strong></p><p> Wenn diese Unternehmen verkauft wird oder mit einem anderen Unternehmen integriert ist, k&#246;nnen Ihre Daten an unsere Berater und alle Kaufinteressenten und ihre Berater weitergegeben werden, und wird auf den neuen Eigent&#252;mer des Unternehmens &#252;bergeben werden. Sie werden &#252;ber eine &#196;nderung der Eigentumsverh&#228;ltnisse in unserem Gesch&#228;ft informieren.</p><p> <strong>Aktualisieren Sie Ihre Daten</strong></p><p> Wenn eine der Informationen, die Sie uns zur Verf&#252;gung gestellt haben &#228;ndert, zum Beispiel wenn Sie Ihre E-Mail-Adresse, Name oder andere Details &#228;ndern, informieren Sie uns bitte die korrekten Angaben per E-Mail an accounts@kryptossystems.co.uk .</p><p> <strong>Ihre Zustimmung</strong></p><p> Durch die &#220;bermittlung Ihrer Daten stimmen Sie der Verwendung dieser wie in dieser Richtlinie festgelegt Informationen einverstanden. Wenn wir unsere Datenschutzbestimmungen &#228;ndern, werden wir die &#196;nderungen auf dieser Seite ver&#246;ffentlichen und kann Hinweise auf andere Seiten der Website zu platzieren, so dass Sie Kenntnis von den Informationen, die wir sammeln und wie wir sie verwenden. Wir k&#246;nnen auch eine E-Mail, die Sie, wir sollten keine &#196;nderungen an der Art, wie wir Ihre Daten nutzen, so dass Sie, unsere Verwendung Ihrer Daten auf diese Weise einverstanden. Die fortgesetzte Nutzung des Dienstes wird bedeuten, dass Sie damit einverstanden, solche &#196;nderungen, und dass Sie eine derartige Verwendung Ihrer Daten eingewilligt haben.</p><p> Recht auf Zugang zu Ihren Informationen und wie Sie uns erreichen</p><p> Wenn Sie unsere Website besuchen, haben Sie die direkte Kontrolle &#252;ber Informationen in Ihrem pers&#246;nlichen Profil.</p><p> Wenn Sie genau das, was pers&#246;nliche Informationen, die wir &#252;ber Sie besitzen, wissen m&#246;chten, k&#246;nnen Sie es erhalten. Wenn die Informationen statt gefunden ungenau zu sein, werden wir die notwendigen &#196;nderungen vornehmen und best&#228;tigen Sie, um Sie, dass diese gemacht wurden. Bitte schreiben Sie an die folgende Adresse, umschlie&#223;t einen Scheck f&#252;r die Verwaltungsgeb&#252;hr von &#163; 10 (oder, falls h&#246;her, wie andere Geb&#252;hr als durch Gesetz oder das Amt des Datenschutzbeauftragten von Zeit festgelegt) zahlbar an Kryptos Systems (Europe) Ltd gem&#228;&#223; gemacht um den Bestimmungen des Datenschutzgesetzes:</p><p> IT Director,</p><p> Kryptos Systems Ltd</p><p> 29 Hertford Court</p><p> Meadowfields</p><p> Northampton</p><p> NN3 9TD</p><p> Wenn Sie m&#246;chten, mit uns mit allen anderen Fragen oder Anmerkungen wenden, dann entweder per Email hier oder schreiben Sie bitte an die Kundendienstabteilung unter der oben genannten Adresse.</p>]]></target>
             </trans-unit>			
-			<trans-unit id="1135">
+			<trans-unit id="1137">
                 <source>txt_modal_cookie_use_title</source>
                 <target><![CDATA[Cookie verwenden]]></target>
             </trans-unit>			
-			<trans-unit id="1136">
+			<trans-unit id="1138">
                 <source>txt_modal_cookie_use_body</source>
                 <target><![CDATA[<p> <strong>Unsere Verwendung von Cookies</strong></p><p> Ein Cookie ist eine Nur-Text-Reihe von Informationen, die eine Website an die Cookie-Datei des Browsers auf der Festplatte Ihres Computers, so dass die Website kann mich erinnern, wer Sie sind.</p><p> Ein Cookie enth&#228;lt typischerweise den Namen der Domain, von der der Cookie stammt, die "Lebenszeit" des Cookies und einen Wert, in der Regel eine zuf&#228;llig generierte eindeutige Nummer.</p><p> <strong>Arten von Cookies verwendet</strong></p><p> Wenn Sie unsere Webseiten besuchen, senden wir Ihnen einen Cookie. Cookies k&#246;nnen auf folgende Weise eingesetzt werden:</p><p> &#183; Um uns zu helfen erkennen Sie, so dass Sie nicht haben, um wieder Schl&#252;ssel Ihre Registrierungsdaten.</p><p> &#183; Um uns zu helfen, Sie als einzigartige Besucher (nur eine Nummer), wenn Sie auf unsere Website zur&#252;ckkehren und uns zu erlauben, ma&#223;geschneiderte Inhalte auf Ihren bevorzugten Interessen entsprechen.</p><p> &#183; Um anonyme, aggregierte Statistiken, die uns zu verstehen, wie Nutzer unsere Website nutzen, und uns helfen, die Struktur unserer Website zu erm&#246;glichen zusammenzustellen. <strong>Wir k&#246;nnen Ihnen nicht pers&#246;nlich auf diese Weise identifizieren.</strong></p><p> <em>Durch die Nutzung unserer Website stimmen Sie unseren Einsatz dieser Cookies wie unten beschrieben.</em></p><p> <strong>Session-Cookies</strong></p><p> Diese sind wichtig f&#252;r die korrekte Nutzung der Website. Ohne diese werden Sie nicht in der Lage, die volle Nutzung der Website, einschlie&#223;lich der Registrierung f&#252;r einen kostenlosen Testzugang, Anmelden und Verwalten Ihres Kontos und einen Kauf mit dem Einkaufswagen haben. Diese Cookies werden verschl&#252;sselt, nur von unserer Website zug&#228;nglich sind, und die letzte f&#252;r die Dauer des Besuches.</p><p> <strong>Permanente Cookies</strong></p><p> Sollten Sie sich f&#252;r ein Konto registrieren oder loggen Sie sich in Ihr Konto, haben Sie die M&#246;glichkeit, die Anmeldung automatisch bei Ihrem n&#228;chsten Besuch auf der Website. Dies wird mit einem dauerhaftes Cookie, die verschl&#252;sselte Informationen enth&#228;lt, zu der wir Sie authentifizieren getan. Werden keine pers&#246;nlichen Daten in diesem Cookie gespeichert, und sie sind nicht von anderen Websites zu erreichen.</p><p> <strong>Hinweis:</strong> Sie sollten nur die automatische Log-in w&#228;hlen Sie aus Ihrem PC, keine &#246;ffentlich zug&#228;nglichen oder gemeinsam genutzten Computer.</p><p> <strong>Analytics-basierten Cookies</strong></p><p> Um zu verstehen, wie unsere Website verwendet wird und es zu verbessern, basierend auf Benutzerfreundlichkeit, k&#246;nnen wir Analysen und A / B-Tests auf unserer Website ausf&#252;hren. Cookies dieser Art, die wir verwenden sind:</p><ul> <li> <em>Google Analytics</em> - anonyme Tracking (keine personenbezogenen Daten erhalten), wie die Website verwendet wird, und f&#252;hrt. Cookies werden normalerweise verwendet, um Session-Nutzung zu &#252;berwachen und zu identifizieren wiederholte Besuche <em>(anonym).</em> </li></ul><p> <strong>Dritten und Werbe-Cookies</strong></p><p> Unsere Website wird keine Werbung von Dritten anzuzeigen. Cookies zu setzen sind meist nur von unserer Website zug&#228;nglich und m&#252;ssen pers&#246;nliche Daten enthalten, nicht auf andere Websites weitergeleitet werden. <em>Aber</em> Social Media "Like" Buttons kann auf der Website verwendet werden, und wenn geklickt haben, um Informationen, die von sozialen Medien teilen, kann eingestellt Cookies auf Ihrem Rechner bezogen auf den Gehalt geteilt und Ihre Account-Informationen f&#252;r das Medium verwendet wird. Diese Cookies werden nicht von uns kontrolliert und &#252;bernehmen keine Verantwortung f&#252;r die in ihnen enthaltenen Informationen.</p><p> <strong>Deaktivierung von Cookies</strong></p><p> Wenn Sie w&#228;hlen, k&#246;nnen Sie Cookies &#252;ber die Einstellungen Ihres Browsers deaktivieren. Finden Sie in der Hilfe-Funktion Ihres Browsers insbesondere Instruktionen, wie dies zu erreichen. Alternativ k&#246;nnen jetzt die meisten Browser unterst&#252;tzen Plug-Ins, die ausf&#252;hren k&#246;nnen Funktionalit&#228;t und diese k&#246;nnen verwendet werden, um einfach zu blockieren oder akzeptieren Cookies werden "nicht verfolgen".</p>]]></target>
             </trans-unit>		

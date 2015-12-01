@@ -110,7 +110,7 @@ class SettingsUserDetails
 		$data['lastName']	= $this->getLastName();
 		$data['jobTitle'] 	= $this->getJobTitle();
 		$data['company'] 	= $this->getCompany();
-		$data['location'] 	= $this->getCompany();
+		$data['location'] 	= $this->getLocation();
 		$data['email'] 		= $this->getEmail();
 		
 		return $data;
